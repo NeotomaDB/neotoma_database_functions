@@ -6,10 +6,16 @@
 
 | # | Name            | Type                           | Default                                                                 | Nullable | Children                                          | Parents | Comment |
 | - | --------------- | ------------------------------ | ----------------------------------------------------------------------- | -------- | ------------------------------------------------- | ------- | ------- |
-| 1 | precisionrankid | integer                        | nextval('ndb.seq_chroncontrolprecisionranks_precisionrankid'::regclass) | false    | [ndb.chroncontrolranks](ndb.chroncontrolranks.md) |         |         |
-| 2 | precisionrank   | varchar(255)                   |                                                                         | false    |                                                   |         |         |
+| 1 | precisionrank   | varchar(255)                   |                                                                         | false    |                                                   |         |         |
+| 2 | precisionrankid | integer                        | nextval('ndb.seq_chroncontrolprecisionranks_precisionrankid'::regclass) | false    | [ndb.chroncontrolranks](ndb.chroncontrolranks.md) |         |         |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                                            | false    |                                                   |         |         |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                                         | false    |                                                   |         |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

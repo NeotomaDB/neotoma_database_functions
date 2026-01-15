@@ -7,19 +7,19 @@
 | # | Name               | Type                           | Default                      | Nullable | Children | Parents                           | Comment |
 | - | ------------------ | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------- | ------- |
 | 1 | datasetid          | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md)   |         |
-| 2 | variableid         | integer                        |                              | false    |          | [ndb.variables](ndb.variables.md) |         |
-| 3 | srlocalvalue       | double precision               |                              | true     |          |                                   |         |
+| 2 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                   |         |
+| 3 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                   |         |
 | 4 | srlocalgeolcontext | text                           |                              | true     |          |                                   |         |
-| 5 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                   |         |
-| 6 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                   |         |
+| 5 | srlocalvalue       | double precision               |                              | true     |          |                                   |         |
+| 6 | variableid         | integer                        |                              | false    |          | [ndb.variables](ndb.variables.md) |         |
 
 ## Constraints
 
 | # | Name                       | Type        | Definition                                                                                        |
 | - | -------------------------- | ----------- | ------------------------------------------------------------------------------------------------- |
 | 1 | fk_isosrmetadata_datasets  | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE    |
-| 2 | isosrmetadata_pkey         | PRIMARY KEY | PRIMARY KEY (datasetid, variableid)                                                               |
-| 3 | fk_isosrmetadata_variables | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_isosrmetadata_variables | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | isosrmetadata_pkey         | PRIMARY KEY | PRIMARY KEY (datasetid, variableid)                                                               |
 
 ## Indexes
 

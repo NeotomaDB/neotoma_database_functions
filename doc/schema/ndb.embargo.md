@@ -6,8 +6,8 @@
 
 | # | Name        | Type        | Default                                        | Nullable | Children                        | Parents | Comment |
 | - | ----------- | ----------- | ---------------------------------------------- | -------- | ------------------------------- | ------- | ------- |
-| 1 | embargoid   | integer     | nextval('ndb.seq_embargo_embargoid'::regclass) | false    | [ndb.datasets](ndb.datasets.md) |         |         |
-| 2 | embargodate | date        |                                                | false    |                                 |         |         |
+| 1 | embargodate | date        |                                                | false    |                                 |         |         |
+| 2 | embargoid   | integer     | nextval('ndb.seq_embargo_embargoid'::regclass) | false    | [ndb.datasets](ndb.datasets.md) |         |         |
 | 3 | embargopw   | varchar(20) |                                                | true     |                                 |         |         |
 
 ## Constraints

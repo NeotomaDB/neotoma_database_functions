@@ -24,14 +24,14 @@
 <text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">doi </text>
 <text text-anchor="start" x="75.77" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 366,-138.6 366,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="150.48" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">published </text>
+<text text-anchor="start" x="117.03" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 366,-107.8 366,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="156.7" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="150.48" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 366,-77 366,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">published </text>
-<text text-anchor="start" x="117.03" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="156.7" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-237.3 367.5,-237.3 367.5,-44.7 44.7,-44.7"/>
 </g>
 </g>

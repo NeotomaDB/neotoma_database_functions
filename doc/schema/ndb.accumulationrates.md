@@ -6,12 +6,18 @@
 
 | # | Name             | Type                           | Default                      | Nullable | Children | Parents                                   | Comment |
 | - | ---------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------- | ------- |
-| 1 | analysisunitid   | integer                        |                              | false    |          | [ndb.analysisunits](ndb.analysisunits.md) |         |
-| 2 | chronologyid     | integer                        |                              | false    |          | [ndb.chronologies](ndb.chronologies.md)   |         |
-| 3 | accumulationrate | double precision               |                              | false    |          |                                           |         |
-| 4 | variableunitsid  | integer                        |                              | false    |          | [ndb.variableunits](ndb.variableunits.md) |         |
-| 5 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
-| 6 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                           |         |
+| 1 | accumulationrate | double precision               |                              | false    |          |                                           |         |
+| 2 | analysisunitid   | integer                        |                              | false    |          | [ndb.analysisunits](ndb.analysisunits.md) |         |
+| 3 | chronologyid     | integer                        |                              | false    |          | [ndb.chronologies](ndb.chronologies.md)   |         |
+| 4 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
+| 5 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                           |         |
+| 6 | variableunitsid  | integer                        |                              | false    |          | [ndb.variableunits](ndb.variableunits.md) |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

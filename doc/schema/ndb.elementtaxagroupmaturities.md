@@ -15,8 +15,8 @@
 
 | # | Name                                            | Type        | Definition                                                                                                                |
 | - | ----------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_elementtaxagroupmaturities_elementmaturities | FOREIGN KEY | FOREIGN KEY (maturityid) REFERENCES ndb.elementmaturities(maturityid) ON UPDATE CASCADE ON DELETE CASCADE                 |
-| 2 | elementtaxagroupmaturities_pkey                 | PRIMARY KEY | PRIMARY KEY (elementtaxagroupid, maturityid)                                                                              |
+| 1 | elementtaxagroupmaturities_pkey                 | PRIMARY KEY | PRIMARY KEY (elementtaxagroupid, maturityid)                                                                              |
+| 2 | fk_elementtaxagroupmaturities_elementmaturities | FOREIGN KEY | FOREIGN KEY (maturityid) REFERENCES ndb.elementmaturities(maturityid) ON UPDATE CASCADE ON DELETE CASCADE                 |
 | 3 | fk_elementtaxagroupmaturities_elementtaxagroup  | FOREIGN KEY | FOREIGN KEY (elementtaxagroupid) REFERENCES ndb.elementtaxagroups(elementtaxagroupid) ON UPDATE CASCADE ON DELETE CASCADE |
 
 ## Indexes

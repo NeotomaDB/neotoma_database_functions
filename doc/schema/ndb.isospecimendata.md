@@ -6,20 +6,20 @@
 
 | # | Name              | Type                           | Default                                                        | Nullable | Children | Parents                           | Comment |
 | - | ----------------- | ------------------------------ | -------------------------------------------------------------- | -------- | -------- | --------------------------------- | ------- |
-| 1 | isospecimendataid | integer                        | nextval('ndb.seq_isospecimendata_isospecimendataid'::regclass) | false    |          |                                   |         |
-| 2 | dataid            | integer                        |                                                                | false    |          | [ndb.data](ndb.data.md)           |         |
-| 3 | specimenid        | integer                        |                                                                | false    |          | [ndb.specimens](ndb.specimens.md) |         |
-| 4 | sd                | double precision               |                                                                | true     |          |                                   |         |
-| 5 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now())                                   | false    |          |                                   |         |
-| 6 | recdatemodified   | timestamp(0) without time zone |                                                                | false    |          |                                   |         |
+| 1 | dataid            | integer                        |                                                                | false    |          | [ndb.data](ndb.data.md)           |         |
+| 2 | isospecimendataid | integer                        | nextval('ndb.seq_isospecimendata_isospecimendataid'::regclass) | false    |          |                                   |         |
+| 3 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now())                                   | false    |          |                                   |         |
+| 4 | recdatemodified   | timestamp(0) without time zone |                                                                | false    |          |                                   |         |
+| 5 | sd                | double precision               |                                                                | true     |          |                                   |         |
+| 6 | specimenid        | integer                        |                                                                | false    |          | [ndb.specimens](ndb.specimens.md) |         |
 
 ## Constraints
 
 | # | Name                         | Type        | Definition                                                                           |
 | - | ---------------------------- | ----------- | ------------------------------------------------------------------------------------ |
 | 1 | fk_isospecimendata_data      | FOREIGN KEY | FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | isospecimendata_pkey         | PRIMARY KEY | PRIMARY KEY (isospecimendataid)                                                      |
-| 3 | fk_isospecimendata_specimens | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON DELETE CASCADE      |
+| 2 | fk_isospecimendata_specimens | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON DELETE CASCADE      |
+| 3 | isospecimendata_pkey         | PRIMARY KEY | PRIMARY KEY (isospecimendataid)                                                      |
 
 ## Indexes
 

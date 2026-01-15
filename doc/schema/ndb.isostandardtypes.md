@@ -6,9 +6,9 @@
 
 | # | Name                | Type                           | Default                                                         | Nullable | Children                                | Parents | Comment |
 | - | ------------------- | ------------------------------ | --------------------------------------------------------------- | -------- | --------------------------------------- | ------- | ------- |
-| 1 | isostandardtypeid   | integer                        | nextval('ndb.seq_isostandardtypes_isostandardtypeid'::regclass) | false    | [ndb.isostandards](ndb.isostandards.md) |         |         |
+| 1 | isostandardmaterial | varchar(128)                   |                                                                 | false    |                                         |         |         |
 | 2 | isostandardtype     | varchar(128)                   |                                                                 | false    |                                         |         |         |
-| 3 | isostandardmaterial | varchar(128)                   |                                                                 | false    |                                         |         |         |
+| 3 | isostandardtypeid   | integer                        | nextval('ndb.seq_isostandardtypes_isostandardtypeid'::regclass) | false    | [ndb.isostandards](ndb.isostandards.md) |         |         |
 | 4 | recdatecreated      | timestamp(0) without time zone | timezone('UTC'::text, now())                                    | false    |                                         |         |         |
 | 5 | recdatemodified     | timestamp(0) without time zone |                                                                 | false    |                                         |         |         |
 

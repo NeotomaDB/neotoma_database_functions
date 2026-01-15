@@ -6,18 +6,18 @@
 
 | # | Name             | Type                           | Default                      | Nullable | Children | Parents                                       | Comment |
 | - | ---------------- | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------------- | ------- |
-| 1 | specimenid       | integer                        |                              | false    |          | [ndb.specimens](ndb.specimens.md)             |         |
-| 2 | taphonomictypeid | integer                        |                              | false    |          | [ndb.taphonomictypes](ndb.taphonomictypes.md) |         |
-| 3 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                               |         |
-| 4 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                               |         |
+| 1 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                               |         |
+| 2 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                               |         |
+| 3 | specimenid       | integer                        |                              | false    |          | [ndb.specimens](ndb.specimens.md)             |         |
+| 4 | taphonomictypeid | integer                        |                              | false    |          | [ndb.taphonomictypes](ndb.taphonomictypes.md) |         |
 
 ## Constraints
 
 | # | Name                                 | Type        | Definition                                                                                                          |
 | - | ------------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_specimentaphonomy_specimens       | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE                   |
-| 2 | specimentaphonomy_pkey               | PRIMARY KEY | PRIMARY KEY (specimenid, taphonomictypeid)                                                                          |
-| 3 | fk_specimentaphonomy_taphonomictypes | FOREIGN KEY | FOREIGN KEY (taphonomictypeid) REFERENCES ndb.taphonomictypes(taphonomictypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_specimentaphonomy_taphonomictypes | FOREIGN KEY | FOREIGN KEY (taphonomictypeid) REFERENCES ndb.taphonomictypes(taphonomictypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | specimentaphonomy_pkey               | PRIMARY KEY | PRIMARY KEY (specimenid, taphonomictypeid)                                                                          |
 
 ## Indexes
 

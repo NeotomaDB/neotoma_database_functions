@@ -6,15 +6,21 @@
 
 | # | Name        | Type                           | Default | Nullable | Children | Parents                         | Comment |
 | - | ----------- | ------------------------------ | ------- | -------- | -------- | ------------------------------- | ------- |
-| 1 | updateid    | integer                        |         | false    |          |                                 |         |
+| 1 | columnname  | varchar(64)                    |         | true     |          |                                 |         |
 | 2 | contactid   | integer                        |         | false    |          | [ndb.contacts](ndb.contacts.md) |         |
-| 3 | tablename   | varchar(64)                    |         | false    |          |                                 |         |
-| 4 | pk1         | integer                        |         | true     |          |                                 |         |
-| 5 | pk2         | integer                        |         | true     |          |                                 |         |
-| 6 | pk3         | varchar(24)                    |         | true     |          |                                 |         |
-| 7 | operation   | varchar(24)                    |         | false    |          |                                 |         |
-| 8 | columnname  | varchar(64)                    |         | true     |          |                                 |         |
-| 9 | dateupdated | timestamp(0) without time zone |         | false    |          |                                 |         |
+| 3 | dateupdated | timestamp(0) without time zone |         | false    |          |                                 |         |
+| 4 | operation   | varchar(24)                    |         | false    |          |                                 |         |
+| 5 | pk1         | integer                        |         | true     |          |                                 |         |
+| 6 | pk2         | integer                        |         | true     |          |                                 |         |
+| 7 | pk3         | varchar(24)                    |         | true     |          |                                 |         |
+| 8 | tablename   | varchar(64)                    |         | false    |          |                                 |         |
+| 9 | updateid    | integer                        |         | false    |          |                                 |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 

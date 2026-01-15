@@ -6,15 +6,15 @@
 
 | # | Name       | Type        | Default | Nullable | Children | Parents                           | Comment |
 | - | ---------- | ----------- | ------- | -------- | -------- | --------------------------------- | ------- |
-| 1 | specimenid | integer     |         | false    |          | [ndb.specimens](ndb.specimens.md) |         |
-| 2 | genbanknr  | varchar(50) |         | false    |          |                                   |         |
+| 1 | genbanknr  | varchar(50) |         | false    |          |                                   |         |
+| 2 | specimenid | integer     |         | false    |          | [ndb.specimens](ndb.specimens.md) |         |
 
 ## Constraints
 
 | # | Name                         | Type        | Definition                                                                                        |
 | - | ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------- |
-| 1 | specimengenbank_pkey         | PRIMARY KEY | PRIMARY KEY (specimenid, genbanknr)                                                               |
-| 2 | fk_specimengenbank_specimens | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 1 | fk_specimengenbank_specimens | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | specimengenbank_pkey         | PRIMARY KEY | PRIMARY KEY (specimenid, genbanknr)                                                               |
 
 ## Indexes
 

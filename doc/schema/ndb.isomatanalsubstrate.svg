@@ -68,11 +68,11 @@
 <text text-anchor="start" x="1289.9" y="-179.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="1321.01" y="-179.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="1115,-135.6 1115,-166.4 1434.8,-166.4 1434.8,-135.6 1115,-135.6"/>
-<text text-anchor="start" x="1122" y="-147.8" font-family="Arial" font-size="14.00">isosubstratetypeid </text>
-<text text-anchor="start" x="1238.73" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1122" y="-147.8" font-family="Arial" font-size="14.00">isosubstratetype </text>
+<text text-anchor="start" x="1227.83" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="1115,-104.8 1115,-135.6 1434.8,-135.6 1434.8,-104.8 1115,-104.8"/>
-<text text-anchor="start" x="1122" y="-117" font-family="Arial" font-size="14.00">isosubstratetype </text>
-<text text-anchor="start" x="1227.83" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
+<text text-anchor="start" x="1122" y="-117" font-family="Arial" font-size="14.00">isosubstratetypeid </text>
+<text text-anchor="start" x="1238.73" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1115,-74 1115,-104.8 1434.8,-104.8 1434.8,-74 1115,-74"/>
 <text text-anchor="start" x="1122" y="-86.2" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="1219.28" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -83,8 +83,8 @@
 <!-- ndb.isomatanalsubstrate&#45;&gt;ndb.isosubstratetypes -->
 <g id="edge3" class="edge">
 <title>ndb.isomatanalsubstrate:isosubstratetypeid&#45;&gt;ndb.isosubstratetypes:isosubstratetypeid</title>
-<path fill="none" stroke="black" d="M1008.71,-537.85C1055.89,-516 1041.75,-333.95 1058.9,-281.2 1078.32,-221.44 1051.16,-151 1114,-151"/>
-<polygon fill="black" stroke="black" points="1008.9,-537.81 998.17,-535.53 1003.68,-538.94 999.45,-539.86 999.45,-539.86 999.45,-539.86 1003.68,-538.94 1000.08,-544.33 1008.9,-537.81"/>
+<path fill="none" stroke="black" d="M1008.73,-537.86C1056.11,-516.07 1043.62,-334.52 1058.9,-281.2 1079.72,-208.49 1038.37,-120.2 1114,-120.2"/>
+<polygon fill="black" stroke="black" points="1008.9,-537.82 998.17,-535.53 1003.68,-538.94 999.45,-539.86 999.45,-539.86 999.45,-539.86 1003.68,-538.94 1000.07,-544.33 1008.9,-537.82"/>
 <text text-anchor="start" x="352.15" y="-550" font-family="Arial" font-size="10.00">FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.isometadata -->
@@ -96,58 +96,58 @@
 <text text-anchor="start" x="1267.39" y="-738.2" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="1298.5" y="-738.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="1111,-694 1111,-724.8 1430.8,-724.8 1430.8,-694 1111,-694"/>
-<text text-anchor="start" x="1118" y="-706.2" font-family="Arial" font-size="14.00">isometadataid </text>
-<text text-anchor="start" x="1209.05" y="-706.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1118" y="-706.2" font-family="Arial" font-size="14.00">analystid </text>
+<text text-anchor="start" x="1177.14" y="-706.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1111,-663.2 1111,-694 1430.8,-694 1430.8,-663.2 1111,-663.2"/>
-<text text-anchor="start" x="1118" y="-675.4" font-family="Arial" font-size="14.00">dataid </text>
-<text text-anchor="start" x="1160.03" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1118" y="-675.4" font-family="Arial" font-size="14.00">atomicpercent </text>
+<text text-anchor="start" x="1209.82" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="1111,-632.4 1111,-663.2 1430.8,-663.2 1430.8,-632.4 1111,-632.4"/>
-<text text-anchor="start" x="1118" y="-644.6" font-family="Arial" font-size="14.00">isomatanaltypeid </text>
-<text text-anchor="start" x="1226.95" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1118" y="-644.6" font-family="Arial" font-size="14.00">dataid </text>
+<text text-anchor="start" x="1160.03" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1111,-601.6 1111,-632.4 1430.8,-632.4 1430.8,-601.6 1111,-601.6"/>
-<text text-anchor="start" x="1118" y="-613.8" font-family="Arial" font-size="14.00">isosubstratetypeid </text>
-<text text-anchor="start" x="1234.73" y="-613.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1118" y="-613.8" font-family="Arial" font-size="14.00">isomatanaltypeid </text>
+<text text-anchor="start" x="1226.95" y="-613.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1111,-570.8 1111,-601.6 1430.8,-601.6 1430.8,-570.8 1111,-570.8"/>
-<text text-anchor="start" x="1118" y="-583" font-family="Arial" font-size="14.00">analystid </text>
-<text text-anchor="start" x="1177.14" y="-583" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1118" y="-583" font-family="Arial" font-size="14.00">isometadataid </text>
+<text text-anchor="start" x="1209.05" y="-583" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1111,-540 1111,-570.8 1430.8,-570.8 1430.8,-540 1111,-540"/>
-<text text-anchor="start" x="1118" y="-552.2" font-family="Arial" font-size="14.00">lab </text>
-<text text-anchor="start" x="1140.57" y="-552.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
+<text text-anchor="start" x="1118" y="-552.2" font-family="Arial" font-size="14.00">isosubstratetypeid </text>
+<text text-anchor="start" x="1234.73" y="-552.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1111,-509.2 1111,-540 1430.8,-540 1430.8,-509.2 1111,-509.2"/>
-<text text-anchor="start" x="1118" y="-521.4" font-family="Arial" font-size="14.00">labnumber </text>
-<text text-anchor="start" x="1188.04" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<text text-anchor="start" x="1118" y="-521.4" font-family="Arial" font-size="14.00">lab </text>
+<text text-anchor="start" x="1140.57" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
 <polygon fill="none" stroke="black" points="1111,-478.4 1111,-509.2 1430.8,-509.2 1430.8,-478.4 1111,-478.4"/>
-<text text-anchor="start" x="1118" y="-490.6" font-family="Arial" font-size="14.00">mass_mg </text>
-<text text-anchor="start" x="1182.57" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="1118" y="-490.6" font-family="Arial" font-size="14.00">labnumber </text>
+<text text-anchor="start" x="1188.04" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="1111,-447.6 1111,-478.4 1430.8,-478.4 1430.8,-447.6 1111,-447.6"/>
-<text text-anchor="start" x="1118" y="-459.8" font-family="Arial" font-size="14.00">weightpercent </text>
-<text text-anchor="start" x="1209.05" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="1118" y="-459.8" font-family="Arial" font-size="14.00">mass_mg </text>
+<text text-anchor="start" x="1182.57" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="1111,-416.8 1111,-447.6 1430.8,-447.6 1430.8,-416.8 1111,-416.8"/>
-<text text-anchor="start" x="1118" y="-429" font-family="Arial" font-size="14.00">atomicpercent </text>
-<text text-anchor="start" x="1209.82" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="1118" y="-429" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1215.28" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="1111,-386 1111,-416.8 1430.8,-416.8 1430.8,-386 1111,-386"/>
-<text text-anchor="start" x="1118" y="-398.2" font-family="Arial" font-size="14.00">reps </text>
-<text text-anchor="start" x="1149.12" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1118" y="-398.2" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1221.5" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="1111,-355.2 1111,-386 1430.8,-386 1430.8,-355.2 1111,-355.2"/>
-<text text-anchor="start" x="1118" y="-367.4" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1215.28" y="-367.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="1118" y="-367.4" font-family="Arial" font-size="14.00">reps </text>
+<text text-anchor="start" x="1149.12" y="-367.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1111,-324.4 1111,-355.2 1430.8,-355.2 1430.8,-324.4 1111,-324.4"/>
-<text text-anchor="start" x="1118" y="-336.6" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1221.5" y="-336.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="1118" y="-336.6" font-family="Arial" font-size="14.00">weightpercent </text>
+<text text-anchor="start" x="1209.05" y="-336.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 </g>
 <!-- ndb.isometadata&#45;&gt;ndb.isomaterialanalyzedtypes -->
 <g id="edge2" class="edge">
 <title>ndb.isometadata:isomatanaltypeid&#45;&gt;ndb.isomaterialanalyzedtypes:isomatanaltypeid</title>
-<path fill="none" stroke="black" d="M1099.85,-646.29C1005.4,-616.3 1120.76,-151 1011.85,-151"/>
-<polygon fill="black" stroke="black" points="1099.78,-646.27 1109,-652.2 1105.05,-647.06 1109.34,-647.7 1109.34,-647.7 1109.34,-647.7 1105.05,-647.06 1110.33,-643.3 1099.78,-646.27"/>
-<text text-anchor="start" x="1117" y="-657.8" font-family="Arial" font-size="10.00">FOREIGN KEY (isomatanaltypeid) REFERENCES ndb.isomaterialanalyzedtypes(isomatanaltypeid) ON DELETE SET NULL</text>
+<path fill="none" stroke="black" d="M1099.9,-615.4C1011.67,-585.69 1114.06,-151 1011.85,-151"/>
+<polygon fill="black" stroke="black" points="1099.79,-615.39 1108.97,-621.39 1105.06,-616.22 1109.34,-616.9 1109.34,-616.9 1109.34,-616.9 1105.06,-616.22 1110.37,-612.5 1099.79,-615.39"/>
+<text text-anchor="start" x="1117" y="-627" font-family="Arial" font-size="10.00">FOREIGN KEY (isomatanaltypeid) REFERENCES ndb.isomaterialanalyzedtypes(isomatanaltypeid) ON DELETE SET NULL</text>
 </g>
 <!-- ndb.isometadata&#45;&gt;ndb.isosubstratetypes -->
 <g id="edge4" class="edge">
 <title>ndb.isometadata:isosubstratetypeid&#45;&gt;ndb.isosubstratetypes:isosubstratetypeid</title>
-<path fill="none" stroke="black" d="M1442.02,-615.05C1503.84,-590.17 1478.14,-334.09 1430.8,-281.2 1336.58,-175.95 1209.62,-350.09 1115,-245.2 1086.95,-214.11 1072.13,-151 1114,-151"/>
-<polygon fill="black" stroke="black" points="1441.95,-615.07 1431.28,-612.52 1436.71,-616.07 1432.45,-616.87 1432.45,-616.87 1432.45,-616.87 1436.71,-616.07 1432.97,-621.36 1441.95,-615.07"/>
-<text text-anchor="start" x="1438.8" y="-627" font-family="Arial" font-size="10.00">FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE SET NULL</text>
+<path fill="none" stroke="black" d="M1441.67,-553.13C1490.17,-529.22 1469.07,-323.93 1430.8,-281.2 1336.54,-175.98 1209.48,-350.22 1115,-245.2 1077.84,-203.9 1058.44,-120.2 1114,-120.2"/>
+<polygon fill="black" stroke="black" points="1441.87,-553.08 1431.11,-550.94 1436.67,-554.28 1432.45,-555.25 1432.45,-555.25 1432.45,-555.25 1436.67,-554.28 1433.13,-559.71 1441.87,-553.08"/>
+<text text-anchor="start" x="1438.8" y="-565.4" font-family="Arial" font-size="10.00">FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE SET NULL</text>
 </g>
 </g>
 </svg>

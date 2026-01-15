@@ -18,20 +18,20 @@
 <text text-anchor="start" x="173.69" y="-213.6" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="204.81" y="-213.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-169.4 46.2,-200.2 305.18,-200.2 305.18,-169.4 46.2,-169.4"/>
-<text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">name </text>
-<text text-anchor="start" x="92.11" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar]</text>
+<text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">definition </text>
+<text text-anchor="start" x="113.13" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[bytea]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 305.18,-169.4 305.18,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">principal_id </text>
-<text text-anchor="start" x="127.91" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">diagram_id </text>
+<text text-anchor="start" x="126.35" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 305.18,-138.6 305.18,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">diagram_id </text>
-<text text-anchor="start" x="126.35" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">name </text>
+<text text-anchor="start" x="92.11" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 305.18,-107.8 305.18,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">version </text>
-<text text-anchor="start" x="102.22" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">principal_id </text>
+<text text-anchor="start" x="127.91" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 305.18,-77 305.18,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">definition </text>
-<text text-anchor="start" x="113.13" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[bytea]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">version </text>
+<text text-anchor="start" x="102.22" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-237.3 306.68,-237.3 306.68,-44.7 44.7,-44.7"/>
 </g>
 </g>

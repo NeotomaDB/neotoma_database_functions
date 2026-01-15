@@ -7,9 +7,9 @@
 | # | Name              | Type                           | Default                      | Nullable | Children | Parents                                         | Comment |
 | - | ----------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------------- | ------- |
 | 1 | datasettypeid     | integer                        |                              | false    |          | [ndb.datasettypes](ndb.datasettypes.md)         |         |
-| 2 | variablecontextid | integer                        |                              | false    |          | [ndb.variablecontexts](ndb.variablecontexts.md) |         |
-| 3 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                 |         |
-| 4 | recdatemodified   | timestamp(0) without time zone |                              | false    |          |                                                 |         |
+| 2 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                 |         |
+| 3 | recdatemodified   | timestamp(0) without time zone |                              | false    |          |                                                 |         |
+| 4 | variablecontextid | integer                        |                              | false    |          | [ndb.variablecontexts](ndb.variablecontexts.md) |         |
 
 ## Constraints
 

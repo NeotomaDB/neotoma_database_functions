@@ -7,17 +7,17 @@
 | # | Name               | Type                           | Default                      | Nullable | Children | Parents                                           | Comment |
 | - | ------------------ | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------------- | ------- |
 | 1 | elementtaxagroupid | integer                        |                              | false    |          | [ndb.elementtaxagroups](ndb.elementtaxagroups.md) |         |
-| 2 | symmetryid         | integer                        |                              | false    |          | [ndb.elementsymmetries](ndb.elementsymmetries.md) |         |
-| 3 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |         |
-| 4 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                                   |         |
+| 2 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |         |
+| 3 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                                   |         |
+| 4 | symmetryid         | integer                        |                              | false    |          | [ndb.elementsymmetries](ndb.elementsymmetries.md) |         |
 
 ## Constraints
 
 | # | Name                                            | Type        | Definition                                                                                                                |
 | - | ----------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_elementtaxagroupsymmetries_elementsymmetries | FOREIGN KEY | FOREIGN KEY (symmetryid) REFERENCES ndb.elementsymmetries(symmetryid) ON UPDATE CASCADE ON DELETE CASCADE                 |
-| 2 | fk_elementtaxagroupsymmetries_elementtaxagroups | FOREIGN KEY | FOREIGN KEY (elementtaxagroupid) REFERENCES ndb.elementtaxagroups(elementtaxagroupid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | elementtaxagroupsymmetries_pkey                 | PRIMARY KEY | PRIMARY KEY (elementtaxagroupid, symmetryid)                                                                              |
+| 1 | elementtaxagroupsymmetries_pkey                 | PRIMARY KEY | PRIMARY KEY (elementtaxagroupid, symmetryid)                                                                              |
+| 2 | fk_elementtaxagroupsymmetries_elementsymmetries | FOREIGN KEY | FOREIGN KEY (symmetryid) REFERENCES ndb.elementsymmetries(symmetryid) ON UPDATE CASCADE ON DELETE CASCADE                 |
+| 3 | fk_elementtaxagroupsymmetries_elementtaxagroups | FOREIGN KEY | FOREIGN KEY (elementtaxagroupid) REFERENCES ndb.elementtaxagroups(elementtaxagroupid) ON UPDATE CASCADE ON DELETE CASCADE |
 
 ## Indexes
 

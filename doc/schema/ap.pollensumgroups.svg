@@ -18,11 +18,11 @@
 <text text-anchor="start" x="198.69" y="-152" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="229.8" y="-152" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 330.17,-138.6 330.17,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">recid </text>
-<text text-anchor="start" x="87.43" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">ecolgroupid </text>
+<text text-anchor="start" x="129.48" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(4)]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 330.17,-107.8 330.17,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">ecolgroupid </text>
-<text text-anchor="start" x="129.48" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(4)]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">recid </text>
+<text text-anchor="start" x="87.43" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 330.17,-77 330.17,-46.2 46.2,-46.2"/>
 <text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">sumgroupid </text>
 <text text-anchor="start" x="130.24" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>

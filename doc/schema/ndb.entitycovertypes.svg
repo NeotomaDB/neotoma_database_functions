@@ -5,10 +5,10 @@
  -->
 <!-- Title: ndb.entitycovertypes Pages: 1 -->
 <svg width="1177pt" height="658pt"
- viewBox="0.00 0.00 1176.77 657.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 1177.36 657.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 653.6)">
 <title>ndb.entitycovertypes</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-653.6 1172.77,-653.6 1172.77,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-653.6 1173.36,-653.6 1173.36,4 -4,4"/>
 <!-- ndb.entitycovertypes -->
 <g id="node1" class="node">
 <title>ndb.entitycovertypes</title>
@@ -21,108 +21,108 @@
 <text text-anchor="start" x="53.2" y="-194" font-family="Arial" font-size="14.00">entitycoverid </text>
 <text text-anchor="start" x="135.68" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-151 46.2,-181.8 335.15,-181.8 335.15,-151 46.2,-151"/>
-<text text-anchor="start" x="53.2" y="-163.2" font-family="Arial" font-size="14.00">entitycovertype </text>
-<text text-anchor="start" x="151.25" y="-163.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
+<text text-anchor="start" x="53.2" y="-163.2" font-family="Arial" font-size="14.00">entitycovernotes </text>
+<text text-anchor="start" x="159.03" y="-163.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="46.2,-120.2 46.2,-151 335.15,-151 335.15,-120.2 46.2,-120.2"/>
-<text text-anchor="start" x="53.2" y="-132.4" font-family="Arial" font-size="14.00">entitycovernotes </text>
-<text text-anchor="start" x="159.03" y="-132.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="53.2" y="-132.4" font-family="Arial" font-size="14.00">entitycovertype </text>
+<text text-anchor="start" x="151.25" y="-132.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-118.7 44.7,-249.7 336.65,-249.7 336.65,-118.7 44.7,-118.7"/>
 </g>
 <!-- ndb.entitycovers -->
 <g id="node2" class="node">
 <title>ndb.entitycovers</title>
-<polygon fill="#efefef" stroke="none" points="442.7,-570.8 442.7,-606.4 700.65,-606.4 700.65,-570.8 442.7,-570.8"/>
-<polygon fill="none" stroke="black" points="442.7,-570.8 442.7,-606.4 700.65,-606.4 700.65,-570.8 442.7,-570.8"/>
-<text text-anchor="start" x="449.7" y="-584.2" font-family="Arial Bold" font-size="18.00">ndb.entitycovers</text>
-<text text-anchor="start" x="569.16" y="-584.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="600.28" y="-584.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="442.7,-540 442.7,-570.8 700.65,-570.8 700.65,-540 442.7,-540"/>
-<text text-anchor="start" x="449.7" y="-552.2" font-family="Arial" font-size="14.00">entityid </text>
-<text text-anchor="start" x="497.94" y="-552.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="442.7,-509.2 442.7,-540 700.65,-540 700.65,-509.2 442.7,-509.2"/>
-<text text-anchor="start" x="449.7" y="-521.4" font-family="Arial" font-size="14.00">entitycoverid </text>
-<text text-anchor="start" x="532.18" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="442.7,-478.4 442.7,-509.2 700.65,-509.2 700.65,-478.4 442.7,-478.4"/>
-<text text-anchor="start" x="449.7" y="-490.6" font-family="Arial" font-size="14.00">entitycoverthickness </text>
-<text text-anchor="start" x="579.64" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
-<polygon fill="none" stroke="black" points="442.7,-447.6 442.7,-478.4 700.65,-478.4 700.65,-447.6 442.7,-447.6"/>
-<text text-anchor="start" x="449.7" y="-459.8" font-family="Arial" font-size="14.00">entitycoverunits </text>
-<text text-anchor="start" x="550.85" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="#efefef" stroke="none" points="473.7,-570.8 473.7,-606.4 731.65,-606.4 731.65,-570.8 473.7,-570.8"/>
+<polygon fill="none" stroke="black" points="473.7,-570.8 473.7,-606.4 731.65,-606.4 731.65,-570.8 473.7,-570.8"/>
+<text text-anchor="start" x="480.7" y="-584.2" font-family="Arial Bold" font-size="18.00">ndb.entitycovers</text>
+<text text-anchor="start" x="600.16" y="-584.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="631.28" y="-584.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="473.7,-540 473.7,-570.8 731.65,-570.8 731.65,-540 473.7,-540"/>
+<text text-anchor="start" x="480.7" y="-552.2" font-family="Arial" font-size="14.00">entitycoverid </text>
+<text text-anchor="start" x="563.18" y="-552.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="473.7,-509.2 473.7,-540 731.65,-540 731.65,-509.2 473.7,-509.2"/>
+<text text-anchor="start" x="480.7" y="-521.4" font-family="Arial" font-size="14.00">entitycoverthickness </text>
+<text text-anchor="start" x="610.64" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<polygon fill="none" stroke="black" points="473.7,-478.4 473.7,-509.2 731.65,-509.2 731.65,-478.4 473.7,-478.4"/>
+<text text-anchor="start" x="480.7" y="-490.6" font-family="Arial" font-size="14.00">entitycoverunits </text>
+<text text-anchor="start" x="581.85" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="473.7,-447.6 473.7,-478.4 731.65,-478.4 731.65,-447.6 473.7,-447.6"/>
+<text text-anchor="start" x="480.7" y="-459.8" font-family="Arial" font-size="14.00">entityid </text>
+<text text-anchor="start" x="528.94" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.entitycovers&#45;&gt;ndb.entitycovertypes -->
 <g id="edge1" class="edge">
 <title>ndb.entitycovers:entitycoverid&#45;&gt;ndb.entitycovertypes:entitycoverid</title>
-<path fill="none" stroke="black" d="M431.74,-522.51C369.42,-494.63 409.01,-197.2 336.15,-197.2"/>
-<polygon fill="black" stroke="black" points="431.58,-522.48 440.44,-528.94 436.8,-523.57 441.04,-524.46 441.04,-524.46 441.04,-524.46 436.8,-523.57 442.29,-520.13 431.58,-522.48"/>
-<text text-anchor="start" x="72.36" y="-534.6" font-family="Arial" font-size="10.00">FOREIGN KEY (entitycoverid) REFERENCES ndb.entitycovertypes(entitycoverid)</text>
-</g>
-<!-- ndb.speleothems -->
-<g id="node3" class="node">
-<title>ndb.speleothems</title>
-<polygon fill="#efefef" stroke="none" points="442.19,-289.6 442.19,-325.2 701.16,-325.2 701.16,-289.6 442.19,-289.6"/>
-<polygon fill="none" stroke="black" points="442.19,-289.6 442.19,-325.2 701.16,-325.2 701.16,-289.6 442.19,-289.6"/>
-<text text-anchor="start" x="449.19" y="-303" font-family="Arial Bold" font-size="18.00">ndb.speleothems</text>
-<text text-anchor="start" x="569.67" y="-303" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="600.79" y="-303" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="442.19,-258.8 442.19,-289.6 701.16,-289.6 701.16,-258.8 442.19,-258.8"/>
-<text text-anchor="start" x="449.19" y="-271" font-family="Arial" font-size="14.00">siteid </text>
-<text text-anchor="start" x="485.76" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="442.19,-228 442.19,-258.8 701.16,-258.8 701.16,-228 442.19,-228"/>
-<text text-anchor="start" x="449.19" y="-240.2" font-family="Arial" font-size="14.00">entityid </text>
-<text text-anchor="start" x="497.44" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="442.19,-197.2 442.19,-228 701.16,-228 701.16,-197.2 442.19,-197.2"/>
-<text text-anchor="start" x="449.19" y="-209.4" font-family="Arial" font-size="14.00">entityname </text>
-<text text-anchor="start" x="521.56" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="442.19,-166.4 442.19,-197.2 701.16,-197.2 701.16,-166.4 442.19,-166.4"/>
-<text text-anchor="start" x="449.19" y="-178.6" font-family="Arial" font-size="14.00">monitoring </text>
-<text text-anchor="start" x="518.44" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
-<polygon fill="none" stroke="black" points="442.19,-135.6 442.19,-166.4 701.16,-166.4 701.16,-135.6 442.19,-135.6"/>
-<text text-anchor="start" x="449.19" y="-147.8" font-family="Arial" font-size="14.00">rockageid </text>
-<text text-anchor="start" x="513.78" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="442.19,-104.8 442.19,-135.6 701.16,-135.6 701.16,-104.8 442.19,-104.8"/>
-<text text-anchor="start" x="449.19" y="-117" font-family="Arial" font-size="14.00">entrancedistance </text>
-<text text-anchor="start" x="559.71" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
-<polygon fill="none" stroke="black" points="442.19,-74 442.19,-104.8 701.16,-104.8 701.16,-74 442.19,-74"/>
-<text text-anchor="start" x="449.19" y="-86.2" font-family="Arial" font-size="14.00">entrancedistanceunits </text>
-<text text-anchor="start" x="589.28" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="442.19,-43.2 442.19,-74 701.16,-74 701.16,-43.2 442.19,-43.2"/>
-<text text-anchor="start" x="449.19" y="-55.4" font-family="Arial" font-size="14.00">speleothemtypeid </text>
-<text text-anchor="start" x="562.82" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-</g>
-<!-- ndb.entitycovers&#45;&gt;ndb.speleothems -->
-<g id="edge2" class="edge">
-<title>ndb.entitycovers:entityid&#45;&gt;ndb.speleothems:entityid</title>
-<path fill="none" stroke="black" d="M711.68,-553.07C770.86,-524.52 767.97,-243.4 702.16,-243.4"/>
-<polygon fill="black" stroke="black" points="711.72,-553.06 700.96,-550.94 706.52,-554.27 702.31,-555.25 702.31,-555.25 702.31,-555.25 706.52,-554.27 703,-559.71 711.72,-553.06"/>
-<text text-anchor="start" x="708.65" y="-565.4" font-family="Arial" font-size="10.00">FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M462.65,-554.94C385.02,-547.45 421.46,-449.99 390.67,-368.4 362.48,-293.69 416,-197.2 336.15,-197.2"/>
+<polygon fill="black" stroke="black" points="462.37,-554.93 472.15,-559.88 467.7,-555.17 472.03,-555.37 472.03,-555.37 472.03,-555.37 467.7,-555.17 472.57,-550.89 462.37,-554.93"/>
+<text text-anchor="start" x="103.36" y="-565.4" font-family="Arial" font-size="10.00">FOREIGN KEY (entitycoverid) REFERENCES ndb.entitycovertypes(entitycoverid)</text>
 </g>
 <!-- ndb.variableunits -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>ndb.variableunits</title>
-<polygon fill="#efefef" stroke="none" points="805.78,-228 805.78,-263.6 1125.57,-263.6 1125.57,-228 805.78,-228"/>
-<polygon fill="none" stroke="black" points="805.78,-228 805.78,-263.6 1125.57,-263.6 1125.57,-228 805.78,-228"/>
-<text text-anchor="start" x="841.19" y="-241.4" font-family="Arial Bold" font-size="18.00">ndb.variableunits</text>
-<text text-anchor="start" x="965.67" y="-241.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="996.78" y="-241.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="805.78,-197.2 805.78,-228 1125.57,-228 1125.57,-197.2 805.78,-197.2"/>
-<text text-anchor="start" x="812.78" y="-209.4" font-family="Arial" font-size="14.00">variableunitsid </text>
-<text text-anchor="start" x="906.16" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="805.78,-166.4 805.78,-197.2 1125.57,-197.2 1125.57,-166.4 805.78,-166.4"/>
-<text text-anchor="start" x="812.78" y="-178.6" font-family="Arial" font-size="14.00">variableunits </text>
-<text text-anchor="start" x="895.26" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="805.78,-135.6 805.78,-166.4 1125.57,-166.4 1125.57,-135.6 805.78,-135.6"/>
-<text text-anchor="start" x="812.78" y="-147.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="910.06" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="805.78,-104.8 805.78,-135.6 1125.57,-135.6 1125.57,-104.8 805.78,-104.8"/>
-<text text-anchor="start" x="812.78" y="-117" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="916.28" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="442.78,-228 442.78,-263.6 762.57,-263.6 762.57,-228 442.78,-228"/>
+<polygon fill="none" stroke="black" points="442.78,-228 442.78,-263.6 762.57,-263.6 762.57,-228 442.78,-228"/>
+<text text-anchor="start" x="478.19" y="-241.4" font-family="Arial Bold" font-size="18.00">ndb.variableunits</text>
+<text text-anchor="start" x="602.67" y="-241.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="633.78" y="-241.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="442.78,-197.2 442.78,-228 762.57,-228 762.57,-197.2 442.78,-197.2"/>
+<text text-anchor="start" x="449.78" y="-209.4" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="547.06" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="442.78,-166.4 442.78,-197.2 762.57,-197.2 762.57,-166.4 442.78,-166.4"/>
+<text text-anchor="start" x="449.78" y="-178.6" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="553.28" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="442.78,-135.6 442.78,-166.4 762.57,-166.4 762.57,-135.6 442.78,-135.6"/>
+<text text-anchor="start" x="449.78" y="-147.8" font-family="Arial" font-size="14.00">variableunits </text>
+<text text-anchor="start" x="532.26" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="442.78,-104.8 442.78,-135.6 762.57,-135.6 762.57,-104.8 442.78,-104.8"/>
+<text text-anchor="start" x="449.78" y="-117" font-family="Arial" font-size="14.00">variableunitsid </text>
+<text text-anchor="start" x="543.16" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.entitycovers&#45;&gt;ndb.variableunits -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>ndb.entitycovers:entitycoverunits&#45;&gt;ndb.variableunits:variableunitsid</title>
-<path fill="none" stroke="black" d="M711.79,-462.1C747.49,-455.14 736.05,-408.97 753.67,-368.4 782.71,-301.56 731.9,-212.6 804.78,-212.6"/>
-<polygon fill="black" stroke="black" points="711.95,-462.09 701.59,-458.49 706.63,-462.56 702.32,-462.94 702.32,-462.94 702.32,-462.94 706.63,-462.56 702.38,-467.45 711.95,-462.09"/>
-<text text-anchor="start" x="708.65" y="-473" font-family="Arial" font-size="10.00">FOREIGN KEY (entitycoverunits) REFERENCES ndb.variableunits(variableunitsid)</text>
+<path fill="none" stroke="black" d="M743.03,-493.31C819.3,-485.67 789.92,-390.9 805.77,-306.8 809.93,-284.74 821.61,-120.71 805.77,-104.8 742.1,-40.81 602.67,-13.53 602.67,-103.8"/>
+<polygon fill="black" stroke="black" points="742.98,-493.31 732.77,-489.29 737.65,-493.56 733.32,-493.77 733.32,-493.77 733.32,-493.77 737.65,-493.56 733.2,-498.28 742.98,-493.31"/>
+<text text-anchor="start" x="739.65" y="-503.8" font-family="Arial" font-size="10.00">FOREIGN KEY (entitycoverunits) REFERENCES ndb.variableunits(variableunitsid)</text>
+</g>
+<!-- ndb.speleothems -->
+<g id="node4" class="node">
+<title>ndb.speleothems</title>
+<polygon fill="#efefef" stroke="none" points="867.19,-289.6 867.19,-325.2 1126.16,-325.2 1126.16,-289.6 867.19,-289.6"/>
+<polygon fill="none" stroke="black" points="867.19,-289.6 867.19,-325.2 1126.16,-325.2 1126.16,-289.6 867.19,-289.6"/>
+<text text-anchor="start" x="874.19" y="-303" font-family="Arial Bold" font-size="18.00">ndb.speleothems</text>
+<text text-anchor="start" x="994.67" y="-303" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="1025.79" y="-303" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="867.19,-258.8 867.19,-289.6 1126.16,-289.6 1126.16,-258.8 867.19,-258.8"/>
+<text text-anchor="start" x="874.19" y="-271" font-family="Arial" font-size="14.00">entityid </text>
+<text text-anchor="start" x="922.44" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="867.19,-228 867.19,-258.8 1126.16,-258.8 1126.16,-228 867.19,-228"/>
+<text text-anchor="start" x="874.19" y="-240.2" font-family="Arial" font-size="14.00">entityname </text>
+<text text-anchor="start" x="946.56" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="867.19,-197.2 867.19,-228 1126.16,-228 1126.16,-197.2 867.19,-197.2"/>
+<text text-anchor="start" x="874.19" y="-209.4" font-family="Arial" font-size="14.00">entrancedistance </text>
+<text text-anchor="start" x="984.71" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<polygon fill="none" stroke="black" points="867.19,-166.4 867.19,-197.2 1126.16,-197.2 1126.16,-166.4 867.19,-166.4"/>
+<text text-anchor="start" x="874.19" y="-178.6" font-family="Arial" font-size="14.00">entrancedistanceunits </text>
+<text text-anchor="start" x="1014.28" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="867.19,-135.6 867.19,-166.4 1126.16,-166.4 1126.16,-135.6 867.19,-135.6"/>
+<text text-anchor="start" x="874.19" y="-147.8" font-family="Arial" font-size="14.00">monitoring </text>
+<text text-anchor="start" x="943.44" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<polygon fill="none" stroke="black" points="867.19,-104.8 867.19,-135.6 1126.16,-135.6 1126.16,-104.8 867.19,-104.8"/>
+<text text-anchor="start" x="874.19" y="-117" font-family="Arial" font-size="14.00">rockageid </text>
+<text text-anchor="start" x="938.78" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="867.19,-74 867.19,-104.8 1126.16,-104.8 1126.16,-74 867.19,-74"/>
+<text text-anchor="start" x="874.19" y="-86.2" font-family="Arial" font-size="14.00">siteid </text>
+<text text-anchor="start" x="910.76" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="867.19,-43.2 867.19,-74 1126.16,-74 1126.16,-43.2 867.19,-43.2"/>
+<text text-anchor="start" x="874.19" y="-55.4" font-family="Arial" font-size="14.00">speleothemtypeid </text>
+<text text-anchor="start" x="987.82" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+</g>
+<!-- ndb.entitycovers&#45;&gt;ndb.speleothems -->
+<g id="edge3" class="edge">
+<title>ndb.entitycovers:entityid&#45;&gt;ndb.speleothems:entityid</title>
+<path fill="none" stroke="black" d="M742.96,-462.37C787.75,-456.52 785.03,-411.06 814.67,-368.4 841.91,-329.22 818.47,-274.2 866.19,-274.2"/>
+<polygon fill="black" stroke="black" points="742.97,-462.37 732.71,-458.49 737.64,-462.69 733.32,-462.96 733.32,-462.96 733.32,-462.96 737.64,-462.69 733.26,-467.47 742.97,-462.37"/>
+<text text-anchor="start" x="739.65" y="-473" font-family="Arial" font-size="10.00">FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE</text>
 </g>
 </g>
 </svg>

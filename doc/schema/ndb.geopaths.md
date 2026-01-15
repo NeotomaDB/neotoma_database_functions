@@ -6,15 +6,15 @@
 
 | # | Name   | Type      | Default | Nullable | Children | Parents                                           | Comment |
 | - | ------ | --------- | ------- | -------- | -------- | ------------------------------------------------- | ------- |
-| 1 | geoout | integer[] |         | false    |          |                                                   |         |
-| 2 | geoin  | bigint    |         | false    |          | [ndb.geopoliticalunits](ndb.geopoliticalunits.md) |         |
+| 1 | geoin  | bigint    |         | false    |          | [ndb.geopoliticalunits](ndb.geopoliticalunits.md) |         |
+| 2 | geoout | integer[] |         | false    |          |                                                   |         |
 
 ## Constraints
 
 | # | Name                | Type        | Definition                                                           |
 | - | ------------------- | ----------- | -------------------------------------------------------------------- |
-| 1 | geopaths_pkey       | PRIMARY KEY | PRIMARY KEY (geoout, geoin)                                          |
-| 2 | geopaths_geoin_fkey | FOREIGN KEY | FOREIGN KEY (geoin) REFERENCES ndb.geopoliticalunits(geopoliticalid) |
+| 1 | geopaths_geoin_fkey | FOREIGN KEY | FOREIGN KEY (geoin) REFERENCES ndb.geopoliticalunits(geopoliticalid) |
+| 2 | geopaths_pkey       | PRIMARY KEY | PRIMARY KEY (geoout, geoin)                                          |
 
 ## Indexes
 

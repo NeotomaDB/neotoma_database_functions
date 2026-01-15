@@ -6,8 +6,8 @@
 
 | # | Name                            | Type        | Default                                                               | Nullable | Children                                        | Parents                                 | Comment |
 | - | ------------------------------- | ----------- | --------------------------------------------------------------------- | -------- | ----------------------------------------------- | --------------------------------------- | ------- |
-| 1 | speleothemdriptypeid            | integer     | nextval('ndb.speleothemdriptypes_speleothemdriptypeid_seq'::regclass) | false    | [ndb.entitydripheight](ndb.entitydripheight.md) |                                         |         |
-| 2 | speleothemdriptype              | varchar(50) |                                                                       | true     |                                                 |                                         |         |
+| 1 | speleothemdriptype              | varchar(50) |                                                                       | true     |                                                 |                                         |         |
+| 2 | speleothemdriptypeid            | integer     | nextval('ndb.speleothemdriptypes_speleothemdriptypeid_seq'::regclass) | false    | [ndb.entitydripheight](ndb.entitydripheight.md) |                                         |         |
 | 3 | speleothemdriptypenotes         | text        |                                                                       | true     |                                                 |                                         |         |
 | 4 | speleothemdriptypepublicationid | integer     |                                                                       | true     |                                                 | [ndb.publications](ndb.publications.md) |         |
 
@@ -15,8 +15,8 @@
 
 | # | Name                                                     | Type        | Definition                                                                               |
 | - | -------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------- |
-| 1 | speleothemdriptypes_speleothemdriptypepublicationid_fkey | FOREIGN KEY | FOREIGN KEY (speleothemdriptypepublicationid) REFERENCES ndb.publications(publicationid) |
-| 2 | speleothemdriptypes_pkey                                 | PRIMARY KEY | PRIMARY KEY (speleothemdriptypeid)                                                       |
+| 1 | speleothemdriptypes_pkey                                 | PRIMARY KEY | PRIMARY KEY (speleothemdriptypeid)                                                       |
+| 2 | speleothemdriptypes_speleothemdriptypepublicationid_fkey | FOREIGN KEY | FOREIGN KEY (speleothemdriptypepublicationid) REFERENCES ndb.publications(publicationid) |
 
 ## Indexes
 

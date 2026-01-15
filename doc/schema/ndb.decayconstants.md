@@ -6,17 +6,17 @@
 
 | # | Name            | Type    | Default                                                     | Nullable | Children                                  | Parents                                 | Comment |
 | - | --------------- | ------- | ----------------------------------------------------------- | -------- | ----------------------------------------- | --------------------------------------- | ------- |
-| 1 | decayconstantid | integer | nextval('ndb.decayconstants_decayconstantid_seq'::regclass) | false    | [ndb.uraniumseries](ndb.uraniumseries.md) |                                         |         |
-| 2 | decayconstant   | text    |                                                             | true     |                                           |                                         |         |
-| 3 | publicationid   | integer |                                                             | true     |                                           | [ndb.publications](ndb.publications.md) |         |
-| 4 | notes           | text    |                                                             | true     |                                           |                                         |         |
+| 1 | decayconstant   | text    |                                                             | true     |                                           |                                         |         |
+| 2 | decayconstantid | integer | nextval('ndb.decayconstants_decayconstantid_seq'::regclass) | false    | [ndb.uraniumseries](ndb.uraniumseries.md) |                                         |         |
+| 3 | notes           | text    |                                                             | true     |                                           |                                         |         |
+| 4 | publicationid   | integer |                                                             | true     |                                           | [ndb.publications](ndb.publications.md) |         |
 
 ## Constraints
 
 | # | Name                              | Type        | Definition                                                             |
 | - | --------------------------------- | ----------- | ---------------------------------------------------------------------- |
-| 1 | decayconstants_publicationid_fkey | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) |
-| 2 | decayconstants_pkey               | PRIMARY KEY | PRIMARY KEY (decayconstantid)                                          |
+| 1 | decayconstants_pkey               | PRIMARY KEY | PRIMARY KEY (decayconstantid)                                          |
+| 2 | decayconstants_publicationid_fkey | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) |
 
 ## Indexes
 

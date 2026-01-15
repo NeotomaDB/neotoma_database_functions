@@ -18,11 +18,11 @@
 <text text-anchor="start" x="311.59" y="-318.4" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="342.71" y="-318.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-274.2 46.2,-305 443.08,-305 443.08,-274.2 46.2,-274.2"/>
-<text text-anchor="start" x="53.2" y="-286.4" font-family="Arial" font-size="14.00">accuracydirectionid </text>
-<text text-anchor="start" x="176.92" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-286.4" font-family="Arial" font-size="14.00">accuracydirection </text>
+<text text-anchor="start" x="166.03" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
 <polygon fill="none" stroke="black" points="46.2,-243.4 46.2,-274.2 443.08,-274.2 443.08,-243.4 46.2,-243.4"/>
-<text text-anchor="start" x="53.2" y="-255.6" font-family="Arial" font-size="14.00">accuracydirection </text>
-<text text-anchor="start" x="166.03" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
+<text text-anchor="start" x="53.2" y="-255.6" font-family="Arial" font-size="14.00">accuracydirectionid </text>
+<text text-anchor="start" x="176.92" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-212.6 46.2,-243.4 443.08,-243.4 443.08,-212.6 46.2,-212.6"/>
 <text text-anchor="start" x="53.2" y="-224.8" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="150.48" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -34,156 +34,156 @@
 <!-- ndb.chroncontrolranks -->
 <g id="node2" class="node">
 <title>ndb.chroncontrolranks</title>
-<polygon fill="#efefef" stroke="none" points="997.74,-878.8 997.74,-914.4 1317.54,-914.4 1317.54,-878.8 997.74,-878.8"/>
-<polygon fill="none" stroke="black" points="997.74,-878.8 997.74,-914.4 1317.54,-914.4 1317.54,-878.8 997.74,-878.8"/>
-<text text-anchor="start" x="1014.17" y="-892.2" font-family="Arial Bold" font-size="18.00">ndb.chroncontrolranks</text>
-<text text-anchor="start" x="1176.62" y="-892.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="1207.74" y="-892.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="997.74,-848 997.74,-878.8 1317.54,-878.8 1317.54,-848 997.74,-848"/>
-<text text-anchor="start" x="1004.74" y="-860.2" font-family="Arial" font-size="14.00">chroncontrolrankid </text>
-<text text-anchor="start" x="1123.8" y="-860.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="997.74,-817.2 997.74,-848 1317.54,-848 1317.54,-817.2 997.74,-817.2"/>
-<text text-anchor="start" x="1004.74" y="-829.4" font-family="Arial" font-size="14.00">chroncontrolid </text>
-<text text-anchor="start" x="1096.57" y="-829.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="997.74,-786.4 997.74,-817.2 1317.54,-817.2 1317.54,-786.4 997.74,-786.4"/>
-<text text-anchor="start" x="1004.74" y="-798.6" font-family="Arial" font-size="14.00">accuracyrankid </text>
-<text text-anchor="start" x="1102.78" y="-798.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="997.74,-755.6 997.74,-786.4 1317.54,-786.4 1317.54,-755.6 997.74,-755.6"/>
-<text text-anchor="start" x="1004.74" y="-767.8" font-family="Arial" font-size="14.00">accuracydirectionid </text>
-<text text-anchor="start" x="1128.46" y="-767.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="997.74,-724.8 997.74,-755.6 1317.54,-755.6 1317.54,-724.8 997.74,-724.8"/>
-<text text-anchor="start" x="1004.74" y="-737" font-family="Arial" font-size="14.00">accuracydistributionid </text>
-<text text-anchor="start" x="1143.25" y="-737" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="997.74,-694 997.74,-724.8 1317.54,-724.8 1317.54,-694 997.74,-694"/>
-<text text-anchor="start" x="1004.74" y="-706.2" font-family="Arial" font-size="14.00">precisionrankid </text>
-<text text-anchor="start" x="1102.79" y="-706.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="997.74,-663.2 997.74,-694 1317.54,-694 1317.54,-663.2 997.74,-663.2"/>
-<text text-anchor="start" x="1004.74" y="-675.4" font-family="Arial" font-size="14.00">outlier </text>
-<text text-anchor="start" x="1046.76" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
-<polygon fill="none" stroke="black" points="997.74,-632.4 997.74,-663.2 1317.54,-663.2 1317.54,-632.4 997.74,-632.4"/>
-<text text-anchor="start" x="1004.74" y="-644.6" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1102.02" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="997.74,-601.6 997.74,-632.4 1317.54,-632.4 1317.54,-601.6 997.74,-601.6"/>
-<text text-anchor="start" x="1004.74" y="-613.8" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1108.24" y="-613.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="1093.74,-878.8 1093.74,-914.4 1413.54,-914.4 1413.54,-878.8 1093.74,-878.8"/>
+<polygon fill="none" stroke="black" points="1093.74,-878.8 1093.74,-914.4 1413.54,-914.4 1413.54,-878.8 1093.74,-878.8"/>
+<text text-anchor="start" x="1110.17" y="-892.2" font-family="Arial Bold" font-size="18.00">ndb.chroncontrolranks</text>
+<text text-anchor="start" x="1272.62" y="-892.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="1303.74" y="-892.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="1093.74,-848 1093.74,-878.8 1413.54,-878.8 1413.54,-848 1093.74,-848"/>
+<text text-anchor="start" x="1100.74" y="-860.2" font-family="Arial" font-size="14.00">accuracydirectionid </text>
+<text text-anchor="start" x="1224.46" y="-860.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1093.74,-817.2 1093.74,-848 1413.54,-848 1413.54,-817.2 1093.74,-817.2"/>
+<text text-anchor="start" x="1100.74" y="-829.4" font-family="Arial" font-size="14.00">accuracydistributionid </text>
+<text text-anchor="start" x="1239.25" y="-829.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1093.74,-786.4 1093.74,-817.2 1413.54,-817.2 1413.54,-786.4 1093.74,-786.4"/>
+<text text-anchor="start" x="1100.74" y="-798.6" font-family="Arial" font-size="14.00">accuracyrankid </text>
+<text text-anchor="start" x="1198.78" y="-798.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1093.74,-755.6 1093.74,-786.4 1413.54,-786.4 1413.54,-755.6 1093.74,-755.6"/>
+<text text-anchor="start" x="1100.74" y="-767.8" font-family="Arial" font-size="14.00">chroncontrolid </text>
+<text text-anchor="start" x="1192.57" y="-767.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1093.74,-724.8 1093.74,-755.6 1413.54,-755.6 1413.54,-724.8 1093.74,-724.8"/>
+<text text-anchor="start" x="1100.74" y="-737" font-family="Arial" font-size="14.00">chroncontrolrankid </text>
+<text text-anchor="start" x="1219.8" y="-737" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1093.74,-694 1093.74,-724.8 1413.54,-724.8 1413.54,-694 1093.74,-694"/>
+<text text-anchor="start" x="1100.74" y="-706.2" font-family="Arial" font-size="14.00">outlier </text>
+<text text-anchor="start" x="1142.76" y="-706.2" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<polygon fill="none" stroke="black" points="1093.74,-663.2 1093.74,-694 1413.54,-694 1413.54,-663.2 1093.74,-663.2"/>
+<text text-anchor="start" x="1100.74" y="-675.4" font-family="Arial" font-size="14.00">precisionrankid </text>
+<text text-anchor="start" x="1198.79" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1093.74,-632.4 1093.74,-663.2 1413.54,-663.2 1413.54,-632.4 1093.74,-632.4"/>
+<text text-anchor="start" x="1100.74" y="-644.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1198.02" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1093.74,-601.6 1093.74,-632.4 1413.54,-632.4 1413.54,-601.6 1093.74,-601.6"/>
+<text text-anchor="start" x="1100.74" y="-613.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1204.24" y="-613.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 </g>
 <!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrolaccuracydirections -->
 <g id="edge1" class="edge">
 <title>ndb.chroncontrolranks:accuracydirectionid&#45;&gt;ndb.chroncontrolaccuracydirections:accuracydirectionid</title>
-<path fill="none" stroke="black" d="M986.32,-770.97C746.56,-769.43 649.92,-713.73 498.64,-522.4 432.73,-439.04 550.35,-289.6 444.08,-289.6"/>
-<polygon fill="black" stroke="black" points="986.41,-770.97 996.39,-775.5 991.74,-770.98 996.07,-771 996.07,-771 996.07,-771 991.74,-770.98 996.42,-766.5 986.41,-770.97"/>
-<text text-anchor="start" x="280.08" y="-781" font-family="Arial" font-size="10.00">FOREIGN KEY (accuracydirectionid) REFERENCES ndb.chroncontrolaccuracydirections(accuracydirectionid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1082.56,-863.36C785.79,-861.26 675.24,-766.19 498.64,-522.4 428.45,-425.51 563.72,-258.8 444.08,-258.8"/>
+<polygon fill="black" stroke="black" points="1082.41,-863.36 1092.39,-867.9 1087.74,-863.38 1092.07,-863.4 1092.07,-863.4 1092.07,-863.4 1087.74,-863.38 1092.42,-858.9 1082.41,-863.36"/>
+<text text-anchor="start" x="376.08" y="-873.4" font-family="Arial" font-size="10.00">FOREIGN KEY (accuracydirectionid) REFERENCES ndb.chroncontrolaccuracydirections(accuracydirectionid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
-<!-- ndb.chroncontrols -->
+<!-- ndb.chroncontrolaccuracydistributions -->
 <g id="node3" class="node">
-<title>ndb.chroncontrols</title>
-<polygon fill="#efefef" stroke="none" points="550.74,-443.6 550.74,-479.2 870.54,-479.2 870.54,-443.6 550.74,-443.6"/>
-<polygon fill="none" stroke="black" points="550.74,-443.6 550.74,-479.2 870.54,-479.2 870.54,-443.6 550.74,-443.6"/>
-<text text-anchor="start" x="583.16" y="-457" font-family="Arial Bold" font-size="18.00">ndb.chroncontrols</text>
-<text text-anchor="start" x="713.63" y="-457" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="744.75" y="-457" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="550.74,-412.8 550.74,-443.6 870.54,-443.6 870.54,-412.8 550.74,-412.8"/>
-<text text-anchor="start" x="557.74" y="-425" font-family="Arial" font-size="14.00">chroncontrolid </text>
-<text text-anchor="start" x="649.57" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="550.74,-382 550.74,-412.8 870.54,-412.8 870.54,-382 550.74,-382"/>
-<text text-anchor="start" x="557.74" y="-394.2" font-family="Arial" font-size="14.00">chronologyid </text>
-<text text-anchor="start" x="641.02" y="-394.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="550.74,-351.2 550.74,-382 870.54,-382 870.54,-351.2 550.74,-351.2"/>
-<text text-anchor="start" x="557.74" y="-363.4" font-family="Arial" font-size="14.00">chroncontroltypeid </text>
-<text text-anchor="start" x="676.03" y="-363.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="550.74,-320.4 550.74,-351.2 870.54,-351.2 870.54,-320.4 550.74,-320.4"/>
-<text text-anchor="start" x="557.74" y="-332.6" font-family="Arial" font-size="14.00">depth </text>
-<text text-anchor="start" x="596.66" y="-332.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
-<polygon fill="none" stroke="black" points="550.74,-289.6 550.74,-320.4 870.54,-320.4 870.54,-289.6 550.74,-289.6"/>
-<text text-anchor="start" x="557.74" y="-301.8" font-family="Arial" font-size="14.00">thickness </text>
-<text text-anchor="start" x="619.99" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
-<polygon fill="none" stroke="black" points="550.74,-258.8 550.74,-289.6 870.54,-289.6 870.54,-258.8 550.74,-258.8"/>
-<text text-anchor="start" x="557.74" y="-271" font-family="Arial" font-size="14.00">age </text>
-<text text-anchor="start" x="584.99" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
-<polygon fill="none" stroke="black" points="550.74,-228 550.74,-258.8 870.54,-258.8 870.54,-228 550.74,-228"/>
-<text text-anchor="start" x="557.74" y="-240.2" font-family="Arial" font-size="14.00">agelimityounger </text>
-<text text-anchor="start" x="660.46" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
-<polygon fill="none" stroke="black" points="550.74,-197.2 550.74,-228 870.54,-228 870.54,-197.2 550.74,-197.2"/>
-<text text-anchor="start" x="557.74" y="-209.4" font-family="Arial" font-size="14.00">agelimitolder </text>
-<text text-anchor="start" x="641" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
-<polygon fill="none" stroke="black" points="550.74,-166.4 550.74,-197.2 870.54,-197.2 870.54,-166.4 550.74,-166.4"/>
-<text text-anchor="start" x="557.74" y="-178.6" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="595.88" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="550.74,-135.6 550.74,-166.4 870.54,-166.4 870.54,-135.6 550.74,-135.6"/>
-<text text-anchor="start" x="557.74" y="-147.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="655.02" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="550.74,-104.8 550.74,-135.6 870.54,-135.6 870.54,-104.8 550.74,-104.8"/>
-<text text-anchor="start" x="557.74" y="-117" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="661.24" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="550.74,-74 550.74,-104.8 870.54,-104.8 870.54,-74 550.74,-74"/>
-<text text-anchor="start" x="557.74" y="-86.2" font-family="Arial" font-size="14.00">analysisunitid </text>
-<text text-anchor="start" x="645.68" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="550.74,-43.2 550.74,-74 870.54,-74 870.54,-43.2 550.74,-43.2"/>
-<text text-anchor="start" x="557.74" y="-55.4" font-family="Arial" font-size="14.00">agetypeid </text>
-<text text-anchor="start" x="622.35" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<title>ndb.chroncontrolaccuracydistributions</title>
+<polygon fill="#efefef" stroke="none" points="550.69,-305 550.69,-340.6 966.59,-340.6 966.59,-305 550.69,-305"/>
+<polygon fill="none" stroke="black" points="550.69,-305 550.69,-340.6 966.59,-340.6 966.59,-305 550.69,-305"/>
+<text text-anchor="start" x="557.69" y="-318.4" font-family="Arial Bold" font-size="18.00">ndb.chroncontrolaccuracydistributions</text>
+<text text-anchor="start" x="835.1" y="-318.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="866.22" y="-318.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="550.69,-274.2 550.69,-305 966.59,-305 966.59,-274.2 550.69,-274.2"/>
+<text text-anchor="start" x="557.69" y="-286.4" font-family="Arial" font-size="14.00">accuracydistribution </text>
+<text text-anchor="start" x="685.3" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
+<polygon fill="none" stroke="black" points="550.69,-243.4 550.69,-274.2 966.59,-274.2 966.59,-243.4 550.69,-243.4"/>
+<text text-anchor="start" x="557.69" y="-255.6" font-family="Arial" font-size="14.00">accuracydistributionid </text>
+<text text-anchor="start" x="696.2" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="550.69,-212.6 550.69,-243.4 966.59,-243.4 966.59,-212.6 550.69,-212.6"/>
+<text text-anchor="start" x="557.69" y="-224.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="654.97" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="550.69,-181.8 550.69,-212.6 966.59,-212.6 966.59,-181.8 550.69,-181.8"/>
+<text text-anchor="start" x="557.69" y="-194" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="661.19" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 </g>
-<!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrols -->
+<!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrolaccuracydistributions -->
 <g id="edge2" class="edge">
-<title>ndb.chroncontrolranks:chroncontrolid&#45;&gt;ndb.chroncontrols:chroncontrolid</title>
-<path fill="none" stroke="black" d="M987.83,-827.78C945.62,-782.15 915.54,-428.2 871.54,-428.2"/>
-<polygon fill="black" stroke="black" points="987.65,-827.68 994.3,-836.4 992.34,-830.22 996.15,-832.28 996.15,-832.28 996.15,-832.28 992.34,-830.22 998.59,-828.48 987.65,-827.68"/>
-<text text-anchor="start" x="403.46" y="-842.6" font-family="Arial" font-size="10.00">FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<title>ndb.chroncontrolranks:accuracydistributionid&#45;&gt;ndb.chroncontrolaccuracydistributions:accuracydistributionid</title>
+<path fill="none" stroke="black" d="M1082.4,-832.27C955.87,-823.9 1047.83,-657.43 1018.64,-522.4 1006.03,-464.08 1027.26,-258.8 967.59,-258.8"/>
+<polygon fill="black" stroke="black" points="1082.41,-832.27 1092.26,-837.09 1087.74,-832.44 1092.07,-832.58 1092.07,-832.58 1092.07,-832.58 1087.74,-832.44 1092.55,-828.09 1082.41,-832.27"/>
+<text text-anchor="start" x="344.39" y="-842.6" font-family="Arial" font-size="10.00">FOREIGN KEY (accuracydistributionid) REFERENCES ndb.chroncontrolaccuracydistributions(accuracydistributionid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.chroncontrolaccuracyranks -->
 <g id="node4" class="node">
 <title>ndb.chroncontrolaccuracyranks</title>
-<polygon fill="#efefef" stroke="none" points="975.2,-305 975.2,-340.6 1340.08,-340.6 1340.08,-305 975.2,-305"/>
-<polygon fill="none" stroke="black" points="975.2,-305 975.2,-340.6 1340.08,-340.6 1340.08,-305 975.2,-305"/>
-<text text-anchor="start" x="982.2" y="-318.4" font-family="Arial Bold" font-size="18.00">ndb.chroncontrolaccuracyranks</text>
-<text text-anchor="start" x="1208.59" y="-318.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="1239.71" y="-318.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="975.2,-274.2 975.2,-305 1340.08,-305 1340.08,-274.2 975.2,-274.2"/>
-<text text-anchor="start" x="982.2" y="-286.4" font-family="Arial" font-size="14.00">accuracyrankid </text>
-<text text-anchor="start" x="1080.24" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="975.2,-243.4 975.2,-274.2 1340.08,-274.2 1340.08,-243.4 975.2,-243.4"/>
-<text text-anchor="start" x="982.2" y="-255.6" font-family="Arial" font-size="14.00">accuracyrank </text>
-<text text-anchor="start" x="1069.34" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
-<polygon fill="none" stroke="black" points="975.2,-212.6 975.2,-243.4 1340.08,-243.4 1340.08,-212.6 975.2,-212.6"/>
-<text text-anchor="start" x="982.2" y="-224.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1079.48" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="975.2,-181.8 975.2,-212.6 1340.08,-212.6 1340.08,-181.8 975.2,-181.8"/>
-<text text-anchor="start" x="982.2" y="-194" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1085.7" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="1071.2,-305 1071.2,-340.6 1436.08,-340.6 1436.08,-305 1071.2,-305"/>
+<polygon fill="none" stroke="black" points="1071.2,-305 1071.2,-340.6 1436.08,-340.6 1436.08,-305 1071.2,-305"/>
+<text text-anchor="start" x="1078.2" y="-318.4" font-family="Arial Bold" font-size="18.00">ndb.chroncontrolaccuracyranks</text>
+<text text-anchor="start" x="1304.59" y="-318.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="1335.71" y="-318.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="1071.2,-274.2 1071.2,-305 1436.08,-305 1436.08,-274.2 1071.2,-274.2"/>
+<text text-anchor="start" x="1078.2" y="-286.4" font-family="Arial" font-size="14.00">accuracyrank </text>
+<text text-anchor="start" x="1165.34" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
+<polygon fill="none" stroke="black" points="1071.2,-243.4 1071.2,-274.2 1436.08,-274.2 1436.08,-243.4 1071.2,-243.4"/>
+<text text-anchor="start" x="1078.2" y="-255.6" font-family="Arial" font-size="14.00">accuracyrankid </text>
+<text text-anchor="start" x="1176.24" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1071.2,-212.6 1071.2,-243.4 1436.08,-243.4 1436.08,-212.6 1071.2,-212.6"/>
+<text text-anchor="start" x="1078.2" y="-224.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1175.48" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1071.2,-181.8 1071.2,-212.6 1436.08,-212.6 1436.08,-181.8 1071.2,-181.8"/>
+<text text-anchor="start" x="1078.2" y="-194" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1181.7" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 </g>
 <!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrolaccuracyranks -->
 <g id="edge3" class="edge">
 <title>ndb.chroncontrolranks:accuracyrankid&#45;&gt;ndb.chroncontrolaccuracyranks:accuracyrankid</title>
-<path fill="none" stroke="black" d="M1327.57,-797.37C1377.73,-747.31 1394.93,-289.6 1341.08,-289.6"/>
-<polygon fill="black" stroke="black" points="1327.82,-797.25 1316.86,-797.61 1323.03,-799.6 1319.14,-801.51 1319.14,-801.51 1319.14,-801.51 1323.03,-799.6 1320.82,-805.69 1327.82,-797.25"/>
-<text text-anchor="start" x="1325.54" y="-811.8" font-family="Arial" font-size="10.00">FOREIGN KEY (accuracyrankid) REFERENCES ndb.chroncontrolaccuracyranks(accuracyrankid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1423.77,-797.43C1477.07,-746.04 1494.28,-258.8 1437.08,-258.8"/>
+<polygon fill="black" stroke="black" points="1423.88,-797.38 1412.92,-797.59 1419.06,-799.66 1415.14,-801.51 1415.14,-801.51 1415.14,-801.51 1419.06,-799.66 1416.77,-805.72 1423.88,-797.38"/>
+<text text-anchor="start" x="1421.54" y="-811.8" font-family="Arial" font-size="10.00">FOREIGN KEY (accuracyrankid) REFERENCES ndb.chroncontrolaccuracyranks(accuracyrankid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
-<!-- ndb.chroncontrolaccuracydistributions -->
+<!-- ndb.chroncontrols -->
 <g id="node5" class="node">
-<title>ndb.chroncontrolaccuracydistributions</title>
-<polygon fill="#efefef" stroke="none" points="1444.69,-305 1444.69,-340.6 1860.59,-340.6 1860.59,-305 1444.69,-305"/>
-<polygon fill="none" stroke="black" points="1444.69,-305 1444.69,-340.6 1860.59,-340.6 1860.59,-305 1444.69,-305"/>
-<text text-anchor="start" x="1451.69" y="-318.4" font-family="Arial Bold" font-size="18.00">ndb.chroncontrolaccuracydistributions</text>
-<text text-anchor="start" x="1729.1" y="-318.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="1760.22" y="-318.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="1444.69,-274.2 1444.69,-305 1860.59,-305 1860.59,-274.2 1444.69,-274.2"/>
-<text text-anchor="start" x="1451.69" y="-286.4" font-family="Arial" font-size="14.00">accuracydistributionid </text>
-<text text-anchor="start" x="1590.2" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1444.69,-243.4 1444.69,-274.2 1860.59,-274.2 1860.59,-243.4 1444.69,-243.4"/>
-<text text-anchor="start" x="1451.69" y="-255.6" font-family="Arial" font-size="14.00">accuracydistribution </text>
-<text text-anchor="start" x="1579.3" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
-<polygon fill="none" stroke="black" points="1444.69,-212.6 1444.69,-243.4 1860.59,-243.4 1860.59,-212.6 1444.69,-212.6"/>
-<text text-anchor="start" x="1451.69" y="-224.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1548.97" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="1444.69,-181.8 1444.69,-212.6 1860.59,-212.6 1860.59,-181.8 1444.69,-181.8"/>
-<text text-anchor="start" x="1451.69" y="-194" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1555.19" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<title>ndb.chroncontrols</title>
+<polygon fill="#efefef" stroke="none" points="1540.74,-443.6 1540.74,-479.2 1860.54,-479.2 1860.54,-443.6 1540.74,-443.6"/>
+<polygon fill="none" stroke="black" points="1540.74,-443.6 1540.74,-479.2 1860.54,-479.2 1860.54,-443.6 1540.74,-443.6"/>
+<text text-anchor="start" x="1573.16" y="-457" font-family="Arial Bold" font-size="18.00">ndb.chroncontrols</text>
+<text text-anchor="start" x="1703.63" y="-457" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="1734.75" y="-457" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="1540.74,-412.8 1540.74,-443.6 1860.54,-443.6 1860.54,-412.8 1540.74,-412.8"/>
+<text text-anchor="start" x="1547.74" y="-425" font-family="Arial" font-size="14.00">age </text>
+<text text-anchor="start" x="1574.99" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<polygon fill="none" stroke="black" points="1540.74,-382 1540.74,-412.8 1860.54,-412.8 1860.54,-382 1540.74,-382"/>
+<text text-anchor="start" x="1547.74" y="-394.2" font-family="Arial" font-size="14.00">agelimitolder </text>
+<text text-anchor="start" x="1631" y="-394.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<polygon fill="none" stroke="black" points="1540.74,-351.2 1540.74,-382 1860.54,-382 1860.54,-351.2 1540.74,-351.2"/>
+<text text-anchor="start" x="1547.74" y="-363.4" font-family="Arial" font-size="14.00">agelimityounger </text>
+<text text-anchor="start" x="1650.46" y="-363.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<polygon fill="none" stroke="black" points="1540.74,-320.4 1540.74,-351.2 1860.54,-351.2 1860.54,-320.4 1540.74,-320.4"/>
+<text text-anchor="start" x="1547.74" y="-332.6" font-family="Arial" font-size="14.00">agetypeid </text>
+<text text-anchor="start" x="1612.35" y="-332.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1540.74,-289.6 1540.74,-320.4 1860.54,-320.4 1860.54,-289.6 1540.74,-289.6"/>
+<text text-anchor="start" x="1547.74" y="-301.8" font-family="Arial" font-size="14.00">analysisunitid </text>
+<text text-anchor="start" x="1635.68" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1540.74,-258.8 1540.74,-289.6 1860.54,-289.6 1860.54,-258.8 1540.74,-258.8"/>
+<text text-anchor="start" x="1547.74" y="-271" font-family="Arial" font-size="14.00">chroncontrolid </text>
+<text text-anchor="start" x="1639.57" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1540.74,-228 1540.74,-258.8 1860.54,-258.8 1860.54,-228 1540.74,-228"/>
+<text text-anchor="start" x="1547.74" y="-240.2" font-family="Arial" font-size="14.00">chroncontroltypeid </text>
+<text text-anchor="start" x="1666.03" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1540.74,-197.2 1540.74,-228 1860.54,-228 1860.54,-197.2 1540.74,-197.2"/>
+<text text-anchor="start" x="1547.74" y="-209.4" font-family="Arial" font-size="14.00">chronologyid </text>
+<text text-anchor="start" x="1631.02" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1540.74,-166.4 1540.74,-197.2 1860.54,-197.2 1860.54,-166.4 1540.74,-166.4"/>
+<text text-anchor="start" x="1547.74" y="-178.6" font-family="Arial" font-size="14.00">depth </text>
+<text text-anchor="start" x="1586.66" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<polygon fill="none" stroke="black" points="1540.74,-135.6 1540.74,-166.4 1860.54,-166.4 1860.54,-135.6 1540.74,-135.6"/>
+<text text-anchor="start" x="1547.74" y="-147.8" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="1585.88" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="1540.74,-104.8 1540.74,-135.6 1860.54,-135.6 1860.54,-104.8 1540.74,-104.8"/>
+<text text-anchor="start" x="1547.74" y="-117" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1645.02" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1540.74,-74 1540.74,-104.8 1860.54,-104.8 1860.54,-74 1540.74,-74"/>
+<text text-anchor="start" x="1547.74" y="-86.2" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1651.24" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1540.74,-43.2 1540.74,-74 1860.54,-74 1860.54,-43.2 1540.74,-43.2"/>
+<text text-anchor="start" x="1547.74" y="-55.4" font-family="Arial" font-size="14.00">thickness </text>
+<text text-anchor="start" x="1609.99" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 </g>
-<!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrolaccuracydistributions -->
+<!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrols -->
 <g id="edge4" class="edge">
-<title>ndb.chroncontrolranks:accuracydistributionid&#45;&gt;ndb.chroncontrolaccuracydistributions:accuracydistributionid</title>
-<path fill="none" stroke="black" d="M1328.75,-739.76C1416.98,-731.84 1366.14,-617.43 1392.64,-522.4 1406.86,-471.38 1390.72,-289.6 1443.69,-289.6"/>
-<polygon fill="black" stroke="black" points="1328.86,-739.76 1318.68,-735.69 1323.53,-739.99 1319.21,-740.17 1319.21,-740.17 1319.21,-740.17 1323.53,-739.99 1319.07,-744.68 1328.86,-739.76"/>
-<text text-anchor="start" x="1325.54" y="-750.2" font-family="Arial" font-size="10.00">FOREIGN KEY (accuracydistributionid) REFERENCES ndb.chroncontrolaccuracydistributions(accuracydistributionid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<title>ndb.chroncontrolranks:chroncontrolid&#45;&gt;ndb.chroncontrols:chroncontrolid</title>
+<path fill="none" stroke="black" d="M1424.82,-770.6C1525.59,-762.48 1461.4,-630.72 1488.64,-522.4 1502.37,-467.79 1483.43,-274.2 1539.74,-274.2"/>
+<polygon fill="black" stroke="black" points="1424.87,-770.6 1414.7,-766.49 1419.54,-770.81 1415.21,-770.97 1415.21,-770.97 1415.21,-770.97 1419.54,-770.81 1415.05,-775.48 1424.87,-770.6"/>
+<text text-anchor="start" x="1421.54" y="-781" font-family="Arial" font-size="10.00">FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.chroncontrolprecisionranks -->
 <g id="node6" class="node">
@@ -194,11 +194,11 @@
 <text text-anchor="start" x="2200.61" y="-318.4" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="2231.73" y="-318.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="1965.18,-274.2 1965.18,-305 2332.1,-305 2332.1,-274.2 1965.18,-274.2"/>
-<text text-anchor="start" x="1972.18" y="-286.4" font-family="Arial" font-size="14.00">precisionrankid </text>
-<text text-anchor="start" x="2070.22" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1972.18" y="-286.4" font-family="Arial" font-size="14.00">precisionrank </text>
+<text text-anchor="start" x="2059.33" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
 <polygon fill="none" stroke="black" points="1965.18,-243.4 1965.18,-274.2 2332.1,-274.2 2332.1,-243.4 1965.18,-243.4"/>
-<text text-anchor="start" x="1972.18" y="-255.6" font-family="Arial" font-size="14.00">precisionrank </text>
-<text text-anchor="start" x="2059.33" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
+<text text-anchor="start" x="1972.18" y="-255.6" font-family="Arial" font-size="14.00">precisionrankid </text>
+<text text-anchor="start" x="2070.22" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1965.18,-212.6 1965.18,-243.4 2332.1,-243.4 2332.1,-212.6 1965.18,-212.6"/>
 <text text-anchor="start" x="1972.18" y="-224.8" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="2069.46" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -209,9 +209,9 @@
 <!-- ndb.chroncontrolranks&#45;&gt;ndb.chroncontrolprecisionranks -->
 <g id="edge5" class="edge">
 <title>ndb.chroncontrolranks:precisionrankid&#45;&gt;ndb.chroncontrolprecisionranks:precisionrankid</title>
-<path fill="none" stroke="black" d="M1328.63,-709.26C1473.78,-705.41 1821.31,-622.04 1912.64,-522.4 1984.24,-444.28 1858.2,-289.6 1964.18,-289.6"/>
-<polygon fill="black" stroke="black" points="1328.87,-709.26 1318.81,-704.9 1323.54,-709.33 1319.21,-709.39 1319.21,-709.39 1319.21,-709.39 1323.54,-709.33 1318.94,-713.89 1328.87,-709.26"/>
-<text text-anchor="start" x="1325.54" y="-719.4" font-family="Arial" font-size="10.00">FOREIGN KEY (precisionrankid) REFERENCES ndb.chroncontrolprecisionranks(precisionrankid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1424.84,-678.43C1547.62,-674.64 1837.47,-606.4 1912.64,-522.4 1992.25,-433.45 1844.8,-258.8 1964.18,-258.8"/>
+<polygon fill="black" stroke="black" points="1424.87,-678.43 1414.8,-674.1 1419.54,-678.52 1415.21,-678.59 1415.21,-678.59 1415.21,-678.59 1419.54,-678.52 1414.95,-683.09 1424.87,-678.43"/>
+<text text-anchor="start" x="1421.54" y="-688.6" font-family="Arial" font-size="10.00">FOREIGN KEY (precisionrankid) REFERENCES ndb.chroncontrolprecisionranks(precisionrankid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 </g>
 </svg>

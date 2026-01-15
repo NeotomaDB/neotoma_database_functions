@@ -6,11 +6,18 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                         | Comment                                                       |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------- | ------------------------------------------------------------- |
-| 1 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md) | Dataset identification number. Field links to Dataset table.  |
-| 2 | contactid       | integer                        |                              | false    |          | [ndb.contacts](ndb.contacts.md) | Contact identification number. Field links to Contacts table. |
+| 1 | contactid       | integer                        |                              | false    |          | [ndb.contacts](ndb.contacts.md) | Contact identification number. Field links to Contacts table. |
+| 2 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md) | Dataset identification number. Field links to Dataset table.  |
 | 3 | piorder         | integer                        |                              | true     |          |                                 | Order in which PIs are listed.                                |
 | 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                 |                                                               |
 | 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                 |                                                               |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Dataset related tables](viewpoint-3.md) | Tables that help define and structure datasets.                  |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 
@@ -21,10 +28,12 @@
 
 ## Indexes
 
-| # | Name                    | Definition                                                                                            |
-| - | ----------------------- | ----------------------------------------------------------------------------------------------------- |
-| 1 | ix_contactid_datasetpis | CREATE INDEX ix_contactid_datasetpis ON ndb.datasetpis USING btree (contactid) WITH (fillfactor='10') |
-| 2 | ix_datasetid_datasetpis | CREATE INDEX ix_datasetid_datasetpis ON ndb.datasetpis USING btree (datasetid) WITH (fillfactor='10') |
+| # | Name                               | Definition                                                                                                    |
+| - | ---------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| 1 | idx_datasetpis_datasetid           | CREATE INDEX idx_datasetpis_datasetid ON ndb.datasetpis USING btree (datasetid)                               |
+| 2 | idx_datasetpis_datasetid_contactid | CREATE INDEX idx_datasetpis_datasetid_contactid ON ndb.datasetpis USING btree (datasetid) INCLUDE (contactid) |
+| 3 | ix_contactid_datasetpis            | CREATE INDEX ix_contactid_datasetpis ON ndb.datasetpis USING btree (contactid) WITH (fillfactor='10')         |
+| 4 | ix_datasetid_datasetpis            | CREATE INDEX ix_datasetid_datasetpis ON ndb.datasetpis USING btree (datasetid) WITH (fillfactor='10')         |
 
 ## Triggers
 

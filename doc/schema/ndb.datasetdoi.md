@@ -8,9 +8,15 @@
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------- | ------- |
 | 1 | datasetid       | integer                        |                              | false    |          |         |         |
 | 2 | doi             | varchar(50)                    |                              | false    |          |         |         |
-| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |         |         |
-| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |         |         |
-| 5 | published       | boolean                        | true                         | false    |          |         |         |
+| 3 | published       | boolean                        | true                         | false    |          |         |         |
+| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |         |         |
+| 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |         |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                      |
+| ---------------------------------------- | ----------------------------------------------- |
+| [Dataset related tables](viewpoint-3.md) | Tables that help define and structure datasets. |
 
 ## Constraints
 
@@ -20,9 +26,11 @@
 
 ## Indexes
 
-| # | Name            | Definition                                                                         |
-| - | --------------- | ---------------------------------------------------------------------------------- |
-| 1 | datasetdoi_pkey | CREATE UNIQUE INDEX datasetdoi_pkey ON ndb.datasetdoi USING btree (datasetid, doi) |
+| # | Name                         | Definition                                                                                        |
+| - | ---------------------------- | ------------------------------------------------------------------------------------------------- |
+| 1 | datasetdoi_pkey              | CREATE UNIQUE INDEX datasetdoi_pkey ON ndb.datasetdoi USING btree (datasetid, doi)                |
+| 2 | idx_datasetdoi_datasetid     | CREATE INDEX idx_datasetdoi_datasetid ON ndb.datasetdoi USING btree (datasetid)                   |
+| 3 | idx_datasetdoi_datasetid_doi | CREATE INDEX idx_datasetdoi_datasetid_doi ON ndb.datasetdoi USING btree (datasetid) INCLUDE (doi) |
 
 ## Triggers
 

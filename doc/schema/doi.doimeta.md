@@ -6,9 +6,9 @@
 
 | # | Name            | Type                     | Default | Nullable | Children | Parents | Comment |
 | - | --------------- | ------------------------ | ------- | -------- | -------- | ------- | ------- |
-| 1 | doi             | varchar                  |         | false    |          |         |         |
-| 2 | meta            | jsonb                    |         | true     |          |         |         |
-| 3 | datasetid       | integer                  |         | true     |          |         |         |
+| 1 | datasetid       | integer                  |         | true     |          |         |         |
+| 2 | doi             | varchar                  |         | false    |          |         |         |
+| 3 | meta            | jsonb                    |         | true     |          |         |         |
 | 4 | recdatecreated  | timestamp with time zone | now()   | false    |          |         |         |
 | 5 | recdatemodified | timestamp with time zone | now()   | false    |          |         |         |
 
@@ -22,8 +22,8 @@
 
 | # | Name            | Definition                                                                      |
 | - | --------------- | ------------------------------------------------------------------------------- |
-| 1 | doimeta_pkey    | CREATE UNIQUE INDEX doimeta_pkey ON doi.doimeta USING btree (doi)               |
-| 2 | doimeta_doi_idx | CREATE UNIQUE INDEX doimeta_doi_idx ON doi.doimeta USING btree (doi, datasetid) |
+| 1 | doimeta_doi_idx | CREATE UNIQUE INDEX doimeta_doi_idx ON doi.doimeta USING btree (doi, datasetid) |
+| 2 | doimeta_pkey    | CREATE UNIQUE INDEX doimeta_pkey ON doi.doimeta USING btree (doi)               |
 
 ## Triggers
 

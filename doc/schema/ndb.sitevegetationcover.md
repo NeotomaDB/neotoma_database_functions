@@ -7,9 +7,9 @@
 | # | Name                   | Type    | Default | Nullable | Children | Parents                                                 | Comment |
 | - | ---------------------- | ------- | ------- | -------- | -------- | ------------------------------------------------------- | ------- |
 | 1 | siteid                 | integer |         | true     |          | [ndb.sites](ndb.sites.md)                               |         |
-| 2 | vegetationcovertypeid  | integer |         | true     |          | [ndb.vegetationcovertypes](ndb.vegetationcovertypes.md) |         |
+| 2 | vegetationcovernotes   | text    |         | true     |          |                                                         |         |
 | 3 | vegetationcoverpercent | integer |         | true     |          |                                                         |         |
-| 4 | vegetationcovernotes   | text    |         | true     |          |                                                         |         |
+| 4 | vegetationcovertypeid  | integer |         | true     |          | [ndb.vegetationcovertypes](ndb.vegetationcovertypes.md) |         |
 
 ## Constraints
 

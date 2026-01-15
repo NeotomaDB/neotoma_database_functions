@@ -6,10 +6,10 @@
 
 | # | Name            | Type                           | Default                                             | Nullable | Children                          | Parents | Comment |
 | - | --------------- | ------------------------------ | --------------------------------------------------- | -------- | --------------------------------- | ------- | ------- |
-| 1 | sexid           | integer                        | nextval('ndb.seq_specimensextypes_sexid'::regclass) | false    | [ndb.specimens](ndb.specimens.md) |         |         |
-| 2 | sex             | varchar(24)                    |                                                     | false    |                                   |         |         |
-| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                        | false    |                                   |         |         |
-| 4 | recdatemodified | timestamp(0) without time zone |                                                     | false    |                                   |         |         |
+| 1 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                        | false    |                                   |         |         |
+| 2 | recdatemodified | timestamp(0) without time zone |                                                     | false    |                                   |         |         |
+| 3 | sex             | varchar(24)                    |                                                     | false    |                                   |         |         |
+| 4 | sexid           | integer                        | nextval('ndb.seq_specimensextypes_sexid'::regclass) | false    | [ndb.specimens](ndb.specimens.md) |         |         |
 
 ## Constraints
 

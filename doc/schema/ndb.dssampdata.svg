@@ -21,11 +21,11 @@
 <text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">datasetid </text>
 <text text-anchor="start" x="113.91" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 250.36,-107.8 250.36,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">samples </text>
-<text text-anchor="start" x="109.22" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[bigint]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">observations </text>
+<text text-anchor="start" x="136.47" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[bigint]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 250.36,-77 250.36,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">observations </text>
-<text text-anchor="start" x="136.47" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[bigint]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">samples </text>
+<text text-anchor="start" x="109.22" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[bigint]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-175.7 251.86,-175.7 251.86,-44.7 44.7,-44.7"/>
 </g>
 </g>

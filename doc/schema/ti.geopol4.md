@@ -22,8 +22,8 @@ CREATE VIEW geopol4 AS (
 
 | # | Name        | Type         | Default | Nullable | Children | Parents | Comment |
 | - | ----------- | ------------ | ------- | -------- | -------- | ------- | ------- |
-| 1 | siteid      | integer      |         | true     |          |         |         |
-| 2 | geopolname4 | varchar(255) |         | true     |          |         |         |
+| 1 | geopolname4 | varchar(255) |         | true     |          |         |         |
+| 2 | siteid      | integer      |         | true     |          |         |         |
 
 ## Referenced Tables
 

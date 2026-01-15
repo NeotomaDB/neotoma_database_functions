@@ -6,8 +6,8 @@
 
 | # | Name               | Type                           | Default                                                           | Nullable | Children                                                  | Parents | Comment |
 | - | ------------------ | ------------------------------ | ----------------------------------------------------------------- | -------- | --------------------------------------------------------- | ------- | ------- |
-| 1 | isobiomarkertypeid | integer                        | nextval('ndb.seq_isobiomarkertypes_isobiomarkertypeid'::regclass) | false    | [ndb.isobiomarkerbandtypes](ndb.isobiomarkerbandtypes.md) |         |         |
-| 2 | isobiomarkertype   | varchar(50)                    |                                                                   | false    |                                                           |         |         |
+| 1 | isobiomarkertype   | varchar(50)                    |                                                                   | false    |                                                           |         |         |
+| 2 | isobiomarkertypeid | integer                        | nextval('ndb.seq_isobiomarkertypes_isobiomarkertypeid'::regclass) | false    | [ndb.isobiomarkerbandtypes](ndb.isobiomarkerbandtypes.md) |         |         |
 | 3 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now())                                      | false    |                                                           |         |         |
 | 4 | recdatemodified    | timestamp(0) without time zone |                                                                   | false    |                                                           |         |         |
 

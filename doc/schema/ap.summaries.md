@@ -6,11 +6,11 @@
 
 | # | Name         | Type   | Default | Nullable | Children | Parents | Comment |
 | - | ------------ | ------ | ------- | -------- | -------- | ------- | ------- |
-| 1 | dbdate       | date   |         | false    |          |         |         |
-| 2 | sites        | bigint |         | true     |          |         |         |
-| 3 | datasets     | bigint |         | true     |          |         |         |
+| 1 | datasets     | bigint |         | true     |          |         |         |
+| 2 | dbdate       | date   |         | false    |          |         |         |
+| 3 | observations | bigint |         | true     |          |         |         |
 | 4 | publications | bigint |         | true     |          |         |         |
-| 5 | observations | bigint |         | true     |          |         |         |
+| 5 | sites        | bigint |         | true     |          |         |         |
 
 ## Constraints
 

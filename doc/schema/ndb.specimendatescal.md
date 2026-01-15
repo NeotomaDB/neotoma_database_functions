@@ -6,16 +6,16 @@
 
 | #  | Name                 | Type                           | Default                                                         | Nullable | Children | Parents                                               | Comment |
 | -- | -------------------- | ------------------------------ | --------------------------------------------------------------- | -------- | -------- | ----------------------------------------------------- | ------- |
-| 1  | specimendatecalid    | integer                        | nextval('ndb.seq_specimendatescal_specimendatecalid'::regclass) | false    |          |                                                       |         |
-| 2  | specimendateid       | integer                        |                                                                 | false    |          | [ndb.specimendates](ndb.specimendates.md)             |         |
-| 3  | calage               | double precision               |                                                                 | true     |          |                                                       |         |
-| 4  | calageolder          | double precision               |                                                                 | true     |          |                                                       |         |
-| 5  | calageyounger        | double precision               |                                                                 | true     |          |                                                       |         |
-| 6  | calibrationcurveid   | integer                        |                                                                 | true     |          | [ndb.calibrationcurves](ndb.calibrationcurves.md)     |         |
-| 7  | calibrationprogramid | integer                        |                                                                 | true     |          | [ndb.calibrationprograms](ndb.calibrationprograms.md) |         |
-| 8  | datecalibrated       | date                           |                                                                 | true     |          |                                                       |         |
-| 9  | recdatecreated       | timestamp(0) without time zone | timezone('UTC'::text, now())                                    | false    |          |                                                       |         |
-| 10 | recdatemodified      | timestamp(0) without time zone |                                                                 | false    |          |                                                       |         |
+| 1  | calage               | double precision               |                                                                 | true     |          |                                                       |         |
+| 2  | calageolder          | double precision               |                                                                 | true     |          |                                                       |         |
+| 3  | calageyounger        | double precision               |                                                                 | true     |          |                                                       |         |
+| 4  | calibrationcurveid   | integer                        |                                                                 | true     |          | [ndb.calibrationcurves](ndb.calibrationcurves.md)     |         |
+| 5  | calibrationprogramid | integer                        |                                                                 | true     |          | [ndb.calibrationprograms](ndb.calibrationprograms.md) |         |
+| 6  | datecalibrated       | date                           |                                                                 | true     |          |                                                       |         |
+| 7  | recdatecreated       | timestamp(0) without time zone | timezone('UTC'::text, now())                                    | false    |          |                                                       |         |
+| 8  | recdatemodified      | timestamp(0) without time zone |                                                                 | false    |          |                                                       |         |
+| 9  | specimendatecalid    | integer                        | nextval('ndb.seq_specimendatescal_specimendatecalid'::regclass) | false    |          |                                                       |         |
+| 10 | specimendateid       | integer                        |                                                                 | false    |          | [ndb.specimendates](ndb.specimendates.md)             |         |
 
 ## Constraints
 

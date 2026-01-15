@@ -7,17 +7,17 @@
 | # | Name             | Type                           | Default                      | Nullable | Children | Parents                                       | Comment |
 | - | ---------------- | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------------- | ------- |
 | 1 | dataid           | integer                        |                              | false    |          | [ndb.data](ndb.data.md)                       |         |
-| 2 | taphonomictypeid | integer                        |                              | false    |          | [ndb.taphonomictypes](ndb.taphonomictypes.md) |         |
-| 3 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                               |         |
-| 4 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                               |         |
+| 2 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                               |         |
+| 3 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                               |         |
+| 4 | taphonomictypeid | integer                        |                              | false    |          | [ndb.taphonomictypes](ndb.taphonomictypes.md) |         |
 
 ## Constraints
 
 | # | Name                                    | Type        | Definition                                                                                                          |
 | - | --------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_summarydatataphonomy_data            | FOREIGN KEY | FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE                                |
-| 2 | summarydatataphonomy_pkey               | PRIMARY KEY | PRIMARY KEY (dataid, taphonomictypeid)                                                                              |
-| 3 | fk_summarydatataphonomy_taphonomictypes | FOREIGN KEY | FOREIGN KEY (taphonomictypeid) REFERENCES ndb.taphonomictypes(taphonomictypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_summarydatataphonomy_taphonomictypes | FOREIGN KEY | FOREIGN KEY (taphonomictypeid) REFERENCES ndb.taphonomictypes(taphonomictypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | summarydatataphonomy_pkey               | PRIMARY KEY | PRIMARY KEY (dataid, taphonomictypeid)                                                                              |
 
 ## Indexes
 

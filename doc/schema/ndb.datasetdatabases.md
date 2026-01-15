@@ -6,17 +6,23 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                                 | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------------------- | ------- |
-| 1 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md)                         |         |
-| 2 | databaseid      | integer                        |                              | false    |          | [ndb.constituentdatabases](ndb.constituentdatabases.md) |         |
+| 1 | databaseid      | integer                        |                              | false    |          | [ndb.constituentdatabases](ndb.constituentdatabases.md) |         |
+| 2 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md)                         |         |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                         |         |
 | 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                         |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                      |
+| ---------------------------------------- | ----------------------------------------------- |
+| [Dataset related tables](viewpoint-3.md) | Tables that help define and structure datasets. |
 
 ## Constraints
 
 | # | Name                                     | Type        | Definition                                                                                                   |
 | - | ---------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------ |
-| 1 | fk_datasetdatabases_constituentdatabases | FOREIGN KEY | FOREIGN KEY (databaseid) REFERENCES ndb.constituentdatabases(databaseid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | datasetdatabases_pkey                    | PRIMARY KEY | PRIMARY KEY (datasetid, databaseid)                                                                          |
+| 1 | datasetdatabases_pkey                    | PRIMARY KEY | PRIMARY KEY (datasetid, databaseid)                                                                          |
+| 2 | fk_datasetdatabases_constituentdatabases | FOREIGN KEY | FOREIGN KEY (databaseid) REFERENCES ndb.constituentdatabases(databaseid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 3 | fk_datasetdatabases_datasets             | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE               |
 
 ## Indexes
@@ -24,8 +30,9 @@
 | # | Name                          | Definition                                                                                                         |
 | - | ----------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | 1 | datasetdatabases_pkey         | CREATE UNIQUE INDEX datasetdatabases_pkey ON ndb.datasetdatabases USING btree (datasetid, databaseid)              |
-| 2 | ix_datasetid_datasetdatabases | CREATE INDEX ix_datasetid_datasetdatabases ON ndb.datasetdatabases USING btree (datasetid) WITH (fillfactor='10')  |
-| 3 | ix_projectid_datasetdatabases | CREATE INDEX ix_projectid_datasetdatabases ON ndb.datasetdatabases USING btree (databaseid) WITH (fillfactor='10') |
+| 2 | datasettimes                  | CREATE INDEX datasettimes ON ndb.datasetdatabases USING btree (recdatecreated)                                     |
+| 3 | ix_datasetid_datasetdatabases | CREATE INDEX ix_datasetid_datasetdatabases ON ndb.datasetdatabases USING btree (datasetid) WITH (fillfactor='10')  |
+| 4 | ix_projectid_datasetdatabases | CREATE INDEX ix_projectid_datasetdatabases ON ndb.datasetdatabases USING btree (databaseid) WITH (fillfactor='10') |
 
 ## Triggers
 

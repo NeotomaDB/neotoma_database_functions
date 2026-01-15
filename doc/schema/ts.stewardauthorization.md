@@ -25,12 +25,12 @@ CREATE VIEW stewardauthorization AS (
 
 | # | Name       | Type        | Default | Nullable | Children | Parents | Comment |
 | - | ---------- | ----------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | stewardid  | integer     |         | true     |          |         |         |
+| 1 | authorized | integer     |         | true     |          |         |         |
 | 2 | firstname  | varchar(80) |         | true     |          |         |         |
 | 3 | lastname   | varchar(80) |         | true     |          |         |         |
-| 4 | username   | varchar(15) |         | true     |          |         |         |
-| 5 | pwd        | varchar(15) |         | true     |          |         |         |
-| 6 | authorized | integer     |         | true     |          |         |         |
+| 4 | pwd        | varchar(15) |         | true     |          |         |         |
+| 5 | stewardid  | integer     |         | true     |          |         |         |
+| 6 | username   | varchar(15) |         | true     |          |         |         |
 
 ## Referenced Tables
 

@@ -17,8 +17,8 @@ Deposition Agents for Analysis Units. Individual Analysis Units may be listed mu
 
 | # | Name                       | Type        | Definition                                                                                                    |
 | - | -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_depagents_analysisunits | FOREIGN KEY | FOREIGN KEY (analysisunitid) REFERENCES ndb.analysisunits(analysisunitid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | depagents_pkey             | PRIMARY KEY | PRIMARY KEY (analysisunitid, depagentid)                                                                      |
+| 1 | depagents_pkey             | PRIMARY KEY | PRIMARY KEY (analysisunitid, depagentid)                                                                      |
+| 2 | fk_depagents_analysisunits | FOREIGN KEY | FOREIGN KEY (analysisunitid) REFERENCES ndb.analysisunits(analysisunitid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 3 | fk_depagents_depagenttypes | FOREIGN KEY | FOREIGN KEY (depagentid) REFERENCES ndb.depagenttypes(depagentid) ON UPDATE CASCADE ON DELETE CASCADE         |
 
 ## Indexes

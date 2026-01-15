@@ -6,8 +6,8 @@
 
 | # | Name     | Type      | Default | Nullable | Children | Parents                 | Comment |
 | - | -------- | --------- | ------- | -------- | -------- | ----------------------- | ------- |
-| 1 | taxonout | integer[] |         | false    |          |                         |         |
-| 2 | taxonid  | bigint    |         | false    |          | [ndb.taxa](ndb.taxa.md) |         |
+| 1 | taxonid  | bigint    |         | false    |          | [ndb.taxa](ndb.taxa.md) |         |
+| 2 | taxonout | integer[] |         | false    |          |                         |         |
 
 ## Viewpoints
 
@@ -19,8 +19,8 @@
 
 | # | Name                    | Type        | Definition                                                           |
 | - | ----------------------- | ----------- | -------------------------------------------------------------------- |
-| 1 | taxonpaths_taxonid_fkey | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON DELETE CASCADE |
-| 2 | taxonpaths_pkey         | PRIMARY KEY | PRIMARY KEY (taxonout, taxonid)                                      |
+| 1 | taxonpaths_pkey         | PRIMARY KEY | PRIMARY KEY (taxonout, taxonid)                                      |
+| 2 | taxonpaths_taxonid_fkey | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON DELETE CASCADE |
 
 ## Indexes
 

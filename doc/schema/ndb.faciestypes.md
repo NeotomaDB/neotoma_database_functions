@@ -8,8 +8,8 @@ Lookup table of Facies Types. Table is referenced by the AnalysisUnits table.
 
 | # | Name            | Type                           | Default                                           | Nullable | Children                                  | Parents | Comment                                    |
 | - | --------------- | ------------------------------ | ------------------------------------------------- | -------- | ----------------------------------------- | ------- | ------------------------------------------ |
-| 1 | faciesid        | integer                        | nextval('ndb.seq_faciestypes_faciesid'::regclass) | false    | [ndb.analysisunits](ndb.analysisunits.md) |         | An arbitrary Facies identification number. |
-| 2 | facies          | varchar(64)                    |                                                   | false    |                                           |         | Short Facies description.                  |
+| 1 | facies          | varchar(64)                    |                                                   | false    |                                           |         | Short Facies description.                  |
+| 2 | faciesid        | integer                        | nextval('ndb.seq_faciestypes_faciesid'::regclass) | false    | [ndb.analysisunits](ndb.analysisunits.md) |         | An arbitrary Facies identification number. |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                      | false    |                                           |         |                                            |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                   | false    |                                           |         |                                            |
 

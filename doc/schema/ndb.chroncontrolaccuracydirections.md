@@ -6,10 +6,16 @@
 
 | # | Name                | Type                           | Default                                                                         | Nullable | Children                                          | Parents | Comment |
 | - | ------------------- | ------------------------------ | ------------------------------------------------------------------------------- | -------- | ------------------------------------------------- | ------- | ------- |
-| 1 | accuracydirectionid | integer                        | nextval('ndb.seq_chroncontrolaccuracydirections_accuracydirectionid'::regclass) | false    | [ndb.chroncontrolranks](ndb.chroncontrolranks.md) |         |         |
-| 2 | accuracydirection   | varchar(80)                    |                                                                                 | false    |                                                   |         |         |
+| 1 | accuracydirection   | varchar(80)                    |                                                                                 | false    |                                                   |         |         |
+| 2 | accuracydirectionid | integer                        | nextval('ndb.seq_chroncontrolaccuracydirections_accuracydirectionid'::regclass) | false    | [ndb.chroncontrolranks](ndb.chroncontrolranks.md) |         |         |
 | 3 | recdatecreated      | timestamp(0) without time zone | timezone('UTC'::text, now())                                                    | false    |                                                   |         |         |
 | 4 | recdatemodified     | timestamp(0) without time zone |                                                                                 | false    |                                                   |         |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

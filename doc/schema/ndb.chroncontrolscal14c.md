@@ -6,20 +6,26 @@
 
 | # | Name                 | Type                           | Default                      | Nullable | Children | Parents                                               | Comment |
 | - | -------------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------------------- | ------- |
-| 1 | chroncontrolid       | integer                        |                              | false    |          | [ndb.chroncontrols](ndb.chroncontrols.md)             |         |
-| 2 | calibrationcurveid   | integer                        |                              | false    |          | [ndb.calibrationcurves](ndb.calibrationcurves.md)     |         |
-| 3 | calibrationprogramid | integer                        |                              | false    |          | [ndb.calibrationprograms](ndb.calibrationprograms.md) |         |
+| 1 | calibrationcurveid   | integer                        |                              | false    |          | [ndb.calibrationcurves](ndb.calibrationcurves.md)     |         |
+| 2 | calibrationprogramid | integer                        |                              | false    |          | [ndb.calibrationprograms](ndb.calibrationprograms.md) |         |
+| 3 | chroncontrolid       | integer                        |                              | false    |          | [ndb.chroncontrols](ndb.chroncontrols.md)             |         |
 | 4 | recdatecreated       | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                       |         |
 | 5 | recdatemodified      | timestamp(0) without time zone |                              | false    |          |                                                       |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 
 | # | Name                                       | Type        | Definition                                                                                                                      |
 | - | ------------------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_chroncontrolscal14c_calibrationcurves   | FOREIGN KEY | FOREIGN KEY (calibrationcurveid) REFERENCES ndb.calibrationcurves(calibrationcurveid) ON UPDATE CASCADE ON DELETE CASCADE       |
-| 2 | fk_chroncontrolscal14c_calibrationprograms | FOREIGN KEY | FOREIGN KEY (calibrationprogramid) REFERENCES ndb.calibrationprograms(calibrationprogramid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | fk_chroncontrolscal14c_chroncontrols       | FOREIGN KEY | FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE                   |
-| 4 | chroncontrolscal14c_pkey                   | PRIMARY KEY | PRIMARY KEY (chroncontrolid)                                                                                                    |
+| 1 | chroncontrolscal14c_pkey                   | PRIMARY KEY | PRIMARY KEY (chroncontrolid)                                                                                                    |
+| 2 | fk_chroncontrolscal14c_calibrationcurves   | FOREIGN KEY | FOREIGN KEY (calibrationcurveid) REFERENCES ndb.calibrationcurves(calibrationcurveid) ON UPDATE CASCADE ON DELETE CASCADE       |
+| 3 | fk_chroncontrolscal14c_calibrationprograms | FOREIGN KEY | FOREIGN KEY (calibrationprogramid) REFERENCES ndb.calibrationprograms(calibrationprogramid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 4 | fk_chroncontrolscal14c_chroncontrols       | FOREIGN KEY | FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE                   |
 
 ## Indexes
 

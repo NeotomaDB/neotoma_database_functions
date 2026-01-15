@@ -8,12 +8,12 @@ Tephras lookup table. This table stores recognized tephras with established ages
 
 | # | Name            | Type                           | Default                                       | Nullable | Children | Parents                                   | Comment                                       |
 | - | --------------- | ------------------------------ | --------------------------------------------- | -------- | -------- | ----------------------------------------- | --------------------------------------------- |
-| 1 | tephraid        | integer                        | nextval('ndb.seq_tephras_tephraid'::regclass) | false    |          |                                           | An arbitrary Tephra identification number.    |
+| 1 | analysisunitid  | integer                        |                                               | false    |          | [ndb.analysisunits](ndb.analysisunits.md) |                                               |
 | 2 | eventid         | integer                        |                                               | false    |          | [ndb.events](ndb.events.md)               |                                               |
-| 3 | analysisunitid  | integer                        |                                               | false    |          | [ndb.analysisunits](ndb.analysisunits.md) |                                               |
-| 4 | notes           | text                           |                                               | true     |          |                                           | Free form notes or comments about the tephra. |
-| 5 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                  | false    |          |                                           |                                               |
-| 6 | recdatemodified | timestamp(0) without time zone |                                               | false    |          |                                           |                                               |
+| 3 | notes           | text                           |                                               | true     |          |                                           | Free form notes or comments about the tephra. |
+| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                  | false    |          |                                           |                                               |
+| 5 | recdatemodified | timestamp(0) without time zone |                                               | false    |          |                                           |                                               |
+| 6 | tephraid        | integer                        | nextval('ndb.seq_tephras_tephraid'::regclass) | false    |          |                                           | An arbitrary Tephra identification number.    |
 
 ## Constraints
 

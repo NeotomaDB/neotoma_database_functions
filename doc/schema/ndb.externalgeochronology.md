@@ -6,9 +6,15 @@
 
 | # | Name          | Type    | Default | Nullable | Children | Parents                                           | Comment |
 | - | ------------- | ------- | ------- | -------- | -------- | ------------------------------------------------- | ------- |
-| 1 | geochronid    | integer |         | true     |          | [ndb.geochronology](ndb.geochronology.md)         |         |
-| 2 | extdatabaseid | integer |         | true     |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
+| 1 | extdatabaseid | integer |         | true     |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
+| 2 | geochronid    | integer |         | true     |          | [ndb.geochronology](ndb.geochronology.md)         |         |
 | 3 | identifier    | text    |         | true     |          |                                                   |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

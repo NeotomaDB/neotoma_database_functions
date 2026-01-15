@@ -6,24 +6,25 @@
 
 | # | Name               | Type                           | Default                                             | Nullable | Children                    | Parents                                           | Comment |
 | - | ------------------ | ------------------------------ | --------------------------------------------------- | -------- | --------------------------- | ------------------------------------------------- | ------- |
-| 1 | eventtypeid        | integer                        | nextval('ndb.seq_eventtypes_eventtypeid'::regclass) | false    | [ndb.events](ndb.events.md) |                                                   |         |
+| 1 | chroncontroltypeid | integer                        |                                                     | true     |                             | [ndb.chroncontroltypes](ndb.chroncontroltypes.md) |         |
 | 2 | eventtype          | varchar(40)                    |                                                     | false    |                             |                                                   |         |
-| 3 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now())                        | false    |                             |                                                   |         |
-| 4 | recdatemodified    | timestamp(0) without time zone |                                                     | false    |                             |                                                   |         |
-| 5 | chroncontroltypeid | integer                        |                                                     | true     |                             | [ndb.chroncontroltypes](ndb.chroncontroltypes.md) |         |
+| 3 | eventtypeid        | integer                        | nextval('ndb.seq_eventtypes_eventtypeid'::regclass) | false    | [ndb.events](ndb.events.md) |                                                   |         |
+| 4 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now())                        | false    |                             |                                                   |         |
+| 5 | recdatemodified    | timestamp(0) without time zone |                                                     | false    |                             |                                                   |         |
 
 ## Viewpoints
 
-| Name                                      | Definition                           |
-| ----------------------------------------- | ------------------------------------ |
-| [Controlled Vocabularies](viewpoint-0.md) | Tables with controlled vocabularies. |
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Controlled Vocabularies](viewpoint-0.md)   | Tables with controlled vocabularies.              |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 
 | # | Name            | Type        | Definition                                                                            |
 | - | --------------- | ----------- | ------------------------------------------------------------------------------------- |
-| 1 | evt_cct         | FOREIGN KEY | FOREIGN KEY (chroncontroltypeid) REFERENCES ndb.chroncontroltypes(chroncontroltypeid) |
-| 2 | eventtypes_pkey | PRIMARY KEY | PRIMARY KEY (eventtypeid)                                                             |
+| 1 | eventtypes_pkey | PRIMARY KEY | PRIMARY KEY (eventtypeid)                                                             |
+| 2 | evt_cct         | FOREIGN KEY | FOREIGN KEY (chroncontroltypeid) REFERENCES ndb.chroncontroltypes(chroncontroltypeid) |
 
 ## Indexes
 

@@ -10,6 +10,12 @@
 | 2 | exdatabaseid | integer |         | true     |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
 | 3 | identifier   | text    |         | true     |          |                                                   |         |
 
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
+
 ## Constraints
 
 | # | Name                                | Type        | Definition                                                                 |

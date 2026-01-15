@@ -6,8 +6,8 @@
 
 | # | Name           | Type    | Default                                                              | Nullable | Children                                            | Parents | Comment |
 | - | -------------- | ------- | -------------------------------------------------------------------- | -------- | --------------------------------------------------- | ------- | ------- |
-| 1 | entitystatusid | integer | nextval('ndb.speleothementitystatuses_entitystatusid_seq'::regclass) | false    | [ndb.entityrelationship](ndb.entityrelationship.md) |         |         |
-| 2 | entitystatus   | text    |                                                                      | true     |                                                     |         |         |
+| 1 | entitystatus   | text    |                                                                      | true     |                                                     |         |         |
+| 2 | entitystatusid | integer | nextval('ndb.speleothementitystatuses_entitystatusid_seq'::regclass) | false    | [ndb.entityrelationship](ndb.entityrelationship.md) |         |         |
 
 ## Constraints
 

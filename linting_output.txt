@@ -1,0 +1,2541 @@
+ap.datasetkeywords: table comment required.
+ap.datasetpisauthors: table comment required.
+ap.faunranges: table comment required.
+ap.gadm: table comment required.
+ap.geopolnames: table comment required.
+ap.globalmammals: table comment required.
+ap.hydrolakes: table comment required.
+ap.icesheets: table comment required.
+ap.orcidlogins: table comment required.
+ap.pollensumgroups: table comment required.
+ap.pollensums: table comment required.
+ap.querytable: table comment required.
+ap.sitegadm: table comment required.
+ap.summaries: table comment required.
+ap.taxaindatasetview: table comment required.
+doi.doimeta: table comment required.
+doi.frozen: table comment required.
+ndb.accumulationrates: table comment required.
+ndb.analysisunitaltdepths: table comment required.
+ndb.analysisunitaltdepthscales: table comment required.
+ndb.analysisunitlithostrat: table comment required.
+ndb.calibrationcurves: table comment required.
+ndb.calibrationprograms: table comment required.
+ndb.chroncontrolaccuracydirections: table comment required.
+ndb.chroncontrolaccuracydistributions: table comment required.
+ndb.chroncontrolaccuracyranks: table comment required.
+ndb.chroncontrolprecisionranks: table comment required.
+ndb.chroncontrolranks: table comment required.
+ndb.chroncontrolscal14c: table comment required.
+ndb.constituentdatabases: table comment required.
+ndb.contactreferences: table comment required.
+ndb.contextsdatasettypes: table comment required.
+ndb.dataprocessors: table comment required.
+ndb.datasetdatabases: table comment required.
+ndb.datasetdoi: table comment required.
+ndb.datasetpis: table comment required.
+ndb.datasettaxagrouptypes: table comment required.
+ndb.datasettaxonnotes: table comment required.
+ndb.datasetvariables: table comment required.
+ndb.datataxonnotes: table comment required.
+ndb.datauncertainties: table comment required.
+ndb.decayconstants: table comment required.
+ndb.depthreferencesystem: table comment required.
+ndb.dsageranges: table comment required.
+ndb.dsdatasample: table comment required.
+ndb.dslinks: table comment required.
+ndb.dssampdata: table comment required.
+ndb.elementdatasettaxagroups: table comment required.
+ndb.elementmaturities: table comment required.
+ndb.elementportions: table comment required.
+ndb.elementsymmetries: table comment required.
+ndb.elementtaxagroupmaturities: table comment required.
+ndb.elementtaxagroupportions: table comment required.
+ndb.elementtaxagroups: table comment required.
+ndb.elementtaxagroupsymmetries: table comment required.
+ndb.elementtypes: table comment required.
+ndb.embargo: table comment required.
+ndb.entitycovers: table comment required.
+ndb.entitycovertypes: table comment required.
+ndb.entitydripheight: table comment required.
+ndb.entitygeology: table comment required.
+ndb.entitylandusecover: table comment required.
+ndb.entityrelationship: table comment required.
+ndb.entitysamples: table comment required.
+ndb.entityvegetationcover: table comment required.
+ndb.eventchronology: table comment required.
+ndb.eventpublications: table comment required.
+ndb.events: table comment required.
+ndb.eventtypes: table comment required.
+ndb.externalcontacts: table comment required.
+ndb.externaldatabases: table comment required.
+ndb.externalgeochronology: table comment required.
+ndb.externalpublications: table comment required.
+ndb.externalspeleothemdata: table comment required.
+ndb.externaltaxa: table comment required.
+ndb.formtaxa: table comment required.
+ndb.fractiondated: table comment required.
+ndb.geochroncontrols: table comment required.
+ndb.geopaths: table comment required.
+ndb.geopoldepth: table comment required.
+ndb.hiatuschronology: table comment required.
+ndb.hiatuses: table comment required.
+ndb.isobiomarkerbandtypes: table comment required.
+ndb.isobiomarkertypes: table comment required.
+ndb.isoinstrumentation: table comment required.
+ndb.isoinstrumentationtypes: table comment required.
+ndb.isomatanalsubstrate: table comment required.
+ndb.isomaterialanalyzedtypes: table comment required.
+ndb.isometadata: table comment required.
+ndb.isopretreatmenttypes: table comment required.
+ndb.isosampleintrosystemtypes: table comment required.
+ndb.isosampleorigintypes: table comment required.
+ndb.isosamplepretreatments: table comment required.
+ndb.isoscaletypes: table comment required.
+ndb.isospecimendata: table comment required.
+ndb.isosrmetadata: table comment required.
+ndb.isostandards: table comment required.
+ndb.isostandardtypes: table comment required.
+ndb.isostratdata: table comment required.
+ndb.isosubstratetypes: table comment required.
+ndb.isovariablescaletypes: table comment required.
+ndb.lakeparameters: table comment required.
+ndb.landusetypes: table comment required.
+ndb.leadmodelbasis: table comment required.
+ndb.leadmodels: table comment required.
+ndb.lithostrat: table comment required.
+ndb.lithostratunits: table comment required.
+ndb.publicationtranslators: table comment required.
+ndb.pubtsv: table comment required.
+ndb.radiocarbon: table comment required.
+ndb.radiocarbonmethods: table comment required.
+ndb.rocktypes: table comment required.
+ndb.sitelandusecover: table comment required.
+ndb.sitestemp: table comment required.
+ndb.sitevegetationcover: table comment required.
+ndb.specimendatescal: table comment required.
+ndb.specimendomesticstatustypes: table comment required.
+ndb.specimengenbank: table comment required.
+ndb.specimens: table comment required.
+ndb.specimensextypes: table comment required.
+ndb.specimentaphonomy: table comment required.
+ndb.speleothemcollectionunits: table comment required.
+ndb.speleothemdriptypes: table comment required.
+ndb.speleothementitystatuses: table comment required.
+ndb.speleothems: table comment required.
+ndb.speleothemtypes: table comment required.
+ndb.summarydatataphonomy: table comment required.
+ndb.sysdiagrams: table comment required.
+ndb.taphonomicsystems: table comment required.
+ndb.taphonomicsystemsdatasettypes: table comment required.
+ndb.taphonomictypes: table comment required.
+ndb.taxaalthierarchy: table comment required.
+ndb.taxaalthierarchytypes: table comment required.
+ndb.taxonpaths: table comment required.
+ndb.uncertaintybases: table comment required.
+ndb.uraniumseries: table comment required.
+ndb.uraniumseriesdata: table comment required.
+ndb.vegetationcovertypes: table comment required.
+ti.dslinks: table comment required.
+ti.geopol1: table comment required.
+ti.geopol2: table comment required.
+ti.geopol3: table comment required.
+ti.geopol4: table comment required.
+ti.stewarddatabases: table comment required.
+ti.stewards: table comment required.
+ti.stewardupdates: table comment required.
+ts.stewardauthorization: table comment required.
+ap.datasetkeywords.datasetid: column comment required.
+ap.datasetkeywords.keywordid: column comment required.
+ap.datasetpisauthors.contactid: column comment required.
+ap.datasetpisauthors.datasetid: column comment required.
+ap.faunranges.gid: column comment required.
+ap.faunranges.sciname: column comment required.
+ap.faunranges.spid: column comment required.
+ap.faunranges.the_geom: column comment required.
+ap.gadm.cc_1: column comment required.
+ap.gadm.cc_2: column comment required.
+ap.gadm.cc_3: column comment required.
+ap.gadm.cc_4: column comment required.
+ap.gadm.cc_5: column comment required.
+ap.gadm.continent: column comment required.
+ap.gadm.country: column comment required.
+ap.gadm.disputedby: column comment required.
+ap.gadm.engtype_1: column comment required.
+ap.gadm.engtype_2: column comment required.
+ap.gadm.engtype_3: column comment required.
+ap.gadm.engtype_4: column comment required.
+ap.gadm.engtype_5: column comment required.
+ap.gadm.gid_0: column comment required.
+ap.gadm.gid_1: column comment required.
+ap.gadm.gid_2: column comment required.
+ap.gadm.gid_3: column comment required.
+ap.gadm.gid_4: column comment required.
+ap.gadm.gid_5: column comment required.
+ap.gadm.governedby: column comment required.
+ap.gadm.hasc_1: column comment required.
+ap.gadm.hasc_2: column comment required.
+ap.gadm.hasc_3: column comment required.
+ap.gadm.iso_1: column comment required.
+ap.gadm.name_0: column comment required.
+ap.gadm.name_1: column comment required.
+ap.gadm.name_2: column comment required.
+ap.gadm.name_3: column comment required.
+ap.gadm.name_4: column comment required.
+ap.gadm.name_5: column comment required.
+ap.gadm.nl_name_1: column comment required.
+ap.gadm.nl_name_2: column comment required.
+ap.gadm.nl_name_3: column comment required.
+ap.gadm.objectid: column comment required.
+ap.gadm.region: column comment required.
+ap.gadm.shape: column comment required.
+ap.gadm.shape_area: column comment required.
+ap.gadm.shape_length: column comment required.
+ap.gadm.sovereign: column comment required.
+ap.gadm.subcont: column comment required.
+ap.gadm.type_1: column comment required.
+ap.gadm.type_2: column comment required.
+ap.gadm.type_3: column comment required.
+ap.gadm.type_4: column comment required.
+ap.gadm.type_5: column comment required.
+ap.gadm.uid: column comment required.
+ap.gadm.validfr_1: column comment required.
+ap.gadm.validfr_2: column comment required.
+ap.gadm.validfr_3: column comment required.
+ap.gadm.validfr_4: column comment required.
+ap.gadm.varname_0: column comment required.
+ap.gadm.varname_1: column comment required.
+ap.gadm.varname_2: column comment required.
+ap.gadm.varname_3: column comment required.
+ap.gadm.varname_4: column comment required.
+ap.gadm.varregion: column comment required.
+ap.geopolnames.names: column comment required.
+ap.geopolnames.siteid: column comment required.
+ap.globalmammals.author: column comment required.
+ap.globalmammals.citation: column comment required.
+ap.globalmammals.family: column comment required.
+ap.globalmammals.fid: column comment required.
+ap.globalmammals.geom: column comment required.
+ap.globalmammals.order: column comment required.
+ap.globalmammals.rec_source: column comment required.
+ap.globalmammals.sciname: column comment required.
+ap.globalmammals.year: column comment required.
+ap.hydrolakes.continent: column comment required.
+ap.hydrolakes.country: column comment required.
+ap.hydrolakes.depth_avg: column comment required.
+ap.hydrolakes.dis_avg: column comment required.
+ap.hydrolakes.elevation: column comment required.
+ap.hydrolakes.grand_id: column comment required.
+ap.hydrolakes.hylak_id: column comment required.
+ap.hydrolakes.lake_area: column comment required.
+ap.hydrolakes.lake_name: column comment required.
+ap.hydrolakes.lake_type: column comment required.
+ap.hydrolakes.objectid: column comment required.
+ap.hydrolakes.poly_src: column comment required.
+ap.hydrolakes.pour_lat: column comment required.
+ap.hydrolakes.pour_long: column comment required.
+ap.hydrolakes.res_time: column comment required.
+ap.hydrolakes.shape: column comment required.
+ap.hydrolakes.shape_area: column comment required.
+ap.hydrolakes.shape_length: column comment required.
+ap.hydrolakes.shore_dev: column comment required.
+ap.hydrolakes.shore_len: column comment required.
+ap.hydrolakes.slope_100: column comment required.
+ap.hydrolakes.vol_res: column comment required.
+ap.hydrolakes.vol_src: column comment required.
+ap.hydrolakes.vol_total: column comment required.
+ap.hydrolakes.wshd_area: column comment required.
+ap.icesheets.age: column comment required.
+ap.icesheets.area_km2: column comment required.
+ap.icesheets.cal: column comment required.
+ap.icesheets.calage: column comment required.
+ap.icesheets.geom: column comment required.
+ap.icesheets.gid: column comment required.
+ap.icesheets.ka: column comment required.
+ap.icesheets.symb: column comment required.
+ap.orcidlogins.expiresat: column comment required.
+ap.orcidlogins.orcidid: column comment required.
+ap.orcidlogins.sessionuuid: column comment required.
+ap.orcidlogins.userip: column comment required.
+ap.pollensumgroups.ecolgroupid: column comment required.
+ap.pollensumgroups.recid: column comment required.
+ap.pollensumgroups.sumgroupid: column comment required.
+ap.pollensums.anac: column comment required.
+ap.pollensums.aqbr: column comment required.
+ap.pollensums.aqvp: column comment required.
+ap.pollensums.fung: column comment required.
+ap.pollensums.mang: column comment required.
+ap.pollensums.palm: column comment required.
+ap.pollensums.sampleid: column comment required.
+ap.pollensums.seed: column comment required.
+ap.pollensums.succ: column comment required.
+ap.pollensums.total: column comment required.
+ap.pollensums.trsh: column comment required.
+ap.pollensums.unid: column comment required.
+ap.pollensums.upbr: column comment required.
+ap.pollensums.uphe: column comment required.
+ap.pollensums.vacr: column comment required.
+ap.querytable.agetype: column comment required.
+ap.querytable.altitude: column comment required.
+ap.querytable.chronologyid: column comment required.
+ap.querytable.collectionunit: column comment required.
+ap.querytable.collectionunitid: column comment required.
+ap.querytable.colltype: column comment required.
+ap.querytable.contacts: column comment required.
+ap.querytable.databaseid: column comment required.
+ap.querytable.datasetid: column comment required.
+ap.querytable.datasettype: column comment required.
+ap.querytable.depenvt: column comment required.
+ap.querytable.geog: column comment required.
+ap.querytable.geopol: column comment required.
+ap.querytable.keywords: column comment required.
+ap.querytable.older: column comment required.
+ap.querytable.publications: column comment required.
+ap.querytable.siteid: column comment required.
+ap.querytable.sitename: column comment required.
+ap.querytable.taxa: column comment required.
+ap.querytable.younger: column comment required.
+ap.sitegadm.fid: column comment required.
+ap.sitegadm.siteid: column comment required.
+ap.summaries.datasets: column comment required.
+ap.summaries.dbdate: column comment required.
+ap.summaries.observations: column comment required.
+ap.summaries.publications: column comment required.
+ap.summaries.sites: column comment required.
+ap.taxaindatasetview.datasettypeids: column comment required.
+ap.taxaindatasetview.taxagroupid: column comment required.
+ap.taxaindatasetview.taxonid: column comment required.
+ap.taxaindatasetview.taxonname: column comment required.
+doi.doimeta.datasetid: column comment required.
+doi.doimeta.doi: column comment required.
+doi.doimeta.meta: column comment required.
+doi.frozen.datasetid: column comment required.
+doi.frozen.download: column comment required.
+doi.frozen.recmodified: column comment required.
+ndb.accumulationrates.accumulationrate: column comment required.
+ndb.accumulationrates.analysisunitid: column comment required.
+ndb.accumulationrates.chronologyid: column comment required.
+ndb.accumulationrates.variableunitsid: column comment required.
+ndb.agetypes.precedence: column comment required.
+ndb.agetypes.shortagetype: column comment required.
+ndb.analysisunitaltdepths.altdepth: column comment required.
+ndb.analysisunitaltdepths.altdepthscaleid: column comment required.
+ndb.analysisunitaltdepths.analysisunitid: column comment required.
+ndb.analysisunitaltdepthscales.altdepthid: column comment required.
+ndb.analysisunitaltdepthscales.altdepthname: column comment required.
+ndb.analysisunitaltdepthscales.altdepthscaleid: column comment required.
+ndb.analysisunitaltdepthscales.notes: column comment required.
+ndb.analysisunitaltdepthscales.variableunitsid: column comment required.
+ndb.analysisunitlithostrat.analysisunitid: column comment required.
+ndb.analysisunitlithostrat.lithostratid: column comment required.
+ndb.calibrationcurves.calibrationcurve: column comment required.
+ndb.calibrationcurves.calibrationcurveid: column comment required.
+ndb.calibrationcurves.publicationid: column comment required.
+ndb.calibrationprograms.calibrationprogram: column comment required.
+ndb.calibrationprograms.calibrationprogramid: column comment required.
+ndb.calibrationprograms.version: column comment required.
+ndb.chroncontrolaccuracydirections.accuracydirection: column comment required.
+ndb.chroncontrolaccuracydirections.accuracydirectionid: column comment required.
+ndb.chroncontrolaccuracydistributions.accuracydistribution: column comment required.
+ndb.chroncontrolaccuracydistributions.accuracydistributionid: column comment required.
+ndb.chroncontrolaccuracyranks.accuracyrank: column comment required.
+ndb.chroncontrolaccuracyranks.accuracyrankid: column comment required.
+ndb.chroncontrolprecisionranks.precisionrank: column comment required.
+ndb.chroncontrolprecisionranks.precisionrankid: column comment required.
+ndb.chroncontrolranks.accuracydirectionid: column comment required.
+ndb.chroncontrolranks.accuracydistributionid: column comment required.
+ndb.chroncontrolranks.accuracyrankid: column comment required.
+ndb.chroncontrolranks.chroncontrolid: column comment required.
+ndb.chroncontrolranks.chroncontrolrankid: column comment required.
+ndb.chroncontrolranks.outlier: column comment required.
+ndb.chroncontrolranks.precisionrankid: column comment required.
+ndb.chroncontrols.agetypeid: column comment required.
+ndb.chroncontrols.analysisunitid: column comment required.
+ndb.chroncontrolscal14c.calibrationcurveid: column comment required.
+ndb.chroncontrolscal14c.calibrationprogramid: column comment required.
+ndb.chroncontrolscal14c.chroncontrolid: column comment required.
+ndb.chroncontroltypes.higherchroncontroltypeid: column comment required.
+ndb.constituentdatabases.contactid: column comment required.
+ndb.constituentdatabases.databaseid: column comment required.
+ndb.constituentdatabases.databasename: column comment required.
+ndb.constituentdatabases.description: column comment required.
+ndb.constituentdatabases.url: column comment required.
+ndb.contactreferences.contactid: column comment required.
+ndb.contactreferences.exdatabaseid: column comment required.
+ndb.contactreferences.identifier: column comment required.
+ndb.contextsdatasettypes.datasettypeid: column comment required.
+ndb.contextsdatasettypes.variablecontextid: column comment required.
+ndb.data.dataid: column comment required.
+ndb.dataprocessors.contactid: column comment required.
+ndb.dataprocessors.datasetid: column comment required.
+ndb.datasetdatabases.databaseid: column comment required.
+ndb.datasetdatabases.datasetid: column comment required.
+ndb.datasetdoi.datasetid: column comment required.
+ndb.datasetdoi.doi: column comment required.
+ndb.datasetdoi.published: column comment required.
+ndb.datasets.embargoid: column comment required.
+ndb.datasetsubmissions.databaseid: column comment required.
+ndb.datasettaxagrouptypes.datasettypeid: column comment required.
+ndb.datasettaxagrouptypes.taxagroupid: column comment required.
+ndb.datasettaxonnotes.contactid: column comment required.
+ndb.datasettaxonnotes.datasetid: column comment required.
+ndb.datasettaxonnotes.date: column comment required.
+ndb.datasettaxonnotes.notes: column comment required.
+ndb.datasettaxonnotes.taxonid: column comment required.
+ndb.datasetvariables.datasetid: column comment required.
+ndb.datasetvariables.datasetvariableid: column comment required.
+ndb.datasetvariables.variableid: column comment required.
+ndb.datataxonnotes.contactid: column comment required.
+ndb.datataxonnotes.dataid: column comment required.
+ndb.datataxonnotes.datataxonnotesid: column comment required.
+ndb.datataxonnotes.date: column comment required.
+ndb.datataxonnotes.notes: column comment required.
+ndb.datauncertainties.dataid: column comment required.
+ndb.datauncertainties.notes: column comment required.
+ndb.datauncertainties.uncertaintybasisid: column comment required.
+ndb.datauncertainties.uncertaintyunitid: column comment required.
+ndb.datauncertainties.uncertaintyvalue: column comment required.
+ndb.decayconstants.decayconstant: column comment required.
+ndb.decayconstants.decayconstantid: column comment required.
+ndb.decayconstants.notes: column comment required.
+ndb.decayconstants.publicationid: column comment required.
+ndb.depthreferencesystem.depthreference: column comment required.
+ndb.depthreferencesystem.depthreferencenotes: column comment required.
+ndb.depthreferencesystem.depthreferencepublicationid: column comment required.
+ndb.depthreferencesystem.depthreferencesystemid: column comment required.
+ndb.dsageranges.agetypeid: column comment required.
+ndb.dsageranges.datasetid: column comment required.
+ndb.dsageranges.older: column comment required.
+ndb.dsageranges.younger: column comment required.
+ndb.dsdatasample.dataid: column comment required.
+ndb.dsdatasample.datasetid: column comment required.
+ndb.dsdatasample.sampleid: column comment required.
+ndb.dsdatasample.variableid: column comment required.
+ndb.dslinks.collectionunitid: column comment required.
+ndb.dslinks.datasetid: column comment required.
+ndb.dslinks.siteid: column comment required.
+ndb.dssampdata.datasetid: column comment required.
+ndb.dssampdata.observations: column comment required.
+ndb.dssampdata.samples: column comment required.
+ndb.elementdatasettaxagroups.datasettypeid: column comment required.
+ndb.elementdatasettaxagroups.elementtypeid: column comment required.
+ndb.elementdatasettaxagroups.taxagroupid: column comment required.
+ndb.elementmaturities.maturity: column comment required.
+ndb.elementmaturities.maturityid: column comment required.
+ndb.elementportions.portion: column comment required.
+ndb.elementportions.portionid: column comment required.
+ndb.elementsymmetries.symmetry: column comment required.
+ndb.elementsymmetries.symmetryid: column comment required.
+ndb.elementtaxagroupmaturities.elementtaxagroupid: column comment required.
+ndb.elementtaxagroupmaturities.maturityid: column comment required.
+ndb.elementtaxagroupportions.elementtaxagroupid: column comment required.
+ndb.elementtaxagroupportions.portionid: column comment required.
+ndb.elementtaxagroups.elementtaxagroupid: column comment required.
+ndb.elementtaxagroups.elementtypeid: column comment required.
+ndb.elementtaxagroups.taxagroupid: column comment required.
+ndb.elementtaxagroupsymmetries.elementtaxagroupid: column comment required.
+ndb.elementtaxagroupsymmetries.symmetryid: column comment required.
+ndb.elementtypes.elementtype: column comment required.
+ndb.elementtypes.elementtypeid: column comment required.
+ndb.embargo.embargodate: column comment required.
+ndb.embargo.embargoid: column comment required.
+ndb.embargo.embargopw: column comment required.
+ndb.entitycovers.entitycoverid: column comment required.
+ndb.entitycovers.entitycoverthickness: column comment required.
+ndb.entitycovers.entitycoverunits: column comment required.
+ndb.entitycovers.entityid: column comment required.
+ndb.entitycovertypes.entitycoverid: column comment required.
+ndb.entitycovertypes.entitycovernotes: column comment required.
+ndb.entitycovertypes.entitycovertype: column comment required.
+ndb.entitydripheight.entitydripheight: column comment required.
+ndb.entitydripheight.entitydripheightunit: column comment required.
+ndb.entitydripheight.entityid: column comment required.
+ndb.entitydripheight.speleothemdriptypeid: column comment required.
+ndb.entitygeology.entityid: column comment required.
+ndb.entitygeology.notes: column comment required.
+ndb.entitygeology.speleothemgeologyid: column comment required.
+ndb.entitylandusecover.entityid: column comment required.
+ndb.entitylandusecover.landusecovernotes: column comment required.
+ndb.entitylandusecover.landusecoverpercent: column comment required.
+ndb.entitylandusecover.landusecovertypeid: column comment required.
+ndb.entityrelationship.entityid: column comment required.
+ndb.entityrelationship.entitystatusid: column comment required.
+ndb.entityrelationship.referenceentityid: column comment required.
+ndb.entitysamples.c14: column comment required.
+ndb.entitysamples.clumped_isotopes: column comment required.
+ndb.entitysamples.entityid: column comment required.
+ndb.entitysamples.fluid_inclusions: column comment required.
+ndb.entitysamples.mineralogy_petrology_fabric: column comment required.
+ndb.entitysamples.noble_gas_temperatures: column comment required.
+ndb.entitysamples.odl: column comment required.
+ndb.entitysamples.organics: column comment required.
+ndb.entityvegetationcover.entityid: column comment required.
+ndb.entityvegetationcover.vegetationcovernotes: column comment required.
+ndb.entityvegetationcover.vegetationcoverpercent: column comment required.
+ndb.entityvegetationcover.vegetationcovertypeid: column comment required.
+ndb.eventchronology.analysisunitid: column comment required.
+ndb.eventchronology.chroncontrolid: column comment required.
+ndb.eventchronology.eventchronologyid: column comment required.
+ndb.eventchronology.eventid: column comment required.
+ndb.eventchronology.notes: column comment required.
+ndb.eventpublications.eventid: column comment required.
+ndb.eventpublications.publicationid: column comment required.
+ndb.events.c14age: column comment required.
+ndb.events.c14ageolder: column comment required.
+ndb.events.c14ageyounger: column comment required.
+ndb.events.calage: column comment required.
+ndb.events.calageolder: column comment required.
+ndb.events.calageyounger: column comment required.
+ndb.events.eventid: column comment required.
+ndb.events.eventname: column comment required.
+ndb.events.eventtypeid: column comment required.
+ndb.events.notes: column comment required.
+ndb.eventtypes.chroncontroltypeid: column comment required.
+ndb.eventtypes.eventtype: column comment required.
+ndb.eventtypes.eventtypeid: column comment required.
+ndb.externalcontacts.contactid: column comment required.
+ndb.externalcontacts.extdatabaseid: column comment required.
+ndb.externalcontacts.identifier: column comment required.
+ndb.externaldatabases.extdatabaseid: column comment required.
+ndb.externaldatabases.extdatabasename: column comment required.
+ndb.externaldatabases.url: column comment required.
+ndb.externaldatabases.urlmask: column comment required.
+ndb.externalgeochronology.extdatabaseid: column comment required.
+ndb.externalgeochronology.geochronid: column comment required.
+ndb.externalgeochronology.identifier: column comment required.
+ndb.externalpublications.extdatabaseid: column comment required.
+ndb.externalpublications.extpublicationid: column comment required.
+ndb.externalpublications.publicationid: column comment required.
+ndb.externalspeleothemdata.entityid: column comment required.
+ndb.externalspeleothemdata.extdatabaseid: column comment required.
+ndb.externalspeleothemdata.externaldescription: column comment required.
+ndb.externalspeleothemdata.externalid: column comment required.
+ndb.externaltaxa.extdatabaseid: column comment required.
+ndb.externaltaxa.exttaxonid: column comment required.
+ndb.externaltaxa.taxonid: column comment required.
+ndb.externaltaxa.url: column comment required.
+ndb.formtaxa.affinityid: column comment required.
+ndb.formtaxa.formtaxonid: column comment required.
+ndb.formtaxa.publicationid: column comment required.
+ndb.formtaxa.systematicdescription: column comment required.
+ndb.formtaxa.taxonid: column comment required.
+ndb.fractiondated.fraction: column comment required.
+ndb.fractiondated.fractionid: column comment required.
+ndb.geochroncontrols.chroncontrolid: column comment required.
+ndb.geochroncontrols.geochronid: column comment required.
+ndb.geopaths.geoin: column comment required.
+ndb.geopaths.geoout: column comment required.
+ndb.geopoldepth.geopoliticalid: column comment required.
+ndb.geopoldepth.geopoliticalname: column comment required.
+ndb.geopoldepth.geopoliticalunit: column comment required.
+ndb.geopoldepth.path: column comment required.
+ndb.geopoldepth.rank: column comment required.
+ndb.hiatuschronology.chronologyid: column comment required.
+ndb.hiatuschronology.hiatusid: column comment required.
+ndb.hiatuschronology.hiatuslength: column comment required.
+ndb.hiatuschronology.hiatusuncertainty: column comment required.
+ndb.hiatuses.analysisunitend: column comment required.
+ndb.hiatuses.analysisunitstart: column comment required.
+ndb.hiatuses.hiatusid: column comment required.
+ndb.hiatuses.notes: column comment required.
+ndb.isobiomarkerbandtypes.isobiomarkerbandtype: column comment required.
+ndb.isobiomarkerbandtypes.isobiomarkerbandtypeid: column comment required.
+ndb.isobiomarkerbandtypes.isobiomarkertypeid: column comment required.
+ndb.isobiomarkertypes.isobiomarkertype: column comment required.
+ndb.isobiomarkertypes.isobiomarkertypeid: column comment required.
+ndb.isoinstrumentation.datasetid: column comment required.
+ndb.isoinstrumentation.insterrorlongtermpercent: column comment required.
+ndb.isoinstrumentation.insterrorpercent: column comment required.
+ndb.isoinstrumentation.insterrorrunsd: column comment required.
+ndb.isoinstrumentation.isoinstrumentationtypeid: column comment required.
+ndb.isoinstrumentation.isosampleintrosystemtypeid: column comment required.
+ndb.isoinstrumentation.notes: column comment required.
+ndb.isoinstrumentation.variableid: column comment required.
+ndb.isoinstrumentationtypes.isoinstrumentationtype: column comment required.
+ndb.isoinstrumentationtypes.isoinstrumentationtypeid: column comment required.
+ndb.isomatanalsubstrate.isomatanaltypeid: column comment required.
+ndb.isomatanalsubstrate.isosubstratetypeid: column comment required.
+ndb.isomaterialanalyzedtypes.isomatanaltypeid: column comment required.
+ndb.isomaterialanalyzedtypes.isomaterialanalyzedtype: column comment required.
+ndb.isometadata.analystid: column comment required.
+ndb.isometadata.atomicpercent: column comment required.
+ndb.isometadata.dataid: column comment required.
+ndb.isometadata.isomatanaltypeid: column comment required.
+ndb.isometadata.isometadataid: column comment required.
+ndb.isometadata.isosubstratetypeid: column comment required.
+ndb.isometadata.lab: column comment required.
+ndb.isometadata.labnumber: column comment required.
+ndb.isometadata.mass_mg: column comment required.
+ndb.isometadata.reps: column comment required.
+ndb.isometadata.weightpercent: column comment required.
+ndb.isopretreatmenttypes.isopretreatmentqualifier: column comment required.
+ndb.isopretreatmenttypes.isopretreatmenttype: column comment required.
+ndb.isopretreatmenttypes.isopretreatmenttypeid: column comment required.
+ndb.isosampleintrosystemtypes.isosampleintrosystemtype: column comment required.
+ndb.isosampleintrosystemtypes.isosampleintrosystemtypeid: column comment required.
+ndb.isosampleorigintypes.isosampleorigintype: column comment required.
+ndb.isosampleorigintypes.isosampleorigintypeid: column comment required.
+ndb.isosamplepretreatments.dataid: column comment required.
+ndb.isosamplepretreatments.isopretreatmenttypeid: column comment required.
+ndb.isosamplepretreatments.order: column comment required.
+ndb.isosamplepretreatments.value: column comment required.
+ndb.isoscaletypes.isoscaleacronym: column comment required.
+ndb.isoscaletypes.isoscalename: column comment required.
+ndb.isoscaletypes.isoscaletypeid: column comment required.
+ndb.isospecimendata.dataid: column comment required.
+ndb.isospecimendata.isospecimendataid: column comment required.
+ndb.isospecimendata.sd: column comment required.
+ndb.isospecimendata.specimenid: column comment required.
+ndb.isosrmetadata.datasetid: column comment required.
+ndb.isosrmetadata.srlocalgeolcontext: column comment required.
+ndb.isosrmetadata.srlocalvalue: column comment required.
+ndb.isosrmetadata.variableid: column comment required.
+ndb.isostandards.datasetid: column comment required.
+ndb.isostandards.isostandardid: column comment required.
+ndb.isostandards.value: column comment required.
+ndb.isostandards.variableid: column comment required.
+ndb.isostandardtypes.isostandardmaterial: column comment required.
+ndb.isostandardtypes.isostandardtype: column comment required.
+ndb.isostandardtypes.isostandardtypeid: column comment required.
+ndb.isostratdata.dataid: column comment required.
+ndb.isostratdata.elementtypeid: column comment required.
+ndb.isostratdata.sd: column comment required.
+ndb.isostratdata.taxonid: column comment required.
+ndb.isosubstratetypes.isosubstratetype: column comment required.
+ndb.isosubstratetypes.isosubstratetypeid: column comment required.
+ndb.isovariablescaletypes.isoscaletypeid: column comment required.
+ndb.isovariablescaletypes.variableid: column comment required.
+ndb.landusetypes.landusecovernotes: column comment required.
+ndb.landusetypes.landusecovertype: column comment required.
+ndb.landusetypes.landusecovertypeid: column comment required.
+ndb.landusetypes.publicationid: column comment required.
+ndb.leadmodelbasis.pbbasis: column comment required.
+ndb.leadmodelbasis.pbbasisid: column comment required.
+ndb.leadmodels.analysisunitid: column comment required.
+ndb.leadmodels.cumulativeinventory: column comment required.
+ndb.leadmodels.pbbasisid: column comment required.
+ndb.lithology.lowerboundary: column comment required.
+ndb.lithostrat.higherlithostratid: column comment required.
+ndb.lithostrat.lithostratid: column comment required.
+ndb.lithostrat.lithostratname: column comment required.
+ndb.lithostrat.lithostratunitid: column comment required.
+ndb.lithostratunits.lithostratunit: column comment required.
+ndb.lithostratunits.lithostratunitid: column comment required.
+ndb.lithostratunits.rank: column comment required.
+ndb.publications.bibtex: column comment required.
+ndb.publications.crossref: column comment required.
+ndb.publications.journal: column comment required.
+ndb.publications.url: column comment required.
+ndb.publicationtranslators.familyname: column comment required.
+ndb.publicationtranslators.initials: column comment required.
+ndb.publicationtranslators.publicationid: column comment required.
+ndb.publicationtranslators.suffix: column comment required.
+ndb.publicationtranslators.translatorid: column comment required.
+ndb.publicationtranslators.translatororder: column comment required.
+ndb.publicationtypes.pubtype: column comment required.
+ndb.pubtsv.publicationid: column comment required.
+ndb.pubtsv.pubtsv: column comment required.
+ndb.radiocarbon.cnratio: column comment required.
+ndb.radiocarbon.delta13c: column comment required.
+ndb.radiocarbon.delta15n: column comment required.
+ndb.radiocarbon.geochronid: column comment required.
+ndb.radiocarbon.masscmg: column comment required.
+ndb.radiocarbon.percentc: column comment required.
+ndb.radiocarbon.percentcollagen: column comment required.
+ndb.radiocarbon.percentn: column comment required.
+ndb.radiocarbon.radiocarbonmethodid: column comment required.
+ndb.radiocarbon.reservoir: column comment required.
+ndb.radiocarbonmethods.radiocarbonmethod: column comment required.
+ndb.radiocarbonmethods.radiocarbonmethodid: column comment required.
+ndb.relativechronology.chroncontrolid: column comment required.
+ndb.rocktypes.description: column comment required.
+ndb.rocktypes.higherrocktypeid: column comment required.
+ndb.rocktypes.rocktype: column comment required.
+ndb.rocktypes.rocktypeid: column comment required.
+ndb.samples.sampledate: column comment required.
+ndb.samples.taxonid: column comment required.
+ndb.sitegeopolitical.objectid: column comment required.
+ndb.sitelandusecover.landusecovernotes: column comment required.
+ndb.sitelandusecover.landusecoverpercent: column comment required.
+ndb.sitelandusecover.landusecovertypeid: column comment required.
+ndb.sitelandusecover.siteid: column comment required.
+ndb.sites.geog: column comment required.
+ndb.sitestemp.altitude: column comment required.
+ndb.sitestemp.area: column comment required.
+ndb.sitestemp.geog: column comment required.
+ndb.sitestemp.latitudenorth: column comment required.
+ndb.sitestemp.latitudesouth: column comment required.
+ndb.sitestemp.longitudeeast: column comment required.
+ndb.sitestemp.longitudewest: column comment required.
+ndb.sitestemp.notes: column comment required.
+ndb.sitestemp.sitedescription: column comment required.
+ndb.sitestemp.siteid: column comment required.
+ndb.sitestemp.sitename: column comment required.
+ndb.sitevegetationcover.siteid: column comment required.
+ndb.sitevegetationcover.vegetationcovernotes: column comment required.
+ndb.sitevegetationcover.vegetationcoverpercent: column comment required.
+ndb.sitevegetationcover.vegetationcovertypeid: column comment required.
+ndb.specimendates.elementtypeid: column comment required.
+ndb.specimendates.fractionid: column comment required.
+ndb.specimendates.specimenid: column comment required.
+ndb.specimendatescal.calage: column comment required.
+ndb.specimendatescal.calageolder: column comment required.
+ndb.specimendatescal.calageyounger: column comment required.
+ndb.specimendatescal.calibrationcurveid: column comment required.
+ndb.specimendatescal.calibrationprogramid: column comment required.
+ndb.specimendatescal.datecalibrated: column comment required.
+ndb.specimendatescal.specimendatecalid: column comment required.
+ndb.specimendatescal.specimendateid: column comment required.
+ndb.specimendomesticstatustypes.domesticstatus: column comment required.
+ndb.specimendomesticstatustypes.domesticstatusid: column comment required.
+ndb.specimengenbank.genbanknr: column comment required.
+ndb.specimengenbank.specimenid: column comment required.
+ndb.specimens.arctosnr: column comment required.
+ndb.specimens.dataid: column comment required.
+ndb.specimens.domesticstatusid: column comment required.
+ndb.specimens.elementtypeid: column comment required.
+ndb.specimens.fieldnr: column comment required.
+ndb.specimens.maturityid: column comment required.
+ndb.specimens.nisp: column comment required.
+ndb.specimens.notes: column comment required.
+ndb.specimens.portionid: column comment required.
+ndb.specimens.preservative: column comment required.
+ndb.specimens.repositoryid: column comment required.
+ndb.specimens.sexid: column comment required.
+ndb.specimens.specimenid: column comment required.
+ndb.specimens.specimennr: column comment required.
+ndb.specimens.symmetryid: column comment required.
+ndb.specimensextypes.sex: column comment required.
+ndb.specimensextypes.sexid: column comment required.
+ndb.specimentaphonomy.specimenid: column comment required.
+ndb.specimentaphonomy.taphonomictypeid: column comment required.
+ndb.speleothemcollectionunits.collectionunitid: column comment required.
+ndb.speleothemcollectionunits.entityid: column comment required.
+ndb.speleothemcollectionunits.persistid: column comment required.
+ndb.speleothemdriptypes.speleothemdriptype: column comment required.
+ndb.speleothemdriptypes.speleothemdriptypeid: column comment required.
+ndb.speleothemdriptypes.speleothemdriptypenotes: column comment required.
+ndb.speleothemdriptypes.speleothemdriptypepublicationid: column comment required.
+ndb.speleothementitystatuses.entitystatus: column comment required.
+ndb.speleothementitystatuses.entitystatusid: column comment required.
+ndb.speleothems.entityid: column comment required.
+ndb.speleothems.entityname: column comment required.
+ndb.speleothems.entrancedistance: column comment required.
+ndb.speleothems.entrancedistanceunits: column comment required.
+ndb.speleothems.monitoring: column comment required.
+ndb.speleothems.rockageid: column comment required.
+ndb.speleothems.siteid: column comment required.
+ndb.speleothems.speleothemtypeid: column comment required.
+ndb.speleothemtypes.speleothemtype: column comment required.
+ndb.speleothemtypes.speleothemtypeid: column comment required.
+ndb.speleothemtypes.speleothemtypenotes: column comment required.
+ndb.speleothemtypes.speleothemtypepublicationid: column comment required.
+ndb.summarydatataphonomy.dataid: column comment required.
+ndb.summarydatataphonomy.taphonomictypeid: column comment required.
+ndb.synonyms.invalidtaxonid: column comment required.
+ndb.synonyms.validtaxonid: column comment required.
+ndb.synonymy.contactid: column comment required.
+ndb.synonymy.datesynonymized: column comment required.
+ndb.synonymy.fromcontributor: column comment required.
+ndb.synonymy.notes: column comment required.
+ndb.synonymy.publicationid: column comment required.
+ndb.synonymy.reftaxonid: column comment required.
+ndb.synonymy.synonymyid: column comment required.
+ndb.synonymy.taxonid: column comment required.
+ndb.sysdiagrams.definition: column comment required.
+ndb.sysdiagrams.diagram_id: column comment required.
+ndb.sysdiagrams.name: column comment required.
+ndb.sysdiagrams.principal_id: column comment required.
+ndb.sysdiagrams.version: column comment required.
+ndb.taphonomicsystems.notes: column comment required.
+ndb.taphonomicsystems.taphonomicsystem: column comment required.
+ndb.taphonomicsystems.taphonomicsystemid: column comment required.
+ndb.taphonomicsystemsdatasettypes.datasettypeid: column comment required.
+ndb.taphonomicsystemsdatasettypes.taphonomicsystemid: column comment required.
+ndb.taphonomictypes.notes: column comment required.
+ndb.taphonomictypes.taphonomicsystemid: column comment required.
+ndb.taphonomictypes.taphonomictype: column comment required.
+ndb.taphonomictypes.taphonomictypeid: column comment required.
+ndb.taxa.valid: column comment required.
+ndb.taxa.validatedate: column comment required.
+ndb.taxa.validatorid: column comment required.
+ndb.taxaalthierarchy.highertaxonid: column comment required.
+ndb.taxaalthierarchy.taxaalthierarchytypeid: column comment required.
+ndb.taxaalthierarchy.taxonid: column comment required.
+ndb.taxaalthierarchytypes.taxaalthierarchydescript: column comment required.
+ndb.taxaalthierarchytypes.taxaalthierarchyname: column comment required.
+ndb.taxaalthierarchytypes.taxaalthierarchytypeid: column comment required.
+ndb.taxonpaths.taxonid: column comment required.
+ndb.taxonpaths.taxonout: column comment required.
+ndb.tephras.analysisunitid: column comment required.
+ndb.tephras.eventid: column comment required.
+ndb.uncertaintybases.uncertaintybasis: column comment required.
+ndb.uncertaintybases.uncertaintybasisid: column comment required.
+ndb.unitsdatasettypes.datasettypeid: column comment required.
+ndb.unitsdatasettypes.variableunitsid: column comment required.
+ndb.uraniumseries.activity230th238u: column comment required.
+ndb.uraniumseries.activity234u238u: column comment required.
+ndb.uraniumseries.activityuncertainty230th238u: column comment required.
+ndb.uraniumseries.activityuncertainty234u238u: column comment required.
+ndb.uraniumseries.decayconstantid: column comment required.
+ndb.uraniumseries.geochronid: column comment required.
+ndb.uraniumseries.iniratio230th232th: column comment required.
+ndb.uraniumseries.iniratiouncertainty230th232th: column comment required.
+ndb.uraniumseries.ratio230th232th: column comment required.
+ndb.uraniumseries.ratiouncertainty230th232th: column comment required.
+ndb.uraniumseriesdata.dataid: column comment required.
+ndb.uraniumseriesdata.geochronid: column comment required.
+ndb.variableelements.elementtypeid: column comment required.
+ndb.variableelements.maturityid: column comment required.
+ndb.variableelements.portionid: column comment required.
+ndb.variableelements.symmetryid: column comment required.
+ndb.vegetationcovertypes.vegetationcovernotes: column comment required.
+ndb.vegetationcovertypes.vegetationcovertype: column comment required.
+ndb.vegetationcovertypes.vegetationcovertypeid: column comment required.
+ndb.vegetationcovertypes.vegetationpublicationid: column comment required.
+ti.dslinks.collectionunitid: column comment required.
+ti.dslinks.datasetid: column comment required.
+ti.dslinks.siteid: column comment required.
+ti.geopol1.geopolname1: column comment required.
+ti.geopol1.siteid: column comment required.
+ti.geopol2.geopolname2: column comment required.
+ti.geopol2.siteid: column comment required.
+ti.geopol3.geopolname3: column comment required.
+ti.geopol3.siteid: column comment required.
+ti.geopol4.geopolname4: column comment required.
+ti.geopol4.siteid: column comment required.
+ti.stewarddatabases.databaseid: column comment required.
+ti.stewarddatabases.stewardid: column comment required.
+ti.stewards.contactid: column comment required.
+ti.stewards.pwd: column comment required.
+ti.stewards.stewardid: column comment required.
+ti.stewards.taxonomyexpert: column comment required.
+ti.stewards.username: column comment required.
+ti.stewardupdates.columnname: column comment required.
+ti.stewardupdates.contactid: column comment required.
+ti.stewardupdates.dateupdated: column comment required.
+ti.stewardupdates.operation: column comment required.
+ti.stewardupdates.pk1: column comment required.
+ti.stewardupdates.pk2: column comment required.
+ti.stewardupdates.pk3: column comment required.
+ti.stewardupdates.tablename: column comment required.
+ti.stewardupdates.updateid: column comment required.
+ts.stewardauthorization.authorized: column comment required.
+ts.stewardauthorization.firstname: column comment required.
+ts.stewardauthorization.lastname: column comment required.
+ts.stewardauthorization.pwd: column comment required.
+ts.stewardauthorization.stewardid: column comment required.
+ts.stewardauthorization.username: column comment required.
+ap.faunranges.faunranges_pkey: index comment required.
+ap.faunranges.geom_idx: index comment required.
+ap.faunranges.sciname_idx: index comment required.
+ap.gadm.gadm_pkey: index comment required.
+ap.gadm.gadm_shape_geom_idx: index comment required.
+ap.geopolnames.gpsiteidindex: index comment required.
+ap.globalmammals.globalmammals_geom_geom_idx: index comment required.
+ap.globalmammals.globalmammals_pkey: index comment required.
+ap.hydrolakes.gist_lakes_2geog: index comment required.
+ap.hydrolakes.hydrolakes_pkey: index comment required.
+ap.hydrolakes.hydrolakes_shape_geom_idx: index comment required.
+ap.icesheets.icesheets_geom_idx: index comment required.
+ap.icesheets.icesheets_pkey: index comment required.
+ap.pollensumgroups.pollensumgroups_pkey: index comment required.
+ap.querytable.altitudeidx: index comment required.
+ap.querytable.atyindex: index comment required.
+ap.querytable.contactidindex: index comment required.
+ap.querytable.datasetidindex: index comment required.
+ap.querytable.depenvindex: index comment required.
+ap.querytable.distinctrows: index comment required.
+ap.querytable.dstindex: index comment required.
+ap.querytable.geoidindex: index comment required.
+ap.querytable.idx_querytable_composite: index comment required.
+ap.querytable.idx_querytable_pagination: index comment required.
+ap.querytable.keywordidindex: index comment required.
+ap.querytable.olderidx: index comment required.
+ap.querytable.publicationidindex: index comment required.
+ap.querytable.siteidindex: index comment required.
+ap.querytable.sitename: index comment required.
+ap.querytable.spatialgeom: index comment required.
+ap.querytable.taxonidindex: index comment required.
+ap.querytable.youngeridx: index comment required.
+ap.summaries.summaries_pkey: index comment required.
+doi.doimeta.doimeta_doi_idx: index comment required.
+doi.doimeta.doimeta_pkey: index comment required.
+doi.frozen.frozen_datasetid_idx: index comment required.
+ndb.accumulationrates.accumulationrates_pkey: index comment required.
+ndb.agetypes.agetypes_pkey: index comment required.
+ndb.aggregatechronologies.aggregatechronologies_pkey: index comment required.
+ndb.aggregatedatasets.aggregatedatasets_pkey: index comment required.
+ndb.aggregateordertypes.aggregateordertypes_pkey: index comment required.
+ndb.aggregatesampleages.aggregatesampleages_pkey: index comment required.
+ndb.aggregatesamples.aggregatesamples_pkey: index comment required.
+ndb.analysisunitaltdepths.analysisunitaltdepths_pkey: index comment required.
+ndb.analysisunitaltdepthscales.analysisunitaltdepthscales_pkey: index comment required.
+ndb.analysisunitlithostrat.analysisunitlithostrat_pkey: index comment required.
+ndb.analysisunits.analysisunits_collunit_idx: index comment required.
+ndb.analysisunits.analysisunits_facies_idx: index comment required.
+ndb.analysisunits.analysisunits_pkey: index comment required.
+ndb.calibrationcurves.calibrationcurves_pkey: index comment required.
+ndb.calibrationprograms.calibrationprograms_pkey: index comment required.
+ndb.chroncontrolaccuracydirections.chroncontrolaccuracydirections_pkey: index comment required.
+ndb.chroncontrolaccuracydistributions.chroncontrolaccuracydistributions_pkey: index comment required.
+ndb.chroncontrolaccuracyranks.chroncontrolaccuracyranks_pkey: index comment required.
+ndb.chroncontrolprecisionranks.chroncontrolprecisionranks_pkey: index comment required.
+ndb.chroncontrolranks.chroncontrolranks_pkey: index comment required.
+ndb.chroncontrols.ccrchronage_idx: index comment required.
+ndb.chroncontrols.ccroldage_idx: index comment required.
+ndb.chroncontrols.ccryoungage_idx: index comment required.
+ndb.chroncontrols.chroncontrols_chronologyid_idx: index comment required.
+ndb.chroncontrols.chroncontrols_pkey: index comment required.
+ndb.chroncontrolscal14c.chroncontrolscal14c_pkey: index comment required.
+ndb.chroncontroltypes.chroncontroltypes_pkey: index comment required.
+ndb.chronologies.chroldage_idx: index comment required.
+ndb.chronologies.chronologies_pkey: index comment required.
+ndb.chronologies.chryoungage_idx: index comment required.
+ndb.chronologies.idx_chronologies_default: index comment required.
+ndb.chronologies.oldage_idx: index comment required.
+ndb.chronologies.youngage_idx: index comment required.
+ndb.collectiontypes.collectiontypes_pkey: index comment required.
+ndb.collectionunits.collectionunits_pkey: index comment required.
+ndb.collectionunits.ix_collectionunitid_collectionunits: index comment required.
+ndb.collectionunits.ix_depenvtid_collectionunits: index comment required.
+ndb.collectionunits.ix_siteid_collectionunits: index comment required.
+ndb.collectors.collectors_pkey: index comment required.
+ndb.constituentdatabases.constituentdatabases_pkey: index comment required.
+ndb.contacts.contacts_pkey: index comment required.
+ndb.contacts.familynames_idx: index comment required.
+ndb.contactstatuses.contactstatuses_pkey: index comment required.
+ndb.contextsdatasettypes.contextsdatasettypes_pkey: index comment required.
+ndb.data.data_pkey: index comment required.
+ndb.data.data_sample_idx: index comment required.
+ndb.data.data_variable_idx: index comment required.
+ndb.dataprocessors.dataprocessors_pkey: index comment required.
+ndb.datasetdatabases.datasetdatabases_pkey: index comment required.
+ndb.datasetdatabases.datasettimes: index comment required.
+ndb.datasetdatabases.ix_datasetid_datasetdatabases: index comment required.
+ndb.datasetdatabases.ix_projectid_datasetdatabases: index comment required.
+ndb.datasetdoi.datasetdoi_pkey: index comment required.
+ndb.datasetdoi.idx_datasetdoi_datasetid: index comment required.
+ndb.datasetdoi.idx_datasetdoi_datasetid_doi: index comment required.
+ndb.datasetpis.idx_datasetpis_datasetid: index comment required.
+ndb.datasetpis.idx_datasetpis_datasetid_contactid: index comment required.
+ndb.datasetpis.ix_contactid_datasetpis: index comment required.
+ndb.datasetpis.ix_datasetid_datasetpis: index comment required.
+ndb.datasetpublications.datasetpublications_pkey: index comment required.
+ndb.datasetpublications.ix_datasetid_datasetpublications: index comment required.
+ndb.datasetpublications.ix_publicationid_datasetpublications: index comment required.
+ndb.datasets.datasets_pkey: index comment required.
+ndb.datasets.idx_datasets_collectionunit: index comment required.
+ndb.datasets.ix_collectionunitid_datasets: index comment required.
+ndb.datasets.ix_datasettypeid_datasets: index comment required.
+ndb.datasetsubmissions.datasetsubmissions_pkey: index comment required.
+ndb.datasetsubmissions.ix_datasetid_datasetsubmissions: index comment required.
+ndb.datasetsubmissions.ix_projectid_datasetsubmissions: index comment required.
+ndb.datasetsubmissiontypes.datasetsubmissiontypes_pkey: index comment required.
+ndb.datasettaxagrouptypes.datasettaxagrouptypes_pkey: index comment required.
+ndb.datasettaxonnotes.datasettaxonnotes_pkey: index comment required.
+ndb.datasettypes.datasettypes_pkey: index comment required.
+ndb.datasetvariables.datasetvariables_pkey: index comment required.
+ndb.datataxonnotes.datataxonnotes_pkey: index comment required.
+ndb.datauncertainties.uniqueentryvalue: index comment required.
+ndb.decayconstants.decayconstants_pkey: index comment required.
+ndb.depagents.depagents_pkey: index comment required.
+ndb.depagents.ix_analysisunitid_depagents: index comment required.
+ndb.depagents.ix_depagentid_depagents: index comment required.
+ndb.depagenttypes.depagenttypes_pkey: index comment required.
+ndb.depenvttypes.depenvttypes_pkey: index comment required.
+ndb.depthreferencesystem.depthreferencesystem_pkey: index comment required.
+ndb.ecolgroups.ecolgroups_pkey: index comment required.
+ndb.ecolgroups.ecolgroups_unique: index comment required.
+ndb.ecolgroups.ix_ecolgroupid_ecolgroups: index comment required.
+ndb.ecolgroups.ix_ecolsetid_ecolgroups: index comment required.
+ndb.ecolgroups.ix_taxonid_ecolgroups: index comment required.
+ndb.ecolgrouptypes.ecolgrouptypes_pkey: index comment required.
+ndb.ecolsettypes.ecolsettypes_pkey: index comment required.
+ndb.elementdatasettaxagroups.elementdatasettaxagroups_pkey: index comment required.
+ndb.elementmaturities.elementmaturities_pkey: index comment required.
+ndb.elementmaturities.ix_elementmaturities: index comment required.
+ndb.elementportions.elementportions_pkey: index comment required.
+ndb.elementportions.ix_elementportions: index comment required.
+ndb.elementsymmetries.elementsymmetries_pkey: index comment required.
+ndb.elementsymmetries.ix_elementsymmetries: index comment required.
+ndb.elementtaxagroupmaturities.elementtaxagroupmaturities_pkey: index comment required.
+ndb.elementtaxagroupportions.elementtaxagroupportions_pkey: index comment required.
+ndb.elementtaxagroups.elementtaxagroups_pkey: index comment required.
+ndb.elementtaxagroups.ix_elementtaxagrouptypes: index comment required.
+ndb.elementtaxagroupsymmetries.elementtaxagroupsymmetries_pkey: index comment required.
+ndb.elementtypes.elementtypes_pkey: index comment required.
+ndb.elementtypes.ix_elementtypes: index comment required.
+ndb.embargo.embargo_pkey: index comment required.
+ndb.entitycovertypes.entitycovertypes_pkey: index comment required.
+ndb.entitysamples.entitysamples_pkey: index comment required.
+ndb.eventchronology.eventchronology_pkey: index comment required.
+ndb.eventchronology.ix_analysisunitid_eventchronology: index comment required.
+ndb.eventchronology.ix_eventid_eventchronology: index comment required.
+ndb.eventchronology.uniqueeventset: index comment required.
+ndb.eventpublications.eventpublications_pkey: index comment required.
+ndb.events.events_pkey: index comment required.
+ndb.eventtypes.eventtypes_pkey: index comment required.
+ndb.externalcontacts.externalcontacts_contactid_identifier_extdatabaseid_key: index comment required.
+ndb.externaldatabases.externaldatabases_pkey: index comment required.
+ndb.externalgeochronology.uniqueid: index comment required.
+ndb.externalpublications.externalpublications_pkey: index comment required.
+ndb.externaltaxa.externaltaxa_pkey: index comment required.
+ndb.externaltaxa.ix_extdatabaseid_exttaxonid_externaltaxa: index comment required.
+ndb.faciestypes.faciestypes_pkey: index comment required.
+ndb.formtaxa.formtaxa_pkey: index comment required.
+ndb.fractiondated.fractiondated_pkey: index comment required.
+ndb.geochroncontrols.geochroncontrols_pkey: index comment required.
+ndb.geochroncontrols.ix_chroncontrolid_geochroncontrols: index comment required.
+ndb.geochroncontrols.ix_geochronid_geochroncontrols: index comment required.
+ndb.geochronology.geoage_idx: index comment required.
+ndb.geochronology.geochronology_labnumber_idx: index comment required.
+ndb.geochronology.geochronology_pkey: index comment required.
+ndb.geochronology.geochronology_unique: index comment required.
+ndb.geochronology.ix_sampleid_geochronology: index comment required.
+ndb.geochronpublications.geochronpublications_pkey: index comment required.
+ndb.geochronpublications.ix_geochronid_geochronpublications: index comment required.
+ndb.geochronpublications.ix_publicationid_geochronpublications: index comment required.
+ndb.geochrontypes.geochrontypes_pkey: index comment required.
+ndb.geopaths.geopaths_pkey: index comment required.
+ndb.geopoliticalunits.geopoliticalunits_pkey: index comment required.
+ndb.geopoliticalunits.ix_geopoliticalname_geopoliticalunits: index comment required.
+ndb.geopoliticalunits.ix_rank_geopoliticalunits: index comment required.
+ndb.hiatuschronology.hiatuschronology_hiatusid_chronologyid_key: index comment required.
+ndb.hiatuses.hiatuses_hiatusid_analysisunitstart_analysisunitend_key: index comment required.
+ndb.hiatuses.hiatuses_pkey: index comment required.
+ndb.isobiomarkerbandtypes.isobiomarkerbandtypes_pkey: index comment required.
+ndb.isobiomarkertypes.isobiomarkertypes_pkey: index comment required.
+ndb.isoinstrumentation.isoinstrumentation_pkey: index comment required.
+ndb.isoinstrumentationtypes.isoinstrumentationtypes_pkey: index comment required.
+ndb.isomatanalsubstrate.isomatanalsubstrate_pkey: index comment required.
+ndb.isomaterialanalyzedtypes.isomaterialanalyzedtypes_pkey: index comment required.
+ndb.isometadata.isometadata_pkey: index comment required.
+ndb.isopretreatmenttypes.isopretreatmenttypes_pkey: index comment required.
+ndb.isosampleintrosystemtypes.isosampleintrosystemtypes_pkey: index comment required.
+ndb.isosampleorigintypes.isosampleorigintypes_pkey: index comment required.
+ndb.isosamplepretreatments.isosamplepretreatments_pkey: index comment required.
+ndb.isoscaletypes.isoscaletypes_pkey: index comment required.
+ndb.isospecimendata.isospecimendata_pkey: index comment required.
+ndb.isosrmetadata.isosrmetadata_pkey: index comment required.
+ndb.isostandards.isostandards_pkey: index comment required.
+ndb.isostandardtypes.isostandardtypes_pkey: index comment required.
+ndb.isostratdata.isostratdata_pkey: index comment required.
+ndb.isosubstratetypes.isosubstratetypes_pkey: index comment required.
+ndb.isovariablescaletypes.isovariablescaletypes_pkey: index comment required.
+ndb.keywords.keywords_pkey: index comment required.
+ndb.lakeparameters.ix_lakeparameterid_lakeparameters: index comment required.
+ndb.lakeparameters.ix_siteid_lakeparameters: index comment required.
+ndb.lakeparameters.lakeparameters_pkey: index comment required.
+ndb.lakeparametertypes.lakeparametertypes_pkey: index comment required.
+ndb.landusetypes.landusetypes_landusecovertype_key: index comment required.
+ndb.landusetypes.landusetypes_pkey: index comment required.
+ndb.leadmodelbasis.leadmodelbasis_pkey: index comment required.
+ndb.lithology.ix_collectionunitid_lithology: index comment required.
+ndb.lithology.lithology_pkey: index comment required.
+ndb.lithostrat.lithostrat_pkey: index comment required.
+ndb.lithostratunits.lithostratunits_pkey: index comment required.
+ndb.publicationauthors.ix_contactid_publicationauthors: index comment required.
+ndb.publicationauthors.ix_publicationid_publicationauthors: index comment required.
+ndb.publicationauthors.publicationauthors_pkey: index comment required.
+ndb.publicationeditors.ix_publicationid_publicationeditors: index comment required.
+ndb.publicationeditors.publicationeditors_pkey: index comment required.
+ndb.publications.publications_pkey: index comment required.
+ndb.publicationtranslators.publicationtranslators_pkey: index comment required.
+ndb.publicationtypes.publicationtypes_pkey: index comment required.
+ndb.radiocarbon.radiocarbon_pkey: index comment required.
+ndb.radiocarbon.radiocarbon_unique: index comment required.
+ndb.radiocarboncalibration.radiocarboncalibration_pkey: index comment required.
+ndb.radiocarbonmethods.radiocarbonmethods_pkey: index comment required.
+ndb.relativeagepublications.ix_relativeageid_relativeagepublications: index comment required.
+ndb.relativeagepublications.relativeagepublications_pkey: index comment required.
+ndb.relativeages.ix_relativeagescaleid_relativeages: index comment required.
+ndb.relativeages.relativeages_pkey: index comment required.
+ndb.relativeagescales.relativeagescales_pkey: index comment required.
+ndb.relativeageunits.relativeageunits_pkey: index comment required.
+ndb.relativechronology.ix_analysisunitid_relativechronology: index comment required.
+ndb.relativechronology.ix_relativeageid_relativechronology: index comment required.
+ndb.relativechronology.relativechronology_pkey: index comment required.
+ndb.repositoryinstitutions.repositoryinstitutions_pkey: index comment required.
+ndb.repositoryspecimens.ix_datasetid_repositoryspecimens: index comment required.
+ndb.repositoryspecimens.repositoryspecimens_pkey: index comment required.
+ndb.rocktypes.rocktypes_pkey: index comment required.
+ndb.sampleages.ix_chronologyid_sampleages: index comment required.
+ndb.sampleages.ix_sampleid_sampleages: index comment required.
+ndb.sampleages.sampleages_pkey: index comment required.
+ndb.sampleages.smpage_idx: index comment required.
+ndb.sampleages.smpageold_idx: index comment required.
+ndb.sampleages.smpageyoung_idx: index comment required.
+ndb.sampleanalysts.ix_contactid_sampleanalysts: index comment required.
+ndb.sampleanalysts.ix_sampleid_sampleanalysts: index comment required.
+ndb.sampleanalysts.sampleanalysts_pkey: index comment required.
+ndb.samplekeywords.ix_keywordid_samplekeywords: index comment required.
+ndb.samplekeywords.ix_sampleid_samplekeywords: index comment required.
+ndb.samplekeywords.samplekeywords_pkey: index comment required.
+ndb.samples.idx_samples_datasetid_sampleid: index comment required.
+ndb.samples.ix_analysisunitid_samples: index comment required.
+ndb.samples.ix_datasetid_samples: index comment required.
+ndb.samples.sample_taxon_idx: index comment required.
+ndb.samples.samples_pkey: index comment required.
+ndb.sitegeopolitical.ix_geopoliticalid_sitegeopolitical: index comment required.
+ndb.sitegeopolitical.ix_siteid_sitegeopolitical: index comment required.
+ndb.sitegeopolitical.sitegeopolitical_pkey: index comment required.
+ndb.siteimages.ix_siteid_siteimages: index comment required.
+ndb.siteimages.siteimages_pkey: index comment required.
+ndb.sites.ix_siteid_sites: index comment required.
+ndb.sites.sitegeog_gix: index comment required.
+ndb.sites.sitenames_idx: index comment required.
+ndb.sites.sites_pkey: index comment required.
+ndb.sitestemp.sitestemp_pkey: index comment required.
+ndb.specimendates.ix_sampleid_specimendates: index comment required.
+ndb.specimendates.ix_taxonid_specimendates: index comment required.
+ndb.specimendates.specimendates_pkey: index comment required.
+ndb.specimendatescal.specimendatescal_pkey: index comment required.
+ndb.specimendomesticstatustypes.specimendomesticstatustypes_pkey: index comment required.
+ndb.specimengenbank.specimengenbank_pkey: index comment required.
+ndb.specimens.specimens_pkey: index comment required.
+ndb.specimensextypes.specimensextypes_pkey: index comment required.
+ndb.specimentaphonomy.specimentaphonomy_pkey: index comment required.
+ndb.speleothemcollectionunits.unique_collectionunitid: index comment required.
+ndb.speleothemdriptypes.speleothemdriptypes_pkey: index comment required.
+ndb.speleothementitystatuses.speleothementitystatuses_pkey: index comment required.
+ndb.speleothems.speleothems_pkey: index comment required.
+ndb.speleothemtypes.speleothemtypes_pkey: index comment required.
+ndb.summarydatataphonomy.summarydatataphonomy_pkey: index comment required.
+ndb.synonyms.ix_taxonid_synonyms: index comment required.
+ndb.synonyms.synonyms_pkey: index comment required.
+ndb.synonymtypes.synonymtypes_pkey: index comment required.
+ndb.synonymy.synonymy_pkey: index comment required.
+ndb.sysdiagrams.sysdiagrams_pkey: index comment required.
+ndb.taphonomicsystems.taphonomicsystems_pkey: index comment required.
+ndb.taphonomicsystemsdatasettypes.taphonomicsystemsdatasettypes_pkey: index comment required.
+ndb.taphonomictypes.taphonomictypes_pkey: index comment required.
+ndb.taxa.ix_taxagroupid_taxa: index comment required.
+ndb.taxa.ix_taxonname_taxa: index comment required.
+ndb.taxa.taxa_pkey: index comment required.
+ndb.taxa.taxonames_idx: index comment required.
+ndb.taxa.taxonname_btree: index comment required.
+ndb.taxaalthierarchy.taxaalthierarchy_pkey: index comment required.
+ndb.taxaalthierarchytypes.taxaalthierarchytypes_pkey: index comment required.
+ndb.taxagrouptypes.taxagrouptypes_pkey: index comment required.
+ndb.taxonpaths.taxonpaths_pkey: index comment required.
+ndb.tephras.tephras_pkey: index comment required.
+ndb.uncertaintybases.uncertaintybases_pkey: index comment required.
+ndb.uncertaintybases.uniquebasis: index comment required.
+ndb.unitsdatasettypes.unitsdatasettypes_pkey: index comment required.
+ndb.variablecontexts.variablecontexts_pkey: index comment required.
+ndb.variableelements.variableelements_pkey: index comment required.
+ndb.variables.ix_taxonid_variables: index comment required.
+ndb.variables.variableel: index comment required.
+ndb.variables.variables_pkey: index comment required.
+ndb.variables.variables_unique: index comment required.
+ndb.variableunits.variableunits_pkey: index comment required.
+ndb.vegetationcovertypes.vegetationcovertypes_pkey: index comment required.
+ndb.vegetationcovertypes.vegetationcovertypes_vegetationcovertype_key: index comment required.
+ti.stewarddatabases.stewarddatabases_pkey: index comment required.
+ti.stewards.stewards_pkey: index comment required.
+ti.stewardupdates.stewardupdates_pkey: index comment required.
+ap.faunranges.faunranges_pkey: constraint comment required.
+ap.gadm.gadm_pkey: constraint comment required.
+ap.globalmammals.globalmammals_pkey: constraint comment required.
+ap.hydrolakes.hydrolakes_pkey: constraint comment required.
+ap.icesheets.icesheets_pkey: constraint comment required.
+ap.pollensumgroups.pollensumgroups_pkey: constraint comment required.
+ap.summaries.summaries_pkey: constraint comment required.
+doi.doimeta.doimeta_pkey: constraint comment required.
+ndb.accumulationrates.accumulationrates_pkey: constraint comment required.
+ndb.accumulationrates.fk_accumulationrates_analysisunits: constraint comment required.
+ndb.accumulationrates.fk_accumulationrates_chronologies: constraint comment required.
+ndb.accumulationrates.fk_accumulationrates_variableunits: constraint comment required.
+ndb.agetypes.agetypes_pkey: constraint comment required.
+ndb.aggregatechronologies.aggregatechronologies_pkey: constraint comment required.
+ndb.aggregatechronologies.fk_aggregatechronologies_agetypes: constraint comment required.
+ndb.aggregatechronologies.fk_aggregatechronologies_aggregatedatasets: constraint comment required.
+ndb.aggregatedatasets.aggregatedatasets_pkey: constraint comment required.
+ndb.aggregatedatasets.fk_aggregatedatasets_aggregateordertypes: constraint comment required.
+ndb.aggregateordertypes.aggregateordertypes_pkey: constraint comment required.
+ndb.aggregatesampleages.aggregatesampleages_pkey: constraint comment required.
+ndb.aggregatesampleages.fk_aggregatesampleages_aggregatechronologies: constraint comment required.
+ndb.aggregatesampleages.fk_aggregatesampleages_aggregatedatasets: constraint comment required.
+ndb.aggregatesampleages.fk_aggregatesampleages_sampleages: constraint comment required.
+ndb.aggregatesamples.aggregatesamples_pkey: constraint comment required.
+ndb.aggregatesamples.fk_aggregatesamples_aggregatedatasets: constraint comment required.
+ndb.aggregatesamples.fk_aggregatesamples_samples: constraint comment required.
+ndb.analysisunitaltdepths.analysisunitaltdepths_pkey: constraint comment required.
+ndb.analysisunitaltdepths.fk_analysisunitaltdepths_analysisunitaltdepthscales: constraint comment required.
+ndb.analysisunitaltdepths.fk_analysisunitaltdepths_analysisunits: constraint comment required.
+ndb.analysisunitaltdepthscales.analysisunitaltdepthscales_pkey: constraint comment required.
+ndb.analysisunitaltdepthscales.fk_analysisunitaltdepths_variableunits: constraint comment required.
+ndb.analysisunitlithostrat.analysisunitlithostrat_pkey: constraint comment required.
+ndb.analysisunitlithostrat.fk_analysisunitlithostrat_analysisunits: constraint comment required.
+ndb.analysisunitlithostrat.fk_analysisunitlithostrat_lithostrat: constraint comment required.
+ndb.analysisunits.analysisunits_pkey: constraint comment required.
+ndb.analysisunits.fk_analysisunits_collectionunits: constraint comment required.
+ndb.analysisunits.fk_analysisunits_faciestypes: constraint comment required.
+ndb.calibrationcurves.calibrationcurves_pkey: constraint comment required.
+ndb.calibrationcurves.fk_calibrationcurves_publications: constraint comment required.
+ndb.calibrationprograms.calibrationprograms_pkey: constraint comment required.
+ndb.chroncontrolaccuracydirections.chroncontrolaccuracydirections_pkey: constraint comment required.
+ndb.chroncontrolaccuracydistributions.chroncontrolaccuracydistributions_pkey: constraint comment required.
+ndb.chroncontrolaccuracyranks.chroncontrolaccuracyranks_pkey: constraint comment required.
+ndb.chroncontrolprecisionranks.chroncontrolprecisionranks_pkey: constraint comment required.
+ndb.chroncontrolranks.chroncontrolranks_pkey: constraint comment required.
+ndb.chroncontrolranks.fk_chroncontrolranks_chroncontrolaccuracydirections: constraint comment required.
+ndb.chroncontrolranks.fk_chroncontrolranks_chroncontrolaccuracydistributions: constraint comment required.
+ndb.chroncontrolranks.fk_chroncontrolranks_chroncontrolaccuracyranks: constraint comment required.
+ndb.chroncontrolranks.fk_chroncontrolranks_chroncontrolprecisionranks: constraint comment required.
+ndb.chroncontrolranks.fk_chroncontrolranks_chroncontrols: constraint comment required.
+ndb.chroncontrols.chroncontrols_pkey: constraint comment required.
+ndb.chroncontrols.fk_chroncontrols_agetypes: constraint comment required.
+ndb.chroncontrols.fk_chroncontrols_analysisunits: constraint comment required.
+ndb.chroncontrols.fk_chroncontrols_chroncontroltypes: constraint comment required.
+ndb.chroncontrols.fk_chroncontrols_chronologies: constraint comment required.
+ndb.chroncontrolscal14c.chroncontrolscal14c_pkey: constraint comment required.
+ndb.chroncontrolscal14c.fk_chroncontrolscal14c_calibrationcurves: constraint comment required.
+ndb.chroncontrolscal14c.fk_chroncontrolscal14c_calibrationprograms: constraint comment required.
+ndb.chroncontrolscal14c.fk_chroncontrolscal14c_chroncontrols: constraint comment required.
+ndb.chroncontroltypes.chroncontroltypes_pkey: constraint comment required.
+ndb.chroncontroltypes.fk_higherchroncontroltypeid: constraint comment required.
+ndb.chronologies.chronologies_pkey: constraint comment required.
+ndb.chronologies.fk_chronologies_agetypes: constraint comment required.
+ndb.chronologies.fk_chronologies_collectionunits: constraint comment required.
+ndb.chronologies.fk_chronologies_contacts: constraint comment required.
+ndb.collectiontypes.collectiontypes_pkey: constraint comment required.
+ndb.collectionunits.collectionunits_pkey: constraint comment required.
+ndb.collectionunits.fk_collectionunits_collectiontypes: constraint comment required.
+ndb.collectionunits.fk_collectionunits_depenvttypes: constraint comment required.
+ndb.collectionunits.fk_collectionunits_rocktypes: constraint comment required.
+ndb.collectionunits.fk_collectionunits_sites: constraint comment required.
+ndb.collectors.collectors_pkey: constraint comment required.
+ndb.collectors.fk_collectors_collectionunits: constraint comment required.
+ndb.collectors.fk_collectors_contacts: constraint comment required.
+ndb.constituentdatabases.constituentdatabases_pkey: constraint comment required.
+ndb.constituentdatabases.fk_constituentdatabases_contacts: constraint comment required.
+ndb.contactreferences.contactreferences_contactid_fkey: constraint comment required.
+ndb.contactreferences.contactreferences_exdatabaseid_fkey: constraint comment required.
+ndb.contacts.contacts_pkey: constraint comment required.
+ndb.contacts.fk_contacts_contactstatuses: constraint comment required.
+ndb.contactstatuses.contactstatuses_pkey: constraint comment required.
+ndb.contextsdatasettypes.contextsdatasettypes_pkey: constraint comment required.
+ndb.contextsdatasettypes.fk_contextsdatasettypes_datasettypes: constraint comment required.
+ndb.contextsdatasettypes.fk_contextsdatasettypes_variablecontexts: constraint comment required.
+ndb.data.data_pkey: constraint comment required.
+ndb.data.fk_data_samples: constraint comment required.
+ndb.data.fk_data_variables: constraint comment required.
+ndb.dataprocessors.dataprocessors_pkey: constraint comment required.
+ndb.dataprocessors.fk_dataprocessors_contacts: constraint comment required.
+ndb.dataprocessors.fk_dataprocessors_datasets: constraint comment required.
+ndb.datasetdatabases.datasetdatabases_pkey: constraint comment required.
+ndb.datasetdatabases.fk_datasetdatabases_constituentdatabases: constraint comment required.
+ndb.datasetdatabases.fk_datasetdatabases_datasets: constraint comment required.
+ndb.datasetdoi.datasetdoi_pkey: constraint comment required.
+ndb.datasetpis.fk_datasetpis_contacts: constraint comment required.
+ndb.datasetpis.fk_datasetpis_datasets: constraint comment required.
+ndb.datasetpublications.datasetpublications_pkey: constraint comment required.
+ndb.datasetpublications.fk_datasetpublications_datasets: constraint comment required.
+ndb.datasetpublications.fk_datasetpublications_publications: constraint comment required.
+ndb.datasets.datasets_pkey: constraint comment required.
+ndb.datasets.fk_datasets_collectionunits: constraint comment required.
+ndb.datasets.fk_datasets_datasettypes: constraint comment required.
+ndb.datasets.fk_datasets_embargo: constraint comment required.
+ndb.datasetsubmissions.datasetsubmissions_pkey: constraint comment required.
+ndb.datasetsubmissions.fk_datasetsubmissions_constituentdatabases: constraint comment required.
+ndb.datasetsubmissions.fk_datasetsubmissions_contacts: constraint comment required.
+ndb.datasetsubmissions.fk_datasetsubmissions_datasets: constraint comment required.
+ndb.datasetsubmissions.fk_datasetsubmissions_datasetsubmissiontypes: constraint comment required.
+ndb.datasetsubmissiontypes.datasetsubmissiontypes_pkey: constraint comment required.
+ndb.datasettaxagrouptypes.datasettaxagrouptypes_pkey: constraint comment required.
+ndb.datasettaxagrouptypes.fk_datasettaxagrouptypes_datasettypes: constraint comment required.
+ndb.datasettaxagrouptypes.fk_datasettaxagrouptypes_taxagrouptypes: constraint comment required.
+ndb.datasettaxonnotes.datasettaxonnotes_pkey: constraint comment required.
+ndb.datasettaxonnotes.fk_datasettaxonnotes_contacts: constraint comment required.
+ndb.datasettaxonnotes.fk_datasettaxonnotes_datasets: constraint comment required.
+ndb.datasettaxonnotes.fk_datasettaxonnotes_taxa: constraint comment required.
+ndb.datasettypes.datasettypes_pkey: constraint comment required.
+ndb.datasetvariables.datasetvariables_pkey: constraint comment required.
+ndb.datasetvariables.fk_datasetvariables_datasets: constraint comment required.
+ndb.datasetvariables.fk_datasetvariables_variables: constraint comment required.
+ndb.datataxonnotes.datataxonnotes_pkey: constraint comment required.
+ndb.datataxonnotes.fk_datataxonnotes_contacts: constraint comment required.
+ndb.datataxonnotes.fk_datataxonnotes_data: constraint comment required.
+ndb.datauncertainties.datauncertainties_dataid_fkey: constraint comment required.
+ndb.datauncertainties.datauncertainties_uncertaintybasisid_fkey: constraint comment required.
+ndb.datauncertainties.datauncertainties_uncertaintyunitid_fkey: constraint comment required.
+ndb.datauncertainties.uniqueentryvalue: constraint comment required.
+ndb.decayconstants.decayconstants_pkey: constraint comment required.
+ndb.decayconstants.decayconstants_publicationid_fkey: constraint comment required.
+ndb.depagents.depagents_pkey: constraint comment required.
+ndb.depagents.fk_depagents_analysisunits: constraint comment required.
+ndb.depagents.fk_depagents_depagenttypes: constraint comment required.
+ndb.depagenttypes.depagenttypes_pkey: constraint comment required.
+ndb.depenvttypes.depenvttypes_pkey: constraint comment required.
+ndb.depenvttypes.fk_depenvthigherid: constraint comment required.
+ndb.depthreferencesystem.depthreferencesystem_depthreferencepublicationid_fkey: constraint comment required.
+ndb.depthreferencesystem.depthreferencesystem_pkey: constraint comment required.
+ndb.ecolgroups.ecolgroups_pkey: constraint comment required.
+ndb.ecolgroups.ecolgroups_unique: constraint comment required.
+ndb.ecolgroups.fk_ecolgroups_ecolgrouptypes: constraint comment required.
+ndb.ecolgroups.fk_ecolgroups_ecolsettypes: constraint comment required.
+ndb.ecolgroups.fk_ecolgroups_taxa: constraint comment required.
+ndb.ecolgrouptypes.ecolgrouptypes_pkey: constraint comment required.
+ndb.ecolsettypes.ecolsettypes_pkey: constraint comment required.
+ndb.elementdatasettaxagroups.edt_group: constraint comment required.
+ndb.elementdatasettaxagroups.elementdatasettaxagroups_pkey: constraint comment required.
+ndb.elementdatasettaxagroups.fk_datasettypeid: constraint comment required.
+ndb.elementmaturities.elementmaturities_pkey: constraint comment required.
+ndb.elementportions.elementportions_pkey: constraint comment required.
+ndb.elementsymmetries.elementsymmetries_pkey: constraint comment required.
+ndb.elementtaxagroupmaturities.elementtaxagroupmaturities_pkey: constraint comment required.
+ndb.elementtaxagroupmaturities.fk_elementtaxagroupmaturities_elementmaturities: constraint comment required.
+ndb.elementtaxagroupmaturities.fk_elementtaxagroupmaturities_elementtaxagroup: constraint comment required.
+ndb.elementtaxagroupportions.elementtaxagroupportions_pkey: constraint comment required.
+ndb.elementtaxagroupportions.fk_elementtaxagroupportions_elementportions: constraint comment required.
+ndb.elementtaxagroupportions.fk_elementtaxagroupportions_elementtaxagroups: constraint comment required.
+ndb.elementtaxagroups.elementtaxagroups_pkey: constraint comment required.
+ndb.elementtaxagroups.fk_elementtaxagrouptypes_elementtypes: constraint comment required.
+ndb.elementtaxagroups.fk_elementtaxagrouptypes_taxagrouptypes: constraint comment required.
+ndb.elementtaxagroupsymmetries.elementtaxagroupsymmetries_pkey: constraint comment required.
+ndb.elementtaxagroupsymmetries.fk_elementtaxagroupsymmetries_elementsymmetries: constraint comment required.
+ndb.elementtaxagroupsymmetries.fk_elementtaxagroupsymmetries_elementtaxagroups: constraint comment required.
+ndb.elementtypes.elementtypes_pkey: constraint comment required.
+ndb.embargo.embargo_pkey: constraint comment required.
+ndb.entitycovers.entitycovers_entitycoverid_fkey: constraint comment required.
+ndb.entitycovers.entitycovers_entitycoverunits_fkey: constraint comment required.
+ndb.entitycovers.entitycovers_entityid_fkey: constraint comment required.
+ndb.entitycovertypes.entitycovertypes_pkey: constraint comment required.
+ndb.entitydripheight.entitydripheight_entitydripheightunit_fkey: constraint comment required.
+ndb.entitydripheight.entitydripheight_entityid_fkey: constraint comment required.
+ndb.entitydripheight.entitydripheight_speleothemdriptypeid_fkey: constraint comment required.
+ndb.entitygeology.entitygeology_entityid_fkey: constraint comment required.
+ndb.entitylandusecover.entitylandusecover_entityid_fkey: constraint comment required.
+ndb.entitylandusecover.entitylandusecover_landusecovertypeid_fkey: constraint comment required.
+ndb.entityrelationship.entityrelationship_entityid_fkey: constraint comment required.
+ndb.entityrelationship.entityrelationship_entitystatusid_fkey: constraint comment required.
+ndb.entityrelationship.entityrelationship_referenceentityid_fkey: constraint comment required.
+ndb.entitysamples.entitysamples_entityid_fkey: constraint comment required.
+ndb.entitysamples.entitysamples_pkey: constraint comment required.
+ndb.entityvegetationcover.entityvegetationcover_entityid_fkey: constraint comment required.
+ndb.entityvegetationcover.entityvegetationcover_vegetationcovertypeid_fkey: constraint comment required.
+ndb.eventchronology.evc_alu: constraint comment required.
+ndb.eventchronology.evc_ccid: constraint comment required.
+ndb.eventchronology.evc_evt: constraint comment required.
+ndb.eventchronology.eventchronology_pkey: constraint comment required.
+ndb.eventchronology.uniqueeventset: constraint comment required.
+ndb.eventpublications.eventpublications_pkey: constraint comment required.
+ndb.eventpublications.fk_eventpublications_events: constraint comment required.
+ndb.eventpublications.fk_eventpublications_publications: constraint comment required.
+ndb.events.events_pkey: constraint comment required.
+ndb.events.fk_events_eventtypes: constraint comment required.
+ndb.eventtypes.eventtypes_pkey: constraint comment required.
+ndb.eventtypes.evt_cct: constraint comment required.
+ndb.externalcontacts.externalcontacts_contactid_fkey: constraint comment required.
+ndb.externalcontacts.externalcontacts_contactid_identifier_extdatabaseid_key: constraint comment required.
+ndb.externalcontacts.externalcontacts_extdatabaseid_fkey: constraint comment required.
+ndb.externaldatabases.externaldatabases_pkey: constraint comment required.
+ndb.externalgeochronology.externalgeochronology_extdatabaseid_fkey: constraint comment required.
+ndb.externalgeochronology.externalgeochronology_geochronid_fkey: constraint comment required.
+ndb.externalgeochronology.uniqueid: constraint comment required.
+ndb.externalpublications.externalpublications_pkey: constraint comment required.
+ndb.externalpublications.fk_externalpublications_externaldatabases: constraint comment required.
+ndb.externalpublications.fk_externalpublications_publications: constraint comment required.
+ndb.externalspeleothemdata.externalspeleothemdata_entityid_fkey: constraint comment required.
+ndb.externalspeleothemdata.externalspeleothemdata_extdatabaseid_fkey: constraint comment required.
+ndb.externaltaxa.externaltaxa_pkey: constraint comment required.
+ndb.externaltaxa.fk_externaltaxa_externaldatabases: constraint comment required.
+ndb.externaltaxa.fk_externaltaxa_taxa: constraint comment required.
+ndb.faciestypes.faciestypes_pkey: constraint comment required.
+ndb.formtaxa.fk_formtaxa_publications: constraint comment required.
+ndb.formtaxa.fk_formtaxa_taxa: constraint comment required.
+ndb.formtaxa.fk_formtaxa_taxa1: constraint comment required.
+ndb.formtaxa.formtaxa_pkey: constraint comment required.
+ndb.fractiondated.fractiondated_pkey: constraint comment required.
+ndb.geochroncontrols.fk_geochroncontrols_chroncontrols: constraint comment required.
+ndb.geochroncontrols.fk_geochroncontrols_geochronology: constraint comment required.
+ndb.geochroncontrols.geochroncontrols_pkey: constraint comment required.
+ndb.geochronology.fk_geochronology_agetypes: constraint comment required.
+ndb.geochronology.fk_geochronology_geochrontypes: constraint comment required.
+ndb.geochronology.fk_geochronology_samples: constraint comment required.
+ndb.geochronology.geochronology_pkey: constraint comment required.
+ndb.geochronology.geochronology_unique: constraint comment required.
+ndb.geochronpublications.fk_geochronpublications_geochronology: constraint comment required.
+ndb.geochronpublications.fk_geochronpublications_publications: constraint comment required.
+ndb.geochronpublications.geochronpublications_pkey: constraint comment required.
+ndb.geochrontypes.geochrontypes_pkey: constraint comment required.
+ndb.geopaths.geopaths_geoin_fkey: constraint comment required.
+ndb.geopaths.geopaths_pkey: constraint comment required.
+ndb.geopoliticalunits.geopoliticalunits_pkey: constraint comment required.
+ndb.hiatuschronology.hiatuschronology_chronologyid_fkey: constraint comment required.
+ndb.hiatuschronology.hiatuschronology_hiatusid_chronologyid_key: constraint comment required.
+ndb.hiatuschronology.hiatuschronology_hiatusid_fkey: constraint comment required.
+ndb.hiatuschronology.hiatuschronology_hiatuslength_check: constraint comment required.
+ndb.hiatuses.hiatuses_analysisunitend_fkey: constraint comment required.
+ndb.hiatuses.hiatuses_analysisunitstart_fkey: constraint comment required.
+ndb.hiatuses.hiatuses_hiatusid_analysisunitstart_analysisunitend_key: constraint comment required.
+ndb.hiatuses.hiatuses_pkey: constraint comment required.
+ndb.isobiomarkerbandtypes.fk_isobiomarkerbands_isobiomarkertypes: constraint comment required.
+ndb.isobiomarkerbandtypes.isobiomarkerbandtypes_pkey: constraint comment required.
+ndb.isobiomarkertypes.isobiomarkertypes_pkey: constraint comment required.
+ndb.isoinstrumentation.fk_isoinstrumentation_datasets: constraint comment required.
+ndb.isoinstrumentation.fk_isoinstrumentation_isoinstrumentationtypes: constraint comment required.
+ndb.isoinstrumentation.fk_isoinstrumentation_isosampleintrosystemtypes: constraint comment required.
+ndb.isoinstrumentation.fk_isoinstrumentation_variables: constraint comment required.
+ndb.isoinstrumentation.isoinstrumentation_pkey: constraint comment required.
+ndb.isoinstrumentationtypes.isoinstrumentationtypes_pkey: constraint comment required.
+ndb.isomatanalsubstrate.fk_isomatanalsubstrate_isomaterialanalyzedtypes: constraint comment required.
+ndb.isomatanalsubstrate.fk_isomatanalsubstrate_isosubstratetypes: constraint comment required.
+ndb.isomatanalsubstrate.isomatanalsubstrate_pkey: constraint comment required.
+ndb.isomaterialanalyzedtypes.isomaterialanalyzedtypes_pkey: constraint comment required.
+ndb.isometadata.fk_isometadata_contacts: constraint comment required.
+ndb.isometadata.fk_isometadata_data: constraint comment required.
+ndb.isometadata.fk_isometadata_isomaterialanalyzedtypes: constraint comment required.
+ndb.isometadata.fk_isometadata_isosubstratetypes: constraint comment required.
+ndb.isometadata.isometadata_pkey: constraint comment required.
+ndb.isopretreatmenttypes.isopretreatmenttypes_pkey: constraint comment required.
+ndb.isosampleintrosystemtypes.isosampleintrosystemtypes_pkey: constraint comment required.
+ndb.isosampleorigintypes.isosampleorigintypes_pkey: constraint comment required.
+ndb.isosamplepretreatments.fk_isosamplepretreatments_data: constraint comment required.
+ndb.isosamplepretreatments.fk_isosamplepretreatments_isopretratmenttypes: constraint comment required.
+ndb.isosamplepretreatments.isosamplepretreatments_pkey: constraint comment required.
+ndb.isoscaletypes.isoscaletypes_pkey: constraint comment required.
+ndb.isospecimendata.fk_isospecimendata_data: constraint comment required.
+ndb.isospecimendata.fk_isospecimendata_specimens: constraint comment required.
+ndb.isospecimendata.isospecimendata_pkey: constraint comment required.
+ndb.isosrmetadata.fk_isosrmetadata_datasets: constraint comment required.
+ndb.isosrmetadata.fk_isosrmetadata_variables: constraint comment required.
+ndb.isosrmetadata.isosrmetadata_pkey: constraint comment required.
+ndb.isostandards.fk_isostandards_datasets: constraint comment required.
+ndb.isostandards.fk_isostandards_isostandardtypes: constraint comment required.
+ndb.isostandards.fk_isostandards_variables: constraint comment required.
+ndb.isostandards.isostandards_pkey: constraint comment required.
+ndb.isostandardtypes.isostandardtypes_pkey: constraint comment required.
+ndb.isostratdata.fk_isostratdata_data: constraint comment required.
+ndb.isostratdata.fk_isostratdata_elementtypes: constraint comment required.
+ndb.isostratdata.fk_isostratdata_taxa: constraint comment required.
+ndb.isostratdata.isostratdata_pkey: constraint comment required.
+ndb.isosubstratetypes.isosubstratetypes_pkey: constraint comment required.
+ndb.isovariablescaletypes.fk_isovariablescaletypes_isoscaletypes: constraint comment required.
+ndb.isovariablescaletypes.fk_isovariablescaletypes_variables: constraint comment required.
+ndb.isovariablescaletypes.isovariablescaletypes_pkey: constraint comment required.
+ndb.keywords.keywords_pkey: constraint comment required.
+ndb.lakeparameters.fk_lakeparameters_lakeparametertypes: constraint comment required.
+ndb.lakeparameters.fk_lakeparameters_sites: constraint comment required.
+ndb.lakeparameters.lakeparameters_pkey: constraint comment required.
+ndb.lakeparametertypes.lakeparametertypes_pkey: constraint comment required.
+ndb.landusetypes.landusetypes_landuseclasspublicationid_fkey: constraint comment required.
+ndb.landusetypes.landusetypes_landusecovertype_key: constraint comment required.
+ndb.landusetypes.landusetypes_pkey: constraint comment required.
+ndb.leadmodelbasis.leadmodelbasis_pkey: constraint comment required.
+ndb.leadmodels.leadmodels_analysisunitid_fkey: constraint comment required.
+ndb.leadmodels.leadmodels_cumulativeinventory_check: constraint comment required.
+ndb.leadmodels.leadmodels_pbbasisid_fkey: constraint comment required.
+ndb.lithology.fk_lithology_collectionunits: constraint comment required.
+ndb.lithology.lithology_pkey: constraint comment required.
+ndb.lithostrat.fk_higherlithostratid: constraint comment required.
+ndb.lithostrat.fk_lithostratunits_lithostrattypes: constraint comment required.
+ndb.lithostrat.lithostrat_pkey: constraint comment required.
+ndb.lithostratunits.lithostratunits_pkey: constraint comment required.
+ndb.publicationauthors.fk_publicationauthors_contacts: constraint comment required.
+ndb.publicationauthors.fk_publicationauthors_publications: constraint comment required.
+ndb.publicationauthors.publicationauthors_pkey: constraint comment required.
+ndb.publicationeditors.fk_publicationeditors_publications: constraint comment required.
+ndb.publicationeditors.publicationeditors_pkey: constraint comment required.
+ndb.publications.pub_pty: constraint comment required.
+ndb.publications.publications_pkey: constraint comment required.
+ndb.publicationtranslators.fk_publicationtranslators_publications: constraint comment required.
+ndb.publicationtranslators.publicationtranslators_pkey: constraint comment required.
+ndb.publicationtypes.publicationtypes_pkey: constraint comment required.
+ndb.radiocarbon.fk_geochrons_geochronid: constraint comment required.
+ndb.radiocarbon.fk_radiocarbonmethodid: constraint comment required.
+ndb.radiocarbon.radiocarbon_pkey: constraint comment required.
+ndb.radiocarbon.radiocarbon_unique: constraint comment required.
+ndb.radiocarboncalibration.radiocarboncalibration_pkey: constraint comment required.
+ndb.radiocarbonmethods.radiocarbonmethods_pkey: constraint comment required.
+ndb.relativeagepublications.fk_relativeagepublications_publications: constraint comment required.
+ndb.relativeagepublications.fk_relativeagepublications_relativeages: constraint comment required.
+ndb.relativeagepublications.relativeagepublications_pkey: constraint comment required.
+ndb.relativeages.fk_relativeages_relativeagescales: constraint comment required.
+ndb.relativeages.fk_relativeages_relativeageunits: constraint comment required.
+ndb.relativeages.relativeages_pkey: constraint comment required.
+ndb.relativeagescales.relativeagescales_pkey: constraint comment required.
+ndb.relativeageunits.relativeageunits_pkey: constraint comment required.
+ndb.relativechronology.fk_relativechronology_analysisunits: constraint comment required.
+ndb.relativechronology.fk_relativechronology_relativeages: constraint comment required.
+ndb.relativechronology.rc_ccid: constraint comment required.
+ndb.relativechronology.relativechronology_pkey: constraint comment required.
+ndb.repositoryinstitutions.repositoryinstitutions_pkey: constraint comment required.
+ndb.repositoryspecimens.fk_repositoryspecimens_datasets: constraint comment required.
+ndb.repositoryspecimens.fk_repositoryspecimens_repositoryinstitutions: constraint comment required.
+ndb.repositoryspecimens.repositoryspecimens_pkey: constraint comment required.
+ndb.rocktypes.fk_higherrocktypeid: constraint comment required.
+ndb.rocktypes.rocktypes_pkey: constraint comment required.
+ndb.sampleages.fk_sampleages_chronologies: constraint comment required.
+ndb.sampleages.fk_sampleages_samples: constraint comment required.
+ndb.sampleages.sampleages_pkey: constraint comment required.
+ndb.sampleanalysts.fk_sampleanalysts_contacts: constraint comment required.
+ndb.sampleanalysts.fk_sampleanalysts_samples: constraint comment required.
+ndb.sampleanalysts.sampleanalysts_pkey: constraint comment required.
+ndb.samplekeywords.fk_samplekeywords_keywords: constraint comment required.
+ndb.samplekeywords.fk_samplekeywords_samples: constraint comment required.
+ndb.samplekeywords.samplekeywords_pkey: constraint comment required.
+ndb.samples.fk_samples_analysisunits: constraint comment required.
+ndb.samples.fk_samples_datasets: constraint comment required.
+ndb.samples.fk_samples_taxa: constraint comment required.
+ndb.samples.samples_pkey: constraint comment required.
+ndb.sitegeopolitical.fk_objectid: constraint comment required.
+ndb.sitegeopolitical.fk_sitegeopolitical_geopoliticalunits: constraint comment required.
+ndb.sitegeopolitical.fk_sitegeopolitical_sites: constraint comment required.
+ndb.sitegeopolitical.sitegeopolitical_pkey: constraint comment required.
+ndb.siteimages.fk_siteimages_contacts: constraint comment required.
+ndb.siteimages.fk_siteimages_sites: constraint comment required.
+ndb.siteimages.siteimages_pkey: constraint comment required.
+ndb.sitelandusecover.sitelandusecover_landusecovertypeid_fkey: constraint comment required.
+ndb.sitelandusecover.sitelandusecover_siteid_fkey: constraint comment required.
+ndb.sites.sites_pkey: constraint comment required.
+ndb.sitestemp.sitestemp_pkey: constraint comment required.
+ndb.sitevegetationcover.sitevegetationcover_siteid_fkey: constraint comment required.
+ndb.sitevegetationcover.sitevegetationcover_vegetationcovertypeid_fkey: constraint comment required.
+ndb.specimendates.fk_specimendates_specimens: constraint comment required.
+ndb.specimendates.sd_etyid: constraint comment required.
+ndb.specimendates.sd_fcid: constraint comment required.
+ndb.specimendates.sd_gcid: constraint comment required.
+ndb.specimendates.sd_smpid: constraint comment required.
+ndb.specimendates.sd_txid: constraint comment required.
+ndb.specimendates.specimendates_pkey: constraint comment required.
+ndb.specimendatescal.fk_specimendatescal_calibrationcurves: constraint comment required.
+ndb.specimendatescal.fk_specimendatescal_calibrationprograms: constraint comment required.
+ndb.specimendatescal.fk_specimendatescal_specimendates: constraint comment required.
+ndb.specimendatescal.specimendatescal_pkey: constraint comment required.
+ndb.specimendomesticstatustypes.specimendomesticstatustypes_pkey: constraint comment required.
+ndb.specimengenbank.fk_specimengenbank_specimens: constraint comment required.
+ndb.specimengenbank.specimengenbank_pkey: constraint comment required.
+ndb.specimens.fk_specimens_data: constraint comment required.
+ndb.specimens.fk_specimens_elementmaturities: constraint comment required.
+ndb.specimens.fk_specimens_elementportions: constraint comment required.
+ndb.specimens.fk_specimens_elementsymmetries: constraint comment required.
+ndb.specimens.fk_specimens_elementtypes: constraint comment required.
+ndb.specimens.fk_specimens_repositoryinstitutions: constraint comment required.
+ndb.specimens.fk_specimens_specimendomesticstatus: constraint comment required.
+ndb.specimens.fk_specimens_specimensex: constraint comment required.
+ndb.specimens.specimens_pkey: constraint comment required.
+ndb.specimensextypes.specimensextypes_pkey: constraint comment required.
+ndb.specimentaphonomy.fk_specimentaphonomy_specimens: constraint comment required.
+ndb.specimentaphonomy.fk_specimentaphonomy_taphonomictypes: constraint comment required.
+ndb.specimentaphonomy.specimentaphonomy_pkey: constraint comment required.
+ndb.speleothemcollectionunits.speleothemcollectionunits_collectionunitid_fkey: constraint comment required.
+ndb.speleothemcollectionunits.speleothemcollectionunits_entityid_fkey: constraint comment required.
+ndb.speleothemcollectionunits.unique_collectionunitid: constraint comment required.
+ndb.speleothemdriptypes.speleothemdriptypes_pkey: constraint comment required.
+ndb.speleothemdriptypes.speleothemdriptypes_speleothemdriptypepublicationid_fkey: constraint comment required.
+ndb.speleothementitystatuses.speleothementitystatuses_pkey: constraint comment required.
+ndb.speleothems.speleothems_entrancedistanceunits_fkey: constraint comment required.
+ndb.speleothems.speleothems_pkey: constraint comment required.
+ndb.speleothems.speleothems_rockageid_fkey: constraint comment required.
+ndb.speleothems.speleothems_siteid_fkey: constraint comment required.
+ndb.speleothems.speleothems_speleothemtypeid_fkey: constraint comment required.
+ndb.speleothemtypes.speleothemtypes_pkey: constraint comment required.
+ndb.speleothemtypes.speleothemtypes_speleothemtypepublicationid_fkey: constraint comment required.
+ndb.summarydatataphonomy.fk_summarydatataphonomy_data: constraint comment required.
+ndb.summarydatataphonomy.fk_summarydatataphonomy_taphonomictypes: constraint comment required.
+ndb.summarydatataphonomy.summarydatataphonomy_pkey: constraint comment required.
+ndb.synonyms.fk_synonyms_invalidtaxa: constraint comment required.
+ndb.synonyms.fk_synonyms_synonymtypes: constraint comment required.
+ndb.synonyms.fk_synonyms_validtaxa: constraint comment required.
+ndb.synonyms.synonyms_pkey: constraint comment required.
+ndb.synonymtypes.synonymtypes_pkey: constraint comment required.
+ndb.synonymy.fk_synonymy_contacts: constraint comment required.
+ndb.synonymy.fk_synonymy_datasets: constraint comment required.
+ndb.synonymy.fk_synonymy_publications: constraint comment required.
+ndb.synonymy.fk_synonymy_taxa1: constraint comment required.
+ndb.synonymy.fk_synonymy_taxa2: constraint comment required.
+ndb.synonymy.synonymy_pkey: constraint comment required.
+ndb.sysdiagrams.sysdiagrams_pkey: constraint comment required.
+ndb.taphonomicsystems.taphonomicsystems_pkey: constraint comment required.
+ndb.taphonomicsystemsdatasettypes.fk_taphonomicsystemsdatasettypes_taphonomicsystems: constraint comment required.
+ndb.taphonomicsystemsdatasettypes.fk_taphonomicsystemsdatasettypes_taphonomicsystemsdatasettypes: constraint comment required.
+ndb.taphonomicsystemsdatasettypes.taphonomicsystemsdatasettypes_pkey: constraint comment required.
+ndb.taphonomictypes.fk_taphonomictypes_taphonomicsystems: constraint comment required.
+ndb.taphonomictypes.taphonomictypes_pkey: constraint comment required.
+ndb.taxa.fk_highertaxonid: constraint comment required.
+ndb.taxa.fk_publicationid: constraint comment required.
+ndb.taxa.fk_taxagroupid: constraint comment required.
+ndb.taxa.fk_validatorid: constraint comment required.
+ndb.taxa.taxa_pkey: constraint comment required.
+ndb.taxaalthierarchy.fk_taxaalthierarchy_taxa: constraint comment required.
+ndb.taxaalthierarchy.fk_taxaalthierarchy_taxa1: constraint comment required.
+ndb.taxaalthierarchy.fk_taxaalthierarchy_taxaalthierarchytypes: constraint comment required.
+ndb.taxaalthierarchy.taxaalthierarchy_pkey: constraint comment required.
+ndb.taxaalthierarchytypes.taxaalthierarchytypes_pkey: constraint comment required.
+ndb.taxagrouptypes.taxagrouptypes_pkey: constraint comment required.
+ndb.taxonpaths.taxonpaths_pkey: constraint comment required.
+ndb.taxonpaths.taxonpaths_taxonid_fkey: constraint comment required.
+ndb.tephras.fk_tephras_analysisunits: constraint comment required.
+ndb.tephras.fk_tephras_events: constraint comment required.
+ndb.tephras.tephras_pkey: constraint comment required.
+ndb.uncertaintybases.uncertaintybases_pkey: constraint comment required.
+ndb.uncertaintybases.uniquebasis: constraint comment required.
+ndb.unitsdatasettypes.fk_unitsdatasettypes_datasettypes: constraint comment required.
+ndb.unitsdatasettypes.fk_unitsdatasettypes_variableunits: constraint comment required.
+ndb.unitsdatasettypes.unitsdatasettypes_pkey: constraint comment required.
+ndb.uraniumseries.uraniumseries_decayconstantid_fkey: constraint comment required.
+ndb.uraniumseries.uraniumseries_geochronid_fkey: constraint comment required.
+ndb.uraniumseriesdata.uraniumseriesdata_dataid_fkey: constraint comment required.
+ndb.uraniumseriesdata.uraniumseriesdata_geochronid_fkey: constraint comment required.
+ndb.variablecontexts.variablecontexts_pkey: constraint comment required.
+ndb.variableelements.fk_variableelements_elementmaturities: constraint comment required.
+ndb.variableelements.fk_variableelements_elementportions: constraint comment required.
+ndb.variableelements.fk_variableelements_elementsymmetries: constraint comment required.
+ndb.variableelements.fk_variableelements_elementtypes: constraint comment required.
+ndb.variableelements.variableelements_pkey: constraint comment required.
+ndb.variables.fk_variables_taxa: constraint comment required.
+ndb.variables.fk_variables_variablecontexts: constraint comment required.
+ndb.variables.fk_variables_variableelements: constraint comment required.
+ndb.variables.fk_variables_variableunits: constraint comment required.
+ndb.variables.variables_pkey: constraint comment required.
+ndb.variables.variables_unique: constraint comment required.
+ndb.variableunits.variableunits_pkey: constraint comment required.
+ndb.vegetationcovertypes.vegetationcovertypes_pkey: constraint comment required.
+ndb.vegetationcovertypes.vegetationcovertypes_vegetationcovertype_key: constraint comment required.
+ndb.vegetationcovertypes.vegetationcovertypes_vegetationpublicationid_fkey: constraint comment required.
+ti.stewarddatabases.fk_stewarddatabases_constituentdatabases: constraint comment required.
+ti.stewarddatabases.fk_stewarddatabases_stewards: constraint comment required.
+ti.stewarddatabases.stewarddatabases_pkey: constraint comment required.
+ti.stewards.fk_stewards_contacts: constraint comment required.
+ti.stewards.stewards_pkey: constraint comment required.
+ti.stewardupdates.fk_stewardupdates_contacts: constraint comment required.
+ti.stewardupdates.stewardupdates_pkey: constraint comment required.
+doi.doimeta.update_modified: trigger comment required.
+ndb.accumulationrates.tr_sites_modifydate: trigger comment required.
+ndb.agetypes.tr_sites_modifydate: trigger comment required.
+ndb.aggregatechronologies.tr_sites_modifydate: trigger comment required.
+ndb.aggregatedatasets.tr_sites_modifydate: trigger comment required.
+ndb.aggregateordertypes.tr_sites_modifydate: trigger comment required.
+ndb.aggregatesampleages.tr_sites_modifydate: trigger comment required.
+ndb.aggregatesamples.tr_sites_modifydate: trigger comment required.
+ndb.analysisunitaltdepths.tr_sites_modifydate: trigger comment required.
+ndb.analysisunitaltdepthscales.tr_sites_modifydate: trigger comment required.
+ndb.analysisunitlithostrat.tr_sites_modifydate: trigger comment required.
+ndb.analysisunits.tr_sites_modifydate: trigger comment required.
+ndb.calibrationcurves.tr_sites_modifydate: trigger comment required.
+ndb.calibrationprograms.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrolaccuracydirections.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrolaccuracydistributions.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrolaccuracyranks.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrolprecisionranks.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrolranks.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrols.tr_sites_modifydate: trigger comment required.
+ndb.chroncontrolscal14c.tr_sites_modifydate: trigger comment required.
+ndb.chroncontroltypes.tr_sites_modifydate: trigger comment required.
+ndb.chronologies.tr_sites_modifydate: trigger comment required.
+ndb.collectiontypes.tr_sites_modifydate: trigger comment required.
+ndb.collectionunits.tr_sites_modifydate: trigger comment required.
+ndb.collectors.tr_sites_modifydate: trigger comment required.
+ndb.constituentdatabases.tr_sites_modifydate: trigger comment required.
+ndb.contacts.tr_sites_modifydate: trigger comment required.
+ndb.contactstatuses.tr_sites_modifydate: trigger comment required.
+ndb.contextsdatasettypes.tr_sites_modifydate: trigger comment required.
+ndb.data.tr_sites_modifydate: trigger comment required.
+ndb.dataprocessors.tr_sites_modifydate: trigger comment required.
+ndb.datasetdatabases.tr_sites_modifydate: trigger comment required.
+ndb.datasetdoi.tr_sites_modifydate: trigger comment required.
+ndb.datasetpis.tr_sites_modifydate: trigger comment required.
+ndb.datasetpublications.tr_sites_modifydate: trigger comment required.
+ndb.datasets.tr_sites_modifydate: trigger comment required.
+ndb.datasetsubmissions.tr_sites_modifydate: trigger comment required.
+ndb.datasetsubmissiontypes.tr_sites_modifydate: trigger comment required.
+ndb.datasettaxagrouptypes.tr_sites_modifydate: trigger comment required.
+ndb.datasettaxonnotes.tr_sites_modifydate: trigger comment required.
+ndb.datasettypes.tr_sites_modifydate: trigger comment required.
+ndb.datasetvariables.tr_sites_modifydate: trigger comment required.
+ndb.datataxonnotes.tr_sites_modifydate: trigger comment required.
+ndb.depagents.tr_sites_modifydate: trigger comment required.
+ndb.depagenttypes.tr_sites_modifydate: trigger comment required.
+ndb.depenvttypes.tr_sites_modifydate: trigger comment required.
+ndb.ecolgroups.tr_sites_modifydate: trigger comment required.
+ndb.ecolgrouptypes.tr_sites_modifydate: trigger comment required.
+ndb.ecolsettypes.tr_sites_modifydate: trigger comment required.
+ndb.elementdatasettaxagroups.tr_sites_modifydate: trigger comment required.
+ndb.elementmaturities.tr_sites_modifydate: trigger comment required.
+ndb.elementportions.tr_sites_modifydate: trigger comment required.
+ndb.elementsymmetries.tr_sites_modifydate: trigger comment required.
+ndb.elementtaxagroupmaturities.tr_sites_modifydate: trigger comment required.
+ndb.elementtaxagroupportions.tr_sites_modifydate: trigger comment required.
+ndb.elementtaxagroups.tr_sites_modifydate: trigger comment required.
+ndb.elementtaxagroupsymmetries.tr_sites_modifydate: trigger comment required.
+ndb.elementtypes.tr_sites_modifydate: trigger comment required.
+ndb.eventchronology.tr_sites_modifydate: trigger comment required.
+ndb.eventpublications.tr_sites_modifydate: trigger comment required.
+ndb.events.tr_sites_modifydate: trigger comment required.
+ndb.eventtypes.tr_sites_modifydate: trigger comment required.
+ndb.externaldatabases.tr_sites_modifydate: trigger comment required.
+ndb.externalpublications.tr_sites_modifydate: trigger comment required.
+ndb.externaltaxa.tr_sites_modifydate: trigger comment required.
+ndb.faciestypes.tr_sites_modifydate: trigger comment required.
+ndb.formtaxa.tr_sites_modifydate: trigger comment required.
+ndb.fractiondated.tr_sites_modifydate: trigger comment required.
+ndb.geochroncontrols.tr_sites_modifydate: trigger comment required.
+ndb.geochronology.tr_sites_modifydate: trigger comment required.
+ndb.geochronpublications.tr_sites_modifydate: trigger comment required.
+ndb.geochrontypes.tr_sites_modifydate: trigger comment required.
+ndb.geopoliticalunits.tr_sites_modifydate: trigger comment required.
+ndb.isobiomarkerbandtypes.tr_sites_modifydate: trigger comment required.
+ndb.isobiomarkertypes.tr_sites_modifydate: trigger comment required.
+ndb.isoinstrumentation.tr_sites_modifydate: trigger comment required.
+ndb.isoinstrumentationtypes.tr_sites_modifydate: trigger comment required.
+ndb.isomatanalsubstrate.tr_sites_modifydate: trigger comment required.
+ndb.isomaterialanalyzedtypes.tr_sites_modifydate: trigger comment required.
+ndb.isometadata.tr_sites_modifydate: trigger comment required.
+ndb.isopretreatmenttypes.tr_sites_modifydate: trigger comment required.
+ndb.isosampleintrosystemtypes.tr_sites_modifydate: trigger comment required.
+ndb.isosampleorigintypes.tr_sites_modifydate: trigger comment required.
+ndb.isosamplepretreatments.tr_sites_modifydate: trigger comment required.
+ndb.isoscaletypes.tr_sites_modifydate: trigger comment required.
+ndb.isospecimendata.tr_sites_modifydate: trigger comment required.
+ndb.isosrmetadata.tr_sites_modifydate: trigger comment required.
+ndb.isostandards.tr_sites_modifydate: trigger comment required.
+ndb.isostandardtypes.tr_sites_modifydate: trigger comment required.
+ndb.isostratdata.tr_sites_modifydate: trigger comment required.
+ndb.isosubstratetypes.tr_sites_modifydate: trigger comment required.
+ndb.isovariablescaletypes.tr_sites_modifydate: trigger comment required.
+ndb.keywords.tr_sites_modifydate: trigger comment required.
+ndb.lakeparameters.tr_sites_modifydate: trigger comment required.
+ndb.lakeparametertypes.tr_sites_modifydate: trigger comment required.
+ndb.lithology.tr_sites_modifydate: trigger comment required.
+ndb.lithostrat.tr_sites_modifydate: trigger comment required.
+ndb.lithostratunits.tr_sites_modifydate: trigger comment required.
+ndb.publicationauthors.tr_sites_modifydate: trigger comment required.
+ndb.publicationeditors.tr_sites_modifydate: trigger comment required.
+ndb.publications.tr_sites_modifydate: trigger comment required.
+ndb.publicationtranslators.tr_sites_modifydate: trigger comment required.
+ndb.publicationtypes.tr_sites_modifydate: trigger comment required.
+ndb.radiocarbon.cnratio_compute_trigger: trigger comment required.
+ndb.radiocarbon.tr_sites_modifydate: trigger comment required.
+ndb.radiocarbonmethods.tr_sites_modifydate: trigger comment required.
+ndb.relativeagepublications.tr_sites_modifydate: trigger comment required.
+ndb.relativeages.tr_sites_modifydate: trigger comment required.
+ndb.relativeagescales.tr_sites_modifydate: trigger comment required.
+ndb.relativeageunits.tr_sites_modifydate: trigger comment required.
+ndb.relativechronology.tr_sites_modifydate: trigger comment required.
+ndb.repositoryinstitutions.tr_sites_modifydate: trigger comment required.
+ndb.repositoryspecimens.tr_sites_modifydate: trigger comment required.
+ndb.rocktypes.tr_sites_modifydate: trigger comment required.
+ndb.sampleages.tr_sites_modifydate: trigger comment required.
+ndb.sampleanalysts.tr_sites_modifydate: trigger comment required.
+ndb.samplekeywords.tr_sites_modifydate: trigger comment required.
+ndb.samples.tr_sites_modifydate: trigger comment required.
+ndb.sitegeopolitical.tr_sites_modifydate: trigger comment required.
+ndb.siteimages.tr_sites_modifydate: trigger comment required.
+ndb.sites.tr_sites_modifydate: trigger comment required.
+ndb.sites.updategeopol: trigger comment required.
+ndb.sites.updatelocations: trigger comment required.
+ndb.sitestemp.tr_sites_modifydate: trigger comment required.
+ndb.specimendates.tr_sites_modifydate: trigger comment required.
+ndb.specimendatescal.tr_sites_modifydate: trigger comment required.
+ndb.specimendomesticstatustypes.tr_sites_modifydate: trigger comment required.
+ndb.specimens.tr_sites_modifydate: trigger comment required.
+ndb.specimensextypes.tr_sites_modifydate: trigger comment required.
+ndb.specimentaphonomy.tr_sites_modifydate: trigger comment required.
+ndb.summarydatataphonomy.tr_sites_modifydate: trigger comment required.
+ndb.synonyms.tr_sites_modifydate: trigger comment required.
+ndb.synonymtypes.tr_sites_modifydate: trigger comment required.
+ndb.synonymy.tr_sites_modifydate: trigger comment required.
+ndb.taphonomicsystems.tr_sites_modifydate: trigger comment required.
+ndb.taphonomicsystemsdatasettypes.tr_sites_modifydate: trigger comment required.
+ndb.taphonomictypes.tr_sites_modifydate: trigger comment required.
+ndb.taxa.tr_sites_modifydate: trigger comment required.
+ndb.taxagrouptypes.tr_sites_modifydate: trigger comment required.
+ndb.tephras.tr_sites_modifydate: trigger comment required.
+ndb.unitsdatasettypes.tr_sites_modifydate: trigger comment required.
+ndb.variablecontexts.tr_sites_modifydate: trigger comment required.
+ndb.variableelements.tr_sites_modifydate: trigger comment required.
+ndb.variables.tr_sites_modifydate: trigger comment required.
+ndb.variableunits.tr_sites_modifydate: trigger comment required.
+ti.stewards.record_update: trigger comment required.
+ti.stewards.recordcreated: trigger comment required.
+ti.stewardupdates.record_update: trigger comment required.
+ap.datasetkeywords: table labels required.
+ap.datasetpisauthors: table labels required.
+ap.faunranges: table labels required.
+ap.gadm: table labels required.
+ap.geopolnames: table labels required.
+ap.globalmammals: table labels required.
+ap.hydrolakes: table labels required.
+ap.icesheets: table labels required.
+ap.orcidlogins: table labels required.
+ap.pollensumgroups: table labels required.
+ap.pollensums: table labels required.
+ap.querytable: table labels required.
+ap.sitegadm: table labels required.
+ap.summaries: table labels required.
+ap.taxaindatasetview: table labels required.
+doi.doimeta: table labels required.
+doi.frozen: table labels required.
+ndb.accumulationrates: table labels required.
+ndb.agetypes: table labels required.
+ndb.aggregatechronologies: table labels required.
+ndb.aggregatedatasets: table labels required.
+ndb.aggregateordertypes: table labels required.
+ndb.aggregatesampleages: table labels required.
+ndb.aggregatesamples: table labels required.
+ndb.analysisunitaltdepths: table labels required.
+ndb.analysisunitaltdepthscales: table labels required.
+ndb.analysisunitlithostrat: table labels required.
+ndb.analysisunits: table labels required.
+ndb.calibrationcurves: table labels required.
+ndb.calibrationprograms: table labels required.
+ndb.chroncontrolaccuracydirections: table labels required.
+ndb.chroncontrolaccuracydistributions: table labels required.
+ndb.chroncontrolaccuracyranks: table labels required.
+ndb.chroncontrolprecisionranks: table labels required.
+ndb.chroncontrolranks: table labels required.
+ndb.chroncontrols: table labels required.
+ndb.chroncontrolscal14c: table labels required.
+ndb.chroncontroltypes: table labels required.
+ndb.chronologies: table labels required.
+ndb.collectiontypes: table labels required.
+ndb.collectionunits: table labels required.
+ndb.collectors: table labels required.
+ndb.constituentdatabases: table labels required.
+ndb.contactreferences: table labels required.
+ndb.contacts: table labels required.
+ndb.contactstatuses: table labels required.
+ndb.contextsdatasettypes: table labels required.
+ndb.data: table labels required.
+ndb.dataprocessors: table labels required.
+ndb.datasetdatabases: table labels required.
+ndb.datasetdoi: table labels required.
+ndb.datasetpis: table labels required.
+ndb.datasetpublications: table labels required.
+ndb.datasets: table labels required.
+ndb.datasetsubmissions: table labels required.
+ndb.datasetsubmissiontypes: table labels required.
+ndb.datasettaxagrouptypes: table labels required.
+ndb.datasettaxonnotes: table labels required.
+ndb.datasettypes: table labels required.
+ndb.datasetvariables: table labels required.
+ndb.datataxonnotes: table labels required.
+ndb.datauncertainties: table labels required.
+ndb.decayconstants: table labels required.
+ndb.depagents: table labels required.
+ndb.depagenttypes: table labels required.
+ndb.depenvttypes: table labels required.
+ndb.depthreferencesystem: table labels required.
+ndb.dsageranges: table labels required.
+ndb.dsdatasample: table labels required.
+ndb.dslinks: table labels required.
+ndb.dssampdata: table labels required.
+ndb.ecolgroups: table labels required.
+ndb.ecolgrouptypes: table labels required.
+ndb.ecolsettypes: table labels required.
+ndb.elementdatasettaxagroups: table labels required.
+ndb.elementmaturities: table labels required.
+ndb.elementportions: table labels required.
+ndb.elementsymmetries: table labels required.
+ndb.elementtaxagroupmaturities: table labels required.
+ndb.elementtaxagroupportions: table labels required.
+ndb.elementtaxagroups: table labels required.
+ndb.elementtaxagroupsymmetries: table labels required.
+ndb.elementtypes: table labels required.
+ndb.embargo: table labels required.
+ndb.entitycovers: table labels required.
+ndb.entitycovertypes: table labels required.
+ndb.entitydripheight: table labels required.
+ndb.entitygeology: table labels required.
+ndb.entitylandusecover: table labels required.
+ndb.entityrelationship: table labels required.
+ndb.entitysamples: table labels required.
+ndb.entityvegetationcover: table labels required.
+ndb.eventchronology: table labels required.
+ndb.eventpublications: table labels required.
+ndb.events: table labels required.
+ndb.eventtypes: table labels required.
+ndb.externalcontacts: table labels required.
+ndb.externaldatabases: table labels required.
+ndb.externalgeochronology: table labels required.
+ndb.externalpublications: table labels required.
+ndb.externalspeleothemdata: table labels required.
+ndb.externaltaxa: table labels required.
+ndb.faciestypes: table labels required.
+ndb.formtaxa: table labels required.
+ndb.fractiondated: table labels required.
+ndb.geochroncontrols: table labels required.
+ndb.geochronology: table labels required.
+ndb.geochronpublications: table labels required.
+ndb.geochrontypes: table labels required.
+ndb.geopaths: table labels required.
+ndb.geopoldepth: table labels required.
+ndb.geopoliticalunits: table labels required.
+ndb.hiatuschronology: table labels required.
+ndb.hiatuses: table labels required.
+ndb.isobiomarkerbandtypes: table labels required.
+ndb.isobiomarkertypes: table labels required.
+ndb.isoinstrumentation: table labels required.
+ndb.isoinstrumentationtypes: table labels required.
+ndb.isomatanalsubstrate: table labels required.
+ndb.isomaterialanalyzedtypes: table labels required.
+ndb.isometadata: table labels required.
+ndb.isopretreatmenttypes: table labels required.
+ndb.isosampleintrosystemtypes: table labels required.
+ndb.isosampleorigintypes: table labels required.
+ndb.isosamplepretreatments: table labels required.
+ndb.isoscaletypes: table labels required.
+ndb.isospecimendata: table labels required.
+ndb.isosrmetadata: table labels required.
+ndb.isostandards: table labels required.
+ndb.isostandardtypes: table labels required.
+ndb.isostratdata: table labels required.
+ndb.isosubstratetypes: table labels required.
+ndb.isovariablescaletypes: table labels required.
+ndb.keywords: table labels required.
+ndb.lakeparameters: table labels required.
+ndb.lakeparametertypes: table labels required.
+ndb.landusetypes: table labels required.
+ndb.leadmodelbasis: table labels required.
+ndb.leadmodels: table labels required.
+ndb.lithology: table labels required.
+ndb.lithostrat: table labels required.
+ndb.lithostratunits: table labels required.
+ndb.publicationauthors: table labels required.
+ndb.publicationeditors: table labels required.
+ndb.publications: table labels required.
+ndb.publicationtranslators: table labels required.
+ndb.publicationtypes: table labels required.
+ndb.pubtsv: table labels required.
+ndb.radiocarbon: table labels required.
+ndb.radiocarboncalibration: table labels required.
+ndb.radiocarbonmethods: table labels required.
+ndb.relativeagepublications: table labels required.
+ndb.relativeages: table labels required.
+ndb.relativeagescales: table labels required.
+ndb.relativeageunits: table labels required.
+ndb.relativechronology: table labels required.
+ndb.repositoryinstitutions: table labels required.
+ndb.repositoryspecimens: table labels required.
+ndb.rocktypes: table labels required.
+ndb.sampleages: table labels required.
+ndb.sampleanalysts: table labels required.
+ndb.samplekeywords: table labels required.
+ndb.samples: table labels required.
+ndb.sitegeopolitical: table labels required.
+ndb.siteimages: table labels required.
+ndb.sitelandusecover: table labels required.
+ndb.sites: table labels required.
+ndb.sitestemp: table labels required.
+ndb.sitevegetationcover: table labels required.
+ndb.specimendates: table labels required.
+ndb.specimendatescal: table labels required.
+ndb.specimendomesticstatustypes: table labels required.
+ndb.specimengenbank: table labels required.
+ndb.specimens: table labels required.
+ndb.specimensextypes: table labels required.
+ndb.specimentaphonomy: table labels required.
+ndb.speleothemcollectionunits: table labels required.
+ndb.speleothemdriptypes: table labels required.
+ndb.speleothementitystatuses: table labels required.
+ndb.speleothems: table labels required.
+ndb.speleothemtypes: table labels required.
+ndb.summarydatataphonomy: table labels required.
+ndb.synonyms: table labels required.
+ndb.synonymtypes: table labels required.
+ndb.synonymy: table labels required.
+ndb.sysdiagrams: table labels required.
+ndb.taphonomicsystems: table labels required.
+ndb.taphonomicsystemsdatasettypes: table labels required.
+ndb.taphonomictypes: table labels required.
+ndb.taxa: table labels required.
+ndb.taxaalthierarchy: table labels required.
+ndb.taxaalthierarchytypes: table labels required.
+ndb.taxagrouptypes: table labels required.
+ndb.taxonpaths: table labels required.
+ndb.tephras: table labels required.
+ndb.uncertaintybases: table labels required.
+ndb.unitsdatasettypes: table labels required.
+ndb.uraniumseries: table labels required.
+ndb.uraniumseriesdata: table labels required.
+ndb.variablecontexts: table labels required.
+ndb.variableelements: table labels required.
+ndb.variables: table labels required.
+ndb.variableunits: table labels required.
+ndb.vegetationcovertypes: table labels required.
+ti.dslinks: table labels required.
+ti.geopol1: table labels required.
+ti.geopol2: table labels required.
+ti.geopol3: table labels required.
+ti.geopol4: table labels required.
+ti.stewarddatabases: table labels required.
+ti.stewards: table labels required.
+ti.stewardupdates: table labels required.
+ts.stewardauthorization: table labels required.
+neotoma: unrelated (isolated) table exists. [ap.pollensumgroups ndb.sitestemp ndb.radiocarboncalibration ndb.dssampdata ap.orcidlogins ap.sitegadm ap.summaries ti.geopol3 ap.faunranges ap.querytable ap.hydrolakes ti.geopol4 ndb.pubtsv ap.icesheets ti.geopol1 ti.geopol2 ndb.sysdiagrams ap.geopolnames doi.frozen ndb.dsdatasample ndb.dsageranges ap.datasetpisauthors ap.pollensums ti.dslinks ap.globalmammals ts.stewardauthorization ndb.datasetdoi ndb.isosampleorigintypes ap.datasetkeywords ap.taxaindatasetview ndb.dslinks ndb.geopoldepth doi.doimeta]
+ap.gadm: too many columns. [56/10]
+ap.hydrolakes: too many columns. [25/10]
+ap.pollensums: too many columns. [15/10]
+ap.querytable: too many columns. [20/10]
+ndb.analysisunits: too many columns. [11/10]
+ndb.chroncontrols: too many columns. [13/10]
+ndb.chronologies: too many columns. [13/10]
+ndb.collectionunits: too many columns. [20/10]
+ndb.contacts: too many columns. [17/10]
+ndb.events: too many columns. [12/10]
+ndb.geochronology: too many columns. [14/10]
+ndb.isometadata: too many columns. [13/10]
+ndb.publications: too many columns. [28/10]
+ndb.radiocarbon: too many columns. [12/10]
+ndb.relativeages: too many columns. [11/10]
+ndb.samples: too many columns. [12/10]
+ndb.sites: too many columns. [13/10]
+ndb.sitestemp: too many columns. [13/10]
+ndb.specimens: too many columns. [17/10]
+ndb.synonymy: too many columns. [11/10]
+ndb.taxa: too many columns. [14/10]
+ap.datasetkeywords: column 'redcatecreated' required.
+ap.datasetkeywords: column 'recdatemodified' required.
+ap.datasetpisauthors: column 'redcatecreated' required.
+ap.datasetpisauthors: column 'recdatemodified' required.
+ap.faunranges: column 'redcatecreated' required.
+ap.faunranges: column 'recdatemodified' required.
+ap.gadm: column 'redcatecreated' required.
+ap.gadm: column 'recdatemodified' required.
+ap.geopolnames: column 'redcatecreated' required.
+ap.geopolnames: column 'recdatemodified' required.
+ap.globalmammals: column 'redcatecreated' required.
+ap.globalmammals: column 'recdatemodified' required.
+ap.hydrolakes: column 'redcatecreated' required.
+ap.hydrolakes: column 'recdatemodified' required.
+ap.icesheets: column 'redcatecreated' required.
+ap.icesheets: column 'recdatemodified' required.
+ap.orcidlogins: column 'redcatecreated' required.
+ap.pollensumgroups: column 'redcatecreated' required.
+ap.pollensumgroups: column 'recdatemodified' required.
+ap.pollensums: column 'redcatecreated' required.
+ap.pollensums: column 'recdatemodified' required.
+ap.querytable: column 'redcatecreated' required.
+ap.querytable: column 'recdatemodified' required.
+ap.sitegadm: column 'redcatecreated' required.
+ap.sitegadm: column 'recdatemodified' required.
+ap.summaries: column 'redcatecreated' required.
+ap.summaries: column 'recdatemodified' required.
+ap.taxaindatasetview: column 'redcatecreated' required.
+ap.taxaindatasetview: column 'recdatemodified' required.
+doi.doimeta: column 'redcatecreated' required.
+doi.frozen: column 'redcatecreated' required.
+doi.frozen: column 'recdatemodified' required.
+ndb.accumulationrates: column 'redcatecreated' required.
+ndb.agetypes: column 'redcatecreated' required.
+ndb.aggregatechronologies: column 'redcatecreated' required.
+ndb.aggregatedatasets: column 'redcatecreated' required.
+ndb.aggregateordertypes: column 'redcatecreated' required.
+ndb.aggregatesampleages: column 'redcatecreated' required.
+ndb.aggregatesamples: column 'redcatecreated' required.
+ndb.analysisunitaltdepths: column 'redcatecreated' required.
+ndb.analysisunitaltdepthscales: column 'redcatecreated' required.
+ndb.analysisunitlithostrat: column 'redcatecreated' required.
+ndb.analysisunits: column 'redcatecreated' required.
+ndb.calibrationcurves: column 'redcatecreated' required.
+ndb.calibrationprograms: column 'redcatecreated' required.
+ndb.chroncontrolaccuracydirections: column 'redcatecreated' required.
+ndb.chroncontrolaccuracydistributions: column 'redcatecreated' required.
+ndb.chroncontrolaccuracyranks: column 'redcatecreated' required.
+ndb.chroncontrolprecisionranks: column 'redcatecreated' required.
+ndb.chroncontrolranks: column 'redcatecreated' required.
+ndb.chroncontrols: column 'redcatecreated' required.
+ndb.chroncontrolscal14c: column 'redcatecreated' required.
+ndb.chroncontroltypes: column 'redcatecreated' required.
+ndb.chronologies: column 'redcatecreated' required.
+ndb.collectiontypes: column 'redcatecreated' required.
+ndb.collectionunits: column 'redcatecreated' required.
+ndb.collectors: column 'redcatecreated' required.
+ndb.constituentdatabases: column 'redcatecreated' required.
+ndb.contactreferences: column 'redcatecreated' required.
+ndb.contactreferences: column 'recdatemodified' required.
+ndb.contacts: column 'redcatecreated' required.
+ndb.contactstatuses: column 'redcatecreated' required.
+ndb.contextsdatasettypes: column 'redcatecreated' required.
+ndb.data: column 'redcatecreated' required.
+ndb.dataprocessors: column 'redcatecreated' required.
+ndb.datasetdatabases: column 'redcatecreated' required.
+ndb.datasetdoi: column 'redcatecreated' required.
+ndb.datasetpis: column 'redcatecreated' required.
+ndb.datasetpublications: column 'redcatecreated' required.
+ndb.datasets: column 'redcatecreated' required.
+ndb.datasetsubmissions: column 'redcatecreated' required.
+ndb.datasetsubmissiontypes: column 'redcatecreated' required.
+ndb.datasettaxagrouptypes: column 'redcatecreated' required.
+ndb.datasettaxonnotes: column 'redcatecreated' required.
+ndb.datasettypes: column 'redcatecreated' required.
+ndb.datasetvariables: column 'redcatecreated' required.
+ndb.datataxonnotes: column 'redcatecreated' required.
+ndb.datauncertainties: column 'redcatecreated' required.
+ndb.datauncertainties: column 'recdatemodified' required.
+ndb.decayconstants: column 'redcatecreated' required.
+ndb.decayconstants: column 'recdatemodified' required.
+ndb.depagents: column 'redcatecreated' required.
+ndb.depagenttypes: column 'redcatecreated' required.
+ndb.depenvttypes: column 'redcatecreated' required.
+ndb.depthreferencesystem: column 'redcatecreated' required.
+ndb.depthreferencesystem: column 'recdatemodified' required.
+ndb.dsageranges: column 'redcatecreated' required.
+ndb.dsageranges: column 'recdatemodified' required.
+ndb.dsdatasample: column 'redcatecreated' required.
+ndb.dsdatasample: column 'recdatemodified' required.
+ndb.dslinks: column 'redcatecreated' required.
+ndb.dslinks: column 'recdatemodified' required.
+ndb.dssampdata: column 'redcatecreated' required.
+ndb.dssampdata: column 'recdatemodified' required.
+ndb.ecolgroups: column 'redcatecreated' required.
+ndb.ecolgrouptypes: column 'redcatecreated' required.
+ndb.ecolsettypes: column 'redcatecreated' required.
+ndb.elementdatasettaxagroups: column 'redcatecreated' required.
+ndb.elementmaturities: column 'redcatecreated' required.
+ndb.elementportions: column 'redcatecreated' required.
+ndb.elementsymmetries: column 'redcatecreated' required.
+ndb.elementtaxagroupmaturities: column 'redcatecreated' required.
+ndb.elementtaxagroupportions: column 'redcatecreated' required.
+ndb.elementtaxagroups: column 'redcatecreated' required.
+ndb.elementtaxagroupsymmetries: column 'redcatecreated' required.
+ndb.elementtypes: column 'redcatecreated' required.
+ndb.embargo: column 'redcatecreated' required.
+ndb.embargo: column 'recdatemodified' required.
+ndb.entitycovers: column 'redcatecreated' required.
+ndb.entitycovers: column 'recdatemodified' required.
+ndb.entitycovertypes: column 'redcatecreated' required.
+ndb.entitycovertypes: column 'recdatemodified' required.
+ndb.entitydripheight: column 'redcatecreated' required.
+ndb.entitydripheight: column 'recdatemodified' required.
+ndb.entitygeology: column 'redcatecreated' required.
+ndb.entitygeology: column 'recdatemodified' required.
+ndb.entitylandusecover: column 'redcatecreated' required.
+ndb.entitylandusecover: column 'recdatemodified' required.
+ndb.entityrelationship: column 'redcatecreated' required.
+ndb.entityrelationship: column 'recdatemodified' required.
+ndb.entitysamples: column 'redcatecreated' required.
+ndb.entitysamples: column 'recdatemodified' required.
+ndb.entityvegetationcover: column 'redcatecreated' required.
+ndb.entityvegetationcover: column 'recdatemodified' required.
+ndb.eventchronology: column 'redcatecreated' required.
+ndb.eventpublications: column 'redcatecreated' required.
+ndb.events: column 'redcatecreated' required.
+ndb.eventtypes: column 'redcatecreated' required.
+ndb.externalcontacts: column 'redcatecreated' required.
+ndb.externalcontacts: column 'recdatemodified' required.
+ndb.externaldatabases: column 'redcatecreated' required.
+ndb.externalgeochronology: column 'redcatecreated' required.
+ndb.externalgeochronology: column 'recdatemodified' required.
+ndb.externalpublications: column 'redcatecreated' required.
+ndb.externalspeleothemdata: column 'redcatecreated' required.
+ndb.externalspeleothemdata: column 'recdatemodified' required.
+ndb.externaltaxa: column 'redcatecreated' required.
+ndb.faciestypes: column 'redcatecreated' required.
+ndb.formtaxa: column 'redcatecreated' required.
+ndb.fractiondated: column 'redcatecreated' required.
+ndb.geochroncontrols: column 'redcatecreated' required.
+ndb.geochronology: column 'redcatecreated' required.
+ndb.geochronpublications: column 'redcatecreated' required.
+ndb.geochrontypes: column 'redcatecreated' required.
+ndb.geopaths: column 'redcatecreated' required.
+ndb.geopaths: column 'recdatemodified' required.
+ndb.geopoldepth: column 'redcatecreated' required.
+ndb.geopoldepth: column 'recdatemodified' required.
+ndb.geopoliticalunits: column 'redcatecreated' required.
+ndb.hiatuschronology: column 'redcatecreated' required.
+ndb.hiatuschronology: column 'recdatemodified' required.
+ndb.hiatuses: column 'redcatecreated' required.
+ndb.hiatuses: column 'recdatemodified' required.
+ndb.isobiomarkerbandtypes: column 'redcatecreated' required.
+ndb.isobiomarkertypes: column 'redcatecreated' required.
+ndb.isoinstrumentation: column 'redcatecreated' required.
+ndb.isoinstrumentationtypes: column 'redcatecreated' required.
+ndb.isomatanalsubstrate: column 'redcatecreated' required.
+ndb.isomaterialanalyzedtypes: column 'redcatecreated' required.
+ndb.isometadata: column 'redcatecreated' required.
+ndb.isopretreatmenttypes: column 'redcatecreated' required.
+ndb.isosampleintrosystemtypes: column 'redcatecreated' required.
+ndb.isosampleorigintypes: column 'redcatecreated' required.
+ndb.isosamplepretreatments: column 'redcatecreated' required.
+ndb.isoscaletypes: column 'redcatecreated' required.
+ndb.isospecimendata: column 'redcatecreated' required.
+ndb.isosrmetadata: column 'redcatecreated' required.
+ndb.isostandards: column 'redcatecreated' required.
+ndb.isostandardtypes: column 'redcatecreated' required.
+ndb.isostratdata: column 'redcatecreated' required.
+ndb.isosubstratetypes: column 'redcatecreated' required.
+ndb.isovariablescaletypes: column 'redcatecreated' required.
+ndb.keywords: column 'redcatecreated' required.
+ndb.lakeparameters: column 'redcatecreated' required.
+ndb.lakeparametertypes: column 'redcatecreated' required.
+ndb.landusetypes: column 'redcatecreated' required.
+ndb.landusetypes: column 'recdatemodified' required.
+ndb.leadmodelbasis: column 'redcatecreated' required.
+ndb.leadmodelbasis: column 'recdatemodified' required.
+ndb.leadmodels: column 'redcatecreated' required.
+ndb.leadmodels: column 'recdatemodified' required.
+ndb.lithology: column 'redcatecreated' required.
+ndb.lithostrat: column 'redcatecreated' required.
+ndb.lithostratunits: column 'redcatecreated' required.
+ndb.publicationauthors: column 'redcatecreated' required.
+ndb.publicationeditors: column 'redcatecreated' required.
+ndb.publications: column 'redcatecreated' required.
+ndb.publicationtranslators: column 'redcatecreated' required.
+ndb.publicationtypes: column 'redcatecreated' required.
+ndb.pubtsv: column 'redcatecreated' required.
+ndb.pubtsv: column 'recdatemodified' required.
+ndb.radiocarbon: column 'redcatecreated' required.
+ndb.radiocarboncalibration: column 'redcatecreated' required.
+ndb.radiocarboncalibration: column 'recdatemodified' required.
+ndb.radiocarbonmethods: column 'redcatecreated' required.
+ndb.relativeagepublications: column 'redcatecreated' required.
+ndb.relativeages: column 'redcatecreated' required.
+ndb.relativeagescales: column 'redcatecreated' required.
+ndb.relativeageunits: column 'redcatecreated' required.
+ndb.relativechronology: column 'redcatecreated' required.
+ndb.repositoryinstitutions: column 'redcatecreated' required.
+ndb.repositoryspecimens: column 'redcatecreated' required.
+ndb.rocktypes: column 'redcatecreated' required.
+ndb.sampleages: column 'redcatecreated' required.
+ndb.sampleanalysts: column 'redcatecreated' required.
+ndb.samplekeywords: column 'redcatecreated' required.
+ndb.samples: column 'redcatecreated' required.
+ndb.sitegeopolitical: column 'redcatecreated' required.
+ndb.siteimages: column 'redcatecreated' required.
+ndb.sitelandusecover: column 'redcatecreated' required.
+ndb.sitelandusecover: column 'recdatemodified' required.
+ndb.sites: column 'redcatecreated' required.
+ndb.sitestemp: column 'redcatecreated' required.
+ndb.sitevegetationcover: column 'redcatecreated' required.
+ndb.sitevegetationcover: column 'recdatemodified' required.
+ndb.specimendates: column 'redcatecreated' required.
+ndb.specimendatescal: column 'redcatecreated' required.
+ndb.specimendomesticstatustypes: column 'redcatecreated' required.
+ndb.specimengenbank: column 'redcatecreated' required.
+ndb.specimengenbank: column 'recdatemodified' required.
+ndb.specimens: column 'redcatecreated' required.
+ndb.specimensextypes: column 'redcatecreated' required.
+ndb.specimentaphonomy: column 'redcatecreated' required.
+ndb.speleothemcollectionunits: column 'redcatecreated' required.
+ndb.speleothemcollectionunits: column 'recdatemodified' required.
+ndb.speleothemdriptypes: column 'redcatecreated' required.
+ndb.speleothemdriptypes: column 'recdatemodified' required.
+ndb.speleothementitystatuses: column 'redcatecreated' required.
+ndb.speleothementitystatuses: column 'recdatemodified' required.
+ndb.speleothems: column 'redcatecreated' required.
+ndb.speleothems: column 'recdatemodified' required.
+ndb.speleothemtypes: column 'redcatecreated' required.
+ndb.speleothemtypes: column 'recdatemodified' required.
+ndb.summarydatataphonomy: column 'redcatecreated' required.
+ndb.synonyms: column 'redcatecreated' required.
+ndb.synonymtypes: column 'redcatecreated' required.
+ndb.synonymy: column 'redcatecreated' required.
+ndb.sysdiagrams: column 'redcatecreated' required.
+ndb.sysdiagrams: column 'recdatemodified' required.
+ndb.taphonomicsystems: column 'redcatecreated' required.
+ndb.taphonomicsystemsdatasettypes: column 'redcatecreated' required.
+ndb.taphonomictypes: column 'redcatecreated' required.
+ndb.taxa: column 'redcatecreated' required.
+ndb.taxaalthierarchy: column 'redcatecreated' required.
+ndb.taxaalthierarchy: column 'recdatemodified' required.
+ndb.taxaalthierarchytypes: column 'redcatecreated' required.
+ndb.taxaalthierarchytypes: column 'recdatemodified' required.
+ndb.taxagrouptypes: column 'redcatecreated' required.
+ndb.taxonpaths: column 'redcatecreated' required.
+ndb.taxonpaths: column 'recdatemodified' required.
+ndb.tephras: column 'redcatecreated' required.
+ndb.uncertaintybases: column 'redcatecreated' required.
+ndb.uncertaintybases: column 'recdatemodified' required.
+ndb.unitsdatasettypes: column 'redcatecreated' required.
+ndb.uraniumseries: column 'redcatecreated' required.
+ndb.uraniumseries: column 'recdatemodified' required.
+ndb.uraniumseriesdata: column 'redcatecreated' required.
+ndb.uraniumseriesdata: column 'recdatemodified' required.
+ndb.variablecontexts: column 'redcatecreated' required.
+ndb.variableelements: column 'redcatecreated' required.
+ndb.variables: column 'redcatecreated' required.
+ndb.variableunits: column 'redcatecreated' required.
+ndb.vegetationcovertypes: column 'redcatecreated' required.
+ndb.vegetationcovertypes: column 'recdatemodified' required.
+ti.dslinks: column 'redcatecreated' required.
+ti.dslinks: column 'recdatemodified' required.
+ti.geopol1: column 'redcatecreated' required.
+ti.geopol1: column 'recdatemodified' required.
+ti.geopol2: column 'redcatecreated' required.
+ti.geopol2: column 'recdatemodified' required.
+ti.geopol3: column 'redcatecreated' required.
+ti.geopol3: column 'recdatemodified' required.
+ti.geopol4: column 'redcatecreated' required.
+ti.geopol4: column 'recdatemodified' required.
+ti.stewarddatabases: column 'redcatecreated' required.
+ti.stewarddatabases: column 'recdatemodified' required.
+ti.stewards: column 'redcatecreated' required.
+ti.stewardupdates: column 'redcatecreated' required.
+ti.stewardupdates: column 'recdatemodified' required.
+ts.stewardauthorization: column 'redcatecreated' required.
+ts.stewardauthorization: column 'recdatemodified' required.
+ndb.accumulationrates.variableunitsid: foreign key columns do not have an index. [ndb.accumulationrates]
+ndb.aggregatechronologies.agetypeid: foreign key columns do not have an index. [ndb.aggregatechronologies]
+ndb.aggregatechronologies.aggregatedatasetid: foreign key columns do not have an index. [ndb.aggregatechronologies]
+ndb.aggregatedatasets.aggregateordertypeid: foreign key columns do not have an index. [ndb.aggregatedatasets]
+ndb.analysisunitaltdepthscales.variableunitsid: foreign key columns do not have an index. [ndb.analysisunitaltdepthscales]
+ndb.calibrationcurves.publicationid: foreign key columns do not have an index. [ndb.calibrationcurves]
+ndb.chroncontrolranks.accuracydirectionid: foreign key columns do not have an index. [ndb.chroncontrolranks]
+ndb.chroncontrolranks.accuracydistributionid: foreign key columns do not have an index. [ndb.chroncontrolranks]
+ndb.chroncontrolranks.accuracyrankid: foreign key columns do not have an index. [ndb.chroncontrolranks]
+ndb.chroncontrolranks.precisionrankid: foreign key columns do not have an index. [ndb.chroncontrolranks]
+ndb.chroncontrolranks.chroncontrolid: foreign key columns do not have an index. [ndb.chroncontrolranks]
+ndb.chroncontrols.agetypeid: foreign key columns do not have an index. [ndb.chroncontrols]
+ndb.chroncontrols.analysisunitid: foreign key columns do not have an index. [ndb.chroncontrols]
+ndb.chroncontrols.chroncontroltypeid: foreign key columns do not have an index. [ndb.chroncontrols]
+ndb.chroncontrolscal14c.calibrationcurveid: foreign key columns do not have an index. [ndb.chroncontrolscal14c]
+ndb.chroncontrolscal14c.calibrationprogramid: foreign key columns do not have an index. [ndb.chroncontrolscal14c]
+ndb.chroncontroltypes.higherchroncontroltypeid: foreign key columns do not have an index. [ndb.chroncontroltypes]
+ndb.chronologies.agetypeid: foreign key columns do not have an index. [ndb.chronologies]
+ndb.chronologies.collectionunitid: foreign key columns do not have an index. [ndb.chronologies]
+ndb.chronologies.contactid: foreign key columns do not have an index. [ndb.chronologies]
+ndb.collectionunits.colltypeid: foreign key columns do not have an index. [ndb.collectionunits]
+ndb.collectionunits.substrateid: foreign key columns do not have an index. [ndb.collectionunits]
+ndb.collectors.collectionunitid: foreign key columns do not have an index. [ndb.collectors]
+ndb.collectors.contactid: foreign key columns do not have an index. [ndb.collectors]
+ndb.constituentdatabases.contactid: foreign key columns do not have an index. [ndb.constituentdatabases]
+ndb.contactreferences.contactid: foreign key columns do not have an index. [ndb.contactreferences]
+ndb.contactreferences.exdatabaseid: foreign key columns do not have an index. [ndb.contactreferences]
+ndb.contacts.contactstatusid: foreign key columns do not have an index. [ndb.contacts]
+ndb.datasets.embargoid: foreign key columns do not have an index. [ndb.datasets]
+ndb.datasetsubmissions.contactid: foreign key columns do not have an index. [ndb.datasetsubmissions]
+ndb.datasetsubmissions.submissiontypeid: foreign key columns do not have an index. [ndb.datasetsubmissions]
+ndb.datasettaxonnotes.contactid: foreign key columns do not have an index. [ndb.datasettaxonnotes]
+ndb.datasetvariables.datasetid: foreign key columns do not have an index. [ndb.datasetvariables]
+ndb.datasetvariables.variableid: foreign key columns do not have an index. [ndb.datasetvariables]
+ndb.datataxonnotes.contactid: foreign key columns do not have an index. [ndb.datataxonnotes]
+ndb.datataxonnotes.dataid: foreign key columns do not have an index. [ndb.datataxonnotes]
+ndb.decayconstants.publicationid: foreign key columns do not have an index. [ndb.decayconstants]
+ndb.depenvttypes.depenvthigherid: foreign key columns do not have an index. [ndb.depenvttypes]
+ndb.depthreferencesystem.depthreferencepublicationid: foreign key columns do not have an index. [ndb.depthreferencesystem]
+ndb.entitycovers.entitycoverid: foreign key columns do not have an index. [ndb.entitycovers]
+ndb.entitycovers.entitycoverunits: foreign key columns do not have an index. [ndb.entitycovers]
+ndb.entitycovers.entityid: foreign key columns do not have an index. [ndb.entitycovers]
+ndb.entitydripheight.entitydripheightunit: foreign key columns do not have an index. [ndb.entitydripheight]
+ndb.entitydripheight.entityid: foreign key columns do not have an index. [ndb.entitydripheight]
+ndb.entitydripheight.speleothemdriptypeid: foreign key columns do not have an index. [ndb.entitydripheight]
+ndb.entitygeology.entityid: foreign key columns do not have an index. [ndb.entitygeology]
+ndb.entitylandusecover.entityid: foreign key columns do not have an index. [ndb.entitylandusecover]
+ndb.entitylandusecover.landusecovertypeid: foreign key columns do not have an index. [ndb.entitylandusecover]
+ndb.entityrelationship.entityid: foreign key columns do not have an index. [ndb.entityrelationship]
+ndb.entityrelationship.entitystatusid: foreign key columns do not have an index. [ndb.entityrelationship]
+ndb.entityrelationship.referenceentityid: foreign key columns do not have an index. [ndb.entityrelationship]
+ndb.entityvegetationcover.entityid: foreign key columns do not have an index. [ndb.entityvegetationcover]
+ndb.entityvegetationcover.vegetationcovertypeid: foreign key columns do not have an index. [ndb.entityvegetationcover]
+ndb.events.eventtypeid: foreign key columns do not have an index. [ndb.events]
+ndb.eventtypes.chroncontroltypeid: foreign key columns do not have an index. [ndb.eventtypes]
+ndb.externalspeleothemdata.entityid: foreign key columns do not have an index. [ndb.externalspeleothemdata]
+ndb.externalspeleothemdata.extdatabaseid: foreign key columns do not have an index. [ndb.externalspeleothemdata]
+ndb.formtaxa.publicationid: foreign key columns do not have an index. [ndb.formtaxa]
+ndb.formtaxa.taxonid: foreign key columns do not have an index. [ndb.formtaxa]
+ndb.formtaxa.affinityid: foreign key columns do not have an index. [ndb.formtaxa]
+ndb.geochronology.agetypeid: foreign key columns do not have an index. [ndb.geochronology]
+ndb.geochronology.geochrontypeid: foreign key columns do not have an index. [ndb.geochronology]
+ndb.isobiomarkerbandtypes.isobiomarkertypeid: foreign key columns do not have an index. [ndb.isobiomarkerbandtypes]
+ndb.isoinstrumentation.isoinstrumentationtypeid: foreign key columns do not have an index. [ndb.isoinstrumentation]
+ndb.isoinstrumentation.isosampleintrosystemtypeid: foreign key columns do not have an index. [ndb.isoinstrumentation]
+ndb.isometadata.analystid: foreign key columns do not have an index. [ndb.isometadata]
+ndb.isometadata.dataid: foreign key columns do not have an index. [ndb.isometadata]
+ndb.isometadata.isomatanaltypeid: foreign key columns do not have an index. [ndb.isometadata]
+ndb.isometadata.isosubstratetypeid: foreign key columns do not have an index. [ndb.isometadata]
+ndb.isospecimendata.dataid: foreign key columns do not have an index. [ndb.isospecimendata]
+ndb.isospecimendata.specimenid: foreign key columns do not have an index. [ndb.isospecimendata]
+ndb.isostratdata.elementtypeid: foreign key columns do not have an index. [ndb.isostratdata]
+ndb.isostratdata.taxonid: foreign key columns do not have an index. [ndb.isostratdata]
+ndb.landusetypes.publicationid: foreign key columns do not have an index. [ndb.landusetypes]
+ndb.leadmodels.analysisunitid: foreign key columns do not have an index. [ndb.leadmodels]
+ndb.leadmodels.pbbasisid: foreign key columns do not have an index. [ndb.leadmodels]
+ndb.lithostrat.higherlithostratid: foreign key columns do not have an index. [ndb.lithostrat]
+ndb.lithostrat.lithostratunitid: foreign key columns do not have an index. [ndb.lithostrat]
+ndb.publications.pubtypeid: foreign key columns do not have an index. [ndb.publications]
+ndb.publicationtranslators.publicationid: foreign key columns do not have an index. [ndb.publicationtranslators]
+ndb.radiocarbon.radiocarbonmethodid: foreign key columns do not have an index. [ndb.radiocarbon]
+ndb.relativeages.relativeageunitid: foreign key columns do not have an index. [ndb.relativeages]
+ndb.relativechronology.chroncontrolid: foreign key columns do not have an index. [ndb.relativechronology]
+ndb.rocktypes.higherrocktypeid: foreign key columns do not have an index. [ndb.rocktypes]
+ndb.sitegeopolitical.objectid: foreign key columns do not have an index. [ndb.sitegeopolitical]
+ndb.siteimages.contactid: foreign key columns do not have an index. [ndb.siteimages]
+ndb.sitelandusecover.landusecovertypeid: foreign key columns do not have an index. [ndb.sitelandusecover]
+ndb.sitelandusecover.siteid: foreign key columns do not have an index. [ndb.sitelandusecover]
+ndb.sitevegetationcover.siteid: foreign key columns do not have an index. [ndb.sitevegetationcover]
+ndb.sitevegetationcover.vegetationcovertypeid: foreign key columns do not have an index. [ndb.sitevegetationcover]
+ndb.specimendates.specimenid: foreign key columns do not have an index. [ndb.specimendates]
+ndb.specimendates.elementtypeid: foreign key columns do not have an index. [ndb.specimendates]
+ndb.specimendates.fractionid: foreign key columns do not have an index. [ndb.specimendates]
+ndb.specimendates.geochronid: foreign key columns do not have an index. [ndb.specimendates]
+ndb.specimendatescal.calibrationcurveid: foreign key columns do not have an index. [ndb.specimendatescal]
+ndb.specimendatescal.calibrationprogramid: foreign key columns do not have an index. [ndb.specimendatescal]
+ndb.specimendatescal.specimendateid: foreign key columns do not have an index. [ndb.specimendatescal]
+ndb.specimens.dataid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.maturityid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.portionid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.symmetryid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.elementtypeid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.repositoryid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.domesticstatusid: foreign key columns do not have an index. [ndb.specimens]
+ndb.specimens.sexid: foreign key columns do not have an index. [ndb.specimens]
+ndb.speleothemcollectionunits.entityid: foreign key columns do not have an index. [ndb.speleothemcollectionunits]
+ndb.speleothemdriptypes.speleothemdriptypepublicationid: foreign key columns do not have an index. [ndb.speleothemdriptypes]
+ndb.speleothems.entrancedistanceunits: foreign key columns do not have an index. [ndb.speleothems]
+ndb.speleothems.rockageid: foreign key columns do not have an index. [ndb.speleothems]
+ndb.speleothems.siteid: foreign key columns do not have an index. [ndb.speleothems]
+ndb.speleothems.speleothemtypeid: foreign key columns do not have an index. [ndb.speleothems]
+ndb.speleothemtypes.speleothemtypepublicationid: foreign key columns do not have an index. [ndb.speleothemtypes]
+ndb.synonyms.invalidtaxonid: foreign key columns do not have an index. [ndb.synonyms]
+ndb.synonyms.synonymtypeid: foreign key columns do not have an index. [ndb.synonyms]
+ndb.synonymy.contactid: foreign key columns do not have an index. [ndb.synonymy]
+ndb.synonymy.datasetid: foreign key columns do not have an index. [ndb.synonymy]
+ndb.synonymy.publicationid: foreign key columns do not have an index. [ndb.synonymy]
+ndb.synonymy.taxonid: foreign key columns do not have an index. [ndb.synonymy]
+ndb.synonymy.reftaxonid: foreign key columns do not have an index. [ndb.synonymy]
+ndb.taphonomictypes.taphonomicsystemid: foreign key columns do not have an index. [ndb.taphonomictypes]
+ndb.taxa.highertaxonid: foreign key columns do not have an index. [ndb.taxa]
+ndb.taxa.publicationid: foreign key columns do not have an index. [ndb.taxa]
+ndb.taxa.validatorid: foreign key columns do not have an index. [ndb.taxa]
+ndb.taxaalthierarchy.highertaxonid: foreign key columns do not have an index. [ndb.taxaalthierarchy]
+ndb.tephras.analysisunitid: foreign key columns do not have an index. [ndb.tephras]
+ndb.tephras.eventid: foreign key columns do not have an index. [ndb.tephras]
+ndb.uraniumseries.decayconstantid: foreign key columns do not have an index. [ndb.uraniumseries]
+ndb.uraniumseries.geochronid: foreign key columns do not have an index. [ndb.uraniumseries]
+ndb.uraniumseriesdata.dataid: foreign key columns do not have an index. [ndb.uraniumseriesdata]
+ndb.uraniumseriesdata.geochronid: foreign key columns do not have an index. [ndb.uraniumseriesdata]
+ndb.variableelements.maturityid: foreign key columns do not have an index. [ndb.variableelements]
+ndb.variableelements.portionid: foreign key columns do not have an index. [ndb.variableelements]
+ndb.variableelements.symmetryid: foreign key columns do not have an index. [ndb.variableelements]
+ndb.variableelements.elementtypeid: foreign key columns do not have an index. [ndb.variableelements]
+ndb.vegetationcovertypes.vegetationpublicationid: foreign key columns do not have an index. [ndb.vegetationcovertypes]
+ti.stewards.contactid: foreign key columns do not have an index. [ti.stewards]
+ti.stewardupdates.contactid: foreign key columns do not have an index. [ti.stewardupdates]
+ap.datasetkeywords: table `ap.datasetkeywords` is not included in any viewpoints.
+ap.faunranges: table `ap.faunranges` is not included in any viewpoints.
+ap.gadm: table `ap.gadm` is not included in any viewpoints.
+ap.geopolnames: table `ap.geopolnames` is not included in any viewpoints.
+ap.globalmammals: table `ap.globalmammals` is not included in any viewpoints.
+ap.hydrolakes: table `ap.hydrolakes` is not included in any viewpoints.
+ap.icesheets: table `ap.icesheets` is not included in any viewpoints.
+ap.orcidlogins: table `ap.orcidlogins` is not included in any viewpoints.
+ap.pollensumgroups: table `ap.pollensumgroups` is not included in any viewpoints.
+ap.pollensums: table `ap.pollensums` is not included in any viewpoints.
+ap.sitegadm: table `ap.sitegadm` is not included in any viewpoints.
+ap.summaries: table `ap.summaries` is not included in any viewpoints.
+ap.taxaindatasetview: table `ap.taxaindatasetview` is not included in any viewpoints.
+doi.doimeta: table `doi.doimeta` is not included in any viewpoints.
+doi.frozen: table `doi.frozen` is not included in any viewpoints.
+ndb.aggregatedatasets: table `ndb.aggregatedatasets` is not included in any viewpoints.
+ndb.aggregateordertypes: table `ndb.aggregateordertypes` is not included in any viewpoints.
+ndb.aggregatesamples: table `ndb.aggregatesamples` is not included in any viewpoints.
+ndb.analysisunitaltdepths: table `ndb.analysisunitaltdepths` is not included in any viewpoints.
+ndb.analysisunitlithostrat: table `ndb.analysisunitlithostrat` is not included in any viewpoints.
+ndb.analysisunits: table `ndb.analysisunits` is not included in any viewpoints.
+ndb.collectiontypes: table `ndb.collectiontypes` is not included in any viewpoints.
+ndb.collectionunits: table `ndb.collectionunits` is not included in any viewpoints.
+ndb.constituentdatabases: table `ndb.constituentdatabases` is not included in any viewpoints.
+ndb.contactstatuses: table `ndb.contactstatuses` is not included in any viewpoints.
+ndb.contextsdatasettypes: table `ndb.contextsdatasettypes` is not included in any viewpoints.
+ndb.data: table `ndb.data` is not included in any viewpoints.
+ndb.datauncertainties: table `ndb.datauncertainties` is not included in any viewpoints.
+ndb.decayconstants: table `ndb.decayconstants` is not included in any viewpoints.
+ndb.depagents: table `ndb.depagents` is not included in any viewpoints.
+ndb.depagenttypes: table `ndb.depagenttypes` is not included in any viewpoints.
+ndb.depthreferencesystem: table `ndb.depthreferencesystem` is not included in any viewpoints.
+ndb.dsageranges: table `ndb.dsageranges` is not included in any viewpoints.
+ndb.dsdatasample: table `ndb.dsdatasample` is not included in any viewpoints.
+ndb.dslinks: table `ndb.dslinks` is not included in any viewpoints.
+ndb.dssampdata: table `ndb.dssampdata` is not included in any viewpoints.
+ndb.ecolgroups: table `ndb.ecolgroups` is not included in any viewpoints.
+ndb.ecolgrouptypes: table `ndb.ecolgrouptypes` is not included in any viewpoints.
+ndb.ecolsettypes: table `ndb.ecolsettypes` is not included in any viewpoints.
+ndb.elementdatasettaxagroups: table `ndb.elementdatasettaxagroups` is not included in any viewpoints.
+ndb.elementportions: table `ndb.elementportions` is not included in any viewpoints.
+ndb.elementtaxagroupmaturities: table `ndb.elementtaxagroupmaturities` is not included in any viewpoints.
+ndb.elementtaxagroupportions: table `ndb.elementtaxagroupportions` is not included in any viewpoints.
+ndb.elementtaxagroupsymmetries: table `ndb.elementtaxagroupsymmetries` is not included in any viewpoints.
+ndb.embargo: table `ndb.embargo` is not included in any viewpoints.
+ndb.entitycovers: table `ndb.entitycovers` is not included in any viewpoints.
+ndb.entitycovertypes: table `ndb.entitycovertypes` is not included in any viewpoints.
+ndb.entitydripheight: table `ndb.entitydripheight` is not included in any viewpoints.
+ndb.entitygeology: table `ndb.entitygeology` is not included in any viewpoints.
+ndb.entitylandusecover: table `ndb.entitylandusecover` is not included in any viewpoints.
+ndb.entityrelationship: table `ndb.entityrelationship` is not included in any viewpoints.
+ndb.entitysamples: table `ndb.entitysamples` is not included in any viewpoints.
+ndb.entityvegetationcover: table `ndb.entityvegetationcover` is not included in any viewpoints.
+ndb.eventpublications: table `ndb.eventpublications` is not included in any viewpoints.
+ndb.externalpublications: table `ndb.externalpublications` is not included in any viewpoints.
+ndb.externalspeleothemdata: table `ndb.externalspeleothemdata` is not included in any viewpoints.
+ndb.faciestypes: table `ndb.faciestypes` is not included in any viewpoints.
+ndb.fractiondated: table `ndb.fractiondated` is not included in any viewpoints.
+ndb.geopaths: table `ndb.geopaths` is not included in any viewpoints.
+ndb.geopoldepth: table `ndb.geopoldepth` is not included in any viewpoints.
+ndb.geopoliticalunits: table `ndb.geopoliticalunits` is not included in any viewpoints.
+ndb.isoinstrumentation: table `ndb.isoinstrumentation` is not included in any viewpoints.
+ndb.isomatanalsubstrate: table `ndb.isomatanalsubstrate` is not included in any viewpoints.
+ndb.isometadata: table `ndb.isometadata` is not included in any viewpoints.
+ndb.isosampleintrosystemtypes: table `ndb.isosampleintrosystemtypes` is not included in any viewpoints.
+ndb.isosampleorigintypes: table `ndb.isosampleorigintypes` is not included in any viewpoints.
+ndb.isosamplepretreatments: table `ndb.isosamplepretreatments` is not included in any viewpoints.
+ndb.isoscaletypes: table `ndb.isoscaletypes` is not included in any viewpoints.
+ndb.isospecimendata: table `ndb.isospecimendata` is not included in any viewpoints.
+ndb.isosrmetadata: table `ndb.isosrmetadata` is not included in any viewpoints.
+ndb.isostandards: table `ndb.isostandards` is not included in any viewpoints.
+ndb.isostandardtypes: table `ndb.isostandardtypes` is not included in any viewpoints.
+ndb.isostratdata: table `ndb.isostratdata` is not included in any viewpoints.
+ndb.isosubstratetypes: table `ndb.isosubstratetypes` is not included in any viewpoints.
+ndb.isovariablescaletypes: table `ndb.isovariablescaletypes` is not included in any viewpoints.
+ndb.keywords: table `ndb.keywords` is not included in any viewpoints.
+ndb.lakeparameters: table `ndb.lakeparameters` is not included in any viewpoints.
+ndb.landusetypes: table `ndb.landusetypes` is not included in any viewpoints.
+ndb.leadmodelbasis: table `ndb.leadmodelbasis` is not included in any viewpoints.
+ndb.leadmodels: table `ndb.leadmodels` is not included in any viewpoints.
+ndb.lithology: table `ndb.lithology` is not included in any viewpoints.
+ndb.lithostratunits: table `ndb.lithostratunits` is not included in any viewpoints.
+ndb.publicationeditors: table `ndb.publicationeditors` is not included in any viewpoints.
+ndb.publications: table `ndb.publications` is not included in any viewpoints.
+ndb.publicationtranslators: table `ndb.publicationtranslators` is not included in any viewpoints.
+ndb.publicationtypes: table `ndb.publicationtypes` is not included in any viewpoints.
+ndb.pubtsv: table `ndb.pubtsv` is not included in any viewpoints.
+ndb.relativeageunits: table `ndb.relativeageunits` is not included in any viewpoints.
+ndb.repositoryinstitutions: table `ndb.repositoryinstitutions` is not included in any viewpoints.
+ndb.repositoryspecimens: table `ndb.repositoryspecimens` is not included in any viewpoints.
+ndb.samplekeywords: table `ndb.samplekeywords` is not included in any viewpoints.
+ndb.samples: table `ndb.samples` is not included in any viewpoints.
+ndb.sitegeopolitical: table `ndb.sitegeopolitical` is not included in any viewpoints.
+ndb.siteimages: table `ndb.siteimages` is not included in any viewpoints.
+ndb.sitelandusecover: table `ndb.sitelandusecover` is not included in any viewpoints.
+ndb.sites: table `ndb.sites` is not included in any viewpoints.
+ndb.sitestemp: table `ndb.sitestemp` is not included in any viewpoints.
+ndb.sitevegetationcover: table `ndb.sitevegetationcover` is not included in any viewpoints.
+ndb.specimendatescal: table `ndb.specimendatescal` is not included in any viewpoints.
+ndb.specimendomesticstatustypes: table `ndb.specimendomesticstatustypes` is not included in any viewpoints.
+ndb.specimengenbank: table `ndb.specimengenbank` is not included in any viewpoints.
+ndb.specimens: table `ndb.specimens` is not included in any viewpoints.
+ndb.specimensextypes: table `ndb.specimensextypes` is not included in any viewpoints.
+ndb.specimentaphonomy: table `ndb.specimentaphonomy` is not included in any viewpoints.
+ndb.speleothemcollectionunits: table `ndb.speleothemcollectionunits` is not included in any viewpoints.
+ndb.speleothemdriptypes: table `ndb.speleothemdriptypes` is not included in any viewpoints.
+ndb.speleothementitystatuses: table `ndb.speleothementitystatuses` is not included in any viewpoints.
+ndb.speleothems: table `ndb.speleothems` is not included in any viewpoints.
+ndb.speleothemtypes: table `ndb.speleothemtypes` is not included in any viewpoints.
+ndb.summarydatataphonomy: table `ndb.summarydatataphonomy` is not included in any viewpoints.
+ndb.synonyms: table `ndb.synonyms` is not included in any viewpoints.
+ndb.synonymtypes: table `ndb.synonymtypes` is not included in any viewpoints.
+ndb.sysdiagrams: table `ndb.sysdiagrams` is not included in any viewpoints.
+ndb.taphonomicsystems: table `ndb.taphonomicsystems` is not included in any viewpoints.
+ndb.taphonomicsystemsdatasettypes: table `ndb.taphonomicsystemsdatasettypes` is not included in any viewpoints.
+ndb.taphonomictypes: table `ndb.taphonomictypes` is not included in any viewpoints.
+ndb.taxagrouptypes: table `ndb.taxagrouptypes` is not included in any viewpoints.
+ndb.tephras: table `ndb.tephras` is not included in any viewpoints.
+ndb.uncertaintybases: table `ndb.uncertaintybases` is not included in any viewpoints.
+ndb.unitsdatasettypes: table `ndb.unitsdatasettypes` is not included in any viewpoints.
+ndb.variablecontexts: table `ndb.variablecontexts` is not included in any viewpoints.
+ndb.variableelements: table `ndb.variableelements` is not included in any viewpoints.
+ndb.variables: table `ndb.variables` is not included in any viewpoints.
+ndb.variableunits: table `ndb.variableunits` is not included in any viewpoints.
+ndb.vegetationcovertypes: table `ndb.vegetationcovertypes` is not included in any viewpoints.
+ti.dslinks: table `ti.dslinks` is not included in any viewpoints.
+ti.geopol1: table `ti.geopol1` is not included in any viewpoints.
+ti.geopol2: table `ti.geopol2` is not included in any viewpoints.
+ti.geopol3: table `ti.geopol3` is not included in any viewpoints.
+ti.geopol4: table `ti.geopol4` is not included in any viewpoints.
+ti.stewarddatabases: table `ti.stewarddatabases` is not included in any viewpoints.
+ts.stewardauthorization: table `ts.stewardauthorization` is not included in any viewpoints.
+
+2539 detected

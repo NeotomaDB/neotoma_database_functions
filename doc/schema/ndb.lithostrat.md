@@ -6,10 +6,10 @@
 
 | # | Name               | Type                           | Default                                              | Nullable | Children                                                                                        | Parents                                       | Comment |
 | - | ------------------ | ------------------------------ | ---------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------- |
-| 1 | lithostratid       | integer                        | nextval('ndb.seq_lithostrat_lithostratid'::regclass) | false    | [ndb.analysisunitlithostrat](ndb.analysisunitlithostrat.md) [ndb.lithostrat](ndb.lithostrat.md) |                                               |         |
-| 2 | lithostratunitid   | integer                        |                                                      | false    |                                                                                                 | [ndb.lithostratunits](ndb.lithostratunits.md) |         |
+| 1 | higherlithostratid | integer                        |                                                      | false    |                                                                                                 | [ndb.lithostrat](ndb.lithostrat.md)           |         |
+| 2 | lithostratid       | integer                        | nextval('ndb.seq_lithostrat_lithostratid'::regclass) | false    | [ndb.analysisunitlithostrat](ndb.analysisunitlithostrat.md) [ndb.lithostrat](ndb.lithostrat.md) |                                               |         |
 | 3 | lithostratname     | varchar(64)                    |                                                      | false    |                                                                                                 |                                               |         |
-| 4 | higherlithostratid | integer                        |                                                      | false    |                                                                                                 | [ndb.lithostrat](ndb.lithostrat.md)           |         |
+| 4 | lithostratunitid   | integer                        |                                                      | false    |                                                                                                 | [ndb.lithostratunits](ndb.lithostratunits.md) |         |
 | 5 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now())                         | false    |                                                                                                 |                                               |         |
 | 6 | recdatemodified    | timestamp(0) without time zone |                                                      | false    |                                                                                                 |                                               |         |
 
@@ -24,8 +24,8 @@
 | # | Name                               | Type        | Definition                                                                                                          |
 | - | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_higherlithostratid              | FOREIGN KEY | FOREIGN KEY (higherlithostratid) REFERENCES ndb.lithostrat(lithostratid)                                            |
-| 2 | lithostrat_pkey                    | PRIMARY KEY | PRIMARY KEY (lithostratid)                                                                                          |
-| 3 | fk_lithostratunits_lithostrattypes | FOREIGN KEY | FOREIGN KEY (lithostratunitid) REFERENCES ndb.lithostratunits(lithostratunitid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_lithostratunits_lithostrattypes | FOREIGN KEY | FOREIGN KEY (lithostratunitid) REFERENCES ndb.lithostratunits(lithostratunitid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | lithostrat_pkey                    | PRIMARY KEY | PRIMARY KEY (lithostratid)                                                                                          |
 
 ## Indexes
 

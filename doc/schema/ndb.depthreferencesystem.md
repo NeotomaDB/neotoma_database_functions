@@ -6,10 +6,10 @@
 
 | # | Name                        | Type    | Default                                                                  | Nullable | Children | Parents                                 | Comment |
 | - | --------------------------- | ------- | ------------------------------------------------------------------------ | -------- | -------- | --------------------------------------- | ------- |
-| 1 | depthreferencesystemid      | integer | nextval('ndb.depthreferencesystem_depthreferencesystemid_seq'::regclass) | false    |          |                                         |         |
-| 2 | depthreference              | text    |                                                                          | true     |          |                                         |         |
-| 3 | depthreferencenotes         | text    |                                                                          | true     |          |                                         |         |
-| 4 | depthreferencepublicationid | integer |                                                                          | true     |          | [ndb.publications](ndb.publications.md) |         |
+| 1 | depthreference              | text    |                                                                          | true     |          |                                         |         |
+| 2 | depthreferencenotes         | text    |                                                                          | true     |          |                                         |         |
+| 3 | depthreferencepublicationid | integer |                                                                          | true     |          | [ndb.publications](ndb.publications.md) |         |
+| 4 | depthreferencesystemid      | integer | nextval('ndb.depthreferencesystem_depthreferencesystemid_seq'::regclass) | false    |          |                                         |         |
 
 ## Constraints
 

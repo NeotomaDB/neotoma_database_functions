@@ -24,9 +24,9 @@ CREATE VIEW dsdatasample AS (
 
 | # | Name       | Type    | Default | Nullable | Children | Parents | Comment |
 | - | ---------- | ------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | datasetid  | integer |         | true     |          |         |         |
-| 2 | sampleid   | integer |         | true     |          |         |         |
-| 3 | dataid     | integer |         | true     |          |         |         |
+| 1 | dataid     | integer |         | true     |          |         |         |
+| 2 | datasetid  | integer |         | true     |          |         |         |
+| 3 | sampleid   | integer |         | true     |          |         |         |
 | 4 | variableid | integer |         | true     |          |         |         |
 
 ## Referenced Tables

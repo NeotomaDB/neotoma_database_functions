@@ -18,14 +18,14 @@
 <text text-anchor="start" x="181.67" y="-182.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="212.79" y="-182.8" font-family="Arial" font-size="14.00" fill="#666666">[VIEW]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 263.35,-169.4 263.35,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">datasetid </text>
-<text text-anchor="start" x="113.91" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">dataid </text>
+<text text-anchor="start" x="95.23" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 263.35,-138.6 263.35,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">sampleid </text>
-<text text-anchor="start" x="113.12" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">datasetid </text>
+<text text-anchor="start" x="113.91" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 263.35,-107.8 263.35,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">dataid </text>
-<text text-anchor="start" x="95.23" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">sampleid </text>
+<text text-anchor="start" x="113.12" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 263.35,-77 263.35,-46.2 46.2,-46.2"/>
 <text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">variableid </text>
 <text text-anchor="start" x="117.01" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>

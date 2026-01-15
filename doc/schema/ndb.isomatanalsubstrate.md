@@ -15,9 +15,9 @@
 
 | # | Name                                            | Type        | Definition                                                                                                                   |
 | - | ----------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1 | isomatanalsubstrate_pkey                        | PRIMARY KEY | PRIMARY KEY (isomatanaltypeid, isosubstratetypeid)                                                                           |
-| 2 | fk_isomatanalsubstrate_isomaterialanalyzedtypes | FOREIGN KEY | FOREIGN KEY (isomatanaltypeid) REFERENCES ndb.isomaterialanalyzedtypes(isomatanaltypeid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | fk_isomatanalsubstrate_isosubstratetypes        | FOREIGN KEY | FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE CASCADE    |
+| 1 | fk_isomatanalsubstrate_isomaterialanalyzedtypes | FOREIGN KEY | FOREIGN KEY (isomatanaltypeid) REFERENCES ndb.isomaterialanalyzedtypes(isomatanaltypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_isomatanalsubstrate_isosubstratetypes        | FOREIGN KEY | FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE CASCADE    |
+| 3 | isomatanalsubstrate_pkey                        | PRIMARY KEY | PRIMARY KEY (isomatanaltypeid, isosubstratetypeid)                                                                           |
 
 ## Indexes
 

@@ -7,18 +7,18 @@
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                     | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------- | ------- |
 | 1 | datasettypeid   | integer                        |                              | false    |          | [ndb.datasettypes](ndb.datasettypes.md)     |         |
-| 2 | taxagroupid     | varchar(3)                     |                              | false    |          | [ndb.taxagrouptypes](ndb.taxagrouptypes.md) |         |
-| 3 | elementtypeid   | integer                        |                              | false    |          |                                             |         |
-| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                             |         |
-| 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                             |         |
+| 2 | elementtypeid   | integer                        |                              | false    |          |                                             |         |
+| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                             |         |
+| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                             |         |
+| 5 | taxagroupid     | varchar(3)                     |                              | false    |          | [ndb.taxagrouptypes](ndb.taxagrouptypes.md) |         |
 
 ## Constraints
 
 | # | Name                          | Type        | Definition                                                             |
 | - | ----------------------------- | ----------- | ---------------------------------------------------------------------- |
-| 1 | fk_datasettypeid              | FOREIGN KEY | FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) |
+| 1 | edt_group                     | FOREIGN KEY | FOREIGN KEY (taxagroupid) REFERENCES ndb.taxagrouptypes(taxagroupid)   |
 | 2 | elementdatasettaxagroups_pkey | PRIMARY KEY | PRIMARY KEY (datasettypeid, taxagroupid, elementtypeid)                |
-| 3 | edt_group                     | FOREIGN KEY | FOREIGN KEY (taxagroupid) REFERENCES ndb.taxagrouptypes(taxagroupid)   |
+| 3 | fk_datasettypeid              | FOREIGN KEY | FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) |
 
 ## Indexes
 

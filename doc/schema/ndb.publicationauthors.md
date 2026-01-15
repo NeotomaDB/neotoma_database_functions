@@ -12,30 +12,36 @@ Cummings, L. S. 1996. Paleoenvironmental interpretations for the Mill Iron site:
 | # | Name            | Type                           | Default                                                  | Nullable | Children | Parents                                 | Comment                                                                                              |
 | - | --------------- | ------------------------------ | -------------------------------------------------------- | -------- | -------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | 1 | authorid        | integer                        | nextval('ndb.seq_publicationauthors_authorid'::regclass) | false    |          |                                         | An arbitrary Author identification number.                                                           |
-| 2 | publicationid   | integer                        |                                                          | false    |          | [ndb.publications](ndb.publications.md) | Publication identification number. Field links to the Publications table.                            |
-| 3 | authororder     | integer                        |                                                          | true     |          |                                         | Ordinal number for the position in which the author’s name appears in the publication’s author list. |
+| 2 | authororder     | integer                        |                                                          | true     |          |                                         | Ordinal number for the position in which the author’s name appears in the publication’s author list. |
+| 3 | contactid       | integer                        |                                                          | true     |          | [ndb.contacts](ndb.contacts.md)         | Contact identification number. Field links to the Contacts table.                                    |
 | 4 | familyname      | varchar(80)                    |                                                          | true     |          |                                         | Family name of author                                                                                |
 | 5 | initials        | varchar(8)                     |                                                          | true     |          |                                         | Initials of author’s given names                                                                     |
-| 6 | suffix          | varchar(8)                     |                                                          | true     |          |                                         | Authors suffix (e.g. «Jr.»)                                                                          |
-| 7 | contactid       | integer                        |                                                          | true     |          | [ndb.contacts](ndb.contacts.md)         | Contact identification number. Field links to the Contacts table.                                    |
-| 8 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                             | false    |          |                                         |                                                                                                      |
-| 9 | recdatemodified | timestamp(0) without time zone |                                                          | false    |          |                                         |                                                                                                      |
+| 6 | publicationid   | integer                        |                                                          | false    |          | [ndb.publications](ndb.publications.md) | Publication identification number. Field links to the Publications table.                            |
+| 7 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                             | false    |          |                                         |                                                                                                      |
+| 8 | recdatemodified | timestamp(0) without time zone |                                                          | false    |          |                                         |                                                                                                      |
+| 9 | suffix          | varchar(8)                     |                                                          | true     |          |                                         | Authors suffix (e.g. «Jr.»)                                                                          |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 
 | # | Name                               | Type        | Definition                                                                                                 |
 | - | ---------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
 | 1 | fk_publicationauthors_contacts     | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE                               |
-| 2 | publicationauthors_pkey            | PRIMARY KEY | PRIMARY KEY (authorid)                                                                                     |
-| 3 | fk_publicationauthors_publications | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_publicationauthors_publications | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | publicationauthors_pkey            | PRIMARY KEY | PRIMARY KEY (authorid)                                                                                     |
 
 ## Indexes
 
 | # | Name                                | Definition                                                                                                                    |
 | - | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 1 | publicationauthors_pkey             | CREATE UNIQUE INDEX publicationauthors_pkey ON ndb.publicationauthors USING btree (authorid)                                  |
-| 2 | ix_contactid_publicationauthors     | CREATE INDEX ix_contactid_publicationauthors ON ndb.publicationauthors USING btree (contactid) WITH (fillfactor='10')         |
-| 3 | ix_publicationid_publicationauthors | CREATE INDEX ix_publicationid_publicationauthors ON ndb.publicationauthors USING btree (publicationid) WITH (fillfactor='10') |
+| 1 | ix_contactid_publicationauthors     | CREATE INDEX ix_contactid_publicationauthors ON ndb.publicationauthors USING btree (contactid) WITH (fillfactor='10')         |
+| 2 | ix_publicationid_publicationauthors | CREATE INDEX ix_publicationid_publicationauthors ON ndb.publicationauthors USING btree (publicationid) WITH (fillfactor='10') |
+| 3 | publicationauthors_pkey             | CREATE UNIQUE INDEX publicationauthors_pkey ON ndb.publicationauthors USING btree (authorid)                                  |
 
 ## Triggers
 

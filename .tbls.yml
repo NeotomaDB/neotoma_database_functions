@@ -1,6 +1,6 @@
 desc: The remote Neotoma database.
 name: neotoma
-dsn: postgres://${POSTGRES_USER}:${POSTGRES_PASS}@${POSTGRES_HOST}:${POSTGRESS_PORT}/${POSTGRES_DB}
+dsn: ${DBAUTH}
 docPath: doc/schema
 requiredVersion: '>= 1.42, < 2'
 format:

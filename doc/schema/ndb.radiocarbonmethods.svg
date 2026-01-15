@@ -18,11 +18,11 @@
 <text text-anchor="start" x="445.76" y="-333.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="476.87" y="-333.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="258.88,-289.6 258.88,-320.4 578.67,-320.4 578.67,-289.6 258.88,-289.6"/>
-<text text-anchor="start" x="265.88" y="-301.8" font-family="Arial" font-size="14.00">radiocarbonmethodid </text>
-<text text-anchor="start" x="401.29" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="265.88" y="-301.8" font-family="Arial" font-size="14.00">radiocarbonmethod </text>
+<text text-anchor="start" x="390.4" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="258.88,-258.8 258.88,-289.6 578.67,-289.6 578.67,-258.8 258.88,-258.8"/>
-<text text-anchor="start" x="265.88" y="-271" font-family="Arial" font-size="14.00">radiocarbonmethod </text>
-<text text-anchor="start" x="390.4" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<text text-anchor="start" x="265.88" y="-271" font-family="Arial" font-size="14.00">radiocarbonmethodid </text>
+<text text-anchor="start" x="401.29" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="258.88,-228 258.88,-258.8 578.67,-258.8 578.67,-228 258.88,-228"/>
 <text text-anchor="start" x="265.88" y="-240.2" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="363.16" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -40,48 +40,48 @@
 <text text-anchor="start" x="628.26" y="-1015.4" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="659.38" y="-1015.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="471.88,-971.2 471.88,-1002 791.67,-1002 791.67,-971.2 471.88,-971.2"/>
-<text text-anchor="start" x="478.88" y="-983.4" font-family="Arial" font-size="14.00">geochronid </text>
-<text text-anchor="start" x="552.04" y="-983.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="478.88" y="-983.4" font-family="Arial" font-size="14.00">cnratio </text>
+<text text-anchor="start" x="524.79" y="-983.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-940.4 471.88,-971.2 791.67,-971.2 791.67,-940.4 471.88,-940.4"/>
-<text text-anchor="start" x="478.88" y="-952.6" font-family="Arial" font-size="14.00">radiocarbonmethodid </text>
-<text text-anchor="start" x="614.29" y="-952.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="478.88" y="-952.6" font-family="Arial" font-size="14.00">delta13c </text>
+<text text-anchor="start" x="535.7" y="-952.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-909.6 471.88,-940.4 791.67,-940.4 791.67,-909.6 471.88,-909.6"/>
-<text text-anchor="start" x="478.88" y="-921.8" font-family="Arial" font-size="14.00">percentc </text>
-<text text-anchor="start" x="536.46" y="-921.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-921.8" font-family="Arial" font-size="14.00">delta15n </text>
+<text text-anchor="start" x="536.48" y="-921.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-878.8 471.88,-909.6 791.67,-909.6 791.67,-878.8 471.88,-878.8"/>
-<text text-anchor="start" x="478.88" y="-891" font-family="Arial" font-size="14.00">percentn </text>
-<text text-anchor="start" x="537.25" y="-891" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-891" font-family="Arial" font-size="14.00">geochronid </text>
+<text text-anchor="start" x="552.04" y="-891" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="471.88,-848 471.88,-878.8 791.67,-878.8 791.67,-848 471.88,-848"/>
-<text text-anchor="start" x="478.88" y="-860.2" font-family="Arial" font-size="14.00">delta13c </text>
-<text text-anchor="start" x="535.7" y="-860.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-860.2" font-family="Arial" font-size="14.00">masscmg </text>
+<text text-anchor="start" x="542.66" y="-860.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-817.2 471.88,-848 791.67,-848 791.67,-817.2 471.88,-817.2"/>
-<text text-anchor="start" x="478.88" y="-829.4" font-family="Arial" font-size="14.00">delta15n </text>
-<text text-anchor="start" x="536.48" y="-829.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-829.4" font-family="Arial" font-size="14.00">percentc </text>
+<text text-anchor="start" x="536.46" y="-829.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-786.4 471.88,-817.2 791.67,-817.2 791.67,-786.4 471.88,-786.4"/>
 <text text-anchor="start" x="478.88" y="-798.6" font-family="Arial" font-size="14.00">percentcollagen </text>
 <text text-anchor="start" x="581.61" y="-798.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-755.6 471.88,-786.4 791.67,-786.4 791.67,-755.6 471.88,-755.6"/>
-<text text-anchor="start" x="478.88" y="-767.8" font-family="Arial" font-size="14.00">reservoir </text>
-<text text-anchor="start" x="537.22" y="-767.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-767.8" font-family="Arial" font-size="14.00">percentn </text>
+<text text-anchor="start" x="537.25" y="-767.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="471.88,-724.8 471.88,-755.6 791.67,-755.6 791.67,-724.8 471.88,-724.8"/>
-<text text-anchor="start" x="478.88" y="-737" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="576.16" y="-737" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="478.88" y="-737" font-family="Arial" font-size="14.00">radiocarbonmethodid </text>
+<text text-anchor="start" x="614.29" y="-737" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="471.88,-694 471.88,-724.8 791.67,-724.8 791.67,-694 471.88,-694"/>
-<text text-anchor="start" x="478.88" y="-706.2" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="582.38" y="-706.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="478.88" y="-706.2" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="576.16" y="-706.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="471.88,-663.2 471.88,-694 791.67,-694 791.67,-663.2 471.88,-663.2"/>
-<text text-anchor="start" x="478.88" y="-675.4" font-family="Arial" font-size="14.00">masscmg </text>
-<text text-anchor="start" x="542.66" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-675.4" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="582.38" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="471.88,-632.4 471.88,-663.2 791.67,-663.2 791.67,-632.4 471.88,-632.4"/>
-<text text-anchor="start" x="478.88" y="-644.6" font-family="Arial" font-size="14.00">cnratio </text>
-<text text-anchor="start" x="524.79" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="478.88" y="-644.6" font-family="Arial" font-size="14.00">reservoir </text>
+<text text-anchor="start" x="537.22" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 </g>
 <!-- ndb.radiocarbon&#45;&gt;ndb.radiocarbonmethods -->
 <g id="edge1" class="edge">
 <title>ndb.radiocarbon:radiocarbonmethodid&#45;&gt;ndb.radiocarbonmethods:radiocarbonmethodid</title>
-<path fill="none" stroke="black" d="M460.76,-955.51C313.14,-946.84 430.76,-743.24 471.88,-589.2 506.71,-458.68 714.77,-305 579.67,-305"/>
-<polygon fill="black" stroke="black" points="460.54,-955.51 470.41,-960.29 465.88,-955.66 470.21,-955.78 470.21,-955.78 470.21,-955.78 465.88,-955.66 470.67,-951.29 460.54,-955.51"/>
-<text text-anchor="start" x="7" y="-965.8" font-family="Arial" font-size="10.00">FOREIGN KEY (radiocarbonmethodid) REFERENCES ndb.radiocarbonmethods(radiocarbonmethodid)</text>
+<path fill="none" stroke="black" d="M460.62,-739.8C276.23,-724.41 788.72,-274.2 579.67,-274.2"/>
+<polygon fill="black" stroke="black" points="460.55,-739.79 470.36,-744.68 465.88,-740 470.21,-740.17 470.21,-740.17 470.21,-740.17 465.88,-740 470.72,-735.69 460.55,-739.79"/>
+<text text-anchor="start" x="7" y="-750.2" font-family="Arial" font-size="10.00">FOREIGN KEY (radiocarbonmethodid) REFERENCES ndb.radiocarbonmethods(radiocarbonmethodid)</text>
 </g>
 <!-- ndb.geochronology -->
 <g id="node3" class="node">
@@ -92,54 +92,54 @@
 <text text-anchor="start" x="853.27" y="-487.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="884.38" y="-487.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="685.88,-443.6 685.88,-474.4 1005.67,-474.4 1005.67,-443.6 685.88,-443.6"/>
-<text text-anchor="start" x="692.88" y="-455.8" font-family="Arial" font-size="14.00">geochronid </text>
-<text text-anchor="start" x="766.04" y="-455.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.88" y="-455.8" font-family="Arial" font-size="14.00">age </text>
+<text text-anchor="start" x="720.12" y="-455.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.88,-412.8 685.88,-443.6 1005.67,-443.6 1005.67,-412.8 685.88,-412.8"/>
-<text text-anchor="start" x="692.88" y="-425" font-family="Arial" font-size="14.00">sampleid </text>
-<text text-anchor="start" x="752.79" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.88" y="-425" font-family="Arial" font-size="14.00">agetypeid </text>
+<text text-anchor="start" x="757.48" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.88,-382 685.88,-412.8 1005.67,-412.8 1005.67,-382 685.88,-382"/>
-<text text-anchor="start" x="692.88" y="-394.2" font-family="Arial" font-size="14.00">geochrontypeid </text>
-<text text-anchor="start" x="792.5" y="-394.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.88" y="-394.2" font-family="Arial" font-size="14.00">delta13c </text>
+<text text-anchor="start" x="749.7" y="-394.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.88,-351.2 685.88,-382 1005.67,-382 1005.67,-351.2 685.88,-351.2"/>
-<text text-anchor="start" x="692.88" y="-363.4" font-family="Arial" font-size="14.00">agetypeid </text>
-<text text-anchor="start" x="757.48" y="-363.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.88" y="-363.4" font-family="Arial" font-size="14.00">errorolder </text>
+<text text-anchor="start" x="757.45" y="-363.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.88,-320.4 685.88,-351.2 1005.67,-351.2 1005.67,-320.4 685.88,-320.4"/>
-<text text-anchor="start" x="692.88" y="-332.6" font-family="Arial" font-size="14.00">age </text>
-<text text-anchor="start" x="720.12" y="-332.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.88" y="-332.6" font-family="Arial" font-size="14.00">erroryounger </text>
+<text text-anchor="start" x="776.92" y="-332.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.88,-289.6 685.88,-320.4 1005.67,-320.4 1005.67,-289.6 685.88,-289.6"/>
-<text text-anchor="start" x="692.88" y="-301.8" font-family="Arial" font-size="14.00">errorolder </text>
-<text text-anchor="start" x="757.45" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.88" y="-301.8" font-family="Arial" font-size="14.00">geochronid </text>
+<text text-anchor="start" x="766.04" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.88,-258.8 685.88,-289.6 1005.67,-289.6 1005.67,-258.8 685.88,-258.8"/>
-<text text-anchor="start" x="692.88" y="-271" font-family="Arial" font-size="14.00">erroryounger </text>
-<text text-anchor="start" x="776.92" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.88" y="-271" font-family="Arial" font-size="14.00">geochrontypeid </text>
+<text text-anchor="start" x="792.5" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.88,-228 685.88,-258.8 1005.67,-258.8 1005.67,-228 685.88,-228"/>
 <text text-anchor="start" x="692.88" y="-240.2" font-family="Arial" font-size="14.00">infinite </text>
 <text text-anchor="start" x="737.23" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
 <polygon fill="none" stroke="black" points="685.88,-197.2 685.88,-228 1005.67,-228 1005.67,-197.2 685.88,-197.2"/>
-<text text-anchor="start" x="692.88" y="-209.4" font-family="Arial" font-size="14.00">delta13c </text>
-<text text-anchor="start" x="749.7" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.88" y="-209.4" font-family="Arial" font-size="14.00">labnumber </text>
+<text text-anchor="start" x="762.92" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
 <polygon fill="none" stroke="black" points="685.88,-166.4 685.88,-197.2 1005.67,-197.2 1005.67,-166.4 685.88,-166.4"/>
-<text text-anchor="start" x="692.88" y="-178.6" font-family="Arial" font-size="14.00">labnumber </text>
-<text text-anchor="start" x="762.92" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
+<text text-anchor="start" x="692.88" y="-178.6" font-family="Arial" font-size="14.00">materialdated </text>
+<text text-anchor="start" x="781.59" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
 <polygon fill="none" stroke="black" points="685.88,-135.6 685.88,-166.4 1005.67,-166.4 1005.67,-135.6 685.88,-135.6"/>
-<text text-anchor="start" x="692.88" y="-147.8" font-family="Arial" font-size="14.00">materialdated </text>
-<text text-anchor="start" x="781.59" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
+<text text-anchor="start" x="692.88" y="-147.8" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="731.01" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="685.88,-104.8 685.88,-135.6 1005.67,-135.6 1005.67,-104.8 685.88,-104.8"/>
-<text text-anchor="start" x="692.88" y="-117" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="731.01" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="692.88" y="-117" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="790.16" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="685.88,-74 685.88,-104.8 1005.67,-104.8 1005.67,-74 685.88,-74"/>
-<text text-anchor="start" x="692.88" y="-86.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="790.16" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="692.88" y="-86.2" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="796.38" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="685.88,-43.2 685.88,-74 1005.67,-74 1005.67,-43.2 685.88,-43.2"/>
-<text text-anchor="start" x="692.88" y="-55.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="796.38" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="692.88" y="-55.4" font-family="Arial" font-size="14.00">sampleid </text>
+<text text-anchor="start" x="752.79" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.radiocarbon&#45;&gt;ndb.geochronology -->
 <g id="edge2" class="edge">
 <title>ndb.radiocarbon:geochronid&#45;&gt;ndb.geochronology:geochronid</title>
-<path fill="none" stroke="black" d="M802.74,-986.31C966.37,-976.72 892.67,-729.87 791.67,-589.2 762.71,-548.85 715.01,-593.43 685.88,-553.2 661.32,-519.29 643.01,-459 684.88,-459"/>
-<polygon fill="black" stroke="black" points="803,-986.3 792.88,-982.09 797.67,-986.46 793.34,-986.58 793.34,-986.58 793.34,-986.58 797.67,-986.46 793.14,-991.09 803,-986.3"/>
-<text text-anchor="start" x="799.67" y="-996.6" font-family="Arial" font-size="10.00">FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M803,-893.8C925.19,-883.98 868.69,-696.38 791.67,-589.2 762.69,-548.86 714.87,-593.53 685.88,-553.2 653.67,-508.42 629.72,-305 684.88,-305"/>
+<polygon fill="black" stroke="black" points="803,-893.8 792.83,-889.69 797.67,-894.01 793.34,-894.17 793.34,-894.17 793.34,-894.17 797.67,-894.01 793.18,-898.68 803,-893.8"/>
+<text text-anchor="start" x="799.67" y="-904.2" font-family="Arial" font-size="10.00">FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON DELETE CASCADE</text>
 </g>
 </g>
 </svg>

@@ -6,8 +6,8 @@
 
 | # | Name                  | Type                           | Default                                                                 | Nullable | Children | Parents | Comment |
 | - | --------------------- | ------------------------------ | ----------------------------------------------------------------------- | -------- | -------- | ------- | ------- |
-| 1 | isosampleorigintypeid | integer                        | nextval('ndb.seq_isosampleorigintypes_isosampleorigintypeid'::regclass) | false    |          |         |         |
-| 2 | isosampleorigintype   | varchar(50)                    |                                                                         | false    |          |         |         |
+| 1 | isosampleorigintype   | varchar(50)                    |                                                                         | false    |          |         |         |
+| 2 | isosampleorigintypeid | integer                        | nextval('ndb.seq_isosampleorigintypes_isosampleorigintypeid'::regclass) | false    |          |         |         |
 | 3 | recdatecreated        | timestamp(0) without time zone | timezone('UTC'::text, now())                                            | false    |          |         |         |
 | 4 | recdatemodified       | timestamp(0) without time zone |                                                                         | false    |          |         |         |
 

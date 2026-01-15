@@ -22,8 +22,8 @@ CREATE VIEW geopol3 AS (
 
 | # | Name        | Type         | Default | Nullable | Children | Parents | Comment |
 | - | ----------- | ------------ | ------- | -------- | -------- | ------- | ------- |
-| 1 | siteid      | integer      |         | true     |          |         |         |
-| 2 | geopolname3 | varchar(255) |         | true     |          |         |         |
+| 1 | geopolname3 | varchar(255) |         | true     |          |         |         |
+| 2 | siteid      | integer      |         | true     |          |         |         |
 
 ## Referenced Tables
 

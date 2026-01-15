@@ -6,18 +6,18 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                   | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------- | ------- |
-| 1 | variableid      | integer                        |                              | false    |          | [ndb.variables](ndb.variables.md)         |         |
-| 2 | isoscaletypeid  | integer                        |                              | false    |          | [ndb.isoscaletypes](ndb.isoscaletypes.md) |         |
-| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
-| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                           |         |
+| 1 | isoscaletypeid  | integer                        |                              | false    |          | [ndb.isoscaletypes](ndb.isoscaletypes.md) |         |
+| 2 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
+| 3 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                           |         |
+| 4 | variableid      | integer                        |                              | false    |          | [ndb.variables](ndb.variables.md)         |         |
 
 ## Constraints
 
 | # | Name                                   | Type        | Definition                                                                                                    |
 | - | -------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_isovariablescaletypes_isoscaletypes | FOREIGN KEY | FOREIGN KEY (isoscaletypeid) REFERENCES ndb.isoscaletypes(isoscaletypeid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | isovariablescaletypes_pkey             | PRIMARY KEY | PRIMARY KEY (variableid, isoscaletypeid)                                                                      |
-| 3 | fk_isovariablescaletypes_variables     | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE             |
+| 2 | fk_isovariablescaletypes_variables     | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE             |
+| 3 | isovariablescaletypes_pkey             | PRIMARY KEY | PRIMARY KEY (variableid, isoscaletypeid)                                                                      |
 
 ## Indexes
 

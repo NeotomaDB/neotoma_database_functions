@@ -18,11 +18,11 @@
 <text text-anchor="start" x="169.66" y="-121.2" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="200.78" y="-121.2" font-family="Arial" font-size="14.00" fill="#666666">[MATERIALIZED VIEW]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 357.13,-107.8 357.13,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">siteid </text>
-<text text-anchor="start" x="89.77" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">names </text>
+<text text-anchor="start" x="99.11" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar[]]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 357.13,-77 357.13,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">names </text>
-<text text-anchor="start" x="99.11" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar[]]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">siteid </text>
+<text text-anchor="start" x="89.77" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-144.9 358.63,-144.9 358.63,-44.7 44.7,-44.7"/>
 </g>
 </g>

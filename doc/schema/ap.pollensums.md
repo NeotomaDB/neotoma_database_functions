@@ -6,21 +6,21 @@
 
 | #  | Name     | Type             | Default | Nullable | Children | Parents | Comment |
 | -- | -------- | ---------------- | ------- | -------- | -------- | ------- | ------- |
-| 1  | sampleid | integer          |         | false    |          |         |         |
-| 2  | trsh     | double precision |         | true     |          |         |         |
-| 3  | palm     | double precision |         | true     |          |         |         |
-| 4  | uphe     | double precision |         | true     |          |         |         |
-| 5  | succ     | double precision |         | true     |          |         |         |
-| 6  | vacr     | double precision |         | true     |          |         |         |
-| 7  | upbr     | double precision |         | true     |          |         |         |
-| 8  | fung     | double precision |         | true     |          |         |         |
-| 9  | aqvp     | double precision |         | true     |          |         |         |
-| 10 | aqbr     | double precision |         | true     |          |         |         |
-| 11 | mang     | double precision |         | true     |          |         |         |
+| 1  | anac     | double precision |         | true     |          |         |         |
+| 2  | aqbr     | double precision |         | true     |          |         |         |
+| 3  | aqvp     | double precision |         | true     |          |         |         |
+| 4  | fung     | double precision |         | true     |          |         |         |
+| 5  | mang     | double precision |         | true     |          |         |         |
+| 6  | palm     | double precision |         | true     |          |         |         |
+| 7  | sampleid | integer          |         | false    |          |         |         |
+| 8  | seed     | double precision |         | true     |          |         |         |
+| 9  | succ     | double precision |         | true     |          |         |         |
+| 10 | total    | double precision |         | false    |          |         |         |
+| 11 | trsh     | double precision |         | true     |          |         |         |
 | 12 | unid     | double precision |         | true     |          |         |         |
-| 13 | anac     | double precision |         | true     |          |         |         |
-| 14 | seed     | double precision |         | true     |          |         |         |
-| 15 | total    | double precision |         | false    |          |         |         |
+| 13 | upbr     | double precision |         | true     |          |         |         |
+| 14 | uphe     | double precision |         | true     |          |         |         |
+| 15 | vacr     | double precision |         | true     |          |         |         |
 
 ## Relations
 

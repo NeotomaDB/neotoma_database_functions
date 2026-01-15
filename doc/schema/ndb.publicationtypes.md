@@ -8,8 +8,8 @@ Lookup table of Publication Types. This table is referenced by the Publications 
 
 | # | Name            | Type                           | Default                                                 | Nullable | Children                                | Parents | Comment                                              |
 | - | --------------- | ------------------------------ | ------------------------------------------------------- | -------- | --------------------------------------- | ------- | ---------------------------------------------------- |
-| 1 | pubtypeid       | integer                        | nextval('ndb.seq_publicationtypes_pubtypeid'::regclass) | false    | [ndb.publications](ndb.publications.md) |         | An arbitrary Publication Type identification number. |
-| 2 | pubtype         | varchar(24)                    |                                                         | false    |                                         |         |                                                      |
+| 1 | pubtype         | varchar(24)                    |                                                         | false    |                                         |         |                                                      |
+| 2 | pubtypeid       | integer                        | nextval('ndb.seq_publicationtypes_pubtypeid'::regclass) | false    | [ndb.publications](ndb.publications.md) |         | An arbitrary Publication Type identification number. |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                            | false    |                                         |         |                                                      |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                         | false    |                                         |         |                                                      |
 

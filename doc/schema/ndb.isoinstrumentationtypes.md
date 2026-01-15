@@ -6,8 +6,8 @@
 
 | # | Name                     | Type                           | Default                                                                       | Nullable | Children                                            | Parents | Comment |
 | - | ------------------------ | ------------------------------ | ----------------------------------------------------------------------------- | -------- | --------------------------------------------------- | ------- | ------- |
-| 1 | isoinstrumentationtypeid | integer                        | nextval('ndb.seq_isoinstrumentationtypes_isoinstrumentationtypeid'::regclass) | false    | [ndb.isoinstrumentation](ndb.isoinstrumentation.md) |         |         |
-| 2 | isoinstrumentationtype   | varchar(256)                   |                                                                               | false    |                                                     |         |         |
+| 1 | isoinstrumentationtype   | varchar(256)                   |                                                                               | false    |                                                     |         |         |
+| 2 | isoinstrumentationtypeid | integer                        | nextval('ndb.seq_isoinstrumentationtypes_isoinstrumentationtypeid'::regclass) | false    | [ndb.isoinstrumentation](ndb.isoinstrumentation.md) |         |         |
 | 3 | recdatecreated           | timestamp(0) without time zone | timezone('UTC'::text, now())                                                  | false    |                                                     |         |         |
 | 4 | recdatemodified          | timestamp(0) without time zone |                                                                               | false    |                                                     |         |         |
 

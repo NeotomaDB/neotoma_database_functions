@@ -6,13 +6,13 @@
 
 | # | Name            | Type                           | Default                                                                 | Nullable | Children                                                  | Parents                                   | Comment |
 | - | --------------- | ------------------------------ | ----------------------------------------------------------------------- | -------- | --------------------------------------------------------- | ----------------------------------------- | ------- |
-| 1 | altdepthscaleid | integer                        | nextval('ndb.seq_analysisunitaltdepthscales_altdepthscaleid'::regclass) | false    | [ndb.analysisunitaltdepths](ndb.analysisunitaltdepths.md) |                                           |         |
-| 2 | altdepthid      | integer                        |                                                                         | false    |                                                           |                                           |         |
-| 3 | altdepthname    | varchar(80)                    |                                                                         | false    |                                                           |                                           |         |
-| 4 | variableunitsid | integer                        |                                                                         | false    |                                                           | [ndb.variableunits](ndb.variableunits.md) |         |
-| 5 | notes           | text                           |                                                                         | true     |                                                           |                                           |         |
-| 6 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                                            | false    |                                                           |                                           |         |
-| 7 | recdatemodified | timestamp(0) without time zone |                                                                         | false    |                                                           |                                           |         |
+| 1 | altdepthid      | integer                        |                                                                         | false    |                                                           |                                           |         |
+| 2 | altdepthname    | varchar(80)                    |                                                                         | false    |                                                           |                                           |         |
+| 3 | altdepthscaleid | integer                        | nextval('ndb.seq_analysisunitaltdepthscales_altdepthscaleid'::regclass) | false    | [ndb.analysisunitaltdepths](ndb.analysisunitaltdepths.md) |                                           |         |
+| 4 | notes           | text                           |                                                                         | true     |                                                           |                                           |         |
+| 5 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                                            | false    |                                                           |                                           |         |
+| 6 | recdatemodified | timestamp(0) without time zone |                                                                         | false    |                                                           |                                           |         |
+| 7 | variableunitsid | integer                        |                                                                         | false    |                                                           | [ndb.variableunits](ndb.variableunits.md) |         |
 
 ## Viewpoints
 

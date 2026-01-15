@@ -7,25 +7,25 @@
 | #  | Name                       | Type                           | Default                      | Nullable | Children | Parents                                                           | Comment |
 | -- | -------------------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------------------------------- | ------- |
 | 1  | datasetid                  | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md)                                   |         |
-| 2  | variableid                 | integer                        |                              | false    |          | [ndb.variables](ndb.variables.md)                                 |         |
-| 3  | isoinstrumentationtypeid   | integer                        |                              | true     |          | [ndb.isoinstrumentationtypes](ndb.isoinstrumentationtypes.md)     |         |
-| 4  | isosampleintrosystemtypeid | integer                        |                              | true     |          | [ndb.isosampleintrosystemtypes](ndb.isosampleintrosystemtypes.md) |         |
-| 5  | insterrorpercent           | double precision               |                              | true     |          |                                                                   |         |
-| 6  | insterrorrunsd             | double precision               |                              | true     |          |                                                                   |         |
-| 7  | insterrorlongtermpercent   | double precision               |                              | true     |          |                                                                   |         |
-| 8  | notes                      | text                           |                              | true     |          |                                                                   |         |
-| 9  | recdatecreated             | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                                   |         |
-| 10 | recdatemodified            | timestamp(0) without time zone |                              | false    |          |                                                                   |         |
+| 2  | insterrorlongtermpercent   | double precision               |                              | true     |          |                                                                   |         |
+| 3  | insterrorpercent           | double precision               |                              | true     |          |                                                                   |         |
+| 4  | insterrorrunsd             | double precision               |                              | true     |          |                                                                   |         |
+| 5  | isoinstrumentationtypeid   | integer                        |                              | true     |          | [ndb.isoinstrumentationtypes](ndb.isoinstrumentationtypes.md)     |         |
+| 6  | isosampleintrosystemtypeid | integer                        |                              | true     |          | [ndb.isosampleintrosystemtypes](ndb.isosampleintrosystemtypes.md) |         |
+| 7  | notes                      | text                           |                              | true     |          |                                                                   |         |
+| 8  | recdatecreated             | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                                   |         |
+| 9  | recdatemodified            | timestamp(0) without time zone |                              | false    |          |                                                                   |         |
+| 10 | variableid                 | integer                        |                              | false    |          | [ndb.variables](ndb.variables.md)                                 |         |
 
 ## Constraints
 
 | # | Name                                            | Type        | Definition                                                                                                                                        |
 | - | ----------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_isoinstrumentation_datasets                  | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE                                                    |
-| 2 | isoinstrumentation_pkey                         | PRIMARY KEY | PRIMARY KEY (datasetid, variableid)                                                                                                               |
-| 3 | fk_isoinstrumentation_isoinstrumentationtypes   | FOREIGN KEY | FOREIGN KEY (isoinstrumentationtypeid) REFERENCES ndb.isoinstrumentationtypes(isoinstrumentationtypeid) ON UPDATE CASCADE ON DELETE CASCADE       |
-| 4 | fk_isoinstrumentation_isosampleintrosystemtypes | FOREIGN KEY | FOREIGN KEY (isosampleintrosystemtypeid) REFERENCES ndb.isosampleintrosystemtypes(isosampleintrosystemtypeid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 5 | fk_isoinstrumentation_variables                 | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE                                                 |
+| 2 | fk_isoinstrumentation_isoinstrumentationtypes   | FOREIGN KEY | FOREIGN KEY (isoinstrumentationtypeid) REFERENCES ndb.isoinstrumentationtypes(isoinstrumentationtypeid) ON UPDATE CASCADE ON DELETE CASCADE       |
+| 3 | fk_isoinstrumentation_isosampleintrosystemtypes | FOREIGN KEY | FOREIGN KEY (isosampleintrosystemtypeid) REFERENCES ndb.isosampleintrosystemtypes(isosampleintrosystemtypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 4 | fk_isoinstrumentation_variables                 | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE                                                 |
+| 5 | isoinstrumentation_pkey                         | PRIMARY KEY | PRIMARY KEY (datasetid, variableid)                                                                                                               |
 
 ## Indexes
 

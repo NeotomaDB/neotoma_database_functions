@@ -8,8 +8,8 @@ Lookup table of Ecological Group Types. Table is referenced by the EcolGroups ta
 
 | # | Name            | Type                           | Default                      | Nullable | Children                            | Parents | Comment                                              |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | ----------------------------------- | ------- | ---------------------------------------------------- |
-| 1 | ecolgroupid     | varchar(4)                     |                              | false    | [ndb.ecolgroups](ndb.ecolgroups.md) |         | An arbitrary Ecological Group identification number. |
-| 2 | ecolgroup       | varchar(64)                    |                              | true     |                                     |         | Ecological Group.                                    |
+| 1 | ecolgroup       | varchar(64)                    |                              | true     |                                     |         | Ecological Group.                                    |
+| 2 | ecolgroupid     | varchar(4)                     |                              | false    | [ndb.ecolgroups](ndb.ecolgroups.md) |         | An arbitrary Ecological Group identification number. |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |                                     |         |                                                      |
 | 4 | recdatemodified | timestamp(0) without time zone |                              | false    |                                     |         |                                                      |
 

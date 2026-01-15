@@ -6,12 +6,12 @@
 
 | # | Name             | Type                           | Default                                           | Nullable | Children                                                                        | Parents                           | Comment |
 | - | ---------------- | ------------------------------ | ------------------------------------------------- | -------- | ------------------------------------------------------------------------------- | --------------------------------- | ------- |
-| 1 | rocktypeid       | integer                        | nextval('ndb.seq_rocktypes_rocktypeid'::regclass) | false    | [ndb.collectionunits](ndb.collectionunits.md) [ndb.rocktypes](ndb.rocktypes.md) |                                   |         |
-| 2 | rocktype         | varchar(64)                    |                                                   | false    |                                                                                 |                                   |         |
-| 3 | higherrocktypeid | integer                        |                                                   | false    |                                                                                 | [ndb.rocktypes](ndb.rocktypes.md) |         |
-| 4 | description      | text                           |                                                   | false    |                                                                                 |                                   |         |
-| 5 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now())                      | false    |                                                                                 |                                   |         |
-| 6 | recdatemodified  | timestamp(0) without time zone |                                                   | false    |                                                                                 |                                   |         |
+| 1 | description      | text                           |                                                   | false    |                                                                                 |                                   |         |
+| 2 | higherrocktypeid | integer                        |                                                   | false    |                                                                                 | [ndb.rocktypes](ndb.rocktypes.md) |         |
+| 3 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now())                      | false    |                                                                                 |                                   |         |
+| 4 | recdatemodified  | timestamp(0) without time zone |                                                   | false    |                                                                                 |                                   |         |
+| 5 | rocktype         | varchar(64)                    |                                                   | false    |                                                                                 |                                   |         |
+| 6 | rocktypeid       | integer                        | nextval('ndb.seq_rocktypes_rocktypeid'::regclass) | false    | [ndb.collectionunits](ndb.collectionunits.md) [ndb.rocktypes](ndb.rocktypes.md) |                                   |         |
 
 ## Viewpoints
 

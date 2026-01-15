@@ -7,8 +7,8 @@
 | # | Name     | Type                        | Default                                    | Nullable | Children | Parents | Comment |
 | - | -------- | --------------------------- | ------------------------------------------ | -------- | -------- | ------- | ------- |
 | 1 | gid      | integer                     | nextval('ap.faunranges_gid_seq'::regclass) | false    |          |         |         |
-| 2 | spid     | varchar(10)                 |                                            | true     |          |         |         |
-| 3 | sciname  | varchar(254)                |                                            | true     |          |         |         |
+| 2 | sciname  | varchar(254)                |                                            | true     |          |         |         |
+| 3 | spid     | varchar(10)                 |                                            | true     |          |         |         |
 | 4 | the_geom | geometry(MultiPolygon,4326) |                                            | true     |          |         |         |
 
 ## Constraints

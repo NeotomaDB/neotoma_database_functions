@@ -6,17 +6,18 @@
 
 | # | Name                 | Type                           | Default                                                               | Nullable | Children                                                                                              | Parents | Comment |
 | - | -------------------- | ------------------------------ | --------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------- | ------- | ------- |
-| 1 | calibrationprogramid | integer                        | nextval('ndb.seq_calibrationprograms_calibrationprogramid'::regclass) | false    | [ndb.chroncontrolscal14c](ndb.chroncontrolscal14c.md) [ndb.specimendatescal](ndb.specimendatescal.md) |         |         |
-| 2 | calibrationprogram   | varchar(24)                    |                                                                       | false    |                                                                                                       |         |         |
-| 3 | version              | varchar(24)                    |                                                                       | true     |                                                                                                       |         |         |
-| 4 | recdatecreated       | timestamp(0) without time zone | timezone('UTC'::text, now())                                          | false    |                                                                                                       |         |         |
-| 5 | recdatemodified      | timestamp(0) without time zone |                                                                       | false    |                                                                                                       |         |         |
+| 1 | calibrationprogram   | varchar(24)                    |                                                                       | false    |                                                                                                       |         |         |
+| 2 | calibrationprogramid | integer                        | nextval('ndb.seq_calibrationprograms_calibrationprogramid'::regclass) | false    | [ndb.chroncontrolscal14c](ndb.chroncontrolscal14c.md) [ndb.specimendatescal](ndb.specimendatescal.md) |         |         |
+| 3 | recdatecreated       | timestamp(0) without time zone | timezone('UTC'::text, now())                                          | false    |                                                                                                       |         |         |
+| 4 | recdatemodified      | timestamp(0) without time zone |                                                                       | false    |                                                                                                       |         |         |
+| 5 | version              | varchar(24)                    |                                                                       | true     |                                                                                                       |         |         |
 
 ## Viewpoints
 
-| Name                                      | Definition                           |
-| ----------------------------------------- | ------------------------------------ |
-| [Controlled Vocabularies](viewpoint-0.md) | Tables with controlled vocabularies. |
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Controlled Vocabularies](viewpoint-0.md)   | Tables with controlled vocabularies.              |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

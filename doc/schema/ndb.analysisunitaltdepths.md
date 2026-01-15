@@ -6,9 +6,9 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                                             | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------------------------------- | ------- |
-| 1 | analysisunitid  | integer                        |                              | false    |          | [ndb.analysisunits](ndb.analysisunits.md)                           |         |
+| 1 | altdepth        | double precision               |                              | false    |          |                                                                     |         |
 | 2 | altdepthscaleid | integer                        |                              | false    |          | [ndb.analysisunitaltdepthscales](ndb.analysisunitaltdepthscales.md) |         |
-| 3 | altdepth        | double precision               |                              | false    |          |                                                                     |         |
+| 3 | analysisunitid  | integer                        |                              | false    |          | [ndb.analysisunits](ndb.analysisunits.md)                           |         |
 | 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                                     |         |
 | 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                                     |         |
 

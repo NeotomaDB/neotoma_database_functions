@@ -6,9 +6,9 @@
 
 | # | Name             | Type                           | Default                      | Nullable | Children | Parents                                           | Comment |
 | - | ---------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------------- | ------- |
-| 1 | publicationid    | integer                        |                              | false    |          | [ndb.publications](ndb.publications.md)           |         |
-| 2 | extdatabaseid    | integer                        |                              | false    |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
-| 3 | extpublicationid | integer                        |                              | false    |          |                                                   |         |
+| 1 | extdatabaseid    | integer                        |                              | false    |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
+| 2 | extpublicationid | integer                        |                              | false    |          |                                                   |         |
+| 3 | publicationid    | integer                        |                              | false    |          | [ndb.publications](ndb.publications.md)           |         |
 | 4 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |         |
 | 5 | recdatemodified  | timestamp(0) without time zone |                              | false    |          |                                                   |         |
 
@@ -16,8 +16,8 @@
 
 | # | Name                                      | Type        | Definition                                                                                                      |
 | - | ----------------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_externalpublications_externaldatabases | FOREIGN KEY | FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | externalpublications_pkey                 | PRIMARY KEY | PRIMARY KEY (publicationid, extdatabaseid)                                                                      |
+| 1 | externalpublications_pkey                 | PRIMARY KEY | PRIMARY KEY (publicationid, extdatabaseid)                                                                      |
+| 2 | fk_externalpublications_externaldatabases | FOREIGN KEY | FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 3 | fk_externalpublications_publications      | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE      |
 
 ## Indexes

@@ -7,15 +7,16 @@
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                     | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------- | ------- |
 | 1 | datasettypeid   | integer                        |                              | false    |          | [ndb.datasettypes](ndb.datasettypes.md)     |         |
-| 2 | taxagroupid     | varchar(3)                     |                              | false    |          | [ndb.taxagrouptypes](ndb.taxagrouptypes.md) |         |
-| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                             |         |
-| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                             |         |
+| 2 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                             |         |
+| 3 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                             |         |
+| 4 | taxagroupid     | varchar(3)                     |                              | false    |          | [ndb.taxagrouptypes](ndb.taxagrouptypes.md) |         |
 
 ## Viewpoints
 
-| Name                                      | Definition                           |
-| ----------------------------------------- | ------------------------------------ |
-| [Controlled Vocabularies](viewpoint-0.md) | Tables with controlled vocabularies. |
+| Name                                      | Definition                                      |
+| ----------------------------------------- | ----------------------------------------------- |
+| [Controlled Vocabularies](viewpoint-0.md) | Tables with controlled vocabularies.            |
+| [Dataset related tables](viewpoint-3.md)  | Tables that help define and structure datasets. |
 
 ## Constraints
 

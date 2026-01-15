@@ -6,8 +6,8 @@
 
 | # | Name               | Type                           | Default                                                           | Nullable | Children                                                                                    | Parents | Comment |
 | - | ------------------ | ------------------------------ | ----------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------- | ------- | ------- |
-| 1 | isosubstratetypeid | integer                        | nextval('ndb.seq_isosubstratetypes_isosubstratetypeid'::regclass) | false    | [ndb.isomatanalsubstrate](ndb.isomatanalsubstrate.md) [ndb.isometadata](ndb.isometadata.md) |         |         |
-| 2 | isosubstratetype   | varchar(50)                    |                                                                   | false    |                                                                                             |         |         |
+| 1 | isosubstratetype   | varchar(50)                    |                                                                   | false    |                                                                                             |         |         |
+| 2 | isosubstratetypeid | integer                        | nextval('ndb.seq_isosubstratetypes_isosubstratetypeid'::regclass) | false    | [ndb.isomatanalsubstrate](ndb.isomatanalsubstrate.md) [ndb.isometadata](ndb.isometadata.md) |         |         |
 | 3 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now())                                      | false    |                                                                                             |         |         |
 | 4 | recdatemodified    | timestamp(0) without time zone |                                                                   | false    |                                                                                             |         |         |
 

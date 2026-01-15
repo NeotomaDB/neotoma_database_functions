@@ -15,8 +15,8 @@
 
 | # | Name                                          | Type        | Definition                                                                                                                |
 | - | --------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_elementtaxagroupportions_elementportions   | FOREIGN KEY | FOREIGN KEY (portionid) REFERENCES ndb.elementportions(portionid) ON UPDATE CASCADE ON DELETE CASCADE                     |
-| 2 | elementtaxagroupportions_pkey                 | PRIMARY KEY | PRIMARY KEY (elementtaxagroupid, portionid)                                                                               |
+| 1 | elementtaxagroupportions_pkey                 | PRIMARY KEY | PRIMARY KEY (elementtaxagroupid, portionid)                                                                               |
+| 2 | fk_elementtaxagroupportions_elementportions   | FOREIGN KEY | FOREIGN KEY (portionid) REFERENCES ndb.elementportions(portionid) ON UPDATE CASCADE ON DELETE CASCADE                     |
 | 3 | fk_elementtaxagroupportions_elementtaxagroups | FOREIGN KEY | FOREIGN KEY (elementtaxagroupid) REFERENCES ndb.elementtaxagroups(elementtaxagroupid) ON UPDATE CASCADE ON DELETE CASCADE |
 
 ## Indexes

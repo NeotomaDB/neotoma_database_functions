@@ -11,13 +11,19 @@
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
 | 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                           |         |
 
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
+
 ## Constraints
 
 | # | Name                              | Type        | Definition                                                                                                    |
 | - | --------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_geochroncontrols_chroncontrols | FOREIGN KEY | FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | geochroncontrols_pkey             | PRIMARY KEY | PRIMARY KEY (chroncontrolid, geochronid)                                                                      |
-| 3 | fk_geochroncontrols_geochronology | FOREIGN KEY | FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE         |
+| 2 | fk_geochroncontrols_geochronology | FOREIGN KEY | FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE         |
+| 3 | geochroncontrols_pkey             | PRIMARY KEY | PRIMARY KEY (chroncontrolid, geochronid)                                                                      |
 
 ## Indexes
 

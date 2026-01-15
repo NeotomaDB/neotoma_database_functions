@@ -6,18 +6,24 @@
 
 | # | Name              | Type                           | Default                                                         | Nullable | Children | Parents                           | Comment |
 | - | ----------------- | ------------------------------ | --------------------------------------------------------------- | -------- | -------- | --------------------------------- | ------- |
-| 1 | datasetvariableid | integer                        | nextval('ndb.seq_datasetvariables_datasetvariableid'::regclass) | false    |          |                                   |         |
-| 2 | datasetid         | integer                        |                                                                 | false    |          | [ndb.datasets](ndb.datasets.md)   |         |
-| 3 | variableid        | integer                        |                                                                 | false    |          | [ndb.variables](ndb.variables.md) |         |
-| 4 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now())                                    | false    |          |                                   |         |
-| 5 | recdatemodified   | timestamp(0) without time zone |                                                                 | false    |          |                                   |         |
+| 1 | datasetid         | integer                        |                                                                 | false    |          | [ndb.datasets](ndb.datasets.md)   |         |
+| 2 | datasetvariableid | integer                        | nextval('ndb.seq_datasetvariables_datasetvariableid'::regclass) | false    |          |                                   |         |
+| 3 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now())                                    | false    |          |                                   |         |
+| 4 | recdatemodified   | timestamp(0) without time zone |                                                                 | false    |          |                                   |         |
+| 5 | variableid        | integer                        |                                                                 | false    |          | [ndb.variables](ndb.variables.md) |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                      |
+| ---------------------------------------- | ----------------------------------------------- |
+| [Dataset related tables](viewpoint-3.md) | Tables that help define and structure datasets. |
 
 ## Constraints
 
 | # | Name                          | Type        | Definition                                                                                        |
 | - | ----------------------------- | ----------- | ------------------------------------------------------------------------------------------------- |
-| 1 | fk_datasetvariables_datasets  | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE    |
-| 2 | datasetvariables_pkey         | PRIMARY KEY | PRIMARY KEY (datasetvariableid)                                                                   |
+| 1 | datasetvariables_pkey         | PRIMARY KEY | PRIMARY KEY (datasetvariableid)                                                                   |
+| 2 | fk_datasetvariables_datasets  | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE    |
 | 3 | fk_datasetvariables_variables | FOREIGN KEY | FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE |
 
 ## Indexes

@@ -18,17 +18,17 @@
 <text text-anchor="start" x="172.66" y="-182.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="203.78" y="-182.8" font-family="Arial" font-size="14.00" fill="#666666">[VIEW]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 254.34,-169.4 254.34,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">datasetid </text>
-<text text-anchor="start" x="113.91" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">agetypeid </text>
+<text text-anchor="start" x="117.81" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 254.34,-138.6 254.34,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">younger </text>
-<text text-anchor="start" x="107.68" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">datasetid </text>
+<text text-anchor="start" x="113.91" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 254.34,-107.8 254.34,-77 46.2,-77"/>
 <text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">older </text>
 <text text-anchor="start" x="88.22" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 254.34,-77 254.34,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">agetypeid </text>
-<text text-anchor="start" x="117.81" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">younger </text>
+<text text-anchor="start" x="107.68" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-206.5 255.84,-206.5 255.84,-44.7 44.7,-44.7"/>
 </g>
 </g>

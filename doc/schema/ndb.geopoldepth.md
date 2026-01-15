@@ -38,8 +38,8 @@ CREATE VIEW geopoldepth AS (
 | 1 | geopoliticalid   | integer      |         | true     |          |         |         |
 | 2 | geopoliticalname | varchar(255) |         | true     |          |         |         |
 | 3 | geopoliticalunit | varchar(255) |         | true     |          |         |         |
-| 4 | rank             | integer      |         | true     |          |         |         |
-| 5 | path             | integer[]    |         | true     |          |         |         |
+| 4 | path             | integer[]    |         | true     |          |         |         |
+| 5 | rank             | integer      |         | true     |          |         |         |
 
 ## Referenced Tables
 

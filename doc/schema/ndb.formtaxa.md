@@ -6,13 +6,13 @@
 
 | # | Name                  | Type                           | Default                                           | Nullable | Children | Parents                                 | Comment |
 | - | --------------------- | ------------------------------ | ------------------------------------------------- | -------- | -------- | --------------------------------------- | ------- |
-| 1 | formtaxonid           | integer                        | nextval('ndb.seq_formtaxa_formtaxonid'::regclass) | false    |          |                                         |         |
-| 2 | taxonid               | integer                        |                                                   | false    |          | [ndb.taxa](ndb.taxa.md)                 |         |
-| 3 | affinityid            | integer                        |                                                   | false    |          | [ndb.taxa](ndb.taxa.md)                 |         |
-| 4 | publicationid         | integer                        |                                                   | false    |          | [ndb.publications](ndb.publications.md) |         |
-| 5 | systematicdescription | boolean                        |                                                   | false    |          |                                         |         |
-| 6 | recdatecreated        | timestamp(0) without time zone | timezone('UTC'::text, now())                      | false    |          |                                         |         |
-| 7 | recdatemodified       | timestamp(0) without time zone |                                                   | false    |          |                                         |         |
+| 1 | affinityid            | integer                        |                                                   | false    |          | [ndb.taxa](ndb.taxa.md)                 |         |
+| 2 | formtaxonid           | integer                        | nextval('ndb.seq_formtaxa_formtaxonid'::regclass) | false    |          |                                         |         |
+| 3 | publicationid         | integer                        |                                                   | false    |          | [ndb.publications](ndb.publications.md) |         |
+| 4 | recdatecreated        | timestamp(0) without time zone | timezone('UTC'::text, now())                      | false    |          |                                         |         |
+| 5 | recdatemodified       | timestamp(0) without time zone |                                                   | false    |          |                                         |         |
+| 6 | systematicdescription | boolean                        |                                                   | false    |          |                                         |         |
+| 7 | taxonid               | integer                        |                                                   | false    |          | [ndb.taxa](ndb.taxa.md)                 |         |
 
 ## Viewpoints
 
@@ -24,10 +24,10 @@
 
 | # | Name                     | Type        | Definition                                                                                                 |
 | - | ------------------------ | ----------- | ---------------------------------------------------------------------------------------------------------- |
-| 1 | formtaxa_pkey            | PRIMARY KEY | PRIMARY KEY (formtaxonid)                                                                                  |
-| 2 | fk_formtaxa_publications | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | fk_formtaxa_taxa         | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)                                                         |
-| 4 | fk_formtaxa_taxa1        | FOREIGN KEY | FOREIGN KEY (affinityid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE                  |
+| 1 | fk_formtaxa_publications | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_formtaxa_taxa         | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)                                                         |
+| 3 | fk_formtaxa_taxa1        | FOREIGN KEY | FOREIGN KEY (affinityid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE                  |
+| 4 | formtaxa_pkey            | PRIMARY KEY | PRIMARY KEY (formtaxonid)                                                                                  |
 
 ## Indexes
 

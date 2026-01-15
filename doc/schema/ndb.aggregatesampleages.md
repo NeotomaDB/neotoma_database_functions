@@ -8,19 +8,25 @@ This table stores the links to the ages of samples in an Aggregate Dataset. The 
 
 | # | Name               | Type                           | Default                      | Nullable | Children | Parents                                                   | Comment                                                                                    |
 | - | ------------------ | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 1 | aggregatedatasetid | integer                        |                              | false    |          | [ndb.aggregatedatasets](ndb.aggregatedatasets.md)         | Aggregate Dataset identification number. Field links to the AggregateDatasets table.       |
-| 2 | aggregatechronid   | integer                        |                              | false    |          | [ndb.aggregatechronologies](ndb.aggregatechronologies.md) | Aggregate Chronology identification number Field links to the AggregateChronologies table. |
-| 3 | sampleageid        | integer                        |                              | false    |          | [ndb.sampleages](ndb.sampleages.md)                       | Sample Age ID number. Field links to the SampleAges table.                                 |
-| 4 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                           |                                                                                            |
-| 5 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                                           |                                                                                            |
+| 1 | aggregatechronid   | integer                        |                              | false    |          | [ndb.aggregatechronologies](ndb.aggregatechronologies.md) | Aggregate Chronology identification number Field links to the AggregateChronologies table. |
+| 2 | aggregatedatasetid | integer                        |                              | false    |          | [ndb.aggregatedatasets](ndb.aggregatedatasets.md)         | Aggregate Dataset identification number. Field links to the AggregateDatasets table.       |
+| 3 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                           |                                                                                            |
+| 4 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                                           |                                                                                            |
+| 5 | sampleageid        | integer                        |                              | false    |          | [ndb.sampleages](ndb.sampleages.md)                       | Sample Age ID number. Field links to the SampleAges table.                                 |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 
 | # | Name                                         | Type        | Definition                                                                                                                |
 | - | -------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_aggregatesampleages_aggregatechronologies | FOREIGN KEY | FOREIGN KEY (aggregatechronid) REFERENCES ndb.aggregatechronologies(aggregatechronid)                                     |
-| 2 | fk_aggregatesampleages_aggregatedatasets     | FOREIGN KEY | FOREIGN KEY (aggregatedatasetid) REFERENCES ndb.aggregatedatasets(aggregatedatasetid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | aggregatesampleages_pkey                     | PRIMARY KEY | PRIMARY KEY (aggregatedatasetid, aggregatechronid, sampleageid)                                                           |
+| 1 | aggregatesampleages_pkey                     | PRIMARY KEY | PRIMARY KEY (aggregatedatasetid, aggregatechronid, sampleageid)                                                           |
+| 2 | fk_aggregatesampleages_aggregatechronologies | FOREIGN KEY | FOREIGN KEY (aggregatechronid) REFERENCES ndb.aggregatechronologies(aggregatechronid)                                     |
+| 3 | fk_aggregatesampleages_aggregatedatasets     | FOREIGN KEY | FOREIGN KEY (aggregatedatasetid) REFERENCES ndb.aggregatedatasets(aggregatedatasetid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 4 | fk_aggregatesampleages_sampleages            | FOREIGN KEY | FOREIGN KEY (sampleageid) REFERENCES ndb.sampleages(sampleageid) ON UPDATE CASCADE ON DELETE CASCADE                      |
 
 ## Indexes

@@ -6,9 +6,9 @@
 
 | # | Name                     | Type                           | Default                                                                 | Nullable | Children                                                    | Parents | Comment |
 | - | ------------------------ | ------------------------------ | ----------------------------------------------------------------------- | -------- | ----------------------------------------------------------- | ------- | ------- |
-| 1 | isopretreatmenttypeid    | integer                        | nextval('ndb.seq_isopretreatmenttypes_isopretreatmenttypeid'::regclass) | false    | [ndb.isosamplepretreatments](ndb.isosamplepretreatments.md) |         |         |
+| 1 | isopretreatmentqualifier | varchar(50)                    |                                                                         | true     |                                                             |         |         |
 | 2 | isopretreatmenttype      | varchar(50)                    |                                                                         | false    |                                                             |         |         |
-| 3 | isopretreatmentqualifier | varchar(50)                    |                                                                         | true     |                                                             |         |         |
+| 3 | isopretreatmenttypeid    | integer                        | nextval('ndb.seq_isopretreatmenttypes_isopretreatmenttypeid'::regclass) | false    | [ndb.isosamplepretreatments](ndb.isosamplepretreatments.md) |         |         |
 | 4 | recdatecreated           | timestamp(0) without time zone | timezone('UTC'::text, now())                                            | false    |                                                             |         |         |
 | 5 | recdatemodified          | timestamp(0) without time zone |                                                                         | false    |                                                             |         |         |
 

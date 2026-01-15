@@ -21,11 +21,11 @@
 <text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">gid </text>
 <text text-anchor="start" x="75.77" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 317.01,-138.6 317.01,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">spid </text>
-<text text-anchor="start" x="82.77" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(10)]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">sciname </text>
+<text text-anchor="start" x="109.22" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(254)]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 317.01,-107.8 317.01,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">sciname </text>
-<text text-anchor="start" x="109.22" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(254)]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">spid </text>
+<text text-anchor="start" x="82.77" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(10)]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 317.01,-77 317.01,-46.2 46.2,-46.2"/>
 <text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">the_geom </text>
 <text text-anchor="start" x="119.36" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[geometry(MultiPolygon,4326)]</text>

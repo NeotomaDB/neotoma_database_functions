@@ -27,11 +27,11 @@
 <text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">geopoliticalunit </text>
 <text text-anchor="start" x="149.71" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 256.3,-107.8 256.3,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">rank </text>
-<text text-anchor="start" x="84.32" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">path </text>
+<text text-anchor="start" x="84.34" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer[]]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 256.3,-77 256.3,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">path </text>
-<text text-anchor="start" x="84.34" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer[]]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">rank </text>
+<text text-anchor="start" x="84.32" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-237.3 257.8,-237.3 257.8,-44.7 44.7,-44.7"/>
 </g>
 </g>

@@ -18,29 +18,29 @@
 <text text-anchor="start" x="148.96" y="-306" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="180.08" y="-306" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-261.8 46.2,-292.6 289.76,-292.6 289.76,-261.8 46.2,-261.8"/>
-<text text-anchor="start" x="53.2" y="-274" font-family="Arial" font-size="14.00">gid </text>
-<text text-anchor="start" x="75.77" y="-274" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-274" font-family="Arial" font-size="14.00">age </text>
+<text text-anchor="start" x="80.45" y="-274" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-231 46.2,-261.8 289.76,-261.8 289.76,-231 46.2,-231"/>
 <text text-anchor="start" x="53.2" y="-243.2" font-family="Arial" font-size="14.00">area_km2 </text>
 <text text-anchor="start" x="119.34" y="-243.2" font-family="Arial" font-size="14.00" fill="#666666">[numeric]</text>
 <polygon fill="none" stroke="black" points="46.2,-200.2 46.2,-231 289.76,-231 289.76,-200.2 46.2,-200.2"/>
-<text text-anchor="start" x="53.2" y="-212.4" font-family="Arial" font-size="14.00">geom </text>
-<text text-anchor="start" x="92.11" y="-212.4" font-family="Arial" font-size="14.00" fill="#666666">[geometry(MultiPolygon,4326)]</text>
+<text text-anchor="start" x="53.2" y="-212.4" font-family="Arial" font-size="14.00">cal </text>
+<text text-anchor="start" x="74.99" y="-212.4" font-family="Arial" font-size="14.00" fill="#666666">[numeric]</text>
 <polygon fill="none" stroke="black" points="46.2,-169.4 46.2,-200.2 289.76,-200.2 289.76,-169.4 46.2,-169.4"/>
-<text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">age </text>
-<text text-anchor="start" x="80.45" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">calage </text>
+<text text-anchor="start" x="98.34" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 289.76,-169.4 289.76,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">ka </text>
-<text text-anchor="start" x="71.88" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[numeric]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">geom </text>
+<text text-anchor="start" x="92.11" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[geometry(MultiPolygon,4326)]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 289.76,-138.6 289.76,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">cal </text>
-<text text-anchor="start" x="74.99" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[numeric]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">gid </text>
+<text text-anchor="start" x="75.77" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 289.76,-107.8 289.76,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">symb </text>
-<text text-anchor="start" x="90.54" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(10)]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">ka </text>
+<text text-anchor="start" x="71.88" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[numeric]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 289.76,-77 289.76,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">calage </text>
-<text text-anchor="start" x="98.34" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">symb </text>
+<text text-anchor="start" x="90.54" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(10)]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-329.7 291.26,-329.7 291.26,-44.7 44.7,-44.7"/>
 </g>
 </g>

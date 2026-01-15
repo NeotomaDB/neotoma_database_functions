@@ -8,10 +8,16 @@ Lookup table for Geochronology Types. Table is referenced by the Geochronology t
 
 | # | Name            | Type                           | Default                                                   | Nullable | Children                                  | Parents | Comment                                   |
 | - | --------------- | ------------------------------ | --------------------------------------------------------- | -------- | ----------------------------------------- | ------- | ----------------------------------------- |
-| 1 | geochrontypeid  | integer                        | nextval('ndb.seq_geochrontypes_geochrontypeid'::regclass) | false    | [ndb.geochronology](ndb.geochronology.md) |         | Geochronology Type identification number. |
-| 2 | geochrontype    | varchar(64)                    |                                                           | false    |                                           |         | Type of Geochronologic measurement.       |
+| 1 | geochrontype    | varchar(64)                    |                                                           | false    |                                           |         | Type of Geochronologic measurement.       |
+| 2 | geochrontypeid  | integer                        | nextval('ndb.seq_geochrontypes_geochrontypeid'::regclass) | false    | [ndb.geochronology](ndb.geochronology.md) |         | Geochronology Type identification number. |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                              | false    |                                           |         |                                           |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                           | false    |                                           |         |                                           |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

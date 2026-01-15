@@ -18,80 +18,80 @@
 <text text-anchor="start" x="157.53" y="-829.6" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="188.65" y="-829.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-785.4 46.2,-816.2 292.88,-816.2 292.88,-785.4 46.2,-785.4"/>
-<text text-anchor="start" x="53.2" y="-797.6" font-family="Arial" font-size="14.00">objectid </text>
-<text text-anchor="start" x="105.34" y="-797.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-797.6" font-family="Arial" font-size="14.00">continent </text>
+<text text-anchor="start" x="113.91" y="-797.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(15)]</text>
 <polygon fill="none" stroke="black" points="46.2,-754.6 46.2,-785.4 292.88,-785.4 292.88,-754.6 46.2,-754.6"/>
-<text text-anchor="start" x="53.2" y="-766.8" font-family="Arial" font-size="14.00">hylak_id </text>
-<text text-anchor="start" x="108.45" y="-766.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-766.8" font-family="Arial" font-size="14.00">country </text>
+<text text-anchor="start" x="103" y="-766.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(35)]</text>
 <polygon fill="none" stroke="black" points="46.2,-723.8 46.2,-754.6 292.88,-754.6 292.88,-723.8 46.2,-723.8"/>
-<text text-anchor="start" x="53.2" y="-736" font-family="Arial" font-size="14.00">lake_name </text>
-<text text-anchor="start" x="125.58" y="-736" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
+<text text-anchor="start" x="53.2" y="-736" font-family="Arial" font-size="14.00">depth_avg </text>
+<text text-anchor="start" x="122.48" y="-736" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-693 46.2,-723.8 292.88,-723.8 292.88,-693 46.2,-693"/>
-<text text-anchor="start" x="53.2" y="-705.2" font-family="Arial" font-size="14.00">country </text>
-<text text-anchor="start" x="103" y="-705.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(35)]</text>
+<text text-anchor="start" x="53.2" y="-705.2" font-family="Arial" font-size="14.00">dis_avg </text>
+<text text-anchor="start" x="105.34" y="-705.2" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-662.2 46.2,-693 292.88,-693 292.88,-662.2 46.2,-662.2"/>
-<text text-anchor="start" x="53.2" y="-674.4" font-family="Arial" font-size="14.00">continent </text>
-<text text-anchor="start" x="113.91" y="-674.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(15)]</text>
+<text text-anchor="start" x="53.2" y="-674.4" font-family="Arial" font-size="14.00">elevation </text>
+<text text-anchor="start" x="113.13" y="-674.4" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
 <polygon fill="none" stroke="black" points="46.2,-631.4 46.2,-662.2 292.88,-662.2 292.88,-631.4 46.2,-631.4"/>
-<text text-anchor="start" x="53.2" y="-643.6" font-family="Arial" font-size="14.00">poly_src </text>
-<text text-anchor="start" x="109.22" y="-643.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(10)]</text>
+<text text-anchor="start" x="53.2" y="-643.6" font-family="Arial" font-size="14.00">grand_id </text>
+<text text-anchor="start" x="111.58" y="-643.6" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
 <polygon fill="none" stroke="black" points="46.2,-600.6 46.2,-631.4 292.88,-631.4 292.88,-600.6 46.2,-600.6"/>
-<text text-anchor="start" x="53.2" y="-612.8" font-family="Arial" font-size="14.00">lake_type </text>
-<text text-anchor="start" x="117.02" y="-612.8" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
+<text text-anchor="start" x="53.2" y="-612.8" font-family="Arial" font-size="14.00">hylak_id </text>
+<text text-anchor="start" x="108.45" y="-612.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-569.8 46.2,-600.6 292.88,-600.6 292.88,-569.8 46.2,-569.8"/>
-<text text-anchor="start" x="53.2" y="-582" font-family="Arial" font-size="14.00">grand_id </text>
-<text text-anchor="start" x="111.58" y="-582" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
+<text text-anchor="start" x="53.2" y="-582" font-family="Arial" font-size="14.00">lake_area </text>
+<text text-anchor="start" x="118.58" y="-582" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-539 46.2,-569.8 292.88,-569.8 292.88,-539 46.2,-539"/>
-<text text-anchor="start" x="53.2" y="-551.2" font-family="Arial" font-size="14.00">lake_area </text>
-<text text-anchor="start" x="118.58" y="-551.2" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-551.2" font-family="Arial" font-size="14.00">lake_name </text>
+<text text-anchor="start" x="125.58" y="-551.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
 <polygon fill="none" stroke="black" points="46.2,-508.2 46.2,-539 292.88,-539 292.88,-508.2 46.2,-508.2"/>
-<text text-anchor="start" x="53.2" y="-520.4" font-family="Arial" font-size="14.00">shore_len </text>
-<text text-anchor="start" x="118.58" y="-520.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-520.4" font-family="Arial" font-size="14.00">lake_type </text>
+<text text-anchor="start" x="117.02" y="-520.4" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
 <polygon fill="none" stroke="black" points="46.2,-477.4 46.2,-508.2 292.88,-508.2 292.88,-477.4 46.2,-477.4"/>
-<text text-anchor="start" x="53.2" y="-489.6" font-family="Arial" font-size="14.00">shore_dev </text>
-<text text-anchor="start" x="122.47" y="-489.6" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-489.6" font-family="Arial" font-size="14.00">objectid </text>
+<text text-anchor="start" x="105.34" y="-489.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-446.6 46.2,-477.4 292.88,-477.4 292.88,-446.6 46.2,-446.6"/>
-<text text-anchor="start" x="53.2" y="-458.8" font-family="Arial" font-size="14.00">vol_total </text>
-<text text-anchor="start" x="109.23" y="-458.8" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-458.8" font-family="Arial" font-size="14.00">poly_src </text>
+<text text-anchor="start" x="109.22" y="-458.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(10)]</text>
 <polygon fill="none" stroke="black" points="46.2,-415.8 46.2,-446.6 292.88,-446.6 292.88,-415.8 46.2,-415.8"/>
-<text text-anchor="start" x="53.2" y="-428" font-family="Arial" font-size="14.00">vol_res </text>
-<text text-anchor="start" x="102.22" y="-428" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-428" font-family="Arial" font-size="14.00">pour_lat </text>
+<text text-anchor="start" x="107.68" y="-428" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="46.2,-385 46.2,-415.8 292.88,-415.8 292.88,-385 46.2,-385"/>
-<text text-anchor="start" x="53.2" y="-397.2" font-family="Arial" font-size="14.00">vol_src </text>
-<text text-anchor="start" x="101.43" y="-397.2" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
+<text text-anchor="start" x="53.2" y="-397.2" font-family="Arial" font-size="14.00">pour_long </text>
+<text text-anchor="start" x="119.37" y="-397.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="46.2,-354.2 46.2,-385 292.88,-385 292.88,-354.2 46.2,-354.2"/>
-<text text-anchor="start" x="53.2" y="-366.4" font-family="Arial" font-size="14.00">depth_avg </text>
-<text text-anchor="start" x="122.48" y="-366.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-366.4" font-family="Arial" font-size="14.00">res_time </text>
+<text text-anchor="start" x="110.77" y="-366.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-323.4 46.2,-354.2 292.88,-354.2 292.88,-323.4 46.2,-323.4"/>
-<text text-anchor="start" x="53.2" y="-335.6" font-family="Arial" font-size="14.00">dis_avg </text>
-<text text-anchor="start" x="105.34" y="-335.6" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-335.6" font-family="Arial" font-size="14.00">shape </text>
+<text text-anchor="start" x="95.23" y="-335.6" font-family="Arial" font-size="14.00" fill="#666666">[geometry(MultiPolygon,4326)]</text>
 <polygon fill="none" stroke="black" points="46.2,-292.6 46.2,-323.4 292.88,-323.4 292.88,-292.6 46.2,-292.6"/>
-<text text-anchor="start" x="53.2" y="-304.8" font-family="Arial" font-size="14.00">res_time </text>
-<text text-anchor="start" x="110.77" y="-304.8" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-304.8" font-family="Arial" font-size="14.00">shape_area </text>
+<text text-anchor="start" x="131.04" y="-304.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="46.2,-261.8 46.2,-292.6 292.88,-292.6 292.88,-261.8 46.2,-261.8"/>
-<text text-anchor="start" x="53.2" y="-274" font-family="Arial" font-size="14.00">elevation </text>
-<text text-anchor="start" x="113.13" y="-274" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
+<text text-anchor="start" x="53.2" y="-274" font-family="Arial" font-size="14.00">shape_length </text>
+<text text-anchor="start" x="141.16" y="-274" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="46.2,-231 46.2,-261.8 292.88,-261.8 292.88,-231 46.2,-231"/>
-<text text-anchor="start" x="53.2" y="-243.2" font-family="Arial" font-size="14.00">slope_100 </text>
-<text text-anchor="start" x="121.7" y="-243.2" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-243.2" font-family="Arial" font-size="14.00">shore_dev </text>
+<text text-anchor="start" x="122.47" y="-243.2" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-200.2 46.2,-231 292.88,-231 292.88,-200.2 46.2,-200.2"/>
-<text text-anchor="start" x="53.2" y="-212.4" font-family="Arial" font-size="14.00">wshd_area </text>
-<text text-anchor="start" x="125.58" y="-212.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="53.2" y="-212.4" font-family="Arial" font-size="14.00">shore_len </text>
+<text text-anchor="start" x="118.58" y="-212.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-169.4 46.2,-200.2 292.88,-200.2 292.88,-169.4 46.2,-169.4"/>
-<text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">pour_long </text>
-<text text-anchor="start" x="119.37" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">slope_100 </text>
+<text text-anchor="start" x="121.7" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 292.88,-169.4 292.88,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">pour_lat </text>
-<text text-anchor="start" x="107.68" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">vol_res </text>
+<text text-anchor="start" x="102.22" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 292.88,-138.6 292.88,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">shape_length </text>
-<text text-anchor="start" x="141.16" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">vol_src </text>
+<text text-anchor="start" x="101.43" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[smallint]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 292.88,-107.8 292.88,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">shape_area </text>
-<text text-anchor="start" x="131.04" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">vol_total </text>
+<text text-anchor="start" x="109.23" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 292.88,-77 292.88,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">shape </text>
-<text text-anchor="start" x="95.23" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[geometry(MultiPolygon,4326)]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">wshd_area </text>
+<text text-anchor="start" x="125.58" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-853.3 294.38,-853.3 294.38,-44.7 44.7,-44.7"/>
 </g>
 </g>

@@ -18,8 +18,8 @@
 <text text-anchor="start" x="220.65" y="-244.4" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="251.77" y="-244.4" font-family="Arial" font-size="14.00" fill="#666666">[VIEW]</text>
 <polygon fill="none" stroke="black" points="46.2,-200.2 46.2,-231 302.32,-231 302.32,-200.2 46.2,-200.2"/>
-<text text-anchor="start" x="53.2" y="-212.4" font-family="Arial" font-size="14.00">stewardid </text>
-<text text-anchor="start" x="117.01" y="-212.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-212.4" font-family="Arial" font-size="14.00">authorized </text>
+<text text-anchor="start" x="122.47" y="-212.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-169.4 46.2,-200.2 302.32,-200.2 302.32,-169.4 46.2,-169.4"/>
 <text text-anchor="start" x="53.2" y="-181.6" font-family="Arial" font-size="14.00">firstname </text>
 <text text-anchor="start" x="114.66" y="-181.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
@@ -27,14 +27,14 @@
 <text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">lastname </text>
 <text text-anchor="start" x="113.9" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 302.32,-138.6 302.32,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">username </text>
-<text text-anchor="start" x="119.34" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(15)]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">pwd </text>
+<text text-anchor="start" x="82.77" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(15)]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 302.32,-107.8 302.32,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">pwd </text>
-<text text-anchor="start" x="82.77" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(15)]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">stewardid </text>
+<text text-anchor="start" x="117.01" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 302.32,-77 302.32,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">authorized </text>
-<text text-anchor="start" x="122.47" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">username </text>
+<text text-anchor="start" x="119.34" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(15)]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-268.1 303.82,-268.1 303.82,-44.7 44.7,-44.7"/>
 </g>
 </g>

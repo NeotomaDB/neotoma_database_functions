@@ -18,14 +18,14 @@
 <text text-anchor="start" x="252.66" y="-494.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="283.78" y="-494.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-450.6 46.2,-481.4 384.15,-481.4 384.15,-450.6 46.2,-450.6"/>
-<text text-anchor="start" x="53.2" y="-462.8" font-family="Arial" font-size="14.00">isobiomarkerbandtypeid </text>
-<text text-anchor="start" x="205.73" y="-462.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-462.8" font-family="Arial" font-size="14.00">isobiomarkerbandtype </text>
+<text text-anchor="start" x="194.83" y="-462.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="46.2,-419.8 46.2,-450.6 384.15,-450.6 384.15,-419.8 46.2,-419.8"/>
-<text text-anchor="start" x="53.2" y="-432" font-family="Arial" font-size="14.00">isobiomarkertypeid </text>
-<text text-anchor="start" x="174.59" y="-432" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-432" font-family="Arial" font-size="14.00">isobiomarkerbandtypeid </text>
+<text text-anchor="start" x="205.73" y="-432" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-389 46.2,-419.8 384.15,-419.8 384.15,-389 46.2,-389"/>
-<text text-anchor="start" x="53.2" y="-401.2" font-family="Arial" font-size="14.00">isobiomarkerbandtype </text>
-<text text-anchor="start" x="194.83" y="-401.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
+<text text-anchor="start" x="53.2" y="-401.2" font-family="Arial" font-size="14.00">isobiomarkertypeid </text>
+<text text-anchor="start" x="174.59" y="-401.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-358.2 46.2,-389 384.15,-389 384.15,-358.2 46.2,-358.2"/>
 <text text-anchor="start" x="53.2" y="-370.4" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="150.48" y="-370.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -43,11 +43,11 @@
 <text text-anchor="start" x="235.16" y="-179.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="266.28" y="-179.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="55.27,-135.6 55.27,-166.4 375.07,-166.4 375.07,-135.6 55.27,-135.6"/>
-<text text-anchor="start" x="62.27" y="-147.8" font-family="Arial" font-size="14.00">isobiomarkertypeid </text>
-<text text-anchor="start" x="183.66" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="62.27" y="-147.8" font-family="Arial" font-size="14.00">isobiomarkertype </text>
+<text text-anchor="start" x="172.76" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="55.27,-104.8 55.27,-135.6 375.07,-135.6 375.07,-104.8 55.27,-104.8"/>
-<text text-anchor="start" x="62.27" y="-117" font-family="Arial" font-size="14.00">isobiomarkertype </text>
-<text text-anchor="start" x="172.76" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
+<text text-anchor="start" x="62.27" y="-117" font-family="Arial" font-size="14.00">isobiomarkertypeid </text>
+<text text-anchor="start" x="183.66" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="55.27,-74 55.27,-104.8 375.07,-104.8 375.07,-74 55.27,-74"/>
 <text text-anchor="start" x="62.27" y="-86.2" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="159.56" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -58,9 +58,9 @@
 <!-- ndb.isobiomarkerbandtypes&#45;&gt;ndb.isobiomarkertypes -->
 <g id="edge1" class="edge">
 <title>ndb.isobiomarkerbandtypes:isobiomarkertypeid&#45;&gt;ndb.isobiomarkertypes:isobiomarkertypeid</title>
-<path fill="none" stroke="black" d="M395.19,-432.57C447.13,-403.92 435.68,-151 376.07,-151"/>
-<polygon fill="black" stroke="black" points="395.15,-432.58 384.33,-430.76 389.98,-433.93 385.8,-435.03 385.8,-435.03 385.8,-435.03 389.98,-433.93 386.61,-439.47 395.15,-432.58"/>
-<text text-anchor="start" x="392.15" y="-445.2" font-family="Arial" font-size="10.00">FOREIGN KEY (isobiomarkertypeid) REFERENCES ndb.isobiomarkertypes(isobiomarkertypeid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M395.19,-401.77C447.13,-373.12 435.68,-120.2 376.07,-120.2"/>
+<polygon fill="black" stroke="black" points="395.15,-401.78 384.33,-399.96 389.98,-403.13 385.8,-404.23 385.8,-404.23 385.8,-404.23 389.98,-403.13 386.61,-408.67 395.15,-401.78"/>
+<text text-anchor="start" x="392.15" y="-414.4" font-family="Arial" font-size="10.00">FOREIGN KEY (isobiomarkertypeid) REFERENCES ndb.isobiomarkertypes(isobiomarkertypeid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 </g>
 </svg>

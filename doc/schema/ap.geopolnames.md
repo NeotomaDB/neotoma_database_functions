@@ -27,8 +27,8 @@ CREATE MATERIALIZED VIEW geopolnames AS (
 
 | # | Name   | Type      | Default | Nullable | Children | Parents | Comment |
 | - | ------ | --------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | siteid | integer   |         | true     |          |         |         |
-| 2 | names  | varchar[] |         | true     |          |         |         |
+| 1 | names  | varchar[] |         | true     |          |         |         |
+| 2 | siteid | integer   |         | true     |          |         |         |
 
 ## Referenced Tables
 

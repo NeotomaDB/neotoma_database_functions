@@ -6,9 +6,9 @@
 
 | # | Name                   | Type    | Default | Nullable | Children | Parents                                                   | Comment |
 | - | ---------------------- | ------- | ------- | -------- | -------- | --------------------------------------------------------- | ------- |
-| 1 | taxaalthierarchytypeid | integer |         | false    |          | [ndb.taxaalthierarchytypes](ndb.taxaalthierarchytypes.md) |         |
-| 2 | taxonid                | integer |         | false    |          | [ndb.taxa](ndb.taxa.md)                                   |         |
-| 3 | highertaxonid          | integer |         | false    |          | [ndb.taxa](ndb.taxa.md)                                   |         |
+| 1 | highertaxonid          | integer |         | false    |          | [ndb.taxa](ndb.taxa.md)                                   |         |
+| 2 | taxaalthierarchytypeid | integer |         | false    |          | [ndb.taxaalthierarchytypes](ndb.taxaalthierarchytypes.md) |         |
+| 3 | taxonid                | integer |         | false    |          | [ndb.taxa](ndb.taxa.md)                                   |         |
 
 ## Viewpoints
 
@@ -23,8 +23,8 @@
 | - | ----------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_taxaalthierarchy_taxa                  | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE                                                |
 | 2 | fk_taxaalthierarchy_taxa1                 | FOREIGN KEY | FOREIGN KEY (highertaxonid) REFERENCES ndb.taxa(taxonid)                                                                              |
-| 3 | taxaalthierarchy_pkey                     | PRIMARY KEY | PRIMARY KEY (taxaalthierarchytypeid, taxonid)                                                                                         |
-| 4 | fk_taxaalthierarchy_taxaalthierarchytypes | FOREIGN KEY | FOREIGN KEY (taxaalthierarchytypeid) REFERENCES ndb.taxaalthierarchytypes(taxaalthierarchytypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | fk_taxaalthierarchy_taxaalthierarchytypes | FOREIGN KEY | FOREIGN KEY (taxaalthierarchytypeid) REFERENCES ndb.taxaalthierarchytypes(taxaalthierarchytypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 4 | taxaalthierarchy_pkey                     | PRIMARY KEY | PRIMARY KEY (taxaalthierarchytypeid, taxonid)                                                                                         |
 
 ## Indexes
 

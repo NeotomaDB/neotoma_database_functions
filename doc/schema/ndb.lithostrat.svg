@@ -18,17 +18,17 @@
 <text text-anchor="start" x="477.06" y="-630.4" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="508.18" y="-630.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="331.66,-586.2 331.66,-617 651.46,-617 651.46,-586.2 331.66,-586.2"/>
-<text text-anchor="start" x="338.66" y="-598.4" font-family="Arial" font-size="14.00">lithostratid </text>
-<text text-anchor="start" x="406.36" y="-598.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="338.66" y="-598.4" font-family="Arial" font-size="14.00">higherlithostratid </text>
+<text text-anchor="start" x="445.28" y="-598.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="331.66,-555.4 331.66,-586.2 651.46,-586.2 651.46,-555.4 331.66,-555.4"/>
-<text text-anchor="start" x="338.66" y="-567.6" font-family="Arial" font-size="14.00">lithostratunitid </text>
-<text text-anchor="start" x="428.93" y="-567.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="338.66" y="-567.6" font-family="Arial" font-size="14.00">lithostratid </text>
+<text text-anchor="start" x="406.36" y="-567.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="331.66,-524.6 331.66,-555.4 651.46,-555.4 651.46,-524.6 331.66,-524.6"/>
 <text text-anchor="start" x="338.66" y="-536.8" font-family="Arial" font-size="14.00">lithostratname </text>
 <text text-anchor="start" x="430.48" y="-536.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="331.66,-493.8 331.66,-524.6 651.46,-524.6 651.46,-493.8 331.66,-493.8"/>
-<text text-anchor="start" x="338.66" y="-506" font-family="Arial" font-size="14.00">higherlithostratid </text>
-<text text-anchor="start" x="445.28" y="-506" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="338.66" y="-506" font-family="Arial" font-size="14.00">lithostratunitid </text>
+<text text-anchor="start" x="428.93" y="-506" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="331.66,-463 331.66,-493.8 651.46,-493.8 651.46,-463 331.66,-463"/>
 <text text-anchor="start" x="338.66" y="-475.2" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="435.95" y="-475.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -38,14 +38,14 @@
 <polygon fill="none" stroke="black" stroke-width="3" points="330.16,-430.7 330.16,-654.1 652.96,-654.1 652.96,-430.7 330.16,-430.7"/>
 </g>
 <!-- ndb.lithostrat&#45;&gt;ndb.lithostrat -->
-<g id="edge3" class="edge">
+<g id="edge1" class="edge">
 <title>ndb.lithostrat:higherlithostratid&#45;&gt;ndb.lithostrat:lithostratid</title>
-<path fill="none" stroke="black" d="M493.26,-534.7C500.52,-660.88 499.96,-893.3 491.56,-893.3 482.95,-893.3 482.58,-733.26 490.45,-616.98"/>
-<polygon fill="black" stroke="black" points="493.25,-534.64 497.14,-524.38 492.93,-529.31 492.67,-524.99 492.67,-524.99 492.67,-524.99 492.93,-529.31 488.15,-524.93 493.25,-534.64"/>
-<text text-anchor="start" x="151.07" y="-534.32" font-family="Arial" font-size="10.00">FOREIGN KEY (higherlithostratid) REFERENCES ndb.lithostrat(lithostratid)</text>
+<path fill="none" stroke="black" d="M493.34,-627.31C500.52,-742.5 499.92,-893.3 491.56,-893.3 482.94,-893.3 482.58,-704.67 490.48,-585.98"/>
+<polygon fill="black" stroke="black" points="493.34,-627.29 497.19,-617.02 493,-621.97 492.72,-617.65 492.72,-617.65 492.72,-617.65 493,-621.97 488.2,-617.6 493.34,-627.29"/>
+<text text-anchor="start" x="151.12" y="-626.98" font-family="Arial" font-size="10.00">FOREIGN KEY (higherlithostratid) REFERENCES ndb.lithostrat(lithostratid)</text>
 </g>
 <!-- ndb.lithostratunits -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>ndb.lithostratunits</title>
 <polygon fill="#efefef" stroke="none" points="331.66,-197.2 331.66,-232.8 651.46,-232.8 651.46,-197.2 331.66,-197.2"/>
 <polygon fill="none" stroke="black" points="331.66,-197.2 331.66,-232.8 651.46,-232.8 651.46,-197.2 331.66,-197.2"/>
@@ -53,11 +53,11 @@
 <text text-anchor="start" x="494.57" y="-210.6" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="525.69" y="-210.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="331.66,-166.4 331.66,-197.2 651.46,-197.2 651.46,-166.4 331.66,-166.4"/>
-<text text-anchor="start" x="338.66" y="-178.6" font-family="Arial" font-size="14.00">lithostratunitid </text>
-<text text-anchor="start" x="428.93" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="338.66" y="-178.6" font-family="Arial" font-size="14.00">lithostratunit </text>
+<text text-anchor="start" x="418.04" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
 <polygon fill="none" stroke="black" points="331.66,-135.6 331.66,-166.4 651.46,-166.4 651.46,-135.6 331.66,-135.6"/>
-<text text-anchor="start" x="338.66" y="-147.8" font-family="Arial" font-size="14.00">lithostratunit </text>
-<text text-anchor="start" x="418.04" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
+<text text-anchor="start" x="338.66" y="-147.8" font-family="Arial" font-size="14.00">lithostratunitid </text>
+<text text-anchor="start" x="428.93" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="331.66,-104.8 331.66,-135.6 651.46,-135.6 651.46,-104.8 331.66,-104.8"/>
 <text text-anchor="start" x="338.66" y="-117" font-family="Arial" font-size="14.00">rank </text>
 <text text-anchor="start" x="369.79" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
@@ -69,11 +69,11 @@
 <text text-anchor="start" x="442.17" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 </g>
 <!-- ndb.lithostrat&#45;&gt;ndb.lithostratunits -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>ndb.lithostrat:lithostratunitid&#45;&gt;ndb.lithostratunits:lithostratunitid</title>
-<path fill="none" stroke="black" d="M660.94,-565.3C695.47,-518.02 692.65,-181.8 652.46,-181.8"/>
-<polygon fill="black" stroke="black" points="661.13,-565.18 650.29,-566.84 656.66,-568.08 653.02,-570.44 653.02,-570.44 653.02,-570.44 656.66,-568.08 655.19,-574.39 661.13,-565.18"/>
-<text text-anchor="start" x="62.52" y="-580.8" font-family="Arial" font-size="10.00">FOREIGN KEY (lithostratunitid) REFERENCES ndb.lithostratunits(lithostratunitid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M660.86,-503.28C692.03,-456.71 689.23,-151 652.46,-151"/>
+<polygon fill="black" stroke="black" points="660.91,-503.25 650.14,-505.33 656.55,-506.32 653.01,-508.81 653.01,-508.81 653.01,-508.81 656.55,-506.32 655.33,-512.69 660.91,-503.25"/>
+<text text-anchor="start" x="62.52" y="-519.2" font-family="Arial" font-size="10.00">FOREIGN KEY (lithostratunitid) REFERENCES ndb.lithostratunits(lithostratunitid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.analysisunitlithostrat -->
 <g id="node2" class="node">
@@ -97,14 +97,14 @@
 <text text-anchor="start" x="655.08" y="-864.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 </g>
 <!-- ndb.analysisunitlithostrat&#45;&gt;ndb.lithostrat -->
-<g id="edge1" class="edge">
+<g id="edge2" class="edge">
 <title>ndb.analysisunitlithostrat:lithostratid&#45;&gt;ndb.lithostrat:lithostratid</title>
-<path fill="none" stroke="black" d="M533.57,-927.98C494.88,-919.15 525.71,-854.74 544.58,-808.8 570.47,-745.74 625.5,-761.83 651.46,-698.8 667.91,-658.85 695.66,-601.6 652.46,-601.6"/>
+<path fill="none" stroke="black" d="M533.57,-927.98C494.88,-919.15 525.71,-854.74 544.58,-808.8 570.47,-745.74 625.58,-761.86 651.46,-698.8 673.06,-646.17 709.35,-570.8 652.46,-570.8"/>
 <polygon fill="black" stroke="black" points="533.29,-927.95 542.79,-933.44 538.6,-928.49 542.91,-928.93 542.91,-928.93 542.91,-928.93 538.6,-928.49 543.7,-924.49 533.29,-927.95"/>
 <text text-anchor="start" x="7" y="-939" font-family="Arial" font-size="10.00">FOREIGN KEY (lithostratid) REFERENCES ndb.lithostrat(lithostratid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.analysisunits -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>ndb.analysisunits</title>
 <polygon fill="#efefef" stroke="none" points="758.66,-694 758.66,-729.6 1078.46,-729.6 1078.46,-694 758.66,-694"/>
 <polygon fill="none" stroke="black" points="758.66,-694 758.66,-729.6 1078.46,-729.6 1078.46,-694 758.66,-694"/>
@@ -115,38 +115,38 @@
 <text text-anchor="start" x="765.66" y="-675.4" font-family="Arial" font-size="14.00">analysisunitid </text>
 <text text-anchor="start" x="853.6" y="-675.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="758.66,-632.4 758.66,-663.2 1078.46,-663.2 1078.46,-632.4 758.66,-632.4"/>
-<text text-anchor="start" x="765.66" y="-644.6" font-family="Arial" font-size="14.00">collectionunitid </text>
-<text text-anchor="start" x="861.39" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="765.66" y="-644.6" font-family="Arial" font-size="14.00">analysisunitname </text>
+<text text-anchor="start" x="877.72" y="-644.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
 <polygon fill="none" stroke="black" points="758.66,-601.6 758.66,-632.4 1078.46,-632.4 1078.46,-601.6 758.66,-601.6"/>
-<text text-anchor="start" x="765.66" y="-613.8" font-family="Arial" font-size="14.00">analysisunitname </text>
-<text text-anchor="start" x="877.72" y="-613.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
+<text text-anchor="start" x="765.66" y="-613.8" font-family="Arial" font-size="14.00">collectionunitid </text>
+<text text-anchor="start" x="861.39" y="-613.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="758.66,-570.8 758.66,-601.6 1078.46,-601.6 1078.46,-570.8 758.66,-570.8"/>
 <text text-anchor="start" x="765.66" y="-583" font-family="Arial" font-size="14.00">depth </text>
 <text text-anchor="start" x="804.59" y="-583" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="758.66,-540 758.66,-570.8 1078.46,-570.8 1078.46,-540 758.66,-540"/>
-<text text-anchor="start" x="765.66" y="-552.2" font-family="Arial" font-size="14.00">thickness </text>
-<text text-anchor="start" x="827.91" y="-552.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="765.66" y="-552.2" font-family="Arial" font-size="14.00">faciesid </text>
+<text text-anchor="start" x="817.02" y="-552.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="758.66,-509.2 758.66,-540 1078.46,-540 1078.46,-509.2 758.66,-509.2"/>
-<text text-anchor="start" x="765.66" y="-521.4" font-family="Arial" font-size="14.00">faciesid </text>
-<text text-anchor="start" x="817.02" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="765.66" y="-521.4" font-family="Arial" font-size="14.00">igsn </text>
+<text text-anchor="start" x="795.24" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
 <polygon fill="none" stroke="black" points="758.66,-478.4 758.66,-509.2 1078.46,-509.2 1078.46,-478.4 758.66,-478.4"/>
 <text text-anchor="start" x="765.66" y="-490.6" font-family="Arial" font-size="14.00">mixed </text>
 <text text-anchor="start" x="806.9" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
 <polygon fill="none" stroke="black" points="758.66,-447.6 758.66,-478.4 1078.46,-478.4 1078.46,-447.6 758.66,-447.6"/>
-<text text-anchor="start" x="765.66" y="-459.8" font-family="Arial" font-size="14.00">igsn </text>
-<text text-anchor="start" x="795.24" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
+<text text-anchor="start" x="765.66" y="-459.8" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="803.8" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="758.66,-416.8 758.66,-447.6 1078.46,-447.6 1078.46,-416.8 758.66,-416.8"/>
-<text text-anchor="start" x="765.66" y="-429" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="803.8" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="765.66" y="-429" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="862.95" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="758.66,-386 758.66,-416.8 1078.46,-416.8 1078.46,-386 758.66,-386"/>
-<text text-anchor="start" x="765.66" y="-398.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="862.95" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="765.66" y="-398.2" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="869.17" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="758.66,-355.2 758.66,-386 1078.46,-386 1078.46,-355.2 758.66,-355.2"/>
-<text text-anchor="start" x="765.66" y="-367.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="869.17" y="-367.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="765.66" y="-367.4" font-family="Arial" font-size="14.00">thickness </text>
+<text text-anchor="start" x="827.91" y="-367.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 </g>
 <!-- ndb.analysisunitlithostrat&#45;&gt;ndb.analysisunits -->
-<g id="edge2" class="edge">
+<g id="edge4" class="edge">
 <title>ndb.analysisunitlithostrat:analysisunitid&#45;&gt;ndb.analysisunits:analysisunitid</title>
 <path fill="none" stroke="black" d="M875.71,-958.96C929.48,-949.36 901.66,-860.26 864.55,-808.8 835.47,-768.49 787.82,-813.06 758.66,-772.8 734.1,-738.89 715.79,-678.6 757.66,-678.6"/>
 <polygon fill="black" stroke="black" points="875.85,-958.94 865.51,-955.29 870.53,-959.39 866.22,-959.74 866.22,-959.74 866.22,-959.74 870.53,-959.39 866.26,-964.26 875.85,-958.94"/>

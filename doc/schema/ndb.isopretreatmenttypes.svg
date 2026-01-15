@@ -18,14 +18,14 @@
 <text text-anchor="start" x="686.78" y="-226" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="717.9" y="-226" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="498.33,-181.8 498.33,-212.6 818.27,-212.6 818.27,-181.8 498.33,-181.8"/>
-<text text-anchor="start" x="505.33" y="-194" font-family="Arial" font-size="14.00">isopretreatmenttypeid </text>
-<text text-anchor="start" x="643.85" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="505.33" y="-194" font-family="Arial" font-size="14.00">isopretreatmentqualifier </text>
+<text text-anchor="start" x="655.52" y="-194" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="498.33,-151 498.33,-181.8 818.27,-181.8 818.27,-151 498.33,-151"/>
 <text text-anchor="start" x="505.33" y="-163.2" font-family="Arial" font-size="14.00">isopretreatmenttype </text>
 <text text-anchor="start" x="632.95" y="-163.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="498.33,-120.2 498.33,-151 818.27,-151 818.27,-120.2 498.33,-120.2"/>
-<text text-anchor="start" x="505.33" y="-132.4" font-family="Arial" font-size="14.00">isopretreatmentqualifier </text>
-<text text-anchor="start" x="655.52" y="-132.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
+<text text-anchor="start" x="505.33" y="-132.4" font-family="Arial" font-size="14.00">isopretreatmenttypeid </text>
+<text text-anchor="start" x="643.85" y="-132.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="498.33,-89.4 498.33,-120.2 818.27,-120.2 818.27,-89.4 498.33,-89.4"/>
 <text text-anchor="start" x="505.33" y="-101.6" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="602.61" y="-101.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
@@ -52,19 +52,19 @@
 <text text-anchor="start" x="708.33" y="-490.6" font-family="Arial" font-size="14.00">order </text>
 <text text-anchor="start" x="744.91" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="701.33,-447.6 701.33,-478.4 1041.27,-478.4 1041.27,-447.6 701.33,-447.6"/>
-<text text-anchor="start" x="708.33" y="-459.8" font-family="Arial" font-size="14.00">value </text>
-<text text-anchor="start" x="745.69" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="708.33" y="-459.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="805.62" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="701.33,-416.8 701.33,-447.6 1041.27,-447.6 1041.27,-416.8 701.33,-416.8"/>
-<text text-anchor="start" x="708.33" y="-429" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="805.62" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="708.33" y="-429" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="811.84" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="701.33,-386 701.33,-416.8 1041.27,-416.8 1041.27,-386 701.33,-386"/>
-<text text-anchor="start" x="708.33" y="-398.2" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="811.84" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="708.33" y="-398.2" font-family="Arial" font-size="14.00">value </text>
+<text text-anchor="start" x="745.69" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 </g>
 <!-- ndb.isosamplepretreatments&#45;&gt;ndb.isopretreatmenttypes -->
 <g id="edge1" class="edge">
 <title>ndb.isosamplepretreatments:isopretreatmenttypeid&#45;&gt;ndb.isopretreatmenttypes:isopretreatmenttypeid</title>
-<path fill="none" stroke="black" d="M690.15,-523.92C622.85,-514.39 658.27,-406.84 701.33,-342.8 732.72,-296.12 786.77,-341 818.27,-294.4 842.46,-258.61 862.47,-197.2 819.27,-197.2"/>
+<path fill="none" stroke="black" d="M690.15,-523.92C622.85,-514.39 658.27,-406.84 701.33,-342.8 732.72,-296.12 786.87,-341.07 818.27,-294.4 857.67,-235.84 889.85,-135.6 819.27,-135.6"/>
 <polygon fill="black" stroke="black" points="690.02,-523.91 699.7,-529.07 695.34,-524.27 699.67,-524.56 699.67,-524.56 699.67,-524.56 695.34,-524.27 700.3,-520.09 690.02,-523.91"/>
 <text text-anchor="start" x="7" y="-534.6" font-family="Arial" font-size="10.00">FOREIGN KEY (isopretreatmenttypeid) REFERENCES ndb.isopretreatmenttypes(isopretreatmenttypeid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
@@ -80,20 +80,20 @@
 <text text-anchor="start" x="932.4" y="-209.4" font-family="Arial" font-size="14.00">dataid </text>
 <text text-anchor="start" x="974.44" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="925.4,-166.4 925.4,-197.2 1245.2,-197.2 1245.2,-166.4 925.4,-166.4"/>
-<text text-anchor="start" x="932.4" y="-178.6" font-family="Arial" font-size="14.00">sampleid </text>
-<text text-anchor="start" x="992.32" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="932.4" y="-178.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1029.68" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="925.4,-135.6 925.4,-166.4 1245.2,-166.4 1245.2,-135.6 925.4,-135.6"/>
-<text text-anchor="start" x="932.4" y="-147.8" font-family="Arial" font-size="14.00">variableid </text>
-<text text-anchor="start" x="996.21" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="932.4" y="-147.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1035.9" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="925.4,-104.8 925.4,-135.6 1245.2,-135.6 1245.2,-104.8 925.4,-104.8"/>
-<text text-anchor="start" x="932.4" y="-117" font-family="Arial" font-size="14.00">value </text>
-<text text-anchor="start" x="969.76" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="932.4" y="-117" font-family="Arial" font-size="14.00">sampleid </text>
+<text text-anchor="start" x="992.32" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="925.4,-74 925.4,-104.8 1245.2,-104.8 1245.2,-74 925.4,-74"/>
-<text text-anchor="start" x="932.4" y="-86.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1029.68" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="932.4" y="-86.2" font-family="Arial" font-size="14.00">value </text>
+<text text-anchor="start" x="969.76" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="925.4,-43.2 925.4,-74 1245.2,-74 1245.2,-43.2 925.4,-43.2"/>
-<text text-anchor="start" x="932.4" y="-55.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1035.9" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="932.4" y="-55.4" font-family="Arial" font-size="14.00">variableid </text>
+<text text-anchor="start" x="996.21" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.isosamplepretreatments&#45;&gt;ndb.data -->
 <g id="edge2" class="edge">

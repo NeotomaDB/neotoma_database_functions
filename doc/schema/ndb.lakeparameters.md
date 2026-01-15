@@ -6,27 +6,27 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                             | Comment                                                |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------------------- | ------------------------------------------------------ |
-| 1 | siteid          | integer                        |                              | false    |          | [ndb.sites](ndb.sites.md)                           | FK: SiteID links to Sites table                        |
-| 2 | lakeparameterid | integer                        |                              | false    |          | [ndb.lakeparametertypes](ndb.lakeparametertypes.md) | FK: LakeParameter ID links to LakeParameterTypes table |
-| 3 | value           | double precision               |                              | false    |          |                                                     | Numerical value of parameter                           |
-| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                     |                                                        |
-| 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                     |                                                        |
+| 1 | lakeparameterid | integer                        |                              | false    |          | [ndb.lakeparametertypes](ndb.lakeparametertypes.md) | FK: LakeParameter ID links to LakeParameterTypes table |
+| 2 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                     |                                                        |
+| 3 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                     |                                                        |
+| 4 | siteid          | integer                        |                              | false    |          | [ndb.sites](ndb.sites.md)                           | FK: SiteID links to Sites table                        |
+| 5 | value           | double precision               |                              | false    |          |                                                     | Numerical value of parameter                           |
 
 ## Constraints
 
 | # | Name                                 | Type        | Definition                                                                                                           |
 | - | ------------------------------------ | ----------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1 | lakeparameters_pkey                  | PRIMARY KEY | PRIMARY KEY (siteid, lakeparameterid)                                                                                |
-| 2 | fk_lakeparameters_lakeparametertypes | FOREIGN KEY | FOREIGN KEY (lakeparameterid) REFERENCES ndb.lakeparametertypes(lakeparameterid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | fk_lakeparameters_sites              | FOREIGN KEY | FOREIGN KEY (siteid) REFERENCES ndb.sites(siteid) ON UPDATE CASCADE ON DELETE CASCADE                                |
+| 1 | fk_lakeparameters_lakeparametertypes | FOREIGN KEY | FOREIGN KEY (lakeparameterid) REFERENCES ndb.lakeparametertypes(lakeparameterid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_lakeparameters_sites              | FOREIGN KEY | FOREIGN KEY (siteid) REFERENCES ndb.sites(siteid) ON UPDATE CASCADE ON DELETE CASCADE                                |
+| 3 | lakeparameters_pkey                  | PRIMARY KEY | PRIMARY KEY (siteid, lakeparameterid)                                                                                |
 
 ## Indexes
 
 | # | Name                              | Definition                                                                                                                |
 | - | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | lakeparameters_pkey               | CREATE UNIQUE INDEX lakeparameters_pkey ON ndb.lakeparameters USING btree (siteid, lakeparameterid)                       |
-| 2 | ix_lakeparameterid_lakeparameters | CREATE INDEX ix_lakeparameterid_lakeparameters ON ndb.lakeparameters USING btree (lakeparameterid) WITH (fillfactor='10') |
-| 3 | ix_siteid_lakeparameters          | CREATE INDEX ix_siteid_lakeparameters ON ndb.lakeparameters USING btree (siteid) WITH (fillfactor='10')                   |
+| 1 | ix_lakeparameterid_lakeparameters | CREATE INDEX ix_lakeparameterid_lakeparameters ON ndb.lakeparameters USING btree (lakeparameterid) WITH (fillfactor='10') |
+| 2 | ix_siteid_lakeparameters          | CREATE INDEX ix_siteid_lakeparameters ON ndb.lakeparameters USING btree (siteid) WITH (fillfactor='10')                   |
+| 3 | lakeparameters_pkey               | CREATE UNIQUE INDEX lakeparameters_pkey ON ndb.lakeparameters USING btree (siteid, lakeparameterid)                       |
 
 ## Triggers
 

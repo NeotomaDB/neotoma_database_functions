@@ -18,17 +18,17 @@
 <text text-anchor="start" x="203.63" y="-182.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="234.75" y="-182.8" font-family="Arial" font-size="14.00" fill="#666666">[VIEW]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 285.31,-169.4 285.31,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="102.23" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">datasettypeids </text>
+<text text-anchor="start" x="147.37" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[jsonb]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 285.31,-138.6 285.31,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">taxonname </text>
-<text text-anchor="start" x="126.36" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">taxagroupid </text>
+<text text-anchor="start" x="130.25" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(3)]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 285.31,-107.8 285.31,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">taxagroupid </text>
-<text text-anchor="start" x="130.25" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(3)]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="102.23" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 285.31,-77 285.31,-46.2 46.2,-46.2"/>
-<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">datasettypeids </text>
-<text text-anchor="start" x="147.37" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[jsonb]</text>
+<text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">taxonname </text>
+<text text-anchor="start" x="126.36" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-44.7 44.7,-206.5 286.81,-206.5 286.81,-44.7 44.7,-44.7"/>
 </g>
 </g>

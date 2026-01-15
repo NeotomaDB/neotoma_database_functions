@@ -6,8 +6,8 @@
 
 | # | Name             | Type                           | Default                                                       | Nullable | Children                            | Parents | Comment |
 | - | ---------------- | ------------------------------ | ------------------------------------------------------------- | -------- | ----------------------------------- | ------- | ------- |
-| 1 | lithostratunitid | integer                        | nextval('ndb.seq_lithostratunits_lithostratunitid'::regclass) | false    | [ndb.lithostrat](ndb.lithostrat.md) |         |         |
-| 2 | lithostratunit   | varchar(24)                    |                                                               | false    |                                     |         |         |
+| 1 | lithostratunit   | varchar(24)                    |                                                               | false    |                                     |         |         |
+| 2 | lithostratunitid | integer                        | nextval('ndb.seq_lithostratunits_lithostratunitid'::regclass) | false    | [ndb.lithostrat](ndb.lithostrat.md) |         |         |
 | 3 | rank             | integer                        |                                                               | false    |                                     |         |         |
 | 4 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now())                                  | false    |                                     |         |         |
 | 5 | recdatemodified  | timestamp(0) without time zone |                                                               | false    |                                     |         |         |

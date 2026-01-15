@@ -18,17 +18,17 @@
 <text text-anchor="start" x="642.98" y="-182.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="674.1" y="-182.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="472.6,-138.6 472.6,-169.4 792.4,-169.4 792.4,-138.6 472.6,-138.6"/>
-<text text-anchor="start" x="479.6" y="-150.8" font-family="Arial" font-size="14.00">relativeageunitid </text>
-<text text-anchor="start" x="585.45" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="479.6" y="-150.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="576.88" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="472.6,-107.8 472.6,-138.6 792.4,-138.6 792.4,-107.8 472.6,-107.8"/>
-<text text-anchor="start" x="479.6" y="-120" font-family="Arial" font-size="14.00">relativeageunit </text>
-<text text-anchor="start" x="574.55" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<text text-anchor="start" x="479.6" y="-120" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="583.1" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="472.6,-77 472.6,-107.8 792.4,-107.8 792.4,-77 472.6,-77"/>
-<text text-anchor="start" x="479.6" y="-89.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="576.88" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="479.6" y="-89.2" font-family="Arial" font-size="14.00">relativeageunit </text>
+<text text-anchor="start" x="574.55" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="472.6,-46.2 472.6,-77 792.4,-77 792.4,-46.2 472.6,-46.2"/>
-<text text-anchor="start" x="479.6" y="-58.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="583.1" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="479.6" y="-58.4" font-family="Arial" font-size="14.00">relativeageunitid </text>
+<text text-anchor="start" x="585.45" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="471.1,-44.7 471.1,-206.5 793.9,-206.5 793.9,-44.7 471.1,-44.7"/>
 </g>
 <!-- ndb.relativeages -->
@@ -40,45 +40,45 @@
 <text text-anchor="start" x="841.98" y="-682.6" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="873.1" y="-682.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="685.6,-638.4 685.6,-669.2 1005.4,-669.2 1005.4,-638.4 685.6,-638.4"/>
-<text text-anchor="start" x="692.6" y="-650.6" font-family="Arial" font-size="14.00">relativeageid </text>
-<text text-anchor="start" x="775.88" y="-650.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-650.6" font-family="Arial" font-size="14.00">c14ageolder </text>
+<text text-anchor="start" x="773.55" y="-650.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.6,-607.6 685.6,-638.4 1005.4,-638.4 1005.4,-607.6 685.6,-607.6"/>
-<text text-anchor="start" x="692.6" y="-619.8" font-family="Arial" font-size="14.00">relativeageunitid </text>
-<text text-anchor="start" x="798.45" y="-619.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-619.8" font-family="Arial" font-size="14.00">c14ageyounger </text>
+<text text-anchor="start" x="793.01" y="-619.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.6,-576.8 685.6,-607.6 1005.4,-607.6 1005.4,-576.8 685.6,-576.8"/>
-<text text-anchor="start" x="692.6" y="-589" font-family="Arial" font-size="14.00">relativeagescaleid </text>
-<text text-anchor="start" x="808.56" y="-589" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-589" font-family="Arial" font-size="14.00">calageolder </text>
+<text text-anchor="start" x="768.88" y="-589" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.6,-546 685.6,-576.8 1005.4,-576.8 1005.4,-546 685.6,-546"/>
-<text text-anchor="start" x="692.6" y="-558.2" font-family="Arial" font-size="14.00">relativeage </text>
-<text text-anchor="start" x="764.98" y="-558.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<text text-anchor="start" x="692.6" y="-558.2" font-family="Arial" font-size="14.00">calageyounger </text>
+<text text-anchor="start" x="788.34" y="-558.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="685.6,-515.2 685.6,-546 1005.4,-546 1005.4,-515.2 685.6,-515.2"/>
-<text text-anchor="start" x="692.6" y="-527.4" font-family="Arial" font-size="14.00">c14ageyounger </text>
-<text text-anchor="start" x="793.01" y="-527.4" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.6" y="-527.4" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="730.74" y="-527.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="685.6,-484.4 685.6,-515.2 1005.4,-515.2 1005.4,-484.4 685.6,-484.4"/>
-<text text-anchor="start" x="692.6" y="-496.6" font-family="Arial" font-size="14.00">c14ageolder </text>
-<text text-anchor="start" x="773.55" y="-496.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.6" y="-496.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="789.88" y="-496.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="685.6,-453.6 685.6,-484.4 1005.4,-484.4 1005.4,-453.6 685.6,-453.6"/>
-<text text-anchor="start" x="692.6" y="-465.8" font-family="Arial" font-size="14.00">calageyounger </text>
-<text text-anchor="start" x="788.34" y="-465.8" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.6" y="-465.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="796.1" y="-465.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="685.6,-422.8 685.6,-453.6 1005.4,-453.6 1005.4,-422.8 685.6,-422.8"/>
-<text text-anchor="start" x="692.6" y="-435" font-family="Arial" font-size="14.00">calageolder </text>
-<text text-anchor="start" x="768.88" y="-435" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="692.6" y="-435" font-family="Arial" font-size="14.00">relativeage </text>
+<text text-anchor="start" x="764.98" y="-435" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="685.6,-392 685.6,-422.8 1005.4,-422.8 1005.4,-392 685.6,-392"/>
-<text text-anchor="start" x="692.6" y="-404.2" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="730.74" y="-404.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="692.6" y="-404.2" font-family="Arial" font-size="14.00">relativeageid </text>
+<text text-anchor="start" x="775.88" y="-404.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.6,-361.2 685.6,-392 1005.4,-392 1005.4,-361.2 685.6,-361.2"/>
-<text text-anchor="start" x="692.6" y="-373.4" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="789.88" y="-373.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="692.6" y="-373.4" font-family="Arial" font-size="14.00">relativeagescaleid </text>
+<text text-anchor="start" x="808.56" y="-373.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.6,-330.4 685.6,-361.2 1005.4,-361.2 1005.4,-330.4 685.6,-330.4"/>
-<text text-anchor="start" x="692.6" y="-342.6" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="796.1" y="-342.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="692.6" y="-342.6" font-family="Arial" font-size="14.00">relativeageunitid </text>
+<text text-anchor="start" x="798.45" y="-342.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.relativeages&#45;&gt;ndb.relativeageunits -->
 <g id="edge1" class="edge">
 <title>ndb.relativeages:relativeageunitid&#45;&gt;ndb.relativeageunits:relativeageunitid</title>
-<path fill="none" stroke="black" d="M674.45,-622.65C538.32,-612.99 600.4,-405.45 685.6,-287.2 714.88,-246.56 762.97,-291.73 792.4,-251.2 817.78,-216.24 836.6,-154 793.4,-154"/>
-<polygon fill="black" stroke="black" points="674.27,-622.64 684.11,-627.49 679.6,-622.83 683.93,-622.98 683.93,-622.98 683.93,-622.98 679.6,-622.83 684.42,-618.49 674.27,-622.64"/>
-<text text-anchor="start" x="61.27" y="-633" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeageunitid) REFERENCES ndb.relativeageunits(relativeageunitid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M674.67,-343C662.48,-333.92 672.75,-304.78 685.6,-287.2 715.17,-246.77 763.07,-291.81 792.4,-251.2 841.74,-182.89 877.67,-61.6 793.4,-61.6"/>
+<polygon fill="black" stroke="black" points="674.65,-343 683.06,-350.04 679.79,-344.44 683.96,-345.62 683.96,-345.62 683.96,-345.62 679.79,-344.44 685.5,-341.38 674.65,-343"/>
+<text text-anchor="start" x="61.27" y="-355.8" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeageunitid) REFERENCES ndb.relativeageunits(relativeageunitid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.relativeagescales -->
 <g id="node6" class="node">
@@ -89,24 +89,24 @@
 <text text-anchor="start" x="1073.97" y="-182.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="1105.08" y="-182.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="899.6,-138.6 899.6,-169.4 1219.4,-169.4 1219.4,-138.6 899.6,-138.6"/>
-<text text-anchor="start" x="906.6" y="-150.8" font-family="Arial" font-size="14.00">relativeagescaleid </text>
-<text text-anchor="start" x="1022.56" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="906.6" y="-150.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1003.88" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="899.6,-107.8 899.6,-138.6 1219.4,-138.6 1219.4,-107.8 899.6,-107.8"/>
-<text text-anchor="start" x="906.6" y="-120" font-family="Arial" font-size="14.00">relativeagescale </text>
-<text text-anchor="start" x="1011.66" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<text text-anchor="start" x="906.6" y="-120" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1010.1" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="899.6,-77 899.6,-107.8 1219.4,-107.8 1219.4,-77 899.6,-77"/>
-<text text-anchor="start" x="906.6" y="-89.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1003.88" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="906.6" y="-89.2" font-family="Arial" font-size="14.00">relativeagescale </text>
+<text text-anchor="start" x="1011.66" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="899.6,-46.2 899.6,-77 1219.4,-77 1219.4,-46.2 899.6,-46.2"/>
-<text text-anchor="start" x="906.6" y="-58.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1010.1" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="906.6" y="-58.4" font-family="Arial" font-size="14.00">relativeagescaleid </text>
+<text text-anchor="start" x="1022.56" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.relativeages&#45;&gt;ndb.relativeagescales -->
 <g id="edge5" class="edge">
 <title>ndb.relativeages:relativeagescaleid&#45;&gt;ndb.relativeagescales:relativeagescaleid</title>
-<path fill="none" stroke="black" d="M1016.72,-591.8C1138.84,-582.03 1081.06,-395.34 1005.4,-287.2 976.67,-246.14 928.48,-289.16 899.6,-248.2 875.47,-213.98 856.73,-154 898.6,-154"/>
-<polygon fill="black" stroke="black" points="1016.73,-591.8 1006.56,-587.69 1011.39,-592.01 1007.07,-592.17 1007.07,-592.17 1007.07,-592.17 1011.39,-592.01 1006.91,-596.68 1016.73,-591.8"/>
-<text text-anchor="start" x="1013.4" y="-602.2" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeagescaleid) REFERENCES ndb.relativeagescales(relativeagescaleid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1016.44,-375.05C1042.6,-365.71 1026.07,-316.5 1005.4,-287.2 976.51,-246.25 928.37,-289.23 899.6,-248.2 851.99,-180.29 815.67,-61.6 898.6,-61.6"/>
+<polygon fill="black" stroke="black" points="1016.61,-375.02 1006.04,-372.1 1011.34,-375.84 1007.06,-376.5 1007.06,-376.5 1007.06,-376.5 1011.34,-375.84 1007.42,-381 1016.61,-375.02"/>
+<text text-anchor="start" x="1013.4" y="-386.6" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeagescaleid) REFERENCES ndb.relativeagescales(relativeagescaleid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.relativeagepublications -->
 <g id="node3" class="node">
@@ -117,24 +117,24 @@
 <text text-anchor="start" x="449.47" y="-1025.4" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="480.59" y="-1025.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="244.04,-981.2 244.04,-1012 580.96,-1012 580.96,-981.2 244.04,-981.2"/>
-<text text-anchor="start" x="251.04" y="-993.4" font-family="Arial" font-size="14.00">relativeageid </text>
-<text text-anchor="start" x="334.31" y="-993.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="251.04" y="-993.4" font-family="Arial" font-size="14.00">publicationid </text>
+<text text-anchor="start" x="332.76" y="-993.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="244.04,-950.4 244.04,-981.2 580.96,-981.2 580.96,-950.4 244.04,-950.4"/>
-<text text-anchor="start" x="251.04" y="-962.6" font-family="Arial" font-size="14.00">publicationid </text>
-<text text-anchor="start" x="332.76" y="-962.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="251.04" y="-962.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="348.32" y="-962.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="244.04,-919.6 244.04,-950.4 580.96,-950.4 580.96,-919.6 244.04,-919.6"/>
-<text text-anchor="start" x="251.04" y="-931.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="348.32" y="-931.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="251.04" y="-931.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="354.54" y="-931.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="244.04,-888.8 244.04,-919.6 580.96,-919.6 580.96,-888.8 244.04,-888.8"/>
-<text text-anchor="start" x="251.04" y="-901" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="354.54" y="-901" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="251.04" y="-901" font-family="Arial" font-size="14.00">relativeageid </text>
+<text text-anchor="start" x="334.31" y="-901" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.relativeagepublications&#45;&gt;ndb.relativeages -->
 <g id="edge2" class="edge">
 <title>ndb.relativeagepublications:relativeageid&#45;&gt;ndb.relativeages:relativeageid</title>
-<path fill="none" stroke="black" d="M591.82,-993.97C628.98,-972.58 619.94,-826.92 633.5,-784 652.22,-724.72 622.44,-653.8 684.6,-653.8"/>
-<polygon fill="black" stroke="black" points="591.94,-993.94 581.12,-992.17 586.79,-995.31 582.61,-996.43 582.61,-996.43 582.61,-996.43 586.79,-995.31 583.44,-1000.86 591.94,-993.94"/>
-<text text-anchor="start" x="7" y="-1006.6" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeageid) REFERENCES ndb.relativeages(relativeageid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M592.14,-902.69C687.02,-872.7 575.5,-407.4 684.6,-407.4"/>
+<polygon fill="black" stroke="black" points="592.18,-902.68 581.63,-899.7 586.9,-903.46 582.62,-904.1 582.62,-904.1 582.62,-904.1 586.9,-903.46 582.95,-908.6 592.18,-902.68"/>
+<text text-anchor="start" x="7" y="-914.2" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeageid) REFERENCES ndb.relativeages(relativeageid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.relativechronology -->
 <g id="node4" class="node">
@@ -145,33 +145,33 @@
 <text text-anchor="start" x="866.98" y="-1071.6" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="898.1" y="-1071.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="685.6,-1027.4 685.6,-1058.2 1005.4,-1058.2 1005.4,-1027.4 685.6,-1027.4"/>
-<text text-anchor="start" x="692.6" y="-1039.6" font-family="Arial" font-size="14.00">relativechronid </text>
-<text text-anchor="start" x="787.54" y="-1039.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-1039.6" font-family="Arial" font-size="14.00">analysisunitid </text>
+<text text-anchor="start" x="780.54" y="-1039.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.6,-996.6 685.6,-1027.4 1005.4,-1027.4 1005.4,-996.6 685.6,-996.6"/>
-<text text-anchor="start" x="692.6" y="-1008.8" font-family="Arial" font-size="14.00">analysisunitid </text>
-<text text-anchor="start" x="780.54" y="-1008.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-1008.8" font-family="Arial" font-size="14.00">chroncontrolid </text>
+<text text-anchor="start" x="784.43" y="-1008.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.6,-965.8 685.6,-996.6 1005.4,-996.6 1005.4,-965.8 685.6,-965.8"/>
-<text text-anchor="start" x="692.6" y="-978" font-family="Arial" font-size="14.00">relativeageid </text>
-<text text-anchor="start" x="775.88" y="-978" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-978" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="730.74" y="-978" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="685.6,-935 685.6,-965.8 1005.4,-965.8 1005.4,-935 685.6,-935"/>
-<text text-anchor="start" x="692.6" y="-947.2" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="730.74" y="-947.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="692.6" y="-947.2" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="789.88" y="-947.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="685.6,-904.2 685.6,-935 1005.4,-935 1005.4,-904.2 685.6,-904.2"/>
-<text text-anchor="start" x="692.6" y="-916.4" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="789.88" y="-916.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="692.6" y="-916.4" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="796.1" y="-916.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="685.6,-873.4 685.6,-904.2 1005.4,-904.2 1005.4,-873.4 685.6,-873.4"/>
-<text text-anchor="start" x="692.6" y="-885.6" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="796.1" y="-885.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="692.6" y="-885.6" font-family="Arial" font-size="14.00">relativeageid </text>
+<text text-anchor="start" x="775.88" y="-885.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="685.6,-842.6 685.6,-873.4 1005.4,-873.4 1005.4,-842.6 685.6,-842.6"/>
-<text text-anchor="start" x="692.6" y="-854.8" font-family="Arial" font-size="14.00">chroncontrolid </text>
-<text text-anchor="start" x="784.43" y="-854.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="692.6" y="-854.8" font-family="Arial" font-size="14.00">relativechronid </text>
+<text text-anchor="start" x="787.54" y="-854.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.relativechronology&#45;&gt;ndb.relativeages -->
 <g id="edge3" class="edge">
 <title>ndb.relativechronology:relativeageid&#45;&gt;ndb.relativeages:relativeageid</title>
-<path fill="none" stroke="black" d="M1014.62,-974.95C1042.53,-929.69 1039.79,-653.8 1006.4,-653.8"/>
-<polygon fill="black" stroke="black" points="1014.63,-974.95 1003.94,-977.42 1010.38,-978.17 1006.93,-980.8 1006.93,-980.8 1006.93,-980.8 1010.38,-978.17 1009.39,-984.58 1014.63,-974.95"/>
-<text text-anchor="start" x="1013.4" y="-991.2" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeageid) REFERENCES ndb.relativeages(relativeageid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1015.25,-884.04C1059.7,-834.04 1056.75,-407.4 1006.4,-407.4"/>
+<polygon fill="black" stroke="black" points="1015.5,-883.9 1004.56,-884.68 1010.8,-886.43 1006.99,-888.48 1006.99,-888.48 1006.99,-888.48 1010.8,-886.43 1008.83,-892.6 1015.5,-883.9"/>
+<text text-anchor="start" x="1013.4" y="-898.8" font-family="Arial" font-size="10.00">FOREIGN KEY (relativeageid) REFERENCES ndb.relativeages(relativeageid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.speleothems -->
 <g id="node5" class="node">
@@ -182,26 +182,26 @@
 <text text-anchor="start" x="1237.49" y="-1087" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="1268.61" y="-1087" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="1110.01,-1042.8 1110.01,-1073.6 1368.98,-1073.6 1368.98,-1042.8 1110.01,-1042.8"/>
-<text text-anchor="start" x="1117.01" y="-1055" font-family="Arial" font-size="14.00">siteid </text>
-<text text-anchor="start" x="1153.59" y="-1055" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1117.01" y="-1055" font-family="Arial" font-size="14.00">entityid </text>
+<text text-anchor="start" x="1165.26" y="-1055" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1110.01,-1012 1110.01,-1042.8 1368.98,-1042.8 1368.98,-1012 1110.01,-1012"/>
-<text text-anchor="start" x="1117.01" y="-1024.2" font-family="Arial" font-size="14.00">entityid </text>
-<text text-anchor="start" x="1165.26" y="-1024.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1117.01" y="-1024.2" font-family="Arial" font-size="14.00">entityname </text>
+<text text-anchor="start" x="1189.39" y="-1024.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="1110.01,-981.2 1110.01,-1012 1368.98,-1012 1368.98,-981.2 1110.01,-981.2"/>
-<text text-anchor="start" x="1117.01" y="-993.4" font-family="Arial" font-size="14.00">entityname </text>
-<text text-anchor="start" x="1189.39" y="-993.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="1117.01" y="-993.4" font-family="Arial" font-size="14.00">entrancedistance </text>
+<text text-anchor="start" x="1227.53" y="-993.4" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
 <polygon fill="none" stroke="black" points="1110.01,-950.4 1110.01,-981.2 1368.98,-981.2 1368.98,-950.4 1110.01,-950.4"/>
-<text text-anchor="start" x="1117.01" y="-962.6" font-family="Arial" font-size="14.00">monitoring </text>
-<text text-anchor="start" x="1186.27" y="-962.6" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<text text-anchor="start" x="1117.01" y="-962.6" font-family="Arial" font-size="14.00">entrancedistanceunits </text>
+<text text-anchor="start" x="1257.1" y="-962.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1110.01,-919.6 1110.01,-950.4 1368.98,-950.4 1368.98,-919.6 1110.01,-919.6"/>
-<text text-anchor="start" x="1117.01" y="-931.8" font-family="Arial" font-size="14.00">rockageid </text>
-<text text-anchor="start" x="1181.61" y="-931.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1117.01" y="-931.8" font-family="Arial" font-size="14.00">monitoring </text>
+<text text-anchor="start" x="1186.27" y="-931.8" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
 <polygon fill="none" stroke="black" points="1110.01,-888.8 1110.01,-919.6 1368.98,-919.6 1368.98,-888.8 1110.01,-888.8"/>
-<text text-anchor="start" x="1117.01" y="-901" font-family="Arial" font-size="14.00">entrancedistance </text>
-<text text-anchor="start" x="1227.53" y="-901" font-family="Arial" font-size="14.00" fill="#666666">[real]</text>
+<text text-anchor="start" x="1117.01" y="-901" font-family="Arial" font-size="14.00">rockageid </text>
+<text text-anchor="start" x="1181.61" y="-901" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1110.01,-858 1110.01,-888.8 1368.98,-888.8 1368.98,-858 1110.01,-858"/>
-<text text-anchor="start" x="1117.01" y="-870.2" font-family="Arial" font-size="14.00">entrancedistanceunits </text>
-<text text-anchor="start" x="1257.1" y="-870.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="1117.01" y="-870.2" font-family="Arial" font-size="14.00">siteid </text>
+<text text-anchor="start" x="1153.59" y="-870.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="1110.01,-827.2 1110.01,-858 1368.98,-858 1368.98,-827.2 1110.01,-827.2"/>
 <text text-anchor="start" x="1117.01" y="-839.4" font-family="Arial" font-size="14.00">speleothemtypeid </text>
 <text text-anchor="start" x="1230.64" y="-839.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
@@ -209,9 +209,9 @@
 <!-- ndb.speleothems&#45;&gt;ndb.relativeages -->
 <g id="edge4" class="edge">
 <title>ndb.speleothems:rockageid&#45;&gt;ndb.relativeages:relativeageid</title>
-<path fill="none" stroke="black" d="M1098.73,-934.31C1042.53,-926.15 1080.62,-847.07 1057.5,-784 1036.1,-725.63 1068.56,-653.8 1006.4,-653.8"/>
-<polygon fill="black" stroke="black" points="1098.7,-934.31 1108.38,-939.47 1104.03,-934.67 1108.35,-934.96 1108.35,-934.96 1108.35,-934.96 1104.03,-934.67 1108.98,-930.49 1098.7,-934.31"/>
-<text text-anchor="start" x="1116.01" y="-945" font-family="Arial" font-size="10.00">FOREIGN KEY (rockageid) REFERENCES ndb.relativeages(relativeageid)</text>
+<path fill="none" stroke="black" d="M1098.83,-902.69C1003.96,-872.7 1115.5,-407.4 1006.4,-407.4"/>
+<polygon fill="black" stroke="black" points="1098.79,-902.68 1108.02,-908.6 1104.07,-903.46 1108.35,-904.1 1108.35,-904.1 1108.35,-904.1 1104.07,-903.46 1109.35,-899.7 1098.79,-902.68"/>
+<text text-anchor="start" x="1116.01" y="-914.2" font-family="Arial" font-size="10.00">FOREIGN KEY (rockageid) REFERENCES ndb.relativeages(relativeageid)</text>
 </g>
 </g>
 </svg>

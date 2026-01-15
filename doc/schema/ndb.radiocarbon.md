@@ -6,26 +6,32 @@
 
 | #  | Name                | Type                           | Default                      | Nullable | Children | Parents                                             | Comment |
 | -- | ------------------- | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------------------- | ------- |
-| 1  | geochronid          | integer                        |                              | false    |          | [ndb.geochronology](ndb.geochronology.md)           |         |
-| 2  | radiocarbonmethodid | integer                        |                              | true     |          | [ndb.radiocarbonmethods](ndb.radiocarbonmethods.md) |         |
-| 3  | percentc            | double precision               |                              | true     |          |                                                     |         |
-| 4  | percentn            | double precision               |                              | true     |          |                                                     |         |
-| 5  | delta13c            | double precision               |                              | true     |          |                                                     |         |
-| 6  | delta15n            | double precision               |                              | true     |          |                                                     |         |
+| 1  | cnratio             | double precision               |                              | true     |          |                                                     |         |
+| 2  | delta13c            | double precision               |                              | true     |          |                                                     |         |
+| 3  | delta15n            | double precision               |                              | true     |          |                                                     |         |
+| 4  | geochronid          | integer                        |                              | false    |          | [ndb.geochronology](ndb.geochronology.md)           |         |
+| 5  | masscmg             | double precision               |                              | true     |          |                                                     |         |
+| 6  | percentc            | double precision               |                              | true     |          |                                                     |         |
 | 7  | percentcollagen     | double precision               |                              | true     |          |                                                     |         |
-| 8  | reservoir           | double precision               |                              | true     |          |                                                     |         |
-| 9  | recdatecreated      | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                     |         |
-| 10 | recdatemodified     | timestamp(0) without time zone |                              | false    |          |                                                     |         |
-| 11 | masscmg             | double precision               |                              | true     |          |                                                     |         |
-| 12 | cnratio             | double precision               |                              | true     |          |                                                     |         |
+| 8  | percentn            | double precision               |                              | true     |          |                                                     |         |
+| 9  | radiocarbonmethodid | integer                        |                              | true     |          | [ndb.radiocarbonmethods](ndb.radiocarbonmethods.md) |         |
+| 10 | recdatecreated      | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                     |         |
+| 11 | recdatemodified     | timestamp(0) without time zone |                              | false    |          |                                                     |         |
+| 12 | reservoir           | double precision               |                              | true     |          |                                                     |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 
 | # | Name                    | Type        | Definition                                                                               |
 | - | ----------------------- | ----------- | ---------------------------------------------------------------------------------------- |
 | 1 | fk_geochrons_geochronid | FOREIGN KEY | FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON DELETE CASCADE      |
-| 2 | radiocarbon_pkey        | PRIMARY KEY | PRIMARY KEY (geochronid)                                                                 |
-| 3 | fk_radiocarbonmethodid  | FOREIGN KEY | FOREIGN KEY (radiocarbonmethodid) REFERENCES ndb.radiocarbonmethods(radiocarbonmethodid) |
+| 2 | fk_radiocarbonmethodid  | FOREIGN KEY | FOREIGN KEY (radiocarbonmethodid) REFERENCES ndb.radiocarbonmethods(radiocarbonmethodid) |
+| 3 | radiocarbon_pkey        | PRIMARY KEY | PRIMARY KEY (geochronid)                                                                 |
 | 4 | radiocarbon_unique      | UNIQUE      | UNIQUE (geochronid)                                                                      |
 
 ## Indexes

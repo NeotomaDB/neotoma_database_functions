@@ -9,9 +9,9 @@
 | 1 | dataid                | integer                        |                              | false    |          | [ndb.data](ndb.data.md)                                 |         |
 | 2 | isopretreatmenttypeid | integer                        |                              | false    |          | [ndb.isopretreatmenttypes](ndb.isopretreatmenttypes.md) |         |
 | 3 | order                 | integer                        |                              | false    |          |                                                         |         |
-| 4 | value                 | double precision               |                              | true     |          |                                                         |         |
-| 5 | recdatecreated        | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                         |         |
-| 6 | recdatemodified       | timestamp(0) without time zone |                              | false    |          |                                                         |         |
+| 4 | recdatecreated        | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                         |         |
+| 5 | recdatemodified       | timestamp(0) without time zone |                              | false    |          |                                                         |         |
+| 6 | value                 | double precision               |                              | true     |          |                                                         |         |
 
 ## Constraints
 

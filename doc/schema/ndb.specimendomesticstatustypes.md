@@ -6,8 +6,8 @@
 
 | # | Name             | Type                           | Default                                                                   | Nullable | Children                          | Parents | Comment |
 | - | ---------------- | ------------------------------ | ------------------------------------------------------------------------- | -------- | --------------------------------- | ------- | ------- |
-| 1 | domesticstatusid | integer                        | nextval('ndb.seq_specimendomesticstatustypes_domesticstatusid'::regclass) | false    | [ndb.specimens](ndb.specimens.md) |         |         |
-| 2 | domesticstatus   | varchar(24)                    |                                                                           | false    |                                   |         |         |
+| 1 | domesticstatus   | varchar(24)                    |                                                                           | false    |                                   |         |         |
+| 2 | domesticstatusid | integer                        | nextval('ndb.seq_specimendomesticstatustypes_domesticstatusid'::regclass) | false    | [ndb.specimens](ndb.specimens.md) |         |         |
 | 3 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now())                                              | false    |                                   |         |         |
 | 4 | recdatemodified  | timestamp(0) without time zone |                                                                           | false    |                                   |         |         |
 

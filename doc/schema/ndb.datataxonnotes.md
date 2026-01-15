@@ -6,21 +6,27 @@
 
 | # | Name             | Type                           | Default                                                      | Nullable | Children | Parents                         | Comment |
 | - | ---------------- | ------------------------------ | ------------------------------------------------------------ | -------- | -------- | ------------------------------- | ------- |
-| 1 | datataxonnotesid | integer                        | nextval('ndb.seq_datataxonnotes_datataxonnotesid'::regclass) | false    |          |                                 |         |
+| 1 | contactid        | integer                        |                                                              | false    |          | [ndb.contacts](ndb.contacts.md) |         |
 | 2 | dataid           | integer                        |                                                              | false    |          | [ndb.data](ndb.data.md)         |         |
-| 3 | contactid        | integer                        |                                                              | false    |          | [ndb.contacts](ndb.contacts.md) |         |
+| 3 | datataxonnotesid | integer                        | nextval('ndb.seq_datataxonnotes_datataxonnotesid'::regclass) | false    |          |                                 |         |
 | 4 | date             | date                           |                                                              | false    |          |                                 |         |
 | 5 | notes            | text                           |                                                              | false    |          |                                 |         |
 | 6 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now())                                 | false    |          |                                 |         |
 | 7 | recdatemodified  | timestamp(0) without time zone |                                                              | false    |          |                                 |         |
 
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
+
 ## Constraints
 
 | # | Name                       | Type        | Definition                                                                           |
 | - | -------------------------- | ----------- | ------------------------------------------------------------------------------------ |
-| 1 | fk_datataxonnotes_contacts | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid)                           |
-| 2 | fk_datataxonnotes_data     | FOREIGN KEY | FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | datataxonnotes_pkey        | PRIMARY KEY | PRIMARY KEY (datataxonnotesid)                                                       |
+| 1 | datataxonnotes_pkey        | PRIMARY KEY | PRIMARY KEY (datataxonnotesid)                                                       |
+| 2 | fk_datataxonnotes_contacts | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid)                           |
+| 3 | fk_datataxonnotes_data     | FOREIGN KEY | FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE |
 
 ## Indexes
 

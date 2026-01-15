@@ -6,10 +6,16 @@
 
 | # | Name                | Type                           | Default                                                             | Nullable | Children                              | Parents | Comment |
 | - | ------------------- | ------------------------------ | ------------------------------------------------------------------- | -------- | ------------------------------------- | ------- | ------- |
-| 1 | radiocarbonmethodid | integer                        | nextval('ndb.seq_radiocarbonmethods_radiocarbonmethodid'::regclass) | false    | [ndb.radiocarbon](ndb.radiocarbon.md) |         |         |
-| 2 | radiocarbonmethod   | varchar(64)                    |                                                                     | false    |                                       |         |         |
+| 1 | radiocarbonmethod   | varchar(64)                    |                                                                     | false    |                                       |         |         |
+| 2 | radiocarbonmethodid | integer                        | nextval('ndb.seq_radiocarbonmethods_radiocarbonmethodid'::regclass) | false    | [ndb.radiocarbon](ndb.radiocarbon.md) |         |         |
 | 3 | recdatecreated      | timestamp(0) without time zone | timezone('UTC'::text, now())                                        | false    |                                       |         |         |
 | 4 | recdatemodified     | timestamp(0) without time zone |                                                                     | false    |                                       |         |         |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

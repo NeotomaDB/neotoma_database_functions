@@ -6,9 +6,9 @@
 
 | # | Name                     | Type        | Default                                                                   | Nullable | Children                                        | Parents | Comment |
 | - | ------------------------ | ----------- | ------------------------------------------------------------------------- | -------- | ----------------------------------------------- | ------- | ------- |
-| 1 | taxaalthierarchytypeid   | integer     | nextval('ndb.seq_taxaalthierarchytypes_taxaalthierarchytypeid'::regclass) | false    | [ndb.taxaalthierarchy](ndb.taxaalthierarchy.md) |         |         |
+| 1 | taxaalthierarchydescript | text        |                                                                           | true     |                                                 |         |         |
 | 2 | taxaalthierarchyname     | varchar(50) |                                                                           | false    |                                                 |         |         |
-| 3 | taxaalthierarchydescript | text        |                                                                           | true     |                                                 |         |         |
+| 3 | taxaalthierarchytypeid   | integer     | nextval('ndb.seq_taxaalthierarchytypes_taxaalthierarchytypeid'::regclass) | false    | [ndb.taxaalthierarchy](ndb.taxaalthierarchy.md) |         |         |
 
 ## Viewpoints
 

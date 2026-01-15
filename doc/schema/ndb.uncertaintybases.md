@@ -6,8 +6,8 @@
 
 | # | Name               | Type    | Default                                                          | Nullable | Children                                          | Parents | Comment |
 | - | ------------------ | ------- | ---------------------------------------------------------------- | -------- | ------------------------------------------------- | ------- | ------- |
-| 1 | uncertaintybasisid | integer | nextval('ndb.uncertaintybases_uncertaintybasisid_seq'::regclass) | false    | [ndb.datauncertainties](ndb.datauncertainties.md) |         |         |
-| 2 | uncertaintybasis   | text    |                                                                  | true     |                                                   |         |         |
+| 1 | uncertaintybasis   | text    |                                                                  | true     |                                                   |         |         |
+| 2 | uncertaintybasisid | integer | nextval('ndb.uncertaintybases_uncertaintybasisid_seq'::regclass) | false    | [ndb.datauncertainties](ndb.datauncertainties.md) |         |         |
 
 ## Constraints
 

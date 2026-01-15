@@ -8,36 +8,42 @@ This table enables queries for dated specimens of individual taxa. Although the 
 
 | #  | Name            | Type                           | Default                                                   | Nullable | Children                                        | Parents                                   | Comment                                                                       |
 | -- | --------------- | ------------------------------ | --------------------------------------------------------- | -------- | ----------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------------- |
-| 1  | specimendateid  | integer                        | nextval('ndb.seq_specimendates_specimendateid'::regclass) | false    | [ndb.specimendatescal](ndb.specimendatescal.md) |                                           | An arbitrary specimen date ID                                                 |
-| 2  | geochronid      | integer                        |                                                           | false    |                                                 | [ndb.geochronology](ndb.geochronology.md) | Geochronologic identification number. Field links to the Geochronology table. |
-| 3  | taxonid         | integer                        |                                                           | false    |                                                 | [ndb.taxa](ndb.taxa.md)                   | Accepted name in Neotoma. Field links to Taxa table.                          |
-| 4  | fractionid      | integer                        |                                                           | true     |                                                 | [ndb.fractiondated](ndb.fractiondated.md) |                                                                               |
-| 5  | sampleid        | integer                        |                                                           | false    |                                                 | [ndb.samples](ndb.samples.md)             | Sample ID number. Field links to the Samples table.                           |
-| 6  | notes           | text                           |                                                           | true     |                                                 |                                           | Free form notes or comments about dated specimens.                            |
-| 7  | elementtypeid   | integer                        |                                                           | true     |                                                 | [ndb.elementtypes](ndb.elementtypes.md)   |                                                                               |
-| 8  | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                              | false    |                                                 |                                           |                                                                               |
-| 9  | recdatemodified | timestamp(0) without time zone |                                                           | false    |                                                 |                                           |                                                                               |
-| 10 | specimenid      | integer                        |                                                           | true     |                                                 | [ndb.specimens](ndb.specimens.md)         |                                                                               |
+| 1  | elementtypeid   | integer                        |                                                           | true     |                                                 | [ndb.elementtypes](ndb.elementtypes.md)   |                                                                               |
+| 2  | fractionid      | integer                        |                                                           | true     |                                                 | [ndb.fractiondated](ndb.fractiondated.md) |                                                                               |
+| 3  | geochronid      | integer                        |                                                           | false    |                                                 | [ndb.geochronology](ndb.geochronology.md) | Geochronologic identification number. Field links to the Geochronology table. |
+| 4  | notes           | text                           |                                                           | true     |                                                 |                                           | Free form notes or comments about dated specimens.                            |
+| 5  | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                              | false    |                                                 |                                           |                                                                               |
+| 6  | recdatemodified | timestamp(0) without time zone |                                                           | false    |                                                 |                                           |                                                                               |
+| 7  | sampleid        | integer                        |                                                           | false    |                                                 | [ndb.samples](ndb.samples.md)             | Sample ID number. Field links to the Samples table.                           |
+| 8  | specimendateid  | integer                        | nextval('ndb.seq_specimendates_specimendateid'::regclass) | false    | [ndb.specimendatescal](ndb.specimendatescal.md) |                                           | An arbitrary specimen date ID                                                 |
+| 9  | specimenid      | integer                        |                                                           | true     |                                                 | [ndb.specimens](ndb.specimens.md)         |                                                                               |
+| 10 | taxonid         | integer                        |                                                           | false    |                                                 | [ndb.taxa](ndb.taxa.md)                   | Accepted name in Neotoma. Field links to Taxa table.                          |
+
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 
 | # | Name                       | Type        | Definition                                                                                            |
 | - | -------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
-| 1 | sd_etyid                   | FOREIGN KEY | FOREIGN KEY (elementtypeid) REFERENCES ndb.elementtypes(elementtypeid)                                |
-| 2 | sd_fcid                    | FOREIGN KEY | FOREIGN KEY (fractionid) REFERENCES ndb.fractiondated(fractionid)                                     |
-| 3 | sd_gcid                    | FOREIGN KEY | FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 4 | sd_smpid                   | FOREIGN KEY | FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE           |
-| 5 | specimendates_pkey         | PRIMARY KEY | PRIMARY KEY (specimendateid)                                                                          |
-| 6 | fk_specimendates_specimens | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE     |
-| 7 | sd_txid                    | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)                                                    |
+| 1 | fk_specimendates_specimens | FOREIGN KEY | FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE     |
+| 2 | sd_etyid                   | FOREIGN KEY | FOREIGN KEY (elementtypeid) REFERENCES ndb.elementtypes(elementtypeid)                                |
+| 3 | sd_fcid                    | FOREIGN KEY | FOREIGN KEY (fractionid) REFERENCES ndb.fractiondated(fractionid)                                     |
+| 4 | sd_gcid                    | FOREIGN KEY | FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 5 | sd_smpid                   | FOREIGN KEY | FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE           |
+| 6 | sd_txid                    | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)                                                    |
+| 7 | specimendates_pkey         | PRIMARY KEY | PRIMARY KEY (specimendateid)                                                                          |
 
 ## Indexes
 
 | # | Name                      | Definition                                                                                                |
 | - | ------------------------- | --------------------------------------------------------------------------------------------------------- |
-| 1 | specimendates_pkey        | CREATE UNIQUE INDEX specimendates_pkey ON ndb.specimendates USING btree (specimendateid)                  |
-| 2 | ix_sampleid_specimendates | CREATE INDEX ix_sampleid_specimendates ON ndb.specimendates USING btree (sampleid) WITH (fillfactor='10') |
-| 3 | ix_taxonid_specimendates  | CREATE INDEX ix_taxonid_specimendates ON ndb.specimendates USING btree (taxonid) WITH (fillfactor='10')   |
+| 1 | ix_sampleid_specimendates | CREATE INDEX ix_sampleid_specimendates ON ndb.specimendates USING btree (sampleid) WITH (fillfactor='10') |
+| 2 | ix_taxonid_specimendates  | CREATE INDEX ix_taxonid_specimendates ON ndb.specimendates USING btree (taxonid) WITH (fillfactor='10')   |
+| 3 | specimendates_pkey        | CREATE UNIQUE INDEX specimendates_pkey ON ndb.specimendates USING btree (specimendateid)                  |
 
 ## Triggers
 

@@ -6,18 +6,18 @@
 
 | # | Name                    | Type         | Default                                                                 | Nullable | Children                                                                                                                                                                                                            | Parents                                 | Comment |
 | - | ----------------------- | ------------ | ----------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | ------- |
-| 1 | vegetationcovertypeid   | integer      | nextval('ndb.vegetationcovertypes_vegetationcovertypeid_seq'::regclass) | false    | [ndb.sitevegetationcover](ndb.sitevegetationcover.md) [ndb.sitelandusecover](ndb.sitelandusecover.md) [ndb.entityvegetationcover](ndb.entityvegetationcover.md) [ndb.entitylandusecover](ndb.entitylandusecover.md) |                                         |         |
+| 1 | vegetationcovernotes    | text         |                                                                         | true     |                                                                                                                                                                                                                     |                                         |         |
 | 2 | vegetationcovertype     | varchar(128) |                                                                         | true     |                                                                                                                                                                                                                     |                                         |         |
-| 3 | vegetationcovernotes    | text         |                                                                         | true     |                                                                                                                                                                                                                     |                                         |         |
+| 3 | vegetationcovertypeid   | integer      | nextval('ndb.vegetationcovertypes_vegetationcovertypeid_seq'::regclass) | false    | [ndb.entitylandusecover](ndb.entitylandusecover.md) [ndb.entityvegetationcover](ndb.entityvegetationcover.md) [ndb.sitelandusecover](ndb.sitelandusecover.md) [ndb.sitevegetationcover](ndb.sitevegetationcover.md) |                                         |         |
 | 4 | vegetationpublicationid | integer      |                                                                         | true     |                                                                                                                                                                                                                     | [ndb.publications](ndb.publications.md) |         |
 
 ## Constraints
 
 | # | Name                                              | Type        | Definition                                                                       |
 | - | ------------------------------------------------- | ----------- | -------------------------------------------------------------------------------- |
-| 1 | vegetationcovertypes_vegetationpublicationid_fkey | FOREIGN KEY | FOREIGN KEY (vegetationpublicationid) REFERENCES ndb.publications(publicationid) |
-| 2 | vegetationcovertypes_pkey                         | PRIMARY KEY | PRIMARY KEY (vegetationcovertypeid)                                              |
-| 3 | vegetationcovertypes_vegetationcovertype_key      | UNIQUE      | UNIQUE (vegetationcovertype)                                                     |
+| 1 | vegetationcovertypes_pkey                         | PRIMARY KEY | PRIMARY KEY (vegetationcovertypeid)                                              |
+| 2 | vegetationcovertypes_vegetationcovertype_key      | UNIQUE      | UNIQUE (vegetationcovertype)                                                     |
+| 3 | vegetationcovertypes_vegetationpublicationid_fkey | FOREIGN KEY | FOREIGN KEY (vegetationpublicationid) REFERENCES ndb.publications(publicationid) |
 
 ## Indexes
 

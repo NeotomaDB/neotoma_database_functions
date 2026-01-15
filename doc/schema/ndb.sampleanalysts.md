@@ -9,27 +9,33 @@ This table lists the Sample Analysts.
 | # | Name            | Type                           | Default                                               | Nullable | Children | Parents                         | Comment                                                            |
 | - | --------------- | ------------------------------ | ----------------------------------------------------- | -------- | -------- | ------------------------------- | ------------------------------------------------------------------ |
 | 1 | analystid       | integer                        | nextval('ndb.seq_sampleanalysts_analystid'::regclass) | false    |          |                                 | An arbitrary Sample Analyst identification number.                 |
-| 2 | sampleid        | integer                        |                                                       | false    |          | [ndb.samples](ndb.samples.md)   | Sample identification number. Field links to the Samples table.    |
+| 2 | analystorder    | integer                        |                                                       | false    |          |                                 | Order in which Sample Analysts are listed if more than one (rare). |
 | 3 | contactid       | integer                        |                                                       | false    |          | [ndb.contacts](ndb.contacts.md) | Contact identification number. Field links to the Contacts table.  |
-| 4 | analystorder    | integer                        |                                                       | false    |          |                                 | Order in which Sample Analysts are listed if more than one (rare). |
-| 5 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                          | false    |          |                                 |                                                                    |
-| 6 | recdatemodified | timestamp(0) without time zone |                                                       | false    |          |                                 |                                                                    |
+| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                          | false    |          |                                 |                                                                    |
+| 5 | recdatemodified | timestamp(0) without time zone |                                                       | false    |          |                                 |                                                                    |
+| 6 | sampleid        | integer                        |                                                       | false    |          | [ndb.samples](ndb.samples.md)   | Sample identification number. Field links to the Samples table.    |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 
 | # | Name                       | Type        | Definition                                                                                  |
 | - | -------------------------- | ----------- | ------------------------------------------------------------------------------------------- |
 | 1 | fk_sampleanalysts_contacts | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE                |
-| 2 | sampleanalysts_pkey        | PRIMARY KEY | PRIMARY KEY (analystid)                                                                     |
-| 3 | fk_sampleanalysts_samples  | FOREIGN KEY | FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_sampleanalysts_samples  | FOREIGN KEY | FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | sampleanalysts_pkey        | PRIMARY KEY | PRIMARY KEY (analystid)                                                                     |
 
 ## Indexes
 
 | # | Name                        | Definition                                                                                                    |
 | - | --------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 1 | sampleanalysts_pkey         | CREATE UNIQUE INDEX sampleanalysts_pkey ON ndb.sampleanalysts USING btree (analystid)                         |
-| 2 | ix_contactid_sampleanalysts | CREATE INDEX ix_contactid_sampleanalysts ON ndb.sampleanalysts USING btree (contactid) WITH (fillfactor='10') |
-| 3 | ix_sampleid_sampleanalysts  | CREATE INDEX ix_sampleid_sampleanalysts ON ndb.sampleanalysts USING btree (sampleid) WITH (fillfactor='10')   |
+| 1 | ix_contactid_sampleanalysts | CREATE INDEX ix_contactid_sampleanalysts ON ndb.sampleanalysts USING btree (contactid) WITH (fillfactor='10') |
+| 2 | ix_sampleid_sampleanalysts  | CREATE INDEX ix_sampleid_sampleanalysts ON ndb.sampleanalysts USING btree (sampleid) WITH (fillfactor='10')   |
+| 3 | sampleanalysts_pkey         | CREATE UNIQUE INDEX sampleanalysts_pkey ON ndb.sampleanalysts USING btree (analystid)                         |
 
 ## Triggers
 

@@ -2,14 +2,16 @@
 
 ## Description
 
+A set of variables associated with lakes, including area, depth and volume.
+
 ## Columns
 
 | # | Name                   | Type                           | Default                                                         | Nullable | Children                                    | Parents | Comment                               |
 | - | ---------------------- | ------------------------------ | --------------------------------------------------------------- | -------- | ------------------------------------------- | ------- | ------------------------------------- |
-| 1 | lakeparameterid        | integer                        | nextval('ndb.seq_lakeparametertypes_lakeparameterid'::regclass) | false    | [ndb.lakeparameters](ndb.lakeparameters.md) |         | PK: LakeParameterID                   |
+| 1 | lakeparameter          | varchar(80)                    |                                                                 | false    |                                             |         | Full name                             |
 | 2 | lakeparametercode      | varchar(20)                    |                                                                 | false    |                                             |         | Code espcially for data entry apps    |
-| 3 | lakeparametershortname | varchar(40)                    |                                                                 | false    |                                             |         | Short name useful for data entry apps |
-| 4 | lakeparameter          | varchar(80)                    |                                                                 | false    |                                             |         | Full name                             |
+| 3 | lakeparameterid        | integer                        | nextval('ndb.seq_lakeparametertypes_lakeparameterid'::regclass) | false    | [ndb.lakeparameters](ndb.lakeparameters.md) |         | PK: LakeParameterID                   |
+| 4 | lakeparametershortname | varchar(40)                    |                                                                 | false    |                                             |         | Short name useful for data entry apps |
 | 5 | recdatecreated         | timestamp(0) without time zone | timezone('UTC'::text, now())                                    | false    |                                             |         |                                       |
 | 6 | recdatemodified        | timestamp(0) without time zone |                                                                 | false    |                                             |         |                                       |
 

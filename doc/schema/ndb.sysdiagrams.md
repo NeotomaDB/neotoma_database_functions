@@ -6,11 +6,11 @@
 
 | # | Name         | Type    | Default                                             | Nullable | Children | Parents | Comment |
 | - | ------------ | ------- | --------------------------------------------------- | -------- | -------- | ------- | ------- |
-| 1 | name         | varchar |                                                     | false    |          |         |         |
-| 2 | principal_id | integer |                                                     | false    |          |         |         |
-| 3 | diagram_id   | integer | nextval('ndb.seq_sysdiagrams_diagram_id'::regclass) | false    |          |         |         |
-| 4 | version      | integer |                                                     | true     |          |         |         |
-| 5 | definition   | bytea   |                                                     | true     |          |         |         |
+| 1 | definition   | bytea   |                                                     | true     |          |         |         |
+| 2 | diagram_id   | integer | nextval('ndb.seq_sysdiagrams_diagram_id'::regclass) | false    |          |         |         |
+| 3 | name         | varchar |                                                     | false    |          |         |         |
+| 4 | principal_id | integer |                                                     | false    |          |         |         |
+| 5 | version      | integer |                                                     | true     |          |         |         |
 
 ## Constraints
 

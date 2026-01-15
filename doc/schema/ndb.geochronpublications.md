@@ -13,13 +13,19 @@ Publications in which Geochronologic measurements are reported. Many older radio
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |                                                                               |
 | 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                           |                                                                               |
 
+## Viewpoints
+
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
+
 ## Constraints
 
 | # | Name                                  | Type        | Definition                                                                                                 |
 | - | ------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
 | 1 | fk_geochronpublications_geochronology | FOREIGN KEY | FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE      |
-| 2 | geochronpublications_pkey             | PRIMARY KEY | PRIMARY KEY (geochronid, publicationid)                                                                    |
-| 3 | fk_geochronpublications_publications  | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_geochronpublications_publications  | FOREIGN KEY | FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | geochronpublications_pkey             | PRIMARY KEY | PRIMARY KEY (geochronid, publicationid)                                                                    |
 
 ## Indexes
 

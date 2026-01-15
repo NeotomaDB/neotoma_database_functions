@@ -9,10 +9,16 @@ This table lists the publications for datasets.
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                 | Comment                                                                  |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------- | ------------------------------------------------------------------------ |
 | 1 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md)         | Dataset identification number. Field links to Dataset table.             |
-| 2 | publicationid   | integer                        |                              | false    |          | [ndb.publications](ndb.publications.md) | Publication identification number. Field links to Publications table.    |
-| 3 | primarypub      | boolean                        |                              | true     |          |                                         | Is «True» if the publication is the primary publication for the dataset. |
+| 2 | primarypub      | boolean                        |                              | true     |          |                                         | Is «True» if the publication is the primary publication for the dataset. |
+| 3 | publicationid   | integer                        |                              | false    |          | [ndb.publications](ndb.publications.md) | Publication identification number. Field links to Publications table.    |
 | 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                         |                                                                          |
 | 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                         |                                                                          |
+
+## Viewpoints
+
+| Name                                     | Definition                                      |
+| ---------------------------------------- | ----------------------------------------------- |
+| [Dataset related tables](viewpoint-3.md) | Tables that help define and structure datasets. |
 
 ## Constraints
 

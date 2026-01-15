@@ -6,17 +6,18 @@
 
 | # | Name               | Type                           | Default                                                           | Nullable | Children                                                                                              | Parents                                 | Comment |
 | - | ------------------ | ------------------------------ | ----------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------- | ------- |
-| 1 | calibrationcurveid | integer                        | nextval('ndb.seq_calibrationcurves_calibrationcurveid'::regclass) | false    | [ndb.chroncontrolscal14c](ndb.chroncontrolscal14c.md) [ndb.specimendatescal](ndb.specimendatescal.md) |                                         |         |
-| 2 | calibrationcurve   | varchar(24)                    |                                                                   | false    |                                                                                                       |                                         |         |
+| 1 | calibrationcurve   | varchar(24)                    |                                                                   | false    |                                                                                                       |                                         |         |
+| 2 | calibrationcurveid | integer                        | nextval('ndb.seq_calibrationcurves_calibrationcurveid'::regclass) | false    | [ndb.chroncontrolscal14c](ndb.chroncontrolscal14c.md) [ndb.specimendatescal](ndb.specimendatescal.md) |                                         |         |
 | 3 | publicationid      | integer                        |                                                                   | false    |                                                                                                       | [ndb.publications](ndb.publications.md) |         |
 | 4 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now())                                      | false    |                                                                                                       |                                         |         |
 | 5 | recdatemodified    | timestamp(0) without time zone |                                                                   | false    |                                                                                                       |                                         |         |
 
 ## Viewpoints
 
-| Name                                      | Definition                           |
-| ----------------------------------------- | ------------------------------------ |
-| [Controlled Vocabularies](viewpoint-0.md) | Tables with controlled vocabularies. |
+| Name                                        | Definition                                        |
+| ------------------------------------------- | ------------------------------------------------- |
+| [Controlled Vocabularies](viewpoint-0.md)   | Tables with controlled vocabularies.              |
+| [Chronology related tables](viewpoint-5.md) | Tables related to chronology and age assignments. |
 
 ## Constraints
 

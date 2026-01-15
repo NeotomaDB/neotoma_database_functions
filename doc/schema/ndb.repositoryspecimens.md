@@ -9,10 +9,10 @@ This table lists the repositories in which fossil specimens have been accessione
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                                     | Comment                                                                                   |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | 1 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md)                             | Dataset identification number. Field links to the Datasets table.                         |
-| 2 | repositoryid    | integer                        |                              | false    |          | [ndb.repositoryinstitutions](ndb.repositoryinstitutions.md) | Repository identification number. Field links to the RepositoryInstitutions lookup table. |
-| 3 | notes           | text                           |                              | true     |          |                                                             | Free form notes or comments about the disposition of the specimens.                       |
-| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                             |                                                                                           |
-| 5 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                             |                                                                                           |
+| 2 | notes           | text                           |                              | true     |          |                                                             | Free form notes or comments about the disposition of the specimens.                       |
+| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                             |                                                                                           |
+| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                             |                                                                                           |
+| 5 | repositoryid    | integer                        |                              | false    |          | [ndb.repositoryinstitutions](ndb.repositoryinstitutions.md) | Repository identification number. Field links to the RepositoryInstitutions lookup table. |
 
 ## Constraints
 
@@ -26,8 +26,8 @@ This table lists the repositories in which fossil specimens have been accessione
 
 | # | Name                             | Definition                                                                                                              |
 | - | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| 1 | repositoryspecimens_pkey         | CREATE UNIQUE INDEX repositoryspecimens_pkey ON ndb.repositoryspecimens USING btree (datasetid, repositoryid)           |
-| 2 | ix_datasetid_repositoryspecimens | CREATE INDEX ix_datasetid_repositoryspecimens ON ndb.repositoryspecimens USING btree (datasetid) WITH (fillfactor='10') |
+| 1 | ix_datasetid_repositoryspecimens | CREATE INDEX ix_datasetid_repositoryspecimens ON ndb.repositoryspecimens USING btree (datasetid) WITH (fillfactor='10') |
+| 2 | repositoryspecimens_pkey         | CREATE UNIQUE INDEX repositoryspecimens_pkey ON ndb.repositoryspecimens USING btree (datasetid, repositoryid)           |
 
 ## Triggers
 

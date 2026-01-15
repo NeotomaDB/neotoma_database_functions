@@ -8,8 +8,8 @@ Lookup table of Keywords referenced by the SampleKeywords table. The table provi
 
 | # | Name            | Type                           | Default                                         | Nullable | Children                                    | Parents | Comment                                                       |
 | - | --------------- | ------------------------------ | ----------------------------------------------- | -------- | ------------------------------------------- | ------- | ------------------------------------------------------------- |
-| 1 | keywordid       | integer                        | nextval('ndb.seq_keywords_keywordid'::regclass) | false    | [ndb.samplekeywords](ndb.samplekeywords.md) |         | An arbitrary Keyword identification number.                   |
-| 2 | keyword         | varchar(64)                    |                                                 | false    |                                             |         | A keyword for identifying samples sharing a common attribute. |
+| 1 | keyword         | varchar(64)                    |                                                 | false    |                                             |         | A keyword for identifying samples sharing a common attribute. |
+| 2 | keywordid       | integer                        | nextval('ndb.seq_keywords_keywordid'::regclass) | false    | [ndb.samplekeywords](ndb.samplekeywords.md) |         | An arbitrary Keyword identification number.                   |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                    | false    |                                             |         |                                                               |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                 | false    |                                             |         |                                                               |
 

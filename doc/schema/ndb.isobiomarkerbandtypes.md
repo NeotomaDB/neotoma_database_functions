@@ -6,9 +6,9 @@
 
 | # | Name                   | Type                           | Default                                                                   | Nullable | Children | Parents                                           | Comment |
 | - | ---------------------- | ------------------------------ | ------------------------------------------------------------------------- | -------- | -------- | ------------------------------------------------- | ------- |
-| 1 | isobiomarkerbandtypeid | integer                        | nextval('ndb.seq_isobiomarkerbandtypes_isobiomarkerbandtypeid'::regclass) | false    |          |                                                   |         |
-| 2 | isobiomarkertypeid     | integer                        |                                                                           | false    |          | [ndb.isobiomarkertypes](ndb.isobiomarkertypes.md) |         |
-| 3 | isobiomarkerbandtype   | varchar(50)                    |                                                                           | false    |          |                                                   |         |
+| 1 | isobiomarkerbandtype   | varchar(50)                    |                                                                           | false    |          |                                                   |         |
+| 2 | isobiomarkerbandtypeid | integer                        | nextval('ndb.seq_isobiomarkerbandtypes_isobiomarkerbandtypeid'::regclass) | false    |          |                                                   |         |
+| 3 | isobiomarkertypeid     | integer                        |                                                                           | false    |          | [ndb.isobiomarkertypes](ndb.isobiomarkertypes.md) |         |
 | 4 | recdatecreated         | timestamp(0) without time zone | timezone('UTC'::text, now())                                              | false    |          |                                                   |         |
 | 5 | recdatemodified        | timestamp(0) without time zone |                                                                           | false    |          |                                                   |         |
 
@@ -22,8 +22,8 @@
 
 | # | Name                                   | Type        | Definition                                                                                                                |
 | - | -------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | isobiomarkerbandtypes_pkey             | PRIMARY KEY | PRIMARY KEY (isobiomarkerbandtypeid)                                                                                      |
-| 2 | fk_isobiomarkerbands_isobiomarkertypes | FOREIGN KEY | FOREIGN KEY (isobiomarkertypeid) REFERENCES ndb.isobiomarkertypes(isobiomarkertypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 1 | fk_isobiomarkerbands_isobiomarkertypes | FOREIGN KEY | FOREIGN KEY (isobiomarkertypeid) REFERENCES ndb.isobiomarkertypes(isobiomarkertypeid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | isobiomarkerbandtypes_pkey             | PRIMARY KEY | PRIMARY KEY (isobiomarkerbandtypeid)                                                                                      |
 
 ## Indexes
 

@@ -7,11 +7,11 @@
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                 | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | --------------------------------------- | ------- |
 | 1 | dataid          | integer                        |                              | false    |          | [ndb.data](ndb.data.md)                 |         |
-| 2 | sd              | double precision               |                              | true     |          |                                         |         |
-| 3 | taxonid         | integer                        |                              | true     |          | [ndb.taxa](ndb.taxa.md)                 |         |
-| 4 | elementtypeid   | integer                        |                              | true     |          | [ndb.elementtypes](ndb.elementtypes.md) |         |
-| 5 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                         |         |
-| 6 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                         |         |
+| 2 | elementtypeid   | integer                        |                              | true     |          | [ndb.elementtypes](ndb.elementtypes.md) |         |
+| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                         |         |
+| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                         |         |
+| 5 | sd              | double precision               |                              | true     |          |                                         |         |
+| 6 | taxonid         | integer                        |                              | true     |          | [ndb.taxa](ndb.taxa.md)                 |         |
 
 ## Constraints
 
@@ -19,8 +19,8 @@
 | - | ---------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
 | 1 | fk_isostratdata_data         | FOREIGN KEY | FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE                       |
 | 2 | fk_isostratdata_elementtypes | FOREIGN KEY | FOREIGN KEY (elementtypeid) REFERENCES ndb.elementtypes(elementtypeid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | isostratdata_pkey            | PRIMARY KEY | PRIMARY KEY (dataid)                                                                                       |
-| 4 | fk_isostratdata_taxa         | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)                                                         |
+| 3 | fk_isostratdata_taxa         | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)                                                         |
+| 4 | isostratdata_pkey            | PRIMARY KEY | PRIMARY KEY (dataid)                                                                                       |
 
 ## Indexes
 

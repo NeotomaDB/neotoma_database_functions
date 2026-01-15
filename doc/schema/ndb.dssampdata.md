@@ -24,8 +24,8 @@ CREATE VIEW dssampdata AS (
 | # | Name         | Type    | Default | Nullable | Children | Parents | Comment |
 | - | ------------ | ------- | ------- | -------- | -------- | ------- | ------- |
 | 1 | datasetid    | integer |         | true     |          |         |         |
-| 2 | samples      | bigint  |         | true     |          |         |         |
-| 3 | observations | bigint  |         | true     |          |         |         |
+| 2 | observations | bigint  |         | true     |          |         |         |
+| 3 | samples      | bigint  |         | true     |          |         |         |
 
 ## Referenced Tables
 

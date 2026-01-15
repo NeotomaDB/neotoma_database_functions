@@ -6,8 +6,8 @@
 
 | # | Name                       | Type                           | Default                                                                           | Nullable | Children                                            | Parents | Comment |
 | - | -------------------------- | ------------------------------ | --------------------------------------------------------------------------------- | -------- | --------------------------------------------------- | ------- | ------- |
-| 1 | isosampleintrosystemtypeid | integer                        | nextval('ndb.seq_isosampleintrosystemtypes_isosampleintrosystemtypeid'::regclass) | false    | [ndb.isoinstrumentation](ndb.isoinstrumentation.md) |         |         |
-| 2 | isosampleintrosystemtype   | varchar(256)                   |                                                                                   | false    |                                                     |         |         |
+| 1 | isosampleintrosystemtype   | varchar(256)                   |                                                                                   | false    |                                                     |         |         |
+| 2 | isosampleintrosystemtypeid | integer                        | nextval('ndb.seq_isosampleintrosystemtypes_isosampleintrosystemtypeid'::regclass) | false    | [ndb.isoinstrumentation](ndb.isoinstrumentation.md) |         |         |
 | 3 | recdatecreated             | timestamp(0) without time zone | timezone('UTC'::text, now())                                                      | false    |                                                     |         |         |
 | 4 | recdatemodified            | timestamp(0) without time zone |                                                                                   | false    |                                                     |         |         |
 

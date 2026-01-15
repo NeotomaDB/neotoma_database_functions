@@ -6,8 +6,8 @@
 
 | # | Name      | Type    | Default                                               | Nullable | Children                            | Parents | Comment |
 | - | --------- | ------- | ----------------------------------------------------- | -------- | ----------------------------------- | ------- | ------- |
-| 1 | pbbasisid | integer | nextval('ndb.leadmodelbasis_pbbasisid_seq'::regclass) | false    | [ndb.leadmodels](ndb.leadmodels.md) |         |         |
-| 2 | pbbasis   | text    |                                                       | true     |                                     |         |         |
+| 1 | pbbasis   | text    |                                                       | true     |                                     |         |         |
+| 2 | pbbasisid | integer | nextval('ndb.leadmodelbasis_pbbasisid_seq'::regclass) | false    | [ndb.leadmodels](ndb.leadmodels.md) |         |         |
 
 ## Constraints
 

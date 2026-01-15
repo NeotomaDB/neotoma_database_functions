@@ -6,21 +6,28 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                         | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------- | ------- |
-| 1 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md) |         |
-| 2 | taxonid         | integer                        |                              | false    |          | [ndb.taxa](ndb.taxa.md)         |         |
-| 3 | contactid       | integer                        |                              | false    |          | [ndb.contacts](ndb.contacts.md) |         |
-| 4 | date            | date                           |                              | false    |          |                                 |         |
-| 5 | notes           | text                           |                              | false    |          |                                 |         |
-| 6 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                 |         |
-| 7 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                 |         |
+| 1 | contactid       | integer                        |                              | false    |          | [ndb.contacts](ndb.contacts.md) |         |
+| 2 | datasetid       | integer                        |                              | false    |          | [ndb.datasets](ndb.datasets.md) |         |
+| 3 | date            | date                           |                              | false    |          |                                 |         |
+| 4 | notes           | text                           |                              | false    |          |                                 |         |
+| 5 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                 |         |
+| 6 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                 |         |
+| 7 | taxonid         | integer                        |                              | false    |          | [ndb.taxa](ndb.taxa.md)         |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Dataset related tables](viewpoint-3.md) | Tables that help define and structure datasets.                  |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 
 | # | Name                          | Type        | Definition                                                                                     |
 | - | ----------------------------- | ----------- | ---------------------------------------------------------------------------------------------- |
-| 1 | fk_datasettaxonnotes_contacts | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid)                                     |
-| 2 | fk_datasettaxonnotes_datasets | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 3 | datasettaxonnotes_pkey        | PRIMARY KEY | PRIMARY KEY (datasetid, taxonid)                                                               |
+| 1 | datasettaxonnotes_pkey        | PRIMARY KEY | PRIMARY KEY (datasetid, taxonid)                                                               |
+| 2 | fk_datasettaxonnotes_contacts | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid)                                     |
+| 3 | fk_datasettaxonnotes_datasets | FOREIGN KEY | FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 4 | fk_datasettaxonnotes_taxa     | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE         |
 
 ## Indexes

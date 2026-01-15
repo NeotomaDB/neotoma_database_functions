@@ -6,12 +6,12 @@
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                           | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------------- | ------- |
-| 1 | taxonid         | integer                        |                              | false    |          | [ndb.taxa](ndb.taxa.md)                           |         |
-| 2 | extdatabaseid   | integer                        |                              | false    |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
-| 3 | exttaxonid      | varchar(64)                    |                              | false    |          |                                                   |         |
-| 4 | url             | varchar(128)                   |                              | true     |          |                                                   |         |
-| 5 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |         |
-| 6 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                   |         |
+| 1 | extdatabaseid   | integer                        |                              | false    |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
+| 2 | exttaxonid      | varchar(64)                    |                              | false    |          |                                                   |         |
+| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |         |
+| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                                   |         |
+| 5 | taxonid         | integer                        |                              | false    |          | [ndb.taxa](ndb.taxa.md)                           |         |
+| 6 | url             | varchar(128)                   |                              | true     |          |                                                   |         |
 
 ## Viewpoints
 
@@ -23,8 +23,8 @@
 
 | # | Name                              | Type        | Definition                                                                                                      |
 | - | --------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_externaltaxa_externaldatabases | FOREIGN KEY | FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | externaltaxa_pkey                 | PRIMARY KEY | PRIMARY KEY (taxonid, extdatabaseid, exttaxonid)                                                                |
+| 1 | externaltaxa_pkey                 | PRIMARY KEY | PRIMARY KEY (taxonid, extdatabaseid, exttaxonid)                                                                |
+| 2 | fk_externaltaxa_externaldatabases | FOREIGN KEY | FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 3 | fk_externaltaxa_taxa              | FOREIGN KEY | FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE                          |
 
 ## Indexes

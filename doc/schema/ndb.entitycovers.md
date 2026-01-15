@@ -6,17 +6,17 @@
 
 | # | Name                 | Type    | Default | Nullable | Children | Parents                                         | Comment |
 | - | -------------------- | ------- | ------- | -------- | -------- | ----------------------------------------------- | ------- |
-| 1 | entityid             | integer |         | true     |          | [ndb.speleothems](ndb.speleothems.md)           |         |
-| 2 | entitycoverid        | integer |         | true     |          | [ndb.entitycovertypes](ndb.entitycovertypes.md) |         |
-| 3 | entitycoverthickness | real    |         | true     |          |                                                 |         |
-| 4 | entitycoverunits     | integer |         | true     |          | [ndb.variableunits](ndb.variableunits.md)       |         |
+| 1 | entitycoverid        | integer |         | true     |          | [ndb.entitycovertypes](ndb.entitycovertypes.md) |         |
+| 2 | entitycoverthickness | real    |         | true     |          |                                                 |         |
+| 3 | entitycoverunits     | integer |         | true     |          | [ndb.variableunits](ndb.variableunits.md)       |         |
+| 4 | entityid             | integer |         | true     |          | [ndb.speleothems](ndb.speleothems.md)           |         |
 
 ## Constraints
 
 | # | Name                               | Type        | Definition                                                                    |
 | - | ---------------------------------- | ----------- | ----------------------------------------------------------------------------- |
-| 1 | entitycovers_entitycoverunits_fkey | FOREIGN KEY | FOREIGN KEY (entitycoverunits) REFERENCES ndb.variableunits(variableunitsid)  |
-| 2 | entitycovers_entitycoverid_fkey    | FOREIGN KEY | FOREIGN KEY (entitycoverid) REFERENCES ndb.entitycovertypes(entitycoverid)    |
+| 1 | entitycovers_entitycoverid_fkey    | FOREIGN KEY | FOREIGN KEY (entitycoverid) REFERENCES ndb.entitycovertypes(entitycoverid)    |
+| 2 | entitycovers_entitycoverunits_fkey | FOREIGN KEY | FOREIGN KEY (entitycoverunits) REFERENCES ndb.variableunits(variableunitsid)  |
 | 3 | entitycovers_entityid_fkey         | FOREIGN KEY | FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE |
 
 ## Relations

@@ -6,15 +6,15 @@
 
 | # | Name       | Type                        | Default                                       | Nullable | Children | Parents | Comment |
 | - | ---------- | --------------------------- | --------------------------------------------- | -------- | -------- | ------- | ------- |
-| 1 | fid        | integer                     | nextval('ap.globalmammals_fid_seq'::regclass) | false    |          |         |         |
-| 2 | sciname    | varchar                     |                                               | true     |          |         |         |
-| 3 | order      | varchar                     |                                               | true     |          |         |         |
-| 4 | family     | varchar                     |                                               | true     |          |         |         |
-| 5 | author     | varchar                     |                                               | true     |          |         |         |
-| 6 | year       | double precision            |                                               | true     |          |         |         |
-| 7 | citation   | varchar                     |                                               | true     |          |         |         |
-| 8 | rec_source | varchar                     |                                               | true     |          |         |         |
-| 9 | geom       | geometry(MultiPolygon,4326) |                                               | true     |          |         |         |
+| 1 | author     | varchar                     |                                               | true     |          |         |         |
+| 2 | citation   | varchar                     |                                               | true     |          |         |         |
+| 3 | family     | varchar                     |                                               | true     |          |         |         |
+| 4 | fid        | integer                     | nextval('ap.globalmammals_fid_seq'::regclass) | false    |          |         |         |
+| 5 | geom       | geometry(MultiPolygon,4326) |                                               | true     |          |         |         |
+| 6 | order      | varchar                     |                                               | true     |          |         |         |
+| 7 | rec_source | varchar                     |                                               | true     |          |         |         |
+| 8 | sciname    | varchar                     |                                               | true     |          |         |         |
+| 9 | year       | double precision            |                                               | true     |          |         |         |
 
 ## Constraints
 
@@ -26,8 +26,8 @@
 
 | # | Name                        | Definition                                                                     |
 | - | --------------------------- | ------------------------------------------------------------------------------ |
-| 1 | globalmammals_pkey          | CREATE UNIQUE INDEX globalmammals_pkey ON ap.globalmammals USING btree (fid)   |
-| 2 | globalmammals_geom_geom_idx | CREATE INDEX globalmammals_geom_geom_idx ON ap.globalmammals USING gist (geom) |
+| 1 | globalmammals_geom_geom_idx | CREATE INDEX globalmammals_geom_geom_idx ON ap.globalmammals USING gist (geom) |
+| 2 | globalmammals_pkey          | CREATE UNIQUE INDEX globalmammals_pkey ON ap.globalmammals USING btree (fid)   |
 
 ## Relations
 

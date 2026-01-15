@@ -14,8 +14,8 @@
 
 | # | Name                                      | Type        | Definition                                                                           |
 | - | ----------------------------------------- | ----------- | ------------------------------------------------------------------------------------ |
-| 1 | entityrelationship_entitystatusid_fkey    | FOREIGN KEY | FOREIGN KEY (entitystatusid) REFERENCES ndb.speleothementitystatuses(entitystatusid) |
-| 2 | entityrelationship_entityid_fkey          | FOREIGN KEY | FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid)                          |
+| 1 | entityrelationship_entityid_fkey          | FOREIGN KEY | FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid)                          |
+| 2 | entityrelationship_entitystatusid_fkey    | FOREIGN KEY | FOREIGN KEY (entitystatusid) REFERENCES ndb.speleothementitystatuses(entitystatusid) |
 | 3 | entityrelationship_referenceentityid_fkey | FOREIGN KEY | FOREIGN KEY (referenceentityid) REFERENCES ndb.speleothems(entityid)                 |
 
 ## Relations

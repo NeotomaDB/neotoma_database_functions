@@ -22,8 +22,8 @@ CREATE VIEW dslinks AS (
 
 | # | Name             | Type    | Default | Nullable | Children | Parents | Comment |
 | - | ---------------- | ------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | datasetid        | integer |         | true     |          |         |         |
-| 2 | collectionunitid | integer |         | true     |          |         |         |
+| 1 | collectionunitid | integer |         | true     |          |         |         |
+| 2 | datasetid        | integer |         | true     |          |         |         |
 | 3 | siteid           | integer |         | true     |          |         |         |
 
 ## Referenced Tables

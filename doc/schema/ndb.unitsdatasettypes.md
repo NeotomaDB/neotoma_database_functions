@@ -2,22 +2,24 @@
 
 ## Description
 
+Join table, associating measurement units with various datasettypes.
+
 ## Columns
 
 | # | Name            | Type                           | Default                      | Nullable | Children | Parents                                   | Comment |
 | - | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ----------------------------------------- | ------- |
 | 1 | datasettypeid   | integer                        |                              | false    |          | [ndb.datasettypes](ndb.datasettypes.md)   |         |
-| 2 | variableunitsid | integer                        |                              | false    |          | [ndb.variableunits](ndb.variableunits.md) |         |
-| 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
-| 4 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                           |         |
+| 2 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                           |         |
+| 3 | recdatemodified | timestamp(0) without time zone |                              | false    |          |                                           |         |
+| 4 | variableunitsid | integer                        |                              | false    |          | [ndb.variableunits](ndb.variableunits.md) |         |
 
 ## Constraints
 
 | # | Name                               | Type        | Definition                                                                                                      |
 | - | ---------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
 | 1 | fk_unitsdatasettypes_datasettypes  | FOREIGN KEY | FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) ON UPDATE CASCADE ON DELETE CASCADE      |
-| 2 | unitsdatasettypes_pkey             | PRIMARY KEY | PRIMARY KEY (datasettypeid, variableunitsid)                                                                    |
-| 3 | fk_unitsdatasettypes_variableunits | FOREIGN KEY | FOREIGN KEY (variableunitsid) REFERENCES ndb.variableunits(variableunitsid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 2 | fk_unitsdatasettypes_variableunits | FOREIGN KEY | FOREIGN KEY (variableunitsid) REFERENCES ndb.variableunits(variableunitsid) ON UPDATE CASCADE ON DELETE CASCADE |
+| 3 | unitsdatasettypes_pkey             | PRIMARY KEY | PRIMARY KEY (datasettypeid, variableunitsid)                                                                    |
 
 ## Indexes
 

@@ -8,11 +8,11 @@ Lookup table of Contact Statuses. Table is referenced by the Contacts table.
 
 | # | Name              | Type                           | Default                                                      | Nullable | Children                        | Parents | Comment                                            |
 | - | ----------------- | ------------------------------ | ------------------------------------------------------------ | -------- | ------------------------------- | ------- | -------------------------------------------------- |
-| 1 | contactstatusid   | integer                        | nextval('ndb.seq_contactstatuses_contactstatusid'::regclass) | false    | [ndb.contacts](ndb.contacts.md) |         | An arbitrary Contact Status identification number. |
-| 2 | contactstatus     | varchar(16)                    |                                                              | true     |                                 |         | Status of person, organization, or project.        |
-| 3 | statusdescription | varchar(255)                   |                                                              | true     |                                 |         | Description of the status.                         |
-| 4 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now())                                 | false    |                                 |         |                                                    |
-| 5 | recdatemodified   | timestamp(0) without time zone |                                                              | false    |                                 |         |                                                    |
+| 1 | contactstatus     | varchar(16)                    |                                                              | true     |                                 |         | Status of person, organization, or project.        |
+| 2 | contactstatusid   | integer                        | nextval('ndb.seq_contactstatuses_contactstatusid'::regclass) | false    | [ndb.contacts](ndb.contacts.md) |         | An arbitrary Contact Status identification number. |
+| 3 | recdatecreated    | timestamp(0) without time zone | timezone('UTC'::text, now())                                 | false    |                                 |         |                                                    |
+| 4 | recdatemodified   | timestamp(0) without time zone |                                                              | false    |                                 |         |                                                    |
+| 5 | statusdescription | varchar(255)                   |                                                              | true     |                                 |         | Description of the status.                         |
 
 ## Constraints
 

@@ -6,8 +6,8 @@
 
 | # | Name   | Type    | Default | Nullable | Children | Parents | Comment |
 | - | ------ | ------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | siteid | integer |         | true     |          |         |         |
-| 2 | fid    | integer |         | true     |          |         |         |
+| 1 | fid    | integer |         | true     |          |         |         |
+| 2 | siteid | integer |         | true     |          |         |         |
 
 ## Relations
 

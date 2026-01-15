@@ -18,11 +18,11 @@
 <text text-anchor="start" x="237.68" y="-182.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="268.8" y="-182.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-138.6 46.2,-169.4 369.17,-169.4 369.17,-138.6 46.2,-138.6"/>
-<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">isosampleorigintypeid </text>
-<text text-anchor="start" x="191.72" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-150.8" font-family="Arial" font-size="14.00">isosampleorigintype </text>
+<text text-anchor="start" x="180.82" y="-150.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 369.17,-138.6 369.17,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">isosampleorigintype </text>
-<text text-anchor="start" x="180.82" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[varchar(50)]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">isosampleorigintypeid </text>
+<text text-anchor="start" x="191.72" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 369.17,-107.8 369.17,-77 46.2,-77"/>
 <text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">recdatecreated </text>
 <text text-anchor="start" x="150.48" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>

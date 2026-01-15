@@ -6,19 +6,19 @@
 
 | #  | Name            | Type                           | Default                      | Nullable | Children | Parents | Comment |
 | -- | --------------- | ------------------------------ | ---------------------------- | -------- | -------- | ------- | ------- |
-| 1  | siteid          | integer                        |                              | false    |          |         |         |
-| 2  | sitename        | varchar(128)                   |                              | true     |          |         |         |
-| 3  | longitudeeast   | double precision               |                              | true     |          |         |         |
+| 1  | altitude        | double precision               |                              | true     |          |         |         |
+| 2  | area            | double precision               |                              | true     |          |         |         |
+| 3  | geog            | text                           |                              | true     |          |         |         |
 | 4  | latitudenorth   | double precision               |                              | true     |          |         |         |
-| 5  | longitudewest   | double precision               |                              | true     |          |         |         |
-| 6  | latitudesouth   | double precision               |                              | true     |          |         |         |
-| 7  | altitude        | double precision               |                              | true     |          |         |         |
-| 8  | area            | double precision               |                              | true     |          |         |         |
-| 9  | sitedescription | text                           |                              | true     |          |         |         |
-| 10 | notes           | text                           |                              | true     |          |         |         |
-| 11 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |         |         |
-| 12 | recdatemodified | timestamp(0) without time zone |                              | false    |          |         |         |
-| 13 | geog            | text                           |                              | true     |          |         |         |
+| 5  | latitudesouth   | double precision               |                              | true     |          |         |         |
+| 6  | longitudeeast   | double precision               |                              | true     |          |         |         |
+| 7  | longitudewest   | double precision               |                              | true     |          |         |         |
+| 8  | notes           | text                           |                              | true     |          |         |         |
+| 9  | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |         |         |
+| 10 | recdatemodified | timestamp(0) without time zone |                              | false    |          |         |         |
+| 11 | sitedescription | text                           |                              | true     |          |         |         |
+| 12 | siteid          | integer                        |                              | false    |          |         |         |
+| 13 | sitename        | varchar(128)                   |                              | true     |          |         |         |
 
 ## Constraints
 

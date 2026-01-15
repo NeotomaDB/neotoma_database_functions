@@ -6,8 +6,8 @@
 
 | # | Name        | Type       | Default | Nullable | Children | Parents | Comment |
 | - | ----------- | ---------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | recid       | integer    |         | false    |          |         |         |
-| 2 | ecolgroupid | varchar(4) |         | false    |          |         |         |
+| 1 | ecolgroupid | varchar(4) |         | false    |          |         |         |
+| 2 | recid       | integer    |         | false    |          |         |         |
 | 3 | sumgroupid  | integer    |         | false    |          |         |         |
 
 ## Constraints

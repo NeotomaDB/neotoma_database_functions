@@ -7,8 +7,8 @@
 | # | Name             | Type        | Default                                                     | Nullable | Children                                | Parents | Comment |
 | - | ---------------- | ----------- | ----------------------------------------------------------- | -------- | --------------------------------------- | ------- | ------- |
 | 1 | entitycoverid    | integer     | nextval('ndb.entitycovertypes_entitycoverid_seq'::regclass) | false    | [ndb.entitycovers](ndb.entitycovers.md) |         |         |
-| 2 | entitycovertype  | varchar(50) |                                                             | true     |                                         |         |         |
-| 3 | entitycovernotes | text        |                                                             | true     |                                         |         |         |
+| 2 | entitycovernotes | text        |                                                             | true     |                                         |         |         |
+| 3 | entitycovertype  | varchar(50) |                                                             | true     |                                         |         |         |
 
 ## Constraints
 

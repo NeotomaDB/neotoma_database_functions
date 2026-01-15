@@ -12,778 +12,778 @@
 <!-- ndb.ecolgroups -->
 <g id="node1" class="node">
 <title>ndb.ecolgroups</title>
-<polygon fill="#efefef" stroke="none" points="4738.22,-1914.6 4738.22,-1950.2 5058.02,-1950.2 5058.02,-1914.6 4738.22,-1914.6"/>
-<polygon fill="none" stroke="black" points="4738.22,-1914.6 4738.22,-1950.2 5058.02,-1950.2 5058.02,-1914.6 4738.22,-1914.6"/>
-<text text-anchor="start" x="4780.64" y="-1928" font-family="Arial Bold" font-size="18.00">ndb.ecolgroups</text>
-<text text-anchor="start" x="4891.12" y="-1928" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="4922.24" y="-1928" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="4738.22,-1883.8 4738.22,-1914.6 5058.02,-1914.6 5058.02,-1883.8 4738.22,-1883.8"/>
-<text text-anchor="start" x="4745.22" y="-1896" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="4794.26" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="4738.22,-1853 4738.22,-1883.8 5058.02,-1883.8 5058.02,-1853 4738.22,-1853"/>
-<text text-anchor="start" x="4745.22" y="-1865.2" font-family="Arial" font-size="14.00">ecolsetid </text>
-<text text-anchor="start" x="4804.37" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="4738.22,-1822.2 4738.22,-1853 5058.02,-1853 5058.02,-1822.2 4738.22,-1822.2"/>
-<text text-anchor="start" x="4745.22" y="-1834.4" font-family="Arial" font-size="14.00">ecolgroupid </text>
-<text text-anchor="start" x="4821.5" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(4)]</text>
-<polygon fill="none" stroke="black" points="4738.22,-1791.4 4738.22,-1822.2 5058.02,-1822.2 5058.02,-1791.4 4738.22,-1791.4"/>
-<text text-anchor="start" x="4745.22" y="-1803.6" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="4842.51" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="4738.22,-1760.6 4738.22,-1791.4 5058.02,-1791.4 5058.02,-1760.6 4738.22,-1760.6"/>
-<text text-anchor="start" x="4745.22" y="-1772.8" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="4848.73" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" stroke-width="3" points="4736.72,-1759.1 4736.72,-1951.7 5059.52,-1951.7 5059.52,-1759.1 4736.72,-1759.1"/>
-</g>
-<!-- ndb.taxa -->
-<g id="node2" class="node">
-<title>ndb.taxa</title>
-<polygon fill="#efefef" stroke="none" points="2933.22,-1494.8 2933.22,-1530.4 3253.02,-1530.4 3253.02,-1494.8 2933.22,-1494.8"/>
-<polygon fill="none" stroke="black" points="2933.22,-1494.8 2933.22,-1530.4 3253.02,-1530.4 3253.02,-1494.8 2933.22,-1494.8"/>
-<text text-anchor="start" x="3000.14" y="-1508.2" font-family="Arial Bold" font-size="18.00">ndb.taxa</text>
-<text text-anchor="start" x="3061.62" y="-1508.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="3092.74" y="-1508.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1464 2933.22,-1494.8 3253.02,-1494.8 3253.02,-1464 2933.22,-1464"/>
-<text text-anchor="start" x="2940.22" y="-1476.2" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="2989.26" y="-1476.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1433.2 2933.22,-1464 3253.02,-1464 3253.02,-1433.2 2933.22,-1433.2"/>
-<text text-anchor="start" x="2940.22" y="-1445.4" font-family="Arial" font-size="14.00">taxoncode </text>
-<text text-anchor="start" x="3008.72" y="-1445.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1402.4 2933.22,-1433.2 3253.02,-1433.2 3253.02,-1402.4 2933.22,-1402.4"/>
-<text text-anchor="start" x="2940.22" y="-1414.6" font-family="Arial" font-size="14.00">taxonname </text>
-<text text-anchor="start" x="3013.38" y="-1414.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1371.6 2933.22,-1402.4 3253.02,-1402.4 3253.02,-1371.6 2933.22,-1371.6"/>
-<text text-anchor="start" x="2940.22" y="-1383.8" font-family="Arial" font-size="14.00">author </text>
-<text text-anchor="start" x="2983.81" y="-1383.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(128)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1340.8 2933.22,-1371.6 3253.02,-1371.6 3253.02,-1340.8 2933.22,-1340.8"/>
-<text text-anchor="start" x="2940.22" y="-1353" font-family="Arial" font-size="14.00">valid </text>
-<text text-anchor="start" x="2972.91" y="-1353" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1310 2933.22,-1340.8 3253.02,-1340.8 3253.02,-1310 2933.22,-1310"/>
-<text text-anchor="start" x="2940.22" y="-1322.2" font-family="Arial" font-size="14.00">highertaxonid </text>
-<text text-anchor="start" x="3028.18" y="-1322.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1279.2 2933.22,-1310 3253.02,-1310 3253.02,-1279.2 2933.22,-1279.2"/>
-<text text-anchor="start" x="2940.22" y="-1291.4" font-family="Arial" font-size="14.00">extinct </text>
-<text text-anchor="start" x="2984.58" y="-1291.4" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1248.4 2933.22,-1279.2 3253.02,-1279.2 3253.02,-1248.4 2933.22,-1248.4"/>
-<text text-anchor="start" x="2940.22" y="-1260.6" font-family="Arial" font-size="14.00">taxagroupid </text>
-<text text-anchor="start" x="3017.28" y="-1260.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(3)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1217.6 2933.22,-1248.4 3253.02,-1248.4 3253.02,-1217.6 2933.22,-1217.6"/>
-<text text-anchor="start" x="2940.22" y="-1229.8" font-family="Arial" font-size="14.00">publicationid </text>
-<text text-anchor="start" x="3021.95" y="-1229.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1186.8 2933.22,-1217.6 3253.02,-1217.6 3253.02,-1186.8 2933.22,-1186.8"/>
-<text text-anchor="start" x="2940.22" y="-1199" font-family="Arial" font-size="14.00">validatorid </text>
-<text text-anchor="start" x="3007.93" y="-1199" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1156 2933.22,-1186.8 3253.02,-1186.8 3253.02,-1156 2933.22,-1156"/>
-<text text-anchor="start" x="2940.22" y="-1168.2" font-family="Arial" font-size="14.00">validatedate </text>
-<text text-anchor="start" x="3019.62" y="-1168.2" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1125.2 2933.22,-1156 3253.02,-1156 3253.02,-1125.2 2933.22,-1125.2"/>
-<text text-anchor="start" x="2940.22" y="-1137.4" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="2978.36" y="-1137.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1094.4 2933.22,-1125.2 3253.02,-1125.2 3253.02,-1094.4 2933.22,-1094.4"/>
-<text text-anchor="start" x="2940.22" y="-1106.6" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="3037.51" y="-1106.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2933.22,-1063.6 2933.22,-1094.4 3253.02,-1094.4 3253.02,-1063.6 2933.22,-1063.6"/>
-<text text-anchor="start" x="2940.22" y="-1075.8" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="3043.73" y="-1075.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-</g>
-<!-- ndb.ecolgroups&#45;&gt;ndb.taxa -->
-<g id="edge1" class="edge">
-<title>ndb.ecolgroups:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M4726.82,-1898.72C4615.91,-1887.88 4777.21,-1695.25 4683.12,-1609.6 4653.65,-1582.77 3293.89,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="4726.9,-1898.73 4736.68,-1903.68 4732.23,-1898.97 4736.56,-1899.17 4736.56,-1899.17 4736.56,-1899.17 4732.23,-1898.97 4737.1,-1894.69 4726.9,-1898.73"/>
-<text text-anchor="start" x="4744.22" y="-1909.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
-</g>
-<!-- ndb.ecolsettypes -->
-<g id="node17" class="node">
-<title>ndb.ecolsettypes</title>
-<polygon fill="#efefef" stroke="none" points="4526.22,-1340.8 4526.22,-1376.4 4846.02,-1376.4 4846.02,-1340.8 4526.22,-1340.8"/>
-<polygon fill="none" stroke="black" points="4526.22,-1340.8 4526.22,-1376.4 4846.02,-1376.4 4846.02,-1340.8 4526.22,-1340.8"/>
-<text text-anchor="start" x="4564.14" y="-1354.2" font-family="Arial Bold" font-size="18.00">ndb.ecolsettypes</text>
-<text text-anchor="start" x="4683.61" y="-1354.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="4714.73" y="-1354.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="4526.22,-1310 4526.22,-1340.8 4846.02,-1340.8 4846.02,-1310 4526.22,-1310"/>
-<text text-anchor="start" x="4533.22" y="-1322.2" font-family="Arial" font-size="14.00">ecolsetid </text>
-<text text-anchor="start" x="4592.37" y="-1322.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="4526.22,-1279.2 4526.22,-1310 4846.02,-1310 4846.02,-1279.2 4526.22,-1279.2"/>
-<text text-anchor="start" x="4533.22" y="-1291.4" font-family="Arial" font-size="14.00">ecolsetname </text>
-<text text-anchor="start" x="4616.49" y="-1291.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="4526.22,-1248.4 4526.22,-1279.2 4846.02,-1279.2 4846.02,-1248.4 4526.22,-1248.4"/>
-<text text-anchor="start" x="4533.22" y="-1260.6" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="4630.51" y="-1260.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="4526.22,-1217.6 4526.22,-1248.4 4846.02,-1248.4 4846.02,-1217.6 4526.22,-1217.6"/>
-<text text-anchor="start" x="4533.22" y="-1229.8" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="4636.73" y="-1229.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-</g>
-<!-- ndb.ecolgroups&#45;&gt;ndb.ecolsettypes -->
-<g id="edge21" class="edge">
-<title>ndb.ecolgroups:ecolsetid&#45;&gt;ndb.ecolsettypes:ecolsetid</title>
-<path fill="none" stroke="black" d="M4727.1,-1867.64C4674.91,-1858.98 4726.73,-1778.07 4738.22,-1714.4 4763,-1577.11 4820.97,-1556.84 4846.02,-1419.6 4853.54,-1378.41 4888.89,-1325.4 4847.02,-1325.4"/>
-<polygon fill="black" stroke="black" points="4726.92,-1867.63 4736.55,-1872.86 4732.24,-1868.03 4736.56,-1868.35 4736.56,-1868.35 4736.56,-1868.35 4732.24,-1868.03 4737.23,-1863.89 4726.92,-1867.63"/>
-<text text-anchor="start" x="4744.22" y="-1878.4" font-family="Arial" font-size="10.00">FOREIGN KEY (ecolsetid) REFERENCES ndb.ecolsettypes(ecolsetid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<polygon fill="#efefef" stroke="none" points="586.86,-1914.6 586.86,-1950.2 906.66,-1950.2 906.66,-1914.6 586.86,-1914.6"/>
+<polygon fill="none" stroke="black" points="586.86,-1914.6 586.86,-1950.2 906.66,-1950.2 906.66,-1914.6 586.86,-1914.6"/>
+<text text-anchor="start" x="629.28" y="-1928" font-family="Arial Bold" font-size="18.00">ndb.ecolgroups</text>
+<text text-anchor="start" x="739.75" y="-1928" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="770.87" y="-1928" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="586.86,-1883.8 586.86,-1914.6 906.66,-1914.6 906.66,-1883.8 586.86,-1883.8"/>
+<text text-anchor="start" x="593.86" y="-1896" font-family="Arial" font-size="14.00">ecolgroupid </text>
+<text text-anchor="start" x="670.14" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[varchar(4)]</text>
+<polygon fill="none" stroke="black" points="586.86,-1853 586.86,-1883.8 906.66,-1883.8 906.66,-1853 586.86,-1853"/>
+<text text-anchor="start" x="593.86" y="-1865.2" font-family="Arial" font-size="14.00">ecolsetid </text>
+<text text-anchor="start" x="653" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="586.86,-1822.2 586.86,-1853 906.66,-1853 906.66,-1822.2 586.86,-1822.2"/>
+<text text-anchor="start" x="593.86" y="-1834.4" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="691.14" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="586.86,-1791.4 586.86,-1822.2 906.66,-1822.2 906.66,-1791.4 586.86,-1791.4"/>
+<text text-anchor="start" x="593.86" y="-1803.6" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="697.36" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="586.86,-1760.6 586.86,-1791.4 906.66,-1791.4 906.66,-1760.6 586.86,-1760.6"/>
+<text text-anchor="start" x="593.86" y="-1772.8" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="642.89" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" stroke-width="3" points="585.36,-1759.1 585.36,-1951.7 908.16,-1951.7 908.16,-1759.1 585.36,-1759.1"/>
 </g>
 <!-- ndb.ecolgrouptypes -->
-<g id="node18" class="node">
+<g id="node2" class="node">
 <title>ndb.ecolgrouptypes</title>
-<polygon fill="#efefef" stroke="none" points="4950.22,-1340.8 4950.22,-1376.4 5270.02,-1376.4 5270.02,-1340.8 4950.22,-1340.8"/>
-<polygon fill="none" stroke="black" points="4950.22,-1340.8 4950.22,-1376.4 5270.02,-1376.4 5270.02,-1340.8 4950.22,-1340.8"/>
-<text text-anchor="start" x="4977.15" y="-1354.2" font-family="Arial Bold" font-size="18.00">ndb.ecolgrouptypes</text>
-<text text-anchor="start" x="5118.61" y="-1354.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="5149.73" y="-1354.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="4950.22,-1310 4950.22,-1340.8 5270.02,-1340.8 5270.02,-1310 4950.22,-1310"/>
-<text text-anchor="start" x="4957.22" y="-1322.2" font-family="Arial" font-size="14.00">ecolgroupid </text>
-<text text-anchor="start" x="5033.5" y="-1322.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(4)]</text>
-<polygon fill="none" stroke="black" points="4950.22,-1279.2 4950.22,-1310 5270.02,-1310 5270.02,-1279.2 4950.22,-1279.2"/>
-<text text-anchor="start" x="4957.22" y="-1291.4" font-family="Arial" font-size="14.00">ecolgroup </text>
-<text text-anchor="start" x="5022.6" y="-1291.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="4950.22,-1248.4 4950.22,-1279.2 5270.02,-1279.2 5270.02,-1248.4 4950.22,-1248.4"/>
-<text text-anchor="start" x="4957.22" y="-1260.6" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="5054.51" y="-1260.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="4950.22,-1217.6 4950.22,-1248.4 5270.02,-1248.4 5270.02,-1217.6 4950.22,-1217.6"/>
-<text text-anchor="start" x="4957.22" y="-1229.8" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="5060.73" y="-1229.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="374.86,-1340.8 374.86,-1376.4 694.66,-1376.4 694.66,-1340.8 374.86,-1340.8"/>
+<polygon fill="none" stroke="black" points="374.86,-1340.8 374.86,-1376.4 694.66,-1376.4 694.66,-1340.8 374.86,-1340.8"/>
+<text text-anchor="start" x="401.78" y="-1354.2" font-family="Arial Bold" font-size="18.00">ndb.ecolgrouptypes</text>
+<text text-anchor="start" x="543.25" y="-1354.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="574.37" y="-1354.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="374.86,-1310 374.86,-1340.8 694.66,-1340.8 694.66,-1310 374.86,-1310"/>
+<text text-anchor="start" x="381.86" y="-1322.2" font-family="Arial" font-size="14.00">ecolgroup </text>
+<text text-anchor="start" x="447.24" y="-1322.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="374.86,-1279.2 374.86,-1310 694.66,-1310 694.66,-1279.2 374.86,-1279.2"/>
+<text text-anchor="start" x="381.86" y="-1291.4" font-family="Arial" font-size="14.00">ecolgroupid </text>
+<text text-anchor="start" x="458.14" y="-1291.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(4)]</text>
+<polygon fill="none" stroke="black" points="374.86,-1248.4 374.86,-1279.2 694.66,-1279.2 694.66,-1248.4 374.86,-1248.4"/>
+<text text-anchor="start" x="381.86" y="-1260.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="479.14" y="-1260.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="374.86,-1217.6 374.86,-1248.4 694.66,-1248.4 694.66,-1217.6 374.86,-1217.6"/>
+<text text-anchor="start" x="381.86" y="-1229.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="485.36" y="-1229.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 </g>
 <!-- ndb.ecolgroups&#45;&gt;ndb.ecolgrouptypes -->
-<g id="edge22" class="edge">
+<g id="edge1" class="edge">
 <title>ndb.ecolgroups:ecolgroupid&#45;&gt;ndb.ecolgrouptypes:ecolgroupid</title>
-<path fill="none" stroke="black" d="M5069.13,-1835.94C5153.19,-1804.15 4836.68,-1325.4 4949.22,-1325.4"/>
-<polygon fill="black" stroke="black" points="5069.22,-1835.93 5058.63,-1833.11 5063.96,-1836.79 5059.68,-1837.49 5059.68,-1837.49 5059.68,-1837.49 5063.96,-1836.79 5060.08,-1841.99 5069.22,-1835.93"/>
-<text text-anchor="start" x="5066.02" y="-1847.6" font-family="Arial" font-size="10.00">FOREIGN KEY (ecolgroupid) REFERENCES ndb.ecolgrouptypes(ecolgroupid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M575.69,-1898.58C509.78,-1889.91 572.97,-1791.61 586.86,-1714.4 611.56,-1577.1 669.78,-1556.87 694.66,-1419.6 704.57,-1364.93 751.22,-1294.6 695.66,-1294.6"/>
+<polygon fill="black" stroke="black" points="575.54,-1898.57 585.25,-1903.67 580.87,-1898.9 585.19,-1899.16 585.19,-1899.16 585.19,-1899.16 580.87,-1898.9 585.8,-1894.69 575.54,-1898.57"/>
+<text text-anchor="start" x="7" y="-1909.2" font-family="Arial" font-size="10.00">FOREIGN KEY (ecolgroupid) REFERENCES ndb.ecolgrouptypes(ecolgroupid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+</g>
+<!-- ndb.ecolsettypes -->
+<g id="node3" class="node">
+<title>ndb.ecolsettypes</title>
+<polygon fill="#efefef" stroke="none" points="798.86,-1340.8 798.86,-1376.4 1118.66,-1376.4 1118.66,-1340.8 798.86,-1340.8"/>
+<polygon fill="none" stroke="black" points="798.86,-1340.8 798.86,-1376.4 1118.66,-1376.4 1118.66,-1340.8 798.86,-1340.8"/>
+<text text-anchor="start" x="836.78" y="-1354.2" font-family="Arial Bold" font-size="18.00">ndb.ecolsettypes</text>
+<text text-anchor="start" x="956.25" y="-1354.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="987.37" y="-1354.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="798.86,-1310 798.86,-1340.8 1118.66,-1340.8 1118.66,-1310 798.86,-1310"/>
+<text text-anchor="start" x="805.86" y="-1322.2" font-family="Arial" font-size="14.00">ecolsetid </text>
+<text text-anchor="start" x="865" y="-1322.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="798.86,-1279.2 798.86,-1310 1118.66,-1310 1118.66,-1279.2 798.86,-1279.2"/>
+<text text-anchor="start" x="805.86" y="-1291.4" font-family="Arial" font-size="14.00">ecolsetname </text>
+<text text-anchor="start" x="889.13" y="-1291.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="798.86,-1248.4 798.86,-1279.2 1118.66,-1279.2 1118.66,-1248.4 798.86,-1248.4"/>
+<text text-anchor="start" x="805.86" y="-1260.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="903.14" y="-1260.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="798.86,-1217.6 798.86,-1248.4 1118.66,-1248.4 1118.66,-1217.6 798.86,-1217.6"/>
+<text text-anchor="start" x="805.86" y="-1229.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="909.36" y="-1229.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+</g>
+<!-- ndb.ecolgroups&#45;&gt;ndb.ecolsettypes -->
+<g id="edge2" class="edge">
+<title>ndb.ecolgroups:ecolsetid&#45;&gt;ndb.ecolsettypes:ecolsetid</title>
+<path fill="none" stroke="black" d="M917.79,-1867.64C969.97,-1858.98 918.15,-1778.07 906.66,-1714.4 881.89,-1577.11 823.92,-1556.84 798.86,-1419.6 791.34,-1378.41 755.99,-1325.4 797.86,-1325.4"/>
+<polygon fill="black" stroke="black" points="917.96,-1867.63 907.66,-1863.89 912.65,-1868.03 908.33,-1868.35 908.33,-1868.35 908.33,-1868.35 912.65,-1868.03 908.33,-1872.86 917.96,-1867.63"/>
+<text text-anchor="start" x="365.51" y="-1878.4" font-family="Arial" font-size="10.00">FOREIGN KEY (ecolsetid) REFERENCES ndb.ecolsettypes(ecolsetid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+</g>
+<!-- ndb.taxa -->
+<g id="node4" class="node">
+<title>ndb.taxa</title>
+<polygon fill="#efefef" stroke="none" points="3345.86,-1494.8 3345.86,-1530.4 3665.66,-1530.4 3665.66,-1494.8 3345.86,-1494.8"/>
+<polygon fill="none" stroke="black" points="3345.86,-1494.8 3345.86,-1530.4 3665.66,-1530.4 3665.66,-1494.8 3345.86,-1494.8"/>
+<text text-anchor="start" x="3412.78" y="-1508.2" font-family="Arial Bold" font-size="18.00">ndb.taxa</text>
+<text text-anchor="start" x="3474.25" y="-1508.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3505.37" y="-1508.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1464 3345.86,-1494.8 3665.66,-1494.8 3665.66,-1464 3345.86,-1464"/>
+<text text-anchor="start" x="3352.86" y="-1476.2" font-family="Arial" font-size="14.00">author </text>
+<text text-anchor="start" x="3396.45" y="-1476.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(128)]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1433.2 3345.86,-1464 3665.66,-1464 3665.66,-1433.2 3345.86,-1433.2"/>
+<text text-anchor="start" x="3352.86" y="-1445.4" font-family="Arial" font-size="14.00">extinct </text>
+<text text-anchor="start" x="3397.21" y="-1445.4" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1402.4 3345.86,-1433.2 3665.66,-1433.2 3665.66,-1402.4 3345.86,-1402.4"/>
+<text text-anchor="start" x="3352.86" y="-1414.6" font-family="Arial" font-size="14.00">highertaxonid </text>
+<text text-anchor="start" x="3440.81" y="-1414.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1371.6 3345.86,-1402.4 3665.66,-1402.4 3665.66,-1371.6 3345.86,-1371.6"/>
+<text text-anchor="start" x="3352.86" y="-1383.8" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="3391" y="-1383.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1340.8 3345.86,-1371.6 3665.66,-1371.6 3665.66,-1340.8 3345.86,-1340.8"/>
+<text text-anchor="start" x="3352.86" y="-1353" font-family="Arial" font-size="14.00">publicationid </text>
+<text text-anchor="start" x="3434.58" y="-1353" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1310 3345.86,-1340.8 3665.66,-1340.8 3665.66,-1310 3345.86,-1310"/>
+<text text-anchor="start" x="3352.86" y="-1322.2" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="3450.14" y="-1322.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1279.2 3345.86,-1310 3665.66,-1310 3665.66,-1279.2 3345.86,-1279.2"/>
+<text text-anchor="start" x="3352.86" y="-1291.4" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="3456.36" y="-1291.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1248.4 3345.86,-1279.2 3665.66,-1279.2 3665.66,-1248.4 3345.86,-1248.4"/>
+<text text-anchor="start" x="3352.86" y="-1260.6" font-family="Arial" font-size="14.00">taxagroupid </text>
+<text text-anchor="start" x="3429.92" y="-1260.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(3)]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1217.6 3345.86,-1248.4 3665.66,-1248.4 3665.66,-1217.6 3345.86,-1217.6"/>
+<text text-anchor="start" x="3352.86" y="-1229.8" font-family="Arial" font-size="14.00">taxoncode </text>
+<text text-anchor="start" x="3421.36" y="-1229.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1186.8 3345.86,-1217.6 3665.66,-1217.6 3665.66,-1186.8 3345.86,-1186.8"/>
+<text text-anchor="start" x="3352.86" y="-1199" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="3401.89" y="-1199" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1156 3345.86,-1186.8 3665.66,-1186.8 3665.66,-1156 3345.86,-1156"/>
+<text text-anchor="start" x="3352.86" y="-1168.2" font-family="Arial" font-size="14.00">taxonname </text>
+<text text-anchor="start" x="3426.02" y="-1168.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1125.2 3345.86,-1156 3665.66,-1156 3665.66,-1125.2 3345.86,-1125.2"/>
+<text text-anchor="start" x="3352.86" y="-1137.4" font-family="Arial" font-size="14.00">valid </text>
+<text text-anchor="start" x="3385.54" y="-1137.4" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1094.4 3345.86,-1125.2 3665.66,-1125.2 3665.66,-1094.4 3345.86,-1094.4"/>
+<text text-anchor="start" x="3352.86" y="-1106.6" font-family="Arial" font-size="14.00">validatedate </text>
+<text text-anchor="start" x="3432.25" y="-1106.6" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
+<polygon fill="none" stroke="black" points="3345.86,-1063.6 3345.86,-1094.4 3665.66,-1094.4 3665.66,-1063.6 3345.86,-1063.6"/>
+<text text-anchor="start" x="3352.86" y="-1075.8" font-family="Arial" font-size="14.00">validatorid </text>
+<text text-anchor="start" x="3420.56" y="-1075.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+</g>
+<!-- ndb.ecolgroups&#45;&gt;ndb.taxa -->
+<g id="edge3" class="edge">
+<title>ndb.ecolgroups:taxonid&#45;&gt;ndb.taxa:taxonid</title>
+<path fill="none" stroke="black" d="M917.94,-1775.19C977.71,-1764.87 905.8,-1657.98 961.76,-1609.6 961.76,-1609.6 3344.86,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="917.96,-1775.19 907.64,-1771.49 912.64,-1775.61 908.33,-1775.95 908.33,-1775.95 908.33,-1775.95 912.64,-1775.61 908.34,-1780.46 917.96,-1775.19"/>
+<text text-anchor="start" x="416.64" y="-1786" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.taxa&#45;&gt;ndb.taxa -->
 <g id="edge4" class="edge">
 <title>ndb.taxa:highertaxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3094.27,-1350.98C3102.11,-1540.4 3101.72,-1852.8 3093.12,-1852.8 3084.37,-1852.8 3084.13,-1674.81 3092.41,-1494.6"/>
-<polygon fill="black" stroke="black" points="3094.27,-1350.98 3098.34,-1340.8 3094.04,-1345.65 3093.86,-1341.32 3093.86,-1341.32 3093.86,-1341.32 3094.04,-1345.65 3089.35,-1341.18 3094.27,-1350.98"/>
-<text text-anchor="start" x="2797.83" y="-1350.66" font-family="Arial" font-size="10.00">FOREIGN KEY (highertaxonid) REFERENCES ndb.taxa(taxonid)</text>
-</g>
-<!-- ndb.taxagrouptypes -->
-<g id="node14" class="node">
-<title>ndb.taxagrouptypes</title>
-<polygon fill="#efefef" stroke="none" points="2509.22,-536 2509.22,-571.6 2829.02,-571.6 2829.02,-536 2509.22,-536"/>
-<polygon fill="none" stroke="black" points="2509.22,-536 2509.22,-571.6 2829.02,-571.6 2829.02,-536 2509.22,-536"/>
-<text text-anchor="start" x="2536.15" y="-549.4" font-family="Arial Bold" font-size="18.00">ndb.taxagrouptypes</text>
-<text text-anchor="start" x="2677.61" y="-549.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="2708.73" y="-549.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="2509.22,-505.2 2509.22,-536 2829.02,-536 2829.02,-505.2 2509.22,-505.2"/>
-<text text-anchor="start" x="2516.22" y="-517.4" font-family="Arial" font-size="14.00">taxagroupid </text>
-<text text-anchor="start" x="2593.28" y="-517.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(3)]</text>
-<polygon fill="none" stroke="black" points="2509.22,-474.4 2509.22,-505.2 2829.02,-505.2 2829.02,-474.4 2509.22,-474.4"/>
-<text text-anchor="start" x="2516.22" y="-486.6" font-family="Arial" font-size="14.00">taxagroup </text>
-<text text-anchor="start" x="2582.38" y="-486.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2509.22,-443.6 2509.22,-474.4 2829.02,-474.4 2829.02,-443.6 2509.22,-443.6"/>
-<text text-anchor="start" x="2516.22" y="-455.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="2613.51" y="-455.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2509.22,-412.8 2509.22,-443.6 2829.02,-443.6 2829.02,-412.8 2509.22,-412.8"/>
-<text text-anchor="start" x="2516.22" y="-425" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="2619.73" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-</g>
-<!-- ndb.taxa&#45;&gt;ndb.taxagrouptypes -->
-<g id="edge18" class="edge">
-<title>ndb.taxa:taxagroupid&#45;&gt;ndb.taxagrouptypes:taxagroupid</title>
-<path fill="none" stroke="black" d="M2922.02,-1263.43C2811.19,-1255.07 2898.89,-1105.77 2881.12,-984.4 2873.62,-933.1 2881.87,-520.6 2830.02,-520.6"/>
-<polygon fill="black" stroke="black" points="2921.9,-1263.43 2931.73,-1268.29 2927.23,-1263.62 2931.56,-1263.78 2931.56,-1263.78 2931.56,-1263.78 2927.23,-1263.62 2932.05,-1259.29 2921.9,-1263.43"/>
-<text text-anchor="start" x="2574.52" y="-1273.8" font-family="Arial" font-size="10.00">FOREIGN KEY (taxagroupid) REFERENCES ndb.taxagrouptypes(taxagroupid)</text>
+<path fill="none" stroke="black" d="M3506.93,-1443.4C3514.74,-1625.22 3514.35,-1852.8 3505.76,-1852.8 3497,-1852.8 3496.77,-1411.68 3505.07,-1217.43"/>
+<polygon fill="black" stroke="black" points="3506.93,-1443.46 3510.99,-1433.27 3506.7,-1438.13 3506.51,-1433.8 3506.51,-1433.8 3506.51,-1433.8 3506.7,-1438.13 3502,-1433.67 3506.93,-1443.46"/>
+<text text-anchor="start" x="3513.48" y="-1443.14" font-family="Arial" font-size="10.00">FOREIGN KEY (highertaxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.publications -->
-<g id="node15" class="node">
+<g id="node5" class="node">
 <title>ndb.publications</title>
-<polygon fill="#efefef" stroke="none" points="2933.22,-905.6 2933.22,-941.2 3253.02,-941.2 3253.02,-905.6 2933.22,-905.6"/>
-<polygon fill="none" stroke="black" points="2933.22,-905.6 2933.22,-941.2 3253.02,-941.2 3253.02,-905.6 2933.22,-905.6"/>
-<text text-anchor="start" x="2971.14" y="-919" font-family="Arial Bold" font-size="18.00">ndb.publications</text>
-<text text-anchor="start" x="3090.62" y="-919" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="3121.74" y="-919" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="2933.22,-874.8 2933.22,-905.6 3253.02,-905.6 3253.02,-874.8 2933.22,-874.8"/>
-<text text-anchor="start" x="2940.22" y="-887" font-family="Arial" font-size="14.00">publicationid </text>
-<text text-anchor="start" x="3021.95" y="-887" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2933.22,-844 2933.22,-874.8 3253.02,-874.8 3253.02,-844 2933.22,-844"/>
-<text text-anchor="start" x="2940.22" y="-856.2" font-family="Arial" font-size="14.00">pubtypeid </text>
-<text text-anchor="start" x="3004.83" y="-856.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2933.22,-813.2 2933.22,-844 3253.02,-844 3253.02,-813.2 2933.22,-813.2"/>
-<text text-anchor="start" x="2940.22" y="-825.4" font-family="Arial" font-size="14.00">year </text>
-<text text-anchor="start" x="2971.35" y="-825.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-782.4 2933.22,-813.2 3253.02,-813.2 3253.02,-782.4 2933.22,-782.4"/>
-<text text-anchor="start" x="2940.22" y="-794.6" font-family="Arial" font-size="14.00">citation </text>
-<text text-anchor="start" x="2988.47" y="-794.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-751.6 2933.22,-782.4 3253.02,-782.4 3253.02,-751.6 2933.22,-751.6"/>
-<text text-anchor="start" x="2940.22" y="-763.8" font-family="Arial" font-size="14.00">articletitle </text>
-<text text-anchor="start" x="3003.25" y="-763.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-720.8 2933.22,-751.6 3253.02,-751.6 3253.02,-720.8 2933.22,-720.8"/>
-<text text-anchor="start" x="2940.22" y="-733" font-family="Arial" font-size="14.00">journal </text>
-<text text-anchor="start" x="2986.14" y="-733" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-690 2933.22,-720.8 3253.02,-720.8 3253.02,-690 2933.22,-690"/>
-<text text-anchor="start" x="2940.22" y="-702.2" font-family="Arial" font-size="14.00">volume </text>
-<text text-anchor="start" x="2989.25" y="-702.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-659.2 2933.22,-690 3253.02,-690 3253.02,-659.2 2933.22,-659.2"/>
-<text text-anchor="start" x="2940.22" y="-671.4" font-family="Arial" font-size="14.00">issue </text>
-<text text-anchor="start" x="2976.8" y="-671.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(8)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-628.4 2933.22,-659.2 3253.02,-659.2 3253.02,-628.4 2933.22,-628.4"/>
-<text text-anchor="start" x="2940.22" y="-640.6" font-family="Arial" font-size="14.00">pages </text>
-<text text-anchor="start" x="2982.26" y="-640.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-597.6 2933.22,-628.4 3253.02,-628.4 3253.02,-597.6 2933.22,-597.6"/>
-<text text-anchor="start" x="2940.22" y="-609.8" font-family="Arial" font-size="14.00">citationnumber </text>
-<text text-anchor="start" x="3035.94" y="-609.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-566.8 2933.22,-597.6 3253.02,-597.6 3253.02,-566.8 2933.22,-566.8"/>
-<text text-anchor="start" x="2940.22" y="-579" font-family="Arial" font-size="14.00">doi </text>
-<text text-anchor="start" x="2962.8" y="-579" font-family="Arial" font-size="14.00" fill="#666666">[varchar(128)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-536 2933.22,-566.8 3253.02,-566.8 3253.02,-536 2933.22,-536"/>
-<text text-anchor="start" x="2940.22" y="-548.2" font-family="Arial" font-size="14.00">booktitle </text>
-<text text-anchor="start" x="2996.26" y="-548.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-505.2 2933.22,-536 3253.02,-536 3253.02,-505.2 2933.22,-505.2"/>
-<text text-anchor="start" x="2940.22" y="-517.4" font-family="Arial" font-size="14.00">numvolumes </text>
-<text text-anchor="start" x="3023.48" y="-517.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(8)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-474.4 2933.22,-505.2 3253.02,-505.2 3253.02,-474.4 2933.22,-474.4"/>
-<text text-anchor="start" x="2940.22" y="-486.6" font-family="Arial" font-size="14.00">edition </text>
-<text text-anchor="start" x="2985.37" y="-486.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-443.6 2933.22,-474.4 3253.02,-474.4 3253.02,-443.6 2933.22,-443.6"/>
-<text text-anchor="start" x="2940.22" y="-455.8" font-family="Arial" font-size="14.00">volumetitle </text>
-<text text-anchor="start" x="3011.03" y="-455.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-412.8 2933.22,-443.6 3253.02,-443.6 3253.02,-412.8 2933.22,-412.8"/>
-<text text-anchor="start" x="2940.22" y="-425" font-family="Arial" font-size="14.00">seriestitle </text>
-<text text-anchor="start" x="3003.25" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-382 2933.22,-412.8 3253.02,-412.8 3253.02,-382 2933.22,-382"/>
-<text text-anchor="start" x="2940.22" y="-394.2" font-family="Arial" font-size="14.00">seriesvolume </text>
-<text text-anchor="start" x="3026.59" y="-394.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-351.2 2933.22,-382 3253.02,-382 3253.02,-351.2 2933.22,-351.2"/>
-<text text-anchor="start" x="2940.22" y="-363.4" font-family="Arial" font-size="14.00">publisher </text>
-<text text-anchor="start" x="3000.93" y="-363.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-320.4 2933.22,-351.2 3253.02,-351.2 3253.02,-320.4 2933.22,-320.4"/>
-<text text-anchor="start" x="2940.22" y="-332.6" font-family="Arial" font-size="14.00">url </text>
-<text text-anchor="start" x="2959.67" y="-332.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-289.6 2933.22,-320.4 3253.02,-320.4 3253.02,-289.6 2933.22,-289.6"/>
-<text text-anchor="start" x="2940.22" y="-301.8" font-family="Arial" font-size="14.00">city </text>
-<text text-anchor="start" x="2965.11" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-258.8 2933.22,-289.6 3253.02,-289.6 3253.02,-258.8 2933.22,-258.8"/>
-<text text-anchor="start" x="2940.22" y="-271" font-family="Arial" font-size="14.00">state </text>
-<text text-anchor="start" x="2974.47" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-228 2933.22,-258.8 3253.02,-258.8 3253.02,-228 2933.22,-228"/>
-<text text-anchor="start" x="2940.22" y="-240.2" font-family="Arial" font-size="14.00">country </text>
-<text text-anchor="start" x="2990.02" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-197.2 2933.22,-228 3253.02,-228 3253.02,-197.2 2933.22,-197.2"/>
-<text text-anchor="start" x="2940.22" y="-209.4" font-family="Arial" font-size="14.00">originallanguage </text>
-<text text-anchor="start" x="3046.87" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="2933.22,-166.4 2933.22,-197.2 3253.02,-197.2 3253.02,-166.4 2933.22,-166.4"/>
-<text text-anchor="start" x="2940.22" y="-178.6" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="2978.36" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2933.22,-135.6 2933.22,-166.4 3253.02,-166.4 3253.02,-135.6 2933.22,-135.6"/>
-<text text-anchor="start" x="2940.22" y="-147.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="3037.51" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2933.22,-104.8 2933.22,-135.6 3253.02,-135.6 3253.02,-104.8 2933.22,-104.8"/>
-<text text-anchor="start" x="2940.22" y="-117" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="3043.73" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2933.22,-74 2933.22,-104.8 3253.02,-104.8 3253.02,-74 2933.22,-74"/>
-<text text-anchor="start" x="2940.22" y="-86.2" font-family="Arial" font-size="14.00">crossref </text>
-<text text-anchor="start" x="2993.9" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[jsonb]</text>
-<polygon fill="none" stroke="black" points="2933.22,-43.2 2933.22,-74 3253.02,-74 3253.02,-43.2 2933.22,-43.2"/>
-<text text-anchor="start" x="2940.22" y="-55.4" font-family="Arial" font-size="14.00">bibtex </text>
-<text text-anchor="start" x="2981.47" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar]</text>
+<polygon fill="#efefef" stroke="none" points="2921.86,-905.6 2921.86,-941.2 3241.66,-941.2 3241.66,-905.6 2921.86,-905.6"/>
+<polygon fill="none" stroke="black" points="2921.86,-905.6 2921.86,-941.2 3241.66,-941.2 3241.66,-905.6 2921.86,-905.6"/>
+<text text-anchor="start" x="2959.77" y="-919" font-family="Arial Bold" font-size="18.00">ndb.publications</text>
+<text text-anchor="start" x="3079.26" y="-919" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3110.38" y="-919" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="2921.86,-874.8 2921.86,-905.6 3241.66,-905.6 3241.66,-874.8 2921.86,-874.8"/>
+<text text-anchor="start" x="2928.86" y="-887" font-family="Arial" font-size="14.00">articletitle </text>
+<text text-anchor="start" x="2991.88" y="-887" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-844 2921.86,-874.8 3241.66,-874.8 3241.66,-844 2921.86,-844"/>
+<text text-anchor="start" x="2928.86" y="-856.2" font-family="Arial" font-size="14.00">bibtex </text>
+<text text-anchor="start" x="2970.11" y="-856.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar]</text>
+<polygon fill="none" stroke="black" points="2921.86,-813.2 2921.86,-844 3241.66,-844 3241.66,-813.2 2921.86,-813.2"/>
+<text text-anchor="start" x="2928.86" y="-825.4" font-family="Arial" font-size="14.00">booktitle </text>
+<text text-anchor="start" x="2984.89" y="-825.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-782.4 2921.86,-813.2 3241.66,-813.2 3241.66,-782.4 2921.86,-782.4"/>
+<text text-anchor="start" x="2928.86" y="-794.6" font-family="Arial" font-size="14.00">citation </text>
+<text text-anchor="start" x="2977.11" y="-794.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-751.6 2921.86,-782.4 3241.66,-782.4 3241.66,-751.6 2921.86,-751.6"/>
+<text text-anchor="start" x="2928.86" y="-763.8" font-family="Arial" font-size="14.00">citationnumber </text>
+<text text-anchor="start" x="3024.58" y="-763.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-720.8 2921.86,-751.6 3241.66,-751.6 3241.66,-720.8 2921.86,-720.8"/>
+<text text-anchor="start" x="2928.86" y="-733" font-family="Arial" font-size="14.00">city </text>
+<text text-anchor="start" x="2953.75" y="-733" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-690 2921.86,-720.8 3241.66,-720.8 3241.66,-690 2921.86,-690"/>
+<text text-anchor="start" x="2928.86" y="-702.2" font-family="Arial" font-size="14.00">country </text>
+<text text-anchor="start" x="2978.66" y="-702.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-659.2 2921.86,-690 3241.66,-690 3241.66,-659.2 2921.86,-659.2"/>
+<text text-anchor="start" x="2928.86" y="-671.4" font-family="Arial" font-size="14.00">crossref </text>
+<text text-anchor="start" x="2982.54" y="-671.4" font-family="Arial" font-size="14.00" fill="#666666">[jsonb]</text>
+<polygon fill="none" stroke="black" points="2921.86,-628.4 2921.86,-659.2 3241.66,-659.2 3241.66,-628.4 2921.86,-628.4"/>
+<text text-anchor="start" x="2928.86" y="-640.6" font-family="Arial" font-size="14.00">doi </text>
+<text text-anchor="start" x="2951.43" y="-640.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(128)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-597.6 2921.86,-628.4 3241.66,-628.4 3241.66,-597.6 2921.86,-597.6"/>
+<text text-anchor="start" x="2928.86" y="-609.8" font-family="Arial" font-size="14.00">edition </text>
+<text text-anchor="start" x="2974" y="-609.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-566.8 2921.86,-597.6 3241.66,-597.6 3241.66,-566.8 2921.86,-566.8"/>
+<text text-anchor="start" x="2928.86" y="-579" font-family="Arial" font-size="14.00">issue </text>
+<text text-anchor="start" x="2965.43" y="-579" font-family="Arial" font-size="14.00" fill="#666666">[varchar(8)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-536 2921.86,-566.8 3241.66,-566.8 3241.66,-536 2921.86,-536"/>
+<text text-anchor="start" x="2928.86" y="-548.2" font-family="Arial" font-size="14.00">journal </text>
+<text text-anchor="start" x="2974.78" y="-548.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-505.2 2921.86,-536 3241.66,-536 3241.66,-505.2 2921.86,-505.2"/>
+<text text-anchor="start" x="2928.86" y="-517.4" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="2967" y="-517.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-474.4 2921.86,-505.2 3241.66,-505.2 3241.66,-474.4 2921.86,-474.4"/>
+<text text-anchor="start" x="2928.86" y="-486.6" font-family="Arial" font-size="14.00">numvolumes </text>
+<text text-anchor="start" x="3012.12" y="-486.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(8)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-443.6 2921.86,-474.4 3241.66,-474.4 3241.66,-443.6 2921.86,-443.6"/>
+<text text-anchor="start" x="2928.86" y="-455.8" font-family="Arial" font-size="14.00">originallanguage </text>
+<text text-anchor="start" x="3035.5" y="-455.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-412.8 2921.86,-443.6 3241.66,-443.6 3241.66,-412.8 2921.86,-412.8"/>
+<text text-anchor="start" x="2928.86" y="-425" font-family="Arial" font-size="14.00">pages </text>
+<text text-anchor="start" x="2970.89" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-382 2921.86,-412.8 3241.66,-412.8 3241.66,-382 2921.86,-382"/>
+<text text-anchor="start" x="2928.86" y="-394.2" font-family="Arial" font-size="14.00">publicationid </text>
+<text text-anchor="start" x="3010.58" y="-394.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2921.86,-351.2 2921.86,-382 3241.66,-382 3241.66,-351.2 2921.86,-351.2"/>
+<text text-anchor="start" x="2928.86" y="-363.4" font-family="Arial" font-size="14.00">publisher </text>
+<text text-anchor="start" x="2989.56" y="-363.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-320.4 2921.86,-351.2 3241.66,-351.2 3241.66,-320.4 2921.86,-320.4"/>
+<text text-anchor="start" x="2928.86" y="-332.6" font-family="Arial" font-size="14.00">pubtypeid </text>
+<text text-anchor="start" x="2993.47" y="-332.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2921.86,-289.6 2921.86,-320.4 3241.66,-320.4 3241.66,-289.6 2921.86,-289.6"/>
+<text text-anchor="start" x="2928.86" y="-301.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="3026.14" y="-301.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="2921.86,-258.8 2921.86,-289.6 3241.66,-289.6 3241.66,-258.8 2921.86,-258.8"/>
+<text text-anchor="start" x="2928.86" y="-271" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="3032.36" y="-271" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="2921.86,-228 2921.86,-258.8 3241.66,-258.8 3241.66,-228 2921.86,-228"/>
+<text text-anchor="start" x="2928.86" y="-240.2" font-family="Arial" font-size="14.00">seriestitle </text>
+<text text-anchor="start" x="2991.88" y="-240.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-197.2 2921.86,-228 3241.66,-228 3241.66,-197.2 2921.86,-197.2"/>
+<text text-anchor="start" x="2928.86" y="-209.4" font-family="Arial" font-size="14.00">seriesvolume </text>
+<text text-anchor="start" x="3015.23" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(24)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-166.4 2921.86,-197.2 3241.66,-197.2 3241.66,-166.4 2921.86,-166.4"/>
+<text text-anchor="start" x="2928.86" y="-178.6" font-family="Arial" font-size="14.00">state </text>
+<text text-anchor="start" x="2963.1" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-135.6 2921.86,-166.4 3241.66,-166.4 3241.66,-135.6 2921.86,-135.6"/>
+<text text-anchor="start" x="2928.86" y="-147.8" font-family="Arial" font-size="14.00">url </text>
+<text text-anchor="start" x="2948.31" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-104.8 2921.86,-135.6 3241.66,-135.6 3241.66,-104.8 2921.86,-104.8"/>
+<text text-anchor="start" x="2928.86" y="-117" font-family="Arial" font-size="14.00">volume </text>
+<text text-anchor="start" x="2977.88" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
+<polygon fill="none" stroke="black" points="2921.86,-74 2921.86,-104.8 3241.66,-104.8 3241.66,-74 2921.86,-74"/>
+<text text-anchor="start" x="2928.86" y="-86.2" font-family="Arial" font-size="14.00">volumetitle </text>
+<text text-anchor="start" x="2999.67" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2921.86,-43.2 2921.86,-74 3241.66,-74 3241.66,-43.2 2921.86,-43.2"/>
+<text text-anchor="start" x="2928.86" y="-55.4" font-family="Arial" font-size="14.00">year </text>
+<text text-anchor="start" x="2959.98" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 </g>
 <!-- ndb.taxa&#45;&gt;ndb.publications -->
-<g id="edge19" class="edge">
+<g id="edge5" class="edge">
 <title>ndb.taxa:publicationid&#45;&gt;ndb.publications:publicationid</title>
-<path fill="none" stroke="black" d="M3262.25,-1227.05C3291.88,-1181.53 3289.14,-890.2 3254.02,-890.2"/>
-<polygon fill="black" stroke="black" points="3262.4,-1226.95 3251.66,-1229.16 3258.08,-1230.07 3254.57,-1232.61 3254.57,-1232.61 3254.57,-1232.61 3258.08,-1230.07 3256.93,-1236.45 3262.4,-1226.95"/>
-<text text-anchor="start" x="3261.02" y="-1243" font-family="Arial" font-size="10.00">FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid)</text>
+<path fill="none" stroke="black" d="M3334.52,-1355.92C3183.76,-1347.37 3311.95,-1146.6 3293.76,-984.4 3286.46,-919.34 3308.13,-397.4 3242.66,-397.4"/>
+<polygon fill="black" stroke="black" points="3334.53,-1355.92 3344.4,-1360.69 3339.86,-1356.06 3344.19,-1356.18 3344.19,-1356.18 3344.19,-1356.18 3339.86,-1356.06 3344.65,-1351.69 3334.53,-1355.92"/>
+<text text-anchor="start" x="2996.05" y="-1366.2" font-family="Arial" font-size="10.00">FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid)</text>
+</g>
+<!-- ndb.taxagrouptypes -->
+<g id="node6" class="node">
+<title>ndb.taxagrouptypes</title>
+<polygon fill="#efefef" stroke="none" points="3345.86,-536 3345.86,-571.6 3665.66,-571.6 3665.66,-536 3345.86,-536"/>
+<polygon fill="none" stroke="black" points="3345.86,-536 3345.86,-571.6 3665.66,-571.6 3665.66,-536 3345.86,-536"/>
+<text text-anchor="start" x="3372.78" y="-549.4" font-family="Arial Bold" font-size="18.00">ndb.taxagrouptypes</text>
+<text text-anchor="start" x="3514.25" y="-549.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3545.37" y="-549.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="3345.86,-505.2 3345.86,-536 3665.66,-536 3665.66,-505.2 3345.86,-505.2"/>
+<text text-anchor="start" x="3352.86" y="-517.4" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="3450.14" y="-517.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3345.86,-474.4 3345.86,-505.2 3665.66,-505.2 3665.66,-474.4 3345.86,-474.4"/>
+<text text-anchor="start" x="3352.86" y="-486.6" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="3456.36" y="-486.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3345.86,-443.6 3345.86,-474.4 3665.66,-474.4 3665.66,-443.6 3345.86,-443.6"/>
+<text text-anchor="start" x="3352.86" y="-455.8" font-family="Arial" font-size="14.00">taxagroup </text>
+<text text-anchor="start" x="3419.02" y="-455.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="3345.86,-412.8 3345.86,-443.6 3665.66,-443.6 3665.66,-412.8 3345.86,-412.8"/>
+<text text-anchor="start" x="3352.86" y="-425" font-family="Arial" font-size="14.00">taxagroupid </text>
+<text text-anchor="start" x="3429.92" y="-425" font-family="Arial" font-size="14.00" fill="#666666">[varchar(3)]</text>
+</g>
+<!-- ndb.taxa&#45;&gt;ndb.taxagrouptypes -->
+<g id="edge6" class="edge">
+<title>ndb.taxa:taxagroupid&#45;&gt;ndb.taxagrouptypes:taxagroupid</title>
+<path fill="none" stroke="black" d="M3673.86,-1256.58C3712.94,-1174.91 3710.54,-428.2 3666.66,-428.2"/>
+<polygon fill="black" stroke="black" points="3673.95,-1256.48 3663.71,-1260.39 3670.19,-1260.26 3667.13,-1263.33 3667.13,-1263.33 3667.13,-1263.33 3670.19,-1260.26 3670.08,-1266.74 3673.95,-1256.48"/>
+<text text-anchor="start" x="3673.66" y="-1273.8" font-family="Arial" font-size="10.00">FOREIGN KEY (taxagroupid) REFERENCES ndb.taxagrouptypes(taxagroupid)</text>
 </g>
 <!-- ndb.contacts -->
-<g id="node16" class="node">
+<g id="node18" class="node">
 <title>ndb.contacts</title>
-<polygon fill="#efefef" stroke="none" points="3357.22,-736.2 3357.22,-771.8 3677.02,-771.8 3677.02,-736.2 3357.22,-736.2"/>
-<polygon fill="none" stroke="black" points="3357.22,-736.2 3357.22,-771.8 3677.02,-771.8 3677.02,-736.2 3357.22,-736.2"/>
-<text text-anchor="start" x="3409.64" y="-749.6" font-family="Arial Bold" font-size="18.00">ndb.contacts</text>
-<text text-anchor="start" x="3500.12" y="-749.6" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="3531.23" y="-749.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="3357.22,-705.4 3357.22,-736.2 3677.02,-736.2 3677.02,-705.4 3357.22,-705.4"/>
-<text text-anchor="start" x="3364.22" y="-717.6" font-family="Arial" font-size="14.00">contactid </text>
-<text text-anchor="start" x="3424.15" y="-717.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3357.22,-674.6 3357.22,-705.4 3677.02,-705.4 3677.02,-674.6 3357.22,-674.6"/>
-<text text-anchor="start" x="3364.22" y="-686.8" font-family="Arial" font-size="14.00">aliasid </text>
-<text text-anchor="start" x="3407.8" y="-686.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3357.22,-643.8 3357.22,-674.6 3677.02,-674.6 3677.02,-643.8 3357.22,-643.8"/>
-<text text-anchor="start" x="3364.22" y="-656" font-family="Arial" font-size="14.00">contactname </text>
-<text text-anchor="start" x="3448.27" y="-656" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-613 3357.22,-643.8 3677.02,-643.8 3677.02,-613 3357.22,-613"/>
-<text text-anchor="start" x="3364.22" y="-625.2" font-family="Arial" font-size="14.00">contactstatusid </text>
-<text text-anchor="start" x="3461.5" y="-625.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3357.22,-582.2 3357.22,-613 3677.02,-613 3677.02,-582.2 3357.22,-582.2"/>
-<text text-anchor="start" x="3364.22" y="-594.4" font-family="Arial" font-size="14.00">familyname </text>
-<text text-anchor="start" x="3439.69" y="-594.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-551.4 3357.22,-582.2 3677.02,-582.2 3677.02,-551.4 3357.22,-551.4"/>
-<text text-anchor="start" x="3364.22" y="-563.6" font-family="Arial" font-size="14.00">leadinginitials </text>
-<text text-anchor="start" x="3452.17" y="-563.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-520.6 3357.22,-551.4 3677.02,-551.4 3677.02,-520.6 3357.22,-520.6"/>
-<text text-anchor="start" x="3364.22" y="-532.8" font-family="Arial" font-size="14.00">givennames </text>
-<text text-anchor="start" x="3443.6" y="-532.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-489.8 3357.22,-520.6 3677.02,-520.6 3677.02,-489.8 3357.22,-489.8"/>
-<text text-anchor="start" x="3364.22" y="-502" font-family="Arial" font-size="14.00">suffix </text>
-<text text-anchor="start" x="3400.79" y="-502" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-459 3357.22,-489.8 3677.02,-489.8 3677.02,-459 3357.22,-459"/>
-<text text-anchor="start" x="3364.22" y="-471.2" font-family="Arial" font-size="14.00">title </text>
-<text text-anchor="start" x="3389.9" y="-471.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-428.2 3357.22,-459 3677.02,-459 3677.02,-428.2 3357.22,-428.2"/>
-<text text-anchor="start" x="3364.22" y="-440.4" font-family="Arial" font-size="14.00">phone </text>
-<text text-anchor="start" x="3407.04" y="-440.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-397.4 3357.22,-428.2 3677.02,-428.2 3677.02,-397.4 3357.22,-397.4"/>
-<text text-anchor="start" x="3364.22" y="-409.6" font-family="Arial" font-size="14.00">fax </text>
-<text text-anchor="start" x="3386.79" y="-409.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-366.6 3357.22,-397.4 3677.02,-397.4 3677.02,-366.6 3357.22,-366.6"/>
-<text text-anchor="start" x="3364.22" y="-378.8" font-family="Arial" font-size="14.00">email </text>
-<text text-anchor="start" x="3401.57" y="-378.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-335.8 3357.22,-366.6 3677.02,-366.6 3677.02,-335.8 3357.22,-335.8"/>
-<text text-anchor="start" x="3364.22" y="-348" font-family="Arial" font-size="14.00">url </text>
-<text text-anchor="start" x="3383.67" y="-348" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
-<polygon fill="none" stroke="black" points="3357.22,-305 3357.22,-335.8 3677.02,-335.8 3677.02,-305 3357.22,-305"/>
-<text text-anchor="start" x="3364.22" y="-317.2" font-family="Arial" font-size="14.00">address </text>
-<text text-anchor="start" x="3417.92" y="-317.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="3357.22,-274.2 3357.22,-305 3677.02,-305 3677.02,-274.2 3357.22,-274.2"/>
-<text text-anchor="start" x="3364.22" y="-286.4" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="3402.36" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="3357.22,-243.4 3357.22,-274.2 3677.02,-274.2 3677.02,-243.4 3357.22,-243.4"/>
-<text text-anchor="start" x="3364.22" y="-255.6" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="3461.51" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="3357.22,-212.6 3357.22,-243.4 3677.02,-243.4 3677.02,-212.6 3357.22,-212.6"/>
-<text text-anchor="start" x="3364.22" y="-224.8" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="3467.73" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="3769.86,-736.2 3769.86,-771.8 4089.66,-771.8 4089.66,-736.2 3769.86,-736.2"/>
+<polygon fill="none" stroke="black" points="3769.86,-736.2 3769.86,-771.8 4089.66,-771.8 4089.66,-736.2 3769.86,-736.2"/>
+<text text-anchor="start" x="3822.28" y="-749.6" font-family="Arial Bold" font-size="18.00">ndb.contacts</text>
+<text text-anchor="start" x="3912.75" y="-749.6" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3943.87" y="-749.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="3769.86,-705.4 3769.86,-736.2 4089.66,-736.2 4089.66,-705.4 3769.86,-705.4"/>
+<text text-anchor="start" x="3776.86" y="-717.6" font-family="Arial" font-size="14.00">address </text>
+<text text-anchor="start" x="3830.56" y="-717.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="3769.86,-674.6 3769.86,-705.4 4089.66,-705.4 4089.66,-674.6 3769.86,-674.6"/>
+<text text-anchor="start" x="3776.86" y="-686.8" font-family="Arial" font-size="14.00">aliasid </text>
+<text text-anchor="start" x="3820.44" y="-686.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3769.86,-643.8 3769.86,-674.6 4089.66,-674.6 4089.66,-643.8 3769.86,-643.8"/>
+<text text-anchor="start" x="3776.86" y="-656" font-family="Arial" font-size="14.00">contactid </text>
+<text text-anchor="start" x="3836.78" y="-656" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3769.86,-613 3769.86,-643.8 4089.66,-643.8 4089.66,-613 3769.86,-613"/>
+<text text-anchor="start" x="3776.86" y="-625.2" font-family="Arial" font-size="14.00">contactname </text>
+<text text-anchor="start" x="3860.91" y="-625.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-582.2 3769.86,-613 4089.66,-613 4089.66,-582.2 3769.86,-582.2"/>
+<text text-anchor="start" x="3776.86" y="-594.4" font-family="Arial" font-size="14.00">contactstatusid </text>
+<text text-anchor="start" x="3874.14" y="-594.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3769.86,-551.4 3769.86,-582.2 4089.66,-582.2 4089.66,-551.4 3769.86,-551.4"/>
+<text text-anchor="start" x="3776.86" y="-563.6" font-family="Arial" font-size="14.00">email </text>
+<text text-anchor="start" x="3814.21" y="-563.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-520.6 3769.86,-551.4 4089.66,-551.4 4089.66,-520.6 3769.86,-520.6"/>
+<text text-anchor="start" x="3776.86" y="-532.8" font-family="Arial" font-size="14.00">familyname </text>
+<text text-anchor="start" x="3852.33" y="-532.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-489.8 3769.86,-520.6 4089.66,-520.6 4089.66,-489.8 3769.86,-489.8"/>
+<text text-anchor="start" x="3776.86" y="-502" font-family="Arial" font-size="14.00">fax </text>
+<text text-anchor="start" x="3799.43" y="-502" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-459 3769.86,-489.8 4089.66,-489.8 4089.66,-459 3769.86,-459"/>
+<text text-anchor="start" x="3776.86" y="-471.2" font-family="Arial" font-size="14.00">givennames </text>
+<text text-anchor="start" x="3856.24" y="-471.2" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-428.2 3769.86,-459 4089.66,-459 4089.66,-428.2 3769.86,-428.2"/>
+<text text-anchor="start" x="3776.86" y="-440.4" font-family="Arial" font-size="14.00">leadinginitials </text>
+<text text-anchor="start" x="3864.8" y="-440.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-397.4 3769.86,-428.2 4089.66,-428.2 4089.66,-397.4 3769.86,-397.4"/>
+<text text-anchor="start" x="3776.86" y="-409.6" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="3815" y="-409.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="3769.86,-366.6 3769.86,-397.4 4089.66,-397.4 4089.66,-366.6 3769.86,-366.6"/>
+<text text-anchor="start" x="3776.86" y="-378.8" font-family="Arial" font-size="14.00">phone </text>
+<text text-anchor="start" x="3819.68" y="-378.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-335.8 3769.86,-366.6 4089.66,-366.6 4089.66,-335.8 3769.86,-335.8"/>
+<text text-anchor="start" x="3776.86" y="-348" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="3874.14" y="-348" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3769.86,-305 3769.86,-335.8 4089.66,-335.8 4089.66,-305 3769.86,-305"/>
+<text text-anchor="start" x="3776.86" y="-317.2" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="3880.36" y="-317.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3769.86,-274.2 3769.86,-305 4089.66,-305 4089.66,-274.2 3769.86,-274.2"/>
+<text text-anchor="start" x="3776.86" y="-286.4" font-family="Arial" font-size="14.00">suffix </text>
+<text text-anchor="start" x="3813.43" y="-286.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-243.4 3769.86,-274.2 4089.66,-274.2 4089.66,-243.4 3769.86,-243.4"/>
+<text text-anchor="start" x="3776.86" y="-255.6" font-family="Arial" font-size="14.00">title </text>
+<text text-anchor="start" x="3802.54" y="-255.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(16)]</text>
+<polygon fill="none" stroke="black" points="3769.86,-212.6 3769.86,-243.4 4089.66,-243.4 4089.66,-212.6 3769.86,-212.6"/>
+<text text-anchor="start" x="3776.86" y="-224.8" font-family="Arial" font-size="14.00">url </text>
+<text text-anchor="start" x="3796.31" y="-224.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(255)]</text>
 </g>
 <!-- ndb.taxa&#45;&gt;ndb.contacts -->
-<g id="edge20" class="edge">
+<g id="edge22" class="edge">
 <title>ndb.taxa:validatorid&#45;&gt;ndb.contacts:contactid</title>
-<path fill="none" stroke="black" d="M3264.41,-1201.71C3348.44,-1193.28 3285.08,-1078.02 3305.12,-984.4 3317.62,-926.05 3296.56,-720.8 3356.22,-720.8"/>
-<polygon fill="black" stroke="black" points="3264.35,-1201.71 3254.15,-1197.69 3259.02,-1201.96 3254.69,-1202.17 3254.69,-1202.17 3254.69,-1202.17 3259.02,-1201.96 3254.57,-1206.68 3264.35,-1201.71"/>
-<text text-anchor="start" x="3261.02" y="-1212.2" font-family="Arial" font-size="10.00">FOREIGN KEY (validatorid) REFERENCES ndb.contacts(contactid)</text>
-</g>
-<!-- ndb.variables -->
-<g id="node3" class="node">
-<title>ndb.variables</title>
-<polygon fill="#efefef" stroke="none" points="177.22,-1945.4 177.22,-1981 497.02,-1981 497.02,-1945.4 177.22,-1945.4"/>
-<polygon fill="none" stroke="black" points="177.22,-1945.4 177.22,-1981 497.02,-1981 497.02,-1945.4 177.22,-1945.4"/>
-<text text-anchor="start" x="226.65" y="-1958.8" font-family="Arial Bold" font-size="18.00">ndb.variables</text>
-<text text-anchor="start" x="323.11" y="-1958.8" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="354.23" y="-1958.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="177.22,-1914.6 177.22,-1945.4 497.02,-1945.4 497.02,-1914.6 177.22,-1914.6"/>
-<text text-anchor="start" x="184.22" y="-1926.8" font-family="Arial" font-size="14.00">variableid </text>
-<text text-anchor="start" x="248.04" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="177.22,-1883.8 177.22,-1914.6 497.02,-1914.6 497.02,-1883.8 177.22,-1883.8"/>
-<text text-anchor="start" x="184.22" y="-1896" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="233.26" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="177.22,-1853 177.22,-1883.8 497.02,-1883.8 497.02,-1853 177.22,-1853"/>
-<text text-anchor="start" x="184.22" y="-1865.2" font-family="Arial" font-size="14.00">variableelementid </text>
-<text text-anchor="start" x="297.84" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="177.22,-1822.2 177.22,-1853 497.02,-1853 497.02,-1822.2 177.22,-1822.2"/>
-<text text-anchor="start" x="184.22" y="-1834.4" font-family="Arial" font-size="14.00">variableunitsid </text>
-<text text-anchor="start" x="277.61" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="177.22,-1791.4 177.22,-1822.2 497.02,-1822.2 497.02,-1791.4 177.22,-1791.4"/>
-<text text-anchor="start" x="184.22" y="-1803.6" font-family="Arial" font-size="14.00">variablecontextid </text>
-<text text-anchor="start" x="293.18" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="177.22,-1760.6 177.22,-1791.4 497.02,-1791.4 497.02,-1760.6 177.22,-1760.6"/>
-<text text-anchor="start" x="184.22" y="-1772.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="281.51" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="177.22,-1729.8 177.22,-1760.6 497.02,-1760.6 497.02,-1729.8 177.22,-1729.8"/>
-<text text-anchor="start" x="184.22" y="-1742" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="287.73" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-</g>
-<!-- ndb.variables&#45;&gt;ndb.taxa -->
-<g id="edge2" class="edge">
-<title>ndb.variables:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M508.4,-1898.72C618.9,-1887.8 454.1,-1693.85 549.12,-1609.6 648.34,-1521.64 2799.63,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="508.35,-1898.72 498.15,-1894.69 503.02,-1898.97 498.69,-1899.17 498.69,-1899.17 498.69,-1899.17 503.02,-1898.97 498.57,-1903.68 508.35,-1898.72"/>
-<text text-anchor="start" x="7" y="-1909.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
-</g>
-<!-- ndb.samples -->
-<g id="node4" class="node">
-<title>ndb.samples</title>
-<polygon fill="#efefef" stroke="none" points="601.22,-2022.4 601.22,-2058 921.02,-2058 921.02,-2022.4 601.22,-2022.4"/>
-<polygon fill="none" stroke="black" points="601.22,-2022.4 601.22,-2058 921.02,-2058 921.02,-2022.4 601.22,-2022.4"/>
-<text text-anchor="start" x="654.13" y="-2035.8" font-family="Arial Bold" font-size="18.00">ndb.samples</text>
-<text text-anchor="start" x="743.62" y="-2035.8" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="774.74" y="-2035.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="601.22,-1991.6 601.22,-2022.4 921.02,-2022.4 921.02,-1991.6 601.22,-1991.6"/>
-<text text-anchor="start" x="608.22" y="-2003.8" font-family="Arial" font-size="14.00">sampleid </text>
-<text text-anchor="start" x="668.14" y="-2003.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="601.22,-1960.8 601.22,-1991.6 921.02,-1991.6 921.02,-1960.8 601.22,-1960.8"/>
-<text text-anchor="start" x="608.22" y="-1973" font-family="Arial" font-size="14.00">analysisunitid </text>
-<text text-anchor="start" x="696.16" y="-1973" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="601.22,-1930 601.22,-1960.8 921.02,-1960.8 921.02,-1930 601.22,-1930"/>
-<text text-anchor="start" x="608.22" y="-1942.2" font-family="Arial" font-size="14.00">datasetid </text>
-<text text-anchor="start" x="668.93" y="-1942.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="601.22,-1899.2 601.22,-1930 921.02,-1930 921.02,-1899.2 601.22,-1899.2"/>
-<text text-anchor="start" x="608.22" y="-1911.4" font-family="Arial" font-size="14.00">samplename </text>
-<text text-anchor="start" x="692.27" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
-<polygon fill="none" stroke="black" points="601.22,-1868.4 601.22,-1899.2 921.02,-1899.2 921.02,-1868.4 601.22,-1868.4"/>
-<text text-anchor="start" x="608.22" y="-1880.6" font-family="Arial" font-size="14.00">analysisdate </text>
-<text text-anchor="start" x="689.94" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
-<polygon fill="none" stroke="black" points="601.22,-1837.6 601.22,-1868.4 921.02,-1868.4 921.02,-1837.6 601.22,-1837.6"/>
-<text text-anchor="start" x="608.22" y="-1849.8" font-family="Arial" font-size="14.00">labnumber </text>
-<text text-anchor="start" x="678.27" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
-<polygon fill="none" stroke="black" points="601.22,-1806.8 601.22,-1837.6 921.02,-1837.6 921.02,-1806.8 601.22,-1806.8"/>
-<text text-anchor="start" x="608.22" y="-1819" font-family="Arial" font-size="14.00">preparationmethod </text>
-<text text-anchor="start" x="729.64" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="601.22,-1776 601.22,-1806.8 921.02,-1806.8 921.02,-1776 601.22,-1776"/>
-<text text-anchor="start" x="608.22" y="-1788.2" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="646.36" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="601.22,-1745.2 601.22,-1776 921.02,-1776 921.02,-1745.2 601.22,-1745.2"/>
-<text text-anchor="start" x="608.22" y="-1757.4" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="705.51" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="601.22,-1714.4 601.22,-1745.2 921.02,-1745.2 921.02,-1714.4 601.22,-1714.4"/>
-<text text-anchor="start" x="608.22" y="-1726.6" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="711.73" y="-1726.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="601.22,-1683.6 601.22,-1714.4 921.02,-1714.4 921.02,-1683.6 601.22,-1683.6"/>
-<text text-anchor="start" x="608.22" y="-1695.8" font-family="Arial" font-size="14.00">sampledate </text>
-<text text-anchor="start" x="684.49" y="-1695.8" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
-<polygon fill="none" stroke="black" points="601.22,-1652.8 601.22,-1683.6 921.02,-1683.6 921.02,-1652.8 601.22,-1652.8"/>
-<text text-anchor="start" x="608.22" y="-1665" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="657.26" y="-1665" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-</g>
-<!-- ndb.samples&#45;&gt;ndb.taxa -->
-<g id="edge3" class="edge">
-<title>ndb.samples:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M932.31,-1666.53C953.82,-1658.44 945.79,-1623.14 973.12,-1609.6 1168.6,-1512.75 2714.07,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="932.22,-1666.55 921.63,-1663.7 926.96,-1667.4 922.68,-1668.09 922.68,-1668.09 922.68,-1668.09 926.96,-1667.4 923.07,-1672.59 932.22,-1666.55"/>
-<text text-anchor="start" x="929.02" y="-1652.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M3676.81,-1078.12C3712.74,-1071.32 3703.67,-1026.14 3717.76,-984.4 3741.16,-915.09 3695.71,-659.2 3768.86,-659.2"/>
+<polygon fill="black" stroke="black" points="3676.96,-1078.11 3666.6,-1074.49 3671.64,-1078.57 3667.33,-1078.94 3667.33,-1078.94 3667.33,-1078.94 3671.64,-1078.57 3667.38,-1083.45 3676.96,-1078.11"/>
+<text text-anchor="start" x="3673.66" y="-1089" font-family="Arial" font-size="10.00">FOREIGN KEY (validatorid) REFERENCES ndb.contacts(contactid)</text>
 </g>
 <!-- ndb.datasettaxonnotes -->
-<g id="node5" class="node">
+<g id="node7" class="node">
 <title>ndb.datasettaxonnotes</title>
-<polygon fill="#efefef" stroke="none" points="1025.22,-1945.4 1025.22,-1981 1345.02,-1981 1345.02,-1945.4 1025.22,-1945.4"/>
-<polygon fill="none" stroke="black" points="1025.22,-1945.4 1025.22,-1981 1345.02,-1981 1345.02,-1945.4 1025.22,-1945.4"/>
-<text text-anchor="start" x="1043.15" y="-1958.8" font-family="Arial Bold" font-size="18.00">ndb.datasettaxonnotes</text>
-<text text-anchor="start" x="1202.61" y="-1958.8" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="1233.73" y="-1958.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1914.6 1025.22,-1945.4 1345.02,-1945.4 1345.02,-1914.6 1025.22,-1914.6"/>
-<text text-anchor="start" x="1032.22" y="-1926.8" font-family="Arial" font-size="14.00">datasetid </text>
-<text text-anchor="start" x="1092.93" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1883.8 1025.22,-1914.6 1345.02,-1914.6 1345.02,-1883.8 1025.22,-1883.8"/>
-<text text-anchor="start" x="1032.22" y="-1896" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="1081.26" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1853 1025.22,-1883.8 1345.02,-1883.8 1345.02,-1853 1025.22,-1853"/>
-<text text-anchor="start" x="1032.22" y="-1865.2" font-family="Arial" font-size="14.00">contactid </text>
-<text text-anchor="start" x="1092.15" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1822.2 1025.22,-1853 1345.02,-1853 1345.02,-1822.2 1025.22,-1822.2"/>
-<text text-anchor="start" x="1032.22" y="-1834.4" font-family="Arial" font-size="14.00">date </text>
-<text text-anchor="start" x="1063.36" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1791.4 1025.22,-1822.2 1345.02,-1822.2 1345.02,-1791.4 1025.22,-1791.4"/>
-<text text-anchor="start" x="1032.22" y="-1803.6" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="1070.36" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1760.6 1025.22,-1791.4 1345.02,-1791.4 1345.02,-1760.6 1025.22,-1760.6"/>
-<text text-anchor="start" x="1032.22" y="-1772.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1129.51" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="1025.22,-1729.8 1025.22,-1760.6 1345.02,-1760.6 1345.02,-1729.8 1025.22,-1729.8"/>
-<text text-anchor="start" x="1032.22" y="-1742" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1135.73" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="1013.86,-1945.4 1013.86,-1981 1333.66,-1981 1333.66,-1945.4 1013.86,-1945.4"/>
+<polygon fill="none" stroke="black" points="1013.86,-1945.4 1013.86,-1981 1333.66,-1981 1333.66,-1945.4 1013.86,-1945.4"/>
+<text text-anchor="start" x="1031.79" y="-1958.8" font-family="Arial Bold" font-size="18.00">ndb.datasettaxonnotes</text>
+<text text-anchor="start" x="1191.25" y="-1958.8" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="1222.36" y="-1958.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1914.6 1013.86,-1945.4 1333.66,-1945.4 1333.66,-1914.6 1013.86,-1914.6"/>
+<text text-anchor="start" x="1020.86" y="-1926.8" font-family="Arial" font-size="14.00">contactid </text>
+<text text-anchor="start" x="1080.78" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1883.8 1013.86,-1914.6 1333.66,-1914.6 1333.66,-1883.8 1013.86,-1883.8"/>
+<text text-anchor="start" x="1020.86" y="-1896" font-family="Arial" font-size="14.00">datasetid </text>
+<text text-anchor="start" x="1081.57" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1853 1013.86,-1883.8 1333.66,-1883.8 1333.66,-1853 1013.86,-1853"/>
+<text text-anchor="start" x="1020.86" y="-1865.2" font-family="Arial" font-size="14.00">date </text>
+<text text-anchor="start" x="1052" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1822.2 1013.86,-1853 1333.66,-1853 1333.66,-1822.2 1013.86,-1822.2"/>
+<text text-anchor="start" x="1020.86" y="-1834.4" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="1059" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1791.4 1013.86,-1822.2 1333.66,-1822.2 1333.66,-1791.4 1013.86,-1791.4"/>
+<text text-anchor="start" x="1020.86" y="-1803.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1118.14" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1760.6 1013.86,-1791.4 1333.66,-1791.4 1333.66,-1760.6 1013.86,-1760.6"/>
+<text text-anchor="start" x="1020.86" y="-1772.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1124.36" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1013.86,-1729.8 1013.86,-1760.6 1333.66,-1760.6 1333.66,-1729.8 1013.86,-1729.8"/>
+<text text-anchor="start" x="1020.86" y="-1742" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="1069.89" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.datasettaxonnotes&#45;&gt;ndb.taxa -->
-<g id="edge5" class="edge">
+<g id="edge7" class="edge">
 <title>ndb.datasettaxonnotes:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M1356.4,-1898.72C1466.97,-1887.88 1303.37,-1695.27 1397.12,-1609.6 1523.49,-1494.13 2761.05,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="1356.35,-1898.72 1346.15,-1894.69 1351.02,-1898.97 1346.69,-1899.17 1346.69,-1899.17 1346.69,-1899.17 1351.02,-1898.97 1346.56,-1903.68 1356.35,-1898.72"/>
-<text text-anchor="start" x="1104.01" y="-1883.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1345.02,-1744.2C1391.93,-1734.04 1339.79,-1648.93 1385.76,-1609.6 1723.64,-1320.52 2900.19,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="1344.95,-1744.21 1334.56,-1740.69 1339.64,-1744.72 1335.33,-1745.14 1335.33,-1745.14 1335.33,-1745.14 1339.64,-1744.72 1335.42,-1749.65 1344.95,-1744.21"/>
+<text text-anchor="start" x="843.64" y="-1755.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.externaltaxa -->
-<g id="node6" class="node">
+<g id="node8" class="node">
 <title>ndb.externaltaxa</title>
-<polygon fill="#efefef" stroke="none" points="1449.22,-1930 1449.22,-1965.6 1769.02,-1965.6 1769.02,-1930 1449.22,-1930"/>
-<polygon fill="none" stroke="black" points="1449.22,-1930 1449.22,-1965.6 1769.02,-1965.6 1769.02,-1930 1449.22,-1930"/>
-<text text-anchor="start" x="1487.16" y="-1943.4" font-family="Arial Bold" font-size="18.00">ndb.externaltaxa</text>
-<text text-anchor="start" x="1606.6" y="-1943.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="1637.72" y="-1943.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="1449.22,-1899.2 1449.22,-1930 1769.02,-1930 1769.02,-1899.2 1449.22,-1899.2"/>
-<text text-anchor="start" x="1456.22" y="-1911.4" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="1505.26" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1449.22,-1868.4 1449.22,-1899.2 1769.02,-1899.2 1769.02,-1868.4 1449.22,-1868.4"/>
-<text text-anchor="start" x="1456.22" y="-1880.6" font-family="Arial" font-size="14.00">extdatabaseid </text>
-<text text-anchor="start" x="1547.29" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1449.22,-1837.6 1449.22,-1868.4 1769.02,-1868.4 1769.02,-1837.6 1449.22,-1837.6"/>
-<text text-anchor="start" x="1456.22" y="-1849.8" font-family="Arial" font-size="14.00">exttaxonid </text>
-<text text-anchor="start" x="1523.93" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
-<polygon fill="none" stroke="black" points="1449.22,-1806.8 1449.22,-1837.6 1769.02,-1837.6 1769.02,-1806.8 1449.22,-1806.8"/>
-<text text-anchor="start" x="1456.22" y="-1819" font-family="Arial" font-size="14.00">url </text>
-<text text-anchor="start" x="1475.67" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[varchar(128)]</text>
-<polygon fill="none" stroke="black" points="1449.22,-1776 1449.22,-1806.8 1769.02,-1806.8 1769.02,-1776 1449.22,-1776"/>
-<text text-anchor="start" x="1456.22" y="-1788.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1553.51" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="1449.22,-1745.2 1449.22,-1776 1769.02,-1776 1769.02,-1745.2 1449.22,-1745.2"/>
-<text text-anchor="start" x="1456.22" y="-1757.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1559.73" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="1437.86,-1930 1437.86,-1965.6 1757.66,-1965.6 1757.66,-1930 1437.86,-1930"/>
+<polygon fill="none" stroke="black" points="1437.86,-1930 1437.86,-1965.6 1757.66,-1965.6 1757.66,-1930 1437.86,-1930"/>
+<text text-anchor="start" x="1475.79" y="-1943.4" font-family="Arial Bold" font-size="18.00">ndb.externaltaxa</text>
+<text text-anchor="start" x="1595.24" y="-1943.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="1626.35" y="-1943.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="1437.86,-1899.2 1437.86,-1930 1757.66,-1930 1757.66,-1899.2 1437.86,-1899.2"/>
+<text text-anchor="start" x="1444.86" y="-1911.4" font-family="Arial" font-size="14.00">extdatabaseid </text>
+<text text-anchor="start" x="1535.93" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1437.86,-1868.4 1437.86,-1899.2 1757.66,-1899.2 1757.66,-1868.4 1437.86,-1868.4"/>
+<text text-anchor="start" x="1444.86" y="-1880.6" font-family="Arial" font-size="14.00">exttaxonid </text>
+<text text-anchor="start" x="1512.57" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<polygon fill="none" stroke="black" points="1437.86,-1837.6 1437.86,-1868.4 1757.66,-1868.4 1757.66,-1837.6 1437.86,-1837.6"/>
+<text text-anchor="start" x="1444.86" y="-1849.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1542.14" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1437.86,-1806.8 1437.86,-1837.6 1757.66,-1837.6 1757.66,-1806.8 1437.86,-1806.8"/>
+<text text-anchor="start" x="1444.86" y="-1819" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1548.36" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1437.86,-1776 1437.86,-1806.8 1757.66,-1806.8 1757.66,-1776 1437.86,-1776"/>
+<text text-anchor="start" x="1444.86" y="-1788.2" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="1493.89" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1437.86,-1745.2 1437.86,-1776 1757.66,-1776 1757.66,-1745.2 1437.86,-1745.2"/>
+<text text-anchor="start" x="1444.86" y="-1757.4" font-family="Arial" font-size="14.00">url </text>
+<text text-anchor="start" x="1464.31" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(128)]</text>
 </g>
 <!-- ndb.externaltaxa&#45;&gt;ndb.taxa -->
-<g id="edge6" class="edge">
+<g id="edge8" class="edge">
 <title>ndb.externaltaxa:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M1780.12,-1912.37C1831.72,-1887.05 1774.07,-1654.39 1821.12,-1609.6 1911.16,-1523.9 2807.92,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="1780.11,-1912.37 1769.38,-1910.13 1774.91,-1913.52 1770.68,-1914.46 1770.68,-1914.46 1770.68,-1914.46 1774.91,-1913.52 1771.32,-1918.92 1780.11,-1912.37"/>
-<text text-anchor="start" x="1279" y="-1924.6" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M1768.93,-1790.67C1834.58,-1780.49 1752.67,-1665.87 1809.76,-1609.6 2061.14,-1361.86 2991.92,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="1768.97,-1790.67 1758.68,-1786.89 1763.65,-1791.05 1759.33,-1791.35 1759.33,-1791.35 1759.33,-1791.35 1763.65,-1791.05 1759.31,-1795.87 1768.97,-1790.67"/>
+<text text-anchor="start" x="1267.64" y="-1801.4" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.formtaxa -->
-<g id="node7" class="node">
+<g id="node9" class="node">
 <title>ndb.formtaxa</title>
-<polygon fill="#efefef" stroke="none" points="1873.22,-1945.4 1873.22,-1981 2193.02,-1981 2193.02,-1945.4 1873.22,-1945.4"/>
-<polygon fill="none" stroke="black" points="1873.22,-1945.4 1873.22,-1981 2193.02,-1981 2193.02,-1945.4 1873.22,-1945.4"/>
-<text text-anchor="start" x="1922.65" y="-1958.8" font-family="Arial Bold" font-size="18.00">ndb.formtaxa</text>
-<text text-anchor="start" x="2019.11" y="-1958.8" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="2050.23" y="-1958.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1914.6 1873.22,-1945.4 2193.02,-1945.4 2193.02,-1914.6 1873.22,-1914.6"/>
-<text text-anchor="start" x="1880.22" y="-1926.8" font-family="Arial" font-size="14.00">formtaxonid </text>
-<text text-anchor="start" x="1957.26" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1883.8 1873.22,-1914.6 2193.02,-1914.6 2193.02,-1883.8 1873.22,-1883.8"/>
-<text text-anchor="start" x="1880.22" y="-1896" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="1929.26" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1853 1873.22,-1883.8 2193.02,-1883.8 2193.02,-1853 1873.22,-1853"/>
-<text text-anchor="start" x="1880.22" y="-1865.2" font-family="Arial" font-size="14.00">affinityid </text>
-<text text-anchor="start" x="1935.47" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1822.2 1873.22,-1853 2193.02,-1853 2193.02,-1822.2 1873.22,-1822.2"/>
-<text text-anchor="start" x="1880.22" y="-1834.4" font-family="Arial" font-size="14.00">publicationid </text>
-<text text-anchor="start" x="1961.95" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1791.4 1873.22,-1822.2 2193.02,-1822.2 2193.02,-1791.4 1873.22,-1791.4"/>
-<text text-anchor="start" x="1880.22" y="-1803.6" font-family="Arial" font-size="14.00">systematicdescription </text>
-<text text-anchor="start" x="2017.94" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1760.6 1873.22,-1791.4 2193.02,-1791.4 2193.02,-1760.6 1873.22,-1760.6"/>
-<text text-anchor="start" x="1880.22" y="-1772.8" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="1977.51" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="1873.22,-1729.8 1873.22,-1760.6 2193.02,-1760.6 2193.02,-1729.8 1873.22,-1729.8"/>
-<text text-anchor="start" x="1880.22" y="-1742" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="1983.73" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="1861.86,-1945.4 1861.86,-1981 2181.66,-1981 2181.66,-1945.4 1861.86,-1945.4"/>
+<polygon fill="none" stroke="black" points="1861.86,-1945.4 1861.86,-1981 2181.66,-1981 2181.66,-1945.4 1861.86,-1945.4"/>
+<text text-anchor="start" x="1911.28" y="-1958.8" font-family="Arial Bold" font-size="18.00">ndb.formtaxa</text>
+<text text-anchor="start" x="2007.75" y="-1958.8" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="2038.87" y="-1958.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1914.6 1861.86,-1945.4 2181.66,-1945.4 2181.66,-1914.6 1861.86,-1914.6"/>
+<text text-anchor="start" x="1868.86" y="-1926.8" font-family="Arial" font-size="14.00">affinityid </text>
+<text text-anchor="start" x="1924.11" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1883.8 1861.86,-1914.6 2181.66,-1914.6 2181.66,-1883.8 1861.86,-1883.8"/>
+<text text-anchor="start" x="1868.86" y="-1896" font-family="Arial" font-size="14.00">formtaxonid </text>
+<text text-anchor="start" x="1945.89" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1853 1861.86,-1883.8 2181.66,-1883.8 2181.66,-1853 1861.86,-1853"/>
+<text text-anchor="start" x="1868.86" y="-1865.2" font-family="Arial" font-size="14.00">publicationid </text>
+<text text-anchor="start" x="1950.58" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1822.2 1861.86,-1853 2181.66,-1853 2181.66,-1822.2 1861.86,-1822.2"/>
+<text text-anchor="start" x="1868.86" y="-1834.4" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="1966.14" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1791.4 1861.86,-1822.2 2181.66,-1822.2 2181.66,-1791.4 1861.86,-1791.4"/>
+<text text-anchor="start" x="1868.86" y="-1803.6" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="1972.36" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1760.6 1861.86,-1791.4 2181.66,-1791.4 2181.66,-1760.6 1861.86,-1760.6"/>
+<text text-anchor="start" x="1868.86" y="-1772.8" font-family="Arial" font-size="14.00">systematicdescription </text>
+<text text-anchor="start" x="2006.58" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<polygon fill="none" stroke="black" points="1861.86,-1729.8 1861.86,-1760.6 2181.66,-1760.6 2181.66,-1729.8 1861.86,-1729.8"/>
+<text text-anchor="start" x="1868.86" y="-1742" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="1917.89" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.formtaxa&#45;&gt;ndb.taxa -->
-<g id="edge7" class="edge">
+<g id="edge9" class="edge">
 <title>ndb.formtaxa:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M2203.96,-1896.94C2252.9,-1872.29 2201.81,-1653.47 2245.12,-1609.6 2354.32,-1499.02 2776.82,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="2204.1,-1896.91 2193.35,-1894.74 2198.9,-1898.09 2194.68,-1899.05 2194.68,-1899.05 2194.68,-1899.05 2198.9,-1898.09 2195.35,-1903.51 2204.1,-1896.91"/>
-<text text-anchor="start" x="2201.02" y="-1909.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M2193.05,-1744.24C2240.3,-1734.43 2190.79,-1652.19 2233.76,-1609.6 2607.34,-1239.35 2818.89,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="2192.95,-1744.25 2182.58,-1740.69 2187.64,-1744.74 2183.33,-1745.14 2183.33,-1745.14 2183.33,-1745.14 2187.64,-1744.74 2183.41,-1749.65 2192.95,-1744.25"/>
+<text text-anchor="start" x="2189.66" y="-1755.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.formtaxa&#45;&gt;ndb.taxa -->
-<g id="edge8" class="edge">
+<g id="edge10" class="edge">
 <title>ndb.formtaxa:affinityid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M2204.25,-1867.89C2302.16,-1857.48 2164.5,-1689.6 2245.12,-1609.6 2355.43,-1500.13 2776.82,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="2204.35,-1867.89 2194.13,-1863.89 2199.02,-1868.15 2194.69,-1868.37 2194.69,-1868.37 2194.69,-1868.37 2199.02,-1868.15 2194.58,-1872.88 2204.35,-1867.89"/>
-<text text-anchor="start" x="1698.56" y="-1878.4" font-family="Arial" font-size="10.00">FOREIGN KEY (affinityid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M2192.6,-1928.01C2248.26,-1903.65 2190.26,-1662.44 2233.76,-1609.6 2568.06,-1203.53 2818.89,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="2192.79,-1927.98 2182.11,-1925.52 2187.56,-1929.02 2183.32,-1929.87 2183.32,-1929.87 2183.32,-1929.87 2187.56,-1929.02 2183.87,-1934.35 2192.79,-1927.98"/>
+<text text-anchor="start" x="1687.2" y="-1940" font-family="Arial" font-size="10.00">FOREIGN KEY (affinityid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.isostratdata -->
-<g id="node8" class="node">
+<g id="node10" class="node">
 <title>ndb.isostratdata</title>
-<polygon fill="#efefef" stroke="none" points="2297.22,-1930 2297.22,-1965.6 2617.02,-1965.6 2617.02,-1930 2297.22,-1930"/>
-<polygon fill="none" stroke="black" points="2297.22,-1930 2297.22,-1965.6 2617.02,-1965.6 2617.02,-1930 2297.22,-1930"/>
-<text text-anchor="start" x="2338.14" y="-1943.4" font-family="Arial Bold" font-size="18.00">ndb.isostratdata</text>
-<text text-anchor="start" x="2451.62" y="-1943.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="2482.73" y="-1943.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="2297.22,-1899.2 2297.22,-1930 2617.02,-1930 2617.02,-1899.2 2297.22,-1899.2"/>
-<text text-anchor="start" x="2304.22" y="-1911.4" font-family="Arial" font-size="14.00">dataid </text>
-<text text-anchor="start" x="2346.26" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2297.22,-1868.4 2297.22,-1899.2 2617.02,-1899.2 2617.02,-1868.4 2297.22,-1868.4"/>
-<text text-anchor="start" x="2304.22" y="-1880.6" font-family="Arial" font-size="14.00">sd </text>
-<text text-anchor="start" x="2322.9" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
-<polygon fill="none" stroke="black" points="2297.22,-1837.6 2297.22,-1868.4 2617.02,-1868.4 2617.02,-1837.6 2297.22,-1837.6"/>
-<text text-anchor="start" x="2304.22" y="-1849.8" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="2353.26" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2297.22,-1806.8 2297.22,-1837.6 2617.02,-1837.6 2617.02,-1806.8 2297.22,-1806.8"/>
-<text text-anchor="start" x="2304.22" y="-1819" font-family="Arial" font-size="14.00">elementtypeid </text>
-<text text-anchor="start" x="2395.28" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2297.22,-1776 2297.22,-1806.8 2617.02,-1806.8 2617.02,-1776 2297.22,-1776"/>
-<text text-anchor="start" x="2304.22" y="-1788.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="2401.51" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2297.22,-1745.2 2297.22,-1776 2617.02,-1776 2617.02,-1745.2 2297.22,-1745.2"/>
-<text text-anchor="start" x="2304.22" y="-1757.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="2407.73" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="2285.86,-1930 2285.86,-1965.6 2605.66,-1965.6 2605.66,-1930 2285.86,-1930"/>
+<polygon fill="none" stroke="black" points="2285.86,-1930 2285.86,-1965.6 2605.66,-1965.6 2605.66,-1930 2285.86,-1930"/>
+<text text-anchor="start" x="2326.78" y="-1943.4" font-family="Arial Bold" font-size="18.00">ndb.isostratdata</text>
+<text text-anchor="start" x="2440.25" y="-1943.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="2471.37" y="-1943.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="2285.86,-1899.2 2285.86,-1930 2605.66,-1930 2605.66,-1899.2 2285.86,-1899.2"/>
+<text text-anchor="start" x="2292.86" y="-1911.4" font-family="Arial" font-size="14.00">dataid </text>
+<text text-anchor="start" x="2334.89" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2285.86,-1868.4 2285.86,-1899.2 2605.66,-1899.2 2605.66,-1868.4 2285.86,-1868.4"/>
+<text text-anchor="start" x="2292.86" y="-1880.6" font-family="Arial" font-size="14.00">elementtypeid </text>
+<text text-anchor="start" x="2383.92" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2285.86,-1837.6 2285.86,-1868.4 2605.66,-1868.4 2605.66,-1837.6 2285.86,-1837.6"/>
+<text text-anchor="start" x="2292.86" y="-1849.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="2390.14" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="2285.86,-1806.8 2285.86,-1837.6 2605.66,-1837.6 2605.66,-1806.8 2285.86,-1806.8"/>
+<text text-anchor="start" x="2292.86" y="-1819" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="2396.36" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="2285.86,-1776 2285.86,-1806.8 2605.66,-1806.8 2605.66,-1776 2285.86,-1776"/>
+<text text-anchor="start" x="2292.86" y="-1788.2" font-family="Arial" font-size="14.00">sd </text>
+<text text-anchor="start" x="2311.54" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<polygon fill="none" stroke="black" points="2285.86,-1745.2 2285.86,-1776 2605.66,-1776 2605.66,-1745.2 2285.86,-1745.2"/>
+<text text-anchor="start" x="2292.86" y="-1757.4" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="2341.89" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.isostratdata&#45;&gt;ndb.taxa -->
-<g id="edge9" class="edge">
+<g id="edge11" class="edge">
 <title>ndb.isostratdata:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M2628.26,-1852.49C2720.33,-1842.72 2603.68,-1694.08 2669.12,-1609.6 2749.02,-1506.46 2801.76,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="2628.35,-1852.49 2618.13,-1848.49 2623.02,-1852.75 2618.69,-1852.97 2618.69,-1852.97 2618.69,-1852.97 2623.02,-1852.75 2618.58,-1857.48 2628.35,-1852.49"/>
-<text text-anchor="start" x="2625.02" y="-1863" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M2616.78,-1759.82C2671.02,-1750.59 2615.51,-1661.75 2657.76,-1609.6 2881.26,-1333.76 2989.84,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="2616.96,-1759.81 2606.65,-1756.09 2611.64,-1760.22 2607.33,-1760.55 2607.33,-1760.55 2607.33,-1760.55 2611.64,-1760.22 2607.34,-1765.06 2616.96,-1759.81"/>
+<text text-anchor="start" x="2613.66" y="-1770.6" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
+</g>
+<!-- ndb.samples -->
+<g id="node11" class="node">
+<title>ndb.samples</title>
+<polygon fill="#efefef" stroke="none" points="2709.86,-2022.4 2709.86,-2058 3029.66,-2058 3029.66,-2022.4 2709.86,-2022.4"/>
+<polygon fill="none" stroke="black" points="2709.86,-2022.4 2709.86,-2058 3029.66,-2058 3029.66,-2022.4 2709.86,-2022.4"/>
+<text text-anchor="start" x="2762.77" y="-2035.8" font-family="Arial Bold" font-size="18.00">ndb.samples</text>
+<text text-anchor="start" x="2852.26" y="-2035.8" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="2883.38" y="-2035.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1991.6 2709.86,-2022.4 3029.66,-2022.4 3029.66,-1991.6 2709.86,-1991.6"/>
+<text text-anchor="start" x="2716.86" y="-2003.8" font-family="Arial" font-size="14.00">analysisdate </text>
+<text text-anchor="start" x="2798.58" y="-2003.8" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1960.8 2709.86,-1991.6 3029.66,-1991.6 3029.66,-1960.8 2709.86,-1960.8"/>
+<text text-anchor="start" x="2716.86" y="-1973" font-family="Arial" font-size="14.00">analysisunitid </text>
+<text text-anchor="start" x="2804.8" y="-1973" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1930 2709.86,-1960.8 3029.66,-1960.8 3029.66,-1930 2709.86,-1930"/>
+<text text-anchor="start" x="2716.86" y="-1942.2" font-family="Arial" font-size="14.00">datasetid </text>
+<text text-anchor="start" x="2777.57" y="-1942.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1899.2 2709.86,-1930 3029.66,-1930 3029.66,-1899.2 2709.86,-1899.2"/>
+<text text-anchor="start" x="2716.86" y="-1911.4" font-family="Arial" font-size="14.00">labnumber </text>
+<text text-anchor="start" x="2786.9" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[varchar(40)]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1868.4 2709.86,-1899.2 3029.66,-1899.2 3029.66,-1868.4 2709.86,-1868.4"/>
+<text text-anchor="start" x="2716.86" y="-1880.6" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="2755" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1837.6 2709.86,-1868.4 3029.66,-1868.4 3029.66,-1837.6 2709.86,-1837.6"/>
+<text text-anchor="start" x="2716.86" y="-1849.8" font-family="Arial" font-size="14.00">preparationmethod </text>
+<text text-anchor="start" x="2838.27" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1806.8 2709.86,-1837.6 3029.66,-1837.6 3029.66,-1806.8 2709.86,-1806.8"/>
+<text text-anchor="start" x="2716.86" y="-1819" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="2814.14" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1776 2709.86,-1806.8 3029.66,-1806.8 3029.66,-1776 2709.86,-1776"/>
+<text text-anchor="start" x="2716.86" y="-1788.2" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="2820.36" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1745.2 2709.86,-1776 3029.66,-1776 3029.66,-1745.2 2709.86,-1745.2"/>
+<text text-anchor="start" x="2716.86" y="-1757.4" font-family="Arial" font-size="14.00">sampledate </text>
+<text text-anchor="start" x="2793.13" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1714.4 2709.86,-1745.2 3029.66,-1745.2 3029.66,-1714.4 2709.86,-1714.4"/>
+<text text-anchor="start" x="2716.86" y="-1726.6" font-family="Arial" font-size="14.00">sampleid </text>
+<text text-anchor="start" x="2776.78" y="-1726.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1683.6 2709.86,-1714.4 3029.66,-1714.4 3029.66,-1683.6 2709.86,-1683.6"/>
+<text text-anchor="start" x="2716.86" y="-1695.8" font-family="Arial" font-size="14.00">samplename </text>
+<text text-anchor="start" x="2800.9" y="-1695.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(80)]</text>
+<polygon fill="none" stroke="black" points="2709.86,-1652.8 2709.86,-1683.6 3029.66,-1683.6 3029.66,-1652.8 2709.86,-1652.8"/>
+<text text-anchor="start" x="2716.86" y="-1665" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="2765.89" y="-1665" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+</g>
+<!-- ndb.samples&#45;&gt;ndb.taxa -->
+<g id="edge12" class="edge">
+<title>ndb.samples:taxonid&#45;&gt;ndb.taxa:taxonid</title>
+<path fill="none" stroke="black" d="M3039.33,-1662.64C3093.42,-1610.07 3315.65,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="3039.36,-1662.62 3028.51,-1664.23 3034.87,-1665.5 3031.22,-1667.84 3031.22,-1667.84 3031.22,-1667.84 3034.87,-1665.5 3033.37,-1671.81 3039.36,-1662.62"/>
+<text text-anchor="start" x="3037.66" y="-1678.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.specimendates -->
-<g id="node9" class="node">
+<g id="node12" class="node">
 <title>ndb.specimendates</title>
-<polygon fill="#efefef" stroke="none" points="2721.22,-1991.6 2721.22,-2027.2 3041.02,-2027.2 3041.02,-1991.6 2721.22,-1991.6"/>
-<polygon fill="none" stroke="black" points="2721.22,-1991.6 2721.22,-2027.2 3041.02,-2027.2 3041.02,-1991.6 2721.22,-1991.6"/>
-<text text-anchor="start" x="2750.65" y="-2005" font-family="Arial Bold" font-size="18.00">ndb.specimendates</text>
-<text text-anchor="start" x="2887.11" y="-2005" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="2918.23" y="-2005" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1960.8 2721.22,-1991.6 3041.02,-1991.6 3041.02,-1960.8 2721.22,-1960.8"/>
-<text text-anchor="start" x="2728.22" y="-1973" font-family="Arial" font-size="14.00">specimendateid </text>
-<text text-anchor="start" x="2830.18" y="-1973" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1930 2721.22,-1960.8 3041.02,-1960.8 3041.02,-1930 2721.22,-1930"/>
-<text text-anchor="start" x="2728.22" y="-1942.2" font-family="Arial" font-size="14.00">geochronid </text>
-<text text-anchor="start" x="2801.39" y="-1942.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1899.2 2721.22,-1930 3041.02,-1930 3041.02,-1899.2 2721.22,-1899.2"/>
-<text text-anchor="start" x="2728.22" y="-1911.4" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="2777.26" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1868.4 2721.22,-1899.2 3041.02,-1899.2 3041.02,-1868.4 2721.22,-1868.4"/>
-<text text-anchor="start" x="2728.22" y="-1880.6" font-family="Arial" font-size="14.00">fractionid </text>
-<text text-anchor="start" x="2788.92" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1837.6 2721.22,-1868.4 3041.02,-1868.4 3041.02,-1837.6 2721.22,-1837.6"/>
-<text text-anchor="start" x="2728.22" y="-1849.8" font-family="Arial" font-size="14.00">sampleid </text>
-<text text-anchor="start" x="2788.14" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1806.8 2721.22,-1837.6 3041.02,-1837.6 3041.02,-1806.8 2721.22,-1806.8"/>
-<text text-anchor="start" x="2728.22" y="-1819" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="2766.36" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1776 2721.22,-1806.8 3041.02,-1806.8 3041.02,-1776 2721.22,-1776"/>
-<text text-anchor="start" x="2728.22" y="-1788.2" font-family="Arial" font-size="14.00">elementtypeid </text>
-<text text-anchor="start" x="2819.28" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1745.2 2721.22,-1776 3041.02,-1776 3041.02,-1745.2 2721.22,-1745.2"/>
-<text text-anchor="start" x="2728.22" y="-1757.4" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="2825.51" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1714.4 2721.22,-1745.2 3041.02,-1745.2 3041.02,-1714.4 2721.22,-1714.4"/>
-<text text-anchor="start" x="2728.22" y="-1726.6" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="2831.73" y="-1726.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="2721.22,-1683.6 2721.22,-1714.4 3041.02,-1714.4 3041.02,-1683.6 2721.22,-1683.6"/>
-<text text-anchor="start" x="2728.22" y="-1695.8" font-family="Arial" font-size="14.00">specimenid </text>
-<text text-anchor="start" x="2802.93" y="-1695.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="#efefef" stroke="none" points="3133.86,-1991.6 3133.86,-2027.2 3453.66,-2027.2 3453.66,-1991.6 3133.86,-1991.6"/>
+<polygon fill="none" stroke="black" points="3133.86,-1991.6 3133.86,-2027.2 3453.66,-2027.2 3453.66,-1991.6 3133.86,-1991.6"/>
+<text text-anchor="start" x="3163.29" y="-2005" font-family="Arial Bold" font-size="18.00">ndb.specimendates</text>
+<text text-anchor="start" x="3299.74" y="-2005" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3330.86" y="-2005" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1960.8 3133.86,-1991.6 3453.66,-1991.6 3453.66,-1960.8 3133.86,-1960.8"/>
+<text text-anchor="start" x="3140.86" y="-1973" font-family="Arial" font-size="14.00">elementtypeid </text>
+<text text-anchor="start" x="3231.92" y="-1973" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1930 3133.86,-1960.8 3453.66,-1960.8 3453.66,-1930 3133.86,-1930"/>
+<text text-anchor="start" x="3140.86" y="-1942.2" font-family="Arial" font-size="14.00">fractionid </text>
+<text text-anchor="start" x="3201.56" y="-1942.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1899.2 3133.86,-1930 3453.66,-1930 3453.66,-1899.2 3133.86,-1899.2"/>
+<text text-anchor="start" x="3140.86" y="-1911.4" font-family="Arial" font-size="14.00">geochronid </text>
+<text text-anchor="start" x="3214.03" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1868.4 3133.86,-1899.2 3453.66,-1899.2 3453.66,-1868.4 3133.86,-1868.4"/>
+<text text-anchor="start" x="3140.86" y="-1880.6" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="3179" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1837.6 3133.86,-1868.4 3453.66,-1868.4 3453.66,-1837.6 3133.86,-1837.6"/>
+<text text-anchor="start" x="3140.86" y="-1849.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="3238.14" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1806.8 3133.86,-1837.6 3453.66,-1837.6 3453.66,-1806.8 3133.86,-1806.8"/>
+<text text-anchor="start" x="3140.86" y="-1819" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="3244.36" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1776 3133.86,-1806.8 3453.66,-1806.8 3453.66,-1776 3133.86,-1776"/>
+<text text-anchor="start" x="3140.86" y="-1788.2" font-family="Arial" font-size="14.00">sampleid </text>
+<text text-anchor="start" x="3200.78" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1745.2 3133.86,-1776 3453.66,-1776 3453.66,-1745.2 3133.86,-1745.2"/>
+<text text-anchor="start" x="3140.86" y="-1757.4" font-family="Arial" font-size="14.00">specimendateid </text>
+<text text-anchor="start" x="3242.81" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1714.4 3133.86,-1745.2 3453.66,-1745.2 3453.66,-1714.4 3133.86,-1714.4"/>
+<text text-anchor="start" x="3140.86" y="-1726.6" font-family="Arial" font-size="14.00">specimenid </text>
+<text text-anchor="start" x="3215.56" y="-1726.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3133.86,-1683.6 3133.86,-1714.4 3453.66,-1714.4 3453.66,-1683.6 3133.86,-1683.6"/>
+<text text-anchor="start" x="3140.86" y="-1695.8" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="3189.89" y="-1695.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.specimendates&#45;&gt;ndb.taxa -->
-<g id="edge10" class="edge">
+<g id="edge13" class="edge">
 <title>ndb.specimendates:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3052.09,-1912.26C3099.07,-1888.45 3068.96,-1690.36 3041.02,-1640.4 3013.52,-1591.2 2960.9,-1622.7 2933.22,-1573.6 2912.66,-1537.13 2890.36,-1479.4 2932.22,-1479.4"/>
-<polygon fill="black" stroke="black" points="3052.09,-1912.26 3041.33,-1910.14 3046.89,-1913.47 3042.67,-1914.45 3042.67,-1914.45 3042.67,-1914.45 3046.89,-1913.47 3043.37,-1918.91 3052.09,-1912.26"/>
-<text text-anchor="start" x="3049.02" y="-1924.6" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M3464.41,-1696.31C3476.09,-1687.56 3464.41,-1659.33 3453.66,-1640.4 3425.82,-1591.39 3373.34,-1622.81 3345.86,-1573.6 3265.37,-1429.49 3179.79,-1202.2 3344.86,-1202.2"/>
+<polygon fill="black" stroke="black" points="3464.62,-1696.26 3453.79,-1694.57 3459.48,-1697.67 3455.3,-1698.82 3455.3,-1698.82 3455.3,-1698.82 3459.48,-1697.67 3456.18,-1703.25 3464.62,-1696.26"/>
+<text text-anchor="start" x="3461.66" y="-1683" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.synonyms -->
-<g id="node10" class="node">
+<g id="node13" class="node">
 <title>ndb.synonyms</title>
-<polygon fill="#efefef" stroke="none" points="3145.22,-1930 3145.22,-1965.6 3465.02,-1965.6 3465.02,-1930 3145.22,-1930"/>
-<polygon fill="none" stroke="black" points="3145.22,-1930 3145.22,-1965.6 3465.02,-1965.6 3465.02,-1930 3145.22,-1930"/>
-<text text-anchor="start" x="3190.62" y="-1943.4" font-family="Arial Bold" font-size="18.00">ndb.synonyms</text>
-<text text-anchor="start" x="3295.13" y="-1943.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="3326.25" y="-1943.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="3145.22,-1899.2 3145.22,-1930 3465.02,-1930 3465.02,-1899.2 3145.22,-1899.2"/>
-<text text-anchor="start" x="3152.22" y="-1911.4" font-family="Arial" font-size="14.00">synonymid </text>
-<text text-anchor="start" x="3223.03" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3145.22,-1868.4 3145.22,-1899.2 3465.02,-1899.2 3465.02,-1868.4 3145.22,-1868.4"/>
-<text text-anchor="start" x="3152.22" y="-1880.6" font-family="Arial" font-size="14.00">invalidtaxonid </text>
-<text text-anchor="start" x="3240.95" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3145.22,-1837.6 3145.22,-1868.4 3465.02,-1868.4 3465.02,-1837.6 3145.22,-1837.6"/>
-<text text-anchor="start" x="3152.22" y="-1849.8" font-family="Arial" font-size="14.00">validtaxonid </text>
-<text text-anchor="start" x="3230.05" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3145.22,-1806.8 3145.22,-1837.6 3465.02,-1837.6 3465.02,-1806.8 3145.22,-1806.8"/>
-<text text-anchor="start" x="3152.22" y="-1819" font-family="Arial" font-size="14.00">synonymtypeid </text>
-<text text-anchor="start" x="3249.49" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3145.22,-1776 3145.22,-1806.8 3465.02,-1806.8 3465.02,-1776 3145.22,-1776"/>
-<text text-anchor="start" x="3152.22" y="-1788.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="3249.51" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="3145.22,-1745.2 3145.22,-1776 3465.02,-1776 3465.02,-1745.2 3145.22,-1745.2"/>
-<text text-anchor="start" x="3152.22" y="-1757.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="3255.73" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="3557.86,-1930 3557.86,-1965.6 3877.66,-1965.6 3877.66,-1930 3557.86,-1930"/>
+<polygon fill="none" stroke="black" points="3557.86,-1930 3557.86,-1965.6 3877.66,-1965.6 3877.66,-1930 3557.86,-1930"/>
+<text text-anchor="start" x="3603.26" y="-1943.4" font-family="Arial Bold" font-size="18.00">ndb.synonyms</text>
+<text text-anchor="start" x="3707.77" y="-1943.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3738.89" y="-1943.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="3557.86,-1899.2 3557.86,-1930 3877.66,-1930 3877.66,-1899.2 3557.86,-1899.2"/>
+<text text-anchor="start" x="3564.86" y="-1911.4" font-family="Arial" font-size="14.00">invalidtaxonid </text>
+<text text-anchor="start" x="3653.58" y="-1911.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3557.86,-1868.4 3557.86,-1899.2 3877.66,-1899.2 3877.66,-1868.4 3557.86,-1868.4"/>
+<text text-anchor="start" x="3564.86" y="-1880.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="3662.14" y="-1880.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3557.86,-1837.6 3557.86,-1868.4 3877.66,-1868.4 3877.66,-1837.6 3557.86,-1837.6"/>
+<text text-anchor="start" x="3564.86" y="-1849.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="3668.36" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3557.86,-1806.8 3557.86,-1837.6 3877.66,-1837.6 3877.66,-1806.8 3557.86,-1806.8"/>
+<text text-anchor="start" x="3564.86" y="-1819" font-family="Arial" font-size="14.00">synonymid </text>
+<text text-anchor="start" x="3635.67" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3557.86,-1776 3557.86,-1806.8 3877.66,-1806.8 3877.66,-1776 3557.86,-1776"/>
+<text text-anchor="start" x="3564.86" y="-1788.2" font-family="Arial" font-size="14.00">synonymtypeid </text>
+<text text-anchor="start" x="3662.13" y="-1788.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3557.86,-1745.2 3557.86,-1776 3877.66,-1776 3877.66,-1745.2 3557.86,-1745.2"/>
+<text text-anchor="start" x="3564.86" y="-1757.4" font-family="Arial" font-size="14.00">validtaxonid </text>
+<text text-anchor="start" x="3642.69" y="-1757.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.synonyms&#45;&gt;ndb.taxa -->
-<g id="edge11" class="edge">
+<g id="edge14" class="edge">
 <title>ndb.synonyms:invalidtaxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3134.14,-1883.17C3068.22,-1874.34 3118.62,-1774.44 3145.22,-1702 3170.91,-1632.06 3227.16,-1643.48 3253.02,-1573.6 3267.56,-1534.33 3295.89,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="3133.91,-1883.16 3143.61,-1888.27 3139.23,-1883.49 3143.56,-1883.76 3143.56,-1883.76 3143.56,-1883.76 3139.23,-1883.49 3144.17,-1879.29 3133.91,-1883.16"/>
-<text text-anchor="start" x="3151.22" y="-1893.8" font-family="Arial" font-size="10.00">FOREIGN KEY (invalidtaxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M3546.5,-1914.04C3467.24,-1904.97 3526.59,-1787.25 3557.86,-1702 3583.52,-1632.05 3640.07,-1643.58 3665.66,-1573.6 3722.34,-1418.57 3831.73,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="3546.54,-1914.04 3556.28,-1919.08 3551.87,-1914.33 3556.19,-1914.56 3556.19,-1914.56 3556.19,-1914.56 3551.87,-1914.33 3556.77,-1910.09 3546.54,-1914.04"/>
+<text text-anchor="start" x="3300.67" y="-1898.6" font-family="Arial" font-size="10.00">FOREIGN KEY (invalidtaxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.synonyms&#45;&gt;ndb.taxa -->
-<g id="edge12" class="edge">
+<g id="edge15" class="edge">
 <title>ndb.synonyms:validtaxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3133.87,-1852.17C3082.13,-1843.11 3123.37,-1761.42 3145.22,-1702 3170.95,-1632.07 3227.16,-1643.48 3253.02,-1573.6 3267.56,-1534.33 3295.89,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="3133.92,-1852.18 3143.53,-1857.46 3139.24,-1852.6 3143.56,-1852.95 3143.56,-1852.95 3143.56,-1852.95 3139.24,-1852.6 3144.25,-1848.49 3133.92,-1852.18"/>
-<text text-anchor="start" x="3151.22" y="-1863" font-family="Arial" font-size="10.00">FOREIGN KEY (validtaxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M3547.06,-1757.79C3536.71,-1749.13 3550.31,-1722.21 3557.86,-1702 3583.95,-1632.21 3640.07,-1643.58 3665.66,-1573.6 3722.34,-1418.57 3831.73,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="3546.93,-1757.75 3555.3,-1764.83 3552.05,-1759.22 3556.22,-1760.42 3556.22,-1760.42 3556.22,-1760.42 3552.05,-1759.22 3557.78,-1756.18 3546.93,-1757.75"/>
+<text text-anchor="start" x="3563.86" y="-1770.6" font-family="Arial" font-size="10.00">FOREIGN KEY (validtaxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.synonymy -->
-<g id="node11" class="node">
+<g id="node14" class="node">
 <title>ndb.synonymy</title>
-<polygon fill="#efefef" stroke="none" points="3569.22,-2007 3569.22,-2042.6 3889.02,-2042.6 3889.02,-2007 3569.22,-2007"/>
-<polygon fill="none" stroke="black" points="3569.22,-2007 3569.22,-2042.6 3889.02,-2042.6 3889.02,-2007 3569.22,-2007"/>
-<text text-anchor="start" x="3613.63" y="-2020.4" font-family="Arial Bold" font-size="18.00">ndb.synonymy</text>
-<text text-anchor="start" x="3720.13" y="-2020.4" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="3751.25" y="-2020.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1976.2 3569.22,-2007 3889.02,-2007 3889.02,-1976.2 3569.22,-1976.2"/>
-<text text-anchor="start" x="3576.22" y="-1988.4" font-family="Arial" font-size="14.00">synonymyid </text>
-<text text-anchor="start" x="3654.03" y="-1988.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1945.4 3569.22,-1976.2 3889.02,-1976.2 3889.02,-1945.4 3569.22,-1945.4"/>
-<text text-anchor="start" x="3576.22" y="-1957.6" font-family="Arial" font-size="14.00">datasetid </text>
-<text text-anchor="start" x="3636.93" y="-1957.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1914.6 3569.22,-1945.4 3889.02,-1945.4 3889.02,-1914.6 3569.22,-1914.6"/>
-<text text-anchor="start" x="3576.22" y="-1926.8" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="3625.26" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1883.8 3569.22,-1914.6 3889.02,-1914.6 3889.02,-1883.8 3569.22,-1883.8"/>
-<text text-anchor="start" x="3576.22" y="-1896" font-family="Arial" font-size="14.00">reftaxonid </text>
-<text text-anchor="start" x="3641.6" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1853 3569.22,-1883.8 3889.02,-1883.8 3889.02,-1853 3569.22,-1853"/>
-<text text-anchor="start" x="3576.22" y="-1865.2" font-family="Arial" font-size="14.00">fromcontributor </text>
-<text text-anchor="start" x="3674.26" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1822.2 3569.22,-1853 3889.02,-1853 3889.02,-1822.2 3569.22,-1822.2"/>
-<text text-anchor="start" x="3576.22" y="-1834.4" font-family="Arial" font-size="14.00">publicationid </text>
-<text text-anchor="start" x="3657.95" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1791.4 3569.22,-1822.2 3889.02,-1822.2 3889.02,-1791.4 3569.22,-1791.4"/>
-<text text-anchor="start" x="3576.22" y="-1803.6" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="3614.36" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1760.6 3569.22,-1791.4 3889.02,-1791.4 3889.02,-1760.6 3569.22,-1760.6"/>
-<text text-anchor="start" x="3576.22" y="-1772.8" font-family="Arial" font-size="14.00">contactid </text>
-<text text-anchor="start" x="3636.15" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1729.8 3569.22,-1760.6 3889.02,-1760.6 3889.02,-1729.8 3569.22,-1729.8"/>
-<text text-anchor="start" x="3576.22" y="-1742" font-family="Arial" font-size="14.00">datesynonymized </text>
-<text text-anchor="start" x="3689.07" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1699 3569.22,-1729.8 3889.02,-1729.8 3889.02,-1699 3569.22,-1699"/>
-<text text-anchor="start" x="3576.22" y="-1711.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="3673.51" y="-1711.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
-<polygon fill="none" stroke="black" points="3569.22,-1668.2 3569.22,-1699 3889.02,-1699 3889.02,-1668.2 3569.22,-1668.2"/>
-<text text-anchor="start" x="3576.22" y="-1680.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="3679.73" y="-1680.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="#efefef" stroke="none" points="3981.86,-2007 3981.86,-2042.6 4301.66,-2042.6 4301.66,-2007 3981.86,-2007"/>
+<polygon fill="none" stroke="black" points="3981.86,-2007 3981.86,-2042.6 4301.66,-2042.6 4301.66,-2007 3981.86,-2007"/>
+<text text-anchor="start" x="4026.26" y="-2020.4" font-family="Arial Bold" font-size="18.00">ndb.synonymy</text>
+<text text-anchor="start" x="4132.77" y="-2020.4" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="4163.89" y="-2020.4" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1976.2 3981.86,-2007 4301.66,-2007 4301.66,-1976.2 3981.86,-1976.2"/>
+<text text-anchor="start" x="3988.86" y="-1988.4" font-family="Arial" font-size="14.00">contactid </text>
+<text text-anchor="start" x="4048.78" y="-1988.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1945.4 3981.86,-1976.2 4301.66,-1976.2 4301.66,-1945.4 3981.86,-1945.4"/>
+<text text-anchor="start" x="3988.86" y="-1957.6" font-family="Arial" font-size="14.00">datasetid </text>
+<text text-anchor="start" x="4049.57" y="-1957.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1914.6 3981.86,-1945.4 4301.66,-1945.4 4301.66,-1914.6 3981.86,-1914.6"/>
+<text text-anchor="start" x="3988.86" y="-1926.8" font-family="Arial" font-size="14.00">datesynonymized </text>
+<text text-anchor="start" x="4101.7" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[date]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1883.8 3981.86,-1914.6 4301.66,-1914.6 4301.66,-1883.8 3981.86,-1883.8"/>
+<text text-anchor="start" x="3988.86" y="-1896" font-family="Arial" font-size="14.00">fromcontributor </text>
+<text text-anchor="start" x="4086.89" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[boolean]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1853 3981.86,-1883.8 4301.66,-1883.8 4301.66,-1853 3981.86,-1853"/>
+<text text-anchor="start" x="3988.86" y="-1865.2" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="4027" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1822.2 3981.86,-1853 4301.66,-1853 4301.66,-1822.2 3981.86,-1822.2"/>
+<text text-anchor="start" x="3988.86" y="-1834.4" font-family="Arial" font-size="14.00">publicationid </text>
+<text text-anchor="start" x="4070.58" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1791.4 3981.86,-1822.2 4301.66,-1822.2 4301.66,-1791.4 3981.86,-1791.4"/>
+<text text-anchor="start" x="3988.86" y="-1803.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="4086.14" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1760.6 3981.86,-1791.4 4301.66,-1791.4 4301.66,-1760.6 3981.86,-1760.6"/>
+<text text-anchor="start" x="3988.86" y="-1772.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="4092.36" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1729.8 3981.86,-1760.6 4301.66,-1760.6 4301.66,-1729.8 3981.86,-1729.8"/>
+<text text-anchor="start" x="3988.86" y="-1742" font-family="Arial" font-size="14.00">reftaxonid </text>
+<text text-anchor="start" x="4054.23" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1699 3981.86,-1729.8 4301.66,-1729.8 4301.66,-1699 3981.86,-1699"/>
+<text text-anchor="start" x="3988.86" y="-1711.2" font-family="Arial" font-size="14.00">synonymyid </text>
+<text text-anchor="start" x="4066.67" y="-1711.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="3981.86,-1668.2 3981.86,-1699 4301.66,-1699 4301.66,-1668.2 3981.86,-1668.2"/>
+<text text-anchor="start" x="3988.86" y="-1680.4" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="4037.89" y="-1680.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.synonymy&#45;&gt;ndb.taxa -->
-<g id="edge13" class="edge">
+<g id="edge16" class="edge">
 <title>ndb.synonymy:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3558.26,-1928.03C3502.32,-1903.88 3557.7,-1664.71 3517.12,-1609.6 3439.76,-1504.54 3384.49,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="3558.09,-1928 3567.02,-1934.35 3563.32,-1929.03 3567.57,-1929.87 3567.57,-1929.87 3567.57,-1929.87 3563.32,-1929.03 3568.77,-1925.52 3558.09,-1928"/>
-<text text-anchor="start" x="3575.22" y="-1940" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M3974.24,-1675.65C3929.13,-1613.05 3674.04,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="3974.25,-1675.66 3977.19,-1686.22 3977.66,-1679.76 3980.43,-1683.09 3980.43,-1683.09 3980.43,-1683.09 3977.66,-1679.76 3984.11,-1680.46 3974.25,-1675.66"/>
+<text text-anchor="start" x="3738.85" y="-1667.6" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.synonymy&#45;&gt;ndb.taxa -->
-<g id="edge14" class="edge">
+<g id="edge17" class="edge">
 <title>ndb.synonymy:reftaxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3558.23,-1896.99C3508.63,-1872.91 3554.09,-1658.94 3517.12,-1609.6 3438.9,-1505.18 3384.49,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="3558.13,-1896.97 3566.93,-1903.52 3563.34,-1898.12 3567.57,-1899.06 3567.57,-1899.06 3567.57,-1899.06 3563.34,-1898.12 3568.87,-1894.73 3558.13,-1896.97"/>
-<text text-anchor="start" x="3575.22" y="-1909.2" font-family="Arial" font-size="10.00">FOREIGN KEY (reftaxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M3970.6,-1744.42C3921.17,-1736.12 3957.05,-1663.74 3929.76,-1609.6 3832.74,-1417.13 3882.2,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="3970.56,-1744.41 3980.18,-1749.66 3975.87,-1744.82 3980.19,-1745.15 3980.19,-1745.15 3980.19,-1745.15 3975.87,-1744.82 3980.87,-1740.69 3970.56,-1744.41"/>
+<text text-anchor="start" x="3987.86" y="-1755.2" font-family="Arial" font-size="10.00">FOREIGN KEY (reftaxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.taxaalthierarchy -->
-<g id="node12" class="node">
+<g id="node15" class="node">
 <title>ndb.taxaalthierarchy</title>
-<polygon fill="#efefef" stroke="none" points="3993.17,-1883.8 3993.17,-1919.4 4279.08,-1919.4 4279.08,-1883.8 3993.17,-1883.8"/>
-<polygon fill="none" stroke="black" points="3993.17,-1883.8 3993.17,-1919.4 4279.08,-1919.4 4279.08,-1883.8 3993.17,-1883.8"/>
-<text text-anchor="start" x="4000.17" y="-1897.2" font-family="Arial Bold" font-size="18.00">ndb.taxaalthierarchy</text>
-<text text-anchor="start" x="4147.59" y="-1897.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="4178.71" y="-1897.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="3993.17,-1853 3993.17,-1883.8 4279.08,-1883.8 4279.08,-1853 3993.17,-1853"/>
-<text text-anchor="start" x="4000.17" y="-1865.2" font-family="Arial" font-size="14.00">taxaalthierarchytypeid </text>
-<text text-anchor="start" x="4140.24" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3993.17,-1822.2 3993.17,-1853 4279.08,-1853 4279.08,-1822.2 3993.17,-1822.2"/>
-<text text-anchor="start" x="4000.17" y="-1834.4" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="4049.2" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="3993.17,-1791.4 3993.17,-1822.2 4279.08,-1822.2 4279.08,-1791.4 3993.17,-1791.4"/>
-<text text-anchor="start" x="4000.17" y="-1803.6" font-family="Arial" font-size="14.00">highertaxonid </text>
-<text text-anchor="start" x="4088.12" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="#efefef" stroke="none" points="4405.8,-1883.8 4405.8,-1919.4 4691.72,-1919.4 4691.72,-1883.8 4405.8,-1883.8"/>
+<polygon fill="none" stroke="black" points="4405.8,-1883.8 4405.8,-1919.4 4691.72,-1919.4 4691.72,-1883.8 4405.8,-1883.8"/>
+<text text-anchor="start" x="4412.8" y="-1897.2" font-family="Arial Bold" font-size="18.00">ndb.taxaalthierarchy</text>
+<text text-anchor="start" x="4560.23" y="-1897.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="4591.35" y="-1897.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="4405.8,-1853 4405.8,-1883.8 4691.72,-1883.8 4691.72,-1853 4405.8,-1853"/>
+<text text-anchor="start" x="4412.8" y="-1865.2" font-family="Arial" font-size="14.00">highertaxonid </text>
+<text text-anchor="start" x="4500.75" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="4405.8,-1822.2 4405.8,-1853 4691.72,-1853 4691.72,-1822.2 4405.8,-1822.2"/>
+<text text-anchor="start" x="4412.8" y="-1834.4" font-family="Arial" font-size="14.00">taxaalthierarchytypeid </text>
+<text text-anchor="start" x="4552.88" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="4405.8,-1791.4 4405.8,-1822.2 4691.72,-1822.2 4691.72,-1791.4 4405.8,-1791.4"/>
+<text text-anchor="start" x="4412.8" y="-1803.6" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="4461.84" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.taxaalthierarchy&#45;&gt;ndb.taxa -->
-<g id="edge15" class="edge">
+<g id="edge18" class="edge">
 <title>ndb.taxaalthierarchy:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3981.79,-1837C3897.27,-1826.45 4013.05,-1679.2 3941.12,-1609.6 3829.44,-1501.54 3409.43,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="3981.85,-1837 3991.57,-1842.07 3987.17,-1837.31 3991.5,-1837.56 3991.5,-1837.56 3991.5,-1837.56 3987.17,-1837.31 3992.09,-1833.09 3981.85,-1837"/>
-<text text-anchor="start" x="3750.15" y="-1821.6" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M4394.57,-1806.18C4321.72,-1796.65 4405.92,-1679.01 4353.76,-1609.6 4140.48,-1325.78 4021.68,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="4394.49,-1806.18 4404.2,-1811.27 4399.81,-1806.5 4404.13,-1806.76 4404.13,-1806.76 4404.13,-1806.76 4399.81,-1806.5 4404.74,-1802.29 4394.49,-1806.18"/>
+<text text-anchor="start" x="4411.8" y="-1816.8" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 <!-- ndb.taxaalthierarchy&#45;&gt;ndb.taxa -->
-<g id="edge16" class="edge">
+<g id="edge19" class="edge">
 <title>ndb.taxaalthierarchy:highertaxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M3981.99,-1806.13C3910.01,-1795.82 4004.51,-1668.93 3941.12,-1609.6 3827.67,-1503.4 3409.43,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="3981.85,-1806.12 3991.54,-1811.27 3987.18,-1806.47 3991.5,-1806.76 3991.5,-1806.76 3991.5,-1806.76 3987.18,-1806.47 3992.13,-1802.29 3981.85,-1806.12"/>
-<text text-anchor="start" x="3999.17" y="-1790.8" font-family="Arial" font-size="10.00">FOREIGN KEY (highertaxonid) REFERENCES ndb.taxa(taxonid)</text>
+<path fill="none" stroke="black" d="M4394.53,-1867.93C4295.73,-1858.27 4419.3,-1702.35 4353.76,-1609.6 4148.88,-1319.66 4021.68,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="4394.48,-1867.93 4404.26,-1872.88 4399.81,-1868.17 4404.13,-1868.37 4404.13,-1868.37 4404.13,-1868.37 4399.81,-1868.17 4404.67,-1863.89 4394.48,-1867.93"/>
+<text text-anchor="start" x="4411.8" y="-1878.4" font-family="Arial" font-size="10.00">FOREIGN KEY (highertaxonid) REFERENCES ndb.taxa(taxonid)</text>
 </g>
 <!-- ndb.taxonpaths -->
-<g id="node13" class="node">
+<g id="node16" class="node">
 <title>ndb.taxonpaths</title>
-<polygon fill="#efefef" stroke="none" points="4383.14,-1868.4 4383.14,-1904 4631.11,-1904 4631.11,-1868.4 4383.14,-1868.4"/>
-<polygon fill="none" stroke="black" points="4383.14,-1868.4 4383.14,-1904 4631.11,-1904 4631.11,-1868.4 4383.14,-1868.4"/>
-<text text-anchor="start" x="4390.14" y="-1881.8" font-family="Arial Bold" font-size="18.00">ndb.taxonpaths</text>
-<text text-anchor="start" x="4499.62" y="-1881.8" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="4530.74" y="-1881.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="4383.14,-1837.6 4383.14,-1868.4 4631.11,-1868.4 4631.11,-1837.6 4383.14,-1837.6"/>
-<text text-anchor="start" x="4390.14" y="-1849.8" font-family="Arial" font-size="14.00">taxonout </text>
-<text text-anchor="start" x="4447.74" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[integer[]]</text>
-<polygon fill="none" stroke="black" points="4383.14,-1806.8 4383.14,-1837.6 4631.11,-1837.6 4631.11,-1806.8 4383.14,-1806.8"/>
-<text text-anchor="start" x="4390.14" y="-1819" font-family="Arial" font-size="14.00">taxonid </text>
-<text text-anchor="start" x="4439.17" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[bigint]</text>
+<polygon fill="#efefef" stroke="none" points="4795.77,-1868.4 4795.77,-1904 5043.75,-1904 5043.75,-1868.4 4795.77,-1868.4"/>
+<polygon fill="none" stroke="black" points="4795.77,-1868.4 4795.77,-1904 5043.75,-1904 5043.75,-1868.4 4795.77,-1868.4"/>
+<text text-anchor="start" x="4802.77" y="-1881.8" font-family="Arial Bold" font-size="18.00">ndb.taxonpaths</text>
+<text text-anchor="start" x="4912.26" y="-1881.8" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="4943.38" y="-1881.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="4795.77,-1837.6 4795.77,-1868.4 5043.75,-1868.4 5043.75,-1837.6 4795.77,-1837.6"/>
+<text text-anchor="start" x="4802.77" y="-1849.8" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="4851.81" y="-1849.8" font-family="Arial" font-size="14.00" fill="#666666">[bigint]</text>
+<polygon fill="none" stroke="black" points="4795.77,-1806.8 4795.77,-1837.6 5043.75,-1837.6 5043.75,-1806.8 4795.77,-1806.8"/>
+<text text-anchor="start" x="4802.77" y="-1819" font-family="Arial" font-size="14.00">taxonout </text>
+<text text-anchor="start" x="4860.37" y="-1819" font-family="Arial" font-size="14.00" fill="#666666">[integer[]]</text>
 </g>
 <!-- ndb.taxonpaths&#45;&gt;ndb.taxa -->
-<g id="edge17" class="edge">
+<g id="edge20" class="edge">
 <title>ndb.taxonpaths:taxonid&#45;&gt;ndb.taxa:taxonid</title>
-<path fill="none" stroke="black" d="M4372.19,-1821.6C4293.51,-1811.33 4400.98,-1671.84 4331.12,-1609.6 4241.12,-1529.41 3374.57,-1479.4 3254.02,-1479.4"/>
-<polygon fill="black" stroke="black" points="4371.82,-1821.58 4381.53,-1826.67 4377.15,-1821.9 4381.47,-1822.16 4381.47,-1822.16 4381.47,-1822.16 4377.15,-1821.9 4382.07,-1817.69 4371.82,-1821.58"/>
-<text text-anchor="start" x="4389.14" y="-1832.2" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON DELETE CASCADE</text>
+<path fill="none" stroke="black" d="M4784.55,-1852.48C4692.75,-1842.5 4813.24,-1690.78 4743.76,-1609.6 4410.96,-1220.76 4178.47,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="4784.45,-1852.48 4794.21,-1857.48 4789.78,-1852.75 4794.1,-1852.97 4794.1,-1852.97 4794.1,-1852.97 4789.78,-1852.75 4794.67,-1848.49 4784.45,-1852.48"/>
+<text text-anchor="start" x="4415.99" y="-1863" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON DELETE CASCADE</text>
+</g>
+<!-- ndb.variables -->
+<g id="node17" class="node">
+<title>ndb.variables</title>
+<polygon fill="#efefef" stroke="none" points="5147.86,-1945.4 5147.86,-1981 5467.66,-1981 5467.66,-1945.4 5147.86,-1945.4"/>
+<polygon fill="none" stroke="black" points="5147.86,-1945.4 5147.86,-1981 5467.66,-1981 5467.66,-1945.4 5147.86,-1945.4"/>
+<text text-anchor="start" x="5197.28" y="-1958.8" font-family="Arial Bold" font-size="18.00">ndb.variables</text>
+<text text-anchor="start" x="5293.75" y="-1958.8" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="5324.87" y="-1958.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1914.6 5147.86,-1945.4 5467.66,-1945.4 5467.66,-1914.6 5147.86,-1914.6"/>
+<text text-anchor="start" x="5154.86" y="-1926.8" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="5252.14" y="-1926.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1883.8 5147.86,-1914.6 5467.66,-1914.6 5467.66,-1883.8 5147.86,-1883.8"/>
+<text text-anchor="start" x="5154.86" y="-1896" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="5258.36" y="-1896" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1853 5147.86,-1883.8 5467.66,-1883.8 5467.66,-1853 5147.86,-1853"/>
+<text text-anchor="start" x="5154.86" y="-1865.2" font-family="Arial" font-size="14.00">taxonid </text>
+<text text-anchor="start" x="5203.89" y="-1865.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1822.2 5147.86,-1853 5467.66,-1853 5467.66,-1822.2 5147.86,-1822.2"/>
+<text text-anchor="start" x="5154.86" y="-1834.4" font-family="Arial" font-size="14.00">variablecontextid </text>
+<text text-anchor="start" x="5263.81" y="-1834.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1791.4 5147.86,-1822.2 5467.66,-1822.2 5467.66,-1791.4 5147.86,-1791.4"/>
+<text text-anchor="start" x="5154.86" y="-1803.6" font-family="Arial" font-size="14.00">variableelementid </text>
+<text text-anchor="start" x="5268.48" y="-1803.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1760.6 5147.86,-1791.4 5467.66,-1791.4 5467.66,-1760.6 5147.86,-1760.6"/>
+<text text-anchor="start" x="5154.86" y="-1772.8" font-family="Arial" font-size="14.00">variableid </text>
+<text text-anchor="start" x="5218.67" y="-1772.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="5147.86,-1729.8 5147.86,-1760.6 5467.66,-1760.6 5467.66,-1729.8 5147.86,-1729.8"/>
+<text text-anchor="start" x="5154.86" y="-1742" font-family="Arial" font-size="14.00">variableunitsid </text>
+<text text-anchor="start" x="5248.25" y="-1742" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+</g>
+<!-- ndb.variables&#45;&gt;ndb.taxa -->
+<g id="edge21" class="edge">
+<title>ndb.variables:taxonid&#45;&gt;ndb.taxa:taxonid</title>
+<path fill="none" stroke="black" d="M5136.62,-1867.9C5038.49,-1857.7 5172.68,-1693.17 5095.76,-1609.6 4872.11,-1366.63 3996.89,-1202.2 3666.66,-1202.2"/>
+<polygon fill="black" stroke="black" points="5136.54,-1867.9 5146.31,-1872.88 5141.87,-1868.16 5146.19,-1868.37 5146.19,-1868.37 5146.19,-1868.37 5141.87,-1868.16 5146.74,-1863.89 5136.54,-1867.9"/>
+<text text-anchor="start" x="5153.86" y="-1878.4" font-family="Arial" font-size="10.00">FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE</text>
 </g>
 </g>
 </svg>

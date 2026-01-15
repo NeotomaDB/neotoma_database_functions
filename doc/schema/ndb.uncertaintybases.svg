@@ -18,11 +18,11 @@
 <text text-anchor="start" x="204.65" y="-179.8" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="235.77" y="-179.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="46.2,-135.6 46.2,-166.4 336.14,-166.4 336.14,-135.6 46.2,-135.6"/>
-<text text-anchor="start" x="53.2" y="-147.8" font-family="Arial" font-size="14.00">uncertaintybasisid </text>
-<text text-anchor="start" x="169.15" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-147.8" font-family="Arial" font-size="14.00">uncertaintybasis </text>
+<text text-anchor="start" x="158.25" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="46.2,-104.8 46.2,-135.6 336.14,-135.6 336.14,-104.8 46.2,-104.8"/>
-<text text-anchor="start" x="53.2" y="-117" font-family="Arial" font-size="14.00">uncertaintybasis </text>
-<text text-anchor="start" x="158.25" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="53.2" y="-117" font-family="Arial" font-size="14.00">uncertaintybasisid </text>
+<text text-anchor="start" x="169.15" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" stroke-width="3" points="44.7,-103.3 44.7,-203.5 337.64,-203.5 337.64,-103.3 44.7,-103.3"/>
 </g>
 <!-- ndb.datauncertainties -->
@@ -37,24 +37,24 @@
 <text text-anchor="start" x="464.21" y="-521.4" font-family="Arial" font-size="14.00">dataid </text>
 <text text-anchor="start" x="506.24" y="-521.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="457.21,-478.4 457.21,-509.2 749.14,-509.2 749.14,-478.4 457.21,-478.4"/>
-<text text-anchor="start" x="464.21" y="-490.6" font-family="Arial" font-size="14.00">uncertaintyvalue </text>
-<text text-anchor="start" x="570.05" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="464.21" y="-490.6" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="502.34" y="-490.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
 <polygon fill="none" stroke="black" points="457.21,-447.6 457.21,-478.4 749.14,-478.4 749.14,-447.6 457.21,-447.6"/>
-<text text-anchor="start" x="464.21" y="-459.8" font-family="Arial" font-size="14.00">uncertaintyunitid </text>
-<text text-anchor="start" x="570.05" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="464.21" y="-459.8" font-family="Arial" font-size="14.00">uncertaintybasisid </text>
+<text text-anchor="start" x="580.16" y="-459.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="457.21,-416.8 457.21,-447.6 749.14,-447.6 749.14,-416.8 457.21,-416.8"/>
-<text text-anchor="start" x="464.21" y="-429" font-family="Arial" font-size="14.00">uncertaintybasisid </text>
-<text text-anchor="start" x="580.16" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="464.21" y="-429" font-family="Arial" font-size="14.00">uncertaintyunitid </text>
+<text text-anchor="start" x="570.05" y="-429" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="457.21,-386 457.21,-416.8 749.14,-416.8 749.14,-386 457.21,-386"/>
-<text text-anchor="start" x="464.21" y="-398.2" font-family="Arial" font-size="14.00">notes </text>
-<text text-anchor="start" x="502.34" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<text text-anchor="start" x="464.21" y="-398.2" font-family="Arial" font-size="14.00">uncertaintyvalue </text>
+<text text-anchor="start" x="570.05" y="-398.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 </g>
 <!-- ndb.datauncertainties&#45;&gt;ndb.uncertaintybases -->
 <g id="edge1" class="edge">
 <title>ndb.datauncertainties:uncertaintybasisid&#45;&gt;ndb.uncertaintybases:uncertaintybasisid</title>
-<path fill="none" stroke="black" d="M446.02,-431.52C395.9,-424.3 414.52,-361.1 391.17,-306.8 362.22,-239.47 410.43,-151 337.14,-151"/>
-<polygon fill="black" stroke="black" points="445.9,-431.51 455.57,-436.67 451.22,-431.87 455.54,-432.16 455.54,-432.16 455.54,-432.16 451.22,-431.87 456.17,-427.69 445.9,-431.51"/>
-<text text-anchor="start" x="35.71" y="-442.2" font-family="Arial" font-size="10.00">FOREIGN KEY (uncertaintybasisid) REFERENCES ndb.uncertaintybases(uncertaintybasisid)</text>
+<path fill="none" stroke="black" d="M445.96,-462.4C384.29,-454.71 414.9,-374.28 391.17,-306.8 362.53,-225.35 423.48,-120.2 337.14,-120.2"/>
+<polygon fill="black" stroke="black" points="445.89,-462.4 455.61,-467.47 451.22,-462.71 455.54,-462.96 455.54,-462.96 455.54,-462.96 451.22,-462.71 456.14,-458.49 445.89,-462.4"/>
+<text text-anchor="start" x="35.71" y="-473" font-family="Arial" font-size="10.00">FOREIGN KEY (uncertaintybasisid) REFERENCES ndb.uncertaintybases(uncertaintybasisid)</text>
 </g>
 <!-- ndb.data -->
 <g id="node3" class="node">
@@ -68,20 +68,20 @@
 <text text-anchor="start" x="450.27" y="-209.4" font-family="Arial" font-size="14.00">dataid </text>
 <text text-anchor="start" x="492.31" y="-209.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="443.27,-166.4 443.27,-197.2 763.07,-197.2 763.07,-166.4 443.27,-166.4"/>
-<text text-anchor="start" x="450.27" y="-178.6" font-family="Arial" font-size="14.00">sampleid </text>
-<text text-anchor="start" x="510.19" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="450.27" y="-178.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="547.55" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="443.27,-135.6 443.27,-166.4 763.07,-166.4 763.07,-135.6 443.27,-135.6"/>
-<text text-anchor="start" x="450.27" y="-147.8" font-family="Arial" font-size="14.00">variableid </text>
-<text text-anchor="start" x="514.09" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="450.27" y="-147.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="553.77" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="443.27,-104.8 443.27,-135.6 763.07,-135.6 763.07,-104.8 443.27,-104.8"/>
-<text text-anchor="start" x="450.27" y="-117" font-family="Arial" font-size="14.00">value </text>
-<text text-anchor="start" x="487.63" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
+<text text-anchor="start" x="450.27" y="-117" font-family="Arial" font-size="14.00">sampleid </text>
+<text text-anchor="start" x="510.19" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="443.27,-74 443.27,-104.8 763.07,-104.8 763.07,-74 443.27,-74"/>
-<text text-anchor="start" x="450.27" y="-86.2" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="547.55" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="450.27" y="-86.2" font-family="Arial" font-size="14.00">value </text>
+<text text-anchor="start" x="487.63" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[double precision]</text>
 <polygon fill="none" stroke="black" points="443.27,-43.2 443.27,-74 763.07,-74 763.07,-43.2 443.27,-43.2"/>
-<text text-anchor="start" x="450.27" y="-55.4" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="553.77" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="450.27" y="-55.4" font-family="Arial" font-size="14.00">variableid </text>
+<text text-anchor="start" x="514.09" y="-55.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.datauncertainties&#45;&gt;ndb.data -->
 <g id="edge2" class="edge">
@@ -99,24 +99,24 @@
 <text text-anchor="start" x="1027.16" y="-210.6" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="1058.28" y="-210.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
 <polygon fill="none" stroke="black" points="867.27,-166.4 867.27,-197.2 1187.07,-197.2 1187.07,-166.4 867.27,-166.4"/>
-<text text-anchor="start" x="874.27" y="-178.6" font-family="Arial" font-size="14.00">variableunitsid </text>
-<text text-anchor="start" x="967.66" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="874.27" y="-178.6" font-family="Arial" font-size="14.00">recdatecreated </text>
+<text text-anchor="start" x="971.55" y="-178.6" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="867.27,-135.6 867.27,-166.4 1187.07,-166.4 1187.07,-135.6 867.27,-135.6"/>
-<text text-anchor="start" x="874.27" y="-147.8" font-family="Arial" font-size="14.00">variableunits </text>
-<text text-anchor="start" x="956.76" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
+<text text-anchor="start" x="874.27" y="-147.8" font-family="Arial" font-size="14.00">recdatemodified </text>
+<text text-anchor="start" x="977.77" y="-147.8" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
 <polygon fill="none" stroke="black" points="867.27,-104.8 867.27,-135.6 1187.07,-135.6 1187.07,-104.8 867.27,-104.8"/>
-<text text-anchor="start" x="874.27" y="-117" font-family="Arial" font-size="14.00">recdatecreated </text>
-<text text-anchor="start" x="971.55" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="874.27" y="-117" font-family="Arial" font-size="14.00">variableunits </text>
+<text text-anchor="start" x="956.76" y="-117" font-family="Arial" font-size="14.00" fill="#666666">[varchar(64)]</text>
 <polygon fill="none" stroke="black" points="867.27,-74 867.27,-104.8 1187.07,-104.8 1187.07,-74 867.27,-74"/>
-<text text-anchor="start" x="874.27" y="-86.2" font-family="Arial" font-size="14.00">recdatemodified </text>
-<text text-anchor="start" x="977.77" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[timestamp(0) without time zone]</text>
+<text text-anchor="start" x="874.27" y="-86.2" font-family="Arial" font-size="14.00">variableunitsid </text>
+<text text-anchor="start" x="967.66" y="-86.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.datauncertainties&#45;&gt;ndb.variableunits -->
 <g id="edge3" class="edge">
 <title>ndb.datauncertainties:uncertaintyunitid&#45;&gt;ndb.variableunits:variableunitsid</title>
-<path fill="none" stroke="black" d="M760.36,-462.39C821.7,-454.58 787.89,-372.92 815.17,-306.8 838.06,-251.32 806.25,-181.8 866.27,-181.8"/>
-<polygon fill="black" stroke="black" points="760.45,-462.39 750.2,-458.49 755.13,-462.7 750.8,-462.96 750.8,-462.96 750.8,-462.96 755.13,-462.7 750.74,-467.47 760.45,-462.39"/>
-<text text-anchor="start" x="757.14" y="-473" font-family="Arial" font-size="10.00">FOREIGN KEY (uncertaintyunitid) REFERENCES ndb.variableunits(variableunitsid)</text>
+<path fill="none" stroke="black" d="M760.35,-431.53C810.77,-424.43 794.65,-362.23 815.17,-306.8 849.64,-213.72 767.02,-89.4 866.27,-89.4"/>
+<polygon fill="black" stroke="black" points="760.45,-431.52 750.17,-427.69 755.12,-431.87 750.8,-432.16 750.8,-432.16 750.8,-432.16 755.12,-431.87 750.76,-436.67 760.45,-431.52"/>
+<text text-anchor="start" x="757.14" y="-442.2" font-family="Arial" font-size="10.00">FOREIGN KEY (uncertaintyunitid) REFERENCES ndb.variableunits(variableunitsid)</text>
 </g>
 </g>
 </svg>

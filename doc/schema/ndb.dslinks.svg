@@ -18,11 +18,11 @@
 <text text-anchor="start" x="135.71" y="-152" font-family="Arial" font-size="14.00">    </text>
 <text text-anchor="start" x="166.83" y="-152" font-family="Arial" font-size="14.00" fill="#666666">[VIEW]</text>
 <polygon fill="none" stroke="black" points="46.2,-107.8 46.2,-138.6 217.39,-138.6 217.39,-107.8 46.2,-107.8"/>
-<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">datasetid </text>
-<text text-anchor="start" x="113.91" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-120" font-family="Arial" font-size="14.00">collectionunitid </text>
+<text text-anchor="start" x="148.92" y="-120" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-77 46.2,-107.8 217.39,-107.8 217.39,-77 46.2,-77"/>
-<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">collectionunitid </text>
-<text text-anchor="start" x="148.92" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<text text-anchor="start" x="53.2" y="-89.2" font-family="Arial" font-size="14.00">datasetid </text>
+<text text-anchor="start" x="113.91" y="-89.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 <polygon fill="none" stroke="black" points="46.2,-46.2 46.2,-77 217.39,-77 217.39,-46.2 46.2,-46.2"/>
 <text text-anchor="start" x="53.2" y="-58.4" font-family="Arial" font-size="14.00">siteid </text>
 <text text-anchor="start" x="89.77" y="-58.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>

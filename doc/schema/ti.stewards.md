@@ -6,13 +6,19 @@
 
 | # | Name            | Type                           | Default                               | Nullable | Children                                      | Parents                         | Comment |
 | - | --------------- | ------------------------------ | ------------------------------------- | -------- | --------------------------------------------- | ------------------------------- | ------- |
-| 1 | stewardid       | integer                        | nextval('ti.stewardid_seq'::regclass) | false    | [ti.stewarddatabases](ti.stewarddatabases.md) |                                 |         |
-| 2 | contactid       | integer                        |                                       | false    |                                               | [ndb.contacts](ndb.contacts.md) |         |
-| 3 | username        | varchar(15)                    |                                       | false    |                                               |                                 |         |
-| 4 | pwd             | varchar(15)                    |                                       | false    |                                               |                                 |         |
-| 5 | taxonomyexpert  | boolean                        |                                       | false    |                                               |                                 |         |
-| 6 | recdatecreated  | timestamp(0) without time zone |                                       | true     |                                               |                                 |         |
-| 7 | recdatemodified | timestamp(0) without time zone |                                       | true     |                                               |                                 |         |
+| 1 | contactid       | integer                        |                                       | false    |                                               | [ndb.contacts](ndb.contacts.md) |         |
+| 2 | pwd             | varchar(15)                    |                                       | false    |                                               |                                 |         |
+| 3 | recdatecreated  | timestamp(0) without time zone |                                       | true     |                                               |                                 |         |
+| 4 | recdatemodified | timestamp(0) without time zone |                                       | true     |                                               |                                 |         |
+| 5 | stewardid       | integer                        | nextval('ti.stewardid_seq'::regclass) | false    | [ti.stewarddatabases](ti.stewarddatabases.md) |                                 |         |
+| 6 | taxonomyexpert  | boolean                        |                                       | false    |                                               |                                 |         |
+| 7 | username        | varchar(15)                    |                                       | false    |                                               |                                 |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 

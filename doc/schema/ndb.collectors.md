@@ -8,19 +8,25 @@ The Collectors table lists the people who collected Collection Units.
 
 | # | Name             | Type                           | Default                                             | Nullable | Children | Parents                                       | Comment                                                                                                                          |
 | - | ---------------- | ------------------------------ | --------------------------------------------------- | -------- | -------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 1 | collectorid      | integer                        | nextval('ndb.seq_collectors_collectorid'::regclass) | false    |          |                                               | An arbitrary Collector identification number.                                                                                    |
-| 2 | collectionunitid | integer                        |                                                     | false    |          | [ndb.collectionunits](ndb.collectionunits.md) | CollectionUnit collected. Field links to CollectionUnits table.                                                                  |
-| 3 | contactid        | integer                        |                                                     | false    |          | [ndb.contacts](ndb.contacts.md)               | Person who collected the CollectionUnit. Multiple individuals are listed in separate records. Field links to the Contacts table. |
-| 4 | collectororder   | integer                        |                                                     | true     |          |                                               | Order in which Collectors should be listed.                                                                                      |
+| 1 | collectionunitid | integer                        |                                                     | false    |          | [ndb.collectionunits](ndb.collectionunits.md) | CollectionUnit collected. Field links to CollectionUnits table.                                                                  |
+| 2 | collectorid      | integer                        | nextval('ndb.seq_collectors_collectorid'::regclass) | false    |          |                                               | An arbitrary Collector identification number.                                                                                    |
+| 3 | collectororder   | integer                        |                                                     | true     |          |                                               | Order in which Collectors should be listed.                                                                                      |
+| 4 | contactid        | integer                        |                                                     | false    |          | [ndb.contacts](ndb.contacts.md)               | Person who collected the CollectionUnit. Multiple individuals are listed in separate records. Field links to the Contacts table. |
 | 5 | recdatecreated   | timestamp(0) without time zone | timezone('UTC'::text, now())                        | false    |          |                                               |                                                                                                                                  |
 | 6 | recdatemodified  | timestamp(0) without time zone |                                                     | false    |          |                                               |                                                                                                                                  |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 
 | # | Name                          | Type        | Definition                                                                                                          |
 | - | ----------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_collectors_collectionunits | FOREIGN KEY | FOREIGN KEY (collectionunitid) REFERENCES ndb.collectionunits(collectionunitid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | collectors_pkey               | PRIMARY KEY | PRIMARY KEY (collectorid)                                                                                           |
+| 1 | collectors_pkey               | PRIMARY KEY | PRIMARY KEY (collectorid)                                                                                           |
+| 2 | fk_collectors_collectionunits | FOREIGN KEY | FOREIGN KEY (collectionunitid) REFERENCES ndb.collectionunits(collectionunitid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 3 | fk_collectors_contacts        | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE                                        |
 
 ## Indexes

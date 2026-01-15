@@ -6,8 +6,8 @@
 
 | # | Name            | Type                           | Default                                               | Nullable | Children                                  | Parents | Comment |
 | - | --------------- | ------------------------------ | ----------------------------------------------------- | -------- | ----------------------------------------- | ------- | ------- |
-| 1 | fractionid      | integer                        | nextval('ndb.seq_fractiondated_fractionid'::regclass) | false    | [ndb.specimendates](ndb.specimendates.md) |         |         |
-| 2 | fraction        | varchar(80)                    |                                                       | false    |                                           |         |         |
+| 1 | fraction        | varchar(80)                    |                                                       | false    |                                           |         |         |
+| 2 | fractionid      | integer                        | nextval('ndb.seq_fractiondated_fractionid'::regclass) | false    | [ndb.specimendates](ndb.specimendates.md) |         |         |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                          | false    |                                           |         |         |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                       | false    |                                           |         |         |
 

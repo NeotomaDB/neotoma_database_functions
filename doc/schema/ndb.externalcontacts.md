@@ -7,16 +7,22 @@
 | # | Name          | Type    | Default | Nullable | Children | Parents                                           | Comment |
 | - | ------------- | ------- | ------- | -------- | -------- | ------------------------------------------------- | ------- |
 | 1 | contactid     | integer |         | true     |          | [ndb.contacts](ndb.contacts.md)                   |         |
-| 2 | identifier    | text    |         | true     |          |                                                   |         |
-| 3 | extdatabaseid | integer |         | true     |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
+| 2 | extdatabaseid | integer |         | true     |          | [ndb.externaldatabases](ndb.externaldatabases.md) |         |
+| 3 | identifier    | text    |         | true     |          |                                                   |         |
+
+## Viewpoints
+
+| Name                                     | Definition                                                       |
+| ---------------------------------------- | ---------------------------------------------------------------- |
+| [Contact related tables](viewpoint-4.md) | Tables that relate to people, or are connected to the contactid. |
 
 ## Constraints
 
 | # | Name                                                    | Type        | Definition                                                                  |
 | - | ------------------------------------------------------- | ----------- | --------------------------------------------------------------------------- |
 | 1 | externalcontacts_contactid_fkey                         | FOREIGN KEY | FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid)                  |
-| 2 | externalcontacts_extdatabaseid_fkey                     | FOREIGN KEY | FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) |
-| 3 | externalcontacts_contactid_identifier_extdatabaseid_key | UNIQUE      | UNIQUE (contactid, identifier, extdatabaseid)                               |
+| 2 | externalcontacts_contactid_identifier_extdatabaseid_key | UNIQUE      | UNIQUE (contactid, identifier, extdatabaseid)                               |
+| 3 | externalcontacts_extdatabaseid_fkey                     | FOREIGN KEY | FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) |
 
 ## Indexes
 

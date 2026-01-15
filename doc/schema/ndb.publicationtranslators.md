@@ -6,14 +6,14 @@
 
 | # | Name            | Type                           | Default                                                          | Nullable | Children | Parents                                 | Comment |
 | - | --------------- | ------------------------------ | ---------------------------------------------------------------- | -------- | -------- | --------------------------------------- | ------- |
-| 1 | translatorid    | integer                        | nextval('ndb.seq_publicationtranslators_translatorid'::regclass) | false    |          |                                         |         |
-| 2 | publicationid   | integer                        |                                                                  | false    |          | [ndb.publications](ndb.publications.md) |         |
-| 3 | translatororder | integer                        |                                                                  | true     |          |                                         |         |
-| 4 | familyname      | varchar(64)                    |                                                                  | true     |          |                                         |         |
-| 5 | initials        | varchar(8)                     |                                                                  | true     |          |                                         |         |
+| 1 | familyname      | varchar(64)                    |                                                                  | true     |          |                                         |         |
+| 2 | initials        | varchar(8)                     |                                                                  | true     |          |                                         |         |
+| 3 | publicationid   | integer                        |                                                                  | false    |          | [ndb.publications](ndb.publications.md) |         |
+| 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                                     | false    |          |                                         |         |
+| 5 | recdatemodified | timestamp(0) without time zone |                                                                  | false    |          |                                         |         |
 | 6 | suffix          | varchar(8)                     |                                                                  | true     |          |                                         |         |
-| 7 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                                     | false    |          |                                         |         |
-| 8 | recdatemodified | timestamp(0) without time zone |                                                                  | false    |          |                                         |         |
+| 7 | translatorid    | integer                        | nextval('ndb.seq_publicationtranslators_translatorid'::regclass) | false    |          |                                         |         |
+| 8 | translatororder | integer                        |                                                                  | true     |          |                                         |         |
 
 ## Constraints
 

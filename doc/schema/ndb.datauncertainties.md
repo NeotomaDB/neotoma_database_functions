@@ -7,18 +7,18 @@
 | # | Name               | Type             | Default | Nullable | Children | Parents                                         | Comment |
 | - | ------------------ | ---------------- | ------- | -------- | -------- | ----------------------------------------------- | ------- |
 | 1 | dataid             | integer          |         | true     |          | [ndb.data](ndb.data.md)                         |         |
-| 2 | uncertaintyvalue   | double precision |         | true     |          |                                                 |         |
-| 3 | uncertaintyunitid  | integer          |         | true     |          | [ndb.variableunits](ndb.variableunits.md)       |         |
-| 4 | uncertaintybasisid | integer          |         | true     |          | [ndb.uncertaintybases](ndb.uncertaintybases.md) |         |
-| 5 | notes              | text             |         | true     |          |                                                 |         |
+| 2 | notes              | text             |         | true     |          |                                                 |         |
+| 3 | uncertaintybasisid | integer          |         | true     |          | [ndb.uncertaintybases](ndb.uncertaintybases.md) |         |
+| 4 | uncertaintyunitid  | integer          |         | true     |          | [ndb.variableunits](ndb.variableunits.md)       |         |
+| 5 | uncertaintyvalue   | double precision |         | true     |          |                                                 |         |
 
 ## Constraints
 
 | # | Name                                      | Type        | Definition                                                                           |
 | - | ----------------------------------------- | ----------- | ------------------------------------------------------------------------------------ |
 | 1 | datauncertainties_dataid_fkey             | FOREIGN KEY | FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON DELETE CASCADE                   |
-| 2 | datauncertainties_uncertaintyunitid_fkey  | FOREIGN KEY | FOREIGN KEY (uncertaintyunitid) REFERENCES ndb.variableunits(variableunitsid)        |
-| 3 | datauncertainties_uncertaintybasisid_fkey | FOREIGN KEY | FOREIGN KEY (uncertaintybasisid) REFERENCES ndb.uncertaintybases(uncertaintybasisid) |
+| 2 | datauncertainties_uncertaintybasisid_fkey | FOREIGN KEY | FOREIGN KEY (uncertaintybasisid) REFERENCES ndb.uncertaintybases(uncertaintybasisid) |
+| 3 | datauncertainties_uncertaintyunitid_fkey  | FOREIGN KEY | FOREIGN KEY (uncertaintyunitid) REFERENCES ndb.variableunits(variableunitsid)        |
 | 4 | uniqueentryvalue                          | UNIQUE      | UNIQUE (dataid, uncertaintyunitid, uncertaintybasisid)                               |
 
 ## Indexes

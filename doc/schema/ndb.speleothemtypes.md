@@ -6,8 +6,8 @@
 
 | # | Name                        | Type        | Default                                                       | Nullable | Children                              | Parents                                 | Comment |
 | - | --------------------------- | ----------- | ------------------------------------------------------------- | -------- | ------------------------------------- | --------------------------------------- | ------- |
-| 1 | speleothemtypeid            | integer     | nextval('ndb.speleothemtypes_speleothemtypeid_seq'::regclass) | false    | [ndb.speleothems](ndb.speleothems.md) |                                         |         |
-| 2 | speleothemtype              | varchar(50) |                                                               | true     |                                       |                                         |         |
+| 1 | speleothemtype              | varchar(50) |                                                               | true     |                                       |                                         |         |
+| 2 | speleothemtypeid            | integer     | nextval('ndb.speleothemtypes_speleothemtypeid_seq'::regclass) | false    | [ndb.speleothems](ndb.speleothems.md) |                                         |         |
 | 3 | speleothemtypenotes         | text        |                                                               | true     |                                       |                                         |         |
 | 4 | speleothemtypepublicationid | integer     |                                                               | true     |                                       | [ndb.publications](ndb.publications.md) |         |
 
@@ -15,8 +15,8 @@
 
 | # | Name                                             | Type        | Definition                                                                           |
 | - | ------------------------------------------------ | ----------- | ------------------------------------------------------------------------------------ |
-| 1 | speleothemtypes_speleothemtypepublicationid_fkey | FOREIGN KEY | FOREIGN KEY (speleothemtypepublicationid) REFERENCES ndb.publications(publicationid) |
-| 2 | speleothemtypes_pkey                             | PRIMARY KEY | PRIMARY KEY (speleothemtypeid)                                                       |
+| 1 | speleothemtypes_pkey                             | PRIMARY KEY | PRIMARY KEY (speleothemtypeid)                                                       |
+| 2 | speleothemtypes_speleothemtypepublicationid_fkey | FOREIGN KEY | FOREIGN KEY (speleothemtypepublicationid) REFERENCES ndb.publications(publicationid) |
 
 ## Indexes
 

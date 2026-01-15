@@ -6,9 +6,9 @@
 
 | # | Name            | Type                           | Default                                                   | Nullable | Children                                                  | Parents | Comment |
 | - | --------------- | ------------------------------ | --------------------------------------------------------- | -------- | --------------------------------------------------------- | ------- | ------- |
-| 1 | isoscaletypeid  | integer                        | nextval('ndb.seq_isoscaletypes_isoscaletypeid'::regclass) | false    | [ndb.isovariablescaletypes](ndb.isovariablescaletypes.md) |         |         |
-| 2 | isoscaleacronym | varchar(24)                    |                                                           | false    |                                                           |         |         |
-| 3 | isoscalename    | varchar(80)                    |                                                           | false    |                                                           |         |         |
+| 1 | isoscaleacronym | varchar(24)                    |                                                           | false    |                                                           |         |         |
+| 2 | isoscalename    | varchar(80)                    |                                                           | false    |                                                           |         |         |
+| 3 | isoscaletypeid  | integer                        | nextval('ndb.seq_isoscaletypes_isoscaletypeid'::regclass) | false    | [ndb.isovariablescaletypes](ndb.isovariablescaletypes.md) |         |         |
 | 4 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                              | false    |                                                           |         |         |
 | 5 | recdatemodified | timestamp(0) without time zone |                                                           | false    |                                                           |         |         |
 

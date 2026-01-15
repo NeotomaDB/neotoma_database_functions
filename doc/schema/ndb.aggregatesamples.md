@@ -9,16 +9,16 @@ This table stores the samples in Aggregate Datasets.
 | # | Name               | Type                           | Default                      | Nullable | Children | Parents                                           | Comment                                                                                               |
 | - | ------------------ | ------------------------------ | ---------------------------- | -------- | -------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | 1 | aggregatedatasetid | integer                        |                              | false    |          | [ndb.aggregatedatasets](ndb.aggregatedatasets.md) | An arbitrary Aggregate Dataset identification number. Field links to the AggregateDatasets table.<br> |
-| 2 | sampleid           | integer                        |                              | false    |          | [ndb.samples](ndb.samples.md)                     | Sample ID number. Field links to the Samples table.                                                   |
-| 3 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |                                                                                                       |
-| 4 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                                   |                                                                                                       |
+| 2 | recdatecreated     | timestamp(0) without time zone | timezone('UTC'::text, now()) | false    |          |                                                   |                                                                                                       |
+| 3 | recdatemodified    | timestamp(0) without time zone |                              | false    |          |                                                   |                                                                                                       |
+| 4 | sampleid           | integer                        |                              | false    |          | [ndb.samples](ndb.samples.md)                     | Sample ID number. Field links to the Samples table.                                                   |
 
 ## Constraints
 
 | # | Name                                  | Type        | Definition                                                                                                                |
 | - | ------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1 | fk_aggregatesamples_aggregatedatasets | FOREIGN KEY | FOREIGN KEY (aggregatedatasetid) REFERENCES ndb.aggregatedatasets(aggregatedatasetid) ON UPDATE CASCADE ON DELETE CASCADE |
-| 2 | aggregatesamples_pkey                 | PRIMARY KEY | PRIMARY KEY (aggregatedatasetid, sampleid)                                                                                |
+| 1 | aggregatesamples_pkey                 | PRIMARY KEY | PRIMARY KEY (aggregatedatasetid, sampleid)                                                                                |
+| 2 | fk_aggregatesamples_aggregatedatasets | FOREIGN KEY | FOREIGN KEY (aggregatedatasetid) REFERENCES ndb.aggregatedatasets(aggregatedatasetid) ON UPDATE CASCADE ON DELETE CASCADE |
 | 3 | fk_aggregatesamples_samples           | FOREIGN KEY | FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE                               |
 
 ## Indexes

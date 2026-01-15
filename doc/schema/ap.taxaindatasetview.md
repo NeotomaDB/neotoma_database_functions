@@ -26,10 +26,10 @@ CREATE VIEW taxaindatasetview AS (
 
 | # | Name           | Type       | Default | Nullable | Children | Parents | Comment |
 | - | -------------- | ---------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | taxonid        | integer    |         | true     |          |         |         |
-| 2 | taxonname      | text       |         | true     |          |         |         |
-| 3 | taxagroupid    | varchar(3) |         | true     |          |         |         |
-| 4 | datasettypeids | jsonb      |         | true     |          |         |         |
+| 1 | datasettypeids | jsonb      |         | true     |          |         |         |
+| 2 | taxagroupid    | varchar(3) |         | true     |          |         |         |
+| 3 | taxonid        | integer    |         | true     |          |         |         |
+| 4 | taxonname      | text       |         | true     |          |         |         |
 
 ## Referenced Tables
 

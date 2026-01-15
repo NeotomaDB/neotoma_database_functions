@@ -36,10 +36,10 @@ CREATE VIEW dsageranges AS (
 
 | # | Name      | Type             | Default | Nullable | Children | Parents | Comment |
 | - | --------- | ---------------- | ------- | -------- | -------- | ------- | ------- |
-| 1 | datasetid | integer          |         | true     |          |         |         |
-| 2 | younger   | double precision |         | true     |          |         |         |
+| 1 | agetypeid | integer          |         | true     |          |         |         |
+| 2 | datasetid | integer          |         | true     |          |         |         |
 | 3 | older     | double precision |         | true     |          |         |         |
-| 4 | agetypeid | integer          |         | true     |          |         |         |
+| 4 | younger   | double precision |         | true     |          |         |         |
 
 ## Referenced Tables
 

@@ -7,16 +7,16 @@
 | # | Name                | Type    | Default | Nullable | Children | Parents                                                 | Comment |
 | - | ------------------- | ------- | ------- | -------- | -------- | ------------------------------------------------------- | ------- |
 | 1 | entityid            | integer |         | true     |          | [ndb.speleothems](ndb.speleothems.md)                   |         |
-| 2 | landusecovertypeid  | integer |         | true     |          | [ndb.vegetationcovertypes](ndb.vegetationcovertypes.md) |         |
+| 2 | landusecovernotes   | text    |         | true     |          |                                                         |         |
 | 3 | landusecoverpercent | integer |         | true     |          |                                                         |         |
-| 4 | landusecovernotes   | text    |         | true     |          |                                                         |         |
+| 4 | landusecovertypeid  | integer |         | true     |          | [ndb.vegetationcovertypes](ndb.vegetationcovertypes.md) |         |
 
 ## Constraints
 
 | # | Name                                       | Type        | Definition                                                                                                    |
 | - | ------------------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------- |
-| 1 | entitylandusecover_landusecovertypeid_fkey | FOREIGN KEY | FOREIGN KEY (landusecovertypeid) REFERENCES ndb.vegetationcovertypes(vegetationcovertypeid) ON DELETE CASCADE |
-| 2 | entitylandusecover_entityid_fkey           | FOREIGN KEY | FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE                                 |
+| 1 | entitylandusecover_entityid_fkey           | FOREIGN KEY | FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE                                 |
+| 2 | entitylandusecover_landusecovertypeid_fkey | FOREIGN KEY | FOREIGN KEY (landusecovertypeid) REFERENCES ndb.vegetationcovertypes(vegetationcovertypeid) ON DELETE CASCADE |
 
 ## Relations
 

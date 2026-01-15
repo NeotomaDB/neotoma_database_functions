@@ -8,8 +8,8 @@ Lookup table of Depositional Agents. Table is referenced by the DepAgents table.
 
 | # | Name            | Type                           | Default                                               | Nullable | Children                          | Parents | Comment                                                |
 | - | --------------- | ------------------------------ | ----------------------------------------------------- | -------- | --------------------------------- | ------- | ------------------------------------------------------ |
-| 1 | depagentid      | integer                        | nextval('ndb.seq_depagenttypes_depagentid'::regclass) | false    | [ndb.depagents](ndb.depagents.md) |         | An arbitrary Depositional Agent identification number. |
-| 2 | depagent        | varchar(64)                    |                                                       | true     |                                   |         | Depositional Agent.                                    |
+| 1 | depagent        | varchar(64)                    |                                                       | true     |                                   |         | Depositional Agent.                                    |
+| 2 | depagentid      | integer                        | nextval('ndb.seq_depagenttypes_depagentid'::regclass) | false    | [ndb.depagents](ndb.depagents.md) |         | An arbitrary Depositional Agent identification number. |
 | 3 | recdatecreated  | timestamp(0) without time zone | timezone('UTC'::text, now())                          | false    |                                   |         |                                                        |
 | 4 | recdatemodified | timestamp(0) without time zone |                                                       | false    |                                   |         |                                                        |
 
