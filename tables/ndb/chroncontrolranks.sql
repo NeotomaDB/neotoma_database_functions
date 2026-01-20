@@ -1,10 +1,11 @@
--- chroncontrolranks definition
+-- ndb definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS chroncontrolranks.chroncontrolranks
+-- DROP TABLE IF EXISTS ndb.chroncontrolranks
 
-CREATE TABLE chroncontrolranks.chroncontrolranks (
+CREATE TABLE IF NOT EXISTS ndb.chroncontrolranks (
+
     chroncontrolrankid integer DEFAULT nextval('ndb.seq_chroncontrolranks_chroncontrolrankid'::regclass) NOT NULL,
     chroncontrolid integer NULL,
     accuracyrankid integer NULL,
@@ -13,13 +14,26 @@ CREATE TABLE chroncontrolranks.chroncontrolranks (
     precisionrankid integer NULL,
     outlier boolean NULL,
     recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
-    recdatemodified timestamp(0) without time zone NOT NULL,
-    CONSTRAINT chroncontrolranks_pkey PRIMARY KEY (chroncontrolrankid)
+    recdatemodified timestamp(0) without time zone NOT NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
+--- Table comments
+COMMENT ON TABLE ndb.chroncontrolranks IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX chroncontrolranks_pkey ON ndb.chroncontrolranks USING btree (chroncontrolrankid)
+
+--- Remove existing constraints if needed
+ALTER TABLE ndb.chroncontrolranks DROP CONSTRAINT IF EXISTS chroncontrolranks_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.chroncontrolranks ADD CONSTRAINT chroncontrolranks_pkey PRIMARY KEY (chroncontrolrankid);
+
+--- Foreign Key Restraints
 ALTER TABLE ndb.chroncontrolranks ADD CONSTRAINT fk_chroncontrolranks_chroncontrolaccuracydirections FOREIGN KEY (accuracydirectionid) REFERENCES ndb.chroncontrolaccuracydirections(accuracydirectionid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.chroncontrolranks ADD CONSTRAINT fk_chroncontrolranks_chroncontrolaccuracydistributions FOREIGN KEY (accuracydistributionid) REFERENCES ndb.chroncontrolaccuracydistributions(accuracydistributionid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.chroncontrolranks ADD CONSTRAINT fk_chroncontrolranks_chroncontrolaccuracyranks FOREIGN KEY (accuracyrankid) REFERENCES ndb.chroncontrolaccuracyranks(accuracyrankid) ON UPDATE CASCADE ON DELETE CASCADE;

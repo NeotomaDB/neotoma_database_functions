@@ -1,10 +1,11 @@
--- uraniumseries definition
+-- ndb definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS uraniumseries.uraniumseries
+-- DROP TABLE IF EXISTS ndb.uraniumseries
 
-CREATE TABLE uraniumseries.uraniumseries (
+CREATE TABLE IF NOT EXISTS ndb.uraniumseries (
+
     geochronid integer NULL,
     decayconstantid integer NULL,
     ratio230th232th numeric NULL,
@@ -14,12 +15,23 @@ CREATE TABLE uraniumseries.uraniumseries (
     activity234u238u numeric NULL,
     activityuncertainty234u238u numeric NULL,
     iniratio230th232th numeric NULL,
-    iniratiouncertainty230th232th numeric NULL,
+    iniratiouncertainty230th232th numeric NULL
 
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
+--- Table comments
+COMMENT ON TABLE ndb.uraniumseries IS "";
+
+--- Table indices
+
+
+--- Remove existing constraints if needed
+
+--- Non-foreign key constraints
+
+--- Foreign Key Restraints
 ALTER TABLE ndb.uraniumseries ADD CONSTRAINT uraniumseries_geochronid_fkey FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid);
 ALTER TABLE ndb.uraniumseries ADD CONSTRAINT uraniumseries_decayconstantid_fkey FOREIGN KEY (decayconstantid) REFERENCES ndb.decayconstants(decayconstantid);

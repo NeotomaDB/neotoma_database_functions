@@ -1,10 +1,11 @@
--- gadm definition
+-- ap definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS gadm.gadm
+-- DROP TABLE IF EXISTS ap.gadm
 
-CREATE TABLE gadm.gadm (
+CREATE TABLE IF NOT EXISTS ap.gadm (
+
     objectid integer DEFAULT nextval('ap.gadm_objectid_seq'::regclass) NOT NULL,
     uid integer NULL,
     gid_0 character varying(3) NULL,
@@ -60,11 +61,24 @@ CREATE TABLE gadm.gadm (
     subcont character varying(25) NULL,
     shape_length double precision NULL,
     shape_area double precision NULL,
-    shape geometry(MultiPolygon,4326) NULL,
-    CONSTRAINT gadm_pkey PRIMARY KEY (objectid)
+    shape geometry(MultiPolygon,4326) NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
-;
+--- Table comments
+COMMENT ON TABLE ap.gadm IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX gadm_pkey ON ap.gadm USING btree (objectid);
+CREATE INDEX gadm_shape_geom_idx ON ap.gadm USING gist (shape)
+
+--- Remove existing constraints if needed
+ALTER TABLE ap.gadm DROP CONSTRAINT IF EXISTS gadm_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ap.gadm ADD CONSTRAINT gadm_pkey PRIMARY KEY (objectid);
+
+--- Foreign Key Restraints

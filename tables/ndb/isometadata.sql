@@ -1,10 +1,11 @@
--- isometadata definition
+-- ndb definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS isometadata.isometadata
+-- DROP TABLE IF EXISTS ndb.isometadata
 
-CREATE TABLE isometadata.isometadata (
+CREATE TABLE IF NOT EXISTS ndb.isometadata (
+
     isometadataid integer DEFAULT nextval('ndb.seq_isometadata_isometadataid'::regclass) NOT NULL,
     dataid integer NOT NULL,
     isomatanaltypeid integer NULL,
@@ -17,13 +18,26 @@ CREATE TABLE isometadata.isometadata (
     atomicpercent double precision NULL,
     reps integer NULL,
     recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
-    recdatemodified timestamp(0) without time zone NOT NULL,
-    CONSTRAINT isometadata_pkey PRIMARY KEY (isometadataid)
+    recdatemodified timestamp(0) without time zone NOT NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
+--- Table comments
+COMMENT ON TABLE ndb.isometadata IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX isometadata_pkey ON ndb.isometadata USING btree (isometadataid)
+
+--- Remove existing constraints if needed
+ALTER TABLE ndb.isometadata DROP CONSTRAINT IF EXISTS isometadata_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.isometadata ADD CONSTRAINT isometadata_pkey PRIMARY KEY (isometadataid);
+
+--- Foreign Key Restraints
 ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_contacts FOREIGN KEY (analystid) REFERENCES ndb.contacts(contactid);
 ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_isomaterialanalyzedtypes FOREIGN KEY (isomatanaltypeid) REFERENCES ndb.isomaterialanalyzedtypes(isomatanaltypeid) ON DELETE SET NULL;
 ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_isosubstratetypes FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE SET NULL;

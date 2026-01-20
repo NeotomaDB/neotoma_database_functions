@@ -1,21 +1,35 @@
--- tephras definition
+-- ndb definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS tephras.tephras
+-- DROP TABLE IF EXISTS ndb.tephras
 
-CREATE TABLE tephras.tephras (
+CREATE TABLE IF NOT EXISTS ndb.tephras (
+
     tephraid integer DEFAULT nextval('ndb.seq_tephras_tephraid'::regclass) NOT NULL,
     eventid integer NOT NULL,
     analysisunitid integer NOT NULL,
     notes text NULL,
     recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
-    recdatemodified timestamp(0) without time zone NOT NULL,
-    CONSTRAINT tephras_pkey PRIMARY KEY (tephraid)
+    recdatemodified timestamp(0) without time zone NOT NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
+--- Table comments
+COMMENT ON TABLE ndb.tephras IS "Tephras lookup table. This table stores recognized tephras with established ages. Referenced by the Tephrachronology table.";
+
+--- Table indices
+CREATE UNIQUE INDEX tephras_pkey ON ndb.tephras USING btree (tephraid)
+
+--- Remove existing constraints if needed
+ALTER TABLE ndb.tephras DROP CONSTRAINT IF EXISTS tephras_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.tephras ADD CONSTRAINT tephras_pkey PRIMARY KEY (tephraid);
+
+--- Foreign Key Restraints
 ALTER TABLE ndb.tephras ADD CONSTRAINT fk_tephras_events FOREIGN KEY (eventid) REFERENCES ndb.events(eventid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.tephras ADD CONSTRAINT fk_tephras_analysisunits FOREIGN KEY (analysisunitid) REFERENCES ndb.analysisunits(analysisunitid) ON UPDATE CASCADE ON DELETE CASCADE;

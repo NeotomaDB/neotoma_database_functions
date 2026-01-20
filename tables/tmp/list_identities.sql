@@ -1,17 +1,28 @@
--- list_identities definition
+-- tmp definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS list_identities.list_identities
+-- DROP TABLE IF EXISTS tmp.list_identities
 
-CREATE TABLE list_identities.list_identities (
+CREATE TABLE IF NOT EXISTS tmp.list_identities (
+
     schema_name character varying(12) NULL,
     table_name character varying(256) NULL,
-    column_name character varying(256) NULL,
+    column_name character varying(256) NULL
 
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
-;
+--- Table comments
+COMMENT ON TABLE tmp.list_identities IS "";
+
+--- Table indices
+
+
+--- Remove existing constraints if needed
+
+--- Non-foreign key constraints
+
+--- Foreign Key Restraints

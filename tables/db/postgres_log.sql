@@ -1,10 +1,11 @@
--- postgres_log definition
+-- db definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS postgres_log.postgres_log
+-- DROP TABLE IF EXISTS db.postgres_log
 
-CREATE TABLE postgres_log.postgres_log (
+CREATE TABLE IF NOT EXISTS db.postgres_log (
+
     log_time timestamp(3) with time zone NULL,
     user_name text NULL,
     database_name text NULL,
@@ -27,11 +28,23 @@ CREATE TABLE postgres_log.postgres_log (
     query text NULL,
     query_pos integer NULL,
     location text NULL,
-    application_name text NULL,
-    CONSTRAINT postgres_log_pkey PRIMARY KEY (session_id, session_line_num)
+    application_name text NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
-;
+--- Table comments
+COMMENT ON TABLE db.postgres_log IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX postgres_log_pkey ON db.postgres_log USING btree (session_id, session_line_num)
+
+--- Remove existing constraints if needed
+ALTER TABLE db.postgres_log DROP CONSTRAINT IF EXISTS postgres_log_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE db.postgres_log ADD CONSTRAINT postgres_log_pkey PRIMARY KEY (session_id, session_line_num);
+
+--- Foreign Key Restraints

@@ -1,10 +1,11 @@
--- hydrolakes definition
+-- ap definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS hydrolakes.hydrolakes
+-- DROP TABLE IF EXISTS ap.hydrolakes
 
-CREATE TABLE hydrolakes.hydrolakes (
+CREATE TABLE IF NOT EXISTS ap.hydrolakes (
+
     objectid integer DEFAULT nextval('ap.hydrolakes_objectid_seq'::regclass) NOT NULL,
     hylak_id integer NULL,
     lake_name character varying(40) NULL,
@@ -29,11 +30,25 @@ CREATE TABLE hydrolakes.hydrolakes (
     pour_lat double precision NULL,
     shape_length double precision NULL,
     shape_area double precision NULL,
-    shape geometry(MultiPolygon,4326) NULL,
-    CONSTRAINT hydrolakes_pkey PRIMARY KEY (objectid)
+    shape geometry(MultiPolygon,4326) NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
-;
+--- Table comments
+COMMENT ON TABLE ap.hydrolakes IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX hydrolakes_pkey ON ap.hydrolakes USING btree (objectid);
+CREATE INDEX hydrolakes_shape_geom_idx ON ap.hydrolakes USING gist (shape);
+CREATE INDEX gist_lakes_2geog ON ap.hydrolakes USING gist (((shape)::geography))
+
+--- Remove existing constraints if needed
+ALTER TABLE ap.hydrolakes DROP CONSTRAINT IF EXISTS hydrolakes_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ap.hydrolakes ADD CONSTRAINT hydrolakes_pkey PRIMARY KEY (objectid);
+
+--- Foreign Key Restraints

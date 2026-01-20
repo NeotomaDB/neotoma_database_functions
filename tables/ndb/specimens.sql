@@ -1,10 +1,11 @@
--- specimens definition
+-- ndb definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS specimens.specimens
+-- DROP TABLE IF EXISTS ndb.specimens
 
-CREATE TABLE specimens.specimens (
+CREATE TABLE IF NOT EXISTS ndb.specimens (
+
     specimenid integer DEFAULT nextval('ndb.seq_specimens_specimenid'::regclass) NOT NULL,
     dataid integer NOT NULL,
     elementtypeid integer NULL,
@@ -21,13 +22,26 @@ CREATE TABLE specimens.specimens (
     arctosnr character varying(50) NULL,
     notes text NULL,
     recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
-    recdatemodified timestamp(0) without time zone NOT NULL,
-    CONSTRAINT specimens_pkey PRIMARY KEY (specimenid)
+    recdatemodified timestamp(0) without time zone NOT NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
+--- Table comments
+COMMENT ON TABLE ndb.specimens IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX specimens_pkey ON ndb.specimens USING btree (specimenid)
+
+--- Remove existing constraints if needed
+ALTER TABLE ndb.specimens DROP CONSTRAINT IF EXISTS specimens_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.specimens ADD CONSTRAINT specimens_pkey PRIMARY KEY (specimenid);
+
+--- Foreign Key Restraints
 ALTER TABLE ndb.specimens ADD CONSTRAINT fk_specimens_elementsymmetries FOREIGN KEY (symmetryid) REFERENCES ndb.elementsymmetries(symmetryid);
 ALTER TABLE ndb.specimens ADD CONSTRAINT fk_specimens_elementtypes FOREIGN KEY (elementtypeid) REFERENCES ndb.elementtypes(elementtypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.specimens ADD CONSTRAINT fk_specimens_repositoryinstitutions FOREIGN KEY (repositoryid) REFERENCES ndb.repositoryinstitutions(repositoryid) ON UPDATE CASCADE ON DELETE CASCADE;

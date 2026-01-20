@@ -1,10 +1,11 @@
--- specimendates definition
+-- ndb definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS specimendates.specimendates
+-- DROP TABLE IF EXISTS ndb.specimendates
 
-CREATE TABLE specimendates.specimendates (
+CREATE TABLE IF NOT EXISTS ndb.specimendates (
+
     specimendateid integer DEFAULT nextval('ndb.seq_specimendates_specimendateid'::regclass) NOT NULL,
     geochronid integer NOT NULL,
     taxonid integer NOT NULL,
@@ -14,13 +15,28 @@ CREATE TABLE specimendates.specimendates (
     elementtypeid integer NULL,
     recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
     recdatemodified timestamp(0) without time zone NOT NULL,
-    specimenid integer NULL,
-    CONSTRAINT specimendates_pkey PRIMARY KEY (specimendateid)
+    specimenid integer NULL
+
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
+--- Table comments
+COMMENT ON TABLE ndb.specimendates IS "This table enables queries for dated specimens of individual taxa. Although the MaterialDated field in the Geochronology table may list the taxa dated, this protocol is not enforced, and the field is not linked to the taxa table.";
+
+--- Table indices
+CREATE UNIQUE INDEX specimendates_pkey ON ndb.specimendates USING btree (specimendateid);
+CREATE INDEX ix_sampleid_specimendates ON ndb.specimendates USING btree (sampleid) WITH (fillfactor='10');
+CREATE INDEX ix_taxonid_specimendates ON ndb.specimendates USING btree (taxonid) WITH (fillfactor='10')
+
+--- Remove existing constraints if needed
+ALTER TABLE ndb.specimendates DROP CONSTRAINT IF EXISTS specimendates_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.specimendates ADD CONSTRAINT specimendates_pkey PRIMARY KEY (specimendateid);
+
+--- Foreign Key Restraints
 ALTER TABLE ndb.specimendates ADD CONSTRAINT sd_smpid FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.specimendates ADD CONSTRAINT fk_specimendates_specimens FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.specimendates ADD CONSTRAINT sd_etyid FOREIGN KEY (elementtypeid) REFERENCES ndb.elementtypes(elementtypeid);

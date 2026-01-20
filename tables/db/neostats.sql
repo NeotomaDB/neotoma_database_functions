@@ -1,10 +1,11 @@
--- neostats definition
+-- db definition
 
 -- Drop table
 
--- DROP TABLE IF EXISTS neostats.neostats
+-- DROP TABLE IF EXISTS db.neostats
 
-CREATE TABLE neostats.neostats (
+CREATE TABLE IF NOT EXISTS db.neostats (
+
     userid oid NULL,
     dbid oid NULL,
     queryid bigint NULL,
@@ -40,11 +41,21 @@ CREATE TABLE neostats.neostats (
     datfrozenxid xid NULL,
     datminmxid xid NULL,
     dattablespace oid NULL,
-    datacl aclitem[] NULL,
+    datacl aclitem[] NULL
 
 );
 
 
--- adempiere.wmv_ghgaudit foreign keys
+-- adempiere.wmv_ghgaudit constraints
 
-;
+--- Table comments
+COMMENT ON TABLE db.neostats IS "";
+
+--- Table indices
+
+
+--- Remove existing constraints if needed
+
+--- Non-foreign key constraints
+
+--- Foreign Key Restraints
