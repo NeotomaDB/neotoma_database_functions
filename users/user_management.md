@@ -26,4 +26,22 @@ Would give us a table that shows which users are responsible for the most time c
 
 ```mermaid
 
+flowchart TB
+am((admin))
+nam((neotomaAdmin))
+roi((readonlyinternal))
+fnw((functionwriter))
+subgraph admins
+nam --- username1
+nam --- username2
+end
+subgraph readers
+roi --- neotomaapi
+roi --- neotomaapidev
+end
+subgraph writers
+fnw --- tiliadev
+fnw --- tiliaprod
+end
+
 ```

@@ -8,10 +8,11 @@ BEGIN
     RETURN query 
     WITH table_rec AS (
         SELECT
-            c.relname, n.nspname, c.oid
+            c.relname, n.nspname, c.oid, COALESCE(obj_description((p_schema_name||'.'||quote_ident(p_table_name))::regclass), '') AS commentlines
         FROM
             pg_catalog.pg_class c
             LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+
         WHERE
             relkind = 'r'
             AND n.nspname = p_schema_name
@@ -61,8 +62,8 @@ BEGIN
     ),
     glue AS (
         SELECT
-            format( E'-- %1$I definition\n\n-- Drop table\n\n-- DROP TABLE IF EXISTS %1$I.%2$I\n\nCREATE TABLE %1$I.%2$I (\n', table_rec.relname, table_rec.relname) AS top,
-            format( E'\n);\n\n\n-- adempiere.wmv_ghgaudit foreign keys\n\n', table_rec.nspname, table_rec.relname) AS bottom,
+            format( E'-- %1$I definition\n\n-- Drop table\n\n-- DROP TABLE IF EXISTS %1$I.%2$I\n\nCREATE TABLE IF NOT EXISTS %1$I.%2$I (\n', p_schema_name, table_rec.relname) AS top,
+            format( E'\n);\n\n\n-- adempiere.wmv_ghgaudit constraints') AS bottom,
             oid
         FROM
             table_rec
@@ -78,7 +79,8 @@ BEGIN
     ),
     constrnt AS (
         SELECT
-            string_agg(format('    CONSTRAINT %s %s', con_rec.conname, con_rec.condef), E',\n') AS lines,
+            string_agg(format('ALTER TABLE %s DROP CONSTRAINT IF EXISTS %s;', relname, con_rec.conname), E'\n') AS droplines,
+            string_agg(format('ALTER TABLE %s ADD CONSTRAINT %s %s;', relname, con_rec.conname, con_rec.condef), E'\n') AS addlines,
             oid
         FROM
             con_rec
@@ -89,7 +91,7 @@ BEGIN
     ),
     frnkey AS (
         SELECT
-            string_agg(format('ALTER TABLE %s ADD CONSTRAINT %s %s', relname, conname, condef), E';\n') AS lines,
+            string_agg(format('ALTER TABLE %s ADD CONSTRAINT %s %s;', relname, conname, condef), E'\n') AS lines,
             oid
         FROM
             con_rec
@@ -97,13 +99,40 @@ BEGIN
             contype = 'f'
         GROUP BY
             oid
+    ),
+    indexlines AS (
+        SELECT string_agg(format('%s', pgi.indexdef), E';\n') AS indices,
+            oid
+        FROM table_rec
+        LEFT JOIN (SELECT * FROM pg_indexes) AS pgi ON (table_rec.relname = pgi.tablename AND table_rec.nspname = pgi.schemaname)
+        GROUP BY oid
+    ),
+    commentlines AS (
+        SELECT
+            string_agg(format('COMMENT ON TABLE %1$I.%2$I IS %3$I;', p_schema_name, table_rec.relname, table_rec.commentlines), E'\n') AS lines,
+            oid
+        FROM
+            table_rec
+        GROUP BY
+            oid
+            
     )
     SELECT
-        concat(glue.top, cols.lines, E',\n', constrnt.lines, glue.bottom, frnkey.lines, ';')
+        concat_ws(E'\n',
+            glue.top,
+            cols.lines,
+            glue.bottom,
+            E'\n--- Table comments', commentlines.lines,
+            E'\n--- Table indices', indexlines.indices,
+            E'\n--- Remove existing constraints if needed', constrnt.droplines,
+            E'\n--- Non-foreign key constraints', constrnt.addlines,
+            E'\n--- Foreign Key Restraints', frnkey.lines)
     FROM
         glue
         JOIN cols ON cols.oid = glue.oid
         LEFT JOIN constrnt ON constrnt.oid = glue.oid
+        LEFT JOIN commentlines ON commentlines.oid = glue.oid
+        LEFT JOIN indexlines ON indexlines.oid = glue.oid
         LEFT JOIN frnkey ON frnkey.oid = glue.oid;
 END;
 $BODY$
