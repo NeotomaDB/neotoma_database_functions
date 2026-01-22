@@ -25,23 +25,39 @@ Would give us a table that shows which users are responsible for the most time c
 ## User Hierarchy
 
 ```mermaid
+flowchart LR
 
-flowchart TB
 am((admin))
-nam((neotomaAdmin))
-roi((readonlyinternal))
-fnw((functionwriter))
+
 subgraph admins
-nam --- username1
-nam --- username2
-end
-subgraph readers
-roi --- neotomaapi
-roi --- neotomaapidev
-end
-subgraph writers
-fnw --- tiliadev
-fnw --- tiliaprod
+    nam((neotomaAdmin)) --- username_1
+    nam --- username_2
+    nam --- username_N
+    nam --- cleanbackup
 end
 
+subgraph readers
+    roi((readonlyinternal)) --- neotomaapi
+    roi --- neotomaapidev
+end
+
+subgraph writers
+    fnw((readwriteinternal)) --- tiliaapidev
+    fnw --- tiliaapi
+end
+
+subgraph Github
+    subgraph tilia
+        tilapi[production] --- tiliaapi
+        tildev[development] --- tiliaapidev
+    end
+    subgraph api
+        apiprod[production] --- neotomaapi
+        apidev[development] --- neotomaapidev
+    end
+end
 ```
+
+These sets of users provide the backbone for database use. If we have power users who are potentially developing elements for the Neotoma API, they should primarily use database snapshots, as provided by the [`clean_backup`]() code repository.
+
+For all "users" with login permissions (as opposed to the roles from which they inherit permissions), we define login passwords seperately (replacing the `testlogin` password). The usernames and passwords should be set either using GitHub repository level secrets, or in local `.env` files.
