@@ -30,10 +30,15 @@ flowchart LR
 am((admin))
 
 subgraph admins
-    nam((neotomaAdmin)) --- username_1
-    nam --- username_2
-    nam --- username_N
-    nam --- cleanbackup
+    subgraph highlevel
+        nam((neotomaAdmin)) --- sug335
+        nam --- sedv8808
+        nam --- cleanbackup
+    end
+    subgraph lowerlevel
+        nsm((neotomaSubAdmin)) --- username_1
+        nsm --- username_2
+    end
 end
 
 subgraph readers
