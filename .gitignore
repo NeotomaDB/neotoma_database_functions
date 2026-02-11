@@ -5,3 +5,5 @@
 .github/instructions/snyk_rules.instructions.md
 
 .vscode/
+
+src/ndbfunctions/__pycache__/

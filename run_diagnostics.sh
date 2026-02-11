@@ -7,3 +7,6 @@ rm ./doc/schema/*
 tbls doc
 tbls lint > linting_output.txt
 tbls out -t yaml -o schema.yaml
+
+# Run the table exporter.
+uv run database_descriptors.py
