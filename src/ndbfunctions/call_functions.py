@@ -8,7 +8,7 @@ def call_functions(con:psycopg.Connection,
 
     Args:
         con (psycopg2.Connection): _description_
-        schema (list, optional): _description_. Defaults to ["ap", "cron", "da", "db", "doi", "ecg", "emb", "gen", "ndb", "ti", "tmp", "ts"].
+        schema (list, optional): _description_. Defaults to ["ap", "cron", "da", "db", "doi", "ecg", "emb", "gen", "public", "ndb", "ti", "tmp", "ts"].
 
     Returns:
         _type_: _description_
@@ -32,7 +32,7 @@ def call_functions(con:psycopg.Connection,
                 print(record)
                 schema = record[0]
                 filename = record[1] + '.sql'
-                output_file = Path(f"./{con.info.dbname}/functions/{schema}/{filename}")
+                output_file = Path(f"./database/{con.info.dbname}/functions/{schema}/{filename}")
                 output_file.parent.mkdir(exist_ok=True, parents=True)
                 with open(output_file, 'w', encoding='UTF-8') as f:
                     f.write(record[3])

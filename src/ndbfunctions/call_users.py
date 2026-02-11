@@ -32,7 +32,7 @@ def call_functions(con:psycopg.Connection,
                 print(record)
                 schema = record[0]
                 filename = record[1] + '.sql'
-                output_file = Path(f"./functions/{schema}/{filename}")
+                output_file = Path(f"./database/{con.info.dbname}/users/{schema}/{filename}")
                 output_file.parent.mkdir(exist_ok=True, parents=True)
                 with open(output_file, 'w', encoding='UTF-8') as f:
                     f.write(record[3])

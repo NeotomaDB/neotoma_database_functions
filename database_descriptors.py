@@ -20,6 +20,5 @@ data = [os.getenv('DBTANK'), os.getenv('DBAUTH')]
 
 for i in data:
     conn = psycopg.connect(conninfo=i, connect_timeout = 5)
-
     _ = ndbfunctions.call_functions(conn)
     _ = ndbfunctions.call_tables(conn)
