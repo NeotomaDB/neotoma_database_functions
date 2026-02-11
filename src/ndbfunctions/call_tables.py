@@ -3,15 +3,16 @@ from pathlib import Path
 
 def call_tables(con:psycopg.Connection, 
                   schema:list = ["ap", "cron", "da", "db", "doi", "ecg", "emb", "gen", "ndb", "ti", "tmp", "ts"]) -> None:
-    """_Write database functions from the remote server._
-    This function 
+    """_Write database table descriptions from the remote server._
+    This function is intended to call out to the Neotoma server and then return fully described statements
+    to add full table descriptions, comments, triggers and constraints for tables.
 
     Args:
         con (psycopg2.Connection): _description_
         schema (list, optional): _description_. Defaults to ["ap", "cron", "da", "db", "doi", "ecg", "emb", "gen", "ndb", "ti", "tmp", "ts"].
 
     Returns:
-        _type_: _description_
+        _None_: _The output is written to file, rather than to a data object._
     """    
     TABLES = """
         SELECT table_schema AS schema, table_name AS table FROM information_schema.tables 
@@ -30,8 +31,7 @@ def call_tables(con:psycopg.Connection,
                 print(record)
                 _ = cur.execute(QUERY, {'schema': record[0], 'table': record[1]})
                 outcome = cur.fetchone()
-                print(outcome)
-                output_file = Path(f"./tables/{record[0]}/{record[1]}.sql")
+                output_file = Path(f"./database/{con.info.dbname}/tables/{record[0]}/{record[1]}.sql")
                 output_file.parent.mkdir(exist_ok=True, parents=True)
                 with open(output_file, 'w', encoding='UTF-8') as f:
                     f.write(outcome[0])
