@@ -16,9 +16,10 @@ import json
 import os
 
 load_dotenv()
-data = os.getenv('DBAUTH')
-print(data)
-conn = psycopg.connect(conninfo=data, connect_timeout = 5)
+data = [os.getenv('DBTANK'), os.getenv('DBAUTH')]
 
-# _ = ndbfunctions.call_functions(conn)
-_ = ndbfunctions.call_tables(conn)
+for i in data:
+    conn = psycopg.connect(conninfo=i, connect_timeout = 5)
+
+    _ = ndbfunctions.call_functions(conn)
+    _ = ndbfunctions.call_tables(conn)
