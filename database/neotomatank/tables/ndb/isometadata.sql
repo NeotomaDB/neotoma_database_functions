@@ -1,0 +1,50 @@
+-- ndb.isometadata Table definition
+
+-- Drop table
+
+-- DROP TABLE IF EXISTS ndb.isometadata
+
+CREATE TABLE IF NOT EXISTS ndb.isometadata (
+
+    isometadataid integer DEFAULT nextval('ndb.seq_isometadata_isometadataid'::regclass) NOT NULL,
+    dataid integer NOT NULL,
+    isomatanaltypeid integer NULL,
+    isosubstratetypeid integer NULL,
+    analystid integer NULL,
+    lab character varying(255) NULL,
+    labnumber character varying(64) NULL,
+    mass_mg double precision NULL,
+    weightpercent double precision NULL,
+    atomicpercent double precision NULL,
+    reps integer NULL,
+    recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
+    recdatemodified timestamp(0) without time zone NOT NULL
+
+);
+
+
+-- Table Constraints, Comments and Triggers
+
+--- Table comments
+COMMENT ON TABLE ndb.isometadata IS "";
+
+--- Table indices
+CREATE UNIQUE INDEX isometadata_pkey ON ndb.isometadata USING btree (isometadataid)
+
+--- Remove existing constraints if needed
+-- ALTER TABLE ndb.isometadata DROP CONSTRAINT IF EXISTS isometadata_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.isometadata ADD CONSTRAINT isometadata_pkey PRIMARY KEY (isometadataid);
+
+--- Foreign Key Restraints
+ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_isosubstratetypes FOREIGN KEY (isosubstratetypeid) REFERENCES ndb.isosubstratetypes(isosubstratetypeid) ON UPDATE CASCADE ON DELETE SET NULL;
+ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_isomaterialanalyzedtypes FOREIGN KEY (isomatanaltypeid) REFERENCES ndb.isomaterialanalyzedtypes(isomatanaltypeid) ON DELETE SET NULL;
+ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE ndb.isometadata ADD CONSTRAINT fk_isometadata_contacts FOREIGN KEY (analystid) REFERENCES ndb.contacts(contactid);
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isometadata;
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isometadata;
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isometadata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isometadata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();

@@ -1,0 +1,41 @@
+-- ndb definition
+
+-- Drop table
+
+-- DROP TABLE IF EXISTS ndb.datasets
+
+CREATE TABLE IF NOT EXISTS ndb.datasets (
+
+    datasetid integer DEFAULT nextval('ndb.seq_datasets_datasetid'::regclass) NOT NULL,
+    collectionunitid integer NOT NULL,
+    datasettypeid integer NOT NULL,
+    datasetname character varying(80) NULL,
+    notes text NULL,
+    recdatecreated timestamp(0) without time zone DEFAULT timezone('UTC'::text, now()) NOT NULL,
+    recdatemodified timestamp(0) without time zone NOT NULL,
+    embargoid integer NULL
+
+);
+
+
+-- adempiere.wmv_ghgaudit constraints
+
+--- Table comments
+COMMENT ON TABLE ndb.datasets IS "This table stores the data for Datasets. A Dataset is the set of samples for a particular data type from a Collection Unit. A Collection Unit may have multiple Datasets for different data types, for example one dataset for pollen and another for plant macrofossils. Every Sample is assigned to a Dataset, and every Dataset is assigned to a Collection Unit. Samples from different Collection Units cannot be assigned to the same Dataset (although they may be assigned to Aggregate Datasets).";
+
+--- Table indices
+CREATE UNIQUE INDEX datasets_pkey ON ndb.datasets USING btree (datasetid);
+CREATE INDEX ix_collectionunitid_datasets ON ndb.datasets USING btree (collectionunitid) WITH (fillfactor='10');
+CREATE INDEX ix_datasettypeid_datasets ON ndb.datasets USING btree (datasettypeid) WITH (fillfactor='10');
+CREATE INDEX idx_datasets_collectionunit ON ndb.datasets USING btree (collectionunitid) INCLUDE (datasetid, datasettypeid)
+
+--- Remove existing constraints if needed
+ALTER TABLE ndb.datasets DROP CONSTRAINT IF EXISTS datasets_pkey;
+
+--- Non-foreign key constraints
+ALTER TABLE ndb.datasets ADD CONSTRAINT datasets_pkey PRIMARY KEY (datasetid);
+
+--- Foreign Key Restraints
+ALTER TABLE ndb.datasets ADD CONSTRAINT fk_datasets_datasettypes FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE ndb.datasets ADD CONSTRAINT fk_datasets_collectionunits FOREIGN KEY (collectionunitid) REFERENCES ndb.collectionunits(collectionunitid) ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE ndb.datasets ADD CONSTRAINT fk_datasets_embargo FOREIGN KEY (embargoid) REFERENCES ndb.embargo(embargoid) ON UPDATE CASCADE ON DELETE CASCADE;

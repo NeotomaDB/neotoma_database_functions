@@ -1,0 +1,39 @@
+-- ndb.fundinginstitutions Table definition
+
+-- Drop table
+
+-- DROP TABLE IF EXISTS ndb.fundinginstitutions
+
+CREATE TABLE IF NOT EXISTS ndb.fundinginstitutions (
+
+    institutionid text NULL,
+    grantid integer NULL,
+    recdatecreated timestamp with time zone NULL,
+    recdatemodified timestamp with time zone NULL
+
+);
+
+
+-- Table Constraints, Comments and Triggers
+
+--- Table comments
+COMMENT ON TABLE ndb.fundinginstitutions IS "";
+
+--- Table indices
+
+
+--- Remove existing constraints if needed
+
+--- Non-foreign key constraints
+
+--- Foreign Key Restraints
+ALTER TABLE ndb.fundinginstitutions ADD CONSTRAINT fundinginstitutions_institutionid_fkey FOREIGN KEY (institutionid) REFERENCES ndb.institutions(institutionid);
+ALTER TABLE ndb.fundinginstitutions ADD CONSTRAINT fundinginstitutions_grantid_fkey FOREIGN KEY (grantid) REFERENCES ndb.grants(grantid);
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_agency_createdate ON ndb.fundinginstitutions;
+-- DROP TRIGGER IF EXISTS tr_agency_modifydate ON ndb.fundinginstitutions;
+-- DROP TRIGGER IF EXISTS tr_agency_modifydate ON ndb.fundinginstitutions;
+CREATE TRIGGER tr_agency_createdate BEFORE INSERT ON ndb.fundinginstitutions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();
+CREATE TRIGGER tr_agency_modifydate BEFORE INSERT ON ndb.fundinginstitutions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+CREATE TRIGGER tr_agency_modifydate BEFORE UPDATE ON ndb.fundinginstitutions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
