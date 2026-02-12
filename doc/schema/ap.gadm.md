@@ -2,6 +2,8 @@
 
 ## Description
 
+Geopolitical spatial data obtained from GADM v4.1 from the download source https://gadm.org/ to represent political administrative units globally.
+
 ## Columns
 
 | #  | Name         | Type                        | Default                                   | Nullable | Children                                        | Parents | Comment |

@@ -2,14 +2,16 @@
 
 ## Description
 
+This table is used to store the Neotoma download object as it is/was at the time of dataset minting.
+
 ## Columns
 
-| # | Name           | Type                           | Default | Nullable | Children | Parents | Comment |
-| - | -------------- | ------------------------------ | ------- | -------- | -------- | ------- | ------- |
-| 1 | datasetid      | integer                        |         | true     |          |         |         |
-| 2 | download       | jsonb                          |         | false    |          |         |         |
-| 3 | recdatecreated | timestamp(6) without time zone | now()   | true     |          |         |         |
-| 4 | recmodified    | timestamp(6) without time zone | now()   | true     |          |         |         |
+| # | Name            | Type                           | Default | Nullable | Children | Parents | Comment                                                                                                                                        |
+| - | --------------- | ------------------------------ | ------- | -------- | -------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | datasetid       | integer                        |         | true     |          |         | Foreign key to ndb.datasets.datasetid. This is not tied to a foreign key constraint so that we can retain information if datasets are deleted. |
+| 2 | download        | jsonb                          |         | false    |          |         | jsonb representation of the Neotoma download object (as defined through the API and the doi.meta function)                                     |
+| 3 | recdatecreated  | timestamp(6) without time zone | now()   | true     |          |         | datetime the record was created.                                                                                                               |
+| 4 | recdatemodified | timestamp(6) without time zone | now()   | true     |          |         | datetime the record was last modified.                                                                                                         |
 
 ## Indexes
 

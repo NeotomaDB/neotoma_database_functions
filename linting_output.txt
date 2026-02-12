@@ -1,20 +1,14 @@
 ap.datasetkeywords: table comment required.
 ap.datasetpisauthors: table comment required.
-ap.faunranges: table comment required.
-ap.gadm: table comment required.
 ap.geopolnames: table comment required.
 ap.globalmammals: table comment required.
 ap.hydrolakes: table comment required.
-ap.icesheets: table comment required.
-ap.orcidlogins: table comment required.
 ap.pollensumgroups: table comment required.
 ap.pollensums: table comment required.
 ap.querytable: table comment required.
 ap.sitegadm: table comment required.
 ap.summaries: table comment required.
 ap.taxaindatasetview: table comment required.
-doi.doimeta: table comment required.
-doi.frozen: table comment required.
 ndb.accumulationrates: table comment required.
 ndb.analysisunitaltdepths: table comment required.
 ndb.analysisunitaltdepthscales: table comment required.
@@ -149,10 +143,6 @@ ap.datasetkeywords.datasetid: column comment required.
 ap.datasetkeywords.keywordid: column comment required.
 ap.datasetpisauthors.contactid: column comment required.
 ap.datasetpisauthors.datasetid: column comment required.
-ap.faunranges.gid: column comment required.
-ap.faunranges.sciname: column comment required.
-ap.faunranges.spid: column comment required.
-ap.faunranges.the_geom: column comment required.
 ap.gadm.cc_1: column comment required.
 ap.gadm.cc_2: column comment required.
 ap.gadm.cc_3: column comment required.
@@ -245,18 +235,6 @@ ap.hydrolakes.vol_res: column comment required.
 ap.hydrolakes.vol_src: column comment required.
 ap.hydrolakes.vol_total: column comment required.
 ap.hydrolakes.wshd_area: column comment required.
-ap.icesheets.age: column comment required.
-ap.icesheets.area_km2: column comment required.
-ap.icesheets.cal: column comment required.
-ap.icesheets.calage: column comment required.
-ap.icesheets.geom: column comment required.
-ap.icesheets.gid: column comment required.
-ap.icesheets.ka: column comment required.
-ap.icesheets.symb: column comment required.
-ap.orcidlogins.expiresat: column comment required.
-ap.orcidlogins.orcidid: column comment required.
-ap.orcidlogins.sessionuuid: column comment required.
-ap.orcidlogins.userip: column comment required.
 ap.pollensumgroups.ecolgroupid: column comment required.
 ap.pollensumgroups.recid: column comment required.
 ap.pollensumgroups.sumgroupid: column comment required.
@@ -306,12 +284,7 @@ ap.taxaindatasetview.datasettypeids: column comment required.
 ap.taxaindatasetview.taxagroupid: column comment required.
 ap.taxaindatasetview.taxonid: column comment required.
 ap.taxaindatasetview.taxonname: column comment required.
-doi.doimeta.datasetid: column comment required.
 doi.doimeta.doi: column comment required.
-doi.doimeta.meta: column comment required.
-doi.frozen.datasetid: column comment required.
-doi.frozen.download: column comment required.
-doi.frozen.recmodified: column comment required.
 ndb.accumulationrates.accumulationrate: column comment required.
 ndb.accumulationrates.analysisunitid: column comment required.
 ndb.accumulationrates.chronologyid: column comment required.
@@ -1965,7 +1938,7 @@ ti.stewarddatabases: table labels required.
 ti.stewards: table labels required.
 ti.stewardupdates: table labels required.
 ts.stewardauthorization: table labels required.
-neotoma: unrelated (isolated) table exists. [ap.sitegadm ap.querytable ap.pollensums ap.orcidlogins doi.doimeta ap.icesheets ti.geopol1 ti.geopol3 ap.taxaindatasetview ap.hydrolakes ndb.dslinks ndb.dsdatasample ap.datasetkeywords ap.faunranges ndb.sitestemp ti.geopol2 ap.datasetpisauthors ts.stewardauthorization ndb.sysdiagrams doi.frozen ndb.pubtsv ndb.dsageranges ti.dslinks ndb.geopoldepth ap.geopolnames ndb.dssampdata ap.pollensumgroups ndb.datasetdoi ap.summaries ap.globalmammals ndb.radiocarboncalibration ndb.isosampleorigintypes ti.geopol4]
+neotoma: unrelated (isolated) table exists. [ndb.pubtsv ap.orcidlogins ti.geopol4 ap.faunranges ndb.geopoldepth ndb.dsageranges ndb.sitestemp ap.summaries ap.datasetpisauthors doi.doimeta ndb.datasetdoi ndb.radiocarboncalibration ap.taxaindatasetview ndb.dsdatasample ap.icesheets ndb.sysdiagrams ap.datasetkeywords doi.frozen ap.pollensums ap.geopolnames ts.stewardauthorization ap.pollensumgroups ndb.isosampleorigintypes ti.geopol1 ap.globalmammals ti.geopol2 ndb.dslinks ti.geopol3 ap.hydrolakes ap.sitegadm ti.dslinks ndb.dssampdata ap.querytable]
 ap.gadm: too many columns. [56/10]
 ap.hydrolakes: too many columns. [25/10]
 ap.pollensums: too many columns. [15/10]
@@ -2018,7 +1991,6 @@ ap.taxaindatasetview: column 'redcatecreated' required.
 ap.taxaindatasetview: column 'recdatemodified' required.
 doi.doimeta: column 'redcatecreated' required.
 doi.frozen: column 'redcatecreated' required.
-doi.frozen: column 'recdatemodified' required.
 ndb.accumulationrates: column 'redcatecreated' required.
 ndb.agetypes: column 'redcatecreated' required.
 ndb.aggregatechronologies: column 'redcatecreated' required.
@@ -2538,4 +2510,4 @@ ti.geopol4: table `ti.geopol4` is not included in any viewpoints.
 ti.stewarddatabases: table `ti.stewarddatabases` is not included in any viewpoints.
 ts.stewardauthorization: table `ts.stewardauthorization` is not included in any viewpoints.
 
-2539 detected
+2511 detected

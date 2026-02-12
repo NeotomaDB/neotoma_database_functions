@@ -2,14 +2,16 @@
 
 ## Description
 
+Faunranges is derived from a set of North American Mammal Species distributions. These layers are used in Neotoma Explorer to provide spatial maps that can be used to compare against fossil distributions.
+
 ## Columns
 
-| # | Name     | Type                        | Default                                    | Nullable | Children | Parents | Comment |
-| - | -------- | --------------------------- | ------------------------------------------ | -------- | -------- | ------- | ------- |
-| 1 | gid      | integer                     | nextval('ap.faunranges_gid_seq'::regclass) | false    |          |         |         |
-| 2 | sciname  | varchar(254)                |                                            | true     |          |         |         |
-| 3 | spid     | varchar(10)                 |                                            | true     |          |         |         |
-| 4 | the_geom | geometry(MultiPolygon,4326) |                                            | true     |          |         |         |
+| # | Name     | Type                        | Default                                    | Nullable | Children | Parents | Comment                                                                         |
+| - | -------- | --------------------------- | ------------------------------------------ | -------- | -------- | ------- | ------------------------------------------------------------------------------- |
+| 1 | gid      | integer                     | nextval('ap.faunranges_gid_seq'::regclass) | false    |          |         | The unique numeric identifier for the faunal range to be used as a primary key. |
+| 2 | sciname  | varchar(254)                |                                            | true     |          |         | The full specific epithet for the mammal taxon.                                 |
+| 3 | spid     | varchar(10)                 |                                            | true     |          |         | A unique four letter species identifier.                                        |
+| 4 | the_geom | geometry(MultiPolygon,4326) |                                            | true     |          |         | The geometry for the species range polygon, using ESPG:4326.                    |
 
 ## Constraints
 

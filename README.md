@@ -10,6 +10,8 @@ The goal of the repository is to act both as the central source of the SQL code 
 
 ## How to Use This Repository
 
+All of the linting and export scripts can be un with `run_diagnostics.sh`.
+
 ### Linting the Database
 
 Documentation uses [`tbls`](https://github.com/k1LoW/tbls), a powerful tool for examining databases and generating documentation. There are two scripts associated with the `tbls` installation:
@@ -31,7 +33,7 @@ More details about the meaning and correction of the `tbls` linting warnings are
 
 ### Database Tables, Views and Functions
 
-The folder `tables` contains definitions for all (non-system) tables in Neotoma. These definitions are generated using the [`check_functions.py`]() script. The script calls to the database and creates a unique file for each database function and table in each schema.
+The folder `database` contains definitions for all (non-system) tables in Neotoma, in each of the main `neotoma` database and the `neotomatank` database (where there may be differences during development). These definitions are generated using the [`database_descriptor.py`](database_descriptor.py) script. The script calls to the database and creates a unique file for each database function and table in each schema. The core element of the script is the `public.wmv_get_table_definition()` database function. This function is fully described in a [GitHub Gist](https://gist.github.com/SimonGoring/b7529a476d7febeb26ebf83c5c18f8ba).
 
 #### Tables
 

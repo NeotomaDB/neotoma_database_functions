@@ -2,15 +2,17 @@
 
 ## Description
 
+Metadata for DOIs generated through the Neotoma DOI/DataCite generation system.
+
 ## Columns
 
-| # | Name            | Type                     | Default | Nullable | Children | Parents | Comment |
-| - | --------------- | ------------------------ | ------- | -------- | -------- | ------- | ------- |
-| 1 | datasetid       | integer                  |         | true     |          |         |         |
-| 2 | doi             | varchar                  |         | false    |          |         |         |
-| 3 | meta            | jsonb                    |         | true     |          |         |         |
-| 4 | recdatecreated  | timestamp with time zone | now()   | false    |          |         |         |
-| 5 | recdatemodified | timestamp with time zone | now()   | false    |          |         |         |
+| # | Name            | Type                     | Default | Nullable | Children | Parents | Comment                                                                                                                                        |
+| - | --------------- | ------------------------ | ------- | -------- | -------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | datasetid       | integer                  |         | true     |          |         | Foreign key to ndb.datasets.datasetid. This is not tied to a foreign key constraint so that we can retain information if datasets are deleted. |
+| 2 | doi             | varchar                  |         | false    |          |         |                                                                                                                                                |
+| 3 | meta            | jsonb                    |         | true     |          |         | DOI metadata for the record, as recorded on DataCite. Retained locally.                                                                        |
+| 4 | recdatecreated  | timestamp with time zone | now()   | false    |          |         | datetime the record was created.                                                                                                               |
+| 5 | recdatemodified | timestamp with time zone | now()   | false    |          |         | datetime the record was last modified.                                                                                                         |
 
 ## Constraints
 
