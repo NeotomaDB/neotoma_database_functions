@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.contextsdatasettypes Table definition
 
 -- Drop table
 
@@ -14,16 +14,20 @@ CREATE TABLE IF NOT EXISTS ndb.contextsdatasettypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.contextsdatasettypes IS "";
+COMMENT ON TABLE ndb.contextsdatasettypes IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.datasettypeid IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.variablecontextid IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX contextsdatasettypes_pkey ON ndb.contextsdatasettypes USING btree (datasettypeid, variablecontextid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.contextsdatasettypes DROP CONSTRAINT IF EXISTS contextsdatasettypes_pkey;
+-- ALTER TABLE ndb.contextsdatasettypes DROP CONSTRAINT IF EXISTS contextsdatasettypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.contextsdatasettypes ADD CONSTRAINT contextsdatasettypes_pkey PRIMARY KEY (datasettypeid, variablecontextid);
@@ -31,3 +35,9 @@ ALTER TABLE ndb.contextsdatasettypes ADD CONSTRAINT contextsdatasettypes_pkey PR
 --- Foreign Key Restraints
 ALTER TABLE ndb.contextsdatasettypes ADD CONSTRAINT fk_contextsdatasettypes_variablecontexts FOREIGN KEY (variablecontextid) REFERENCES ndb.variablecontexts(variablecontextid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.contextsdatasettypes ADD CONSTRAINT fk_contextsdatasettypes_datasettypes FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.contextsdatasettypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.contextsdatasettypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.contextsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.contextsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

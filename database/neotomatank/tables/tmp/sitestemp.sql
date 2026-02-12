@@ -26,7 +26,20 @@ CREATE TABLE IF NOT EXISTS tmp.sitestemp (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE tmp.sitestemp IS "";
+COMMENT ON TABLE tmp.sitestemp IS '';
+COMMENT ON COLUMN tmp.sitestemp.siteid IS '';
+COMMENT ON COLUMN tmp.sitestemp.sitename IS '';
+COMMENT ON COLUMN tmp.sitestemp.longitudeeast IS '';
+COMMENT ON COLUMN tmp.sitestemp.latitudenorth IS '';
+COMMENT ON COLUMN tmp.sitestemp.longitudewest IS '';
+COMMENT ON COLUMN tmp.sitestemp.latitudesouth IS '';
+COMMENT ON COLUMN tmp.sitestemp.altitude IS '';
+COMMENT ON COLUMN tmp.sitestemp.area IS '';
+COMMENT ON COLUMN tmp.sitestemp.sitedescription IS '';
+COMMENT ON COLUMN tmp.sitestemp.notes IS '';
+COMMENT ON COLUMN tmp.sitestemp.recdatecreated IS '';
+COMMENT ON COLUMN tmp.sitestemp.recdatemodified IS '';
+COMMENT ON COLUMN tmp.sitestemp.geog IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX sitestemp_pkey ON tmp.sitestemp USING btree (siteid)

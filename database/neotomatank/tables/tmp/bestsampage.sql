@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS tmp.bestsampage (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE tmp.bestsampage IS "";
+COMMENT ON TABLE tmp.bestsampage IS '';
+COMMENT ON COLUMN tmp.bestsampage.sampleid IS '';
+COMMENT ON COLUMN tmp.bestsampage.datasetid IS '';
+COMMENT ON COLUMN tmp.bestsampage.age IS '';
+COMMENT ON COLUMN tmp.bestsampage.ageolder IS '';
+COMMENT ON COLUMN tmp.bestsampage.ageyounger IS '';
 
 --- Table indices
 

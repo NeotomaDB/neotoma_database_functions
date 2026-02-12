@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.geochroncontrols Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS ndb.geochroncontrols (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.geochroncontrols IS "";
+COMMENT ON TABLE ndb.geochroncontrols IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.chroncontrolid IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.geochronid IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.recdatecreated IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX geochroncontrols_pkey ON ndb.geochroncontrols USING btree (chroncontrolid, geochronid);
@@ -25,7 +29,7 @@ CREATE INDEX ix_chroncontrolid_geochroncontrols ON ndb.geochroncontrols USING bt
 CREATE INDEX ix_geochronid_geochroncontrols ON ndb.geochroncontrols USING btree (geochronid) WITH (fillfactor='10')
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.geochroncontrols DROP CONSTRAINT IF EXISTS geochroncontrols_pkey;
+-- ALTER TABLE ndb.geochroncontrols DROP CONSTRAINT IF EXISTS geochroncontrols_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.geochroncontrols ADD CONSTRAINT geochroncontrols_pkey PRIMARY KEY (chroncontrolid, geochronid);
@@ -33,3 +37,9 @@ ALTER TABLE ndb.geochroncontrols ADD CONSTRAINT geochroncontrols_pkey PRIMARY KE
 --- Foreign Key Restraints
 ALTER TABLE ndb.geochroncontrols ADD CONSTRAINT fk_geochroncontrols_geochronology FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.geochroncontrols ADD CONSTRAINT fk_geochroncontrols_chroncontrols FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochroncontrols;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochroncontrols;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.geochroncontrols FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.geochroncontrols FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

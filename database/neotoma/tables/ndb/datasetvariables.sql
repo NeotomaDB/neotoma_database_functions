@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.datasetvariables Table definition
 
 -- Drop table
 
@@ -15,16 +15,21 @@ CREATE TABLE IF NOT EXISTS ndb.datasetvariables (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasetvariables IS "";
+COMMENT ON TABLE ndb.datasetvariables IS '';
+COMMENT ON COLUMN ndb.datasetvariables.datasetvariableid IS '';
+COMMENT ON COLUMN ndb.datasetvariables.datasetid IS '';
+COMMENT ON COLUMN ndb.datasetvariables.variableid IS '';
+COMMENT ON COLUMN ndb.datasetvariables.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasetvariables.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datasetvariables_pkey ON ndb.datasetvariables USING btree (datasetvariableid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.datasetvariables DROP CONSTRAINT IF EXISTS datasetvariables_pkey;
+-- ALTER TABLE ndb.datasetvariables DROP CONSTRAINT IF EXISTS datasetvariables_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.datasetvariables ADD CONSTRAINT datasetvariables_pkey PRIMARY KEY (datasetvariableid);
@@ -32,3 +37,9 @@ ALTER TABLE ndb.datasetvariables ADD CONSTRAINT datasetvariables_pkey PRIMARY KE
 --- Foreign Key Restraints
 ALTER TABLE ndb.datasetvariables ADD CONSTRAINT fk_datasetvariables_variables FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.datasetvariables ADD CONSTRAINT fk_datasetvariables_datasets FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetvariables;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetvariables;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetvariables FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetvariables FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

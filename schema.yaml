@@ -4936,6 +4936,9 @@ tables:
   - name: entitystatusid
     type: integer
     nullable: true
+  - name: notes
+    type: text
+    nullable: true
   - name: referenceentityid
     type: integer
     nullable: true
@@ -9365,8 +9368,6 @@ tables:
   triggers:
   - name: tr_sites_modifydate
     def: CREATE TRIGGER tr_sites_modifydate BEFORE INSERT OR UPDATE ON ndb.sites FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified()
-  - name: updategeopol
-    def: CREATE TRIGGER updategeopol AFTER INSERT OR DELETE ON ndb.sites FOR EACH STATEMENT EXECUTE FUNCTION ap.updategpsites()
   - name: updatelocations
     def: CREATE TRIGGER updatelocations AFTER INSERT OR UPDATE ON ndb.sites FOR EACH ROW EXECUTE FUNCTION ti.site_bounding()
 - name: ndb.sitestemp
@@ -14893,6 +14894,10 @@ functions:
 - name: ndb.stewardcontrib
   returnType: record
   arguments: startperiod integer DEFAULT 0, endperiod integer DEFAULT 1
+  type: FUNCTION
+- name: ndb.update_recdatecreated
+  returnType: trigger
+  arguments: ""
   type: FUNCTION
 - name: ndb.update_recdatemodified
   returnType: trigger

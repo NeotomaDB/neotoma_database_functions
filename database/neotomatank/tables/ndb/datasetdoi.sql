@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.datasetdoi (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasetdoi IS "";
+COMMENT ON TABLE ndb.datasetdoi IS '';
+COMMENT ON COLUMN ndb.datasetdoi.datasetid IS '';
+COMMENT ON COLUMN ndb.datasetdoi.doi IS '';
+COMMENT ON COLUMN ndb.datasetdoi.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasetdoi.recdatemodified IS '';
+COMMENT ON COLUMN ndb.datasetdoi.published IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datasetdoi_pkey ON ndb.datasetdoi USING btree (datasetid, doi);
@@ -34,7 +39,7 @@ ALTER TABLE ndb.datasetdoi ADD CONSTRAINT datasetdoi_pkey PRIMARY KEY (datasetid
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetdoi;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetdoi;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetdoi FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetdoi FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetdoi;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetdoi;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetdoi FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetdoi FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

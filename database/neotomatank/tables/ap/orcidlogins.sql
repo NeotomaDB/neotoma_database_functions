@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ap.orcidlogins (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.orcidlogins IS "";
+COMMENT ON TABLE ap.orcidlogins IS '';
+COMMENT ON COLUMN ap.orcidlogins.orcidid IS '';
+COMMENT ON COLUMN ap.orcidlogins.userip IS '';
+COMMENT ON COLUMN ap.orcidlogins.sessionuuid IS '';
+COMMENT ON COLUMN ap.orcidlogins.expiresat IS '';
+COMMENT ON COLUMN ap.orcidlogins.recdatecreated IS '';
+COMMENT ON COLUMN ap.orcidlogins.recdatemodified IS '';
 
 --- Table indices
 

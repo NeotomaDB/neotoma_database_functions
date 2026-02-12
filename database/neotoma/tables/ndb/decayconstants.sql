@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.decayconstants Table definition
 
 -- Drop table
 
@@ -14,19 +14,25 @@ CREATE TABLE IF NOT EXISTS ndb.decayconstants (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.decayconstants IS "";
+COMMENT ON TABLE ndb.decayconstants IS '';
+COMMENT ON COLUMN ndb.decayconstants.decayconstantid IS '';
+COMMENT ON COLUMN ndb.decayconstants.decayconstant IS '';
+COMMENT ON COLUMN ndb.decayconstants.publicationid IS '';
+COMMENT ON COLUMN ndb.decayconstants.notes IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX decayconstants_pkey ON ndb.decayconstants USING btree (decayconstantid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.decayconstants DROP CONSTRAINT IF EXISTS decayconstants_pkey;
+-- ALTER TABLE ndb.decayconstants DROP CONSTRAINT IF EXISTS decayconstants_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.decayconstants ADD CONSTRAINT decayconstants_pkey PRIMARY KEY (decayconstantid);
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.decayconstants ADD CONSTRAINT decayconstants_publicationid_fkey FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid);
+
+--- Triggers

@@ -42,8 +42,7 @@ The Sites table stores information about sites or localities, including name, ge
 | # | Name                | Definition                                                                                                                         |
 | - | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | tr_sites_modifydate | CREATE TRIGGER tr_sites_modifydate BEFORE INSERT OR UPDATE ON ndb.sites FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified() |
-| 2 | updategeopol        | CREATE TRIGGER updategeopol AFTER INSERT OR DELETE ON ndb.sites FOR EACH STATEMENT EXECUTE FUNCTION ap.updategpsites()             |
-| 3 | updatelocations     | CREATE TRIGGER updatelocations AFTER INSERT OR UPDATE ON ndb.sites FOR EACH ROW EXECUTE FUNCTION ti.site_bounding()                |
+| 2 | updatelocations     | CREATE TRIGGER updatelocations AFTER INSERT OR UPDATE ON ndb.sites FOR EACH ROW EXECUTE FUNCTION ti.site_bounding()                |
 
 ## Relations
 

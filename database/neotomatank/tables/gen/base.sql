@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS gen.base (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE gen.base IS "";
+COMMENT ON TABLE gen.base IS '';
+COMMENT ON COLUMN gen.base.sampleid IS '';
+COMMENT ON COLUMN gen.base.datasetid IS '';
+COMMENT ON COLUMN gen.base.occurid IS '';
+COMMENT ON COLUMN gen.base.taxonid IS '';
 
 --- Table indices
 

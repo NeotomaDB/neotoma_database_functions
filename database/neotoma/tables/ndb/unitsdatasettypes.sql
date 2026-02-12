@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.unitsdatasettypes Table definition
 
 -- Drop table
 
@@ -14,16 +14,20 @@ CREATE TABLE IF NOT EXISTS ndb.unitsdatasettypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.unitsdatasettypes IS "Join table, associating measurement units with various datasettypes.";
+COMMENT ON TABLE ndb.unitsdatasettypes IS 'Join table, associating measurement units with various datasettypes.';
+COMMENT ON COLUMN ndb.unitsdatasettypes.datasettypeid IS '';
+COMMENT ON COLUMN ndb.unitsdatasettypes.variableunitsid IS '';
+COMMENT ON COLUMN ndb.unitsdatasettypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.unitsdatasettypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX unitsdatasettypes_pkey ON ndb.unitsdatasettypes USING btree (datasettypeid, variableunitsid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.unitsdatasettypes DROP CONSTRAINT IF EXISTS unitsdatasettypes_pkey;
+-- ALTER TABLE ndb.unitsdatasettypes DROP CONSTRAINT IF EXISTS unitsdatasettypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.unitsdatasettypes ADD CONSTRAINT unitsdatasettypes_pkey PRIMARY KEY (datasettypeid, variableunitsid);
@@ -31,3 +35,9 @@ ALTER TABLE ndb.unitsdatasettypes ADD CONSTRAINT unitsdatasettypes_pkey PRIMARY 
 --- Foreign Key Restraints
 ALTER TABLE ndb.unitsdatasettypes ADD CONSTRAINT fk_unitsdatasettypes_datasettypes FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.unitsdatasettypes ADD CONSTRAINT fk_unitsdatasettypes_variableunits FOREIGN KEY (variableunitsid) REFERENCES ndb.variableunits(variableunitsid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.unitsdatasettypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.unitsdatasettypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.unitsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.unitsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

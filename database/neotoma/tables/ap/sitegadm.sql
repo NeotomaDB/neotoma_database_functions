@@ -1,4 +1,4 @@
--- ap definition
+-- ap.sitegadm Table definition
 
 -- Drop table
 
@@ -12,10 +12,12 @@ CREATE TABLE IF NOT EXISTS ap.sitegadm (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.sitegadm IS "";
+COMMENT ON TABLE ap.sitegadm IS '';
+COMMENT ON COLUMN ap.sitegadm.siteid IS '';
+COMMENT ON COLUMN ap.sitegadm.fid IS '';
 
 --- Table indices
 
@@ -25,3 +27,5 @@ COMMENT ON TABLE ap.sitegadm IS "";
 --- Non-foreign key constraints
 
 --- Foreign Key Restraints
+
+--- Triggers

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.elementtaxagroupmaturities (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.elementtaxagroupmaturities IS "";
+COMMENT ON TABLE ndb.elementtaxagroupmaturities IS '';
+COMMENT ON COLUMN ndb.elementtaxagroupmaturities.elementtaxagroupid IS '';
+COMMENT ON COLUMN ndb.elementtaxagroupmaturities.maturityid IS '';
+COMMENT ON COLUMN ndb.elementtaxagroupmaturities.recdatecreated IS '';
+COMMENT ON COLUMN ndb.elementtaxagroupmaturities.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX elementtaxagroupmaturities_pkey ON ndb.elementtaxagroupmaturities USING btree (elementtaxagroupid, maturityid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.elementtaxagroupmaturities ADD CONSTRAINT fk_elementtaxagroupmat
 ALTER TABLE ndb.elementtaxagroupmaturities ADD CONSTRAINT fk_elementtaxagroupmaturities_elementmaturities FOREIGN KEY (maturityid) REFERENCES ndb.elementmaturities(maturityid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementtaxagroupmaturities;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementtaxagroupmaturities;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementtaxagroupmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementtaxagroupmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementtaxagroupmaturities;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementtaxagroupmaturities;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementtaxagroupmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementtaxagroupmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

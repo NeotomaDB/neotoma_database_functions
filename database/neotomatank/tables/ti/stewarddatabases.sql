@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ti.stewarddatabases (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ti.stewarddatabases IS "";
+COMMENT ON TABLE ti.stewarddatabases IS '';
+COMMENT ON COLUMN ti.stewarddatabases.stewardid IS '';
+COMMENT ON COLUMN ti.stewarddatabases.databaseid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX stewarddatabases_pkey ON ti.stewarddatabases USING btree (stewardid, databaseid)

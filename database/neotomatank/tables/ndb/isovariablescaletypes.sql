@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.isovariablescaletypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isovariablescaletypes IS "";
+COMMENT ON TABLE ndb.isovariablescaletypes IS '';
+COMMENT ON COLUMN ndb.isovariablescaletypes.variableid IS '';
+COMMENT ON COLUMN ndb.isovariablescaletypes.isoscaletypeid IS '';
+COMMENT ON COLUMN ndb.isovariablescaletypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isovariablescaletypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isovariablescaletypes_pkey ON ndb.isovariablescaletypes USING btree (variableid, isoscaletypeid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.isovariablescaletypes ADD CONSTRAINT fk_isovariablescaletypes_is
 ALTER TABLE ndb.isovariablescaletypes ADD CONSTRAINT fk_isovariablescaletypes_variables FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isovariablescaletypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isovariablescaletypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isovariablescaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isovariablescaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isovariablescaletypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isovariablescaletypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isovariablescaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isovariablescaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

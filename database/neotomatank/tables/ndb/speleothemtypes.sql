@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.speleothemtypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.speleothemtypes IS "";
+COMMENT ON TABLE ndb.speleothemtypes IS '';
+COMMENT ON COLUMN ndb.speleothemtypes.speleothemtypeid IS '';
+COMMENT ON COLUMN ndb.speleothemtypes.speleothemtype IS '';
+COMMENT ON COLUMN ndb.speleothemtypes.speleothemtypenotes IS '';
+COMMENT ON COLUMN ndb.speleothemtypes.speleothemtypepublicationid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX speleothemtypes_pkey ON ndb.speleothemtypes USING btree (speleothemtypeid)

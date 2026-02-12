@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.datataxonnotes Table definition
 
 -- Drop table
 
@@ -17,16 +17,23 @@ CREATE TABLE IF NOT EXISTS ndb.datataxonnotes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datataxonnotes IS "";
+COMMENT ON TABLE ndb.datataxonnotes IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.datataxonnotesid IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.dataid IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.contactid IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.date IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.notes IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datataxonnotes_pkey ON ndb.datataxonnotes USING btree (datataxonnotesid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.datataxonnotes DROP CONSTRAINT IF EXISTS datataxonnotes_pkey;
+-- ALTER TABLE ndb.datataxonnotes DROP CONSTRAINT IF EXISTS datataxonnotes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.datataxonnotes ADD CONSTRAINT datataxonnotes_pkey PRIMARY KEY (datataxonnotesid);
@@ -34,3 +41,9 @@ ALTER TABLE ndb.datataxonnotes ADD CONSTRAINT datataxonnotes_pkey PRIMARY KEY (d
 --- Foreign Key Restraints
 ALTER TABLE ndb.datataxonnotes ADD CONSTRAINT fk_datataxonnotes_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid);
 ALTER TABLE ndb.datataxonnotes ADD CONSTRAINT fk_datataxonnotes_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datataxonnotes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datataxonnotes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datataxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datataxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

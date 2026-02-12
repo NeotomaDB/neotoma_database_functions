@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.taxonpaths Table definition
 
 -- Drop table
 
@@ -12,19 +12,23 @@ CREATE TABLE IF NOT EXISTS ndb.taxonpaths (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.taxonpaths IS "";
+COMMENT ON TABLE ndb.taxonpaths IS '';
+COMMENT ON COLUMN ndb.taxonpaths.taxonout IS '';
+COMMENT ON COLUMN ndb.taxonpaths.taxonid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX taxonpaths_pkey ON ndb.taxonpaths USING btree (taxonout, taxonid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.taxonpaths DROP CONSTRAINT IF EXISTS taxonpaths_pkey;
+-- ALTER TABLE ndb.taxonpaths DROP CONSTRAINT IF EXISTS taxonpaths_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.taxonpaths ADD CONSTRAINT taxonpaths_pkey PRIMARY KEY (taxonout, taxonid);
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.taxonpaths ADD CONSTRAINT taxonpaths_taxonid_fkey FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON DELETE CASCADE;
+
+--- Triggers

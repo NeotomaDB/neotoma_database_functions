@@ -23,7 +23,17 @@ CREATE TABLE IF NOT EXISTS ndb.specimendatescal (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimendatescal IS "";
+COMMENT ON TABLE ndb.specimendatescal IS '';
+COMMENT ON COLUMN ndb.specimendatescal.specimendatecalid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.specimendateid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calage IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calageolder IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calageyounger IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calibrationcurveid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calibrationprogramid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.datecalibrated IS '';
+COMMENT ON COLUMN ndb.specimendatescal.recdatecreated IS '';
+COMMENT ON COLUMN ndb.specimendatescal.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimendatescal_pkey ON ndb.specimendatescal USING btree (specimendatecalid)
@@ -40,7 +50,7 @@ ALTER TABLE ndb.specimendatescal ADD CONSTRAINT fk_specimendatescal_calibrationc
 ALTER TABLE ndb.specimendatescal ADD CONSTRAINT fk_specimendatescal_specimendates FOREIGN KEY (specimendateid) REFERENCES ndb.specimendates(specimendateid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendatescal;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendatescal;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendatescal FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendatescal FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendatescal;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendatescal;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendatescal FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendatescal FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.rocktypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.rocktypes IS "";
+COMMENT ON TABLE ndb.rocktypes IS '';
+COMMENT ON COLUMN ndb.rocktypes.rocktypeid IS '';
+COMMENT ON COLUMN ndb.rocktypes.rocktype IS '';
+COMMENT ON COLUMN ndb.rocktypes.higherrocktypeid IS '';
+COMMENT ON COLUMN ndb.rocktypes.description IS '';
+COMMENT ON COLUMN ndb.rocktypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.rocktypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX rocktypes_pkey ON ndb.rocktypes USING btree (rocktypeid)
@@ -34,7 +40,7 @@ ALTER TABLE ndb.rocktypes ADD CONSTRAINT rocktypes_pkey PRIMARY KEY (rocktypeid)
 ALTER TABLE ndb.rocktypes ADD CONSTRAINT fk_higherrocktypeid FOREIGN KEY (higherrocktypeid) REFERENCES ndb.rocktypes(rocktypeid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.rocktypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.rocktypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.rocktypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.rocktypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.rocktypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.rocktypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.rocktypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.rocktypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

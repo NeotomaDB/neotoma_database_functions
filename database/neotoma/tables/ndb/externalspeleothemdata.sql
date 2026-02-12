@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.externalspeleothemdata Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS ndb.externalspeleothemdata (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externalspeleothemdata IS "";
+COMMENT ON TABLE ndb.externalspeleothemdata IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.entityid IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.externalid IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.extdatabaseid IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.externaldescription IS '';
 
 --- Table indices
 
@@ -29,3 +33,5 @@ COMMENT ON TABLE ndb.externalspeleothemdata IS "";
 --- Foreign Key Restraints
 ALTER TABLE ndb.externalspeleothemdata ADD CONSTRAINT externalspeleothemdata_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE;
 ALTER TABLE ndb.externalspeleothemdata ADD CONSTRAINT externalspeleothemdata_extdatabaseid_fkey FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid);
+
+--- Triggers

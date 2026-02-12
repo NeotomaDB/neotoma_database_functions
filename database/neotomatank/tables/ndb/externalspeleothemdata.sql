@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.externalspeleothemdata (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externalspeleothemdata IS "";
+COMMENT ON TABLE ndb.externalspeleothemdata IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.entityid IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.externalid IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.extdatabaseid IS '';
+COMMENT ON COLUMN ndb.externalspeleothemdata.externaldescription IS '';
 
 --- Table indices
 

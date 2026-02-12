@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.entitycovers (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitycovers IS "";
+COMMENT ON TABLE ndb.entitycovers IS '';
+COMMENT ON COLUMN ndb.entitycovers.entityid IS '';
+COMMENT ON COLUMN ndb.entitycovers.entitycoverid IS '';
+COMMENT ON COLUMN ndb.entitycovers.entitycoverthickness IS '';
+COMMENT ON COLUMN ndb.entitycovers.entitycoverunits IS '';
 
 --- Table indices
 

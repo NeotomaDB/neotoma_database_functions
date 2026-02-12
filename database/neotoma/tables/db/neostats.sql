@@ -1,4 +1,4 @@
--- db definition
+-- db.neostats Table definition
 
 -- Drop table
 
@@ -46,10 +46,46 @@ CREATE TABLE IF NOT EXISTS db.neostats (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE db.neostats IS "";
+COMMENT ON TABLE db.neostats IS '';
+COMMENT ON COLUMN db.neostats.userid IS '';
+COMMENT ON COLUMN db.neostats.dbid IS '';
+COMMENT ON COLUMN db.neostats.queryid IS '';
+COMMENT ON COLUMN db.neostats.query IS '';
+COMMENT ON COLUMN db.neostats.calls IS '';
+COMMENT ON COLUMN db.neostats.total_time IS '';
+COMMENT ON COLUMN db.neostats.min_time IS '';
+COMMENT ON COLUMN db.neostats.max_time IS '';
+COMMENT ON COLUMN db.neostats.mean_time IS '';
+COMMENT ON COLUMN db.neostats.stddev_time IS '';
+COMMENT ON COLUMN db.neostats.rows IS '';
+COMMENT ON COLUMN db.neostats.shared_blks_hit IS '';
+COMMENT ON COLUMN db.neostats.shared_blks_read IS '';
+COMMENT ON COLUMN db.neostats.shared_blks_dirtied IS '';
+COMMENT ON COLUMN db.neostats.shared_blks_written IS '';
+COMMENT ON COLUMN db.neostats.local_blks_hit IS '';
+COMMENT ON COLUMN db.neostats.local_blks_read IS '';
+COMMENT ON COLUMN db.neostats.local_blks_dirtied IS '';
+COMMENT ON COLUMN db.neostats.local_blks_written IS '';
+COMMENT ON COLUMN db.neostats.temp_blks_read IS '';
+COMMENT ON COLUMN db.neostats.temp_blks_written IS '';
+COMMENT ON COLUMN db.neostats.blk_read_time IS '';
+COMMENT ON COLUMN db.neostats.blk_write_time IS '';
+COMMENT ON COLUMN db.neostats.datname IS '';
+COMMENT ON COLUMN db.neostats.datdba IS '';
+COMMENT ON COLUMN db.neostats.encoding IS '';
+COMMENT ON COLUMN db.neostats.datcollate IS '';
+COMMENT ON COLUMN db.neostats.datctype IS '';
+COMMENT ON COLUMN db.neostats.datistemplate IS '';
+COMMENT ON COLUMN db.neostats.datallowconn IS '';
+COMMENT ON COLUMN db.neostats.datconnlimit IS '';
+COMMENT ON COLUMN db.neostats.datlastsysoid IS '';
+COMMENT ON COLUMN db.neostats.datfrozenxid IS '';
+COMMENT ON COLUMN db.neostats.datminmxid IS '';
+COMMENT ON COLUMN db.neostats.dattablespace IS '';
+COMMENT ON COLUMN db.neostats.datacl IS '';
 
 --- Table indices
 
@@ -59,3 +95,5 @@ COMMENT ON TABLE db.neostats IS "";
 --- Non-foreign key constraints
 
 --- Foreign Key Restraints
+
+--- Triggers

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.eventpublications (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.eventpublications IS "";
+COMMENT ON TABLE ndb.eventpublications IS '';
+COMMENT ON COLUMN ndb.eventpublications.eventid IS '';
+COMMENT ON COLUMN ndb.eventpublications.publicationid IS '';
+COMMENT ON COLUMN ndb.eventpublications.recdatecreated IS '';
+COMMENT ON COLUMN ndb.eventpublications.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX eventpublications_pkey ON ndb.eventpublications USING btree (eventid, publicationid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.eventpublications ADD CONSTRAINT fk_eventpublications_events FOR
 ALTER TABLE ndb.eventpublications ADD CONSTRAINT fk_eventpublications_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventpublications;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventpublications;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.eventpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.eventpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventpublications;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventpublications;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.eventpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.eventpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

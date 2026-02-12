@@ -36,7 +36,30 @@ CREATE TABLE IF NOT EXISTS db.postgres_log (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE db.postgres_log IS "";
+COMMENT ON TABLE db.postgres_log IS '';
+COMMENT ON COLUMN db.postgres_log.log_time IS '';
+COMMENT ON COLUMN db.postgres_log.user_name IS '';
+COMMENT ON COLUMN db.postgres_log.database_name IS '';
+COMMENT ON COLUMN db.postgres_log.process_id IS '';
+COMMENT ON COLUMN db.postgres_log.connection_from IS '';
+COMMENT ON COLUMN db.postgres_log.session_id IS '';
+COMMENT ON COLUMN db.postgres_log.session_line_num IS '';
+COMMENT ON COLUMN db.postgres_log.command_tag IS '';
+COMMENT ON COLUMN db.postgres_log.session_start_time IS '';
+COMMENT ON COLUMN db.postgres_log.virtual_transaction_id IS '';
+COMMENT ON COLUMN db.postgres_log.transaction_id IS '';
+COMMENT ON COLUMN db.postgres_log.error_severity IS '';
+COMMENT ON COLUMN db.postgres_log.sql_state_code IS '';
+COMMENT ON COLUMN db.postgres_log.message IS '';
+COMMENT ON COLUMN db.postgres_log.detail IS '';
+COMMENT ON COLUMN db.postgres_log.hint IS '';
+COMMENT ON COLUMN db.postgres_log.internal_query IS '';
+COMMENT ON COLUMN db.postgres_log.internal_query_pos IS '';
+COMMENT ON COLUMN db.postgres_log.context IS '';
+COMMENT ON COLUMN db.postgres_log.query IS '';
+COMMENT ON COLUMN db.postgres_log.query_pos IS '';
+COMMENT ON COLUMN db.postgres_log.location IS '';
+COMMENT ON COLUMN db.postgres_log.application_name IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX postgres_log_pkey ON db.postgres_log USING btree (session_id, session_line_num)

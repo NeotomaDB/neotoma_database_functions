@@ -21,7 +21,15 @@ CREATE TABLE IF NOT EXISTS ndb.speleothems (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.speleothems IS "";
+COMMENT ON TABLE ndb.speleothems IS '';
+COMMENT ON COLUMN ndb.speleothems.siteid IS '';
+COMMENT ON COLUMN ndb.speleothems.entityid IS '';
+COMMENT ON COLUMN ndb.speleothems.entityname IS '';
+COMMENT ON COLUMN ndb.speleothems.monitoring IS '';
+COMMENT ON COLUMN ndb.speleothems.rockageid IS '';
+COMMENT ON COLUMN ndb.speleothems.entrancedistance IS '';
+COMMENT ON COLUMN ndb.speleothems.entrancedistanceunits IS '';
+COMMENT ON COLUMN ndb.speleothems.speleothemtypeid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX speleothems_pkey ON ndb.speleothems USING btree (entityid)

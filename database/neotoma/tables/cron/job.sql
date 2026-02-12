@@ -1,4 +1,4 @@
--- cron definition
+-- cron.job Table definition
 
 -- Drop table
 
@@ -19,21 +19,38 @@ CREATE TABLE IF NOT EXISTS cron.job (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE cron.job IS "";
+COMMENT ON TABLE cron.job IS '';
+COMMENT ON COLUMN cron.job.jobid IS '';
+COMMENT ON COLUMN cron.job.schedule IS '';
+COMMENT ON COLUMN cron.job.command IS '';
+COMMENT ON COLUMN cron.job.nodename IS '';
+COMMENT ON COLUMN cron.job.nodeport IS '';
+COMMENT ON COLUMN cron.job.database IS '';
+COMMENT ON COLUMN cron.job.username IS '';
+COMMENT ON COLUMN cron.job.active IS '';
+COMMENT ON COLUMN cron.job.jobname IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX job_pkey ON cron.job USING btree (jobid);
 CREATE UNIQUE INDEX jobname_username_uniq ON cron.job USING btree (jobname, username)
 
 --- Remove existing constraints if needed
-ALTER TABLE cron.job DROP CONSTRAINT IF EXISTS job_pkey;
-ALTER TABLE cron.job DROP CONSTRAINT IF EXISTS jobname_username_uniq;
+-- ALTER TABLE cron.job DROP CONSTRAINT IF EXISTS job_pkey;
+-- ALTER TABLE cron.job DROP CONSTRAINT IF EXISTS jobname_username_uniq;
 
 --- Non-foreign key constraints
 ALTER TABLE cron.job ADD CONSTRAINT job_pkey PRIMARY KEY (jobid);
 ALTER TABLE cron.job ADD CONSTRAINT jobname_username_uniq UNIQUE (jobname, username);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS cron_job_cache_invalidate ON cron.job;\n
+-- DROP TRIGGER IF EXISTS cron_job_cache_invalidate ON cron.job;\n
+-- DROP TRIGGER IF EXISTS cron_job_cache_invalidate ON cron.job;\n
+CREATE TRIGGER cron_job_cache_invalidate AFTER DELETE ON cron.job FOR EACH ROW EXECUTE FUNCTION cron.job_cache_invalidate();\n
+CREATE TRIGGER cron_job_cache_invalidate AFTER INSERT ON cron.job FOR EACH ROW EXECUTE FUNCTION cron.job_cache_invalidate();\n
+CREATE TRIGGER cron_job_cache_invalidate AFTER UPDATE ON cron.job FOR EACH ROW EXECUTE FUNCTION cron.job_cache_invalidate();\n

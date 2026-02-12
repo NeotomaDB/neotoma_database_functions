@@ -521,34 +521,37 @@
 <!-- ndb.entityrelationship -->
 <g id="node13" class="node">
 <title>ndb.entityrelationship</title>
-<polygon fill="#efefef" stroke="none" points="2864.69,-1175.4 2864.69,-1211 3160.66,-1211 3160.66,-1175.4 2864.69,-1175.4"/>
-<polygon fill="none" stroke="black" points="2864.69,-1175.4 2864.69,-1211 3160.66,-1211 3160.66,-1175.4 2864.69,-1175.4"/>
-<text text-anchor="start" x="2871.69" y="-1188.8" font-family="Arial Bold" font-size="18.00">ndb.entityrelationship</text>
-<text text-anchor="start" x="3029.17" y="-1188.8" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="3060.28" y="-1188.8" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="2864.69,-1144.6 2864.69,-1175.4 3160.66,-1175.4 3160.66,-1144.6 2864.69,-1144.6"/>
-<text text-anchor="start" x="2871.69" y="-1156.8" font-family="Arial" font-size="14.00">entityid </text>
-<text text-anchor="start" x="2919.94" y="-1156.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2864.69,-1113.8 2864.69,-1144.6 3160.66,-1144.6 3160.66,-1113.8 2864.69,-1113.8"/>
-<text text-anchor="start" x="2871.69" y="-1126" font-family="Arial" font-size="14.00">entitystatusid </text>
-<text text-anchor="start" x="2957.29" y="-1126" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="2864.69,-1083 2864.69,-1113.8 3160.66,-1113.8 3160.66,-1083 2864.69,-1083"/>
-<text text-anchor="start" x="2871.69" y="-1095.2" font-family="Arial" font-size="14.00">referenceentityid </text>
-<text text-anchor="start" x="2979.09" y="-1095.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="#efefef" stroke="none" points="2864.69,-1190.8 2864.69,-1226.4 3160.66,-1226.4 3160.66,-1190.8 2864.69,-1190.8"/>
+<polygon fill="none" stroke="black" points="2864.69,-1190.8 2864.69,-1226.4 3160.66,-1226.4 3160.66,-1190.8 2864.69,-1190.8"/>
+<text text-anchor="start" x="2871.69" y="-1204.2" font-family="Arial Bold" font-size="18.00">ndb.entityrelationship</text>
+<text text-anchor="start" x="3029.17" y="-1204.2" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="3060.28" y="-1204.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="2864.69,-1160 2864.69,-1190.8 3160.66,-1190.8 3160.66,-1160 2864.69,-1160"/>
+<text text-anchor="start" x="2871.69" y="-1172.2" font-family="Arial" font-size="14.00">entityid </text>
+<text text-anchor="start" x="2919.94" y="-1172.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2864.69,-1129.2 2864.69,-1160 3160.66,-1160 3160.66,-1129.2 2864.69,-1129.2"/>
+<text text-anchor="start" x="2871.69" y="-1141.4" font-family="Arial" font-size="14.00">entitystatusid </text>
+<text text-anchor="start" x="2957.29" y="-1141.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="2864.69,-1098.4 2864.69,-1129.2 3160.66,-1129.2 3160.66,-1098.4 2864.69,-1098.4"/>
+<text text-anchor="start" x="2871.69" y="-1110.6" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="2909.83" y="-1110.6" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="2864.69,-1067.6 2864.69,-1098.4 3160.66,-1098.4 3160.66,-1067.6 2864.69,-1067.6"/>
+<text text-anchor="start" x="2871.69" y="-1079.8" font-family="Arial" font-size="14.00">referenceentityid </text>
+<text text-anchor="start" x="2979.09" y="-1079.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.entityrelationship&#45;&gt;ndb.speleothems -->
 <g id="edge14" class="edge">
 <title>ndb.entityrelationship:entityid&#45;&gt;ndb.speleothems:entityid</title>
-<path fill="none" stroke="black" d="M2853.44,-1159.38C2733.71,-1143.59 3046,-832.6 2903.16,-832.6"/>
-<polygon fill="black" stroke="black" points="2853.38,-1159.37 2863.09,-1164.47 2858.7,-1159.7 2863.03,-1159.96 2863.03,-1159.96 2863.03,-1159.96 2858.7,-1159.7 2863.63,-1155.49 2853.38,-1159.37"/>
-<text text-anchor="start" x="2870.69" y="-1144" font-family="Arial" font-size="10.00">FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid)</text>
+<path fill="none" stroke="black" d="M2853.44,-1174.6C2802.75,-1165.83 2852.95,-1086.61 2864.69,-1024.4 2873.31,-978.74 2893.45,-972.44 2902.16,-926.8 2910.01,-885.67 2945.03,-832.6 2903.16,-832.6"/>
+<polygon fill="black" stroke="black" points="2853.39,-1174.6 2863.01,-1179.86 2858.71,-1175.01 2863.03,-1175.35 2863.03,-1175.35 2863.03,-1175.35 2858.71,-1175.01 2863.71,-1170.89 2853.39,-1174.6"/>
+<text text-anchor="start" x="2870.69" y="-1159.4" font-family="Arial" font-size="10.00">FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid)</text>
 </g>
 <!-- ndb.entityrelationship&#45;&gt;ndb.speleothems -->
 <g id="edge15" class="edge">
 <title>ndb.entityrelationship:referenceentityid&#45;&gt;ndb.speleothems:entityid</title>
-<path fill="none" stroke="black" d="M2853.36,-1097.59C2761.79,-1081.54 3018.74,-832.6 2903.16,-832.6"/>
-<polygon fill="black" stroke="black" points="2853.39,-1097.59 2863.01,-1102.86 2858.71,-1098.01 2863.03,-1098.35 2863.03,-1098.35 2863.03,-1098.35 2858.71,-1098.01 2863.71,-1093.89 2853.39,-1097.59"/>
-<text text-anchor="start" x="2870.69" y="-1108.4" font-family="Arial" font-size="10.00">FOREIGN KEY (referenceentityid) REFERENCES ndb.speleothems(entityid)</text>
+<path fill="none" stroke="black" d="M2853.94,-1080.04C2845.03,-1071.37 2860.62,-1045.38 2864.69,-1024.4 2881.27,-939.05 2990.1,-832.6 2903.16,-832.6"/>
+<polygon fill="black" stroke="black" points="2853.8,-1080 2862.07,-1087.21 2858.91,-1081.55 2863.05,-1082.81 2863.05,-1082.81 2863.05,-1082.81 2858.91,-1081.55 2864.68,-1078.6 2853.8,-1080"/>
+<text text-anchor="start" x="2870.69" y="-1093" font-family="Arial" font-size="10.00">FOREIGN KEY (referenceentityid) REFERENCES ndb.speleothems(entityid)</text>
 </g>
 <!-- ndb.entitysamples -->
 <g id="node14" class="node">

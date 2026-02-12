@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.entitysamples Table definition
 
 -- Drop table
 
@@ -18,19 +18,29 @@ CREATE TABLE IF NOT EXISTS ndb.entitysamples (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitysamples IS "";
+COMMENT ON TABLE ndb.entitysamples IS '';
+COMMENT ON COLUMN ndb.entitysamples.entityid IS '';
+COMMENT ON COLUMN ndb.entitysamples.organics IS '';
+COMMENT ON COLUMN ndb.entitysamples.fluid_inclusions IS '';
+COMMENT ON COLUMN ndb.entitysamples.mineralogy_petrology_fabric IS '';
+COMMENT ON COLUMN ndb.entitysamples.clumped_isotopes IS '';
+COMMENT ON COLUMN ndb.entitysamples.noble_gas_temperatures IS '';
+COMMENT ON COLUMN ndb.entitysamples.c14 IS '';
+COMMENT ON COLUMN ndb.entitysamples.odl IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX entitysamples_pkey ON ndb.entitysamples USING btree (entityid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.entitysamples DROP CONSTRAINT IF EXISTS entitysamples_pkey;
+-- ALTER TABLE ndb.entitysamples DROP CONSTRAINT IF EXISTS entitysamples_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.entitysamples ADD CONSTRAINT entitysamples_pkey PRIMARY KEY (entityid);
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.entitysamples ADD CONSTRAINT entitysamples_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid);
+
+--- Triggers

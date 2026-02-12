@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS doi.doimeta (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE doi.doimeta IS "";
+COMMENT ON TABLE doi.doimeta IS '';
+COMMENT ON COLUMN doi.doimeta.doi IS '';
+COMMENT ON COLUMN doi.doimeta.meta IS '';
+COMMENT ON COLUMN doi.doimeta.datasetid IS '';
+COMMENT ON COLUMN doi.doimeta.recdatecreated IS '';
+COMMENT ON COLUMN doi.doimeta.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX doimeta_pkey ON doi.doimeta USING btree (doi);
@@ -33,5 +38,5 @@ ALTER TABLE doi.doimeta ADD CONSTRAINT doimeta_pkey PRIMARY KEY (doi);
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS update_modified ON doi.doimeta;
-CREATE TRIGGER update_modified AFTER UPDATE ON doi.doimeta FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS update_modified ON doi.doimeta;\n
+CREATE TRIGGER update_modified AFTER UPDATE ON doi.doimeta FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

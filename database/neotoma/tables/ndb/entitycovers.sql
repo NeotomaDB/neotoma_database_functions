@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.entitycovers Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS ndb.entitycovers (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitycovers IS "";
+COMMENT ON TABLE ndb.entitycovers IS '';
+COMMENT ON COLUMN ndb.entitycovers.entityid IS '';
+COMMENT ON COLUMN ndb.entitycovers.entitycoverid IS '';
+COMMENT ON COLUMN ndb.entitycovers.entitycoverthickness IS '';
+COMMENT ON COLUMN ndb.entitycovers.entitycoverunits IS '';
 
 --- Table indices
 
@@ -30,3 +34,5 @@ COMMENT ON TABLE ndb.entitycovers IS "";
 ALTER TABLE ndb.entitycovers ADD CONSTRAINT entitycovers_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE;
 ALTER TABLE ndb.entitycovers ADD CONSTRAINT entitycovers_entitycoverid_fkey FOREIGN KEY (entitycoverid) REFERENCES ndb.entitycovertypes(entitycoverid);
 ALTER TABLE ndb.entitycovers ADD CONSTRAINT entitycovers_entitycoverunits_fkey FOREIGN KEY (entitycoverunits) REFERENCES ndb.variableunits(variableunitsid);
+
+--- Triggers

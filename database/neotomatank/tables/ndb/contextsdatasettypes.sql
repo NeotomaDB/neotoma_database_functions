@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.contextsdatasettypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.contextsdatasettypes IS "";
+COMMENT ON TABLE ndb.contextsdatasettypes IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.datasettypeid IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.variablecontextid IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.contextsdatasettypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX contextsdatasettypes_pkey ON ndb.contextsdatasettypes USING btree (datasettypeid, variablecontextid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.contextsdatasettypes ADD CONSTRAINT fk_contextsdatasettypes_data
 ALTER TABLE ndb.contextsdatasettypes ADD CONSTRAINT fk_contextsdatasettypes_variablecontexts FOREIGN KEY (variablecontextid) REFERENCES ndb.variablecontexts(variablecontextid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.contextsdatasettypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.contextsdatasettypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.contextsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.contextsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.contextsdatasettypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.contextsdatasettypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.contextsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.contextsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

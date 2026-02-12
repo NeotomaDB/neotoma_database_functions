@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.dataprocessors (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.dataprocessors IS "";
+COMMENT ON TABLE ndb.dataprocessors IS '';
+COMMENT ON COLUMN ndb.dataprocessors.datasetid IS '';
+COMMENT ON COLUMN ndb.dataprocessors.contactid IS '';
+COMMENT ON COLUMN ndb.dataprocessors.recdatecreated IS '';
+COMMENT ON COLUMN ndb.dataprocessors.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX dataprocessors_pkey ON ndb.dataprocessors USING btree (datasetid, contactid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.dataprocessors ADD CONSTRAINT fk_dataprocessors_datasets FOREIGN
 ALTER TABLE ndb.dataprocessors ADD CONSTRAINT fk_dataprocessors_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.dataprocessors;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.dataprocessors;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.dataprocessors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.dataprocessors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.dataprocessors;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.dataprocessors;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.dataprocessors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.dataprocessors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

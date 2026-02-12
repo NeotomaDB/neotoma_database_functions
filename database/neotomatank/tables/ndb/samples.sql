@@ -25,7 +25,19 @@ CREATE TABLE IF NOT EXISTS ndb.samples (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.samples IS "This table stores sample data. Samples belong to Analysis Units, which belong to Collection Units, which belong to Sites. Samples also belong to a Dataset, and the Dataset determines the type of sample. Thus, there could be two different samples from the same Analysis Unit, one belonging to a pollen dataset, the other to a plant macrofossil dataset.";
+COMMENT ON TABLE ndb.samples IS 'This table stores sample data. Samples belong to Analysis Units, which belong to Collection Units, which belong to Sites. Samples also belong to a Dataset, and the Dataset determines the type of sample. Thus, there could be two different samples from the same Analysis Unit, one belonging to a pollen dataset, the other to a plant macrofossil dataset.';
+COMMENT ON COLUMN ndb.samples.sampleid IS 'An arbitrary Sample identification number.';
+COMMENT ON COLUMN ndb.samples.analysisunitid IS 'Analysis Unit identification number. Field links to the AnalysisUnits table.';
+COMMENT ON COLUMN ndb.samples.datasetid IS 'Dataset identification number. Field links to the Datasets table.';
+COMMENT ON COLUMN ndb.samples.samplename IS 'Sample name if any.';
+COMMENT ON COLUMN ndb.samples.analysisdate IS 'Date of analysis.';
+COMMENT ON COLUMN ndb.samples.labnumber IS 'Laboratory number for the sample. A special case regards geochronologic samples, for which the LabNumber is the number, if any, assigned by the submitter, not the number assigned by the radiocarbon laboratory, which is in the Geochronology table.';
+COMMENT ON COLUMN ndb.samples.preparationmethod IS 'Description, notes, or comments on preparation methods. For faunal samples, notes on screening methods or screen size are stored here.';
+COMMENT ON COLUMN ndb.samples.notes IS 'Free form note or comments about the sample.';
+COMMENT ON COLUMN ndb.samples.recdatecreated IS '';
+COMMENT ON COLUMN ndb.samples.recdatemodified IS '';
+COMMENT ON COLUMN ndb.samples.sampledate IS '';
+COMMENT ON COLUMN ndb.samples.taxonid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX samples_pkey ON ndb.samples USING btree (sampleid);
@@ -46,7 +58,7 @@ ALTER TABLE ndb.samples ADD CONSTRAINT fk_samples_analysisunits FOREIGN KEY (ana
 ALTER TABLE ndb.samples ADD CONSTRAINT fk_samples_taxa FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samples;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samples;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.samples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.samples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samples;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samples;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.samples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.samples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

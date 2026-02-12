@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.isobiomarkerbandtypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isobiomarkerbandtypes IS "";
+COMMENT ON TABLE ndb.isobiomarkerbandtypes IS '';
+COMMENT ON COLUMN ndb.isobiomarkerbandtypes.isobiomarkerbandtypeid IS '';
+COMMENT ON COLUMN ndb.isobiomarkerbandtypes.isobiomarkertypeid IS '';
+COMMENT ON COLUMN ndb.isobiomarkerbandtypes.isobiomarkerbandtype IS '';
+COMMENT ON COLUMN ndb.isobiomarkerbandtypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isobiomarkerbandtypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isobiomarkerbandtypes_pkey ON ndb.isobiomarkerbandtypes USING btree (isobiomarkerbandtypeid)
@@ -33,7 +38,7 @@ ALTER TABLE ndb.isobiomarkerbandtypes ADD CONSTRAINT isobiomarkerbandtypes_pkey 
 ALTER TABLE ndb.isobiomarkerbandtypes ADD CONSTRAINT fk_isobiomarkerbands_isobiomarkertypes FOREIGN KEY (isobiomarkertypeid) REFERENCES ndb.isobiomarkertypes(isobiomarkertypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isobiomarkerbandtypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isobiomarkerbandtypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isobiomarkerbandtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isobiomarkerbandtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isobiomarkerbandtypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isobiomarkerbandtypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isobiomarkerbandtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isobiomarkerbandtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

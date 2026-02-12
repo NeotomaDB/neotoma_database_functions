@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.grants (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.grants IS "";
+COMMENT ON TABLE ndb.grants IS '';
+COMMENT ON COLUMN ndb.grants.grantid IS '';
+COMMENT ON COLUMN ndb.grants.grantname IS '';
+COMMENT ON COLUMN ndb.grants.grantnumber IS '';
+COMMENT ON COLUMN ndb.grants.recdatecreated IS '';
+COMMENT ON COLUMN ndb.grants.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX grants_pkey ON ndb.grants USING btree (grantid)
@@ -32,9 +37,9 @@ ALTER TABLE ndb.grants ADD CONSTRAINT grants_pkey PRIMARY KEY (grantid);
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_grants_createdate ON ndb.grants;
--- DROP TRIGGER IF EXISTS tr_grants_modifydate ON ndb.grants;
--- DROP TRIGGER IF EXISTS tr_grants_modifydate ON ndb.grants;
-CREATE TRIGGER tr_grants_createdate BEFORE INSERT ON ndb.grants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();
-CREATE TRIGGER tr_grants_modifydate BEFORE INSERT ON ndb.grants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_grants_modifydate BEFORE UPDATE ON ndb.grants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_grants_createdate ON ndb.grants;\n
+-- DROP TRIGGER IF EXISTS tr_grants_modifydate ON ndb.grants;\n
+-- DROP TRIGGER IF EXISTS tr_grants_modifydate ON ndb.grants;\n
+CREATE TRIGGER tr_grants_createdate BEFORE INSERT ON ndb.grants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();\n
+CREATE TRIGGER tr_grants_modifydate BEFORE INSERT ON ndb.grants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_grants_modifydate BEFORE UPDATE ON ndb.grants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

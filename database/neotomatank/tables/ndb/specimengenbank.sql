@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.specimengenbank (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimengenbank IS "";
+COMMENT ON TABLE ndb.specimengenbank IS '';
+COMMENT ON COLUMN ndb.specimengenbank.specimenid IS '';
+COMMENT ON COLUMN ndb.specimengenbank.genbanknr IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimengenbank_pkey ON ndb.specimengenbank USING btree (specimenid, genbanknr)

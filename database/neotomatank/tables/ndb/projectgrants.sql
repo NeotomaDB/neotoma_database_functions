@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.projectgrants (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.projectgrants IS "";
+COMMENT ON TABLE ndb.projectgrants IS '';
+COMMENT ON COLUMN ndb.projectgrants.projectid IS '';
+COMMENT ON COLUMN ndb.projectgrants.grantid IS '';
+COMMENT ON COLUMN ndb.projectgrants.recdatecreated IS '';
+COMMENT ON COLUMN ndb.projectgrants.recdatemodified IS '';
 
 --- Table indices
 
@@ -30,9 +34,9 @@ COMMENT ON TABLE ndb.projectgrants IS "";
 ALTER TABLE ndb.projectgrants ADD CONSTRAINT projectgrants_projectid_fkey FOREIGN KEY (projectid) REFERENCES ndb.projects(projectid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_projectgrants_createdate ON ndb.projectgrants;
--- DROP TRIGGER IF EXISTS tr_projectgrants_modifydate ON ndb.projectgrants;
--- DROP TRIGGER IF EXISTS tr_projectgrants_modifydate ON ndb.projectgrants;
-CREATE TRIGGER tr_projectgrants_createdate AFTER INSERT ON ndb.projectgrants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();
-CREATE TRIGGER tr_projectgrants_modifydate AFTER INSERT ON ndb.projectgrants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_projectgrants_modifydate AFTER UPDATE ON ndb.projectgrants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_projectgrants_createdate ON ndb.projectgrants;\n
+-- DROP TRIGGER IF EXISTS tr_projectgrants_modifydate ON ndb.projectgrants;\n
+-- DROP TRIGGER IF EXISTS tr_projectgrants_modifydate ON ndb.projectgrants;\n
+CREATE TRIGGER tr_projectgrants_createdate AFTER INSERT ON ndb.projectgrants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();\n
+CREATE TRIGGER tr_projectgrants_modifydate AFTER INSERT ON ndb.projectgrants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_projectgrants_modifydate AFTER UPDATE ON ndb.projectgrants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.unitsdatasettypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.unitsdatasettypes IS "Join table, associating measurement units with various datasettypes.";
+COMMENT ON TABLE ndb.unitsdatasettypes IS 'Join table, associating measurement units with various datasettypes.';
+COMMENT ON COLUMN ndb.unitsdatasettypes.datasettypeid IS '';
+COMMENT ON COLUMN ndb.unitsdatasettypes.variableunitsid IS '';
+COMMENT ON COLUMN ndb.unitsdatasettypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.unitsdatasettypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX unitsdatasettypes_pkey ON ndb.unitsdatasettypes USING btree (datasettypeid, variableunitsid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.unitsdatasettypes ADD CONSTRAINT fk_unitsdatasettypes_variableun
 ALTER TABLE ndb.unitsdatasettypes ADD CONSTRAINT fk_unitsdatasettypes_datasettypes FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.unitsdatasettypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.unitsdatasettypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.unitsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.unitsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.unitsdatasettypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.unitsdatasettypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.unitsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.unitsdatasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

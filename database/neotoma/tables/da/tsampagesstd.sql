@@ -1,4 +1,4 @@
--- da definition
+-- da.tsampagesstd Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS da.tsampagesstd (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE da.tsampagesstd IS "";
+COMMENT ON TABLE da.tsampagesstd IS '';
+COMMENT ON COLUMN da.tsampagesstd.sampleid IS '';
+COMMENT ON COLUMN da.tsampagesstd.age IS '';
+COMMENT ON COLUMN da.tsampagesstd.ageolder IS '';
+COMMENT ON COLUMN da.tsampagesstd.ageyounger IS '';
 
 --- Table indices
 
@@ -27,3 +31,5 @@ COMMENT ON TABLE da.tsampagesstd IS "";
 --- Non-foreign key constraints
 
 --- Foreign Key Restraints
+
+--- Triggers

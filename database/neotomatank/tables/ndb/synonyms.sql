@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.synonyms (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.synonyms IS "This table lists common synonyms for taxa in the Taxa table. No effort has been made to provide a complete taxonomic synonymy, but rather to list synonyms commonly used in recent literature.  This table is not the same as the Synonomy table, also present in Neotoma, which links a specific synonymy to a dataset";
+COMMENT ON TABLE ndb.synonyms IS 'This table lists common synonyms for taxa in the Taxa table. No effort has been made to provide a complete taxonomic synonymy, but rather to list synonyms commonly used in recent literature.  This table is not the same as the Synonomy table, also present in Neotoma, which links a specific synonymy to a dataset';
+COMMENT ON COLUMN ndb.synonyms.synonymid IS 'An arbitrary synonym identification number.';
+COMMENT ON COLUMN ndb.synonyms.invalidtaxonid IS '';
+COMMENT ON COLUMN ndb.synonyms.validtaxonid IS '';
+COMMENT ON COLUMN ndb.synonyms.synonymtypeid IS 'Type of synonym. Field links to the SynonymTypes lookup table.';
+COMMENT ON COLUMN ndb.synonyms.recdatecreated IS '';
+COMMENT ON COLUMN ndb.synonyms.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX synonyms_pkey ON ndb.synonyms USING btree (synonymid);
@@ -37,7 +43,7 @@ ALTER TABLE ndb.synonyms ADD CONSTRAINT fk_synonyms_invalidtaxa FOREIGN KEY (inv
 ALTER TABLE ndb.synonyms ADD CONSTRAINT fk_synonyms_validtaxa FOREIGN KEY (validtaxonid) REFERENCES ndb.taxa(taxonid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonyms;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonyms;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.synonyms FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.synonyms FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonyms;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonyms;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.synonyms FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.synonyms FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

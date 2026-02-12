@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.variableunits (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.variableunits IS "Lookup table of Variable Units. Table is referenced by the Variables table.";
+COMMENT ON TABLE ndb.variableunits IS 'Lookup table of Variable Units. Table is referenced by the Variables table.';
+COMMENT ON COLUMN ndb.variableunits.variableunitsid IS 'An arbitrary Variable Units identification number.';
+COMMENT ON COLUMN ndb.variableunits.variableunits IS 'The units of measurement. For fauna, these are «present/absent», «NISP» (Number of Individual Specimens), and «MNI» (Minimum Number of Individuals). For pollen, these are «NISP» (pollen counts) and «percent». Units for plant macrofossils include «present/absent» and «NISP», as well as a number of quantitative concentration measurements and semi-quantitative abundance measurements such as «1-5 scale». Examples of charcoal measurement units are «fragments/ml» and «µm^2/ml».';
+COMMENT ON COLUMN ndb.variableunits.recdatecreated IS '';
+COMMENT ON COLUMN ndb.variableunits.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX variableunits_pkey ON ndb.variableunits USING btree (variableunitsid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.variableunits ADD CONSTRAINT variableunits_pkey PRIMARY KEY (var
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variableunits;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variableunits;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.variableunits FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.variableunits FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variableunits;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variableunits;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.variableunits FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.variableunits FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

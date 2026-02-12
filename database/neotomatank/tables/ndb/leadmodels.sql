@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.leadmodels (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.leadmodels IS "";
+COMMENT ON TABLE ndb.leadmodels IS '';
+COMMENT ON COLUMN ndb.leadmodels.pbbasisid IS '';
+COMMENT ON COLUMN ndb.leadmodels.analysisunitid IS '';
+COMMENT ON COLUMN ndb.leadmodels.cumulativeinventory IS '';
 
 --- Table indices
 

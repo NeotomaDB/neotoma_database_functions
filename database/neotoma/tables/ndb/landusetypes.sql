@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.landusetypes Table definition
 
 -- Drop table
 
@@ -14,18 +14,22 @@ CREATE TABLE IF NOT EXISTS ndb.landusetypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.landusetypes IS "";
+COMMENT ON TABLE ndb.landusetypes IS '';
+COMMENT ON COLUMN ndb.landusetypes.landusecovertypeid IS '';
+COMMENT ON COLUMN ndb.landusetypes.landusecovertype IS '';
+COMMENT ON COLUMN ndb.landusetypes.landusecovernotes IS '';
+COMMENT ON COLUMN ndb.landusetypes.publicationid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX landusetypes_pkey ON ndb.landusetypes USING btree (landusecovertypeid);
 CREATE UNIQUE INDEX landusetypes_landusecovertype_key ON ndb.landusetypes USING btree (landusecovertype)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.landusetypes DROP CONSTRAINT IF EXISTS landusetypes_pkey;
-ALTER TABLE ndb.landusetypes DROP CONSTRAINT IF EXISTS landusetypes_landusecovertype_key;
+-- ALTER TABLE ndb.landusetypes DROP CONSTRAINT IF EXISTS landusetypes_pkey;
+-- ALTER TABLE ndb.landusetypes DROP CONSTRAINT IF EXISTS landusetypes_landusecovertype_key;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.landusetypes ADD CONSTRAINT landusetypes_pkey PRIMARY KEY (landusecovertypeid);
@@ -33,3 +37,5 @@ ALTER TABLE ndb.landusetypes ADD CONSTRAINT landusetypes_landusecovertype_key UN
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.landusetypes ADD CONSTRAINT landusetypes_landuseclasspublicationid_fkey FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid);
+
+--- Triggers

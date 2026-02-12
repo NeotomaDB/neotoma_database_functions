@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.uraniumseries Table definition
 
 -- Drop table
 
@@ -20,10 +20,20 @@ CREATE TABLE IF NOT EXISTS ndb.uraniumseries (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.uraniumseries IS "";
+COMMENT ON TABLE ndb.uraniumseries IS '';
+COMMENT ON COLUMN ndb.uraniumseries.geochronid IS '';
+COMMENT ON COLUMN ndb.uraniumseries.decayconstantid IS '';
+COMMENT ON COLUMN ndb.uraniumseries.ratio230th232th IS '';
+COMMENT ON COLUMN ndb.uraniumseries.ratiouncertainty230th232th IS '';
+COMMENT ON COLUMN ndb.uraniumseries.activity230th238u IS '';
+COMMENT ON COLUMN ndb.uraniumseries.activityuncertainty230th238u IS '';
+COMMENT ON COLUMN ndb.uraniumseries.activity234u238u IS '';
+COMMENT ON COLUMN ndb.uraniumseries.activityuncertainty234u238u IS '';
+COMMENT ON COLUMN ndb.uraniumseries.iniratio230th232th IS '';
+COMMENT ON COLUMN ndb.uraniumseries.iniratiouncertainty230th232th IS '';
 
 --- Table indices
 
@@ -35,3 +45,5 @@ COMMENT ON TABLE ndb.uraniumseries IS "";
 --- Foreign Key Restraints
 ALTER TABLE ndb.uraniumseries ADD CONSTRAINT uraniumseries_geochronid_fkey FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid);
 ALTER TABLE ndb.uraniumseries ADD CONSTRAINT uraniumseries_decayconstantid_fkey FOREIGN KEY (decayconstantid) REFERENCES ndb.decayconstants(decayconstantid);
+
+--- Triggers

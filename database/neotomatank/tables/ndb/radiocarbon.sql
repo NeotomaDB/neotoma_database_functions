@@ -25,7 +25,19 @@ CREATE TABLE IF NOT EXISTS ndb.radiocarbon (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.radiocarbon IS "";
+COMMENT ON TABLE ndb.radiocarbon IS '';
+COMMENT ON COLUMN ndb.radiocarbon.geochronid IS '';
+COMMENT ON COLUMN ndb.radiocarbon.radiocarbonmethodid IS '';
+COMMENT ON COLUMN ndb.radiocarbon.percentc IS '';
+COMMENT ON COLUMN ndb.radiocarbon.percentn IS '';
+COMMENT ON COLUMN ndb.radiocarbon.delta13c IS '';
+COMMENT ON COLUMN ndb.radiocarbon.delta15n IS '';
+COMMENT ON COLUMN ndb.radiocarbon.percentcollagen IS '';
+COMMENT ON COLUMN ndb.radiocarbon.reservoir IS '';
+COMMENT ON COLUMN ndb.radiocarbon.recdatecreated IS '';
+COMMENT ON COLUMN ndb.radiocarbon.recdatemodified IS '';
+COMMENT ON COLUMN ndb.radiocarbon.masscmg IS '';
+COMMENT ON COLUMN ndb.radiocarbon.cnratio IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX radiocarbon_pkey ON ndb.radiocarbon USING btree (geochronid);
@@ -44,11 +56,11 @@ ALTER TABLE ndb.radiocarbon ADD CONSTRAINT fk_geochrons_geochronid FOREIGN KEY (
 ALTER TABLE ndb.radiocarbon ADD CONSTRAINT fk_radiocarbonmethodid FOREIGN KEY (radiocarbonmethodid) REFERENCES ndb.radiocarbonmethods(radiocarbonmethodid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS cnratio_compute_trigger ON ndb.radiocarbon;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.radiocarbon;
--- DROP TRIGGER IF EXISTS cnratio_compute_trigger ON ndb.radiocarbon;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.radiocarbon;
-CREATE TRIGGER cnratio_compute_trigger BEFORE INSERT ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.compute_cnratio();
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER cnratio_compute_trigger BEFORE UPDATE ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.compute_cnratio();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS cnratio_compute_trigger ON ndb.radiocarbon;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.radiocarbon;\n
+-- DROP TRIGGER IF EXISTS cnratio_compute_trigger ON ndb.radiocarbon;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.radiocarbon;\n
+CREATE TRIGGER cnratio_compute_trigger BEFORE INSERT ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.compute_cnratio();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER cnratio_compute_trigger BEFORE UPDATE ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.compute_cnratio();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.radiocarbon FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

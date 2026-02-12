@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.embargo (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.embargo IS "";
+COMMENT ON TABLE ndb.embargo IS '';
+COMMENT ON COLUMN ndb.embargo.embargoid IS '';
+COMMENT ON COLUMN ndb.embargo.embargodate IS '';
+COMMENT ON COLUMN ndb.embargo.embargopw IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX embargo_pkey ON ndb.embargo USING btree (embargoid)

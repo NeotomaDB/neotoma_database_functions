@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.externalgeochronology (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externalgeochronology IS "";
+COMMENT ON TABLE ndb.externalgeochronology IS '';
+COMMENT ON COLUMN ndb.externalgeochronology.geochronid IS '';
+COMMENT ON COLUMN ndb.externalgeochronology.extdatabaseid IS '';
+COMMENT ON COLUMN ndb.externalgeochronology.identifier IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX uniqueid ON ndb.externalgeochronology USING btree (geochronid, extdatabaseid, identifier)

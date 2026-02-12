@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.externalcontacts (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externalcontacts IS "";
+COMMENT ON TABLE ndb.externalcontacts IS '';
+COMMENT ON COLUMN ndb.externalcontacts.contactid IS '';
+COMMENT ON COLUMN ndb.externalcontacts.identifier IS '';
+COMMENT ON COLUMN ndb.externalcontacts.extdatabaseid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX externalcontacts_contactid_identifier_extdatabaseid_key ON ndb.externalcontacts USING btree (contactid, identifier, extdatabaseid)

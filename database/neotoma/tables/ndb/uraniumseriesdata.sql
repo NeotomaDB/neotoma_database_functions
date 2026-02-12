@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.uraniumseriesdata Table definition
 
 -- Drop table
 
@@ -12,10 +12,12 @@ CREATE TABLE IF NOT EXISTS ndb.uraniumseriesdata (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.uraniumseriesdata IS "";
+COMMENT ON TABLE ndb.uraniumseriesdata IS '';
+COMMENT ON COLUMN ndb.uraniumseriesdata.geochronid IS '';
+COMMENT ON COLUMN ndb.uraniumseriesdata.dataid IS '';
 
 --- Table indices
 
@@ -27,3 +29,5 @@ COMMENT ON TABLE ndb.uraniumseriesdata IS "";
 --- Foreign Key Restraints
 ALTER TABLE ndb.uraniumseriesdata ADD CONSTRAINT uraniumseriesdata_geochronid_fkey FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid);
 ALTER TABLE ndb.uraniumseriesdata ADD CONSTRAINT uraniumseriesdata_dataid_fkey FOREIGN KEY (dataid) REFERENCES ndb.data(dataid);
+
+--- Triggers

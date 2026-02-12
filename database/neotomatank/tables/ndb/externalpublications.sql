@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.externalpublications (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externalpublications IS "";
+COMMENT ON TABLE ndb.externalpublications IS '';
+COMMENT ON COLUMN ndb.externalpublications.publicationid IS '';
+COMMENT ON COLUMN ndb.externalpublications.extdatabaseid IS '';
+COMMENT ON COLUMN ndb.externalpublications.extpublicationid IS '';
+COMMENT ON COLUMN ndb.externalpublications.recdatecreated IS '';
+COMMENT ON COLUMN ndb.externalpublications.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX externalpublications_pkey ON ndb.externalpublications USING btree (publicationid, extdatabaseid)
@@ -34,7 +39,7 @@ ALTER TABLE ndb.externalpublications ADD CONSTRAINT fk_externalpublications_exte
 ALTER TABLE ndb.externalpublications ADD CONSTRAINT fk_externalpublications_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externalpublications;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externalpublications;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.externalpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.externalpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externalpublications;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externalpublications;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.externalpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.externalpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

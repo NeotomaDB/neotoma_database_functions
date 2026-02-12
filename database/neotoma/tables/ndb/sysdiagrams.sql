@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.sysdiagrams Table definition
 
 -- Drop table
 
@@ -15,18 +15,25 @@ CREATE TABLE IF NOT EXISTS ndb.sysdiagrams (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.sysdiagrams IS "";
+COMMENT ON TABLE ndb.sysdiagrams IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.name IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.principal_id IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.diagram_id IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.version IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.definition IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX sysdiagrams_pkey ON ndb.sysdiagrams USING btree (diagram_id)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.sysdiagrams DROP CONSTRAINT IF EXISTS sysdiagrams_pkey;
+-- ALTER TABLE ndb.sysdiagrams DROP CONSTRAINT IF EXISTS sysdiagrams_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.sysdiagrams ADD CONSTRAINT sysdiagrams_pkey PRIMARY KEY (diagram_id);
 
 --- Foreign Key Restraints
+
+--- Triggers

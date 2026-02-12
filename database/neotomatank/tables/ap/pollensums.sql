@@ -28,7 +28,22 @@ CREATE TABLE IF NOT EXISTS ap.pollensums (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.pollensums IS "";
+COMMENT ON TABLE ap.pollensums IS '';
+COMMENT ON COLUMN ap.pollensums.sampleid IS '';
+COMMENT ON COLUMN ap.pollensums.trsh IS '';
+COMMENT ON COLUMN ap.pollensums.palm IS '';
+COMMENT ON COLUMN ap.pollensums.uphe IS '';
+COMMENT ON COLUMN ap.pollensums.succ IS '';
+COMMENT ON COLUMN ap.pollensums.vacr IS '';
+COMMENT ON COLUMN ap.pollensums.upbr IS '';
+COMMENT ON COLUMN ap.pollensums.fung IS '';
+COMMENT ON COLUMN ap.pollensums.aqvp IS '';
+COMMENT ON COLUMN ap.pollensums.aqbr IS '';
+COMMENT ON COLUMN ap.pollensums.mang IS '';
+COMMENT ON COLUMN ap.pollensums.unid IS '';
+COMMENT ON COLUMN ap.pollensums.anac IS '';
+COMMENT ON COLUMN ap.pollensums.seed IS '';
+COMMENT ON COLUMN ap.pollensums.total IS '';
 
 --- Table indices
 

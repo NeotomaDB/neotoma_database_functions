@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.decayconstants (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.decayconstants IS "";
+COMMENT ON TABLE ndb.decayconstants IS '';
+COMMENT ON COLUMN ndb.decayconstants.decayconstantid IS '';
+COMMENT ON COLUMN ndb.decayconstants.decayconstant IS '';
+COMMENT ON COLUMN ndb.decayconstants.publicationid IS '';
+COMMENT ON COLUMN ndb.decayconstants.notes IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX decayconstants_pkey ON ndb.decayconstants USING btree (decayconstantid)

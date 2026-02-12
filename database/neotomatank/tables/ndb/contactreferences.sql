@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.contactreferences (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.contactreferences IS "";
+COMMENT ON TABLE ndb.contactreferences IS '';
+COMMENT ON COLUMN ndb.contactreferences.contactid IS '';
+COMMENT ON COLUMN ndb.contactreferences.exdatabaseid IS '';
+COMMENT ON COLUMN ndb.contactreferences.identifier IS '';
 
 --- Table indices
 

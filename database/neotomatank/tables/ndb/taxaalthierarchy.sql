@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.taxaalthierarchy (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.taxaalthierarchy IS "";
+COMMENT ON TABLE ndb.taxaalthierarchy IS '';
+COMMENT ON COLUMN ndb.taxaalthierarchy.taxaalthierarchytypeid IS '';
+COMMENT ON COLUMN ndb.taxaalthierarchy.taxonid IS '';
+COMMENT ON COLUMN ndb.taxaalthierarchy.highertaxonid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX taxaalthierarchy_pkey ON ndb.taxaalthierarchy USING btree (taxaalthierarchytypeid, taxonid)

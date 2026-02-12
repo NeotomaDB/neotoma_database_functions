@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.geopaths (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.geopaths IS "";
+COMMENT ON TABLE ndb.geopaths IS '';
+COMMENT ON COLUMN ndb.geopaths.geoout IS '';
+COMMENT ON COLUMN ndb.geopaths.geoin IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX geopaths_pkey ON ndb.geopaths USING btree (geoout, geoin)

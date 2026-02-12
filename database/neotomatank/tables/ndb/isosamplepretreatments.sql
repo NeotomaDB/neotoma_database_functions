@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.isosamplepretreatments (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isosamplepretreatments IS "";
+COMMENT ON TABLE ndb.isosamplepretreatments IS '';
+COMMENT ON COLUMN ndb.isosamplepretreatments.dataid IS '';
+COMMENT ON COLUMN ndb.isosamplepretreatments.isopretreatmenttypeid IS '';
+COMMENT ON COLUMN ndb.isosamplepretreatments."order" IS '';
+COMMENT ON COLUMN ndb.isosamplepretreatments.value IS '';
+COMMENT ON COLUMN ndb.isosamplepretreatments.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isosamplepretreatments.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isosamplepretreatments_pkey ON ndb.isosamplepretreatments USING btree (dataid, isopretreatmenttypeid, "order")
@@ -35,7 +41,7 @@ ALTER TABLE ndb.isosamplepretreatments ADD CONSTRAINT fk_isosamplepretreatments_
 ALTER TABLE ndb.isosamplepretreatments ADD CONSTRAINT fk_isosamplepretreatments_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosamplepretreatments;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosamplepretreatments;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosamplepretreatments FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosamplepretreatments FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosamplepretreatments;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosamplepretreatments;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosamplepretreatments FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosamplepretreatments FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

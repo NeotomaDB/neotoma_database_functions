@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ap.sitegadm (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.sitegadm IS "";
+COMMENT ON TABLE ap.sitegadm IS '';
+COMMENT ON COLUMN ap.sitegadm.siteid IS '';
+COMMENT ON COLUMN ap.sitegadm.fid IS '';
 
 --- Table indices
 

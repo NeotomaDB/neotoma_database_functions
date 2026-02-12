@@ -1,4 +1,4 @@
--- ap definition
+-- ap.gadm Table definition
 
 -- Drop table
 
@@ -66,19 +66,77 @@ CREATE TABLE IF NOT EXISTS ap.gadm (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.gadm IS "";
+COMMENT ON TABLE ap.gadm IS 'Geopolitical spatial data obtained from GADM v4.1 from the download source https://gadm.org/ to represent political administrative units globally.';
+COMMENT ON COLUMN ap.gadm.objectid IS '';
+COMMENT ON COLUMN ap.gadm.uid IS '';
+COMMENT ON COLUMN ap.gadm.gid_0 IS '';
+COMMENT ON COLUMN ap.gadm.name_0 IS '';
+COMMENT ON COLUMN ap.gadm.varname_0 IS '';
+COMMENT ON COLUMN ap.gadm.gid_1 IS '';
+COMMENT ON COLUMN ap.gadm.name_1 IS '';
+COMMENT ON COLUMN ap.gadm.varname_1 IS '';
+COMMENT ON COLUMN ap.gadm.nl_name_1 IS '';
+COMMENT ON COLUMN ap.gadm.iso_1 IS '';
+COMMENT ON COLUMN ap.gadm.hasc_1 IS '';
+COMMENT ON COLUMN ap.gadm.cc_1 IS '';
+COMMENT ON COLUMN ap.gadm.type_1 IS '';
+COMMENT ON COLUMN ap.gadm.engtype_1 IS '';
+COMMENT ON COLUMN ap.gadm.validfr_1 IS '';
+COMMENT ON COLUMN ap.gadm.gid_2 IS '';
+COMMENT ON COLUMN ap.gadm.name_2 IS '';
+COMMENT ON COLUMN ap.gadm.varname_2 IS '';
+COMMENT ON COLUMN ap.gadm.nl_name_2 IS '';
+COMMENT ON COLUMN ap.gadm.hasc_2 IS '';
+COMMENT ON COLUMN ap.gadm.cc_2 IS '';
+COMMENT ON COLUMN ap.gadm.type_2 IS '';
+COMMENT ON COLUMN ap.gadm.engtype_2 IS '';
+COMMENT ON COLUMN ap.gadm.validfr_2 IS '';
+COMMENT ON COLUMN ap.gadm.gid_3 IS '';
+COMMENT ON COLUMN ap.gadm.name_3 IS '';
+COMMENT ON COLUMN ap.gadm.varname_3 IS '';
+COMMENT ON COLUMN ap.gadm.nl_name_3 IS '';
+COMMENT ON COLUMN ap.gadm.hasc_3 IS '';
+COMMENT ON COLUMN ap.gadm.cc_3 IS '';
+COMMENT ON COLUMN ap.gadm.type_3 IS '';
+COMMENT ON COLUMN ap.gadm.engtype_3 IS '';
+COMMENT ON COLUMN ap.gadm.validfr_3 IS '';
+COMMENT ON COLUMN ap.gadm.gid_4 IS '';
+COMMENT ON COLUMN ap.gadm.name_4 IS '';
+COMMENT ON COLUMN ap.gadm.varname_4 IS '';
+COMMENT ON COLUMN ap.gadm.cc_4 IS '';
+COMMENT ON COLUMN ap.gadm.type_4 IS '';
+COMMENT ON COLUMN ap.gadm.engtype_4 IS '';
+COMMENT ON COLUMN ap.gadm.validfr_4 IS '';
+COMMENT ON COLUMN ap.gadm.gid_5 IS '';
+COMMENT ON COLUMN ap.gadm.name_5 IS '';
+COMMENT ON COLUMN ap.gadm.cc_5 IS '';
+COMMENT ON COLUMN ap.gadm.type_5 IS '';
+COMMENT ON COLUMN ap.gadm.engtype_5 IS '';
+COMMENT ON COLUMN ap.gadm.governedby IS '';
+COMMENT ON COLUMN ap.gadm.sovereign IS '';
+COMMENT ON COLUMN ap.gadm.disputedby IS '';
+COMMENT ON COLUMN ap.gadm.region IS '';
+COMMENT ON COLUMN ap.gadm.varregion IS '';
+COMMENT ON COLUMN ap.gadm.country IS '';
+COMMENT ON COLUMN ap.gadm.continent IS '';
+COMMENT ON COLUMN ap.gadm.subcont IS '';
+COMMENT ON COLUMN ap.gadm.shape_length IS '';
+COMMENT ON COLUMN ap.gadm.shape_area IS '';
+COMMENT ON COLUMN ap.gadm.shape IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX gadm_pkey ON ap.gadm USING btree (objectid);
 CREATE INDEX gadm_shape_geom_idx ON ap.gadm USING gist (shape)
 
 --- Remove existing constraints if needed
-ALTER TABLE ap.gadm DROP CONSTRAINT IF EXISTS gadm_pkey;
+-- ALTER TABLE ap.gadm DROP CONSTRAINT IF EXISTS gadm_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ap.gadm ADD CONSTRAINT gadm_pkey PRIMARY KEY (objectid);
 
 --- Foreign Key Restraints
+
+--- Triggers

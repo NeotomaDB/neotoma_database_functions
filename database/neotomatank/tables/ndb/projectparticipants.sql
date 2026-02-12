@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.projectparticipants (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.projectparticipants IS "";
+COMMENT ON TABLE ndb.projectparticipants IS '';
+COMMENT ON COLUMN ndb.projectparticipants.projectid IS '';
+COMMENT ON COLUMN ndb.projectparticipants.contactid IS '';
+COMMENT ON COLUMN ndb.projectparticipants.recdatecreated IS '';
+COMMENT ON COLUMN ndb.projectparticipants.recdatemodified IS '';
 
 --- Table indices
 
@@ -31,9 +35,9 @@ ALTER TABLE ndb.projectparticipants ADD CONSTRAINT projectparticipants_projectid
 ALTER TABLE ndb.projectparticipants ADD CONSTRAINT projectparticipants_contactid_fkey FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_projectparticipants_createdate ON ndb.projectparticipants;
--- DROP TRIGGER IF EXISTS tr_projectparticipants_modifydate ON ndb.projectparticipants;
--- DROP TRIGGER IF EXISTS tr_projectparticipants_modifydate ON ndb.projectparticipants;
-CREATE TRIGGER tr_projectparticipants_createdate AFTER INSERT ON ndb.projectparticipants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();
-CREATE TRIGGER tr_projectparticipants_modifydate AFTER INSERT ON ndb.projectparticipants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_projectparticipants_modifydate AFTER UPDATE ON ndb.projectparticipants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_projectparticipants_createdate ON ndb.projectparticipants;\n
+-- DROP TRIGGER IF EXISTS tr_projectparticipants_modifydate ON ndb.projectparticipants;\n
+-- DROP TRIGGER IF EXISTS tr_projectparticipants_modifydate ON ndb.projectparticipants;\n
+CREATE TRIGGER tr_projectparticipants_createdate AFTER INSERT ON ndb.projectparticipants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();\n
+CREATE TRIGGER tr_projectparticipants_modifydate AFTER INSERT ON ndb.projectparticipants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_projectparticipants_modifydate AFTER UPDATE ON ndb.projectparticipants FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

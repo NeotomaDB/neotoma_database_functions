@@ -1,4 +1,4 @@
--- ti definition
+-- ti.stewards Table definition
 
 -- Drop table
 
@@ -17,19 +17,34 @@ CREATE TABLE IF NOT EXISTS ti.stewards (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ti.stewards IS "";
+COMMENT ON TABLE ti.stewards IS '';
+COMMENT ON COLUMN ti.stewards.stewardid IS '';
+COMMENT ON COLUMN ti.stewards.contactid IS '';
+COMMENT ON COLUMN ti.stewards.username IS '';
+COMMENT ON COLUMN ti.stewards.pwd IS '';
+COMMENT ON COLUMN ti.stewards.taxonomyexpert IS '';
+COMMENT ON COLUMN ti.stewards.recdatecreated IS '';
+COMMENT ON COLUMN ti.stewards.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX stewards_pkey ON ti.stewards USING btree (stewardid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ti.stewards DROP CONSTRAINT IF EXISTS stewards_pkey;
+-- ALTER TABLE ti.stewards DROP CONSTRAINT IF EXISTS stewards_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ti.stewards ADD CONSTRAINT stewards_pkey PRIMARY KEY (stewardid);
 
 --- Foreign Key Restraints
 ALTER TABLE ti.stewards ADD CONSTRAINT fk_stewards_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS record_update ON ti.stewards;\n
+-- DROP TRIGGER IF EXISTS recordcreated ON ti.stewards;\n
+-- DROP TRIGGER IF EXISTS record_update ON ti.stewards;\n
+CREATE TRIGGER record_update BEFORE INSERT ON ti.stewards FOR EACH ROW EXECUTE FUNCTION ti.update_recdatemodified();\n
+CREATE TRIGGER recordcreated BEFORE INSERT ON ti.stewards FOR EACH ROW EXECUTE FUNCTION ti.reccreate();\n
+CREATE TRIGGER record_update BEFORE UPDATE ON ti.stewards FOR EACH ROW EXECUTE FUNCTION ti.update_recdatemodified();\n

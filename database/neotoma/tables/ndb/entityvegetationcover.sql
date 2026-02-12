@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.entityvegetationcover Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS ndb.entityvegetationcover (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entityvegetationcover IS "";
+COMMENT ON TABLE ndb.entityvegetationcover IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.entityid IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.vegetationcovertypeid IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.vegetationcoverpercent IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.vegetationcovernotes IS '';
 
 --- Table indices
 
@@ -29,3 +33,5 @@ COMMENT ON TABLE ndb.entityvegetationcover IS "";
 --- Foreign Key Restraints
 ALTER TABLE ndb.entityvegetationcover ADD CONSTRAINT entityvegetationcover_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE;
 ALTER TABLE ndb.entityvegetationcover ADD CONSTRAINT entityvegetationcover_vegetationcovertypeid_fkey FOREIGN KEY (vegetationcovertypeid) REFERENCES ndb.vegetationcovertypes(vegetationcovertypeid) ON DELETE CASCADE;
+
+--- Triggers

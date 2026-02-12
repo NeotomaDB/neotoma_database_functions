@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.datasetpis (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasetpis IS "";
+COMMENT ON TABLE ndb.datasetpis IS '';
+COMMENT ON COLUMN ndb.datasetpis.datasetid IS 'Dataset identification number. Field links to Dataset table.';
+COMMENT ON COLUMN ndb.datasetpis.contactid IS 'Contact identification number. Field links to Contacts table.';
+COMMENT ON COLUMN ndb.datasetpis.piorder IS 'Order in which PIs are listed.';
+COMMENT ON COLUMN ndb.datasetpis.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasetpis.recdatemodified IS '';
 
 --- Table indices
 CREATE INDEX ix_contactid_datasetpis ON ndb.datasetpis USING btree (contactid) WITH (fillfactor='10');
@@ -35,7 +40,7 @@ ALTER TABLE ndb.datasetpis ADD CONSTRAINT fk_datasetpis_contacts FOREIGN KEY (co
 ALTER TABLE ndb.datasetpis ADD CONSTRAINT fk_datasetpis_datasets FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetpis;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetpis;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetpis FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetpis FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetpis;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetpis;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetpis FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetpis FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

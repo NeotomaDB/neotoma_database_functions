@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.calibrationprograms Table definition
 
 -- Drop table
 
@@ -15,18 +15,29 @@ CREATE TABLE IF NOT EXISTS ndb.calibrationprograms (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.calibrationprograms IS "";
+COMMENT ON TABLE ndb.calibrationprograms IS '';
+COMMENT ON COLUMN ndb.calibrationprograms.calibrationprogramid IS '';
+COMMENT ON COLUMN ndb.calibrationprograms.calibrationprogram IS '';
+COMMENT ON COLUMN ndb.calibrationprograms.version IS '';
+COMMENT ON COLUMN ndb.calibrationprograms.recdatecreated IS '';
+COMMENT ON COLUMN ndb.calibrationprograms.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX calibrationprograms_pkey ON ndb.calibrationprograms USING btree (calibrationprogramid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.calibrationprograms DROP CONSTRAINT IF EXISTS calibrationprograms_pkey;
+-- ALTER TABLE ndb.calibrationprograms DROP CONSTRAINT IF EXISTS calibrationprograms_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.calibrationprograms ADD CONSTRAINT calibrationprograms_pkey PRIMARY KEY (calibrationprogramid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.calibrationprograms;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.calibrationprograms;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.calibrationprograms FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.calibrationprograms FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

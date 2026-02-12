@@ -1,4 +1,4 @@
--- ap definition
+-- ap.querytable Table definition
 
 -- Drop table
 
@@ -30,10 +30,30 @@ CREATE TABLE IF NOT EXISTS ap.querytable (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.querytable IS "";
+COMMENT ON TABLE ap.querytable IS '';
+COMMENT ON COLUMN ap.querytable.siteid IS '';
+COMMENT ON COLUMN ap.querytable.sitename IS '';
+COMMENT ON COLUMN ap.querytable.datasetid IS '';
+COMMENT ON COLUMN ap.querytable.chronologyid IS '';
+COMMENT ON COLUMN ap.querytable.altitude IS '';
+COMMENT ON COLUMN ap.querytable.datasettype IS '';
+COMMENT ON COLUMN ap.querytable.databaseid IS '';
+COMMENT ON COLUMN ap.querytable.collectionunitid IS '';
+COMMENT ON COLUMN ap.querytable.colltype IS '';
+COMMENT ON COLUMN ap.querytable.depenvt IS '';
+COMMENT ON COLUMN ap.querytable.geog IS '';
+COMMENT ON COLUMN ap.querytable.older IS '';
+COMMENT ON COLUMN ap.querytable.younger IS '';
+COMMENT ON COLUMN ap.querytable.agetype IS '';
+COMMENT ON COLUMN ap.querytable.publications IS '';
+COMMENT ON COLUMN ap.querytable.taxa IS '';
+COMMENT ON COLUMN ap.querytable.keywords IS '';
+COMMENT ON COLUMN ap.querytable.contacts IS '';
+COMMENT ON COLUMN ap.querytable.collectionunit IS '';
+COMMENT ON COLUMN ap.querytable.geopol IS '';
 
 --- Table indices
 CREATE INDEX altitudeidx ON ap.querytable USING btree (altitude);
@@ -60,3 +80,5 @@ CREATE INDEX idx_querytable_pagination ON ap.querytable USING btree (siteid, dat
 --- Non-foreign key constraints
 
 --- Foreign Key Restraints
+
+--- Triggers

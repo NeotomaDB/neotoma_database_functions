@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ap.summaries (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.summaries IS "";
+COMMENT ON TABLE ap.summaries IS '';
+COMMENT ON COLUMN ap.summaries.dbdate IS '';
+COMMENT ON COLUMN ap.summaries.sites IS '';
+COMMENT ON COLUMN ap.summaries.datasets IS '';
+COMMENT ON COLUMN ap.summaries.publications IS '';
+COMMENT ON COLUMN ap.summaries.observations IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX summaries_pkey ON ap.summaries USING btree (dbdate)

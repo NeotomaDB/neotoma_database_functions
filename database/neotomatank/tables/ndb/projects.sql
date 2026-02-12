@@ -20,7 +20,14 @@ CREATE TABLE IF NOT EXISTS ndb.projects (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.projects IS "";
+COMMENT ON TABLE ndb.projects IS '';
+COMMENT ON COLUMN ndb.projects.projectid IS '';
+COMMENT ON COLUMN ndb.projects.projectname IS '';
+COMMENT ON COLUMN ndb.projects.projectdescription IS '';
+COMMENT ON COLUMN ndb.projects.projectstartdate IS '';
+COMMENT ON COLUMN ndb.projects.projectenddate IS '';
+COMMENT ON COLUMN ndb.projects.recdatecreated IS '';
+COMMENT ON COLUMN ndb.projects.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX projects_pkey ON ndb.projects USING btree (projectid)
@@ -34,9 +41,9 @@ ALTER TABLE ndb.projects ADD CONSTRAINT projects_pkey PRIMARY KEY (projectid);
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_projects_createdate ON ndb.projects;
--- DROP TRIGGER IF EXISTS tr_projects_modifydate ON ndb.projects;
--- DROP TRIGGER IF EXISTS tr_projects_modifydate ON ndb.projects;
-CREATE TRIGGER tr_projects_createdate AFTER INSERT ON ndb.projects FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();
-CREATE TRIGGER tr_projects_modifydate AFTER INSERT ON ndb.projects FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_projects_modifydate AFTER UPDATE ON ndb.projects FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_projects_createdate ON ndb.projects;\n
+-- DROP TRIGGER IF EXISTS tr_projects_modifydate ON ndb.projects;\n
+-- DROP TRIGGER IF EXISTS tr_projects_modifydate ON ndb.projects;\n
+CREATE TRIGGER tr_projects_createdate AFTER INSERT ON ndb.projects FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();\n
+CREATE TRIGGER tr_projects_modifydate AFTER INSERT ON ndb.projects FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_projects_modifydate AFTER UPDATE ON ndb.projects FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

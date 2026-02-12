@@ -20,7 +20,14 @@ CREATE TABLE IF NOT EXISTS ndb.formtaxa (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.formtaxa IS "";
+COMMENT ON TABLE ndb.formtaxa IS '';
+COMMENT ON COLUMN ndb.formtaxa.formtaxonid IS '';
+COMMENT ON COLUMN ndb.formtaxa.taxonid IS '';
+COMMENT ON COLUMN ndb.formtaxa.affinityid IS '';
+COMMENT ON COLUMN ndb.formtaxa.publicationid IS '';
+COMMENT ON COLUMN ndb.formtaxa.systematicdescription IS '';
+COMMENT ON COLUMN ndb.formtaxa.recdatecreated IS '';
+COMMENT ON COLUMN ndb.formtaxa.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX formtaxa_pkey ON ndb.formtaxa USING btree (formtaxonid)
@@ -37,7 +44,7 @@ ALTER TABLE ndb.formtaxa ADD CONSTRAINT fk_formtaxa_taxa FOREIGN KEY (taxonid) R
 ALTER TABLE ndb.formtaxa ADD CONSTRAINT fk_formtaxa_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.formtaxa;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.formtaxa;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.formtaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.formtaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.formtaxa;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.formtaxa;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.formtaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.formtaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

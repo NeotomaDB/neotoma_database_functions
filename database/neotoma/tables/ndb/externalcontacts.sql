@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.externalcontacts Table definition
 
 -- Drop table
 
@@ -13,16 +13,19 @@ CREATE TABLE IF NOT EXISTS ndb.externalcontacts (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externalcontacts IS "";
+COMMENT ON TABLE ndb.externalcontacts IS '';
+COMMENT ON COLUMN ndb.externalcontacts.contactid IS '';
+COMMENT ON COLUMN ndb.externalcontacts.identifier IS '';
+COMMENT ON COLUMN ndb.externalcontacts.extdatabaseid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX externalcontacts_contactid_identifier_extdatabaseid_key ON ndb.externalcontacts USING btree (contactid, identifier, extdatabaseid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.externalcontacts DROP CONSTRAINT IF EXISTS externalcontacts_contactid_identifier_extdatabaseid_key;
+-- ALTER TABLE ndb.externalcontacts DROP CONSTRAINT IF EXISTS externalcontacts_contactid_identifier_extdatabaseid_key;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.externalcontacts ADD CONSTRAINT externalcontacts_contactid_identifier_extdatabaseid_key UNIQUE (contactid, identifier, extdatabaseid);
@@ -30,3 +33,5 @@ ALTER TABLE ndb.externalcontacts ADD CONSTRAINT externalcontacts_contactid_ident
 --- Foreign Key Restraints
 ALTER TABLE ndb.externalcontacts ADD CONSTRAINT externalcontacts_contactid_fkey FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid);
 ALTER TABLE ndb.externalcontacts ADD CONSTRAINT externalcontacts_extdatabaseid_fkey FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid);
+
+--- Triggers

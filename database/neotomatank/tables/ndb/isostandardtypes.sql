@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.isostandardtypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isostandardtypes IS "";
+COMMENT ON TABLE ndb.isostandardtypes IS '';
+COMMENT ON COLUMN ndb.isostandardtypes.isostandardtypeid IS '';
+COMMENT ON COLUMN ndb.isostandardtypes.isostandardtype IS '';
+COMMENT ON COLUMN ndb.isostandardtypes.isostandardmaterial IS '';
+COMMENT ON COLUMN ndb.isostandardtypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isostandardtypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isostandardtypes_pkey ON ndb.isostandardtypes USING btree (isostandardtypeid)
@@ -32,7 +37,7 @@ ALTER TABLE ndb.isostandardtypes ADD CONSTRAINT isostandardtypes_pkey PRIMARY KE
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostandardtypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostandardtypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isostandardtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isostandardtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostandardtypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostandardtypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isostandardtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isostandardtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

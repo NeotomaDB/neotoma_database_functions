@@ -20,7 +20,14 @@ CREATE TABLE IF NOT EXISTS ndb.variables (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.variables IS "This table lists Variables, which always consist of a Taxon and Units of measurement. Variables can also have Elements, Contexts, and Modifications. Thus, the same taxon with different measurement units (e.g. present/absent, NISP, MNI) are different Variables.";
+COMMENT ON TABLE ndb.variables IS 'This table lists Variables, which always consist of a Taxon and Units of measurement. Variables can also have Elements, Contexts, and Modifications. Thus, the same taxon with different measurement units (e.g. present/absent, NISP, MNI) are different Variables.';
+COMMENT ON COLUMN ndb.variables.variableid IS 'An arbitrary Variable identification number.';
+COMMENT ON COLUMN ndb.variables.taxonid IS 'Taxon identification number. Field links to the Taxa table.';
+COMMENT ON COLUMN ndb.variables.variableelementid IS 'Variable Element identification number. Field links to the VariableElements lookup table.';
+COMMENT ON COLUMN ndb.variables.variableunitsid IS 'Variable Units identification number. Field links to the VariableUnits lookup table.';
+COMMENT ON COLUMN ndb.variables.variablecontextid IS 'Variable Context identification number. Field links to the VariableContexts lookup table.';
+COMMENT ON COLUMN ndb.variables.recdatecreated IS '';
+COMMENT ON COLUMN ndb.variables.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX variables_pkey ON ndb.variables USING btree (variableid);
@@ -43,7 +50,7 @@ ALTER TABLE ndb.variables ADD CONSTRAINT fk_variables_variableelements FOREIGN K
 ALTER TABLE ndb.variables ADD CONSTRAINT fk_variables_variablecontexts FOREIGN KEY (variablecontextid) REFERENCES ndb.variablecontexts(variablecontextid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variables;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variables;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.variables FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.variables FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variables;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.variables;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.variables FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.variables FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

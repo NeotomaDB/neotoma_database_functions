@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.isosubstratetypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isosubstratetypes IS "";
+COMMENT ON TABLE ndb.isosubstratetypes IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.isosubstratetypeid IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.isosubstratetype IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isosubstratetypes_pkey ON ndb.isosubstratetypes USING btree (isosubstratetypeid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.isosubstratetypes ADD CONSTRAINT isosubstratetypes_pkey PRIMARY 
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosubstratetypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosubstratetypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosubstratetypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosubstratetypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosubstratetypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosubstratetypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosubstratetypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosubstratetypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

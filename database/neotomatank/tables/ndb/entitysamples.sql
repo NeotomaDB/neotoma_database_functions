@@ -21,7 +21,15 @@ CREATE TABLE IF NOT EXISTS ndb.entitysamples (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitysamples IS "";
+COMMENT ON TABLE ndb.entitysamples IS '';
+COMMENT ON COLUMN ndb.entitysamples.entityid IS '';
+COMMENT ON COLUMN ndb.entitysamples.organics IS '';
+COMMENT ON COLUMN ndb.entitysamples.fluid_inclusions IS '';
+COMMENT ON COLUMN ndb.entitysamples.mineralogy_petrology_fabric IS '';
+COMMENT ON COLUMN ndb.entitysamples.clumped_isotopes IS '';
+COMMENT ON COLUMN ndb.entitysamples.noble_gas_temperatures IS '';
+COMMENT ON COLUMN ndb.entitysamples.c14 IS '';
+COMMENT ON COLUMN ndb.entitysamples.odl IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX entitysamples_pkey ON ndb.entitysamples USING btree (entityid)

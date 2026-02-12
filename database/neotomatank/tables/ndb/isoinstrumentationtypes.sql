@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.isoinstrumentationtypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isoinstrumentationtypes IS "";
+COMMENT ON TABLE ndb.isoinstrumentationtypes IS '';
+COMMENT ON COLUMN ndb.isoinstrumentationtypes.isoinstrumentationtypeid IS '';
+COMMENT ON COLUMN ndb.isoinstrumentationtypes.isoinstrumentationtype IS '';
+COMMENT ON COLUMN ndb.isoinstrumentationtypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isoinstrumentationtypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isoinstrumentationtypes_pkey ON ndb.isoinstrumentationtypes USING btree (isoinstrumentationtypeid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.isoinstrumentationtypes ADD CONSTRAINT isoinstrumentationtypes_p
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentationtypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentationtypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isoinstrumentationtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isoinstrumentationtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentationtypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentationtypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isoinstrumentationtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isoinstrumentationtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -24,7 +24,18 @@ CREATE TABLE IF NOT EXISTS ndb.synonymy (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.synonymy IS "The synonymy table links dataset-level synonymies to particular publications or contacts.  This allows users to maintain the original taxonomic information within a table, but tie it to newer and more authoritative taxonomic information.";
+COMMENT ON TABLE ndb.synonymy IS 'The synonymy table links dataset-level synonymies to particular publications or contacts.  This allows users to maintain the original taxonomic information within a table, but tie it to newer and more authoritative taxonomic information.';
+COMMENT ON COLUMN ndb.synonymy.synonymyid IS '';
+COMMENT ON COLUMN ndb.synonymy.datasetid IS 'DatasetID from the Datasets table';
+COMMENT ON COLUMN ndb.synonymy.taxonid IS '';
+COMMENT ON COLUMN ndb.synonymy.reftaxonid IS '';
+COMMENT ON COLUMN ndb.synonymy.fromcontributor IS '';
+COMMENT ON COLUMN ndb.synonymy.publicationid IS '';
+COMMENT ON COLUMN ndb.synonymy.notes IS '';
+COMMENT ON COLUMN ndb.synonymy.contactid IS '';
+COMMENT ON COLUMN ndb.synonymy.datesynonymized IS '';
+COMMENT ON COLUMN ndb.synonymy.recdatecreated IS '';
+COMMENT ON COLUMN ndb.synonymy.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX synonymy_pkey ON ndb.synonymy USING btree (synonymyid)
@@ -43,7 +54,7 @@ ALTER TABLE ndb.synonymy ADD CONSTRAINT fk_synonymy_taxa1 FOREIGN KEY (taxonid) 
 ALTER TABLE ndb.synonymy ADD CONSTRAINT fk_synonymy_taxa2 FOREIGN KEY (reftaxonid) REFERENCES ndb.taxa(taxonid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonymy;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonymy;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.synonymy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.synonymy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonymy;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.synonymy;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.synonymy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.synonymy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

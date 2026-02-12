@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.geochronpublications (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.geochronpublications IS "Publications in which Geochronologic measurements are reported. Many older radiocarbon dates are reported in the journal Radiocarbon. Dates may be reported in multiple publications. The “publication” could be a database such as the online Canadian Archaeological Radiocarbon Database.";
+COMMENT ON TABLE ndb.geochronpublications IS 'Publications in which Geochronologic measurements are reported. Many older radiocarbon dates are reported in the journal Radiocarbon. Dates may be reported in multiple publications. The “publication” could be a database such as the online Canadian Archaeological Radiocarbon Database.';
+COMMENT ON COLUMN ndb.geochronpublications.geochronid IS 'Geochronologic identification number. Field links to the Geochronology table.';
+COMMENT ON COLUMN ndb.geochronpublications.publicationid IS 'Publication identification number. Field links to the Publications table.';
+COMMENT ON COLUMN ndb.geochronpublications.recdatecreated IS '';
+COMMENT ON COLUMN ndb.geochronpublications.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX geochronpublications_pkey ON ndb.geochronpublications USING btree (geochronid, publicationid);
@@ -35,7 +39,7 @@ ALTER TABLE ndb.geochronpublications ADD CONSTRAINT fk_geochronpublications_publ
 ALTER TABLE ndb.geochronpublications ADD CONSTRAINT fk_geochronpublications_geochronology FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochronpublications;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochronpublications;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.geochronpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.geochronpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochronpublications;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochronpublications;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.geochronpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.geochronpublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

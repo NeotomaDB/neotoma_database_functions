@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ap.pollensumgroups (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.pollensumgroups IS "";
+COMMENT ON TABLE ap.pollensumgroups IS '';
+COMMENT ON COLUMN ap.pollensumgroups.recid IS '';
+COMMENT ON COLUMN ap.pollensumgroups.ecolgroupid IS '';
+COMMENT ON COLUMN ap.pollensumgroups.sumgroupid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX pollensumgroups_pkey ON ap.pollensumgroups USING btree (recid)

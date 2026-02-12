@@ -22,7 +22,16 @@ CREATE TABLE IF NOT EXISTS ndb.chroncontrolranks (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.chroncontrolranks IS "";
+COMMENT ON TABLE ndb.chroncontrolranks IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.chroncontrolrankid IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.chroncontrolid IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.accuracyrankid IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.accuracydirectionid IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.accuracydistributionid IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.precisionrankid IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.outlier IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.recdatecreated IS '';
+COMMENT ON COLUMN ndb.chroncontrolranks.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX chroncontrolranks_pkey ON ndb.chroncontrolranks USING btree (chroncontrolrankid)
@@ -41,7 +50,7 @@ ALTER TABLE ndb.chroncontrolranks ADD CONSTRAINT fk_chroncontrolranks_chroncontr
 ALTER TABLE ndb.chroncontrolranks ADD CONSTRAINT fk_chroncontrolranks_chroncontrols FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolranks;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolranks;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.chroncontrolranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.chroncontrolranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolranks;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolranks;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.chroncontrolranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.chroncontrolranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

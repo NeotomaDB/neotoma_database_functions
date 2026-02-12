@@ -20,7 +20,14 @@ CREATE TABLE IF NOT EXISTS ndb.datataxonnotes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datataxonnotes IS "";
+COMMENT ON TABLE ndb.datataxonnotes IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.datataxonnotesid IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.dataid IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.contactid IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.date IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.notes IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datataxonnotes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datataxonnotes_pkey ON ndb.datataxonnotes USING btree (datataxonnotesid)
@@ -36,7 +43,7 @@ ALTER TABLE ndb.datataxonnotes ADD CONSTRAINT fk_datataxonnotes_contacts FOREIGN
 ALTER TABLE ndb.datataxonnotes ADD CONSTRAINT fk_datataxonnotes_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datataxonnotes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datataxonnotes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datataxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datataxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datataxonnotes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datataxonnotes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datataxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datataxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

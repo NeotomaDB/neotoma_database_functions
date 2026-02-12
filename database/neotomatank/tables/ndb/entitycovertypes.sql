@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.entitycovertypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitycovertypes IS "";
+COMMENT ON TABLE ndb.entitycovertypes IS '';
+COMMENT ON COLUMN ndb.entitycovertypes.entitycoverid IS '';
+COMMENT ON COLUMN ndb.entitycovertypes.entitycovertype IS '';
+COMMENT ON COLUMN ndb.entitycovertypes.entitycovernotes IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX entitycovertypes_pkey ON ndb.entitycovertypes USING btree (entitycoverid)

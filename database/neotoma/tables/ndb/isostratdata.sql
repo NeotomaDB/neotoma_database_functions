@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.isostratdata Table definition
 
 -- Drop table
 
@@ -16,16 +16,22 @@ CREATE TABLE IF NOT EXISTS ndb.isostratdata (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isostratdata IS "";
+COMMENT ON TABLE ndb.isostratdata IS '';
+COMMENT ON COLUMN ndb.isostratdata.dataid IS '';
+COMMENT ON COLUMN ndb.isostratdata.sd IS '';
+COMMENT ON COLUMN ndb.isostratdata.taxonid IS '';
+COMMENT ON COLUMN ndb.isostratdata.elementtypeid IS '';
+COMMENT ON COLUMN ndb.isostratdata.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isostratdata.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isostratdata_pkey ON ndb.isostratdata USING btree (dataid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.isostratdata DROP CONSTRAINT IF EXISTS isostratdata_pkey;
+-- ALTER TABLE ndb.isostratdata DROP CONSTRAINT IF EXISTS isostratdata_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.isostratdata ADD CONSTRAINT isostratdata_pkey PRIMARY KEY (dataid);
@@ -34,3 +40,9 @@ ALTER TABLE ndb.isostratdata ADD CONSTRAINT isostratdata_pkey PRIMARY KEY (datai
 ALTER TABLE ndb.isostratdata ADD CONSTRAINT fk_isostratdata_elementtypes FOREIGN KEY (elementtypeid) REFERENCES ndb.elementtypes(elementtypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.isostratdata ADD CONSTRAINT fk_isostratdata_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.isostratdata ADD CONSTRAINT fk_isostratdata_taxa FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid);
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostratdata;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostratdata;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isostratdata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isostratdata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

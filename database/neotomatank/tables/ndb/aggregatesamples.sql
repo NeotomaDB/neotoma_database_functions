@@ -17,7 +17,12 @@ CREATE TABLE IF NOT EXISTS ndb.aggregatesamples (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.aggregatesamples IS "This table stores the samples in Aggregate Datasets.";
+COMMENT ON TABLE ndb.aggregatesamples IS 'This table stores the samples in Aggregate Datasets.';
+COMMENT ON COLUMN ndb.aggregatesamples.aggregatedatasetid IS 'An arbitrary Aggregate Dataset identification number. Field links to the AggregateDatasets table.
+';
+COMMENT ON COLUMN ndb.aggregatesamples.sampleid IS 'Sample ID number. Field links to the Samples table.';
+COMMENT ON COLUMN ndb.aggregatesamples.recdatecreated IS '';
+COMMENT ON COLUMN ndb.aggregatesamples.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX aggregatesamples_pkey ON ndb.aggregatesamples USING btree (aggregatedatasetid, sampleid)
@@ -33,7 +38,7 @@ ALTER TABLE ndb.aggregatesamples ADD CONSTRAINT fk_aggregatesamples_samples FORE
 ALTER TABLE ndb.aggregatesamples ADD CONSTRAINT fk_aggregatesamples_aggregatedatasets FOREIGN KEY (aggregatedatasetid) REFERENCES ndb.aggregatedatasets(aggregatedatasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesamples;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesamples;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.aggregatesamples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.aggregatesamples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesamples;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesamples;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.aggregatesamples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.aggregatesamples FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

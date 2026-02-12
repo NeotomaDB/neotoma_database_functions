@@ -21,7 +21,15 @@ CREATE TABLE IF NOT EXISTS ndb.sampleages (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.sampleages IS "This table stores sample ages. Ages are assigned to a Chronology. Because there may be more than one Chronology for a Collection Unit, samples may be assigned different ages for different Chronologies. A simple example is one sample age in radiocarbon years and another in calibrated radiocarbon years. The age units are an attribute of the Chronology.";
+COMMENT ON TABLE ndb.sampleages IS 'This table stores sample ages. Ages are assigned to a Chronology. Because there may be more than one Chronology for a Collection Unit, samples may be assigned different ages for different Chronologies. A simple example is one sample age in radiocarbon years and another in calibrated radiocarbon years. The age units are an attribute of the Chronology.';
+COMMENT ON COLUMN ndb.sampleages.sampleageid IS 'An arbitrary Sample Age identification number.';
+COMMENT ON COLUMN ndb.sampleages.sampleid IS 'Sample identification number. Field links to the Samples table.';
+COMMENT ON COLUMN ndb.sampleages.chronologyid IS 'Chronology identification number. Field links to the Chronologies table.';
+COMMENT ON COLUMN ndb.sampleages.age IS 'Age of the sample';
+COMMENT ON COLUMN ndb.sampleages.ageyounger IS 'Younger error estimate of the age. The definition of this estimate is an attribute of the Chronology. Many ages do not have explicit error estimates assigned.';
+COMMENT ON COLUMN ndb.sampleages.ageolder IS 'Older error estimate of the age.';
+COMMENT ON COLUMN ndb.sampleages.recdatecreated IS '';
+COMMENT ON COLUMN ndb.sampleages.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX sampleages_pkey ON ndb.sampleages USING btree (sampleageid);
@@ -42,7 +50,7 @@ ALTER TABLE ndb.sampleages ADD CONSTRAINT fk_sampleages_samples FOREIGN KEY (sam
 ALTER TABLE ndb.sampleages ADD CONSTRAINT fk_sampleages_chronologies FOREIGN KEY (chronologyid) REFERENCES ndb.chronologies(chronologyid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleages;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleages;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.sampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.sampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleages;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleages;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.sampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.sampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

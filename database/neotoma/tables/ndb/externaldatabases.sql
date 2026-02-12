@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.externaldatabases Table definition
 
 -- Drop table
 
@@ -16,18 +16,30 @@ CREATE TABLE IF NOT EXISTS ndb.externaldatabases (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externaldatabases IS "";
+COMMENT ON TABLE ndb.externaldatabases IS '';
+COMMENT ON COLUMN ndb.externaldatabases.extdatabaseid IS '';
+COMMENT ON COLUMN ndb.externaldatabases.extdatabasename IS '';
+COMMENT ON COLUMN ndb.externaldatabases.url IS '';
+COMMENT ON COLUMN ndb.externaldatabases.recdatecreated IS '';
+COMMENT ON COLUMN ndb.externaldatabases.recdatemodified IS '';
+COMMENT ON COLUMN ndb.externaldatabases.urlmask IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX externaldatabases_pkey ON ndb.externaldatabases USING btree (extdatabaseid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.externaldatabases DROP CONSTRAINT IF EXISTS externaldatabases_pkey;
+-- ALTER TABLE ndb.externaldatabases DROP CONSTRAINT IF EXISTS externaldatabases_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.externaldatabases ADD CONSTRAINT externaldatabases_pkey PRIMARY KEY (extdatabaseid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externaldatabases;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externaldatabases;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.externaldatabases FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.externaldatabases FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.datauncertainties (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datauncertainties IS "";
+COMMENT ON TABLE ndb.datauncertainties IS '';
+COMMENT ON COLUMN ndb.datauncertainties.dataid IS '';
+COMMENT ON COLUMN ndb.datauncertainties.uncertaintyvalue IS '';
+COMMENT ON COLUMN ndb.datauncertainties.uncertaintyunitid IS '';
+COMMENT ON COLUMN ndb.datauncertainties.uncertaintybasisid IS '';
+COMMENT ON COLUMN ndb.datauncertainties.notes IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX uniqueentryvalue ON ndb.datauncertainties USING btree (dataid, uncertaintyunitid, uncertaintybasisid)

@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.contactreferences Table definition
 
 -- Drop table
 
@@ -13,10 +13,13 @@ CREATE TABLE IF NOT EXISTS ndb.contactreferences (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.contactreferences IS "";
+COMMENT ON TABLE ndb.contactreferences IS '';
+COMMENT ON COLUMN ndb.contactreferences.contactid IS '';
+COMMENT ON COLUMN ndb.contactreferences.exdatabaseid IS '';
+COMMENT ON COLUMN ndb.contactreferences.identifier IS '';
 
 --- Table indices
 
@@ -28,3 +31,5 @@ COMMENT ON TABLE ndb.contactreferences IS "";
 --- Foreign Key Restraints
 ALTER TABLE ndb.contactreferences ADD CONSTRAINT contactreferences_exdatabaseid_fkey FOREIGN KEY (exdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid);
 ALTER TABLE ndb.contactreferences ADD CONSTRAINT contactreferences_contactid_fkey FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid);
+
+--- Triggers

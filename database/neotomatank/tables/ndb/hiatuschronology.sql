@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.hiatuschronology (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.hiatuschronology IS "";
+COMMENT ON TABLE ndb.hiatuschronology IS '';
+COMMENT ON COLUMN ndb.hiatuschronology.hiatusid IS '';
+COMMENT ON COLUMN ndb.hiatuschronology.chronologyid IS '';
+COMMENT ON COLUMN ndb.hiatuschronology.hiatuslength IS '';
+COMMENT ON COLUMN ndb.hiatuschronology.hiatusuncertainty IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX hiatuschronology_hiatusid_chronologyid_key ON ndb.hiatuschronology USING btree (hiatusid, chronologyid)

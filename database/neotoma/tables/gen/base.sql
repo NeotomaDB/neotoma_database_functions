@@ -1,4 +1,4 @@
--- gen definition
+-- gen.base Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS gen.base (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE gen.base IS "";
+COMMENT ON TABLE gen.base IS '';
+COMMENT ON COLUMN gen.base.sampleid IS '';
+COMMENT ON COLUMN gen.base.datasetid IS '';
+COMMENT ON COLUMN gen.base.occurid IS '';
+COMMENT ON COLUMN gen.base.taxonid IS '';
 
 --- Table indices
 
@@ -27,3 +31,5 @@ COMMENT ON TABLE gen.base IS "";
 --- Non-foreign key constraints
 
 --- Foreign Key Restraints
+
+--- Triggers

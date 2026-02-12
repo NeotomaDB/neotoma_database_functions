@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.speleothemcollectionunits Table definition
 
 -- Drop table
 
@@ -13,16 +13,19 @@ CREATE TABLE IF NOT EXISTS ndb.speleothemcollectionunits (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.speleothemcollectionunits IS "";
+COMMENT ON TABLE ndb.speleothemcollectionunits IS '';
+COMMENT ON COLUMN ndb.speleothemcollectionunits.entityid IS '';
+COMMENT ON COLUMN ndb.speleothemcollectionunits.collectionunitid IS '';
+COMMENT ON COLUMN ndb.speleothemcollectionunits.persistid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX unique_collectionunitid ON ndb.speleothemcollectionunits USING btree (collectionunitid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.speleothemcollectionunits DROP CONSTRAINT IF EXISTS unique_collectionunitid;
+-- ALTER TABLE ndb.speleothemcollectionunits DROP CONSTRAINT IF EXISTS unique_collectionunitid;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.speleothemcollectionunits ADD CONSTRAINT unique_collectionunitid UNIQUE (collectionunitid);
@@ -30,3 +33,5 @@ ALTER TABLE ndb.speleothemcollectionunits ADD CONSTRAINT unique_collectionunitid
 --- Foreign Key Restraints
 ALTER TABLE ndb.speleothemcollectionunits ADD CONSTRAINT speleothemcollectionunits_collectionunitid_fkey FOREIGN KEY (collectionunitid) REFERENCES ndb.collectionunits(collectionunitid) ON DELETE CASCADE;
 ALTER TABLE ndb.speleothemcollectionunits ADD CONSTRAINT speleothemcollectionunits_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE;
+
+--- Triggers

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.vegetationcovertypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.vegetationcovertypes IS "";
+COMMENT ON TABLE ndb.vegetationcovertypes IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationcovertypeid IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationcovertype IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationcovernotes IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationpublicationid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX vegetationcovertypes_pkey ON ndb.vegetationcovertypes USING btree (vegetationcovertypeid);

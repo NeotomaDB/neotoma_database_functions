@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.isosampleintrosystemtypes Table definition
 
 -- Drop table
 
@@ -14,18 +14,28 @@ CREATE TABLE IF NOT EXISTS ndb.isosampleintrosystemtypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isosampleintrosystemtypes IS "";
+COMMENT ON TABLE ndb.isosampleintrosystemtypes IS '';
+COMMENT ON COLUMN ndb.isosampleintrosystemtypes.isosampleintrosystemtypeid IS '';
+COMMENT ON COLUMN ndb.isosampleintrosystemtypes.isosampleintrosystemtype IS '';
+COMMENT ON COLUMN ndb.isosampleintrosystemtypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isosampleintrosystemtypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isosampleintrosystemtypes_pkey ON ndb.isosampleintrosystemtypes USING btree (isosampleintrosystemtypeid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.isosampleintrosystemtypes DROP CONSTRAINT IF EXISTS isosampleintrosystemtypes_pkey;
+-- ALTER TABLE ndb.isosampleintrosystemtypes DROP CONSTRAINT IF EXISTS isosampleintrosystemtypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.isosampleintrosystemtypes ADD CONSTRAINT isosampleintrosystemtypes_pkey PRIMARY KEY (isosampleintrosystemtypeid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosampleintrosystemtypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosampleintrosystemtypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosampleintrosystemtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosampleintrosystemtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ap.faunranges (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.faunranges IS "";
+COMMENT ON TABLE ap.faunranges IS '';
+COMMENT ON COLUMN ap.faunranges.gid IS '';
+COMMENT ON COLUMN ap.faunranges.spid IS '';
+COMMENT ON COLUMN ap.faunranges.sciname IS '';
+COMMENT ON COLUMN ap.faunranges.the_geom IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX faunranges_pkey ON ap.faunranges USING btree (gid);

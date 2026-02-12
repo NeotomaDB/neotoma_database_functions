@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.isomaterialanalyzedtypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isomaterialanalyzedtypes IS "";
+COMMENT ON TABLE ndb.isomaterialanalyzedtypes IS '';
+COMMENT ON COLUMN ndb.isomaterialanalyzedtypes.isomatanaltypeid IS '';
+COMMENT ON COLUMN ndb.isomaterialanalyzedtypes.isomaterialanalyzedtype IS '';
+COMMENT ON COLUMN ndb.isomaterialanalyzedtypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isomaterialanalyzedtypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isomaterialanalyzedtypes_pkey ON ndb.isomaterialanalyzedtypes USING btree (isomatanaltypeid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.isomaterialanalyzedtypes ADD CONSTRAINT isomaterialanalyzedtypes
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isomaterialanalyzedtypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isomaterialanalyzedtypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isomaterialanalyzedtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isomaterialanalyzedtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isomaterialanalyzedtypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isomaterialanalyzedtypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isomaterialanalyzedtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isomaterialanalyzedtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

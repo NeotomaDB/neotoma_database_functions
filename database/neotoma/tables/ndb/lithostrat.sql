@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.lithostrat Table definition
 
 -- Drop table
 
@@ -16,16 +16,22 @@ CREATE TABLE IF NOT EXISTS ndb.lithostrat (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.lithostrat IS "";
+COMMENT ON TABLE ndb.lithostrat IS '';
+COMMENT ON COLUMN ndb.lithostrat.lithostratid IS '';
+COMMENT ON COLUMN ndb.lithostrat.lithostratunitid IS '';
+COMMENT ON COLUMN ndb.lithostrat.lithostratname IS '';
+COMMENT ON COLUMN ndb.lithostrat.higherlithostratid IS '';
+COMMENT ON COLUMN ndb.lithostrat.recdatecreated IS '';
+COMMENT ON COLUMN ndb.lithostrat.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX lithostrat_pkey ON ndb.lithostrat USING btree (lithostratid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.lithostrat DROP CONSTRAINT IF EXISTS lithostrat_pkey;
+-- ALTER TABLE ndb.lithostrat DROP CONSTRAINT IF EXISTS lithostrat_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.lithostrat ADD CONSTRAINT lithostrat_pkey PRIMARY KEY (lithostratid);
@@ -33,3 +39,9 @@ ALTER TABLE ndb.lithostrat ADD CONSTRAINT lithostrat_pkey PRIMARY KEY (lithostra
 --- Foreign Key Restraints
 ALTER TABLE ndb.lithostrat ADD CONSTRAINT fk_higherlithostratid FOREIGN KEY (higherlithostratid) REFERENCES ndb.lithostrat(lithostratid);
 ALTER TABLE ndb.lithostrat ADD CONSTRAINT fk_lithostratunits_lithostrattypes FOREIGN KEY (lithostratunitid) REFERENCES ndb.lithostratunits(lithostratunitid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.lithostrat;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.lithostrat;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.lithostrat FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.lithostrat FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

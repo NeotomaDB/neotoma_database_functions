@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.negativecontroltypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.negativecontroltypes IS "";
+COMMENT ON TABLE ndb.negativecontroltypes IS '';
+COMMENT ON COLUMN ndb.negativecontroltypes.negativecontroltypeid IS '';
+COMMENT ON COLUMN ndb.negativecontroltypes.negativecontroltype IS '';
+COMMENT ON COLUMN ndb.negativecontroltypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.negativecontroltypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX negativecontroltypes_pkey ON ndb.negativecontroltypes USING btree (negativecontroltypeid)
@@ -31,9 +35,9 @@ ALTER TABLE ndb.negativecontroltypes ADD CONSTRAINT negativecontroltypes_pkey PR
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_ncontrols_createdate ON ndb.negativecontroltypes;
--- DROP TRIGGER IF EXISTS tr_ncontrols_modifydate ON ndb.negativecontroltypes;
--- DROP TRIGGER IF EXISTS tr_ncontrols_modifydate ON ndb.negativecontroltypes;
-CREATE TRIGGER tr_ncontrols_createdate BEFORE INSERT ON ndb.negativecontroltypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();
-CREATE TRIGGER tr_ncontrols_modifydate BEFORE INSERT ON ndb.negativecontroltypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_ncontrols_modifydate BEFORE UPDATE ON ndb.negativecontroltypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_ncontrols_createdate ON ndb.negativecontroltypes;\n
+-- DROP TRIGGER IF EXISTS tr_ncontrols_modifydate ON ndb.negativecontroltypes;\n
+-- DROP TRIGGER IF EXISTS tr_ncontrols_modifydate ON ndb.negativecontroltypes;\n
+CREATE TRIGGER tr_ncontrols_createdate BEFORE INSERT ON ndb.negativecontroltypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatecreated();\n
+CREATE TRIGGER tr_ncontrols_modifydate BEFORE INSERT ON ndb.negativecontroltypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_ncontrols_modifydate BEFORE UPDATE ON ndb.negativecontroltypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

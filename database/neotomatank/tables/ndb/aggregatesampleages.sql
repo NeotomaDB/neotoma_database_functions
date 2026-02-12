@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.aggregatesampleages (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.aggregatesampleages IS "This table stores the links to the ages of samples in an Aggregate Dataset. The table is necessary because samples may be from Collection Units with multiple chronologies, and this table stores the links to the sample ages desired for the Aggregate Dataset.";
+COMMENT ON TABLE ndb.aggregatesampleages IS 'This table stores the links to the ages of samples in an Aggregate Dataset. The table is necessary because samples may be from Collection Units with multiple chronologies, and this table stores the links to the sample ages desired for the Aggregate Dataset.';
+COMMENT ON COLUMN ndb.aggregatesampleages.aggregatedatasetid IS 'Aggregate Dataset identification number. Field links to the AggregateDatasets table.';
+COMMENT ON COLUMN ndb.aggregatesampleages.aggregatechronid IS 'Aggregate Chronology identification number Field links to the AggregateChronologies table.';
+COMMENT ON COLUMN ndb.aggregatesampleages.sampleageid IS 'Sample Age ID number. Field links to the SampleAges table.';
+COMMENT ON COLUMN ndb.aggregatesampleages.recdatecreated IS '';
+COMMENT ON COLUMN ndb.aggregatesampleages.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX aggregatesampleages_pkey ON ndb.aggregatesampleages USING btree (aggregatedatasetid, aggregatechronid, sampleageid)
@@ -35,7 +40,7 @@ ALTER TABLE ndb.aggregatesampleages ADD CONSTRAINT fk_aggregatesampleages_aggreg
 ALTER TABLE ndb.aggregatesampleages ADD CONSTRAINT fk_aggregatesampleages_aggregatedatasets FOREIGN KEY (aggregatedatasetid) REFERENCES ndb.aggregatedatasets(aggregatedatasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesampleages;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesampleages;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.aggregatesampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.aggregatesampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesampleages;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregatesampleages;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.aggregatesampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.aggregatesampleages FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.eventtypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.eventtypes IS "";
+COMMENT ON TABLE ndb.eventtypes IS '';
+COMMENT ON COLUMN ndb.eventtypes.eventtypeid IS '';
+COMMENT ON COLUMN ndb.eventtypes.eventtype IS '';
+COMMENT ON COLUMN ndb.eventtypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.eventtypes.recdatemodified IS '';
+COMMENT ON COLUMN ndb.eventtypes.chroncontroltypeid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX eventtypes_pkey ON ndb.eventtypes USING btree (eventtypeid)
@@ -33,7 +38,7 @@ ALTER TABLE ndb.eventtypes ADD CONSTRAINT eventtypes_pkey PRIMARY KEY (eventtype
 ALTER TABLE ndb.eventtypes ADD CONSTRAINT evt_cct FOREIGN KEY (chroncontroltypeid) REFERENCES ndb.chroncontroltypes(chroncontroltypeid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventtypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventtypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.eventtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.eventtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventtypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventtypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.eventtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.eventtypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

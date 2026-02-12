@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.taphonomicsystems (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.taphonomicsystems IS "";
+COMMENT ON TABLE ndb.taphonomicsystems IS '';
+COMMENT ON COLUMN ndb.taphonomicsystems.taphonomicsystemid IS '';
+COMMENT ON COLUMN ndb.taphonomicsystems.taphonomicsystem IS '';
+COMMENT ON COLUMN ndb.taphonomicsystems.notes IS '';
+COMMENT ON COLUMN ndb.taphonomicsystems.recdatecreated IS '';
+COMMENT ON COLUMN ndb.taphonomicsystems.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX taphonomicsystems_pkey ON ndb.taphonomicsystems USING btree (taphonomicsystemid)
@@ -32,7 +37,7 @@ ALTER TABLE ndb.taphonomicsystems ADD CONSTRAINT taphonomicsystems_pkey PRIMARY 
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.taphonomicsystems;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.taphonomicsystems;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.taphonomicsystems FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.taphonomicsystems FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.taphonomicsystems;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.taphonomicsystems;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.taphonomicsystems FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.taphonomicsystems FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

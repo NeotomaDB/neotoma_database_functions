@@ -8,7 +8,8 @@
 | - | ----------------- | ------- | ------- | -------- | -------- | --------------------------------------------------------------- | ------- |
 | 1 | entityid          | integer |         | true     |          | [ndb.speleothems](ndb.speleothems.md)                           |         |
 | 2 | entitystatusid    | integer |         | true     |          | [ndb.speleothementitystatuses](ndb.speleothementitystatuses.md) |         |
-| 3 | referenceentityid | integer |         | true     |          | [ndb.speleothems](ndb.speleothems.md)                           |         |
+| 3 | notes             | text    |         | true     |          |                                                                 |         |
+| 4 | referenceentityid | integer |         | true     |          | [ndb.speleothems](ndb.speleothems.md)                           |         |
 
 ## Constraints
 

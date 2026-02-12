@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.uncertaintybases (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.uncertaintybases IS "";
+COMMENT ON TABLE ndb.uncertaintybases IS '';
+COMMENT ON COLUMN ndb.uncertaintybases.uncertaintybasisid IS '';
+COMMENT ON COLUMN ndb.uncertaintybases.uncertaintybasis IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX uncertaintybases_pkey ON ndb.uncertaintybases USING btree (uncertaintybasisid);

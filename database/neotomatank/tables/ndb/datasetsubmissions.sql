@@ -22,7 +22,16 @@ CREATE TABLE IF NOT EXISTS ndb.datasetsubmissions (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasetsubmissions IS "Submissions to the database are of Datasets. Submissions may be original submissions, resubmissions, compilations from other databases, or recompilations. See the description of the DatasetSubmissionTypes table.";
+COMMENT ON TABLE ndb.datasetsubmissions IS 'Submissions to the database are of Datasets. Submissions may be original submissions, resubmissions, compilations from other databases, or recompilations. See the description of the DatasetSubmissionTypes table.';
+COMMENT ON COLUMN ndb.datasetsubmissions.submissionid IS 'An arbitrary submission identification number.';
+COMMENT ON COLUMN ndb.datasetsubmissions.datasetid IS 'Dataset identification number. Field links to the Datasets table. Datasets may occur multiple times in this table (e.g. once for the original compilation into a different database and a second time for the recompilation into Neotoma).';
+COMMENT ON COLUMN ndb.datasetsubmissions.databaseid IS '';
+COMMENT ON COLUMN ndb.datasetsubmissions.contactid IS 'Contact identification number. Field links to the Contacts table. The Contact is the person who submitted, resubmitted, compiled, or recompiled the data. This person is not necessarily the Dataset PI; it is the person who submitted the data or compiled the data from the literature.';
+COMMENT ON COLUMN ndb.datasetsubmissions.submissiontypeid IS 'Submission Type identification number. Field links to the DatasetSubmissionsType table.';
+COMMENT ON COLUMN ndb.datasetsubmissions.submissiondate IS 'Date of the submission, resubmission, compilation, or recompilation.';
+COMMENT ON COLUMN ndb.datasetsubmissions.notes IS 'Free form notes or comments about the submission.';
+COMMENT ON COLUMN ndb.datasetsubmissions.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasetsubmissions.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datasetsubmissions_pkey ON ndb.datasetsubmissions USING btree (submissionid);
@@ -42,7 +51,7 @@ ALTER TABLE ndb.datasetsubmissions ADD CONSTRAINT fk_datasetsubmissions_contacts
 ALTER TABLE ndb.datasetsubmissions ADD CONSTRAINT fk_datasetsubmissions_datasets FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetsubmissions;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetsubmissions;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetsubmissions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetsubmissions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetsubmissions;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasetsubmissions;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasetsubmissions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasetsubmissions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

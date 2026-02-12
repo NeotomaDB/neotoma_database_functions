@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.embargo Table definition
 
 -- Drop table
 
@@ -13,18 +13,23 @@ CREATE TABLE IF NOT EXISTS ndb.embargo (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.embargo IS "";
+COMMENT ON TABLE ndb.embargo IS '';
+COMMENT ON COLUMN ndb.embargo.embargoid IS '';
+COMMENT ON COLUMN ndb.embargo.embargodate IS '';
+COMMENT ON COLUMN ndb.embargo.embargopw IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX embargo_pkey ON ndb.embargo USING btree (embargoid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.embargo DROP CONSTRAINT IF EXISTS embargo_pkey;
+-- ALTER TABLE ndb.embargo DROP CONSTRAINT IF EXISTS embargo_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.embargo ADD CONSTRAINT embargo_pkey PRIMARY KEY (embargoid);
 
 --- Foreign Key Restraints
+
+--- Triggers

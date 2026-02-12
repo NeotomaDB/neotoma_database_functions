@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.aggregateordertypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.aggregateordertypes IS "Lookup table for Aggregate Order Types. Table is referenced by the AggregateDatasets table.";
+COMMENT ON TABLE ndb.aggregateordertypes IS 'Lookup table for Aggregate Order Types. Table is referenced by the AggregateDatasets table.';
+COMMENT ON COLUMN ndb.aggregateordertypes.aggregateordertypeid IS 'An arbitrary Aggregate Order Type identification number.';
+COMMENT ON COLUMN ndb.aggregateordertypes.aggregateordertype IS 'The Aggregate Order Type.';
+COMMENT ON COLUMN ndb.aggregateordertypes.notes IS 'Free form notes or comments about the Aggregate Order Type.';
+COMMENT ON COLUMN ndb.aggregateordertypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.aggregateordertypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX aggregateordertypes_pkey ON ndb.aggregateordertypes USING btree (aggregateordertypeid)
@@ -32,7 +37,7 @@ ALTER TABLE ndb.aggregateordertypes ADD CONSTRAINT aggregateordertypes_pkey PRIM
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregateordertypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregateordertypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.aggregateordertypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.aggregateordertypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregateordertypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.aggregateordertypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.aggregateordertypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.aggregateordertypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

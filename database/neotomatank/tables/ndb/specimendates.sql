@@ -23,7 +23,17 @@ CREATE TABLE IF NOT EXISTS ndb.specimendates (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimendates IS "This table enables queries for dated specimens of individual taxa. Although the MaterialDated field in the Geochronology table may list the taxa dated, this protocol is not enforced, and the field is not linked to the taxa table.";
+COMMENT ON TABLE ndb.specimendates IS 'This table enables queries for dated specimens of individual taxa. Although the MaterialDated field in the Geochronology table may list the taxa dated, this protocol is not enforced, and the field is not linked to the taxa table.';
+COMMENT ON COLUMN ndb.specimendates.specimendateid IS 'An arbitrary specimen date ID';
+COMMENT ON COLUMN ndb.specimendates.geochronid IS 'Geochronologic identification number. Field links to the Geochronology table.';
+COMMENT ON COLUMN ndb.specimendates.taxonid IS 'Accepted name in Neotoma. Field links to Taxa table.';
+COMMENT ON COLUMN ndb.specimendates.fractionid IS '';
+COMMENT ON COLUMN ndb.specimendates.sampleid IS 'Sample ID number. Field links to the Samples table.';
+COMMENT ON COLUMN ndb.specimendates.notes IS 'Free form notes or comments about dated specimens.';
+COMMENT ON COLUMN ndb.specimendates.elementtypeid IS '';
+COMMENT ON COLUMN ndb.specimendates.recdatecreated IS '';
+COMMENT ON COLUMN ndb.specimendates.recdatemodified IS '';
+COMMENT ON COLUMN ndb.specimendates.specimenid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimendates_pkey ON ndb.specimendates USING btree (specimendateid);
@@ -45,7 +55,7 @@ ALTER TABLE ndb.specimendates ADD CONSTRAINT sd_fcid FOREIGN KEY (fractionid) RE
 ALTER TABLE ndb.specimendates ADD CONSTRAINT fk_specimendates_specimens FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendates;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendates;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendates FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendates FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendates;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendates;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendates FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendates FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

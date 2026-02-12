@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.publicationauthors Table definition
 
 -- Drop table
 
@@ -19,13 +19,22 @@ CREATE TABLE IF NOT EXISTS ndb.publicationauthors (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.publicationauthors IS "This table lists authors as their names are given in publications. Only the initials are stored for authors’ given names. The ContactID links to the author’s full name and contact data in the Contacts table. Thus, for a bibliographic entry, Charles Robert Darwin is listed as C. R. Darwin, or as C. Darwin if the publication did not include his middle name. Book editors are also stored in this table if the entire book is cited. However, if a book chapter or section is cited, authors are stored in this table, but the book editors are stored in the PublicationEditors table. Thus, for the following reference, G. C. Frison is stored in the PublicationAuthors table.
+COMMENT ON TABLE ndb.publicationauthors IS 'This table lists authors as their names are given in publications. Only the initials are stored for authors’ given names. The ContactID links to the author’s full name and contact data in the Contacts table. Thus, for a bibliographic entry, Charles Robert Darwin is listed as C. R. Darwin, or as C. Darwin if the publication did not include his middle name. Book editors are also stored in this table if the entire book is cited. However, if a book chapter or section is cited, authors are stored in this table, but the book editors are stored in the PublicationEditors table. Thus, for the following reference, G. C. Frison is stored in the PublicationAuthors table.
 Frison, G. C., editor. 1996. The Mill Iron site. University of New Mexico Press, Albuquerque, New Mexico, USA.
 Whereas for the following publication, L. S. Cummings is listed in the PublicationAuthors table, and G. C. Frison is listed in the PublicationEditors table.
-Cummings, L. S. 1996. Paleoenvironmental interpretations for the Mill Iron site: stratigraphic pollen and phyrolith analysis. Pages 177-193 in G. C. Frison, editor. The Mill Iron site. University of New Mexico Press, Albuquerque, New Mexico, USA.";
+Cummings, L. S. 1996. Paleoenvironmental interpretations for the Mill Iron site: stratigraphic pollen and phyrolith analysis. Pages 177-193 in G. C. Frison, editor. The Mill Iron site. University of New Mexico Press, Albuquerque, New Mexico, USA.';
+COMMENT ON COLUMN ndb.publicationauthors.authorid IS 'An arbitrary Author identification number.';
+COMMENT ON COLUMN ndb.publicationauthors.publicationid IS 'Publication identification number. Field links to the Publications table.';
+COMMENT ON COLUMN ndb.publicationauthors.authororder IS 'Ordinal number for the position in which the author’s name appears in the publication’s author list.';
+COMMENT ON COLUMN ndb.publicationauthors.familyname IS 'Family name of author';
+COMMENT ON COLUMN ndb.publicationauthors.initials IS 'Initials of author’s given names';
+COMMENT ON COLUMN ndb.publicationauthors.suffix IS 'Authors suffix (e.g. «Jr.»)';
+COMMENT ON COLUMN ndb.publicationauthors.contactid IS 'Contact identification number. Field links to the Contacts table.';
+COMMENT ON COLUMN ndb.publicationauthors.recdatecreated IS '';
+COMMENT ON COLUMN ndb.publicationauthors.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX publicationauthors_pkey ON ndb.publicationauthors USING btree (authorid);
@@ -33,7 +42,7 @@ CREATE INDEX ix_contactid_publicationauthors ON ndb.publicationauthors USING btr
 CREATE INDEX ix_publicationid_publicationauthors ON ndb.publicationauthors USING btree (publicationid) WITH (fillfactor='10')
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.publicationauthors DROP CONSTRAINT IF EXISTS publicationauthors_pkey;
+-- ALTER TABLE ndb.publicationauthors DROP CONSTRAINT IF EXISTS publicationauthors_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.publicationauthors ADD CONSTRAINT publicationauthors_pkey PRIMARY KEY (authorid);
@@ -41,3 +50,9 @@ ALTER TABLE ndb.publicationauthors ADD CONSTRAINT publicationauthors_pkey PRIMAR
 --- Foreign Key Restraints
 ALTER TABLE ndb.publicationauthors ADD CONSTRAINT fk_publicationauthors_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE;
 ALTER TABLE ndb.publicationauthors ADD CONSTRAINT fk_publicationauthors_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.publicationauthors;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.publicationauthors;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.publicationauthors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.publicationauthors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -415,34 +415,37 @@
 <!-- ndb.entityrelationship -->
 <g id="node7" class="node">
 <title>ndb.entityrelationship</title>
-<polygon fill="#efefef" stroke="none" points="8032.75,-2507.8 8032.75,-2543.4 8328.72,-2543.4 8328.72,-2507.8 8032.75,-2507.8"/>
-<polygon fill="none" stroke="black" points="8032.75,-2507.8 8032.75,-2543.4 8328.72,-2543.4 8328.72,-2507.8 8032.75,-2507.8"/>
-<text text-anchor="start" x="8039.75" y="-2521.2" font-family="Arial Bold" font-size="18.00">ndb.entityrelationship</text>
-<text text-anchor="start" x="8197.23" y="-2521.2" font-family="Arial" font-size="14.00">    </text>
-<text text-anchor="start" x="8228.34" y="-2521.2" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
-<polygon fill="none" stroke="black" points="8032.75,-2477 8032.75,-2507.8 8328.72,-2507.8 8328.72,-2477 8032.75,-2477"/>
-<text text-anchor="start" x="8039.75" y="-2489.2" font-family="Arial" font-size="14.00">entityid </text>
-<text text-anchor="start" x="8088" y="-2489.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="8032.75,-2446.2 8032.75,-2477 8328.72,-2477 8328.72,-2446.2 8032.75,-2446.2"/>
-<text text-anchor="start" x="8039.75" y="-2458.4" font-family="Arial" font-size="14.00">entitystatusid </text>
-<text text-anchor="start" x="8125.35" y="-2458.4" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
-<polygon fill="none" stroke="black" points="8032.75,-2415.4 8032.75,-2446.2 8328.72,-2446.2 8328.72,-2415.4 8032.75,-2415.4"/>
-<text text-anchor="start" x="8039.75" y="-2427.6" font-family="Arial" font-size="14.00">referenceentityid </text>
-<text text-anchor="start" x="8147.15" y="-2427.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="#efefef" stroke="none" points="8032.75,-2523.2 8032.75,-2558.8 8328.72,-2558.8 8328.72,-2523.2 8032.75,-2523.2"/>
+<polygon fill="none" stroke="black" points="8032.75,-2523.2 8032.75,-2558.8 8328.72,-2558.8 8328.72,-2523.2 8032.75,-2523.2"/>
+<text text-anchor="start" x="8039.75" y="-2536.6" font-family="Arial Bold" font-size="18.00">ndb.entityrelationship</text>
+<text text-anchor="start" x="8197.23" y="-2536.6" font-family="Arial" font-size="14.00">    </text>
+<text text-anchor="start" x="8228.34" y="-2536.6" font-family="Arial" font-size="14.00" fill="#666666">[BASE TABLE]</text>
+<polygon fill="none" stroke="black" points="8032.75,-2492.4 8032.75,-2523.2 8328.72,-2523.2 8328.72,-2492.4 8032.75,-2492.4"/>
+<text text-anchor="start" x="8039.75" y="-2504.6" font-family="Arial" font-size="14.00">entityid </text>
+<text text-anchor="start" x="8088" y="-2504.6" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="8032.75,-2461.6 8032.75,-2492.4 8328.72,-2492.4 8328.72,-2461.6 8032.75,-2461.6"/>
+<text text-anchor="start" x="8039.75" y="-2473.8" font-family="Arial" font-size="14.00">entitystatusid </text>
+<text text-anchor="start" x="8125.35" y="-2473.8" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
+<polygon fill="none" stroke="black" points="8032.75,-2430.8 8032.75,-2461.6 8328.72,-2461.6 8328.72,-2430.8 8032.75,-2430.8"/>
+<text text-anchor="start" x="8039.75" y="-2443" font-family="Arial" font-size="14.00">notes </text>
+<text text-anchor="start" x="8077.89" y="-2443" font-family="Arial" font-size="14.00" fill="#666666">[text]</text>
+<polygon fill="none" stroke="black" points="8032.75,-2400 8032.75,-2430.8 8328.72,-2430.8 8328.72,-2400 8032.75,-2400"/>
+<text text-anchor="start" x="8039.75" y="-2412.2" font-family="Arial" font-size="14.00">referenceentityid </text>
+<text text-anchor="start" x="8147.15" y="-2412.2" font-family="Arial" font-size="14.00" fill="#666666">[integer]</text>
 </g>
 <!-- ndb.entityrelationship&#45;&gt;ndb.speleothems -->
 <g id="edge6" class="edge">
 <title>ndb.entityrelationship:entityid&#45;&gt;ndb.speleothems:entityid</title>
-<path fill="none" stroke="black" d="M8339.74,-2490.13C8400.65,-2461.21 8380.53,-2165 8311.22,-2165"/>
-<polygon fill="black" stroke="black" points="8339.8,-2490.12 8329.05,-2487.94 8334.59,-2491.3 8330.37,-2492.25 8330.37,-2492.25 8330.37,-2492.25 8334.59,-2491.3 8331.03,-2496.72 8339.8,-2490.12"/>
-<text text-anchor="start" x="8180.78" y="-2476.4" font-family="Arial" font-size="10.00">FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid)</text>
+<path fill="none" stroke="black" d="M8339.82,-2505.61C8404.14,-2476.42 8383.93,-2165 8311.22,-2165"/>
+<polygon fill="black" stroke="black" points="8339.82,-2505.61 8329.09,-2503.33 8334.6,-2506.74 8330.37,-2507.66 8330.37,-2507.66 8330.37,-2507.66 8334.6,-2506.74 8331,-2512.13 8339.82,-2505.61"/>
+<text text-anchor="start" x="8180.78" y="-2491.8" font-family="Arial" font-size="10.00">FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid)</text>
 </g>
 <!-- ndb.entityrelationship&#45;&gt;ndb.speleothems -->
 <g id="edge7" class="edge">
 <title>ndb.entityrelationship:referenceentityid&#45;&gt;ndb.speleothems:entityid</title>
-<path fill="none" stroke="black" d="M8181.18,-2404.36C8188.32,-2325.89 8280.38,-2340.2 8310.22,-2259.2 8324.69,-2219.91 8353.09,-2165 8311.22,-2165"/>
-<polygon fill="black" stroke="black" points="8181.19,-2404.08 8176.25,-2413.87 8180.95,-2409.4 8180.76,-2413.73 8180.76,-2413.73 8180.76,-2413.73 8180.95,-2409.4 8185.24,-2414.26 8181.19,-2404.08"/>
-<text text-anchor="start" x="7833.61" y="-2424.4" font-family="Arial" font-size="10.00">FOREIGN KEY (referenceentityid) REFERENCES ndb.speleothems(entityid)</text>
+<path fill="none" stroke="black" d="M8181.26,-2388.67C8189.05,-2316.15 8280.24,-2334.5 8310.22,-2259.2 8325.71,-2220.3 8353.09,-2165 8311.22,-2165"/>
+<polygon fill="black" stroke="black" points="8181.26,-2388.68 8176.26,-2398.44 8180.99,-2394.01 8180.77,-2398.33 8180.77,-2398.33 8180.77,-2398.33 8180.99,-2394.01 8185.25,-2398.9 8181.26,-2388.68"/>
+<text text-anchor="start" x="7833.61" y="-2409" font-family="Arial" font-size="10.00">FOREIGN KEY (referenceentityid) REFERENCES ndb.speleothems(entityid)</text>
 </g>
 <!-- ndb.entitysamples -->
 <g id="node8" class="node">

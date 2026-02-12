@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.analysisunitlithostrat (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.analysisunitlithostrat IS "";
+COMMENT ON TABLE ndb.analysisunitlithostrat IS '';
+COMMENT ON COLUMN ndb.analysisunitlithostrat.analysisunitid IS '';
+COMMENT ON COLUMN ndb.analysisunitlithostrat.lithostratid IS '';
+COMMENT ON COLUMN ndb.analysisunitlithostrat.recdatecreated IS '';
+COMMENT ON COLUMN ndb.analysisunitlithostrat.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX analysisunitlithostrat_pkey ON ndb.analysisunitlithostrat USING btree (analysisunitid, lithostratid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.analysisunitlithostrat ADD CONSTRAINT fk_analysisunitlithostrat_
 ALTER TABLE ndb.analysisunitlithostrat ADD CONSTRAINT fk_analysisunitlithostrat_lithostrat FOREIGN KEY (lithostratid) REFERENCES ndb.lithostrat(lithostratid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.analysisunitlithostrat;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.analysisunitlithostrat;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.analysisunitlithostrat FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.analysisunitlithostrat FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.analysisunitlithostrat;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.analysisunitlithostrat;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.analysisunitlithostrat FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.analysisunitlithostrat FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

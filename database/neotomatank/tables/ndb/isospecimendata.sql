@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.isospecimendata (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isospecimendata IS "";
+COMMENT ON TABLE ndb.isospecimendata IS '';
+COMMENT ON COLUMN ndb.isospecimendata.isospecimendataid IS '';
+COMMENT ON COLUMN ndb.isospecimendata.dataid IS '';
+COMMENT ON COLUMN ndb.isospecimendata.specimenid IS '';
+COMMENT ON COLUMN ndb.isospecimendata.sd IS '';
+COMMENT ON COLUMN ndb.isospecimendata.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isospecimendata.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isospecimendata_pkey ON ndb.isospecimendata USING btree (isospecimendataid)
@@ -35,7 +41,7 @@ ALTER TABLE ndb.isospecimendata ADD CONSTRAINT fk_isospecimendata_data FOREIGN K
 ALTER TABLE ndb.isospecimendata ADD CONSTRAINT fk_isospecimendata_specimens FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isospecimendata;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isospecimendata;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isospecimendata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isospecimendata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isospecimendata;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isospecimendata;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isospecimendata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isospecimendata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

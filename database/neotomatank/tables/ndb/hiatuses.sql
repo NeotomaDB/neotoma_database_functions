@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.hiatuses (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.hiatuses IS "";
+COMMENT ON TABLE ndb.hiatuses IS '';
+COMMENT ON COLUMN ndb.hiatuses.hiatusid IS '';
+COMMENT ON COLUMN ndb.hiatuses.analysisunitstart IS '';
+COMMENT ON COLUMN ndb.hiatuses.analysisunitend IS '';
+COMMENT ON COLUMN ndb.hiatuses.notes IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX hiatuses_pkey ON ndb.hiatuses USING btree (hiatusid);

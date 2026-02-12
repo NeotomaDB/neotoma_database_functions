@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.radiocarbonmethods Table definition
 
 -- Drop table
 
@@ -14,18 +14,28 @@ CREATE TABLE IF NOT EXISTS ndb.radiocarbonmethods (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.radiocarbonmethods IS "";
+COMMENT ON TABLE ndb.radiocarbonmethods IS '';
+COMMENT ON COLUMN ndb.radiocarbonmethods.radiocarbonmethodid IS '';
+COMMENT ON COLUMN ndb.radiocarbonmethods.radiocarbonmethod IS '';
+COMMENT ON COLUMN ndb.radiocarbonmethods.recdatecreated IS '';
+COMMENT ON COLUMN ndb.radiocarbonmethods.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX radiocarbonmethods_pkey ON ndb.radiocarbonmethods USING btree (radiocarbonmethodid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.radiocarbonmethods DROP CONSTRAINT IF EXISTS radiocarbonmethods_pkey;
+-- ALTER TABLE ndb.radiocarbonmethods DROP CONSTRAINT IF EXISTS radiocarbonmethods_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.radiocarbonmethods ADD CONSTRAINT radiocarbonmethods_pkey PRIMARY KEY (radiocarbonmethodid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.radiocarbonmethods;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.radiocarbonmethods;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.radiocarbonmethods FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.radiocarbonmethods FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

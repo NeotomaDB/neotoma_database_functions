@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.isoscaletypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isoscaletypes IS "";
+COMMENT ON TABLE ndb.isoscaletypes IS '';
+COMMENT ON COLUMN ndb.isoscaletypes.isoscaletypeid IS '';
+COMMENT ON COLUMN ndb.isoscaletypes.isoscaleacronym IS '';
+COMMENT ON COLUMN ndb.isoscaletypes.isoscalename IS '';
+COMMENT ON COLUMN ndb.isoscaletypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isoscaletypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isoscaletypes_pkey ON ndb.isoscaletypes USING btree (isoscaletypeid)
@@ -32,7 +37,7 @@ ALTER TABLE ndb.isoscaletypes ADD CONSTRAINT isoscaletypes_pkey PRIMARY KEY (iso
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoscaletypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoscaletypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isoscaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isoscaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoscaletypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoscaletypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isoscaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isoscaletypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

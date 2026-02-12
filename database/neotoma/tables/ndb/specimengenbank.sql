@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.specimengenbank Table definition
 
 -- Drop table
 
@@ -12,19 +12,23 @@ CREATE TABLE IF NOT EXISTS ndb.specimengenbank (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimengenbank IS "";
+COMMENT ON TABLE ndb.specimengenbank IS '';
+COMMENT ON COLUMN ndb.specimengenbank.specimenid IS '';
+COMMENT ON COLUMN ndb.specimengenbank.genbanknr IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimengenbank_pkey ON ndb.specimengenbank USING btree (specimenid, genbanknr)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.specimengenbank DROP CONSTRAINT IF EXISTS specimengenbank_pkey;
+-- ALTER TABLE ndb.specimengenbank DROP CONSTRAINT IF EXISTS specimengenbank_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.specimengenbank ADD CONSTRAINT specimengenbank_pkey PRIMARY KEY (specimenid, genbanknr);
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.specimengenbank ADD CONSTRAINT fk_specimengenbank_specimens FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers

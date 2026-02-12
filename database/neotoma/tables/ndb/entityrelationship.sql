@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.entityrelationship Table definition
 
 -- Drop table
 
@@ -14,10 +14,14 @@ CREATE TABLE IF NOT EXISTS ndb.entityrelationship (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entityrelationship IS "";
+COMMENT ON TABLE ndb.entityrelationship IS '';
+COMMENT ON COLUMN ndb.entityrelationship.entityid IS '';
+COMMENT ON COLUMN ndb.entityrelationship.entitystatusid IS '';
+COMMENT ON COLUMN ndb.entityrelationship.referenceentityid IS '';
+COMMENT ON COLUMN ndb.entityrelationship.notes IS '';
 
 --- Table indices
 
@@ -30,3 +34,5 @@ COMMENT ON TABLE ndb.entityrelationship IS "";
 ALTER TABLE ndb.entityrelationship ADD CONSTRAINT entityrelationship_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid);
 ALTER TABLE ndb.entityrelationship ADD CONSTRAINT entityrelationship_entitystatusid_fkey FOREIGN KEY (entitystatusid) REFERENCES ndb.speleothementitystatuses(entitystatusid);
 ALTER TABLE ndb.entityrelationship ADD CONSTRAINT entityrelationship_referenceentityid_fkey FOREIGN KEY (referenceentityid) REFERENCES ndb.speleothems(entityid);
+
+--- Triggers

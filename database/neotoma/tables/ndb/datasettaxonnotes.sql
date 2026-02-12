@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.datasettaxonnotes Table definition
 
 -- Drop table
 
@@ -17,16 +17,23 @@ CREATE TABLE IF NOT EXISTS ndb.datasettaxonnotes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasettaxonnotes IS "";
+COMMENT ON TABLE ndb.datasettaxonnotes IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.datasetid IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.taxonid IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.contactid IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.date IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.notes IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasettaxonnotes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datasettaxonnotes_pkey ON ndb.datasettaxonnotes USING btree (datasetid, taxonid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.datasettaxonnotes DROP CONSTRAINT IF EXISTS datasettaxonnotes_pkey;
+-- ALTER TABLE ndb.datasettaxonnotes DROP CONSTRAINT IF EXISTS datasettaxonnotes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.datasettaxonnotes ADD CONSTRAINT datasettaxonnotes_pkey PRIMARY KEY (datasetid, taxonid);
@@ -35,3 +42,9 @@ ALTER TABLE ndb.datasettaxonnotes ADD CONSTRAINT datasettaxonnotes_pkey PRIMARY 
 ALTER TABLE ndb.datasettaxonnotes ADD CONSTRAINT fk_datasettaxonnotes_taxa FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.datasettaxonnotes ADD CONSTRAINT fk_datasettaxonnotes_datasets FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.datasettaxonnotes ADD CONSTRAINT fk_datasettaxonnotes_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid);
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettaxonnotes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettaxonnotes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasettaxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasettaxonnotes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

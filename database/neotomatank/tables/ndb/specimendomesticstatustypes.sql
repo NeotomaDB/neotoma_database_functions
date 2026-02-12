@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.specimendomesticstatustypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimendomesticstatustypes IS "";
+COMMENT ON TABLE ndb.specimendomesticstatustypes IS '';
+COMMENT ON COLUMN ndb.specimendomesticstatustypes.domesticstatusid IS '';
+COMMENT ON COLUMN ndb.specimendomesticstatustypes.domesticstatus IS '';
+COMMENT ON COLUMN ndb.specimendomesticstatustypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.specimendomesticstatustypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimendomesticstatustypes_pkey ON ndb.specimendomesticstatustypes USING btree (domesticstatusid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.specimendomesticstatustypes ADD CONSTRAINT specimendomesticstatu
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendomesticstatustypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendomesticstatustypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendomesticstatustypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendomesticstatustypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendomesticstatustypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendomesticstatustypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendomesticstatustypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendomesticstatustypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

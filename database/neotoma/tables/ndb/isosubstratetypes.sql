@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.isosubstratetypes Table definition
 
 -- Drop table
 
@@ -14,18 +14,28 @@ CREATE TABLE IF NOT EXISTS ndb.isosubstratetypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isosubstratetypes IS "";
+COMMENT ON TABLE ndb.isosubstratetypes IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.isosubstratetypeid IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.isosubstratetype IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isosubstratetypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isosubstratetypes_pkey ON ndb.isosubstratetypes USING btree (isosubstratetypeid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.isosubstratetypes DROP CONSTRAINT IF EXISTS isosubstratetypes_pkey;
+-- ALTER TABLE ndb.isosubstratetypes DROP CONSTRAINT IF EXISTS isosubstratetypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.isosubstratetypes ADD CONSTRAINT isosubstratetypes_pkey PRIMARY KEY (isosubstratetypeid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosubstratetypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosubstratetypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosubstratetypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosubstratetypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

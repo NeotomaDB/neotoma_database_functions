@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.speleothemcollectionunits (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.speleothemcollectionunits IS "";
+COMMENT ON TABLE ndb.speleothemcollectionunits IS '';
+COMMENT ON COLUMN ndb.speleothemcollectionunits.entityid IS '';
+COMMENT ON COLUMN ndb.speleothemcollectionunits.collectionunitid IS '';
+COMMENT ON COLUMN ndb.speleothemcollectionunits.persistid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX unique_collectionunitid ON ndb.speleothemcollectionunits USING btree (collectionunitid)

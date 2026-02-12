@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.ecolgroups (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.ecolgroups IS "Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa.";
+COMMENT ON TABLE ndb.ecolgroups IS 'Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa.';
+COMMENT ON COLUMN ndb.ecolgroups.taxonid IS 'Taxon identification number. Field links to the Taxa table.';
+COMMENT ON COLUMN ndb.ecolgroups.ecolsetid IS 'Ecological Set identification number. Field links to the EcolSetTypes table.';
+COMMENT ON COLUMN ndb.ecolgroups.ecolgroupid IS 'A four-letter Ecological Group identification code. Field links to the EcolGroupTypes table.';
+COMMENT ON COLUMN ndb.ecolgroups.recdatecreated IS '';
+COMMENT ON COLUMN ndb.ecolgroups.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX ecolgroups_pkey ON ndb.ecolgroups USING btree (taxonid, ecolsetid);
@@ -41,7 +46,7 @@ ALTER TABLE ndb.ecolgroups ADD CONSTRAINT fk_ecolgroups_ecolsettypes FOREIGN KEY
 ALTER TABLE ndb.ecolgroups ADD CONSTRAINT fk_ecolgroups_taxa FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgroups;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgroups;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.ecolgroups FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.ecolgroups FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgroups;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgroups;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.ecolgroups FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.ecolgroups FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

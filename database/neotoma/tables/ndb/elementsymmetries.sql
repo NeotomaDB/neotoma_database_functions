@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.elementsymmetries Table definition
 
 -- Drop table
 
@@ -14,19 +14,29 @@ CREATE TABLE IF NOT EXISTS ndb.elementsymmetries (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.elementsymmetries IS "";
+COMMENT ON TABLE ndb.elementsymmetries IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.symmetryid IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.symmetry IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.recdatecreated IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX elementsymmetries_pkey ON ndb.elementsymmetries USING btree (symmetryid);
 CREATE UNIQUE INDEX ix_elementsymmetries ON ndb.elementsymmetries USING btree (symmetry) WITH (fillfactor='10')
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.elementsymmetries DROP CONSTRAINT IF EXISTS elementsymmetries_pkey;
+-- ALTER TABLE ndb.elementsymmetries DROP CONSTRAINT IF EXISTS elementsymmetries_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.elementsymmetries ADD CONSTRAINT elementsymmetries_pkey PRIMARY KEY (symmetryid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementsymmetries;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementsymmetries;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementsymmetries FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementsymmetries FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

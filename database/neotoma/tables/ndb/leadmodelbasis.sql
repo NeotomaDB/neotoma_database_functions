@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.leadmodelbasis Table definition
 
 -- Drop table
 
@@ -12,18 +12,22 @@ CREATE TABLE IF NOT EXISTS ndb.leadmodelbasis (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.leadmodelbasis IS "";
+COMMENT ON TABLE ndb.leadmodelbasis IS '';
+COMMENT ON COLUMN ndb.leadmodelbasis.pbbasisid IS '';
+COMMENT ON COLUMN ndb.leadmodelbasis.pbbasis IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX leadmodelbasis_pkey ON ndb.leadmodelbasis USING btree (pbbasisid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.leadmodelbasis DROP CONSTRAINT IF EXISTS leadmodelbasis_pkey;
+-- ALTER TABLE ndb.leadmodelbasis DROP CONSTRAINT IF EXISTS leadmodelbasis_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.leadmodelbasis ADD CONSTRAINT leadmodelbasis_pkey PRIMARY KEY (pbbasisid);
 
 --- Foreign Key Restraints
+
+--- Triggers

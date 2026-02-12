@@ -20,7 +20,14 @@ CREATE TABLE IF NOT EXISTS ndb.relativechronology (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.relativechronology IS "This table stores relative chronologic data. Relative Ages are assigned to Analysis Units, The Relative Age data along with any possible Geochronology and Tephrachronology data are used to create a chronology.";
+COMMENT ON TABLE ndb.relativechronology IS 'This table stores relative chronologic data. Relative Ages are assigned to Analysis Units, The Relative Age data along with any possible Geochronology and Tephrachronology data are used to create a chronology.';
+COMMENT ON COLUMN ndb.relativechronology.relativechronid IS 'An arbitrary Relative Chronology identification number.';
+COMMENT ON COLUMN ndb.relativechronology.analysisunitid IS 'Analysis Unit identification number. Field links to the AnalysisUnits table.';
+COMMENT ON COLUMN ndb.relativechronology.relativeageid IS 'Relative Age identification number. Field links to the RelativeAges lookup table.';
+COMMENT ON COLUMN ndb.relativechronology.notes IS 'Free form notes or comments.';
+COMMENT ON COLUMN ndb.relativechronology.recdatecreated IS '';
+COMMENT ON COLUMN ndb.relativechronology.recdatemodified IS '';
+COMMENT ON COLUMN ndb.relativechronology.chroncontrolid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX relativechronology_pkey ON ndb.relativechronology USING btree (relativechronid);
@@ -39,7 +46,7 @@ ALTER TABLE ndb.relativechronology ADD CONSTRAINT fk_relativechronology_analysis
 ALTER TABLE ndb.relativechronology ADD CONSTRAINT rc_ccid FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativechronology;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativechronology;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.relativechronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.relativechronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativechronology;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativechronology;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.relativechronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.relativechronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

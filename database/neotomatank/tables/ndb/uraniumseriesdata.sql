@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.uraniumseriesdata (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.uraniumseriesdata IS "";
+COMMENT ON TABLE ndb.uraniumseriesdata IS '';
+COMMENT ON COLUMN ndb.uraniumseriesdata.geochronid IS '';
+COMMENT ON COLUMN ndb.uraniumseriesdata.dataid IS '';
 
 --- Table indices
 

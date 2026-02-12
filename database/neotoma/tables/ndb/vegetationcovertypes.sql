@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.vegetationcovertypes Table definition
 
 -- Drop table
 
@@ -14,18 +14,22 @@ CREATE TABLE IF NOT EXISTS ndb.vegetationcovertypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.vegetationcovertypes IS "";
+COMMENT ON TABLE ndb.vegetationcovertypes IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationcovertypeid IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationcovertype IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationcovernotes IS '';
+COMMENT ON COLUMN ndb.vegetationcovertypes.vegetationpublicationid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX vegetationcovertypes_pkey ON ndb.vegetationcovertypes USING btree (vegetationcovertypeid);
 CREATE UNIQUE INDEX vegetationcovertypes_vegetationcovertype_key ON ndb.vegetationcovertypes USING btree (vegetationcovertype)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.vegetationcovertypes DROP CONSTRAINT IF EXISTS vegetationcovertypes_pkey;
-ALTER TABLE ndb.vegetationcovertypes DROP CONSTRAINT IF EXISTS vegetationcovertypes_vegetationcovertype_key;
+-- ALTER TABLE ndb.vegetationcovertypes DROP CONSTRAINT IF EXISTS vegetationcovertypes_pkey;
+-- ALTER TABLE ndb.vegetationcovertypes DROP CONSTRAINT IF EXISTS vegetationcovertypes_vegetationcovertype_key;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.vegetationcovertypes ADD CONSTRAINT vegetationcovertypes_pkey PRIMARY KEY (vegetationcovertypeid);
@@ -33,3 +37,5 @@ ALTER TABLE ndb.vegetationcovertypes ADD CONSTRAINT vegetationcovertypes_vegetat
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.vegetationcovertypes ADD CONSTRAINT vegetationcovertypes_vegetationpublicationid_fkey FOREIGN KEY (vegetationpublicationid) REFERENCES ndb.publications(publicationid);
+
+--- Triggers

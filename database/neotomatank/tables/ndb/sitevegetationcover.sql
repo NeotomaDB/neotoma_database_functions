@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.sitevegetationcover (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.sitevegetationcover IS "";
+COMMENT ON TABLE ndb.sitevegetationcover IS '';
+COMMENT ON COLUMN ndb.sitevegetationcover.siteid IS '';
+COMMENT ON COLUMN ndb.sitevegetationcover.vegetationcovertypeid IS '';
+COMMENT ON COLUMN ndb.sitevegetationcover.vegetationcoverpercent IS '';
+COMMENT ON COLUMN ndb.sitevegetationcover.vegetationcovernotes IS '';
 
 --- Table indices
 

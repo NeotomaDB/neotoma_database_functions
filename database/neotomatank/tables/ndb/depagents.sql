@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.depagents (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.depagents IS "Deposition Agents for Analysis Units. Individual Analysis Units may be listed multiple times with different Deposition Agents.";
+COMMENT ON TABLE ndb.depagents IS 'Deposition Agents for Analysis Units. Individual Analysis Units may be listed multiple times with different Deposition Agents.';
+COMMENT ON COLUMN ndb.depagents.analysisunitid IS 'Analysis Unit identification number. Field links to AnalysisUnits table.';
+COMMENT ON COLUMN ndb.depagents.depagentid IS 'Deposition Agent identification number. Field links to DepAgentTypes table.';
+COMMENT ON COLUMN ndb.depagents.recdatecreated IS '';
+COMMENT ON COLUMN ndb.depagents.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX depagents_pkey ON ndb.depagents USING btree (analysisunitid, depagentid);
@@ -35,7 +39,7 @@ ALTER TABLE ndb.depagents ADD CONSTRAINT fk_depagents_analysisunits FOREIGN KEY 
 ALTER TABLE ndb.depagents ADD CONSTRAINT fk_depagents_depagenttypes FOREIGN KEY (depagentid) REFERENCES ndb.depagenttypes(depagentid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagents;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagents;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.depagents FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.depagents FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagents;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagents;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.depagents FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.depagents FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

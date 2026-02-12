@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.speleothementitystatuses (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.speleothementitystatuses IS "";
+COMMENT ON TABLE ndb.speleothementitystatuses IS '';
+COMMENT ON COLUMN ndb.speleothementitystatuses.entitystatusid IS '';
+COMMENT ON COLUMN ndb.speleothementitystatuses.entitystatus IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX speleothementitystatuses_pkey ON ndb.speleothementitystatuses USING btree (entitystatusid)

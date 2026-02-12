@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.data Table definition
 
 -- Drop table
 
@@ -16,10 +16,16 @@ CREATE TABLE IF NOT EXISTS ndb.data (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.data IS "The primary data table in the database. Each occurrence of a Variable in a sample comprises a record in the Data table.";
+COMMENT ON TABLE ndb.data IS 'The primary data table in the database. Each occurrence of a Variable in a sample comprises a record in the Data table.';
+COMMENT ON COLUMN ndb.data.dataid IS '';
+COMMENT ON COLUMN ndb.data.sampleid IS 'Sample identification number. Field links to Samples table.';
+COMMENT ON COLUMN ndb.data.variableid IS 'Variable identification number. Field links to Variables table.';
+COMMENT ON COLUMN ndb.data.value IS 'The value of the variable.';
+COMMENT ON COLUMN ndb.data.recdatecreated IS '';
+COMMENT ON COLUMN ndb.data.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX data_pkey ON ndb.data USING btree (dataid);
@@ -27,7 +33,7 @@ CREATE INDEX data_sample_idx ON ndb.data USING btree (sampleid);
 CREATE INDEX data_variable_idx ON ndb.data USING btree (variableid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.data DROP CONSTRAINT IF EXISTS data_pkey;
+-- ALTER TABLE ndb.data DROP CONSTRAINT IF EXISTS data_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.data ADD CONSTRAINT data_pkey PRIMARY KEY (dataid);
@@ -35,3 +41,9 @@ ALTER TABLE ndb.data ADD CONSTRAINT data_pkey PRIMARY KEY (dataid);
 --- Foreign Key Restraints
 ALTER TABLE ndb.data ADD CONSTRAINT fk_data_samples FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.data ADD CONSTRAINT fk_data_variables FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.data;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.data;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.data FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.data FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

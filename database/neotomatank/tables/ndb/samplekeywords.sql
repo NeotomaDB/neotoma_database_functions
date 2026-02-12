@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.samplekeywords (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.samplekeywords IS "This table lists the Sample Analysts.";
+COMMENT ON TABLE ndb.samplekeywords IS 'This table lists the Sample Analysts.';
+COMMENT ON COLUMN ndb.samplekeywords.sampleid IS 'Sample identification number. Field links to the Samples table.';
+COMMENT ON COLUMN ndb.samplekeywords.keywordid IS 'Keyword identification number. Field links to the Keywords lookup table.';
+COMMENT ON COLUMN ndb.samplekeywords.recdatecreated IS '';
+COMMENT ON COLUMN ndb.samplekeywords.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX samplekeywords_pkey ON ndb.samplekeywords USING btree (sampleid, keywordid);
@@ -35,7 +39,7 @@ ALTER TABLE ndb.samplekeywords ADD CONSTRAINT fk_samplekeywords_keywords FOREIGN
 ALTER TABLE ndb.samplekeywords ADD CONSTRAINT fk_samplekeywords_samples FOREIGN KEY (sampleid) REFERENCES ndb.samples(sampleid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samplekeywords;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samplekeywords;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.samplekeywords FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.samplekeywords FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samplekeywords;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.samplekeywords;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.samplekeywords FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.samplekeywords FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

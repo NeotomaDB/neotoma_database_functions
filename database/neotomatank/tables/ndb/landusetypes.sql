@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.landusetypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.landusetypes IS "";
+COMMENT ON TABLE ndb.landusetypes IS '';
+COMMENT ON COLUMN ndb.landusetypes.landusecovertypeid IS '';
+COMMENT ON COLUMN ndb.landusetypes.landusecovertype IS '';
+COMMENT ON COLUMN ndb.landusetypes.landusecovernotes IS '';
+COMMENT ON COLUMN ndb.landusetypes.publicationid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX landusetypes_pkey ON ndb.landusetypes USING btree (landusecovertypeid);

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.entitydripheight (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitydripheight IS "";
+COMMENT ON TABLE ndb.entitydripheight IS '';
+COMMENT ON COLUMN ndb.entitydripheight.entityid IS '';
+COMMENT ON COLUMN ndb.entitydripheight.speleothemdriptypeid IS '';
+COMMENT ON COLUMN ndb.entitydripheight.entitydripheight IS '';
+COMMENT ON COLUMN ndb.entitydripheight.entitydripheightunit IS '';
 
 --- Table indices
 

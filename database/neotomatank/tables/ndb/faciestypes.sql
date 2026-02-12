@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.faciestypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.faciestypes IS "Lookup table of Facies Types. Table is referenced by the AnalysisUnits table.";
+COMMENT ON TABLE ndb.faciestypes IS 'Lookup table of Facies Types. Table is referenced by the AnalysisUnits table.';
+COMMENT ON COLUMN ndb.faciestypes.faciesid IS 'An arbitrary Facies identification number.';
+COMMENT ON COLUMN ndb.faciestypes.facies IS 'Short Facies description.';
+COMMENT ON COLUMN ndb.faciestypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.faciestypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX faciestypes_pkey ON ndb.faciestypes USING btree (faciesid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.faciestypes ADD CONSTRAINT faciestypes_pkey PRIMARY KEY (faciesi
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.faciestypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.faciestypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.faciestypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.faciestypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.faciestypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.faciestypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.faciestypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.faciestypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.elementmaturities (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.elementmaturities IS "";
+COMMENT ON TABLE ndb.elementmaturities IS '';
+COMMENT ON COLUMN ndb.elementmaturities.maturityid IS '';
+COMMENT ON COLUMN ndb.elementmaturities.maturity IS '';
+COMMENT ON COLUMN ndb.elementmaturities.recdatecreated IS '';
+COMMENT ON COLUMN ndb.elementmaturities.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX elementmaturities_pkey ON ndb.elementmaturities USING btree (maturityid);
@@ -32,7 +36,7 @@ ALTER TABLE ndb.elementmaturities ADD CONSTRAINT elementmaturities_pkey PRIMARY 
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementmaturities;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementmaturities;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementmaturities;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementmaturities;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementmaturities FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

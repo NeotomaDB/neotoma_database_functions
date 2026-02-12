@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.summarydatataphonomy (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.summarydatataphonomy IS "";
+COMMENT ON TABLE ndb.summarydatataphonomy IS '';
+COMMENT ON COLUMN ndb.summarydatataphonomy.dataid IS '';
+COMMENT ON COLUMN ndb.summarydatataphonomy.taphonomictypeid IS '';
+COMMENT ON COLUMN ndb.summarydatataphonomy.recdatecreated IS '';
+COMMENT ON COLUMN ndb.summarydatataphonomy.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX summarydatataphonomy_pkey ON ndb.summarydatataphonomy USING btree (dataid, taphonomictypeid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.summarydatataphonomy ADD CONSTRAINT fk_summarydatataphonomy_data
 ALTER TABLE ndb.summarydatataphonomy ADD CONSTRAINT fk_summarydatataphonomy_taphonomictypes FOREIGN KEY (taphonomictypeid) REFERENCES ndb.taphonomictypes(taphonomictypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.summarydatataphonomy;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.summarydatataphonomy;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.summarydatataphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.summarydatataphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.summarydatataphonomy;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.summarydatataphonomy;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.summarydatataphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.summarydatataphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

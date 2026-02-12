@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.relativeagepublications (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.relativeagepublications IS "This table stores Publications in which Relative Ages are reported for CollectionUnits.";
+COMMENT ON TABLE ndb.relativeagepublications IS 'This table stores Publications in which Relative Ages are reported for CollectionUnits.';
+COMMENT ON COLUMN ndb.relativeagepublications.relativeageid IS 'Relative Ages identification number. Field links to the RelativeAges table.';
+COMMENT ON COLUMN ndb.relativeagepublications.publicationid IS 'Publication identification number. Field links to Publications table.';
+COMMENT ON COLUMN ndb.relativeagepublications.recdatecreated IS '';
+COMMENT ON COLUMN ndb.relativeagepublications.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX relativeagepublications_pkey ON ndb.relativeagepublications USING btree (relativeageid, publicationid);
@@ -34,7 +38,7 @@ ALTER TABLE ndb.relativeagepublications ADD CONSTRAINT fk_relativeagepublication
 ALTER TABLE ndb.relativeagepublications ADD CONSTRAINT fk_relativeagepublications_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativeagepublications;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativeagepublications;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.relativeagepublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.relativeagepublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativeagepublications;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativeagepublications;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.relativeagepublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.relativeagepublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

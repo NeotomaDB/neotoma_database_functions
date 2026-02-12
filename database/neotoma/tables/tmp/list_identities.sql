@@ -1,4 +1,4 @@
--- tmp definition
+-- tmp.list_identities Table definition
 
 -- Drop table
 
@@ -13,10 +13,13 @@ CREATE TABLE IF NOT EXISTS tmp.list_identities (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE tmp.list_identities IS "";
+COMMENT ON TABLE tmp.list_identities IS '';
+COMMENT ON COLUMN tmp.list_identities.schema_name IS '';
+COMMENT ON COLUMN tmp.list_identities.table_name IS '';
+COMMENT ON COLUMN tmp.list_identities.column_name IS '';
 
 --- Table indices
 
@@ -26,3 +29,5 @@ COMMENT ON TABLE tmp.list_identities IS "";
 --- Non-foreign key constraints
 
 --- Foreign Key Restraints
+
+--- Triggers

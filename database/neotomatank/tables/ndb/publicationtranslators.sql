@@ -21,7 +21,15 @@ CREATE TABLE IF NOT EXISTS ndb.publicationtranslators (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.publicationtranslators IS "";
+COMMENT ON TABLE ndb.publicationtranslators IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.translatorid IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.publicationid IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.translatororder IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.familyname IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.initials IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.suffix IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.recdatecreated IS '';
+COMMENT ON COLUMN ndb.publicationtranslators.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX publicationtranslators_pkey ON ndb.publicationtranslators USING btree (translatorid)
@@ -36,7 +44,7 @@ ALTER TABLE ndb.publicationtranslators ADD CONSTRAINT publicationtranslators_pke
 ALTER TABLE ndb.publicationtranslators ADD CONSTRAINT fk_publicationtranslators_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.publicationtranslators;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.publicationtranslators;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.publicationtranslators FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.publicationtranslators FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.publicationtranslators;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.publicationtranslators;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.publicationtranslators FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.publicationtranslators FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

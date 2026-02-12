@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.chroncontrolprecisionranks Table definition
 
 -- Drop table
 
@@ -14,18 +14,28 @@ CREATE TABLE IF NOT EXISTS ndb.chroncontrolprecisionranks (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.chroncontrolprecisionranks IS "";
+COMMENT ON TABLE ndb.chroncontrolprecisionranks IS '';
+COMMENT ON COLUMN ndb.chroncontrolprecisionranks.precisionrankid IS '';
+COMMENT ON COLUMN ndb.chroncontrolprecisionranks.precisionrank IS '';
+COMMENT ON COLUMN ndb.chroncontrolprecisionranks.recdatecreated IS '';
+COMMENT ON COLUMN ndb.chroncontrolprecisionranks.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX chroncontrolprecisionranks_pkey ON ndb.chroncontrolprecisionranks USING btree (precisionrankid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.chroncontrolprecisionranks DROP CONSTRAINT IF EXISTS chroncontrolprecisionranks_pkey;
+-- ALTER TABLE ndb.chroncontrolprecisionranks DROP CONSTRAINT IF EXISTS chroncontrolprecisionranks_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.chroncontrolprecisionranks ADD CONSTRAINT chroncontrolprecisionranks_pkey PRIMARY KEY (precisionrankid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolprecisionranks;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolprecisionranks;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.chroncontrolprecisionranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.chroncontrolprecisionranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

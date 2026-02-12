@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.ecolgrouptypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.ecolgrouptypes IS "Lookup table of Ecological Group Types. Table is referenced by the EcolGroups table.";
+COMMENT ON TABLE ndb.ecolgrouptypes IS 'Lookup table of Ecological Group Types. Table is referenced by the EcolGroups table.';
+COMMENT ON COLUMN ndb.ecolgrouptypes.ecolgroupid IS 'An arbitrary Ecological Group identification number.';
+COMMENT ON COLUMN ndb.ecolgrouptypes.ecolgroup IS 'Ecological Group.';
+COMMENT ON COLUMN ndb.ecolgrouptypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.ecolgrouptypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX ecolgrouptypes_pkey ON ndb.ecolgrouptypes USING btree (ecolgroupid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.ecolgrouptypes ADD CONSTRAINT ecolgrouptypes_pkey PRIMARY KEY (e
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgrouptypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgrouptypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.ecolgrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.ecolgrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgrouptypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgrouptypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.ecolgrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.ecolgrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

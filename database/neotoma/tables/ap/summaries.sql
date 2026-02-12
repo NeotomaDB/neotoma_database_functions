@@ -1,4 +1,4 @@
--- ap definition
+-- ap.summaries Table definition
 
 -- Drop table
 
@@ -15,18 +15,25 @@ CREATE TABLE IF NOT EXISTS ap.summaries (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.summaries IS "";
+COMMENT ON TABLE ap.summaries IS '';
+COMMENT ON COLUMN ap.summaries.dbdate IS '';
+COMMENT ON COLUMN ap.summaries.sites IS '';
+COMMENT ON COLUMN ap.summaries.datasets IS '';
+COMMENT ON COLUMN ap.summaries.publications IS '';
+COMMENT ON COLUMN ap.summaries.observations IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX summaries_pkey ON ap.summaries USING btree (dbdate)
 
 --- Remove existing constraints if needed
-ALTER TABLE ap.summaries DROP CONSTRAINT IF EXISTS summaries_pkey;
+-- ALTER TABLE ap.summaries DROP CONSTRAINT IF EXISTS summaries_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ap.summaries ADD CONSTRAINT summaries_pkey PRIMARY KEY (dbdate);
 
 --- Foreign Key Restraints
+
+--- Triggers

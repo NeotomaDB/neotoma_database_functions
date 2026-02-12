@@ -1,4 +1,4 @@
--- ap definition
+-- ap.pollensumgroups Table definition
 
 -- Drop table
 
@@ -13,18 +13,23 @@ CREATE TABLE IF NOT EXISTS ap.pollensumgroups (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.pollensumgroups IS "";
+COMMENT ON TABLE ap.pollensumgroups IS '';
+COMMENT ON COLUMN ap.pollensumgroups.recid IS '';
+COMMENT ON COLUMN ap.pollensumgroups.ecolgroupid IS '';
+COMMENT ON COLUMN ap.pollensumgroups.sumgroupid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX pollensumgroups_pkey ON ap.pollensumgroups USING btree (recid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ap.pollensumgroups DROP CONSTRAINT IF EXISTS pollensumgroups_pkey;
+-- ALTER TABLE ap.pollensumgroups DROP CONSTRAINT IF EXISTS pollensumgroups_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ap.pollensumgroups ADD CONSTRAINT pollensumgroups_pkey PRIMARY KEY (recid);
 
 --- Foreign Key Restraints
+
+--- Triggers

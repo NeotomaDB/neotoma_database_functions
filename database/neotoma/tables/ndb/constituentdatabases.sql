@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.constituentdatabases Table definition
 
 -- Drop table
 
@@ -17,19 +17,32 @@ CREATE TABLE IF NOT EXISTS ndb.constituentdatabases (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.constituentdatabases IS "";
+COMMENT ON TABLE ndb.constituentdatabases IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.databaseid IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.databasename IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.contactid IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.url IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.recdatecreated IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.recdatemodified IS '';
+COMMENT ON COLUMN ndb.constituentdatabases.description IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX constituentdatabases_pkey ON ndb.constituentdatabases USING btree (databaseid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.constituentdatabases DROP CONSTRAINT IF EXISTS constituentdatabases_pkey;
+-- ALTER TABLE ndb.constituentdatabases DROP CONSTRAINT IF EXISTS constituentdatabases_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.constituentdatabases ADD CONSTRAINT constituentdatabases_pkey PRIMARY KEY (databaseid);
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.constituentdatabases ADD CONSTRAINT fk_constituentdatabases_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid);
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.constituentdatabases;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.constituentdatabases;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.constituentdatabases FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.constituentdatabases FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

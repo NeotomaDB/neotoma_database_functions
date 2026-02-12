@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.geochroncontrols (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.geochroncontrols IS "";
+COMMENT ON TABLE ndb.geochroncontrols IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.chroncontrolid IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.geochronid IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.recdatecreated IS '';
+COMMENT ON COLUMN ndb.geochroncontrols.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX geochroncontrols_pkey ON ndb.geochroncontrols USING btree (chroncontrolid, geochronid);
@@ -35,7 +39,7 @@ ALTER TABLE ndb.geochroncontrols ADD CONSTRAINT fk_geochroncontrols_chroncontrol
 ALTER TABLE ndb.geochroncontrols ADD CONSTRAINT fk_geochroncontrols_geochronology FOREIGN KEY (geochronid) REFERENCES ndb.geochronology(geochronid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochroncontrols;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochroncontrols;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.geochroncontrols FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.geochroncontrols FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochroncontrols;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.geochroncontrols;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.geochroncontrols FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.geochroncontrols FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

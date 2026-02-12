@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.isospecimendata Table definition
 
 -- Drop table
 
@@ -16,16 +16,22 @@ CREATE TABLE IF NOT EXISTS ndb.isospecimendata (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isospecimendata IS "";
+COMMENT ON TABLE ndb.isospecimendata IS '';
+COMMENT ON COLUMN ndb.isospecimendata.isospecimendataid IS '';
+COMMENT ON COLUMN ndb.isospecimendata.dataid IS '';
+COMMENT ON COLUMN ndb.isospecimendata.specimenid IS '';
+COMMENT ON COLUMN ndb.isospecimendata.sd IS '';
+COMMENT ON COLUMN ndb.isospecimendata.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isospecimendata.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isospecimendata_pkey ON ndb.isospecimendata USING btree (isospecimendataid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.isospecimendata DROP CONSTRAINT IF EXISTS isospecimendata_pkey;
+-- ALTER TABLE ndb.isospecimendata DROP CONSTRAINT IF EXISTS isospecimendata_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.isospecimendata ADD CONSTRAINT isospecimendata_pkey PRIMARY KEY (isospecimendataid);
@@ -33,3 +39,9 @@ ALTER TABLE ndb.isospecimendata ADD CONSTRAINT isospecimendata_pkey PRIMARY KEY 
 --- Foreign Key Restraints
 ALTER TABLE ndb.isospecimendata ADD CONSTRAINT fk_isospecimendata_specimens FOREIGN KEY (specimenid) REFERENCES ndb.specimens(specimenid) ON DELETE CASCADE;
 ALTER TABLE ndb.isospecimendata ADD CONSTRAINT fk_isospecimendata_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isospecimendata;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isospecimendata;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isospecimendata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isospecimendata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -21,7 +21,15 @@ CREATE TABLE IF NOT EXISTS ap.icesheets (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.icesheets IS "";
+COMMENT ON TABLE ap.icesheets IS '';
+COMMENT ON COLUMN ap.icesheets.gid IS '';
+COMMENT ON COLUMN ap.icesheets.area_km2 IS '';
+COMMENT ON COLUMN ap.icesheets.geom IS '';
+COMMENT ON COLUMN ap.icesheets.age IS '';
+COMMENT ON COLUMN ap.icesheets.ka IS '';
+COMMENT ON COLUMN ap.icesheets.cal IS '';
+COMMENT ON COLUMN ap.icesheets.symb IS '';
+COMMENT ON COLUMN ap.icesheets.calage IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX icesheets_pkey ON ap.icesheets USING btree (gid);

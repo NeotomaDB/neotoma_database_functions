@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.leadmodelbasis (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.leadmodelbasis IS "";
+COMMENT ON TABLE ndb.leadmodelbasis IS '';
+COMMENT ON COLUMN ndb.leadmodelbasis.pbbasisid IS '';
+COMMENT ON COLUMN ndb.leadmodelbasis.pbbasis IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX leadmodelbasis_pkey ON ndb.leadmodelbasis USING btree (pbbasisid)

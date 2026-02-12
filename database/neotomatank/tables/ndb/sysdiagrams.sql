@@ -18,7 +18,12 @@ CREATE TABLE IF NOT EXISTS ndb.sysdiagrams (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.sysdiagrams IS "";
+COMMENT ON TABLE ndb.sysdiagrams IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.name IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.principal_id IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.diagram_id IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.version IS '';
+COMMENT ON COLUMN ndb.sysdiagrams.definition IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX sysdiagrams_pkey ON ndb.sysdiagrams USING btree (diagram_id)

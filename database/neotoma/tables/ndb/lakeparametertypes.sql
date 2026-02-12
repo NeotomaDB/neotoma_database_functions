@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.lakeparametertypes Table definition
 
 -- Drop table
 
@@ -16,18 +16,30 @@ CREATE TABLE IF NOT EXISTS ndb.lakeparametertypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.lakeparametertypes IS "A set of variables associated with lakes, including area, depth and volume.";
+COMMENT ON TABLE ndb.lakeparametertypes IS 'A set of variables associated with lakes, including area, depth and volume.';
+COMMENT ON COLUMN ndb.lakeparametertypes.lakeparameterid IS 'PK: LakeParameterID';
+COMMENT ON COLUMN ndb.lakeparametertypes.lakeparametercode IS 'Code espcially for data entry apps';
+COMMENT ON COLUMN ndb.lakeparametertypes.lakeparametershortname IS 'Short name useful for data entry apps';
+COMMENT ON COLUMN ndb.lakeparametertypes.lakeparameter IS 'Full name';
+COMMENT ON COLUMN ndb.lakeparametertypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.lakeparametertypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX lakeparametertypes_pkey ON ndb.lakeparametertypes USING btree (lakeparameterid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.lakeparametertypes DROP CONSTRAINT IF EXISTS lakeparametertypes_pkey;
+-- ALTER TABLE ndb.lakeparametertypes DROP CONSTRAINT IF EXISTS lakeparametertypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.lakeparametertypes ADD CONSTRAINT lakeparametertypes_pkey PRIMARY KEY (lakeparameterid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.lakeparametertypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.lakeparametertypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.lakeparametertypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.lakeparametertypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

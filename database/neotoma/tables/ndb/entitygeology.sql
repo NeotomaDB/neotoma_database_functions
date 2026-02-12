@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.entitygeology Table definition
 
 -- Drop table
 
@@ -13,10 +13,13 @@ CREATE TABLE IF NOT EXISTS ndb.entitygeology (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitygeology IS "";
+COMMENT ON TABLE ndb.entitygeology IS '';
+COMMENT ON COLUMN ndb.entitygeology.entityid IS '';
+COMMENT ON COLUMN ndb.entitygeology.speleothemgeologyid IS '';
+COMMENT ON COLUMN ndb.entitygeology.notes IS '';
 
 --- Table indices
 
@@ -27,3 +30,5 @@ COMMENT ON TABLE ndb.entitygeology IS "";
 
 --- Foreign Key Restraints
 ALTER TABLE ndb.entitygeology ADD CONSTRAINT entitygeology_entityid_fkey FOREIGN KEY (entityid) REFERENCES ndb.speleothems(entityid) ON DELETE CASCADE;
+
+--- Triggers

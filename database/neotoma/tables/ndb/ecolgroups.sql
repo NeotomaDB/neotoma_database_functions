@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.ecolgroups Table definition
 
 -- Drop table
 
@@ -15,10 +15,15 @@ CREATE TABLE IF NOT EXISTS ndb.ecolgroups (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.ecolgroups IS "Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa.";
+COMMENT ON TABLE ndb.ecolgroups IS 'Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa.';
+COMMENT ON COLUMN ndb.ecolgroups.taxonid IS 'Taxon identification number. Field links to the Taxa table.';
+COMMENT ON COLUMN ndb.ecolgroups.ecolsetid IS 'Ecological Set identification number. Field links to the EcolSetTypes table.';
+COMMENT ON COLUMN ndb.ecolgroups.ecolgroupid IS 'A four-letter Ecological Group identification code. Field links to the EcolGroupTypes table.';
+COMMENT ON COLUMN ndb.ecolgroups.recdatecreated IS '';
+COMMENT ON COLUMN ndb.ecolgroups.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX ecolgroups_pkey ON ndb.ecolgroups USING btree (taxonid, ecolsetid);
@@ -28,8 +33,8 @@ CREATE INDEX ix_taxonid_ecolgroups ON ndb.ecolgroups USING btree (taxonid) WITH 
 CREATE UNIQUE INDEX ecolgroups_unique ON ndb.ecolgroups USING btree (taxonid, ecolsetid, ecolgroupid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.ecolgroups DROP CONSTRAINT IF EXISTS ecolgroups_pkey;
-ALTER TABLE ndb.ecolgroups DROP CONSTRAINT IF EXISTS ecolgroups_unique;
+-- ALTER TABLE ndb.ecolgroups DROP CONSTRAINT IF EXISTS ecolgroups_pkey;
+-- ALTER TABLE ndb.ecolgroups DROP CONSTRAINT IF EXISTS ecolgroups_unique;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.ecolgroups ADD CONSTRAINT ecolgroups_pkey PRIMARY KEY (taxonid, ecolsetid);
@@ -39,3 +44,9 @@ ALTER TABLE ndb.ecolgroups ADD CONSTRAINT ecolgroups_unique UNIQUE (taxonid, eco
 ALTER TABLE ndb.ecolgroups ADD CONSTRAINT fk_ecolgroups_ecolgrouptypes FOREIGN KEY (ecolgroupid) REFERENCES ndb.ecolgrouptypes(ecolgroupid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.ecolgroups ADD CONSTRAINT fk_ecolgroups_ecolsettypes FOREIGN KEY (ecolsetid) REFERENCES ndb.ecolsettypes(ecolsetid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.ecolgroups ADD CONSTRAINT fk_ecolgroups_taxa FOREIGN KEY (taxonid) REFERENCES ndb.taxa(taxonid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgroups;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.ecolgroups;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.ecolgroups FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.ecolgroups FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.elementsymmetries (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.elementsymmetries IS "";
+COMMENT ON TABLE ndb.elementsymmetries IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.symmetryid IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.symmetry IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.recdatecreated IS '';
+COMMENT ON COLUMN ndb.elementsymmetries.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX elementsymmetries_pkey ON ndb.elementsymmetries USING btree (symmetryid);
@@ -32,7 +36,7 @@ ALTER TABLE ndb.elementsymmetries ADD CONSTRAINT elementsymmetries_pkey PRIMARY 
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementsymmetries;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementsymmetries;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementsymmetries FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementsymmetries FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementsymmetries;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementsymmetries;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementsymmetries FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementsymmetries FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

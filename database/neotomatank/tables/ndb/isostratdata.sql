@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.isostratdata (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isostratdata IS "";
+COMMENT ON TABLE ndb.isostratdata IS '';
+COMMENT ON COLUMN ndb.isostratdata.dataid IS '';
+COMMENT ON COLUMN ndb.isostratdata.sd IS '';
+COMMENT ON COLUMN ndb.isostratdata.taxonid IS '';
+COMMENT ON COLUMN ndb.isostratdata.elementtypeid IS '';
+COMMENT ON COLUMN ndb.isostratdata.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isostratdata.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isostratdata_pkey ON ndb.isostratdata USING btree (dataid)
@@ -36,7 +42,7 @@ ALTER TABLE ndb.isostratdata ADD CONSTRAINT fk_isostratdata_elementtypes FOREIGN
 ALTER TABLE ndb.isostratdata ADD CONSTRAINT fk_isostratdata_data FOREIGN KEY (dataid) REFERENCES ndb.data(dataid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostratdata;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostratdata;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isostratdata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isostratdata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostratdata;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isostratdata;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isostratdata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isostratdata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

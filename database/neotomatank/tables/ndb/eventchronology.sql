@@ -20,7 +20,14 @@ CREATE TABLE IF NOT EXISTS ndb.eventchronology (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.eventchronology IS "";
+COMMENT ON TABLE ndb.eventchronology IS '';
+COMMENT ON COLUMN ndb.eventchronology.eventchronologyid IS '';
+COMMENT ON COLUMN ndb.eventchronology.analysisunitid IS '';
+COMMENT ON COLUMN ndb.eventchronology.eventid IS '';
+COMMENT ON COLUMN ndb.eventchronology.notes IS '';
+COMMENT ON COLUMN ndb.eventchronology.recdatecreated IS '';
+COMMENT ON COLUMN ndb.eventchronology.recdatemodified IS '';
+COMMENT ON COLUMN ndb.eventchronology.chroncontrolid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX eventchronology_pkey ON ndb.eventchronology USING btree (eventchronologyid);
@@ -42,7 +49,7 @@ ALTER TABLE ndb.eventchronology ADD CONSTRAINT evc_alu FOREIGN KEY (analysisunit
 ALTER TABLE ndb.eventchronology ADD CONSTRAINT evc_ccid FOREIGN KEY (chroncontrolid) REFERENCES ndb.chroncontrols(chroncontrolid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventchronology;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventchronology;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.eventchronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.eventchronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventchronology;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.eventchronology;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.eventchronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.eventchronology FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

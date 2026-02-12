@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.isosrmetadata (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isosrmetadata IS "";
+COMMENT ON TABLE ndb.isosrmetadata IS '';
+COMMENT ON COLUMN ndb.isosrmetadata.datasetid IS '';
+COMMENT ON COLUMN ndb.isosrmetadata.variableid IS '';
+COMMENT ON COLUMN ndb.isosrmetadata.srlocalvalue IS '';
+COMMENT ON COLUMN ndb.isosrmetadata.srlocalgeolcontext IS '';
+COMMENT ON COLUMN ndb.isosrmetadata.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isosrmetadata.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isosrmetadata_pkey ON ndb.isosrmetadata USING btree (datasetid, variableid)
@@ -35,7 +41,7 @@ ALTER TABLE ndb.isosrmetadata ADD CONSTRAINT fk_isosrmetadata_variables FOREIGN 
 ALTER TABLE ndb.isosrmetadata ADD CONSTRAINT fk_isosrmetadata_datasets FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosrmetadata;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosrmetadata;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosrmetadata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosrmetadata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosrmetadata;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isosrmetadata;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isosrmetadata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isosrmetadata FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

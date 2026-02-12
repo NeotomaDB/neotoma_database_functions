@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.isopretreatmenttypes Table definition
 
 -- Drop table
 
@@ -15,18 +15,29 @@ CREATE TABLE IF NOT EXISTS ndb.isopretreatmenttypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isopretreatmenttypes IS "";
+COMMENT ON TABLE ndb.isopretreatmenttypes IS '';
+COMMENT ON COLUMN ndb.isopretreatmenttypes.isopretreatmenttypeid IS '';
+COMMENT ON COLUMN ndb.isopretreatmenttypes.isopretreatmenttype IS '';
+COMMENT ON COLUMN ndb.isopretreatmenttypes.isopretreatmentqualifier IS '';
+COMMENT ON COLUMN ndb.isopretreatmenttypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isopretreatmenttypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isopretreatmenttypes_pkey ON ndb.isopretreatmenttypes USING btree (isopretreatmenttypeid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.isopretreatmenttypes DROP CONSTRAINT IF EXISTS isopretreatmenttypes_pkey;
+-- ALTER TABLE ndb.isopretreatmenttypes DROP CONSTRAINT IF EXISTS isopretreatmenttypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.isopretreatmenttypes ADD CONSTRAINT isopretreatmenttypes_pkey PRIMARY KEY (isopretreatmenttypeid);
 
 --- Foreign Key Restraints
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isopretreatmenttypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isopretreatmenttypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isopretreatmenttypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isopretreatmenttypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

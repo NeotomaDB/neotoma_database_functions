@@ -23,7 +23,17 @@ CREATE TABLE IF NOT EXISTS ndb.isoinstrumentation (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.isoinstrumentation IS "";
+COMMENT ON TABLE ndb.isoinstrumentation IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.datasetid IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.variableid IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.isoinstrumentationtypeid IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.isosampleintrosystemtypeid IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.insterrorpercent IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.insterrorrunsd IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.insterrorlongtermpercent IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.notes IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.recdatecreated IS '';
+COMMENT ON COLUMN ndb.isoinstrumentation.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX isoinstrumentation_pkey ON ndb.isoinstrumentation USING btree (datasetid, variableid)
@@ -41,7 +51,7 @@ ALTER TABLE ndb.isoinstrumentation ADD CONSTRAINT fk_isoinstrumentation_datasets
 ALTER TABLE ndb.isoinstrumentation ADD CONSTRAINT fk_isoinstrumentation_variables FOREIGN KEY (variableid) REFERENCES ndb.variables(variableid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentation;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentation;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isoinstrumentation FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isoinstrumentation FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentation;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.isoinstrumentation;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.isoinstrumentation FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.isoinstrumentation FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

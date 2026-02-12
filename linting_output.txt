@@ -460,6 +460,7 @@ ndb.entitylandusecover.landusecoverpercent: column comment required.
 ndb.entitylandusecover.landusecovertypeid: column comment required.
 ndb.entityrelationship.entityid: column comment required.
 ndb.entityrelationship.entitystatusid: column comment required.
+ndb.entityrelationship.notes: column comment required.
 ndb.entityrelationship.referenceentityid: column comment required.
 ndb.entitysamples.c14: column comment required.
 ndb.entitysamples.clumped_isotopes: column comment required.
@@ -1725,7 +1726,6 @@ ndb.samples.tr_sites_modifydate: trigger comment required.
 ndb.sitegeopolitical.tr_sites_modifydate: trigger comment required.
 ndb.siteimages.tr_sites_modifydate: trigger comment required.
 ndb.sites.tr_sites_modifydate: trigger comment required.
-ndb.sites.updategeopol: trigger comment required.
 ndb.sites.updatelocations: trigger comment required.
 ndb.sitestemp.tr_sites_modifydate: trigger comment required.
 ndb.specimendates.tr_sites_modifydate: trigger comment required.
@@ -1965,7 +1965,7 @@ ti.stewarddatabases: table labels required.
 ti.stewards: table labels required.
 ti.stewardupdates: table labels required.
 ts.stewardauthorization: table labels required.
-neotoma: unrelated (isolated) table exists. [ap.pollensumgroups ndb.sitestemp ndb.radiocarboncalibration ndb.dssampdata ap.orcidlogins ap.sitegadm ap.summaries ti.geopol3 ap.faunranges ap.querytable ap.hydrolakes ti.geopol4 ndb.pubtsv ap.icesheets ti.geopol1 ti.geopol2 ndb.sysdiagrams ap.geopolnames doi.frozen ndb.dsdatasample ndb.dsageranges ap.datasetpisauthors ap.pollensums ti.dslinks ap.globalmammals ts.stewardauthorization ndb.datasetdoi ndb.isosampleorigintypes ap.datasetkeywords ap.taxaindatasetview ndb.dslinks ndb.geopoldepth doi.doimeta]
+neotoma: unrelated (isolated) table exists. [ap.sitegadm ap.querytable ap.pollensums ap.orcidlogins doi.doimeta ap.icesheets ti.geopol1 ti.geopol3 ap.taxaindatasetview ap.hydrolakes ndb.dslinks ndb.dsdatasample ap.datasetkeywords ap.faunranges ndb.sitestemp ti.geopol2 ap.datasetpisauthors ts.stewardauthorization ndb.sysdiagrams doi.frozen ndb.pubtsv ndb.dsageranges ti.dslinks ndb.geopoldepth ap.geopolnames ndb.dssampdata ap.pollensumgroups ndb.datasetdoi ap.summaries ap.globalmammals ndb.radiocarboncalibration ndb.isosampleorigintypes ti.geopol4]
 ap.gadm: too many columns. [56/10]
 ap.hydrolakes: too many columns. [25/10]
 ap.pollensums: too many columns. [15/10]

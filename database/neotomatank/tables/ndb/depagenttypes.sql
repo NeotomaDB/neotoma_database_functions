@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.depagenttypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.depagenttypes IS "Lookup table of Depositional Agents. Table is referenced by the DepAgents table.";
+COMMENT ON TABLE ndb.depagenttypes IS 'Lookup table of Depositional Agents. Table is referenced by the DepAgents table.';
+COMMENT ON COLUMN ndb.depagenttypes.depagentid IS 'An arbitrary Depositional Agent identification number.';
+COMMENT ON COLUMN ndb.depagenttypes.depagent IS 'Depositional Agent.';
+COMMENT ON COLUMN ndb.depagenttypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.depagenttypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX depagenttypes_pkey ON ndb.depagenttypes USING btree (depagentid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.depagenttypes ADD CONSTRAINT depagenttypes_pkey PRIMARY KEY (dep
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagenttypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagenttypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.depagenttypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.depagenttypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagenttypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.depagenttypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.depagenttypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.depagenttypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

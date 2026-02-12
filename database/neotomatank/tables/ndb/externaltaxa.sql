@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.externaltaxa (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.externaltaxa IS "";
+COMMENT ON TABLE ndb.externaltaxa IS '';
+COMMENT ON COLUMN ndb.externaltaxa.taxonid IS '';
+COMMENT ON COLUMN ndb.externaltaxa.extdatabaseid IS '';
+COMMENT ON COLUMN ndb.externaltaxa.exttaxonid IS '';
+COMMENT ON COLUMN ndb.externaltaxa.url IS '';
+COMMENT ON COLUMN ndb.externaltaxa.recdatecreated IS '';
+COMMENT ON COLUMN ndb.externaltaxa.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX externaltaxa_pkey ON ndb.externaltaxa USING btree (taxonid, extdatabaseid, exttaxonid);
@@ -36,7 +42,7 @@ ALTER TABLE ndb.externaltaxa ADD CONSTRAINT fk_externaltaxa_taxa FOREIGN KEY (ta
 ALTER TABLE ndb.externaltaxa ADD CONSTRAINT fk_externaltaxa_externaldatabases FOREIGN KEY (extdatabaseid) REFERENCES ndb.externaldatabases(extdatabaseid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externaltaxa;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externaltaxa;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.externaltaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.externaltaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externaltaxa;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.externaltaxa;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.externaltaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.externaltaxa FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

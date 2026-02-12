@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.entityrelationship (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entityrelationship IS "";
+COMMENT ON TABLE ndb.entityrelationship IS '';
+COMMENT ON COLUMN ndb.entityrelationship.entityid IS '';
+COMMENT ON COLUMN ndb.entityrelationship.entitystatusid IS '';
+COMMENT ON COLUMN ndb.entityrelationship.referenceentityid IS '';
+COMMENT ON COLUMN ndb.entityrelationship.notes IS '';
 
 --- Table indices
 

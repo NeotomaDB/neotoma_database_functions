@@ -17,7 +17,17 @@ CREATE TABLE IF NOT EXISTS ndb.datasettypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasettypes IS "Lookup table for Dataset Types. Table is referenced by the Datasets table.";
+COMMENT ON TABLE ndb.datasettypes IS 'Lookup table for Dataset Types. Table is referenced by the Datasets table.';
+COMMENT ON COLUMN ndb.datasettypes.datasettypeid IS 'An arbitrary Dataset Type identification number.';
+COMMENT ON COLUMN ndb.datasettypes.datasettype IS 'The Dataset type, including the following:
+geochronologic
+loss-on-ignition
+pollen
+plant macrofossils
+vertebrate fauna
+mollusks';
+COMMENT ON COLUMN ndb.datasettypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasettypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datasettypes_pkey ON ndb.datasettypes USING btree (datasettypeid)
@@ -31,7 +41,7 @@ ALTER TABLE ndb.datasettypes ADD CONSTRAINT datasettypes_pkey PRIMARY KEY (datas
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasettypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

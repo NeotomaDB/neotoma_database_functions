@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.entitylandusecover (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitylandusecover IS "";
+COMMENT ON TABLE ndb.entitylandusecover IS '';
+COMMENT ON COLUMN ndb.entitylandusecover.entityid IS '';
+COMMENT ON COLUMN ndb.entitylandusecover.landusecovertypeid IS '';
+COMMENT ON COLUMN ndb.entitylandusecover.landusecoverpercent IS '';
+COMMENT ON COLUMN ndb.entitylandusecover.landusecovernotes IS '';
 
 --- Table indices
 

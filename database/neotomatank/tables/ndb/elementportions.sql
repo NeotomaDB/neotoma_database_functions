@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.elementportions (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.elementportions IS "";
+COMMENT ON TABLE ndb.elementportions IS '';
+COMMENT ON COLUMN ndb.elementportions.portionid IS '';
+COMMENT ON COLUMN ndb.elementportions.portion IS '';
+COMMENT ON COLUMN ndb.elementportions.recdatecreated IS '';
+COMMENT ON COLUMN ndb.elementportions.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX elementportions_pkey ON ndb.elementportions USING btree (portionid);
@@ -32,7 +36,7 @@ ALTER TABLE ndb.elementportions ADD CONSTRAINT elementportions_pkey PRIMARY KEY 
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementportions;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementportions;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementportions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementportions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementportions;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.elementportions;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.elementportions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.elementportions FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

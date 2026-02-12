@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.fractiondated (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.fractiondated IS "";
+COMMENT ON TABLE ndb.fractiondated IS '';
+COMMENT ON COLUMN ndb.fractiondated.fractionid IS '';
+COMMENT ON COLUMN ndb.fractiondated.fraction IS '';
+COMMENT ON COLUMN ndb.fractiondated.recdatecreated IS '';
+COMMENT ON COLUMN ndb.fractiondated.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX fractiondated_pkey ON ndb.fractiondated USING btree (fractionid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.fractiondated ADD CONSTRAINT fractiondated_pkey PRIMARY KEY (fra
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.fractiondated;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.fractiondated;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.fractiondated FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.fractiondated FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.fractiondated;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.fractiondated;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.fractiondated FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.fractiondated FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

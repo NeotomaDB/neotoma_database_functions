@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.specimendatescal Table definition
 
 -- Drop table
 
@@ -20,16 +20,26 @@ CREATE TABLE IF NOT EXISTS ndb.specimendatescal (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimendatescal IS "";
+COMMENT ON TABLE ndb.specimendatescal IS '';
+COMMENT ON COLUMN ndb.specimendatescal.specimendatecalid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.specimendateid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calage IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calageolder IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calageyounger IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calibrationcurveid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.calibrationprogramid IS '';
+COMMENT ON COLUMN ndb.specimendatescal.datecalibrated IS '';
+COMMENT ON COLUMN ndb.specimendatescal.recdatecreated IS '';
+COMMENT ON COLUMN ndb.specimendatescal.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimendatescal_pkey ON ndb.specimendatescal USING btree (specimendatecalid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.specimendatescal DROP CONSTRAINT IF EXISTS specimendatescal_pkey;
+-- ALTER TABLE ndb.specimendatescal DROP CONSTRAINT IF EXISTS specimendatescal_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.specimendatescal ADD CONSTRAINT specimendatescal_pkey PRIMARY KEY (specimendatecalid);
@@ -38,3 +48,9 @@ ALTER TABLE ndb.specimendatescal ADD CONSTRAINT specimendatescal_pkey PRIMARY KE
 ALTER TABLE ndb.specimendatescal ADD CONSTRAINT fk_specimendatescal_calibrationprograms FOREIGN KEY (calibrationprogramid) REFERENCES ndb.calibrationprograms(calibrationprogramid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.specimendatescal ADD CONSTRAINT fk_specimendatescal_calibrationcurves FOREIGN KEY (calibrationcurveid) REFERENCES ndb.calibrationcurves(calibrationcurveid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.specimendatescal ADD CONSTRAINT fk_specimendatescal_specimendates FOREIGN KEY (specimendateid) REFERENCES ndb.specimendates(specimendateid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendatescal;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimendatescal;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimendatescal FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimendatescal FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

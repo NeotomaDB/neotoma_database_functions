@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.accumulationrates Table definition
 
 -- Drop table
 
@@ -16,16 +16,22 @@ CREATE TABLE IF NOT EXISTS ndb.accumulationrates (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.accumulationrates IS "";
+COMMENT ON TABLE ndb.accumulationrates IS '';
+COMMENT ON COLUMN ndb.accumulationrates.analysisunitid IS '';
+COMMENT ON COLUMN ndb.accumulationrates.chronologyid IS '';
+COMMENT ON COLUMN ndb.accumulationrates.accumulationrate IS '';
+COMMENT ON COLUMN ndb.accumulationrates.variableunitsid IS '';
+COMMENT ON COLUMN ndb.accumulationrates.recdatecreated IS '';
+COMMENT ON COLUMN ndb.accumulationrates.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX accumulationrates_pkey ON ndb.accumulationrates USING btree (analysisunitid, chronologyid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.accumulationrates DROP CONSTRAINT IF EXISTS accumulationrates_pkey;
+-- ALTER TABLE ndb.accumulationrates DROP CONSTRAINT IF EXISTS accumulationrates_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.accumulationrates ADD CONSTRAINT accumulationrates_pkey PRIMARY KEY (analysisunitid, chronologyid);
@@ -34,3 +40,9 @@ ALTER TABLE ndb.accumulationrates ADD CONSTRAINT accumulationrates_pkey PRIMARY 
 ALTER TABLE ndb.accumulationrates ADD CONSTRAINT fk_accumulationrates_variableunits FOREIGN KEY (variableunitsid) REFERENCES ndb.variableunits(variableunitsid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.accumulationrates ADD CONSTRAINT fk_accumulationrates_analysisunits FOREIGN KEY (analysisunitid) REFERENCES ndb.analysisunits(analysisunitid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.accumulationrates ADD CONSTRAINT fk_accumulationrates_chronologies FOREIGN KEY (chronologyid) REFERENCES ndb.chronologies(chronologyid);
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.accumulationrates;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.accumulationrates;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.accumulationrates FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.accumulationrates FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.entitycovertypes Table definition
 
 -- Drop table
 
@@ -13,18 +13,23 @@ CREATE TABLE IF NOT EXISTS ndb.entitycovertypes (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitycovertypes IS "";
+COMMENT ON TABLE ndb.entitycovertypes IS '';
+COMMENT ON COLUMN ndb.entitycovertypes.entitycoverid IS '';
+COMMENT ON COLUMN ndb.entitycovertypes.entitycovertype IS '';
+COMMENT ON COLUMN ndb.entitycovertypes.entitycovernotes IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX entitycovertypes_pkey ON ndb.entitycovertypes USING btree (entitycoverid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.entitycovertypes DROP CONSTRAINT IF EXISTS entitycovertypes_pkey;
+-- ALTER TABLE ndb.entitycovertypes DROP CONSTRAINT IF EXISTS entitycovertypes_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.entitycovertypes ADD CONSTRAINT entitycovertypes_pkey PRIMARY KEY (entitycoverid);
 
 --- Foreign Key Restraints
+
+--- Triggers

@@ -16,7 +16,10 @@ CREATE TABLE IF NOT EXISTS ndb.entitygeology (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entitygeology IS "";
+COMMENT ON TABLE ndb.entitygeology IS '';
+COMMENT ON COLUMN ndb.entitygeology.entityid IS '';
+COMMENT ON COLUMN ndb.entitygeology.speleothemgeologyid IS '';
+COMMENT ON COLUMN ndb.entitygeology.notes IS '';
 
 --- Table indices
 

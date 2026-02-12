@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.sampleanalysts (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.sampleanalysts IS "This table lists the Sample Analysts.";
+COMMENT ON TABLE ndb.sampleanalysts IS 'This table lists the Sample Analysts.';
+COMMENT ON COLUMN ndb.sampleanalysts.analystid IS 'An arbitrary Sample Analyst identification number.';
+COMMENT ON COLUMN ndb.sampleanalysts.sampleid IS 'Sample identification number. Field links to the Samples table.';
+COMMENT ON COLUMN ndb.sampleanalysts.contactid IS 'Contact identification number. Field links to the Contacts table.';
+COMMENT ON COLUMN ndb.sampleanalysts.analystorder IS 'Order in which Sample Analysts are listed if more than one (rare).';
+COMMENT ON COLUMN ndb.sampleanalysts.recdatecreated IS '';
+COMMENT ON COLUMN ndb.sampleanalysts.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX sampleanalysts_pkey ON ndb.sampleanalysts USING btree (analystid);
@@ -37,7 +43,7 @@ ALTER TABLE ndb.sampleanalysts ADD CONSTRAINT fk_sampleanalysts_samples FOREIGN 
 ALTER TABLE ndb.sampleanalysts ADD CONSTRAINT fk_sampleanalysts_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleanalysts;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleanalysts;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.sampleanalysts FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.sampleanalysts FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleanalysts;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sampleanalysts;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.sampleanalysts FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.sampleanalysts FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

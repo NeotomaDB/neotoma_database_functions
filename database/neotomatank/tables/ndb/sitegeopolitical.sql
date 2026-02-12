@@ -19,7 +19,13 @@ CREATE TABLE IF NOT EXISTS ndb.sitegeopolitical (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.sitegeopolitical IS "This table lists the GeoPolitical units in which sites occur.";
+COMMENT ON TABLE ndb.sitegeopolitical IS 'This table lists the GeoPolitical units in which sites occur.';
+COMMENT ON COLUMN ndb.sitegeopolitical.sitegeopoliticalid IS 'An arbitrary Site GeoPolitical identification number.';
+COMMENT ON COLUMN ndb.sitegeopolitical.siteid IS 'Site identification number. Field links to the Sites table.';
+COMMENT ON COLUMN ndb.sitegeopolitical.geopoliticalid IS 'GeoPolitical identification number. Field links to the GeoPoliticalUnits lookup table.';
+COMMENT ON COLUMN ndb.sitegeopolitical.recdatecreated IS '';
+COMMENT ON COLUMN ndb.sitegeopolitical.recdatemodified IS '';
+COMMENT ON COLUMN ndb.sitegeopolitical.objectid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX sitegeopolitical_pkey ON ndb.sitegeopolitical USING btree (sitegeopoliticalid);
@@ -38,7 +44,7 @@ ALTER TABLE ndb.sitegeopolitical ADD CONSTRAINT fk_sitegeopolitical_geopolitical
 ALTER TABLE ndb.sitegeopolitical ADD CONSTRAINT fk_objectid FOREIGN KEY (objectid) REFERENCES ap.gadm(objectid);
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sitegeopolitical;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sitegeopolitical;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.sitegeopolitical FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.sitegeopolitical FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sitegeopolitical;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.sitegeopolitical;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.sitegeopolitical FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.sitegeopolitical FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

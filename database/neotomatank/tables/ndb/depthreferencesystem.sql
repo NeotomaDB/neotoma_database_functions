@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.depthreferencesystem (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.depthreferencesystem IS "";
+COMMENT ON TABLE ndb.depthreferencesystem IS '';
+COMMENT ON COLUMN ndb.depthreferencesystem.depthreferencesystemid IS '';
+COMMENT ON COLUMN ndb.depthreferencesystem.depthreference IS '';
+COMMENT ON COLUMN ndb.depthreferencesystem.depthreferencenotes IS '';
+COMMENT ON COLUMN ndb.depthreferencesystem.depthreferencepublicationid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX depthreferencesystem_pkey ON ndb.depthreferencesystem USING btree (depthreferencesystemid)

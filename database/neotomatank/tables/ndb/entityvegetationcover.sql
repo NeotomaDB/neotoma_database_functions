@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.entityvegetationcover (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.entityvegetationcover IS "";
+COMMENT ON TABLE ndb.entityvegetationcover IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.entityid IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.vegetationcovertypeid IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.vegetationcoverpercent IS '';
+COMMENT ON COLUMN ndb.entityvegetationcover.vegetationcovernotes IS '';
 
 --- Table indices
 

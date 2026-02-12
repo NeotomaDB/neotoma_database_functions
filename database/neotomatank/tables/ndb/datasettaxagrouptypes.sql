@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.datasettaxagrouptypes (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.datasettaxagrouptypes IS "";
+COMMENT ON TABLE ndb.datasettaxagrouptypes IS '';
+COMMENT ON COLUMN ndb.datasettaxagrouptypes.datasettypeid IS '';
+COMMENT ON COLUMN ndb.datasettaxagrouptypes.taxagroupid IS '';
+COMMENT ON COLUMN ndb.datasettaxagrouptypes.recdatecreated IS '';
+COMMENT ON COLUMN ndb.datasettaxagrouptypes.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX datasettaxagrouptypes_pkey ON ndb.datasettaxagrouptypes USING btree (datasettypeid, taxagroupid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.datasettaxagrouptypes ADD CONSTRAINT fk_datasettaxagrouptypes_ta
 ALTER TABLE ndb.datasettaxagrouptypes ADD CONSTRAINT fk_datasettaxagrouptypes_datasettypes FOREIGN KEY (datasettypeid) REFERENCES ndb.datasettypes(datasettypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettaxagrouptypes;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettaxagrouptypes;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasettaxagrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasettaxagrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettaxagrouptypes;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.datasettaxagrouptypes;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.datasettaxagrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.datasettaxagrouptypes FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

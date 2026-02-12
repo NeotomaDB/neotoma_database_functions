@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.relativeagepublications Table definition
 
 -- Drop table
 
@@ -14,17 +14,21 @@ CREATE TABLE IF NOT EXISTS ndb.relativeagepublications (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.relativeagepublications IS "This table stores Publications in which Relative Ages are reported for CollectionUnits.";
+COMMENT ON TABLE ndb.relativeagepublications IS 'This table stores Publications in which Relative Ages are reported for CollectionUnits.';
+COMMENT ON COLUMN ndb.relativeagepublications.relativeageid IS 'Relative Ages identification number. Field links to the RelativeAges table.';
+COMMENT ON COLUMN ndb.relativeagepublications.publicationid IS 'Publication identification number. Field links to Publications table.';
+COMMENT ON COLUMN ndb.relativeagepublications.recdatecreated IS '';
+COMMENT ON COLUMN ndb.relativeagepublications.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX relativeagepublications_pkey ON ndb.relativeagepublications USING btree (relativeageid, publicationid);
 CREATE INDEX ix_relativeageid_relativeagepublications ON ndb.relativeagepublications USING btree (relativeageid) WITH (fillfactor='10')
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.relativeagepublications DROP CONSTRAINT IF EXISTS relativeagepublications_pkey;
+-- ALTER TABLE ndb.relativeagepublications DROP CONSTRAINT IF EXISTS relativeagepublications_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.relativeagepublications ADD CONSTRAINT relativeagepublications_pkey PRIMARY KEY (relativeageid, publicationid);
@@ -32,3 +36,9 @@ ALTER TABLE ndb.relativeagepublications ADD CONSTRAINT relativeagepublications_p
 --- Foreign Key Restraints
 ALTER TABLE ndb.relativeagepublications ADD CONSTRAINT fk_relativeagepublications_publications FOREIGN KEY (publicationid) REFERENCES ndb.publications(publicationid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.relativeagepublications ADD CONSTRAINT fk_relativeagepublications_relativeages FOREIGN KEY (relativeageid) REFERENCES ndb.relativeages(relativeageid) ON UPDATE CASCADE ON DELETE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativeagepublications;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.relativeagepublications;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.relativeagepublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.relativeagepublications FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.chroncontrolaccuracyranks (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.chroncontrolaccuracyranks IS "";
+COMMENT ON TABLE ndb.chroncontrolaccuracyranks IS '';
+COMMENT ON COLUMN ndb.chroncontrolaccuracyranks.accuracyrankid IS '';
+COMMENT ON COLUMN ndb.chroncontrolaccuracyranks.accuracyrank IS '';
+COMMENT ON COLUMN ndb.chroncontrolaccuracyranks.recdatecreated IS '';
+COMMENT ON COLUMN ndb.chroncontrolaccuracyranks.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX chroncontrolaccuracyranks_pkey ON ndb.chroncontrolaccuracyranks USING btree (accuracyrankid)
@@ -31,7 +35,7 @@ ALTER TABLE ndb.chroncontrolaccuracyranks ADD CONSTRAINT chroncontrolaccuracyran
 --- Foreign Key Restraints
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolaccuracyranks;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolaccuracyranks;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.chroncontrolaccuracyranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.chroncontrolaccuracyranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolaccuracyranks;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.chroncontrolaccuracyranks;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.chroncontrolaccuracyranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.chroncontrolaccuracyranks FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

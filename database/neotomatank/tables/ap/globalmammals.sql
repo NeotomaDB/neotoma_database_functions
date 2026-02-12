@@ -22,7 +22,16 @@ CREATE TABLE IF NOT EXISTS ap.globalmammals (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ap.globalmammals IS "";
+COMMENT ON TABLE ap.globalmammals IS '';
+COMMENT ON COLUMN ap.globalmammals.fid IS '';
+COMMENT ON COLUMN ap.globalmammals.sciname IS '';
+COMMENT ON COLUMN ap.globalmammals."order" IS '';
+COMMENT ON COLUMN ap.globalmammals.family IS '';
+COMMENT ON COLUMN ap.globalmammals.author IS '';
+COMMENT ON COLUMN ap.globalmammals.year IS '';
+COMMENT ON COLUMN ap.globalmammals.citation IS '';
+COMMENT ON COLUMN ap.globalmammals.rec_source IS '';
+COMMENT ON COLUMN ap.globalmammals.geom IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX globalmammals_pkey ON ap.globalmammals USING btree (fid);

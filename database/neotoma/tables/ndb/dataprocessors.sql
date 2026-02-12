@@ -1,4 +1,4 @@
--- ndb definition
+-- ndb.dataprocessors Table definition
 
 -- Drop table
 
@@ -14,16 +14,20 @@ CREATE TABLE IF NOT EXISTS ndb.dataprocessors (
 );
 
 
--- adempiere.wmv_ghgaudit constraints
+-- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.dataprocessors IS "";
+COMMENT ON TABLE ndb.dataprocessors IS '';
+COMMENT ON COLUMN ndb.dataprocessors.datasetid IS '';
+COMMENT ON COLUMN ndb.dataprocessors.contactid IS '';
+COMMENT ON COLUMN ndb.dataprocessors.recdatecreated IS '';
+COMMENT ON COLUMN ndb.dataprocessors.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX dataprocessors_pkey ON ndb.dataprocessors USING btree (datasetid, contactid)
 
 --- Remove existing constraints if needed
-ALTER TABLE ndb.dataprocessors DROP CONSTRAINT IF EXISTS dataprocessors_pkey;
+-- ALTER TABLE ndb.dataprocessors DROP CONSTRAINT IF EXISTS dataprocessors_pkey;
 
 --- Non-foreign key constraints
 ALTER TABLE ndb.dataprocessors ADD CONSTRAINT dataprocessors_pkey PRIMARY KEY (datasetid, contactid);
@@ -31,3 +35,9 @@ ALTER TABLE ndb.dataprocessors ADD CONSTRAINT dataprocessors_pkey PRIMARY KEY (d
 --- Foreign Key Restraints
 ALTER TABLE ndb.dataprocessors ADD CONSTRAINT fk_dataprocessors_datasets FOREIGN KEY (datasetid) REFERENCES ndb.datasets(datasetid) ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE ndb.dataprocessors ADD CONSTRAINT fk_dataprocessors_contacts FOREIGN KEY (contactid) REFERENCES ndb.contacts(contactid) ON UPDATE CASCADE;
+
+--- Triggers
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.dataprocessors;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.dataprocessors;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.dataprocessors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.dataprocessors FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n

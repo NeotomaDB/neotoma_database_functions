@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS ndb.taxonpaths (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.taxonpaths IS "";
+COMMENT ON TABLE ndb.taxonpaths IS '';
+COMMENT ON COLUMN ndb.taxonpaths.taxonout IS '';
+COMMENT ON COLUMN ndb.taxonpaths.taxonid IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX taxonpaths_pkey ON ndb.taxonpaths USING btree (taxonout, taxonid)

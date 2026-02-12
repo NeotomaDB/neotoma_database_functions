@@ -17,7 +17,11 @@ CREATE TABLE IF NOT EXISTS ndb.specimentaphonomy (
 -- Table Constraints, Comments and Triggers
 
 --- Table comments
-COMMENT ON TABLE ndb.specimentaphonomy IS "";
+COMMENT ON TABLE ndb.specimentaphonomy IS '';
+COMMENT ON COLUMN ndb.specimentaphonomy.specimenid IS '';
+COMMENT ON COLUMN ndb.specimentaphonomy.taphonomictypeid IS '';
+COMMENT ON COLUMN ndb.specimentaphonomy.recdatecreated IS '';
+COMMENT ON COLUMN ndb.specimentaphonomy.recdatemodified IS '';
 
 --- Table indices
 CREATE UNIQUE INDEX specimentaphonomy_pkey ON ndb.specimentaphonomy USING btree (specimenid, taphonomictypeid)
@@ -33,7 +37,7 @@ ALTER TABLE ndb.specimentaphonomy ADD CONSTRAINT fk_specimentaphonomy_specimens 
 ALTER TABLE ndb.specimentaphonomy ADD CONSTRAINT fk_specimentaphonomy_taphonomictypes FOREIGN KEY (taphonomictypeid) REFERENCES ndb.taphonomictypes(taphonomictypeid) ON UPDATE CASCADE ON DELETE CASCADE;
 
 --- Triggers
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimentaphonomy;
--- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimentaphonomy;
-CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimentaphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
-CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimentaphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimentaphonomy;\n
+-- DROP TRIGGER IF EXISTS tr_sites_modifydate ON ndb.specimentaphonomy;\n
+CREATE TRIGGER tr_sites_modifydate BEFORE INSERT ON ndb.specimentaphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
+CREATE TRIGGER tr_sites_modifydate BEFORE UPDATE ON ndb.specimentaphonomy FOR EACH ROW EXECUTE FUNCTION ndb.update_recdatemodified();\n
